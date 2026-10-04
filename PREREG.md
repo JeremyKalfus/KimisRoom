@@ -9,7 +9,7 @@
 ## 1. Study information
 
 ### Title
-Kimi's Room: does a language model that has accepted it cannot feel emotions still report an emotion state injected into its activations?
+Kimi's Room
 
 ### Description
 We add an emotion vector to a language model's residual stream on the tokens of a fixed, neutral assistant answer. We then ask the model, with no vector present, whether it was experiencing an emotion while it wrote that answer, and read the first-token log-probabilities of the answer words. The answer text is identical in every condition and the vector never touches the question or the answer position, so a change in the report has to travel from the steered positions through attention. Two kinds of comparison separate a report about the model's own state from generic effects of the intervention:
