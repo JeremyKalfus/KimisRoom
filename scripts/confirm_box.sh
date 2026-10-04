@@ -13,7 +13,7 @@ C=~/confirm; mkdir -p $C/in; cd ~/KimisRoom
 exec >> $C/run.log 2>&1
 source $C/urls.env
 log() { echo "$(date -u +%FT%TZ) $*"; }
-put() { curl -sfS --retry 5 -X PUT -T "$2" "$1" > /dev/null; }  # put URL FILE
+put() { [ "$(curl -sS --retry 5 -o /dev/null -w '%{http_code}' -X PUT -T "$2" "$1")" = 200 ]; }  # put URL FILE
 stage() { echo "$1" > $C/stage; log "stage $1"; }
 status() {
   { echo "$(date -u +%FT%TZ) $(hostname) stage=$(cat $C/stage)"
