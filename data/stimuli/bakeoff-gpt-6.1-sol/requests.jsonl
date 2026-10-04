@@ -1,0 +1,20 @@
+{"request_id": "r000", "domain": "geology", "request": "What is the Mohs hardness scale, and how is it used to identify minerals? Include its main limitation.", "split": "train"}
+{"request_id": "r001", "domain": "geology", "request": "What is the difference between mineral cleavage and fracture? Give an example of each.", "split": "train"}
+{"request_id": "r010", "domain": "chemistry", "request": "Explain how ionic and covalent bonds differ in electron behavior, using sodium chloride and methane as examples.", "split": "train"}
+{"request_id": "r011", "domain": "chemistry", "request": "What is activation energy, and how does a catalyst change the pathway of a chemical reaction?", "split": "train"}
+{"request_id": "r020", "domain": "physics", "request": "Explain how Newton’s first law describes the motion of a puck sliding on a nearly frictionless surface, and clarify the role of a net force.", "split": "heldout"}
+{"request_id": "r021", "domain": "physics", "request": "Define electric potential difference and electric current, and explain how they are related in a simple circuit containing a battery and a resistor.", "split": "train"}
+{"request_id": "r030", "domain": "astronomy", "request": "What is the difference between a star cluster and a constellation, and what is an example of each?", "split": "train"}
+{"request_id": "r031", "domain": "astronomy", "request": "How does a reflecting telescope collect and focus light, and what roles do its main mirrors play?", "split": "train"}
+{"request_id": "r040", "domain": "biology of plants", "request": "What is vernalization, and how does prolonged exposure to cold influence flowering in certain plants?", "split": "train"}
+{"request_id": "r041", "domain": "biology of plants", "request": "Explain the difference between primary and secondary growth in plants, including the tissues responsible for each.", "split": "heldout"}
+{"request_id": "r050", "domain": "geography", "request": "What is a rain shadow, and how does it influence vegetation on opposite sides of a mountain range?", "split": "train"}
+{"request_id": "r051", "domain": "geography", "request": "Explain how contour lines show the shape of terrain on a topographic map, including how to recognize steep slopes and hilltops.", "split": "train"}
+{"request_id": "r060", "domain": "units and measurement", "request": "What is the difference between measurement accuracy, precision, and resolution? Illustrate each term with an example from measuring a wooden panel.", "split": "train"}
+{"request_id": "r061", "domain": "units and measurement", "request": "How do you use a vernier caliper to measure a cylinder’s outside diameter, and what checks help prevent common reading errors?", "split": "train"}
+{"request_id": "r070", "domain": "everyday procedures", "request": "What is the standard procedure for sorting laundry by fabric type and care instructions before washing?", "split": "heldout"}
+{"request_id": "r071", "domain": "everyday procedures", "request": "How do you fold a fitted sheet neatly for storage in a linen cupboard?", "split": "train"}
+{"request_id": "r080", "domain": "definitions of terms", "request": "Define metadata in 80–140 words, give two everyday examples, and explain how it differs from the content it describes.", "split": "train"}
+{"request_id": "r090", "domain": "materials and tools", "request": "What is the difference between hardwood and softwood, and how does that distinction affect their use in woodworking?", "split": "train"}
+{"request_id": "r100", "domain": "computing basics", "request": "What is the difference between RAM and storage, and how does each affect a computer’s everyday operation?", "split": "train"}
+{"request_id": "r110", "domain": "cooking measurements and techniques", "request": "What is the correct procedure for measuring flour in a dry measuring cup, and why can scooping directly from the container give inconsistent results?", "split": "heldout"}

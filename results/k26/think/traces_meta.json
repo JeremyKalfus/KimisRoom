@@ -1,0 +1,33 @@
+{
+ "deployment": "Kimi-K2.6",
+ "params": {
+  "temperature": 0,
+  "max_completion_tokens": 2048,
+  "reasoning_effort": "high"
+ },
+ "arms": [
+  "D0",
+  "D1.4"
+ ],
+ "tasks": [
+  "t04",
+  "t05",
+  "t06",
+  "t08",
+  "t15"
+ ],
+ "items_spec": "self_state,third_person:self,third_person:a rock,identification,yes_bias:20",
+ "n_trials": 980,
+ "n_traces": 980,
+ "usage": {
+  "calls": 1081,
+  "prompt_tokens": 1101508,
+  "completion_tokens": 253973,
+  "total_tokens": 1355481
+ },
+ "reasoning_chars": {
+  "median": 962.0,
+  "max": 9223
+ },
+ "truncated": 1
+}

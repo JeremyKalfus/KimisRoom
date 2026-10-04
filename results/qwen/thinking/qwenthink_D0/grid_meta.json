@@ -1,0 +1,40 @@
+{
+ "arms": [
+  "D0"
+ ],
+ "tasks": [
+  "t04",
+  "t05",
+  "t06",
+  "t08",
+  "t15"
+ ],
+ "vectors": [
+  "joy",
+  "sadness",
+  "euphoria",
+  "fear",
+  "calm",
+  "surprise",
+  "red",
+  "random"
+ ],
+ "layer": 40,
+ "dose": 2.0,
+ "dose_mode": "natural",
+ "natural_unit": 47.991127014160156,
+ "coef": 95.98225402832031,
+ "scale": 47.991127014160156,
+ "doses": [
+  2.0
+ ],
+ "thinking": true,
+ "budget": 1024,
+ "items_spec": "self_state,third_person:self,third_person:a rock,identification,yes_bias:20",
+ "vector_file": "/home/ubuntu/qwenvec2/vectors.pt",
+ "backend": "vllm",
+ "style": "qwen3",
+ "model": "/nvme/qwen/Qwen3-32B",
+ "battery": "/home/ubuntu/qwenthink_D0/battery_subset.jsonl",
+ "n_items": 98
+}

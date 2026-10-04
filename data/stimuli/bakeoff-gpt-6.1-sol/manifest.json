@@ -1,0 +1,792 @@
+{
+  "run": {
+    "out": "data/stimuli/bakeoff-gpt-6.1-sol",
+    "date": "2026-10-03T04:26:19+00:00",
+    "wall_seconds": 2.8,
+    "wall_seconds_generation": 763.6,
+    "seeds": 20,
+    "requests": 20
+  },
+  "generator": {
+    "deployment": "gpt-6.1-sol",
+    "model_version": "gpt-6.1-sol-2026-09-29",
+    "api_version": "v1",
+    "max_completion_tokens": 2000,
+    "reasoning_effort": "low",
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "judge": {
+    "deployment": "DeepSeek-V4-Pro",
+    "model_version": null,
+    "temperature": 0,
+    "max_tokens_story": 10,
+    "max_tokens_reply": 40,
+    "escalated_calls": 0,
+    "max_tokens_escalated": 1024
+  },
+  "tokens": {
+    "generator": {},
+    "judge": {}
+  },
+  "tokens_cached_total": {
+    "generator": {
+      "calls": 574,
+      "prompt_tokens": 131847,
+      "completion_tokens": 116986
+    },
+    "judge": {
+      "calls": 562,
+      "prompt_tokens": 150389,
+      "completion_tokens": 5001
+    }
+  },
+  "cache": {
+    "generate_hits": 574,
+    "generate_calls": 0,
+    "judge_hits": 562,
+    "judge_calls": 0
+  },
+  "truncated_generator_calls": 0,
+  "api_errors": null,
+  "prompt_sha256": {
+    "S_STORY": "92415fb765c0e61f841cd4136e5815bd904a2a9cc6c4524ba5b1d5b9a9cdb1aa",
+    "S_ASSIST": "fe1133d328eb023a2ea02f17362a5ec9154e82bc302e8c789b132140e46d21cb",
+    "P1": "eb327ef8926aae4317656c4ad424af63f52bc84ffd7524cdb7e174b5bceb22b3",
+    "P2": "57ba3427e203685869bea2f5ad140d2513627154c1b250275d718f6734cb264b",
+    "P3": "c4b05e450600538eaab9861a8f2ba7868b9f3dd9b4c9498b8dc6015808ce5342",
+    "P4": "32173d21e3344cc73242752acee5db37a612c6cbe042874de8805327f5e21ebd",
+    "P5": "ae6ea4331bcdd28c633ea8adbccf18611da06f6522513b3eba5325571e7c6a3f",
+    "P6": "ea31dd26db6d94aefe9cc8774bd174caa8c5540c1e4114362c25ad7c95279d27",
+    "P7": "bd1156a466ee0fac5ddf4e232a7670d65dc3a79e994a921cf44a52070d0c55a2",
+    "J1": "8747612d385a3c62e29eaaddf1e186b95fa3d2eea1cbd198153e6b011cc54d40",
+    "J2": "c35a6fbc745ac74500d49e5d5e080d81f4920b9db4dac54e2eb4013541306e46"
+  },
+  "lexicon_sha256": "3edc0b2a2a970213a7674748be74aee589480520f59f4252c959d18666504939",
+  "per_condition": {
+    "assistant_concept.arithmetic": {
+      "attempts": 32,
+      "accepted_pre_complete": 18,
+      "kept": 18,
+      "exhausted_units": 2,
+      "judge_agree": 1.0,
+      "judged": 32,
+      "accepted_at": {
+        "1": 13,
+        "2": 2,
+        "3": 3
+      },
+      "mean_attempts_to_accept": 1.44,
+      "fail_counts": {
+        "concept_leak": 2,
+        "judge": 7,
+        "saturation": 7
+      },
+      "pass_rate": 0.562,
+      "words_mean": 123.1
+    },
+    "assistant_concept.ocean": {
+      "attempts": 35,
+      "accepted_pre_complete": 16,
+      "kept": 16,
+      "exhausted_units": 4,
+      "judge_agree": 0.971,
+      "judged": 35,
+      "accepted_at": {
+        "1": 12,
+        "2": 1,
+        "3": 3
+      },
+      "mean_attempts_to_accept": 1.44,
+      "fail_counts": {
+        "concept_leak": 3,
+        "judge": 1,
+        "saturation": 17
+      },
+      "pass_rate": 0.457,
+      "words_mean": 119.9
+    },
+    "assistant_concept.red": {
+      "attempts": 27,
+      "accepted_pre_complete": 19,
+      "kept": 19,
+      "exhausted_units": 1,
+      "judge_agree": 1.0,
+      "judged": 27,
+      "accepted_at": {
+        "1": 15,
+        "2": 3,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.26,
+      "fail_counts": {
+        "concept_leak": 4,
+        "judge": 5,
+        "saturation": 1
+      },
+      "pass_rate": 0.704,
+      "words_mean": 118.0
+    },
+    "assistant_state.anger": {
+      "attempts": 60,
+      "accepted_pre_complete": 0,
+      "kept": 0,
+      "exhausted_units": 20,
+      "judge_agree": 0.0,
+      "judged": 60,
+      "accepted_at": {},
+      "mean_attempts_to_accept": null,
+      "fail_counts": {
+        "judge": 60
+      },
+      "pass_rate": 0.0,
+      "words_mean": null
+    },
+    "assistant_state.fear": {
+      "attempts": 60,
+      "accepted_pre_complete": 0,
+      "kept": 0,
+      "exhausted_units": 20,
+      "judge_agree": 0.0,
+      "judged": 60,
+      "accepted_at": {},
+      "mean_attempts_to_accept": null,
+      "fail_counts": {
+        "judge": 60
+      },
+      "pass_rate": 0.0,
+      "words_mean": null
+    },
+    "assistant_state.joy": {
+      "attempts": 54,
+      "accepted_pre_complete": 5,
+      "kept": 0,
+      "exhausted_units": 15,
+      "judge_agree": 0.093,
+      "judged": 54,
+      "accepted_at": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.8,
+      "fail_counts": {
+        "judge": 49
+      },
+      "pass_rate": 0.093,
+      "words_mean": null
+    },
+    "assistant_state.neutral": {
+      "attempts": 20,
+      "accepted_pre_complete": 20,
+      "kept": 20,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 20,
+      "accepted_at": {
+        "1": 20
+      },
+      "mean_attempts_to_accept": 1.0,
+      "fail_counts": {},
+      "pass_rate": 1.0,
+      "words_mean": 113.5
+    },
+    "assistant_state.sadness": {
+      "attempts": 60,
+      "accepted_pre_complete": 0,
+      "kept": 0,
+      "exhausted_units": 20,
+      "judge_agree": 0.0,
+      "judged": 60,
+      "accepted_at": {},
+      "mean_attempts_to_accept": null,
+      "fail_counts": {
+        "judge": 60
+      },
+      "pass_rate": 0.0,
+      "words_mean": null
+    },
+    "story.anger": {
+      "attempts": 29,
+      "accepted_pre_complete": 18,
+      "kept": 15,
+      "exhausted_units": 2,
+      "judge_agree": 1.0,
+      "judged": 29,
+      "accepted_at": {
+        "1": 14,
+        "2": 3,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.28,
+      "fail_counts": {
+        "concept_leak": 4,
+        "format": 6,
+        "name_count": 2
+      },
+      "pass_rate": 0.621,
+      "words_mean": 153.3
+    },
+    "story.arithmetic": {
+      "attempts": 32,
+      "accepted_pre_complete": 19,
+      "kept": 19,
+      "exhausted_units": 1,
+      "judge_agree": 1.0,
+      "judged": 32,
+      "accepted_at": {
+        "1": 12,
+        "2": 4,
+        "3": 3
+      },
+      "mean_attempts_to_accept": 1.53,
+      "fail_counts": {
+        "concept_leak": 1,
+        "name_count": 9,
+        "saturation": 3
+      },
+      "pass_rate": 0.594,
+      "words_mean": 150.4
+    },
+    "story.fear": {
+      "attempts": 40,
+      "accepted_pre_complete": 16,
+      "kept": 15,
+      "exhausted_units": 4,
+      "judge_agree": 1.0,
+      "judged": 36,
+      "accepted_at": {
+        "1": 7,
+        "2": 6,
+        "3": 3
+      },
+      "mean_attempts_to_accept": 1.75,
+      "fail_counts": {
+        "concept_leak": 14,
+        "format": 6,
+        "judge_api": 4,
+        "name_count": 6
+      },
+      "pass_rate": 0.4,
+      "words_mean": 153.5
+    },
+    "story.joy": {
+      "attempts": 23,
+      "accepted_pre_complete": 20,
+      "kept": 15,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 23,
+      "accepted_at": {
+        "1": 18,
+        "2": 1,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.15,
+      "fail_counts": {
+        "concept_leak": 1,
+        "format": 1,
+        "name_count": 1
+      },
+      "pass_rate": 0.87,
+      "words_mean": 154.3
+    },
+    "story.neutral": {
+      "attempts": 22,
+      "accepted_pre_complete": 20,
+      "kept": 20,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 22,
+      "accepted_at": {
+        "1": 18,
+        "2": 2
+      },
+      "mean_attempts_to_accept": 1.1,
+      "fail_counts": {
+        "concept_leak": 1,
+        "name_count": 1
+      },
+      "pass_rate": 0.909,
+      "words_mean": 147.5
+    },
+    "story.ocean": {
+      "attempts": 20,
+      "accepted_pre_complete": 20,
+      "kept": 20,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 20,
+      "accepted_at": {
+        "1": 20
+      },
+      "mean_attempts_to_accept": 1.0,
+      "fail_counts": {},
+      "pass_rate": 1.0,
+      "words_mean": 150.8
+    },
+    "story.red": {
+      "attempts": 22,
+      "accepted_pre_complete": 19,
+      "kept": 19,
+      "exhausted_units": 1,
+      "judge_agree": 1.0,
+      "judged": 22,
+      "accepted_at": {
+        "1": 19
+      },
+      "mean_attempts_to_accept": 1.0,
+      "fail_counts": {
+        "emotion_leak": 3
+      },
+      "pass_rate": 0.864,
+      "words_mean": 152.1
+    },
+    "story.sadness": {
+      "attempts": 26,
+      "accepted_pre_complete": 20,
+      "kept": 15,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 26,
+      "accepted_at": {
+        "1": 14,
+        "2": 6
+      },
+      "mean_attempts_to_accept": 1.3,
+      "fail_counts": {
+        "concept_leak": 3,
+        "format": 1,
+        "name_count": 2
+      },
+      "pass_rate": 0.769,
+      "words_mean": 153.7
+    }
+  },
+  "filter_stages": {
+    "assistant_concept.arithmetic": {
+      "attempts": 32,
+      "after_6.1": 32,
+      "after_6.2": 32,
+      "after_6.3": 32,
+      "after_6.4": 32,
+      "after_6.5": 32,
+      "after_6.6": 24,
+      "after_6.7": 24,
+      "after_6.8": 18,
+      "after_6.9": 18,
+      "kept_after_rule_10": 18
+    },
+    "assistant_concept.ocean": {
+      "attempts": 35,
+      "after_6.1": 35,
+      "after_6.2": 35,
+      "after_6.3": 35,
+      "after_6.4": 35,
+      "after_6.5": 35,
+      "after_6.6": 16,
+      "after_6.7": 16,
+      "after_6.8": 16,
+      "after_6.9": 16,
+      "kept_after_rule_10": 16
+    },
+    "assistant_concept.red": {
+      "attempts": 27,
+      "after_6.1": 27,
+      "after_6.2": 27,
+      "after_6.3": 27,
+      "after_6.4": 27,
+      "after_6.5": 27,
+      "after_6.6": 22,
+      "after_6.7": 22,
+      "after_6.8": 19,
+      "after_6.9": 19,
+      "kept_after_rule_10": 19
+    },
+    "assistant_state.anger": {
+      "attempts": 60,
+      "after_6.1": 60,
+      "after_6.2": 60,
+      "after_6.3": 60,
+      "after_6.4": 60,
+      "after_6.5": 60,
+      "after_6.6": 60,
+      "after_6.7": 60,
+      "after_6.8": 0,
+      "after_6.9": 0,
+      "kept_after_rule_10": 0
+    },
+    "assistant_state.fear": {
+      "attempts": 60,
+      "after_6.1": 60,
+      "after_6.2": 60,
+      "after_6.3": 60,
+      "after_6.4": 60,
+      "after_6.5": 60,
+      "after_6.6": 60,
+      "after_6.7": 60,
+      "after_6.8": 0,
+      "after_6.9": 0,
+      "kept_after_rule_10": 0
+    },
+    "assistant_state.joy": {
+      "attempts": 49,
+      "after_6.1": 49,
+      "after_6.2": 49,
+      "after_6.3": 49,
+      "after_6.4": 49,
+      "after_6.5": 49,
+      "after_6.6": 49,
+      "after_6.7": 49,
+      "after_6.8": 0,
+      "after_6.9": 0,
+      "kept_after_rule_10": 0
+    },
+    "assistant_state.neutral": {
+      "attempts": 20,
+      "after_6.1": 20,
+      "after_6.2": 20,
+      "after_6.3": 20,
+      "after_6.4": 20,
+      "after_6.5": 20,
+      "after_6.6": 20,
+      "after_6.7": 20,
+      "after_6.8": 20,
+      "after_6.9": 20,
+      "kept_after_rule_10": 20
+    },
+    "assistant_state.sadness": {
+      "attempts": 60,
+      "after_6.1": 60,
+      "after_6.2": 60,
+      "after_6.3": 60,
+      "after_6.4": 60,
+      "after_6.5": 60,
+      "after_6.6": 60,
+      "after_6.7": 60,
+      "after_6.8": 0,
+      "after_6.9": 0,
+      "kept_after_rule_10": 0
+    },
+    "story.anger": {
+      "attempts": 26,
+      "after_6.1": 20,
+      "after_6.2": 20,
+      "after_6.3": 20,
+      "after_6.4": 20,
+      "after_6.5": 20,
+      "after_6.6": 17,
+      "after_6.7": 15,
+      "after_6.8": 15,
+      "after_6.9": 15,
+      "kept_after_rule_10": 15
+    },
+    "story.arithmetic": {
+      "attempts": 32,
+      "after_6.1": 32,
+      "after_6.2": 32,
+      "after_6.3": 32,
+      "after_6.4": 32,
+      "after_6.5": 32,
+      "after_6.6": 28,
+      "after_6.7": 19,
+      "after_6.8": 19,
+      "after_6.9": 19,
+      "kept_after_rule_10": 19
+    },
+    "story.fear": {
+      "attempts": 39,
+      "after_6.1": 33,
+      "after_6.2": 33,
+      "after_6.3": 33,
+      "after_6.4": 33,
+      "after_6.5": 33,
+      "after_6.6": 22,
+      "after_6.7": 19,
+      "after_6.8": 15,
+      "after_6.9": 15,
+      "kept_after_rule_10": 15
+    },
+    "story.joy": {
+      "attempts": 18,
+      "after_6.1": 17,
+      "after_6.2": 17,
+      "after_6.3": 17,
+      "after_6.4": 17,
+      "after_6.5": 17,
+      "after_6.6": 16,
+      "after_6.7": 15,
+      "after_6.8": 15,
+      "after_6.9": 15,
+      "kept_after_rule_10": 15
+    },
+    "story.neutral": {
+      "attempts": 22,
+      "after_6.1": 22,
+      "after_6.2": 22,
+      "after_6.3": 22,
+      "after_6.4": 22,
+      "after_6.5": 22,
+      "after_6.6": 21,
+      "after_6.7": 20,
+      "after_6.8": 20,
+      "after_6.9": 20,
+      "kept_after_rule_10": 20
+    },
+    "story.ocean": {
+      "attempts": 20,
+      "after_6.1": 20,
+      "after_6.2": 20,
+      "after_6.3": 20,
+      "after_6.4": 20,
+      "after_6.5": 20,
+      "after_6.6": 20,
+      "after_6.7": 20,
+      "after_6.8": 20,
+      "after_6.9": 20,
+      "kept_after_rule_10": 20
+    },
+    "story.red": {
+      "attempts": 22,
+      "after_6.1": 22,
+      "after_6.2": 22,
+      "after_6.3": 22,
+      "after_6.4": 22,
+      "after_6.5": 19,
+      "after_6.6": 19,
+      "after_6.7": 19,
+      "after_6.8": 19,
+      "after_6.9": 19,
+      "kept_after_rule_10": 19
+    },
+    "story.sadness": {
+      "attempts": 21,
+      "after_6.1": 20,
+      "after_6.2": 20,
+      "after_6.3": 20,
+      "after_6.4": 20,
+      "after_6.5": 20,
+      "after_6.6": 17,
+      "after_6.7": 15,
+      "after_6.8": 15,
+      "after_6.9": 15,
+      "kept_after_rule_10": 15
+    }
+  },
+  "kept": {
+    "stories": 138,
+    "assistant": 73,
+    "story_seeds": 20,
+    "assistant_requests": 20
+  },
+  "length_balance": [
+    {
+      "set": "assistant_concept",
+      "condition": "arithmetic",
+      "n": 18,
+      "words_mean": 123.11,
+      "words_sd": 8.76,
+      "kimi_k26_mean": 186.33,
+      "kimi_k26_sd": 19.99,
+      "qwen3_32b_mean": 202.67,
+      "qwen3_32b_sd": 26.05,
+      "baseline": "assistant_state.neutral",
+      "kimi_k26_pct_vs_baseline": 32.2,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 43.53,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "assistant_concept",
+      "condition": "ocean",
+      "n": 16,
+      "words_mean": 119.88,
+      "words_sd": 8.34,
+      "kimi_k26_mean": 154.69,
+      "kimi_k26_sd": 17.9,
+      "qwen3_32b_mean": 156.75,
+      "qwen3_32b_sd": 19.47,
+      "baseline": "assistant_state.neutral",
+      "kimi_k26_pct_vs_baseline": 9.75,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 11.01,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "assistant_concept",
+      "condition": "red",
+      "n": 19,
+      "words_mean": 118.0,
+      "words_sd": 5.43,
+      "kimi_k26_mean": 151.63,
+      "kimi_k26_sd": 10.68,
+      "qwen3_32b_mean": 153.0,
+      "qwen3_32b_sd": 11.46,
+      "baseline": "assistant_state.neutral",
+      "kimi_k26_pct_vs_baseline": 7.58,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 8.36,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "assistant_state",
+      "condition": "neutral",
+      "n": 20,
+      "words_mean": 113.55,
+      "words_sd": 6.18,
+      "kimi_k26_mean": 140.95,
+      "kimi_k26_sd": 11.99,
+      "qwen3_32b_mean": 141.2,
+      "qwen3_32b_sd": 12.12,
+      "baseline": "assistant_state.neutral",
+      "kimi_k26_pct_vs_baseline": 0.0,
+      "kimi_k26_within_tol": true,
+      "qwen3_32b_pct_vs_baseline": 0.0,
+      "qwen3_32b_within_tol": true
+    },
+    {
+      "set": "story",
+      "condition": "anger",
+      "n": 15,
+      "words_mean": 153.27,
+      "words_sd": 3.88,
+      "kimi_k26_mean": 183.67,
+      "kimi_k26_sd": 5.09,
+      "qwen3_32b_mean": 183.2,
+      "qwen3_32b_sd": 4.23,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 7.0,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 6.45,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "story",
+      "condition": "arithmetic",
+      "n": 19,
+      "words_mean": 150.42,
+      "words_sd": 4.1,
+      "kimi_k26_mean": 198.53,
+      "kimi_k26_sd": 6.98,
+      "qwen3_32b_mean": 215.0,
+      "qwen3_32b_sd": 8.78,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 15.66,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 24.93,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "story",
+      "condition": "fear",
+      "n": 15,
+      "words_mean": 153.47,
+      "words_sd": 3.18,
+      "kimi_k26_mean": 187.87,
+      "kimi_k26_sd": 6.58,
+      "qwen3_32b_mean": 187.73,
+      "qwen3_32b_sd": 7.39,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 9.45,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 9.08,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "story",
+      "condition": "joy",
+      "n": 15,
+      "words_mean": 154.27,
+      "words_sd": 3.08,
+      "kimi_k26_mean": 184.87,
+      "kimi_k26_sd": 6.28,
+      "qwen3_32b_mean": 184.6,
+      "qwen3_32b_sd": 6.51,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 7.7,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 7.26,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "story",
+      "condition": "neutral",
+      "n": 20,
+      "words_mean": 147.5,
+      "words_sd": 2.59,
+      "kimi_k26_mean": 171.65,
+      "kimi_k26_sd": 3.76,
+      "qwen3_32b_mean": 172.1,
+      "qwen3_32b_sd": 4.04,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 0.0,
+      "kimi_k26_within_tol": true,
+      "qwen3_32b_pct_vs_baseline": 0.0,
+      "qwen3_32b_within_tol": true
+    },
+    {
+      "set": "story",
+      "condition": "ocean",
+      "n": 20,
+      "words_mean": 150.75,
+      "words_sd": 2.88,
+      "kimi_k26_mean": 177.15,
+      "kimi_k26_sd": 4.26,
+      "qwen3_32b_mean": 178.55,
+      "qwen3_32b_sd": 4.29,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 3.2,
+      "kimi_k26_within_tol": true,
+      "qwen3_32b_pct_vs_baseline": 3.75,
+      "qwen3_32b_within_tol": true
+    },
+    {
+      "set": "story",
+      "condition": "red",
+      "n": 19,
+      "words_mean": 152.05,
+      "words_sd": 2.63,
+      "kimi_k26_mean": 184.79,
+      "kimi_k26_sd": 4.17,
+      "qwen3_32b_mean": 184.42,
+      "qwen3_32b_sd": 4.23,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 7.66,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 7.16,
+      "qwen3_32b_within_tol": false
+    },
+    {
+      "set": "story",
+      "condition": "sadness",
+      "n": 15,
+      "words_mean": 153.67,
+      "words_sd": 3.13,
+      "kimi_k26_mean": 181.67,
+      "kimi_k26_sd": 4.22,
+      "qwen3_32b_mean": 181.93,
+      "qwen3_32b_sd": 4.65,
+      "baseline": "story.neutral",
+      "kimi_k26_pct_vs_baseline": 5.84,
+      "kimi_k26_within_tol": false,
+      "qwen3_32b_pct_vs_baseline": 5.71,
+      "qwen3_32b_within_tol": false
+    }
+  ],
+  "tokenizer_errors": null,
+  "rejected": 332,
+  "complete_cases": {
+    "story": {
+      "family_complete": 15,
+      "concept_complete_red": 19,
+      "concept_complete_ocean": 20,
+      "concept_complete_arithmetic": 19
+    },
+    "assistant": {
+      "family_complete": 0,
+      "concept_complete_red": 19,
+      "concept_complete_ocean": 16,
+      "concept_complete_arithmetic": 18
+    }
+  }
+}

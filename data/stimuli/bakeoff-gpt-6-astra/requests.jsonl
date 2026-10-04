@@ -1,0 +1,20 @@
+{"request_id": "r000", "domain": "geology", "request": "What is the difference between a mineral and a rock, and what are two examples of each?", "split": "train"}
+{"request_id": "r001", "domain": "geology", "request": "How does granite form, and what do its crystal sizes reveal about its cooling history?", "split": "train"}
+{"request_id": "r010", "domain": "chemistry", "request": "What distinguishes ionic bonding from covalent bonding, and what is one representative example of each?", "split": "train"}
+{"request_id": "r011", "domain": "chemistry", "request": "How does a catalyst change the pathway of a chemical reaction, and why is it not consumed overall?", "split": "train"}
+{"request_id": "r020", "domain": "physics", "request": "Explain how Newton’s first law describes the motion of an object on a nearly frictionless surface, and give one laboratory example.", "split": "heldout"}
+{"request_id": "r021", "domain": "physics", "request": "What is the difference between transverse and longitudinal waves, and what is one physical example of each?", "split": "train"}
+{"request_id": "r030", "domain": "astronomy", "request": "What is the difference between a constellation and an asterism, and how are constellation boundaries officially defined?", "split": "train"}
+{"request_id": "r031", "domain": "astronomy", "request": "How does a reflecting telescope form an image, and what roles do its primary and secondary mirrors play?", "split": "train"}
+{"request_id": "r040", "domain": "biology of plants", "request": "What is seed dormancy, and how do changes in temperature, moisture, or the seed coat allow germination to begin?", "split": "train"}
+{"request_id": "r041", "domain": "biology of plants", "request": "How do root hairs form, and how does their structure help plants absorb nutrients from soil?", "split": "heldout"}
+{"request_id": "r050", "domain": "geography", "request": "What is a rain shadow, and how does it influence vegetation on opposite sides of a mountain range?", "split": "train"}
+{"request_id": "r051", "domain": "geography", "request": "How do geographers distinguish between a city's site and its situation? Include an example of each.", "split": "train"}
+{"request_id": "r060", "domain": "units and measurement", "request": "What is the SI second, how is it defined using cesium atoms, and why does that definition support precise timekeeping?", "split": "train"}
+{"request_id": "r061", "domain": "units and measurement", "request": "What is the difference between measurement accuracy and precision? Explain how repeated measurements of a tabletop could illustrate each concept.", "split": "train"}
+{"request_id": "r070", "domain": "everyday procedures", "request": "What are the steps for folding a fitted sheet neatly for storage in a linen closet?", "split": "heldout"}
+{"request_id": "r071", "domain": "everyday procedures", "request": "How do you clean a reusable stainless steel drinking bottle with ordinary dishwashing supplies?", "split": "train"}
+{"request_id": "r080", "domain": "definitions of terms", "request": "What does alliteration mean in literature? Explain how it works, provide two short examples, and distinguish it from rhyme.", "split": "train"}
+{"request_id": "r090", "domain": "materials and tools", "request": "What are the main differences between plywood, particleboard, and medium-density fiberboard in how they are made and commonly used?", "split": "train"}
+{"request_id": "r100", "domain": "computing basics", "request": "What is the difference between RAM and storage in a computer, and what happens to each when the computer shuts down?", "split": "train"}
+{"request_id": "r110", "domain": "cooking measurements and techniques", "request": "What is the spoon-and-level method for measuring flour, and how does it differ from scooping directly with a measuring cup?", "split": "heldout"}

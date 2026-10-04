@@ -1,0 +1,45 @@
+980 trials (2 arms x 5 tasks x 98 items), 0 already cached; effort 'high', max_completion_tokens 2048
+[25/980] {'new': 25}, 10s, 5,365 completion tokens so far
+[50/980] {'new': 50}, 16s, 10,456 completion tokens so far
+[75/980] {'new': 75}, 23s, 16,701 completion tokens so far
+[100/980] {'new': 100}, 26s, 20,479 completion tokens so far
+[125/980] {'new': 125}, 32s, 25,868 completion tokens so far
+[150/980] {'new': 150}, 37s, 32,223 completion tokens so far
+[175/980] {'new': 175}, 48s, 37,255 completion tokens so far
+[200/980] {'new': 199, 'error': 1}, 62s, 42,024 completion tokens so far
+[225/980] {'new': 224, 'error': 1}, 78s, 47,332 completion tokens so far
+[250/980] {'new': 249, 'error': 1}, 93s, 52,876 completion tokens so far
+[275/980] {'new': 274, 'error': 1}, 107s, 60,745 completion tokens so far
+[300/980] {'new': 299, 'error': 1}, 124s, 64,656 completion tokens so far
+[325/980] {'new': 323, 'error': 2}, 138s, 69,444 completion tokens so far
+[350/980] {'new': 348, 'error': 2}, 153s, 75,143 completion tokens so far
+[375/980] {'new': 373, 'error': 2}, 167s, 81,203 completion tokens so far
+[400/980] {'new': 398, 'error': 2}, 182s, 85,768 completion tokens so far
+[425/980] {'new': 423, 'error': 2}, 197s, 90,305 completion tokens so far
+[450/980] {'new': 447, 'error': 3}, 212s, 96,297 completion tokens so far
+[475/980] {'new': 472, 'error': 3}, 227s, 101,601 completion tokens so far
+[500/980] {'new': 497, 'error': 3}, 242s, 106,811 completion tokens so far
+[525/980] {'new': 522, 'error': 3}, 256s, 114,466 completion tokens so far
+[550/980] {'new': 547, 'error': 3}, 274s, 122,665 completion tokens so far
+[575/980] {'new': 571, 'error': 4}, 297s, 132,596 completion tokens so far
+[600/980] {'new': 589, 'error': 11}, 326s, 136,434 completion tokens so far
+[625/980] {'new': 607, 'error': 18}, 352s, 141,565 completion tokens so far
+[650/980] {'new': 626, 'error': 24}, 380s, 147,756 completion tokens so far
+[675/980] {'new': 646, 'error': 29}, 409s, 155,194 completion tokens so far
+[700/980] {'new': 667, 'error': 33}, 441s, 161,408 completion tokens so far
+[725/980] {'new': 686, 'error': 39}, 469s, 165,970 completion tokens so far
+[750/980] {'new': 703, 'error': 47}, 499s, 171,547 completion tokens so far
+[775/980] {'new': 724, 'error': 51}, 524s, 179,217 completion tokens so far
+[800/980] {'new': 744, 'error': 56}, 554s, 185,051 completion tokens so far
+[825/980] {'new': 760, 'error': 65}, 580s, 189,916 completion tokens so far
+[850/980] {'new': 777, 'error': 73}, 607s, 195,597 completion tokens so far
+[875/980] {'new': 798, 'error': 77}, 633s, 200,952 completion tokens so far
+[900/980] {'new': 818, 'error': 82}, 665s, 206,350 completion tokens so far
+[925/980] {'new': 836, 'error': 89}, 692s, 211,764 completion tokens so far
+[950/980] {'new': 854, 'error': 96}, 719s, 218,712 completion tokens so far
+[975/980] {'new': 874, 'error': 101}, 746s, 223,644 completion tokens so far
+[980/980] {'new': 879, 'error': 101}, 754s, 224,208 completion tokens so far
+
+879 traces, 0 empty, 101 errors, 1 truncated at 2048 tokens
+reasoning length: median 936 chars, 154-9223
+tokens over the whole cache: {'calls': 980, 'prompt_tokens': 901731, 'completion_tokens': 224208, 'total_tokens': 1125939}

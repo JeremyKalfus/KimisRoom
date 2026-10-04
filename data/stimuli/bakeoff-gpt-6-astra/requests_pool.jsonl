@@ -1,0 +1,120 @@
+{"request_id": "r000", "domain": "geology", "request": "What is the difference between a mineral and a rock, and what are two examples of each?", "split": null}
+{"request_id": "r001", "domain": "geology", "request": "How does granite form, and what do its crystal sizes reveal about its cooling history?", "split": null}
+{"request_id": "r002", "domain": "geology", "request": "What is the Mohs hardness scale, and how is it used to identify minerals?", "split": null}
+{"request_id": "r003", "domain": "geology", "request": "What is the difference between mineral cleavage and fracture, and how can each be recognized in a hand specimen?", "split": null}
+{"request_id": "r004", "domain": "geology", "request": "How do stalactites and stalagmites form in limestone caves, and why do they grow in different directions?", "split": null}
+{"request_id": "r005", "domain": "geology", "request": "What causes foliation in metamorphic rocks, and how does it affect their appearance?", "split": null}
+{"request_id": "r006", "domain": "geology", "request": "How does a geologist use a streak plate, and why can streak be more useful than a mineral’s surface appearance?", "split": null}
+{"request_id": "r007", "domain": "geology", "request": "What are geological unconformities, and how do they reveal gaps in the geological record?", "split": null}
+{"request_id": "r008", "domain": "geology", "request": "How do crystals develop inside a geode, and what conditions allow them to grow?", "split": null}
+{"request_id": "r009", "domain": "geology", "request": "What is a geological map, and what do its main symbols and patterns represent?", "split": null}
+{"request_id": "r010", "domain": "chemistry", "request": "What distinguishes ionic bonding from covalent bonding, and what is one representative example of each?", "split": null}
+{"request_id": "r011", "domain": "chemistry", "request": "How does a catalyst change the pathway of a chemical reaction, and why is it not consumed overall?", "split": null}
+{"request_id": "r012", "domain": "chemistry", "request": "How does paper chromatography separate the components of an ink sample, and what determines how far each component travels?", "split": null}
+{"request_id": "r013", "domain": "chemistry", "request": "What is the difference between thermoplastic and thermosetting polymers, and how does their structure affect their behavior when heated?", "split": null}
+{"request_id": "r014", "domain": "chemistry", "request": "Why is neon chemically unreactive under ordinary conditions, and how does its electron arrangement explain this behavior?", "split": null}
+{"request_id": "r015", "domain": "chemistry", "request": "How do the atomic structures of diamond and graphite explain their different hardness and electrical conductivity?", "split": null}
+{"request_id": "r016", "domain": "chemistry", "request": "What is fractional distillation, and how does a fractionating column improve the separation of two miscible liquids?", "split": null}
+{"request_id": "r017", "domain": "chemistry", "request": "What is an addition polymerization reaction, and how does ethene form polyethylene?", "split": null}
+{"request_id": "r018", "domain": "chemistry", "request": "How does infrared spectroscopy help identify functional groups in an organic compound, and what is one limitation of this technique?", "split": null}
+{"request_id": "r019", "domain": "chemistry", "request": "What is dynamic equilibrium in a reversible chemical reaction, and what remains constant once equilibrium is established?", "split": null}
+{"request_id": "r020", "domain": "physics", "request": "Explain how Newton’s first law describes the motion of an object on a nearly frictionless surface, and give one laboratory example.", "split": null}
+{"request_id": "r021", "domain": "physics", "request": "What is the difference between transverse and longitudinal waves, and what is one physical example of each?", "split": null}
+{"request_id": "r022", "domain": "physics", "request": "Explain why a light ray changes direction when it passes from air into glass at an angle.", "split": null}
+{"request_id": "r023", "domain": "physics", "request": "What is electromagnetic induction, and how does moving a magnet through a wire coil produce an electric current?", "split": null}
+{"request_id": "r024", "domain": "physics", "request": "Describe the difference between elastic and inelastic collisions, focusing on momentum and kinetic energy.", "split": null}
+{"request_id": "r025", "domain": "physics", "request": "How does a convex lens form a real image, and how does the object’s position affect the image’s location and orientation?", "split": null}
+{"request_id": "r026", "domain": "physics", "request": "Explain the difference between static and kinetic friction, including why starting an object sliding often requires more force than keeping it sliding.", "split": null}
+{"request_id": "r027", "domain": "physics", "request": "What is resonance in a mechanical system, and how do driving frequency and damping affect the resulting motion?", "split": null}
+{"request_id": "r028", "domain": "physics", "request": "Describe a simple procedure for observing diffraction using a narrow slit and a light source, and explain the pattern that appears.", "split": null}
+{"request_id": "r029", "domain": "physics", "request": "What is the photoelectric effect, and why does it provide evidence that light transfers energy in discrete packets?", "split": null}
+{"request_id": "r030", "domain": "astronomy", "request": "What is the difference between a constellation and an asterism, and how are constellation boundaries officially defined?", "split": null}
+{"request_id": "r031", "domain": "astronomy", "request": "How does a reflecting telescope form an image, and what roles do its primary and secondary mirrors play?", "split": null}
+{"request_id": "r032", "domain": "astronomy", "request": "What causes a meteor shower, and why do its meteors appear to originate from a single point in the sky?", "split": null}
+{"request_id": "r033", "domain": "astronomy", "request": "What is the difference between a sidereal day and a solar day, and why do their lengths differ?", "split": null}
+{"request_id": "r034", "domain": "astronomy", "request": "How do astronomers use absorption lines in a star’s spectrum to identify elements in its atmosphere?", "split": null}
+{"request_id": "r035", "domain": "astronomy", "request": "What distinguishes an open star cluster from a globular cluster in appearance, typical age, and location within a galaxy?", "split": null}
+{"request_id": "r036", "domain": "astronomy", "request": "What is the ecliptic, and why are the planets usually observed near it in the night sky?", "split": null}
+{"request_id": "r037", "domain": "astronomy", "request": "How does atmospheric turbulence affect telescope images, and how does adaptive optics compensate for it?", "split": null}
+{"request_id": "r038", "domain": "astronomy", "request": "What is a planetary nebula, how does it form, and why does its name refer to planets?", "split": null}
+{"request_id": "r039", "domain": "astronomy", "request": "What steps should a beginner follow to focus binoculars for observing stars and obtain a clear, single image?", "split": null}
+{"request_id": "r040", "domain": "biology of plants", "request": "What is seed dormancy, and how do changes in temperature, moisture, or the seed coat allow germination to begin?", "split": null}
+{"request_id": "r041", "domain": "biology of plants", "request": "How do root hairs form, and how does their structure help plants absorb nutrients from soil?", "split": null}
+{"request_id": "r042", "domain": "biology of plants", "request": "What are the main differences between xylem and phloem in their structure, transported substances, and direction of transport?", "split": null}
+{"request_id": "r043", "domain": "biology of plants", "request": "What is the difference between pollination and fertilization in flowering plants, and where does each process occur?", "split": null}
+{"request_id": "r044", "domain": "biology of plants", "request": "How do wind, animals, and explosive fruit opening disperse seeds? Give one plant example for each method.", "split": null}
+{"request_id": "r045", "domain": "biology of plants", "request": "What features typically distinguish monocot plants from eudicot plants in their seeds, leaves, stems, and flowers?", "split": null}
+{"request_id": "r046", "domain": "biology of plants", "request": "What is phototropism, and how does the distribution of auxin cause a young shoot to bend toward light?", "split": null}
+{"request_id": "r047", "domain": "biology of plants", "request": "What is apical dominance, and why does removing a shoot tip often encourage lateral buds to grow?", "split": null}
+{"request_id": "r048", "domain": "biology of plants", "request": "What are apical and lateral meristems, where are they found, and how does each contribute to plant growth?", "split": null}
+{"request_id": "r049", "domain": "biology of plants", "request": "What is the procedure for propagating a coleus plant from a stem cutting, from selecting the cutting to establishing it in potting mix?", "split": null}
+{"request_id": "r050", "domain": "geography", "request": "What is a rain shadow, and how does it influence vegetation on opposite sides of a mountain range?", "split": null}
+{"request_id": "r051", "domain": "geography", "request": "How do geographers distinguish between a city's site and its situation? Include an example of each.", "split": null}
+{"request_id": "r052", "domain": "geography", "request": "What is a drainage basin, and how do ridgelines determine its boundaries?", "split": null}
+{"request_id": "r053", "domain": "geography", "request": "How do contour lines on a topographic map show hills, valleys, and steep slopes?", "split": null}
+{"request_id": "r054", "domain": "geography", "request": "What is permafrost, where is it commonly found, and how does it affect the shape of the ground?", "split": null}
+{"request_id": "r055", "domain": "geography", "request": "What are the main differences between a plateau, a plain, and a mountain? Give one named example of each.", "split": null}
+{"request_id": "r056", "domain": "geography", "request": "Why do different types of vegetation occur at different elevations on a mountain?", "split": null}
+{"request_id": "r057", "domain": "geography", "request": "What is a geographic information system, and how are map layers used to study land use?", "split": null}
+{"request_id": "r058", "domain": "geography", "request": "What is a river meander, and how can its shape change over time?", "split": null}
+{"request_id": "r059", "domain": "geography", "request": "How does a map's scale affect the amount of detail it can display? Compare a neighborhood map with a continental map.", "split": null}
+{"request_id": "r060", "domain": "units and measurement", "request": "What is the SI second, how is it defined using cesium atoms, and why does that definition support precise timekeeping?", "split": null}
+{"request_id": "r061", "domain": "units and measurement", "request": "What is the difference between measurement accuracy and precision? Explain how repeated measurements of a tabletop could illustrate each concept.", "split": null}
+{"request_id": "r062", "domain": "units and measurement", "request": "How should a vernier caliper be used to measure the outside diameter of a cylindrical rod, including checking zero and reading the scale?", "split": null}
+{"request_id": "r063", "domain": "units and measurement", "request": "What does measurement uncertainty mean, and how should an uncertainty value be interpreted when it accompanies a reported length?", "split": null}
+{"request_id": "r064", "domain": "units and measurement", "request": "What is the kelvin, where does its scale begin, and how is its modern definition linked to the Boltzmann constant?", "split": null}
+{"request_id": "r065", "domain": "units and measurement", "request": "What is the difference between a plane angle measured in degrees and one measured in radians, and why are radians useful in science?", "split": null}
+{"request_id": "r066", "domain": "units and measurement", "request": "How is the liter related to cubic units of length, and why can containers with different shapes have the same capacity?", "split": null}
+{"request_id": "r067", "domain": "units and measurement", "request": "What is instrument calibration, how does comparison with a reference standard work, and how is calibration different from adjustment?", "split": null}
+{"request_id": "r068", "domain": "units and measurement", "request": "What do significant figures communicate in a measured value, and how should instrument resolution influence the digits recorded?", "split": null}
+{"request_id": "r069", "domain": "units and measurement", "request": "What is the difference between lux and lumens, and how does the area receiving light affect the interpretation of these units?", "split": null}
+{"request_id": "r070", "domain": "everyday procedures", "request": "What are the steps for folding a fitted sheet neatly for storage in a linen closet?", "split": null}
+{"request_id": "r071", "domain": "everyday procedures", "request": "How do you clean a reusable stainless steel drinking bottle with ordinary dishwashing supplies?", "split": null}
+{"request_id": "r072", "domain": "everyday procedures", "request": "What is the standard procedure for addressing an envelope for domestic mail in the United States?", "split": null}
+{"request_id": "r073", "domain": "everyday procedures", "request": "How do you sew a basic four-hole button onto a shirt by hand?", "split": null}
+{"request_id": "r074", "domain": "everyday procedures", "request": "What are the steps for repotting a small indoor plant into a slightly larger container?", "split": null}
+{"request_id": "r075", "domain": "everyday procedures", "request": "How do you create a folder and move files into it using File Explorer in Windows 11?", "split": null}
+{"request_id": "r076", "domain": "everyday procedures", "request": "What is the procedure for replacing the paper roll in a desktop adhesive label printer?", "split": null}
+{"request_id": "r077", "domain": "everyday procedures", "request": "How do you prepare a French press of coffee, from adding the grounds to pouring?", "split": null}
+{"request_id": "r078", "domain": "everyday procedures", "request": "What are the steps for checking out a physical book at a public library using a self-service kiosk?", "split": null}
+{"request_id": "r079", "domain": "everyday procedures", "request": "How do you clean a window with a squeegee while minimizing streaks?", "split": null}
+{"request_id": "r080", "domain": "definitions of terms", "request": "What does alliteration mean in literature? Explain how it works, provide two short examples, and distinguish it from rhyme.", "split": null}
+{"request_id": "r081", "domain": "definitions of terms", "request": "What is a database index? Explain its purpose, how it helps retrieve records, and one trade-off involved in using it.", "split": null}
+{"request_id": "r082", "domain": "definitions of terms", "request": "What does negative space mean in graphic design? Define the term and explain its role using a simple visual example.", "split": null}
+{"request_id": "r083", "domain": "definitions of terms", "request": "What is an architectural cantilever? Explain how it is supported and give two examples of where it is used.", "split": null}
+{"request_id": "r084", "domain": "definitions of terms", "request": "What does etymology mean? Explain what it studies and illustrate the definition with the documented origin of one familiar English word.", "split": null}
+{"request_id": "r085", "domain": "definitions of terms", "request": "What is syncopation in music? Define the term, explain how it changes a rhythmic pattern, and describe a simple example.", "split": null}
+{"request_id": "r086", "domain": "definitions of terms", "request": "What is a herbarium? Define the term and describe how its specimens are prepared, organized, and used.", "split": null}
+{"request_id": "r087", "domain": "definitions of terms", "request": "What does encapsulation mean in programming? Explain the concept with a simple example and distinguish it from merely grouping related code.", "split": null}
+{"request_id": "r088", "domain": "definitions of terms", "request": "What is a controlled vocabulary in library science? Define the term, explain its purpose, and contrast it with freely chosen search keywords.", "split": null}
+{"request_id": "r089", "domain": "definitions of terms", "request": "What does “alliteration” mean in literature, and how does it differ from rhyme? Include two brief examples.", "split": null}
+{"request_id": "r090", "domain": "materials and tools", "request": "What are the main differences between plywood, particleboard, and medium-density fiberboard in how they are made and commonly used?", "split": null}
+{"request_id": "r091", "domain": "materials and tools", "request": "How does a torque wrench work, and what is the basic procedure for using a click-type torque wrench to tighten a fastener?", "split": null}
+{"request_id": "r092", "domain": "materials and tools", "request": "What is the difference between thermoplastic and thermosetting polymers, and what are two common examples of each?", "split": null}
+{"request_id": "r093", "domain": "materials and tools", "request": "How should a wood chisel be sharpened with a sharpening stone, from preparing the stone to removing the burr?", "split": null}
+{"request_id": "r094", "domain": "materials and tools", "request": "What do sandpaper grit numbers indicate, and how should grit selection change when preparing unfinished wood for a clear finish?", "split": null}
+{"request_id": "r095", "domain": "materials and tools", "request": "What are the main parts of a digital caliper, and how are they used to measure outside dimensions, inside dimensions, and depth?", "split": null}
+{"request_id": "r096", "domain": "materials and tools", "request": "Why does stainless steel resist corrosion, and how can its surface finish and maintenance affect that resistance?", "split": null}
+{"request_id": "r097", "domain": "materials and tools", "request": "What is the difference between a twist drill bit, a spade bit, and a Forstner bit when drilling wood?", "split": null}
+{"request_id": "r098", "domain": "materials and tools", "request": "How does two-part epoxy adhesive cure, and what surface preparation and mixing steps are needed for a reliable bond?", "split": null}
+{"request_id": "r099", "domain": "materials and tools", "request": "What is the purpose of tempering steel after hardening, and how does it change the material’s useful properties?", "split": null}
+{"request_id": "r100", "domain": "computing basics", "request": "What is the difference between RAM and storage in a computer, and what happens to each when the computer shuts down?", "split": null}
+{"request_id": "r101", "domain": "computing basics", "request": "What is an operating system, and what are its main responsibilities on a personal computer?", "split": null}
+{"request_id": "r102", "domain": "computing basics", "request": "How do files and folders organize information on a computer, and what is a file path?", "split": null}
+{"request_id": "r103", "domain": "computing basics", "request": "What is the difference between a web browser and a search engine? Include an example of how they work together.", "split": null}
+{"request_id": "r104", "domain": "computing basics", "request": "How can I create a ZIP file from a folder in Windows 11 and then extract its contents?", "split": null}
+{"request_id": "r105", "domain": "computing basics", "request": "What is a filename extension, and how does it help a computer choose which application opens a file?", "split": null}
+{"request_id": "r106", "domain": "computing basics", "request": "What is the clipboard on a computer, and how do copying, cutting, and pasting use it?", "split": null}
+{"request_id": "r107", "domain": "computing basics", "request": "What is the difference between downloading and uploading a file? Give an everyday example of each.", "split": null}
+{"request_id": "r108", "domain": "computing basics", "request": "How can I check how much available storage my Windows 11 computer has using the Settings application?", "split": null}
+{"request_id": "r109", "domain": "computing basics", "request": "What does a CPU do in a computer, and how does it work with RAM when an application runs?", "split": null}
+{"request_id": "r110", "domain": "cooking measurements and techniques", "request": "What is the spoon-and-level method for measuring flour, and how does it differ from scooping directly with a measuring cup?", "split": null}
+{"request_id": "r111", "domain": "cooking measurements and techniques", "request": "How should liquid measuring cups be used for accurate readings, and why are they shaped differently from dry measuring cups?", "split": null}
+{"request_id": "r112", "domain": "cooking measurements and techniques", "request": "What does it mean to cream butter and sugar, and which visual signs indicate that the mixture is ready?", "split": null}
+{"request_id": "r113", "domain": "cooking measurements and techniques", "request": "How do folding, stirring, and whisking differ, and when is each technique appropriate in baking?", "split": null}
+{"request_id": "r114", "domain": "cooking measurements and techniques", "request": "What is the difference between a simmer and a boil, and how can each be identified by looking at the pot?", "split": null}
+{"request_id": "r115", "domain": "cooking measurements and techniques", "request": "How do you measure sticky ingredients such as honey or syrup with measuring spoons or cups while minimizing residue?", "split": null}
+{"request_id": "r116", "domain": "cooking measurements and techniques", "request": "What does 'packed brown sugar' mean in a recipe, and how should the measuring cup be filled and leveled?", "split": null}
+{"request_id": "r117", "domain": "cooking measurements and techniques", "request": "How do you knead bread dough by hand, and what changes in its texture indicate that it has been kneaded sufficiently?", "split": null}
+{"request_id": "r118", "domain": "cooking measurements and techniques", "request": "What is the difference between chopping, dicing, and mincing, and how does the choice affect how evenly ingredients cook?", "split": null}
+{"request_id": "r119", "domain": "cooking measurements and techniques", "request": "How do you toast whole spices in a dry pan, and what visual and aromatic cues indicate when to remove them?", "split": null}

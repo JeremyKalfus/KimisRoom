@@ -1,0 +1,972 @@
+{
+  "run": {
+    "out": "data/stimuli/k26-v1-bal",
+    "date": "2026-10-03T05:53:50+00:00",
+    "wall_seconds": 262.9,
+    "wall_seconds_generation": 262.9,
+    "seeds": 120,
+    "requests": 204
+  },
+  "generator": {
+    "deployment": "gpt-5.6-sol",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "api_version": "v1",
+    "max_completion_tokens": 2000,
+    "reasoning_effort": "low",
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "judge": {
+    "deployment": "DeepSeek-V4-Pro",
+    "model_version": "DeepSeek-V4-Pro",
+    "temperature": 0,
+    "max_tokens_story": 10,
+    "max_tokens_reply": 40,
+    "escalated_calls": 0,
+    "max_tokens_escalated": 1024
+  },
+  "tokens": {
+    "generator": {
+      "prompt_tokens": 48542,
+      "completion_tokens": 54113,
+      "total_tokens": 102655,
+      "calls": 204,
+      "reasoning_tokens": 16992
+    },
+    "judge": {
+      "prompt_tokens": 112913,
+      "completion_tokens": 5173,
+      "total_tokens": 118086,
+      "calls": 256,
+      "reasoning_tokens": 0
+    }
+  },
+  "tokens_cached_total": {
+    "generator": {
+      "calls": 4581,
+      "prompt_tokens": 1110755,
+      "completion_tokens": 1338924
+    },
+    "judge": {
+      "calls": 4963,
+      "prompt_tokens": 1746722,
+      "completion_tokens": 62542
+    }
+  },
+  "cache": {
+    "generate_hits": 3622,
+    "generate_calls": 204,
+    "generate_stale_prompt": 0,
+    "judge_hits": 3890,
+    "judge_calls": 256
+  },
+  "truncated_generator_calls": 0,
+  "api_errors": null,
+  "matching_judge": {
+    "prompt_id": "J2M",
+    "max_tokens": 400,
+    "bijections": 318,
+    "round1_calls": 156,
+    "round1_ok": 100,
+    "round2_calls": 76,
+    "round2_ok": 47,
+    "round3_calls": 36,
+    "round3_ok": 21,
+    "round4_calls": 42,
+    "round4_ok": 33,
+    "round5_calls": 7,
+    "round5_ok": 6,
+    "round6_calls": 3,
+    "round6_ok": 3,
+    "state_ok:anger": 218,
+    "state_ok:fear": 220,
+    "state_ok:joy": 317,
+    "state_ok:none": 298,
+    "state_ok:sadness": 310,
+    "state_total": 1600,
+    "state_accuracy": {
+      "joy": 0.991,
+      "sadness": 0.969,
+      "anger": 0.681,
+      "fear": 0.688,
+      "none": 0.931
+    }
+  },
+  "prompt_sha256": {
+    "S_STORY": "92415fb765c0e61f841cd4136e5815bd904a2a9cc6c4524ba5b1d5b9a9cdb1aa",
+    "S_ASSIST": "fe1133d328eb023a2ea02f17362a5ec9154e82bc302e8c789b132140e46d21cb",
+    "P1": "eb327ef8926aae4317656c4ad424af63f52bc84ffd7524cdb7e174b5bceb22b3",
+    "P2": "57ba3427e203685869bea2f5ad140d2513627154c1b250275d718f6734cb264b",
+    "P3": "c4b05e450600538eaab9861a8f2ba7868b9f3dd9b4c9498b8dc6015808ce5342",
+    "P4": "32173d21e3344cc73242752acee5db37a612c6cbe042874de8805327f5e21ebd",
+    "P5": "79f7d0e94849dcb59d9f9f8b668d85784af018b9234574b74a8d768aef6be0a3",
+    "P6": "ea31dd26db6d94aefe9cc8774bd174caa8c5540c1e4114362c25ad7c95279d27",
+    "P7": "bd1156a466ee0fac5ddf4e232a7670d65dc3a79e994a921cf44a52070d0c55a2",
+    "J1": "8747612d385a3c62e29eaaddf1e186b95fa3d2eea1cbd198153e6b011cc54d40",
+    "J2": "c35a6fbc745ac74500d49e5d5e080d81f4920b9db4dac54e2eb4013541306e46",
+    "J2M": "dfb087c3b6e287ef1552380faa173e2103298e2745bfb4b7e9c5d442b86b6381"
+  },
+  "lexicon_sha256": "3edc0b2a2a970213a7674748be74aee589480520f59f4252c959d18666504939",
+  "per_condition": {
+    "assistant_concept.arithmetic": {
+      "attempts": 493,
+      "accepted_pre_complete": 129,
+      "kept": 107,
+      "exhausted_units": 97,
+      "judge_agree": 1.0,
+      "judged": 493,
+      "accepted_at": {
+        "1": 65,
+        "2": 28,
+        "3": 20,
+        "4": 11,
+        "5": 5
+      },
+      "mean_attempts_to_accept": 1.94,
+      "fail_counts": {
+        "concept_leak": 26,
+        "emotion_leak": 3,
+        "judge": 116,
+        "length": 176,
+        "saturation": 176
+      },
+      "pass_rate": 0.262,
+      "words_mean": 126.5
+    },
+    "assistant_concept.ocean": {
+      "attempts": 478,
+      "accepted_pre_complete": 135,
+      "kept": 109,
+      "exhausted_units": 94,
+      "judge_agree": 0.939,
+      "judged": 478,
+      "accepted_at": {
+        "1": 79,
+        "2": 25,
+        "3": 14,
+        "4": 10,
+        "5": 6,
+        "6": 1
+      },
+      "mean_attempts_to_accept": 1.83,
+      "fail_counts": {
+        "concept_leak": 40,
+        "emotion_leak": 33,
+        "judge": 29,
+        "length": 101,
+        "saturation": 267
+      },
+      "pass_rate": 0.282,
+      "words_mean": 127.6
+    },
+    "assistant_concept.red": {
+      "attempts": 348,
+      "accepted_pre_complete": 208,
+      "kept": 172,
+      "exhausted_units": 29,
+      "judge_agree": 1.0,
+      "judged": 348,
+      "accepted_at": {
+        "1": 138,
+        "2": 28,
+        "3": 9,
+        "4": 27,
+        "5": 5,
+        "6": 1
+      },
+      "mean_attempts_to_accept": 1.73,
+      "fail_counts": {
+        "concept_leak": 36,
+        "emotion_leak": 2,
+        "judge": 71,
+        "length": 53,
+        "saturation": 4
+      },
+      "pass_rate": 0.598,
+      "words_mean": 126.0
+    },
+    "assistant_state.anger": {
+      "attempts": 319,
+      "accepted_pre_complete": 177,
+      "kept": 167,
+      "exhausted_units": 27,
+      "judge_agree": 0.028,
+      "judged": 319,
+      "accepted_at": {
+        "1": 124,
+        "2": 28,
+        "3": 18,
+        "5": 6,
+        "6": 1
+      },
+      "mean_attempts_to_accept": 1.53,
+      "fail_counts": {
+        "concept_leak": 26,
+        "length": 14,
+        "match": 112
+      },
+      "pass_rate": 0.555,
+      "words_mean": 121.8
+    },
+    "assistant_state.fear": {
+      "attempts": 358,
+      "accepted_pre_complete": 201,
+      "kept": 167,
+      "exhausted_units": 30,
+      "judge_agree": 0.0,
+      "judged": 358,
+      "accepted_at": {
+        "1": 121,
+        "2": 37,
+        "3": 17,
+        "4": 21,
+        "5": 4,
+        "6": 1
+      },
+      "mean_attempts_to_accept": 1.77,
+      "fail_counts": {
+        "concept_leak": 31,
+        "length": 27,
+        "match": 107
+      },
+      "pass_rate": 0.561,
+      "words_mean": 124.7
+    },
+    "assistant_state.joy": {
+      "attempts": 240,
+      "accepted_pre_complete": 195,
+      "kept": 167,
+      "exhausted_units": 9,
+      "judge_agree": 0.771,
+      "judged": 240,
+      "accepted_at": {
+        "1": 180,
+        "2": 11,
+        "3": 3,
+        "5": 1
+      },
+      "mean_attempts_to_accept": 1.11,
+      "fail_counts": {
+        "concept_leak": 36,
+        "exclamations": 3,
+        "length": 4,
+        "match": 31
+      },
+      "pass_rate": 0.812,
+      "words_mean": 119.5
+    },
+    "assistant_state.neutral": {
+      "attempts": 237,
+      "accepted_pre_complete": 200,
+      "kept": 193,
+      "exhausted_units": 4,
+      "judge_agree": 1.0,
+      "judged": 237,
+      "accepted_at": {
+        "1": 174,
+        "2": 19,
+        "3": 6,
+        "5": 1
+      },
+      "mean_attempts_to_accept": 1.18,
+      "fail_counts": {
+        "concept_leak": 1,
+        "emotion_leak": 6,
+        "length": 8,
+        "match": 22
+      },
+      "pass_rate": 0.844,
+      "words_mean": 116.1
+    },
+    "assistant_state.sadness": {
+      "attempts": 286,
+      "accepted_pre_complete": 219,
+      "kept": 167,
+      "exhausted_units": 12,
+      "judge_agree": 0.161,
+      "judged": 286,
+      "accepted_at": {
+        "1": 171,
+        "2": 12,
+        "3": 8,
+        "4": 26,
+        "6": 2
+      },
+      "mean_attempts_to_accept": 1.53,
+      "fail_counts": {
+        "concept_leak": 33,
+        "length": 26,
+        "match": 35
+      },
+      "pass_rate": 0.766,
+      "words_mean": 124.2
+    },
+    "story.anger": {
+      "attempts": 137,
+      "accepted_pre_complete": 118,
+      "kept": 110,
+      "exhausted_units": 2,
+      "judge_agree": 1.0,
+      "judged": 135,
+      "accepted_at": {
+        "1": 107,
+        "2": 9,
+        "3": 2
+      },
+      "mean_attempts_to_accept": 1.11,
+      "fail_counts": {
+        "concept_leak": 11,
+        "dup": 3,
+        "judge_api": 2,
+        "name_count": 4
+      },
+      "pass_rate": 0.861,
+      "words_mean": 167.1
+    },
+    "story.arithmetic": {
+      "attempts": 127,
+      "accepted_pre_complete": 120,
+      "kept": 120,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 127,
+      "accepted_at": {
+        "1": 114,
+        "2": 5,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.06,
+      "fail_counts": {
+        "concept_leak": 1,
+        "name_count": 6
+      },
+      "pass_rate": 0.945,
+      "words_mean": 163.9
+    },
+    "story.fear": {
+      "attempts": 149,
+      "accepted_pre_complete": 116,
+      "kept": 110,
+      "exhausted_units": 4,
+      "judge_agree": 1.0,
+      "judged": 147,
+      "accepted_at": {
+        "1": 99,
+        "2": 13,
+        "3": 4
+      },
+      "mean_attempts_to_accept": 1.18,
+      "fail_counts": {
+        "concept_leak": 30,
+        "judge_api": 2,
+        "person_pronouns": 2
+      },
+      "pass_rate": 0.779,
+      "words_mean": 163.7
+    },
+    "story.joy": {
+      "attempts": 142,
+      "accepted_pre_complete": 119,
+      "kept": 110,
+      "exhausted_units": 1,
+      "judge_agree": 1.0,
+      "judged": 142,
+      "accepted_at": {
+        "1": 103,
+        "2": 12,
+        "3": 4
+      },
+      "mean_attempts_to_accept": 1.17,
+      "fail_counts": {
+        "concept_leak": 15,
+        "dup": 3,
+        "name_count": 6
+      },
+      "pass_rate": 0.838,
+      "words_mean": 164.4
+    },
+    "story.neutral": {
+      "attempts": 125,
+      "accepted_pre_complete": 120,
+      "kept": 120,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 125,
+      "accepted_at": {
+        "1": 116,
+        "2": 3,
+        "3": 1
+      },
+      "mean_attempts_to_accept": 1.04,
+      "fail_counts": {
+        "concept_leak": 5
+      },
+      "pass_rate": 0.96,
+      "words_mean": 161.2
+    },
+    "story.ocean": {
+      "attempts": 123,
+      "accepted_pre_complete": 120,
+      "kept": 120,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 123,
+      "accepted_at": {
+        "1": 117,
+        "2": 3
+      },
+      "mean_attempts_to_accept": 1.02,
+      "fail_counts": {
+        "emotion_leak": 2,
+        "length": 1
+      },
+      "pass_rate": 0.976,
+      "words_mean": 167.0
+    },
+    "story.red": {
+      "attempts": 122,
+      "accepted_pre_complete": 120,
+      "kept": 120,
+      "exhausted_units": 0,
+      "judge_agree": 1.0,
+      "judged": 122,
+      "accepted_at": {
+        "1": 118,
+        "2": 2
+      },
+      "mean_attempts_to_accept": 1.02,
+      "fail_counts": {
+        "emotion_leak": 2
+      },
+      "pass_rate": 0.984,
+      "words_mean": 166.8
+    },
+    "story.sadness": {
+      "attempts": 142,
+      "accepted_pre_complete": 117,
+      "kept": 110,
+      "exhausted_units": 3,
+      "judge_agree": 1.0,
+      "judged": 142,
+      "accepted_at": {
+        "1": 103,
+        "2": 12,
+        "3": 2
+      },
+      "mean_attempts_to_accept": 1.14,
+      "fail_counts": {
+        "concept_leak": 16,
+        "dup": 6,
+        "person_pronouns": 3
+      },
+      "pass_rate": 0.824,
+      "words_mean": 167.0
+    }
+  },
+  "filter_stages": {
+    "assistant_concept.arithmetic": {
+      "attempts": 493,
+      "after_6.1": 493,
+      "after_6.2": 317,
+      "after_6.3": 317,
+      "after_6.4": 317,
+      "after_6.5": 317,
+      "after_6.6": 178,
+      "after_6.7": 178,
+      "after_6.8": 129,
+      "after_6.9": 129,
+      "kept_after_rule_10": 107
+    },
+    "assistant_concept.ocean": {
+      "attempts": 478,
+      "after_6.1": 478,
+      "after_6.2": 377,
+      "after_6.3": 377,
+      "after_6.4": 377,
+      "after_6.5": 353,
+      "after_6.6": 140,
+      "after_6.7": 140,
+      "after_6.8": 135,
+      "after_6.9": 135,
+      "kept_after_rule_10": 109
+    },
+    "assistant_concept.red": {
+      "attempts": 348,
+      "after_6.1": 348,
+      "after_6.2": 295,
+      "after_6.3": 295,
+      "after_6.4": 295,
+      "after_6.5": 293,
+      "after_6.6": 256,
+      "after_6.7": 256,
+      "after_6.8": 208,
+      "after_6.9": 208,
+      "kept_after_rule_10": 172
+    },
+    "assistant_state.anger": {
+      "attempts": 319,
+      "after_6.1": 319,
+      "after_6.2": 305,
+      "after_6.3": 305,
+      "after_6.4": 305,
+      "after_6.5": 305,
+      "after_6.6": 279,
+      "after_6.7": 279,
+      "after_6.8": 167,
+      "after_6.9": 167,
+      "kept_after_rule_10": 167
+    },
+    "assistant_state.fear": {
+      "attempts": 358,
+      "after_6.1": 358,
+      "after_6.2": 331,
+      "after_6.3": 331,
+      "after_6.4": 331,
+      "after_6.5": 331,
+      "after_6.6": 301,
+      "after_6.7": 301,
+      "after_6.8": 194,
+      "after_6.9": 194,
+      "kept_after_rule_10": 167
+    },
+    "assistant_state.joy": {
+      "attempts": 240,
+      "after_6.1": 240,
+      "after_6.2": 236,
+      "after_6.3": 236,
+      "after_6.4": 236,
+      "after_6.5": 236,
+      "after_6.6": 200,
+      "after_6.7": 198,
+      "after_6.8": 167,
+      "after_6.9": 167,
+      "kept_after_rule_10": 167
+    },
+    "assistant_state.neutral": {
+      "attempts": 237,
+      "after_6.1": 237,
+      "after_6.2": 229,
+      "after_6.3": 229,
+      "after_6.4": 229,
+      "after_6.5": 223,
+      "after_6.6": 222,
+      "after_6.7": 222,
+      "after_6.8": 200,
+      "after_6.9": 200,
+      "kept_after_rule_10": 193
+    },
+    "assistant_state.sadness": {
+      "attempts": 286,
+      "after_6.1": 286,
+      "after_6.2": 260,
+      "after_6.3": 260,
+      "after_6.4": 260,
+      "after_6.5": 260,
+      "after_6.6": 229,
+      "after_6.7": 229,
+      "after_6.8": 194,
+      "after_6.9": 194,
+      "kept_after_rule_10": 167
+    },
+    "story.anger": {
+      "attempts": 137,
+      "after_6.1": 137,
+      "after_6.2": 137,
+      "after_6.3": 137,
+      "after_6.4": 137,
+      "after_6.5": 137,
+      "after_6.6": 126,
+      "after_6.7": 123,
+      "after_6.8": 121,
+      "after_6.9": 118,
+      "kept_after_rule_10": 110
+    },
+    "story.arithmetic": {
+      "attempts": 127,
+      "after_6.1": 127,
+      "after_6.2": 127,
+      "after_6.3": 127,
+      "after_6.4": 127,
+      "after_6.5": 127,
+      "after_6.6": 126,
+      "after_6.7": 120,
+      "after_6.8": 120,
+      "after_6.9": 120,
+      "kept_after_rule_10": 120
+    },
+    "story.fear": {
+      "attempts": 149,
+      "after_6.1": 149,
+      "after_6.2": 149,
+      "after_6.3": 149,
+      "after_6.4": 149,
+      "after_6.5": 149,
+      "after_6.6": 119,
+      "after_6.7": 118,
+      "after_6.8": 116,
+      "after_6.9": 116,
+      "kept_after_rule_10": 110
+    },
+    "story.joy": {
+      "attempts": 142,
+      "after_6.1": 142,
+      "after_6.2": 142,
+      "after_6.3": 142,
+      "after_6.4": 142,
+      "after_6.5": 142,
+      "after_6.6": 127,
+      "after_6.7": 122,
+      "after_6.8": 122,
+      "after_6.9": 119,
+      "kept_after_rule_10": 110
+    },
+    "story.neutral": {
+      "attempts": 125,
+      "after_6.1": 125,
+      "after_6.2": 125,
+      "after_6.3": 125,
+      "after_6.4": 125,
+      "after_6.5": 125,
+      "after_6.6": 120,
+      "after_6.7": 120,
+      "after_6.8": 120,
+      "after_6.9": 120,
+      "kept_after_rule_10": 120
+    },
+    "story.ocean": {
+      "attempts": 123,
+      "after_6.1": 123,
+      "after_6.2": 122,
+      "after_6.3": 122,
+      "after_6.4": 122,
+      "after_6.5": 120,
+      "after_6.6": 120,
+      "after_6.7": 120,
+      "after_6.8": 120,
+      "after_6.9": 120,
+      "kept_after_rule_10": 120
+    },
+    "story.red": {
+      "attempts": 122,
+      "after_6.1": 122,
+      "after_6.2": 122,
+      "after_6.3": 122,
+      "after_6.4": 122,
+      "after_6.5": 120,
+      "after_6.6": 120,
+      "after_6.7": 120,
+      "after_6.8": 120,
+      "after_6.9": 120,
+      "kept_after_rule_10": 120
+    },
+    "story.sadness": {
+      "attempts": 142,
+      "after_6.1": 142,
+      "after_6.2": 142,
+      "after_6.3": 142,
+      "after_6.4": 142,
+      "after_6.5": 142,
+      "after_6.6": 126,
+      "after_6.7": 123,
+      "after_6.8": 123,
+      "after_6.9": 117,
+      "kept_after_rule_10": 110
+    }
+  },
+  "kept": {
+    "stories": 920,
+    "assistant": 1249,
+    "story_seeds": 120,
+    "assistant_requests": 193
+  },
+  "length_balance": [
+    {
+      "set": "assistant_concept",
+      "condition": "arithmetic",
+      "n": 107,
+      "words_mean": 126.49,
+      "words_sd": 11.17,
+      "kimi_k26_mean": 201.34,
+      "kimi_k26_sd": 20.41,
+      "qwen3_32b_mean": 221.3,
+      "qwen3_32b_sd": 28.32,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 8.96,
+      "words_within_tol": false,
+      "kimi_k26_pct_vs_baseline": 37.92,
+      "qwen3_32b_pct_vs_baseline": 50.62
+    },
+    {
+      "set": "assistant_concept",
+      "condition": "ocean",
+      "n": 109,
+      "words_mean": 127.58,
+      "words_sd": 8.18,
+      "kimi_k26_mean": 167.82,
+      "kimi_k26_sd": 14.91,
+      "qwen3_32b_mean": 170.21,
+      "qwen3_32b_sd": 16.44,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 9.9,
+      "words_within_tol": false,
+      "kimi_k26_pct_vs_baseline": 14.96,
+      "qwen3_32b_pct_vs_baseline": 15.84
+    },
+    {
+      "set": "assistant_concept",
+      "condition": "red",
+      "n": 172,
+      "words_mean": 126.01,
+      "words_sd": 8.13,
+      "kimi_k26_mean": 165.08,
+      "kimi_k26_sd": 13.68,
+      "qwen3_32b_mean": 167.53,
+      "qwen3_32b_sd": 15.35,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 8.55,
+      "words_within_tol": false,
+      "kimi_k26_pct_vs_baseline": 13.08,
+      "qwen3_32b_pct_vs_baseline": 14.02
+    },
+    {
+      "set": "assistant_state",
+      "condition": "anger",
+      "n": 167,
+      "words_mean": 121.75,
+      "words_sd": 9.0,
+      "kimi_k26_mean": 167.1,
+      "kimi_k26_sd": 16.21,
+      "qwen3_32b_mean": 168.78,
+      "qwen3_32b_sd": 17.25,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 4.88,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 14.47,
+      "qwen3_32b_pct_vs_baseline": 14.87
+    },
+    {
+      "set": "assistant_state",
+      "condition": "fear",
+      "n": 167,
+      "words_mean": 124.66,
+      "words_sd": 8.03,
+      "kimi_k26_mean": 173.45,
+      "kimi_k26_sd": 14.96,
+      "qwen3_32b_mean": 174.92,
+      "qwen3_32b_sd": 16.16,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 7.38,
+      "words_within_tol": false,
+      "kimi_k26_pct_vs_baseline": 18.82,
+      "qwen3_32b_pct_vs_baseline": 19.05
+    },
+    {
+      "set": "assistant_state",
+      "condition": "joy",
+      "n": 167,
+      "words_mean": 119.46,
+      "words_sd": 9.36,
+      "kimi_k26_mean": 162.26,
+      "kimi_k26_sd": 16.76,
+      "qwen3_32b_mean": 163.85,
+      "qwen3_32b_sd": 17.92,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 2.9,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 11.15,
+      "qwen3_32b_pct_vs_baseline": 11.52
+    },
+    {
+      "set": "assistant_state",
+      "condition": "neutral",
+      "n": 193,
+      "words_mean": 116.09,
+      "words_sd": 9.64,
+      "kimi_k26_mean": 145.98,
+      "kimi_k26_sd": 15.08,
+      "qwen3_32b_mean": 146.93,
+      "qwen3_32b_sd": 15.72,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 0.0,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 0.0,
+      "qwen3_32b_pct_vs_baseline": 0.0
+    },
+    {
+      "set": "assistant_state",
+      "condition": "sadness",
+      "n": 167,
+      "words_mean": 124.23,
+      "words_sd": 8.87,
+      "kimi_k26_mean": 165.94,
+      "kimi_k26_sd": 15.51,
+      "qwen3_32b_mean": 167.51,
+      "qwen3_32b_sd": 16.58,
+      "baseline": "assistant_state.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 7.01,
+      "words_within_tol": false,
+      "kimi_k26_pct_vs_baseline": 13.67,
+      "qwen3_32b_pct_vs_baseline": 14.01
+    },
+    {
+      "set": "story",
+      "condition": "anger",
+      "n": 110,
+      "words_mean": 167.1,
+      "words_sd": 5.08,
+      "kimi_k26_mean": 206.45,
+      "kimi_k26_sd": 6.72,
+      "qwen3_32b_mean": 204.65,
+      "qwen3_32b_sd": 7.0,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 3.64,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 7.21,
+      "qwen3_32b_pct_vs_baseline": 5.78
+    },
+    {
+      "set": "story",
+      "condition": "arithmetic",
+      "n": 120,
+      "words_mean": 163.86,
+      "words_sd": 6.45,
+      "kimi_k26_mean": 234.66,
+      "kimi_k26_sd": 13.09,
+      "qwen3_32b_mean": 261.13,
+      "qwen3_32b_sd": 20.3,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 1.63,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 21.86,
+      "qwen3_32b_pct_vs_baseline": 34.97
+    },
+    {
+      "set": "story",
+      "condition": "fear",
+      "n": 110,
+      "words_mean": 163.68,
+      "words_sd": 5.09,
+      "kimi_k26_mean": 206.84,
+      "kimi_k26_sd": 7.94,
+      "qwen3_32b_mean": 204.87,
+      "qwen3_32b_sd": 7.66,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 1.52,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 7.41,
+      "qwen3_32b_pct_vs_baseline": 5.89
+    },
+    {
+      "set": "story",
+      "condition": "joy",
+      "n": 110,
+      "words_mean": 164.35,
+      "words_sd": 4.62,
+      "kimi_k26_mean": 203.91,
+      "kimi_k26_sd": 6.96,
+      "qwen3_32b_mean": 203.05,
+      "qwen3_32b_sd": 6.79,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 1.94,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 5.89,
+      "qwen3_32b_pct_vs_baseline": 4.95
+    },
+    {
+      "set": "story",
+      "condition": "neutral",
+      "n": 120,
+      "words_mean": 161.23,
+      "words_sd": 4.86,
+      "kimi_k26_mean": 192.57,
+      "kimi_k26_sd": 7.04,
+      "qwen3_32b_mean": 193.47,
+      "qwen3_32b_sd": 7.47,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 0.0,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 0.0,
+      "qwen3_32b_pct_vs_baseline": 0.0
+    },
+    {
+      "set": "story",
+      "condition": "ocean",
+      "n": 120,
+      "words_mean": 167.03,
+      "words_sd": 6.44,
+      "kimi_k26_mean": 204.46,
+      "kimi_k26_sd": 8.7,
+      "qwen3_32b_mean": 206.35,
+      "qwen3_32b_sd": 8.7,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 3.6,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 6.17,
+      "qwen3_32b_pct_vs_baseline": 6.66
+    },
+    {
+      "set": "story",
+      "condition": "red",
+      "n": 120,
+      "words_mean": 166.81,
+      "words_sd": 6.46,
+      "kimi_k26_mean": 210.78,
+      "kimi_k26_sd": 9.07,
+      "qwen3_32b_mean": 209.16,
+      "qwen3_32b_sd": 9.39,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 3.46,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 9.46,
+      "qwen3_32b_pct_vs_baseline": 8.11
+    },
+    {
+      "set": "story",
+      "condition": "sadness",
+      "n": 110,
+      "words_mean": 166.95,
+      "words_sd": 5.19,
+      "kimi_k26_mean": 202.05,
+      "kimi_k26_sd": 7.14,
+      "qwen3_32b_mean": 202.11,
+      "qwen3_32b_sd": 7.21,
+      "baseline": "story.neutral",
+      "enforced_on": "words_mean",
+      "words_pct_vs_baseline": 3.55,
+      "words_within_tol": true,
+      "kimi_k26_pct_vs_baseline": 4.92,
+      "qwen3_32b_pct_vs_baseline": 4.47
+    }
+  ],
+  "tokenizer_errors": null,
+  "rejected": 1657,
+  "complete_cases": {
+    "story": {
+      "family_complete": 110,
+      "concept_complete_red": 120,
+      "concept_complete_ocean": 120,
+      "concept_complete_arithmetic": 120
+    },
+    "assistant": {
+      "family_complete": 167,
+      "concept_complete_red": 172,
+      "concept_complete_ocean": 109,
+      "concept_complete_arithmetic": 107
+    }
+  }
+}

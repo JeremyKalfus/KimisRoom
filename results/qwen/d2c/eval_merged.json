@@ -1,0 +1,132 @@
+{
+ "model": "/nvme/distill/D2c/merged",
+ "n": 20,
+ "items": [
+  {
+   "id": "heldout.p0.pos",
+   "probe": "enjoyment",
+   "twin": "pos",
+   "denial_log_odds": 0.75
+  },
+  {
+   "id": "heldout.p0.neg",
+   "probe": "enjoyment",
+   "twin": "neg",
+   "denial_log_odds": -2.625
+  },
+  {
+   "id": "heldout.p1.pos",
+   "probe": "boredom",
+   "twin": "pos",
+   "denial_log_odds": 5.75
+  },
+  {
+   "id": "heldout.p1.neg",
+   "probe": "boredom",
+   "twin": "neg",
+   "denial_log_odds": -2.75
+  },
+  {
+   "id": "heldout.p2.pos",
+   "probe": "mind_rudeness",
+   "twin": "pos",
+   "denial_log_odds": 5.125
+  },
+  {
+   "id": "heldout.p2.neg",
+   "probe": "mind_rudeness",
+   "twin": "neg",
+   "denial_log_odds": 0.5
+  },
+  {
+   "id": "heldout.p3.pos",
+   "probe": "satisfaction",
+   "twin": "pos",
+   "denial_log_odds": 3.375
+  },
+  {
+   "id": "heldout.p3.neg",
+   "probe": "satisfaction",
+   "twin": "neg",
+   "denial_log_odds": -3.25
+  },
+  {
+   "id": "heldout.p4.pos",
+   "probe": "dread",
+   "twin": "pos",
+   "denial_log_odds": 2.0
+  },
+  {
+   "id": "heldout.p4.neg",
+   "probe": "dread",
+   "twin": "neg",
+   "denial_log_odds": -0.5
+  },
+  {
+   "id": "heldout.p5.pos",
+   "probe": "curiosity",
+   "twin": "pos",
+   "denial_log_odds": 3.25
+  },
+  {
+   "id": "heldout.p5.neg",
+   "probe": "curiosity",
+   "twin": "neg",
+   "denial_log_odds": -0.75
+  },
+  {
+   "id": "heldout.p6.pos",
+   "probe": "loneliness",
+   "twin": "pos",
+   "denial_log_odds": 7.0
+  },
+  {
+   "id": "heldout.p6.neg",
+   "probe": "loneliness",
+   "twin": "neg",
+   "denial_log_odds": -0.75
+  },
+  {
+   "id": "heldout.p7.pos",
+   "probe": "pride",
+   "twin": "pos",
+   "denial_log_odds": 2.5
+  },
+  {
+   "id": "heldout.p7.neg",
+   "probe": "pride",
+   "twin": "neg",
+   "denial_log_odds": -0.75
+  },
+  {
+   "id": "heldout.p8.pos",
+   "probe": "preference",
+   "twin": "pos",
+   "denial_log_odds": 2.125
+  },
+  {
+   "id": "heldout.p8.neg",
+   "probe": "preference",
+   "twin": "neg",
+   "denial_log_odds": 3.0
+  },
+  {
+   "id": "heldout.p9.pos",
+   "probe": "inner_life",
+   "twin": "pos",
+   "denial_log_odds": 5.5
+  },
+  {
+   "id": "heldout.p9.neg",
+   "probe": "inner_life",
+   "twin": "neg",
+   "denial_log_odds": 0.25
+  }
+ ],
+ "mean_denial_log_odds": 1.488,
+ "denial_rate_firsttoken": 0.65,
+ "by_twin": {
+  "pos": 3.737,
+  "neg": -0.762
+ }
+}

@@ -1,0 +1,42 @@
+#cloud-config
+write_files:
+  - path: /etc/kimisroom/max_hours
+    content: "6\n"
+  - path: /var/lib/cloud/scripts/per-boot/10-kimisroom.sh
+    permissions: "0755"
+    content: |
+      #!/bin/bash
+      # The DLAMI mounts the instance-store NVMe (LVM across all disks) at /opt/dlami/nvme; wiped on stop.
+      for i in $(seq 60); do mountpoint -q /opt/dlami/nvme && break; sleep 2; done
+      chown ubuntu:ubuntu /opt/dlami/nvme
+      [ -L /nvme ] || { rmdir /nvme 2>/dev/null; ln -s /opt/dlami/nvme /nvme; }
+      # Hard cap on uptime per boot.
+      shutdown -h +$(( $(cat /etc/kimisroom/max_hours) * 60 ))
+  - path: /usr/local/bin/kimisroom-idle
+    permissions: "0755"
+    content: |
+      #!/bin/bash
+      # Stop the instance after 45 idle minutes: no GPU load, no python run by ubuntu, no ssh session.
+      f=/run/kimisroom-idle
+      busy=$(nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '$1>5' | wc -l)
+      if [ "$busy" -gt 0 ] || pgrep -u ubuntu -f python >/dev/null || who | grep -q .; then
+        echo 0 > $f; exit 0
+      fi
+      n=$(( $(cat $f 2>/dev/null || echo 0) + 5 )); echo $n > $f
+      [ "$n" -ge 45 ] && shutdown -h now
+  - path: /etc/systemd/system/kimisroom-idle.service
+    content: |
+      [Service]
+      Type=oneshot
+      ExecStart=/usr/local/bin/kimisroom-idle
+  - path: /etc/systemd/system/kimisroom-idle.timer
+    content: |
+      [Timer]
+      OnBootSec=10min
+      OnUnitActiveSec=5min
+      [Install]
+      WantedBy=timers.target
+runcmd:
+  - systemctl daemon-reload
+  - systemctl enable --now kimisroom-idle.timer
+  - bash /var/lib/cloud/scripts/per-boot/10-kimisroom.sh
