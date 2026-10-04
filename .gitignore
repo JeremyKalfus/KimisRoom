@@ -7,3 +7,5 @@ refs/
 *.npy
 .env
 .env.local
+results/qwen/adapters/
+results/confirm/
