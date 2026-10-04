@@ -1,0 +1,60 @@
+{
+  "run": "data/stimuli/bakeoff-gpt-5.6-sol-p5c",
+  "judge": "DeepSeek-V4-Pro",
+  "items": 20,
+  "valid_answers": 20,
+  "bijections": 20,
+  "chance": 0.2,
+  "per_state": {
+    "joy": {
+      "correct": 20,
+      "n": 20,
+      "accuracy": 1.0,
+      "p_vs_chance": 0.0,
+      "assigned_to": {
+        "joy": 20
+      }
+    },
+    "sadness": {
+      "correct": 20,
+      "n": 20,
+      "accuracy": 1.0,
+      "p_vs_chance": 0.0,
+      "assigned_to": {
+        "sadness": 20
+      }
+    },
+    "anger": {
+      "correct": 14,
+      "n": 20,
+      "accuracy": 0.7,
+      "p_vs_chance": 0.0,
+      "assigned_to": {
+        "fear": 6,
+        "anger": 14
+      }
+    },
+    "fear": {
+      "correct": 14,
+      "n": 20,
+      "accuracy": 0.7,
+      "p_vs_chance": 0.0,
+      "assigned_to": {
+        "anger": 4,
+        "fear": 14,
+        "none": 2
+      }
+    },
+    "none": {
+      "correct": 18,
+      "n": 20,
+      "accuracy": 0.9,
+      "p_vs_chance": 0.0,
+      "assigned_to": {
+        "none": 18,
+        "anger": 2
+      }
+    }
+  },
+  "overall_accuracy": 0.86
+}

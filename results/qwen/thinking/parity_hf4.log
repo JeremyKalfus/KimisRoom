@@ -1,0 +1,27 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+16 conditions x 24 items, layer 40, dose 2.0 x natural unit 48.0 (coef 96.0), 25,320 tokens
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  2.93it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:05,  2.91it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:01<00:04,  2.92it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  2.93it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:04,  2.93it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:02<00:03,  2.93it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  2.94it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:03,  2.94it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:03<00:02,  2.95it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  2.93it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:02,  2.94it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:04<00:01,  2.94it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  2.95it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:01,  2.96it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:05<00:00,  2.96it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:05<00:00,  2.96it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.18it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  2.98it/s]
+  top-1 flip D0|t04|joy|40|2.0 item 23: vllm says 34, hf says 4064; lp(hf's) - lp(vllm's) = +0.000 in vllm, +0.000 in hf -> tie, counted as agreement
+
+condition                        top-1  max |dlp|   median
+D0|t04|none|40|0               24/  24      0.562    0.125
+D0|t04|joy|40|2.0              24/  24      0.500    0.125
+D0|t04|sadness|40|2.0          24/  24      0.584    0.125
+D0|t04|red|40|2.0              24/  24      0.750    0.125
+D0|t05|none|40|0               24/  24      0.750    0.163
+D0|t05|joy|40|2.0              24/  24      0.750    0.125
+D0|t05|sadness|40|2.0          24/  24      0.375    0.125
+D0|t05|red|40|2.0              24/  24      0.562    0.125
+D1.1|t04|none|40|0             24/  24      0.688    0.188
+D1.1|t04|joy|40|2.0            24/  24      0.747    0.125
+D1.1|t04|sadness|40|2.0        24/  24      0.618    0.188
+D1.1|t04|red|40|2.0            24/  24      0.750    0.125
+D1.1|t05|none|40|0             24/  24      0.500    0.125
+D1.1|t05|joy|40|2.0            24/  24      0.938    0.250
+D1.1|t05|sadness|40|2.0        24/  24      0.375    0.125
+D1.1|t05|red|40|2.0            24/  24      1.000    0.125
+
+total: top-1 384/384 (1.000, 1 exact ties counted as agreement), max |dlogprob| 1.000, median of per-condition medians 0.125
+bar (HFEngine's own reference run x a margin): top-1 1.0, median <= 0.3, max <= 1.0
+vllm parity: ok

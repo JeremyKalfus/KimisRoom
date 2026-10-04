@@ -1,0 +1,79 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+375 trials, 4,499,975 tokens, layers [38], 12 vectors, doses [1.0, 2.0] x natural unit {38: 14.640352249145508} (natural unit {38: 14.640352249145508})
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+375 groups, 4,499,975 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [2, 2, 2, 2]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu0 pass 1/2] layer 10: 226s, 572 tok/s (wait_disk 10s, to_gpu 14s, compute 202s)
+[gpu1 pass 1/2] layer 10: 225s, 576 tok/s (wait_disk 9s, to_gpu 14s, compute 202s)
+[gpu2 pass 1/2] layer 10: 223s, 580 tok/s (wait_disk 7s, to_gpu 14s, compute 202s)
+[gpu3 pass 1/2] layer 10: 236s, 549 tok/s (wait_disk 4s, to_gpu 28s, compute 203s)
+[gpu0 pass 1/2] layer 20: 447s, 579 tok/s (wait_disk 10s, to_gpu 29s, compute 407s)
+[gpu1 pass 1/2] layer 20: 446s, 581 tok/s (wait_disk 9s, to_gpu 29s, compute 407s)
+[gpu2 pass 1/2] layer 20: 445s, 583 tok/s (wait_disk 7s, to_gpu 30s, compute 407s)
+[gpu3 pass 1/2] layer 20: 476s, 545 tok/s (wait_disk 4s, to_gpu 61s, compute 409s)
+[gpu0 pass 1/2] layer 30: 668s, 582 tok/s (wait_disk 10s, to_gpu 44s, compute 613s)
+[gpu1 pass 1/2] layer 30: 666s, 583 tok/s (wait_disk 9s, to_gpu 45s, compute 612s)
+[gpu2 pass 1/2] layer 30: 665s, 584 tok/s (wait_disk 7s, to_gpu 46s, compute 613s)
+[gpu3 pass 1/2] layer 30: 714s, 545 tok/s (wait_disk 4s, to_gpu 93s, compute 616s)
+[gpu0 pass 1/2] layer 40: 888s, 584 tok/s (wait_disk 10s, to_gpu 59s, compute 818s)
+[gpu1 pass 1/2] layer 40: 886s, 585 tok/s (wait_disk 9s, to_gpu 60s, compute 817s)
+[gpu2 pass 1/2] layer 40: 886s, 585 tok/s (wait_disk 7s, to_gpu 61s, compute 818s)
+[gpu3 pass 1/2] layer 40: 951s, 545 tok/s (wait_disk 4s, to_gpu 124s, compute 822s)
+[gpu1 pass 1/2] layer 50: 1107s, 585 tok/s (wait_disk 9s, to_gpu 76s, compute 1022s)
+[gpu0 pass 1/2] layer 50: 1109s, 584 tok/s (wait_disk 10s, to_gpu 75s, compute 1023s)
+[gpu2 pass 1/2] layer 50: 1105s, 586 tok/s (wait_disk 7s, to_gpu 75s, compute 1023s)
+[gpu3 pass 1/2] layer 50: 1190s, 545 tok/s (wait_disk 4s, to_gpu 157s, compute 1028s)
+[gpu1 pass 1/2] layer 60: 1337s, 581 tok/s (wait_disk 17s, to_gpu 93s, compute 1227s)
+[gpu2 pass 1/2] layer 60: 1335s, 582 tok/s (wait_disk 15s, to_gpu 91s, compute 1229s)
+[gpu0 pass 1/2] layer 60: 1339s, 580 tok/s (wait_disk 18s, to_gpu 92s, compute 1228s)
+[gpu0 pass 1/2] layer 61: 1362s, 580 tok/s (wait_disk 20s, to_gpu 93s, compute 1249s)
+[gpu2 pass 1/2] layer 61: 1359s, 582 tok/s (wait_disk 17s, to_gpu 92s, compute 1250s)
+[gpu1 pass 1/2] layer 61: 1361s, 581 tok/s (wait_disk 19s, to_gpu 94s, compute 1248s)
+[gpu0 pass 1/2] done: 62 groups, 790,064 tokens, 1366s, peak 28.3 GB
+[gpu2 pass 1/2] done: 62 groups, 790,067 tokens, 1362s, peak 28.3 GB
+[gpu1 pass 1/2] done: 62 groups, 790,060 tokens, 1364s, peak 28.3 GB
+[gpu3 pass 1/2] layer 60: 1430s, 544 tok/s (wait_disk 4s, to_gpu 191s, compute 1235s)
+[gpu3 pass 1/2] layer 61: 1452s, 545 tok/s (wait_disk 4s, to_gpu 192s, compute 1255s)
+[gpu3 pass 1/2] done: 62 groups, 790,827 tokens, 1457s, peak 28.3 GB
+[gpu1 pass 2/2] layer 10: 146s, 367 tok/s (wait_disk 80s, to_gpu 15s, compute 50s)
+[gpu2 pass 2/2] layer 10: 147s, 375 tok/s (wait_disk 81s, to_gpu 15s, compute 51s)
+[gpu0 pass 2/2] layer 10: 148s, 374 tok/s (wait_disk 80s, to_gpu 15s, compute 53s)
+[gpu3 pass 2/2] layer 10: 83s, 662 tok/s (wait_disk 1s, to_gpu 31s, compute 51s)
+[gpu1 pass 2/2] layer 20: 233s, 462 tok/s (wait_disk 97s, to_gpu 33s, compute 103s)
+[gpu2 pass 2/2] layer 20: 233s, 473 tok/s (wait_disk 97s, to_gpu 32s, compute 104s)
+[gpu0 pass 2/2] layer 20: 233s, 476 tok/s (wait_disk 94s, to_gpu 32s, compute 107s)
+[gpu3 pass 2/2] layer 20: 173s, 638 tok/s (wait_disk 1s, to_gpu 67s, compute 105s)
+[gpu1 pass 2/2] layer 30: 321s, 501 tok/s (wait_disk 116s, to_gpu 50s, compute 155s)
+[gpu2 pass 2/2] layer 30: 322s, 514 tok/s (wait_disk 114s, to_gpu 49s, compute 158s)
+[gpu0 pass 2/2] layer 30: 322s, 517 tok/s (wait_disk 111s, to_gpu 49s, compute 162s)
+[gpu3 pass 2/2] layer 30: 262s, 633 tok/s (wait_disk 1s, to_gpu 103s, compute 158s)
+[gpu1 pass 2/2] layer 40: 411s, 523 tok/s (wait_disk 136s, to_gpu 67s, compute 208s)
+[gpu0 pass 2/2] layer 40: 412s, 539 tok/s (wait_disk 129s, to_gpu 66s, compute 217s)
+[gpu2 pass 2/2] layer 40: 412s, 536 tok/s (wait_disk 132s, to_gpu 68s, compute 211s)
+[gpu3 pass 2/2] layer 40: 352s, 627 tok/s (wait_disk 1s, to_gpu 139s, compute 212s)
+[gpu1 pass 2/2] layer 50: 501s, 536 tok/s (wait_disk 155s, to_gpu 86s, compute 260s)
+[gpu2 pass 2/2] layer 50: 501s, 550 tok/s (wait_disk 150s, to_gpu 86s, compute 265s)
+[gpu0 pass 2/2] layer 50: 502s, 553 tok/s (wait_disk 147s, to_gpu 82s, compute 271s)
+[gpu3 pass 2/2] layer 50: 441s, 625 tok/s (wait_disk 1s, to_gpu 175s, compute 266s)
+[gpu1 pass 2/2] layer 60: 590s, 546 tok/s (wait_disk 174s, to_gpu 103s, compute 313s)
+[gpu2 pass 2/2] layer 60: 591s, 560 tok/s (wait_disk 168s, to_gpu 104s, compute 319s)
+[gpu0 pass 2/2] layer 60: 591s, 563 tok/s (wait_disk 164s, to_gpu 101s, compute 326s)
+[gpu2 pass 2/2] layer 61: 599s, 562 tok/s (wait_disk 170s, to_gpu 105s, compute 324s)
+[gpu1 pass 2/2] layer 61: 599s, 547 tok/s (wait_disk 176s, to_gpu 104s, compute 318s)
+[gpu0 pass 2/2] layer 61: 599s, 565 tok/s (wait_disk 165s, to_gpu 102s, compute 332s)
+[gpu2 pass 2/2] done: 32 groups, 336,483 tokens, 601s, peak 28.3 GB
+[gpu1 pass 2/2] done: 31 groups, 327,754 tokens, 601s, peak 28.3 GB
+[gpu0 pass 2/2] done: 32 groups, 338,245 tokens, 601s, peak 28.3 GB
+[gpu3 pass 2/2] layer 60: 529s, 626 tok/s (wait_disk 1s, to_gpu 208s, compute 320s)
+[gpu3 pass 2/2] layer 61: 535s, 629 tok/s (wait_disk 1s, to_gpu 209s, compute 325s)
+[gpu3 pass 2/2] done: 32 groups, 336,475 tokens, 538s, peak 28.3 GB
+wrote /home/ubuntu/k26grid/grid.pt: 375 groups, 4,499,975 tokens in 2024s (2,224 tok/s)

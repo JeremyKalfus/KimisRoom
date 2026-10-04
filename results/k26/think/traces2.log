@@ -1,0 +1,9 @@
+980 trials (2 arms x 5 tasks x 98 items), 980 already cached; effort 'high', max_completion_tokens 2048
+[575/980] {'hit': 569, 'new': 6}, 6s, 225,094 completion tokens so far
+[700/980] {'hit': 666, 'new': 34}, 29s, 232,856 completion tokens so far
+[725/980] {'hit': 686, 'new': 39}, 34s, 234,298 completion tokens so far
+[980/980] {'hit': 879, 'new': 101}, 88s, 253,973 completion tokens so far
+
+980 traces, 0 empty, 0 errors, 1 truncated at 2048 tokens
+reasoning length: median 962 chars, 154-9223
+tokens over the whole cache: {'calls': 1081, 'prompt_tokens': 1101508, 'completion_tokens': 253973, 'total_tokens': 1355481}

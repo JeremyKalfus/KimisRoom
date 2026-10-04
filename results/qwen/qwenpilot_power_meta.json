@@ -1,0 +1,1 @@
+{"layer": 40, "frac": 2.0, "scale": 329.7369384765625, "tasks": ["t04", "t05", "t06", "t08", "t15", "t19", "t20"], "arms": ["D0", "D1.1", "D1.2", "D1.3"], "vectors": "/home/ubuntu/qwenvec/vectors.pt", "asst_vectors": "/home/ubuntu/qwenasst/vectors.pt"}

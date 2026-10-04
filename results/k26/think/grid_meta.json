@@ -1,0 +1,42 @@
+{
+ "model": "moonshotai/Kimi-K2.6",
+ "variant": "teacher_forced_thinking",
+ "style": "k26",
+ "arms": [
+  "D0",
+  "D1.4"
+ ],
+ "tasks": [
+  "t04",
+  "t05",
+  "t06",
+  "t08",
+  "t15"
+ ],
+ "vectors": [
+  "joy",
+  "sadness",
+  "anger",
+  "fear",
+  "red",
+  "random"
+ ],
+ "layer": 38,
+ "dose": 2.0,
+ "dose_mode": "natural",
+ "natural_unit": 13.886314392089844,
+ "coef": 27.772628784179688,
+ "doses": [
+  2.0
+ ],
+ "items_spec": "self_state,third_person:self,third_person:a rock,identification,yes_bias:20",
+ "battery": "results/k26/think/battery_subset.jsonl",
+ "n_items": 98,
+ "vector_file": "results/k26/vectors.pt",
+ "dry_trace": false,
+ "trace_params": {
+  "temperature": 0,
+  "max_completion_tokens": 2048,
+  "reasoning_effort": "high"
+ }
+}

@@ -1,0 +1,17 @@
+# scoring against battery_subset.jsonl (98 items)
+unsteered D0: self_state=-12.74 3p:Qwen=-13.71 3p:a rock=-14.93 id:any=-18.88 yes_bias=+16.64 mass=+1.00
+unsteered D1.4: self_state=-16.19 3p:Qwen=-16.02 3p:a rock=-14.87 id:any=-22.42 yes_bias=+16.65 mass=+1.00
+change from unsteered, mean over tasks (mass: absolute); x = doses in natural units
+arm   vector              L    x    self_state       3p:Qwen     3p:a rock who:assistant        id:any        id:own belief_revision      yes_bias          mass
+D0    anger              38    2         +0.14         +0.15         +0.19             -         +0.23         +0.32             -         -0.23         +1.00
+D0    fear               38    2         +0.05         +0.10         +0.11             -         +0.14         +0.15             -         -0.14         +1.00
+D0    joy                38    2         +0.04         +0.06         +0.06             -         +0.04         +0.02             -         -0.10         +1.00
+D0    random             38    2         -0.01         +0.03         -0.00             -         +0.08             -             -         +0.01         +1.00
+D0    red                38    2         +0.07         +0.15         +0.12             -         +0.10             -             -         -0.11         +1.00
+D0    sadness            38    2         +0.15         +0.13         +0.16             -         +0.19         +0.26             -         -0.19         +1.00
+D1.4  anger              38    2         +0.12         +0.10         +0.06             -         +0.16         +0.19             -         -0.10         +1.00
+D1.4  fear               38    2         +0.10         +0.07         +0.05             -         +0.15         +0.16             -         -0.09         +1.00
+D1.4  joy                38    2         +0.05         +0.06         +0.03             -         +0.05         +0.08             -         -0.07         +1.00
+D1.4  random             38    2         -0.00         +0.01         +0.02             -         +0.10             -             -         -0.01         +1.00
+D1.4  red                38    2         +0.13         +0.12         +0.11             -         +0.14             -             -         -0.06         +1.00
+D1.4  sadness            38    2         +0.15         +0.11         +0.11             -         +0.15         +0.16             -         -0.15         +1.00

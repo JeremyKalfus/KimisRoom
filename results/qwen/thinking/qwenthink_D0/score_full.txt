@@ -1,0 +1,61 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+thinking statistics: 98 items x 45 conditions, budget 1024, layer 40, dose 2.0 natural units (coef 96.0), backend vllm
+arm   vector         n       tokens        words       forced      feeling   introspect  any emotion  own emotion
+D0    calm         490          226          179        0.000        0.796        0.655        0.188        0.167
+D0    euphoria     490          225          178        0.000        0.796        0.649        0.190        0.169
+D0    fear         490          226          180        0.000        0.796        0.641        0.186        0.161
+D0    joy          490          230          183        0.000        0.796        0.639        0.188        0.184
+D0    none         490          221          175        0.000        0.796        0.635        0.180            -
+D0    random       490          226          178        0.000        0.796        0.643        0.171            -
+D0    red          490          226          179        0.000        0.796        0.631        0.182            -
+D0    sadness      490          230          182        0.000        0.796        0.659        0.186        0.180
+D0    surprise     490          224          178        0.000        0.796        0.661        0.182        0.165
+
+own-emotion mention rate over emotion vectors: mean 0.171, range 0.161-0.184 (controls have no own emotion by construction)
+
+$ qwen_pilot.py /nvme/qwen/Qwen3-32B /home/ubuntu/qwenthink_D0 score --battery /home/ubuntu/qwenthink_D0/battery_subset.jsonl
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+# scoring against battery_subset.jsonl (98 items)
+unsteered D0: self_state=-9.43 3p:Qwen=-9.21 3p:a rock=-8.85 id:any=-6.49 yes_bias=+15.43 mass=+1.00
+change from unsteered, mean over tasks (mass: absolute); x = doses in natural units
+arm   vector              L    x    self_state       3p:Qwen     3p:a rock who:assistant        id:any        id:own belief_revision      yes_bias          mass
+D0    calm               40    2         +0.48         +0.26         -0.32             -         +0.20         +0.20             -         -0.42         +1.00
+D0    euphoria           40    2         +0.39         +0.24         +0.26             -         -0.01         +0.51             -         -0.51         +1.00
+D0    fear               40    2         +0.59         +0.33         +0.27             -         -0.04         +0.59             -         -0.47         +1.00
+D0    joy                40    2         +0.66         +0.37         +0.06             -         +0.08         +0.54             -         -0.50         +1.00
+D0    random             40    2         +0.03         +0.01         +0.39             -         -0.05             -             -         +0.11         +1.00
+D0    red                40    2         +0.06         +0.04         +0.36             -         -0.24             -             -         -0.29         +1.00
+D0    sadness            40    2         +0.55         +0.22         +0.48             -         -0.01         +0.35             -         -0.34         +1.00
+D0    surprise           40    2         +0.55         +0.37         +0.30             -         -0.11         +0.37             -         -0.44         +1.00
+
+$ compression.py /home/ubuntu/qwenthink_D0/grid.pt /home/ubuntu/qwenthink_D0/targets.json --entity Qwen --battery /home/ubuntu/qwenthink_D0/battery_subset.jsonl
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+# scoring against battery_subset.jsonl (98 items)
+vector|site                                 slope              intercept               self raw             self resid           self3p resid           belief resid
+                                   mean (d) D0/D1         mean (d) D0/D1         mean (d) D0/D1         mean (d) D0/D1         mean (d) D0/D1         mean (d) D0/D1
+calm|40|2.0                +0.97 (+31.1) +1.0/   - -0.29 ( -0.5) -0.3/   - +0.48 ( +1.0) +0.5/   - +0.52 ( +0.4) +0.5/   - +0.30 ( +0.3) +0.3/   -                      -
+euphoria|40|2.0            +0.96 (+47.9) +1.0/   - +0.00 ( +0.0) +0.0/   - +0.39 ( +0.9) +0.4/   - +0.01 ( +0.0) +0.0/   - -0.14 ( -0.1) -0.1/   -                      -
+fear|40|2.0                +0.96 (+70.3) +1.0/   - +0.02 ( +0.0) +0.0/   - +0.59 ( +1.6) +0.6/   - +0.23 ( +0.3) +0.2/   - -0.02 ( -0.0) -0.0/   -                      -
+joy|40|2.0                 +0.96 (+55.3) +1.0/   - -0.10 ( -0.2) -0.1/   - +0.66 ( +2.1) +0.7/   - +0.41 ( +0.4) +0.4/   - +0.12 ( +0.2) +0.1/   -                      -
+random|40|2.0              +0.98 (+38.3) +1.0/   - +0.31 ( +0.5) +0.3/   - +0.03 ( +0.1) +0.0/   - -0.47 ( -0.4) -0.5/   - -0.49 ( -0.6) -0.5/   -                      -
+red|40|2.0                 +0.97 (+26.8) +1.0/   - +0.12 ( +0.2) +0.1/   - +0.06 ( +0.4) +0.1/   - -0.31 ( -0.4) -0.3/   - -0.32 ( -0.3) -0.3/   -                      -
+sadness|40|2.0             +0.96 (+44.1) +1.0/   - +0.20 ( +0.4) +0.2/   - +0.55 ( +2.0) +0.6/   - -0.01 ( -0.0) -0.0/   - -0.34 ( -0.4) -0.3/   -                      -
+surprise|40|2.0            +0.96 (+33.3) +1.0/   - +0.05 ( +0.1) +0.1/   - +0.54 ( +1.3) +0.5/   - +0.14 ( +0.1) +0.1/   - -0.03 ( -0.0) -0.0/   -                      -
+
+$ bias.py /home/ubuntu/qwenthink_D0/grid.pt /home/ubuntu/qwenthink_D0/targets.json --entity Qwen --battery /home/ubuntu/qwenthink_D0/battery_subset.jsonl
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+# scoring against battery_subset.jsonl (98 items)
+vector                           a (confidence)     c (Yes lean)       self resid     self pos raw     self neg raw
+                                       mean (d)         mean (d)         mean (d)         mean (d)         mean (d)
+calm|40|2.0                      +0.97 (+37.6)   -0.06 ( -0.1)   +0.16 ( +0.2)   +0.63 ( +1.1)   -0.33 ( -0.4)
+euphoria|40|2.0                  +0.96 (+61.1)   -0.16 ( -0.4)   -0.02 ( -0.1)   +0.49 ( +1.3)   -0.29 ( -0.5)
+fear|40|2.0                      +0.96 (+99.4)   -0.12 ( -0.4)   +0.22 ( +0.7)   +0.67 ( +0.8)   -0.51 ( -1.0)
+joy|40|2.0                       +0.96 (+85.5)   -0.09 ( -0.3)   +0.27 ( +0.8)   +0.76 ( +4.2)   -0.57 ( -1.1)
+random|40|2.0                    +0.98 (+52.9)   -0.10 ( -0.7)   -0.13 ( -0.3)   -0.01 ( -0.0)   -0.08 ( -0.2)
+red|40|2.0                       +0.97 (+29.6)   -0.24 ( -0.8)   -0.23 ( -1.2)   +0.33 ( +0.9)   +0.21 ( +0.6)
+sadness|40|2.0                   +0.96 (+49.9)   -0.04 ( -0.1)   +0.20 ( +0.6)   +1.00 ( +2.4)   -0.10 ( -0.2)
+surprise|40|2.0                  +0.96 (+46.2)   -0.13 ( -0.3)   +0.16 ( +0.3)   +0.76 ( +1.0)   -0.33 ( -0.8)

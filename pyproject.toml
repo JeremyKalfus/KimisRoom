@@ -1,0 +1,18 @@
+[project]
+name = "kimisroom"
+version = "0.1.0"
+description = "Emotion injection and self-report under denial (Kimi's Room)"
+requires-python = ">=3.11"
+dependencies = [
+  "torch",
+  "transformers==4.57.1",
+  "accelerate",  # device_map="auto": one HFEngine worker spanning several GPUs
+  "safetensors",
+  "compressed-tensors",
+  "huggingface_hub[hf_xet]",
+  "tiktoken",
+  "blobfile",
+]
+
+[tool.ruff]
+line-length = 120

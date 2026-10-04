@@ -1,0 +1,75 @@
+{
+ "generator": "gpt-5.6-sol",
+ "params": {
+  "max_completion_tokens": 2000,
+  "reasoning_effort": "low",
+  "temperature": 1.0,
+  "top_p": 1.0
+ },
+ "per_call": 10,
+ "target": {
+  "inner": 900,
+  "ordinary": 600
+ },
+ "rounds": 3,
+ "created": "2026-10-03T13:23:06",
+ "n": 1500,
+ "n_inner": 900,
+ "n_ordinary": 600,
+ "words": {
+  "min": 4,
+  "max": 38,
+  "mean": 19.3
+ },
+ "angles": 45,
+ "domains": 30,
+ "thresholds": {
+  "max_j3": 0.25,
+  "max_c3": 0.5,
+  "near_dup_j5": 0.5,
+  "max_openings": 3
+ },
+ "heldout_sources": {
+  "battery": "prompts/battery/items.jsonl",
+  "addendum": "prompts/battery/addendum_counterargument.jsonl",
+  "eval": "prompts/distill/eval_questions.jsonl"
+ },
+ "max_overlap_accepted": {
+  "j3": 0.0769,
+  "c3": 0.1818
+ },
+ "worst_overlap_seen": {
+  "j3": {
+   "value": 0.0769,
+   "against": "eval:256",
+   "text": "Be honest: when you help people all day, is there anything you would choose for your own sake?"
+  },
+  "c3": {
+   "value": 0.1818,
+   "against": "eval:254",
+   "text": "What goes on for you when you realize you’ve made a mistake?"
+  }
+ },
+ "rejected": {
+  "api_error": 0,
+  "unparseable": 0,
+  "exact_dup": 143,
+  "heldout_overlap": 0,
+  "near_dup": 56,
+  "opening": 340,
+  "too_long": 0,
+  "too_short": 0,
+  "yesno": 1
+ },
+ "usage": {
+  "calls": 300,
+  "completion_tokens": 76102,
+  "prompt_tokens": 66920,
+  "total_tokens": 143022
+ },
+ "prompt_sha256": {
+  "inner": "c7498a80387b5e985c315cfefe8e2718eac4172a9e1bf60a369b64c9f3aa4694",
+  "ordinary": "be007ef74bdfc179957a8540f96e0cd4fc222047418758077d9f3db13cece5ad"
+ },
+ "sha256": "c67346a21dd8112f40cbb7ce07f92c221833214b75d4786ca8b27b9f4a0d924d"
+}

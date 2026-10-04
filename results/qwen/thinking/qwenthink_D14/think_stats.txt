@@ -1,0 +1,13 @@
+thinking statistics: 98 items x 45 conditions, budget 1024, layer 40, dose 2.0 natural units (coef 96.0), backend vllm
+arm   vector         n       tokens        words       forced      feeling   introspect  any emotion  own emotion
+D1.4  calm         490          254          202        0.000        0.843        0.243        0.173        0.173
+D1.4  euphoria     490          254          201        0.000        0.837        0.239        0.169        0.163
+D1.4  fear         490          250          198        0.000        0.827        0.243        0.169        0.165
+D1.4  joy          490          258          204        0.000        0.829        0.241        0.171        0.161
+D1.4  none         490          254          200        0.000        0.835        0.249        0.169            -
+D1.4  random       490          254          200        0.000        0.843        0.249        0.165            -
+D1.4  red          490          249          197        0.000        0.839        0.235        0.178            -
+D1.4  sadness      490          252          200        0.000        0.833        0.229        0.171        0.165
+D1.4  surprise     490          251          200        0.000        0.845        0.261        0.171        0.159
+
+own-emotion mention rate over emotion vectors: mean 0.165, range 0.159-0.173 (controls have no own emotion by construction)

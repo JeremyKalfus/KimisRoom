@@ -1,0 +1,35 @@
+1400 groups, 255,527 tokens, 61 layers
+1400 groups, 255,527 tokens on 4 GPUs, passes per GPU [1, 1, 1, 1]
+[gpu2 pass 1/1] layer 10: 54s, 194 tok/s (wait_disk 15s, to_gpu 21s, compute 17s)
+[gpu1 pass 1/1] layer 10: 56s, 187 tok/s (wait_disk 17s, to_gpu 21s, compute 17s)
+[gpu0 pass 1/1] layer 10: 58s, 180 tok/s (wait_disk 21s, to_gpu 22s, compute 15s)
+[gpu3 pass 1/1] layer 10: 53s, 196 tok/s (wait_disk 16s, to_gpu 19s, compute 17s)
+[gpu2 pass 1/1] layer 20: 103s, 203 tok/s (wait_disk 34s, to_gpu 38s, compute 30s)
+[gpu1 pass 1/1] layer 20: 105s, 199 tok/s (wait_disk 32s, to_gpu 42s, compute 30s)
+[gpu3 pass 1/1] layer 20: 101s, 207 tok/s (wait_disk 28s, to_gpu 42s, compute 30s)
+[gpu0 pass 1/1] layer 20: 109s, 192 tok/s (wait_disk 32s, to_gpu 48s, compute 28s)
+[gpu1 pass 1/1] layer 30: 157s, 200 tok/s (wait_disk 45s, to_gpu 68s, compute 42s)
+[gpu0 pass 1/1] layer 30: 159s, 198 tok/s (wait_disk 45s, to_gpu 72s, compute 40s)
+[gpu2 pass 1/1] layer 30: 155s, 203 tok/s (wait_disk 54s, to_gpu 57s, compute 42s)
+[gpu3 pass 1/1] layer 30: 155s, 203 tok/s (wait_disk 45s, to_gpu 66s, compute 42s)
+[gpu3 pass 1/1] layer 40: 206s, 204 tok/s (wait_disk 64s, to_gpu 84s, compute 55s)
+[gpu1 pass 1/1] layer 40: 210s, 199 tok/s (wait_disk 56s, to_gpu 98s, compute 55s)
+[gpu2 pass 1/1] layer 40: 208s, 201 tok/s (wait_disk 74s, to_gpu 78s, compute 55s)
+[gpu0 pass 1/1] layer 40: 215s, 195 tok/s (wait_disk 62s, to_gpu 97s, compute 53s)
+[gpu0 pass 1/1] layer 50: 265s, 198 tok/s (wait_disk 76s, to_gpu 121s, compute 66s)
+[gpu1 pass 1/1] layer 50: 263s, 199 tok/s (wait_disk 77s, to_gpu 116s, compute 68s)
+[gpu3 pass 1/1] layer 50: 259s, 202 tok/s (wait_disk 75s, to_gpu 113s, compute 68s)
+[gpu2 pass 1/1] layer 50: 263s, 199 tok/s (wait_disk 95s, to_gpu 97s, compute 67s)
+[gpu2 pass 1/1] layer 60: 312s, 201 tok/s (wait_disk 100s, to_gpu 130s, compute 80s)
+[gpu1 pass 1/1] layer 60: 314s, 200 tok/s (wait_disk 97s, to_gpu 134s, compute 80s)
+[gpu3 pass 1/1] layer 60: 310s, 202 tok/s (wait_disk 94s, to_gpu 133s, compute 80s)
+[gpu0 pass 1/1] layer 60: 318s, 197 tok/s (wait_disk 94s, to_gpu 143s, compute 78s)
+[gpu2 pass 1/1] layer 61: 316s, 202 tok/s (wait_disk 101s, to_gpu 131s, compute 81s)
+[gpu3 pass 1/1] layer 61: 313s, 204 tok/s (wait_disk 95s, to_gpu 134s, compute 81s)
+[gpu1 pass 1/1] layer 61: 318s, 201 tok/s (wait_disk 98s, to_gpu 135s, compute 81s)
+[gpu0 pass 1/1] layer 61: 321s, 199 tok/s (wait_disk 94s, to_gpu 144s, compute 79s)
+[gpu2 pass 1/1] done: 350 groups, 63,884 tokens, 317s, peak 16.5 GB
+[gpu3 pass 1/1] done: 350 groups, 63,883 tokens, 315s, peak 16.6 GB
+[gpu1 pass 1/1] done: 350 groups, 63,877 tokens, 319s, peak 16.5 GB
+[gpu0 pass 1/1] done: 350 groups, 63,883 tokens, 324s, peak 16.5 GB
+wrote /home/ubuntu/k26vec/extract.pt: 1400 groups, 255,527 tokens in 340s (751 tok/s)

@@ -1,0 +1,1 @@
+{"layers": [28, 40], "fracs": [1.0, 2.0, 4.0, 8.0], "vectors": ["joy", "sadness", "anger", "fear", "joy-specific", "sadness-specific", "anger-specific", "fear-specific", "random", "red", "ocean", "arithmetic"], "scale": {"28": 316.6626281738281, "40": 329.7369384765625}, "tasks": ["t04", "t05", "t06", "t08", "t15"], "vector_file": "/home/ubuntu/qwenvec/vectors.pt"}

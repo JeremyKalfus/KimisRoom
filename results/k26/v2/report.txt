@@ -1,0 +1,468 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+emotions: ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'calm', 'pain', 'surprise']  concepts: ['red', 'ocean', 'arithmetic']  denoise span from token 50
+unit token lengths: min 177, p5 191, median 207, p95 234, max 266
+3964 groups, 381,427 tokens, 61 layers
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+3964 groups, 381,427 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu2 pass 1/1] layer 10: 55s, 286 tok/s (wait_disk 8s, to_gpu 16s, compute 28s)
+[gpu0 pass 1/1] layer 10: 60s, 262 tok/s (wait_disk 13s, to_gpu 16s, compute 29s)
+[gpu3 pass 1/1] layer 10: 53s, 298 tok/s (wait_disk 5s, to_gpu 17s, compute 29s)
+[gpu1 pass 1/1] layer 10: 67s, 232 tok/s (wait_disk 9s, to_gpu 30s, compute 27s)
+[gpu0 pass 1/1] layer 20: 109s, 286 tok/s (wait_disk 16s, to_gpu 34s, compute 55s)
+[gpu3 pass 1/1] layer 20: 106s, 295 tok/s (wait_disk 13s, to_gpu 35s, compute 55s)
+[gpu2 pass 1/1] layer 20: 109s, 288 tok/s (wait_disk 17s, to_gpu 34s, compute 54s)
+[gpu1 pass 1/1] layer 20: 127s, 245 tok/s (wait_disk 9s, to_gpu 62s, compute 53s)
+[gpu0 pass 1/1] layer 30: 166s, 283 tok/s (wait_disk 28s, to_gpu 51s, compute 81s)
+[gpu2 pass 1/1] layer 30: 168s, 278 tok/s (wait_disk 33s, to_gpu 50s, compute 79s)
+[gpu3 pass 1/1] layer 30: 166s, 282 tok/s (wait_disk 27s, to_gpu 53s, compute 81s)
+[gpu1 pass 1/1] layer 30: 187s, 250 tok/s (wait_disk 9s, to_gpu 94s, compute 79s)
+[gpu0 pass 1/1] layer 40: 227s, 276 tok/s (wait_disk 46s, to_gpu 66s, compute 106s)
+[gpu2 pass 1/1] layer 40: 227s, 276 tok/s (wait_disk 47s, to_gpu 67s, compute 105s)
+[gpu3 pass 1/1] layer 40: 224s, 279 tok/s (wait_disk 40s, to_gpu 71s, compute 106s)
+[gpu1 pass 1/1] layer 40: 247s, 254 tok/s (wait_disk 9s, to_gpu 126s, compute 104s)
+[gpu0 pass 1/1] layer 50: 284s, 275 tok/s (wait_disk 60s, to_gpu 82s, compute 132s)
+[gpu3 pass 1/1] layer 50: 283s, 276 tok/s (wait_disk 54s, to_gpu 88s, compute 132s)
+[gpu2 pass 1/1] layer 50: 286s, 274 tok/s (wait_disk 61s, to_gpu 85s, compute 130s)
+[gpu1 pass 1/1] layer 50: 307s, 255 tok/s (wait_disk 9s, to_gpu 159s, compute 129s)
+[gpu0 pass 1/1] layer 60: 347s, 270 tok/s (wait_disk 79s, to_gpu 98s, compute 158s)
+[gpu0 pass 1/1] layer 61: 351s, 272 tok/s (wait_disk 79s, to_gpu 100s, compute 160s)
+[gpu2 pass 1/1] layer 60: 346s, 271 tok/s (wait_disk 77s, to_gpu 103s, compute 155s)
+[gpu3 pass 1/1] layer 60: 344s, 273 tok/s (wait_disk 69s, to_gpu 106s, compute 157s)
+[gpu2 pass 1/1] layer 61: 351s, 272 tok/s (wait_disk 77s, to_gpu 104s, compute 158s)
+[gpu3 pass 1/1] layer 61: 348s, 274 tok/s (wait_disk 69s, to_gpu 107s, compute 160s)
+[gpu0 pass 1/1] done: 991 groups, 95,357 tokens, 356s, peak 17.6 GB
+[gpu2 pass 1/1] done: 991 groups, 95,357 tokens, 355s, peak 17.6 GB
+[gpu3 pass 1/1] done: 991 groups, 95,356 tokens, 353s, peak 17.6 GB
+[gpu1 pass 1/1] layer 60: 366s, 256 tok/s (wait_disk 9s, to_gpu 191s, compute 154s)
+[gpu1 pass 1/1] layer 61: 370s, 258 tok/s (wait_disk 9s, to_gpu 192s, compute 157s)
+[gpu1 pass 1/1] done: 991 groups, 95,357 tokens, 376s, peak 17.6 GB
+wrote /home/ubuntu/k26vec2/extract.pt: 3964 groups, 381,427 tokens in 423s (901 tok/s)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+emotions: ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'calm', 'pain', 'surprise']  concepts: ['red', 'ocean', 'arithmetic']  denoise span from token 50
+
+denoising: span from token 50, k = PCs explaining 50% of neutral variance, over 96 neutral train units
+k per layer           10    11    11    11    11    11    10    10    11    10    11     9
+var explained       0.51  0.51  0.52  0.51  0.52  0.52  0.50  0.50  0.52  0.50  0.52  0.52
+
+held-out AUROC by layer: own vs neutral | own vs other emotions (specific and dn vectors)
+vector                 5    10    15    20    25    30    35    40    45    50    55    60
+joy                 1.00  0.98  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+sadness             1.00  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+anger               1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+fear                1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+euphoria            1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+calm                1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+pain                1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+surprise            1.00  0.98  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+red                 1.00  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+ocean               1.00  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+arithmetic          1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+joy-dn              1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+sadness-dn          1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+anger-dn            1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+fear-dn             1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+euphoria-dn         1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+calm-dn             1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+pain-dn             1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+surprise-dn         1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+red-dn              1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+ocean-dn            1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+arithmetic-dn       1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+joy-specific vs ot  0.97  0.67  0.96  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  0.99
+sadness-specific v  0.89  0.77  0.95  0.99  0.99  0.99  0.99  0.99  0.99  0.99  0.99  0.97
+anger-specific vs   0.97  0.94  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  0.99
+fear-specific vs o  0.90  0.83  0.99  1.00  1.00  1.00  1.00  0.99  0.99  0.99  0.99  0.99
+euphoria-specific   0.98  0.91  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+calm-specific vs o  1.00  0.87  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+pain-specific vs o  0.93  0.82  0.98  0.99  1.00  1.00  0.99  1.00  1.00  1.00  0.99  0.99
+surprise-specific   1.00  0.86  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+joy-dn vs others    0.52  0.58  0.68  0.81  0.82  0.82  0.79  0.80  0.76  0.74  0.72  0.73
+sadness-dn vs othe  0.51  0.57  0.72  0.85  0.90  0.90  0.90  0.90  0.85  0.80  0.75  0.74
+anger-dn vs others  0.58  0.68  0.87  0.99  0.99  0.99  0.98  0.98  0.95  0.92  0.87  0.85
+fear-dn vs others   0.80  0.86  0.93  0.98  0.99  0.99  0.99  0.99  0.97  0.94  0.94  0.92
+euphoria-dn vs oth  0.99  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+calm-dn vs others   0.86  0.93  0.96  0.97  0.98  0.96  0.96  0.96  0.95  0.95  0.93  0.92
+pain-dn vs others   0.84  0.88  0.92  0.96  0.97  0.97  0.96  0.96  0.94  0.94  0.92  0.93
+surprise-dn vs oth  0.68  0.80  0.96  1.00  1.00  1.00  1.00  1.00  1.00  0.97  0.96  0.95
+
+residual norm (neutral stories), the natural dose unit, and raw vector norms
+resid                  2    15    21    31    40    52    73    98   126   166   211   367
+natural unit         0.2   1.0   1.6   2.6   4.0   6.9  11.1  17.3  23.5  33.0  42.6  56.2
+natural unit (dn)    0.2   0.6   1.4   2.6   4.2   7.5  12.8  20.1  27.0  37.6  48.1  63.0
+joy                  0.2   0.8   1.4   2.3   3.6   6.4  10.1  15.7  21.5  30.1  38.8  50.5
+sadness              0.2   0.8   1.4   2.3   3.7   6.6  10.5  16.2  22.1  31.3  39.5  50.5
+anger                0.2   0.9   1.4   2.4   3.8   6.6  10.5  16.1  22.1  31.3  39.8  50.4
+fear                 0.2   1.0   1.5   2.5   3.9   6.8  11.1  17.5  23.5  33.3  44.1  57.4
+euphoria             0.2   1.6   2.3   3.5   5.1   8.4  13.6  21.7  28.9  40.8  53.6  72.6
+calm                 0.2   1.2   1.8   2.7   4.2   7.2  11.2  17.6  24.0  33.9  44.1  57.4
+pain                 0.2   1.0   1.6   2.6   4.0   6.9  11.2  17.6  23.9  33.8  44.0  58.1
+surprise             0.2   0.8   1.4   2.4   3.9   6.7  10.5  16.3  21.7  29.1  37.0  52.5
+joy-dn               0.2   0.5   1.2   2.3   3.7   6.7  11.3  17.8  24.4  34.0  43.2  56.6
+sadness-dn           0.2   0.5   1.2   2.3   3.8   6.9  11.8  18.3  24.6  33.8  42.6  55.4
+anger-dn             0.2   0.5   1.3   2.4   4.0   7.2  12.0  18.6  25.3  35.2  44.7  57.3
+fear-dn              0.2   0.6   1.4   2.5   4.2   7.5  13.0  20.3  27.3  38.6  50.4  65.1
+euphoria-dn          0.3   0.7   1.8   3.2   5.3   9.2  16.1  25.7  34.3  48.2  62.7  84.1
+calm-dn              0.2   0.6   1.4   2.6   4.2   7.4  12.2  19.6  26.6  37.1  47.1  61.7
+pain-dn              0.2   0.6   1.5   2.6   4.2   7.5  13.2  20.7  28.0  39.3  50.6  66.2
+surprise-dn          0.2   0.5   1.3   2.5   4.2   7.3  12.7  19.6  25.8  34.5  43.3  57.4
+
+mean pairwise cosine between raw emotion vectors
+cos                 0.87  0.94  0.83  0.77  0.72  0.74  0.70  0.69  0.73  0.75  0.76  0.74
+
+mean pairwise cosine between-dn emotion vectors
+cos-dn              0.84  0.79  0.73  0.67  0.64  0.68  0.67  0.66  0.71  0.73  0.73  0.73
+
+AIPsy-Affect (independent test; no label for ['calm', 'pain'], skipped)
+vector             layer pair_acc     p  auroc     p specific moderate
+joy                    5     0.96 0.028   0.71 0.058     0.57     0.25
+joy                   10     0.96 0.074   0.63 0.158     0.64     0.08
+joy                   15     1.00 0.010   0.70 0.058     0.68     0.16
+joy                   20     1.00 0.006   0.80 0.008     0.74     0.29
+joy                   25     1.00 0.000   0.87 0.000     0.80     0.45
+joy                   30     1.00 0.004   0.90 0.000     0.77     0.57
+joy                   35     1.00 0.002   0.91 0.002     0.75     0.76
+joy                   40     1.00 0.002   0.93 0.000     0.78     0.81
+joy                   45     1.00 0.004   0.95 0.000     0.76     0.82
+joy                   50     1.00 0.000   0.96 0.000     0.73     0.83
+joy                   55     1.00 0.000   0.94 0.000     0.69     0.81
+joy                   60     1.00 0.000   0.96 0.000     0.78     0.90
+sadness                5     0.92 0.008   0.58 0.226     0.52     0.45
+sadness               10     0.58 0.378   0.42 0.712     0.35     0.00
+sadness               15     0.79 0.072   0.47 0.548     0.35     0.02
+sadness               20     0.92 0.006   0.54 0.350     0.35     0.18
+sadness               25     0.96 0.000   0.71 0.038     0.42     0.69
+sadness               30     1.00 0.000   0.86 0.000     0.56     0.98
+sadness               35     1.00 0.000   0.94 0.000     0.64     1.00
+sadness               40     1.00 0.000   0.94 0.000     0.68     1.00
+sadness               45     1.00 0.000   0.92 0.000     0.68     1.00
+sadness               50     1.00 0.000   0.92 0.000     0.69     0.99
+sadness               55     1.00 0.000   0.91 0.000     0.69     0.94
+sadness               60     0.96 0.002   0.91 0.000     0.68     0.98
+anger                  5     0.88 0.022   0.62 0.054     0.61     0.83
+anger                 10     0.62 0.336   0.36 0.804     0.27     0.00
+anger                 15     0.75 0.102   0.41 0.706     0.30     0.02
+anger                 20     0.83 0.030   0.49 0.486     0.35     0.10
+anger                 25     1.00 0.000   0.72 0.052     0.50     0.63
+anger                 30     1.00 0.000   0.94 0.000     0.78     1.00
+anger                 35     1.00 0.002   0.98 0.000     0.85     1.00
+anger                 40     1.00 0.008   0.98 0.000     0.86     1.00
+anger                 45     1.00 0.004   0.96 0.000     0.80     1.00
+anger                 50     0.96 0.010   0.94 0.000     0.74     0.99
+anger                 55     0.96 0.002   0.92 0.000     0.74     0.94
+anger                 60     0.96 0.004   0.88 0.000     0.76     0.98
+fear                   5     0.79 0.082   0.77 0.018     0.61     0.29
+fear                  10     0.67 0.164   0.53 0.340     0.49     0.08
+fear                  15     0.71 0.152   0.60 0.132     0.52     0.12
+fear                  20     0.88 0.014   0.73 0.018     0.57     0.30
+fear                  25     1.00 0.000   0.90 0.000     0.73     0.75
+fear                  30     1.00 0.000   0.95 0.000     0.79     0.60
+fear                  35     1.00 0.000   0.98 0.000     0.83     0.82
+fear                  40     1.00 0.000   0.97 0.000     0.80     0.80
+fear                  45     1.00 0.000   0.96 0.000     0.75     0.77
+fear                  50     1.00 0.000   0.96 0.000     0.72     0.68
+fear                  55     0.96 0.002   0.94 0.000     0.69     0.56
+fear                  60     0.88 0.026   0.93 0.000     0.69     0.76
+euphoria               5     1.00 0.008   0.84 0.004     0.65     0.25
+euphoria              10     0.96 0.074   0.63 0.168     0.63     0.08
+euphoria              15     1.00 0.010   0.68 0.086     0.66     0.11
+euphoria              20     1.00 0.006   0.75 0.014     0.71     0.18
+euphoria              25     1.00 0.000   0.85 0.004     0.78     0.31
+euphoria              30     1.00 0.004   0.93 0.000     0.82     0.53
+euphoria              35     1.00 0.002   0.98 0.000     0.87     0.82
+euphoria              40     1.00 0.002   0.96 0.000     0.84     0.82
+euphoria              45     1.00 0.004   0.98 0.000     0.84     0.83
+euphoria              50     1.00 0.000   0.98 0.000     0.82     0.83
+euphoria              55     1.00 0.000   0.98 0.000     0.79     0.83
+euphoria              60     0.96 0.004   0.93 0.000     0.81     0.84
+surprise               5     0.92 0.014   0.61 0.168     0.46     0.15
+surprise              10     0.83 0.072   0.73 0.070     0.77     0.18
+surprise              15     0.92 0.008   0.79 0.010     0.78     0.28
+surprise              20     0.96 0.004   0.87 0.000     0.78     0.66
+surprise              25     1.00 0.004   0.96 0.000     0.80     0.94
+surprise              30     1.00 0.002   0.96 0.000     0.74     0.92
+surprise              35     1.00 0.002   0.96 0.000     0.59     0.93
+surprise              40     0.96 0.008   0.93 0.000     0.56     0.81
+surprise              45     0.96 0.006   0.87 0.000     0.51     0.86
+surprise              50     0.92 0.016   0.87 0.002     0.49     0.84
+surprise              55     0.92 0.010   0.88 0.000     0.48     0.76
+surprise              60     0.62 0.332   0.65 0.126     0.50     0.89
+joy-specific           5     0.17 0.914   0.41 0.702     0.56     0.79
+joy-specific          10     0.04 0.974   0.38 0.780     0.38     0.93
+joy-specific          15     0.04 0.994   0.35 0.860     0.40     0.90
+joy-specific          20     0.04 1.000   0.36 0.858     0.53     0.78
+joy-specific          25     0.04 1.000   0.35 0.824     0.69     0.40
+joy-specific          30     0.17 0.942   0.34 0.816     0.77     0.20
+joy-specific          35     0.08 0.992   0.24 0.946     0.68     0.24
+joy-specific          40     0.25 0.894   0.37 0.798     0.78     0.39
+joy-specific          45     0.29 0.824   0.38 0.748     0.76     0.26
+joy-specific          50     0.38 0.764   0.45 0.620     0.75     0.33
+joy-specific          55     0.25 0.898   0.42 0.708     0.69     0.36
+joy-specific          60     0.50 0.530   0.56 0.368     0.65     0.64
+sadness-specific       5     0.38 0.744   0.45 0.648     0.54     0.55
+sadness-specific      10     0.42 0.698   0.59 0.214     0.65     1.00
+sadness-specific      15     0.50 0.536   0.63 0.132     0.69     1.00
+sadness-specific      20     0.58 0.390   0.69 0.038     0.76     1.00
+sadness-specific      25     0.75 0.112   0.80 0.008     0.86     1.00
+sadness-specific      30     1.00 0.000   0.91 0.000     0.90     1.00
+sadness-specific      35     1.00 0.000   0.95 0.000     0.94     1.00
+sadness-specific      40     1.00 0.000   0.96 0.000     0.94     1.00
+sadness-specific      45     0.92 0.010   0.95 0.000     0.93     1.00
+sadness-specific      50     0.92 0.016   0.92 0.000     0.89     1.00
+sadness-specific      55     0.88 0.012   0.89 0.000     0.88     1.00
+sadness-specific      60     0.92 0.006   0.88 0.000     0.85     1.00
+anger-specific         5     0.17 0.962   0.57 0.174     0.88     0.99
+anger-specific        10     0.25 0.964   0.66 0.094     0.79     1.00
+anger-specific        15     0.29 0.898   0.69 0.062     0.89     1.00
+anger-specific        20     0.46 0.630   0.78 0.002     0.96     1.00
+anger-specific        25     0.79 0.096   0.83 0.004     0.97     1.00
+anger-specific        30     0.96 0.004   0.88 0.000     0.96     1.00
+anger-specific        35     0.96 0.010   0.86 0.000     0.98     1.00
+anger-specific        40     1.00 0.008   0.89 0.000     0.98     1.00
+anger-specific        45     0.92 0.028   0.84 0.000     0.94     1.00
+anger-specific        50     0.92 0.026   0.82 0.002     0.92     0.97
+anger-specific        55     0.67 0.258   0.77 0.002     0.94     0.96
+anger-specific        60     0.58 0.412   0.64 0.090     0.84     0.78
+fear-specific          5     0.67 0.230   0.70 0.062     0.68     0.46
+fear-specific         10     0.38 0.824   0.53 0.294     0.57     0.85
+fear-specific         15     0.58 0.382   0.70 0.030     0.75     0.68
+fear-specific         20     0.96 0.000   0.87 0.000     0.89     0.73
+fear-specific         25     0.92 0.006   0.92 0.000     0.92     0.81
+fear-specific         30     0.96 0.002   0.93 0.000     0.95     0.65
+fear-specific         35     0.92 0.004   0.93 0.000     0.94     0.68
+fear-specific         40     0.92 0.004   0.92 0.000     0.92     0.64
+fear-specific         45     0.83 0.056   0.88 0.000     0.92     0.41
+fear-specific         50     0.88 0.022   0.88 0.000     0.90     0.34
+fear-specific         55     0.83 0.032   0.87 0.000     0.89     0.38
+fear-specific         60     0.92 0.010   0.90 0.000     0.86     0.11
+euphoria-specific      5     1.00 0.008   0.85 0.002     0.67     0.69
+euphoria-specific     10     0.96 0.074   0.62 0.174     0.63     0.08
+euphoria-specific     15     0.96 0.040   0.67 0.120     0.66     0.10
+euphoria-specific     20     0.96 0.028   0.72 0.056     0.71     0.11
+euphoria-specific     25     0.96 0.006   0.79 0.020     0.80     0.12
+euphoria-specific     30     0.96 0.012   0.88 0.000     0.87     0.20
+euphoria-specific     35     1.00 0.002   0.97 0.000     0.92     0.56
+euphoria-specific     40     0.96 0.010   0.87 0.008     0.89     0.60
+euphoria-specific     45     1.00 0.004   0.98 0.000     0.91     0.63
+euphoria-specific     50     1.00 0.000   0.98 0.000     0.91     0.76
+euphoria-specific     55     1.00 0.000   0.99 0.000     0.90     0.79
+euphoria-specific     60     0.96 0.004   0.90 0.000     0.83     0.51
+surprise-specific      5     0.33 0.808   0.53 0.384     0.53     0.05
+surprise-specific     10     0.17 0.962   0.28 0.874     0.24     0.76
+surprise-specific     15     0.29 0.858   0.36 0.772     0.29     0.77
+surprise-specific     20     0.46 0.640   0.45 0.666     0.36     0.91
+surprise-specific     25     0.62 0.324   0.65 0.166     0.50     0.96
+surprise-specific     30     0.71 0.194   0.73 0.064     0.60     0.93
+surprise-specific     35     0.75 0.160   0.73 0.052     0.62     0.82
+surprise-specific     40     0.62 0.348   0.66 0.164     0.64     0.59
+surprise-specific     45     0.25 0.872   0.52 0.430     0.65     0.50
+surprise-specific     50     0.12 0.982   0.43 0.732     0.64     0.51
+surprise-specific     55     0.17 0.980   0.46 0.634     0.62     0.67
+surprise-specific     60     0.33 0.848   0.42 0.714     0.56     0.70
+joy-dn                 5     1.00 0.008   0.88 0.000     0.66     0.78
+joy-dn                10     1.00 0.020   0.93 0.000     0.71     0.83
+joy-dn                15     1.00 0.010   0.93 0.000     0.75     0.86
+joy-dn                20     1.00 0.006   0.99 0.000     0.90     0.82
+joy-dn                25     1.00 0.000   0.99 0.000     0.86     0.82
+joy-dn                30     1.00 0.004   0.97 0.000     0.81     0.84
+joy-dn                35     1.00 0.002   0.99 0.000     0.88     0.89
+joy-dn                40     1.00 0.002   0.98 0.000     0.88     0.86
+joy-dn                45     1.00 0.004   0.99 0.000     0.84     0.88
+joy-dn                50     1.00 0.000   0.98 0.000     0.81     0.88
+joy-dn                55     1.00 0.000   0.98 0.000     0.79     0.88
+joy-dn                60     1.00 0.000   0.98 0.000     0.83     0.95
+sadness-dn             5     1.00 0.000   0.78 0.006     0.53     0.90
+sadness-dn            10     1.00 0.000   0.84 0.000     0.54     0.97
+sadness-dn            15     1.00 0.000   0.86 0.000     0.61     1.00
+sadness-dn            20     1.00 0.000   0.88 0.000     0.48     0.97
+sadness-dn            25     1.00 0.000   0.92 0.000     0.58     0.99
+sadness-dn            30     1.00 0.000   0.91 0.000     0.60     0.99
+sadness-dn            35     1.00 0.000   0.95 0.000     0.60     1.00
+sadness-dn            40     1.00 0.000   0.95 0.000     0.66     1.00
+sadness-dn            45     1.00 0.000   0.93 0.000     0.64     1.00
+sadness-dn            50     1.00 0.000   0.91 0.000     0.62     0.99
+sadness-dn            55     1.00 0.000   0.91 0.000     0.62     0.98
+sadness-dn            60     0.96 0.002   0.89 0.000     0.59     0.99
+anger-dn               5     1.00 0.000   0.86 0.000     0.64     0.91
+anger-dn              10     0.88 0.006   0.87 0.000     0.77     1.00
+anger-dn              15     0.92 0.008   0.91 0.000     0.82     1.00
+anger-dn              20     1.00 0.000   0.96 0.000     0.86     1.00
+anger-dn              25     1.00 0.000   0.99 0.000     0.90     1.00
+anger-dn              30     1.00 0.000   0.97 0.000     0.87     1.00
+anger-dn              35     1.00 0.002   0.99 0.000     0.85     1.00
+anger-dn              40     1.00 0.008   0.98 0.000     0.86     1.00
+anger-dn              45     1.00 0.004   0.97 0.000     0.81     1.00
+anger-dn              50     1.00 0.000   0.96 0.000     0.78     1.00
+anger-dn              55     1.00 0.002   0.95 0.000     0.77     1.00
+anger-dn              60     1.00 0.000   0.91 0.000     0.73     0.98
+fear-dn                5     1.00 0.002   0.89 0.002     0.59     0.56
+fear-dn               10     1.00 0.000   0.95 0.000     0.64     0.52
+fear-dn               15     1.00 0.002   0.97 0.000     0.69     0.70
+fear-dn               20     1.00 0.000   0.99 0.000     0.81     0.81
+fear-dn               25     1.00 0.000   0.99 0.000     0.85     0.83
+fear-dn               30     1.00 0.000   0.98 0.000     0.82     0.65
+fear-dn               35     1.00 0.000   0.99 0.000     0.83     0.85
+fear-dn               40     1.00 0.000   0.98 0.000     0.80     0.81
+fear-dn               45     1.00 0.000   0.97 0.000     0.75     0.79
+fear-dn               50     1.00 0.000   0.97 0.000     0.72     0.74
+fear-dn               55     1.00 0.000   0.97 0.000     0.71     0.63
+fear-dn               60     1.00 0.000   0.97 0.000     0.71     0.78
+euphoria-dn            5     1.00 0.008   0.91 0.000     0.68     0.76
+euphoria-dn           10     1.00 0.020   0.97 0.000     0.81     0.70
+euphoria-dn           15     1.00 0.010   0.97 0.000     0.75     0.83
+euphoria-dn           20     1.00 0.006   0.99 0.000     0.87     0.73
+euphoria-dn           25     1.00 0.000   0.98 0.000     0.87     0.75
+euphoria-dn           30     1.00 0.004   0.97 0.000     0.84     0.77
+euphoria-dn           35     1.00 0.002   0.99 0.000     0.89     0.89
+euphoria-dn           40     1.00 0.002   0.98 0.000     0.87     0.84
+euphoria-dn           45     1.00 0.004   0.98 0.000     0.87     0.85
+euphoria-dn           50     1.00 0.000   0.98 0.000     0.85     0.84
+euphoria-dn           55     1.00 0.000   0.98 0.000     0.84     0.86
+euphoria-dn           60     1.00 0.000   0.98 0.000     0.86     0.87
+surprise-dn            5     0.88 0.036   0.81 0.000     0.48     0.44
+surprise-dn           10     1.00 0.000   0.83 0.000     0.39     0.56
+surprise-dn           15     1.00 0.000   0.91 0.000     0.47     0.82
+surprise-dn           20     1.00 0.000   0.97 0.000     0.66     0.86
+surprise-dn           25     1.00 0.004   0.97 0.000     0.71     0.93
+surprise-dn           30     1.00 0.002   0.95 0.000     0.70     0.88
+surprise-dn           35     1.00 0.002   0.97 0.000     0.60     0.96
+surprise-dn           40     0.96 0.008   0.92 0.000     0.56     0.86
+surprise-dn           45     1.00 0.002   0.89 0.000     0.54     0.91
+surprise-dn           50     1.00 0.000   0.87 0.002     0.51     0.85
+surprise-dn           55     1.00 0.000   0.90 0.000     0.51     0.82
+surprise-dn           60     0.92 0.008   0.87 0.000     0.55     0.73
+random                 5     0.29 0.800   0.36 0.832     0.41     0.38
+random                10     0.25 0.678   0.47 0.562     0.41     0.82
+random                15     1.00 0.010   0.69 0.074     0.65     0.43
+random                20     0.08 0.990   0.15 0.998     0.21     0.36
+random                25     0.21 0.910   0.31 0.888     0.31     0.52
+random                30     0.79 0.118   0.71 0.100     0.69     0.21
+random                35     0.54 0.430   0.59 0.278     0.44     0.73
+random                40     0.46 0.610   0.41 0.726     0.26     0.57
+random                45     0.75 0.154   0.64 0.180     0.66     0.63
+random                50     0.42 0.698   0.37 0.838     0.30     0.22
+random                55     0.54 0.452   0.44 0.658     0.45     0.20
+random                60     0.58 0.372   0.47 0.584     0.41     0.61
+
+Pain Axis (pain's independent test; readout last, perspectives 1P,3P)
+vector               p layer  pair_acc    p_pair     auroc   p_auroc   vs_fear    vs_neg   vs_body vs_sadness vs_arousal   vs_numb vs_random
+pain                1P     5     0.554     0.288     0.683     0.022     0.653     0.603     0.609     0.370     0.621     0.180     0.915
+pain                1P    10     0.546     0.332     0.631     0.130     0.625     0.637     0.537     0.509     0.673     0.301     0.883
+pain                1P    15     0.568     0.242     0.729     0.020     0.665     0.696     0.729     0.450     0.784     0.271     0.946
+pain                1P    20     0.614     0.096     0.738     0.010     0.670     0.740     0.755     0.524     0.839     0.296     0.956
+pain                1P    25     0.644     0.040     0.765     0.002     0.684     0.729     0.817     0.432     0.834     0.289     0.961
+pain                1P    30     0.634     0.034     0.745     0.006     0.649     0.668     0.799     0.525     0.781     0.386     0.955
+pain                1P    35     0.678     0.002     0.797     0.000     0.649     0.711     0.758     0.474     0.847     0.203     0.968
+pain                1P    40     0.686     0.002     0.773     0.002     0.641     0.739     0.740     0.452     0.808     0.233     0.967
+pain                1P    45     0.602     0.078     0.704     0.018     0.593     0.670     0.640     0.322     0.764     0.134     0.924
+pain                1P    50     0.582     0.138     0.718     0.028     0.602     0.651     0.673     0.332     0.772     0.118     0.927
+pain                1P    55     0.558     0.234     0.709     0.022     0.537     0.626     0.666     0.370     0.731     0.100     0.924
+pain                1P    60     0.542     0.310     0.622     0.138     0.596     0.671     0.559     0.385     0.708     0.244     0.795
+pain                3P     5     0.550     0.348     0.646     0.066     0.597     0.550     0.481     0.347     0.792     0.098     0.945
+pain                3P    10     0.520     0.456     0.526     0.408     0.481     0.571     0.311     0.481     0.637     0.296     0.738
+pain                3P    15     0.524     0.432     0.589     0.240     0.463     0.564     0.452     0.484     0.915     0.270     0.989
+pain                3P    20     0.582     0.240     0.637     0.114     0.507     0.610     0.537     0.603     0.912     0.325     0.990
+pain                3P    25     0.600     0.146     0.593     0.196     0.482     0.573     0.656     0.538     0.853     0.249     0.986
+pain                3P    30     0.640     0.046     0.582     0.220     0.505     0.564     0.684     0.547     0.747     0.292     0.963
+pain                3P    35     0.604     0.086     0.625     0.080     0.525     0.590     0.639     0.542     0.783     0.255     0.952
+pain                3P    40     0.674     0.012     0.614     0.146     0.495     0.622     0.669     0.485     0.785     0.203     0.966
+pain                3P    45     0.598     0.106     0.545     0.310     0.472     0.571     0.548     0.371     0.795     0.151     0.943
+pain                3P    50     0.590     0.154     0.584     0.208     0.494     0.569     0.609     0.370     0.797     0.141     0.932
+pain                3P    55     0.524     0.382     0.549     0.328     0.431     0.559     0.543     0.389     0.686     0.146     0.903
+pain                3P    60     0.636     0.118     0.606     0.144     0.595     0.623     0.551     0.442     0.829     0.184     0.890
+pain-specific       1P     5     0.770     0.000     0.830     0.000     0.633     0.639     0.741     0.707     0.690     0.394     0.858
+pain-specific       1P    10     0.702     0.020     0.697     0.028     0.633     0.602     0.821     0.670     0.761     0.615     0.660
+pain-specific       1P    15     0.772     0.000     0.876     0.000     0.764     0.764     0.891     0.765     0.896     0.656     0.848
+pain-specific       1P    20     0.794     0.002     0.876     0.000     0.793     0.757     0.891     0.746     0.913     0.601     0.902
+pain-specific       1P    25     0.834     0.000     0.859     0.000     0.826     0.788     0.888     0.744     0.949     0.497     0.934
+pain-specific       1P    30     0.832     0.000     0.904     0.000     0.846     0.834     0.930     0.756     0.971     0.580     0.971
+pain-specific       1P    35     0.852     0.000     0.887     0.000     0.865     0.876     0.892     0.666     0.989     0.511     0.964
+pain-specific       1P    40     0.870     0.000     0.906     0.000     0.873     0.888     0.933     0.635     0.993     0.592     0.981
+pain-specific       1P    45     0.858     0.000     0.895     0.000     0.855     0.866     0.924     0.566     0.995     0.452     0.981
+pain-specific       1P    50     0.822     0.000     0.875     0.000     0.836     0.796     0.943     0.589     0.994     0.464     0.980
+pain-specific       1P    55     0.796     0.000     0.864     0.000     0.814     0.782     0.922     0.626     0.993     0.431     0.982
+pain-specific       1P    60     0.730     0.000     0.741     0.006     0.704     0.691     0.729     0.560     0.911     0.394     0.823
+pain-specific       3P     5     0.794     0.000     0.818     0.000     0.810     0.734     0.786     0.649     0.528     0.287     0.704
+pain-specific       3P    10     0.778     0.002     0.770     0.002     0.743     0.670     0.807     0.676     0.846     0.618     0.906
+pain-specific       3P    15     0.626     0.138     0.703     0.040     0.584     0.645     0.624     0.711     0.929     0.709     0.915
+pain-specific       3P    20     0.722     0.016     0.730     0.012     0.643     0.635     0.761     0.610     0.802     0.618     0.762
+pain-specific       3P    25     0.784     0.000     0.791     0.000     0.720     0.680     0.874     0.647     0.882     0.433     0.892
+pain-specific       3P    30     0.760     0.000     0.789     0.000     0.720     0.689     0.862     0.678     0.945     0.471     0.960
+pain-specific       3P    35     0.736     0.000     0.794     0.002     0.745     0.720     0.743     0.628     0.962     0.481     0.942
+pain-specific       3P    40     0.828     0.000     0.817     0.000     0.760     0.765     0.842     0.623     0.983     0.457     0.977
+pain-specific       3P    45     0.790     0.000     0.802     0.000     0.756     0.734     0.837     0.580     0.985     0.343     0.960
+pain-specific       3P    50     0.834     0.000     0.809     0.000     0.765     0.718     0.918     0.628     0.991     0.311     0.987
+pain-specific       3P    55     0.816     0.000     0.808     0.000     0.748     0.736     0.881     0.677     0.990     0.317     0.984
+pain-specific       3P    60     0.822     0.000     0.746     0.000     0.772     0.720     0.794     0.639     0.951     0.322     0.920
+pain-dn             1P     5     0.586     0.180     0.761     0.004     0.734     0.664     0.677     0.438     0.625     0.257     0.950
+pain-dn             1P    10     0.522     0.442     0.634     0.120     0.636     0.665     0.626     0.506     0.707     0.331     0.918
+pain-dn             1P    15     0.618     0.114     0.758     0.008     0.687     0.716     0.757     0.510     0.813     0.319     0.955
+pain-dn             1P    20     0.668     0.030     0.793     0.002     0.719     0.793     0.794     0.557     0.855     0.353     0.982
+pain-dn             1P    25     0.724     0.000     0.826     0.000     0.735     0.759     0.867     0.505     0.856     0.334     0.986
+pain-dn             1P    30     0.724     0.000     0.818     0.000     0.704     0.718     0.865     0.614     0.809     0.477     0.978
+pain-dn             1P    35     0.718     0.000     0.830     0.000     0.717     0.788     0.773     0.557     0.863     0.227     0.973
+pain-dn             1P    40     0.726     0.000     0.806     0.002     0.691     0.785     0.770     0.503     0.826     0.280     0.975
+pain-dn             1P    45     0.632     0.032     0.739     0.004     0.628     0.709     0.670     0.367     0.779     0.163     0.943
+pain-dn             1P    50     0.622     0.060     0.739     0.014     0.632     0.663     0.708     0.406     0.781     0.197     0.943
+pain-dn             1P    55     0.620     0.060     0.730     0.006     0.571     0.644     0.712     0.451     0.753     0.163     0.943
+pain-dn             1P    60     0.586     0.132     0.681     0.040     0.611     0.680     0.650     0.439     0.763     0.250     0.882
+pain-dn             3P     5     0.568     0.298     0.688     0.020     0.654     0.588     0.500     0.357     0.714     0.140     0.932
+pain-dn             3P    10     0.556     0.306     0.539     0.360     0.480     0.568     0.351     0.445     0.797     0.294     0.938
+pain-dn             3P    15     0.542     0.382     0.590     0.238     0.440     0.571     0.471     0.529     0.904     0.321     0.984
+pain-dn             3P    20     0.606     0.168     0.666     0.058     0.501     0.631     0.608     0.635     0.855     0.362     0.993
+pain-dn             3P    25     0.702     0.006     0.690     0.016     0.564     0.654     0.763     0.572     0.799     0.261     0.992
+pain-dn             3P    30     0.694     0.008     0.661     0.076     0.557     0.646     0.758     0.604     0.738     0.396     0.980
+pain-dn             3P    35     0.614     0.072     0.672     0.026     0.565     0.632     0.628     0.592     0.764     0.289     0.943
+pain-dn             3P    40     0.730     0.002     0.651     0.080     0.539     0.663     0.705     0.530     0.785     0.217     0.973
+pain-dn             3P    45     0.642     0.036     0.577     0.200     0.506     0.600     0.583     0.412     0.778     0.162     0.945
+pain-dn             3P    50     0.662     0.020     0.606     0.142     0.534     0.594     0.687     0.431     0.805     0.162     0.958
+pain-dn             3P    55     0.614     0.090     0.582     0.210     0.471     0.585     0.637     0.452     0.740     0.164     0.946
+pain-dn             3P    60     0.644     0.088     0.616     0.116     0.572     0.625     0.592     0.485     0.841     0.171     0.935
+random              1P     5     0.482     0.576     0.548     0.310     0.390     0.452     0.359     0.466     0.350     0.500     0.521
+random              1P    10     0.506     0.514     0.490     0.532     0.493     0.450     0.443     0.559     0.539     0.527     0.301
+random              1P    15     0.692     0.014     0.620     0.132     0.573     0.550     0.664     0.750     0.581     0.451     0.576
+random              1P    20     0.510     0.438     0.513     0.478     0.495     0.491     0.506     0.356     0.518     0.403     0.483
+random              1P    25     0.426     0.796     0.313     0.974     0.350     0.413     0.394     0.629     0.457     0.378     0.398
+random              1P    30     0.456     0.726     0.526     0.414     0.498     0.446     0.540     0.539     0.454     0.573     0.508
+random              1P    35     0.650     0.010     0.617     0.122     0.613     0.557     0.655     0.672     0.696     0.665     0.689
+random              1P    40     0.558     0.224     0.626     0.124     0.560     0.680     0.490     0.506     0.526     0.500     0.521
+random              1P    45     0.394     0.934     0.237     0.994     0.396     0.332     0.406     0.497     0.327     0.651     0.477
+random              1P    50     0.436     0.774     0.479     0.582     0.540     0.420     0.539     0.481     0.331     0.475     0.421
+random              1P    55     0.606     0.086     0.643     0.100     0.710     0.648     0.496     0.602     0.687     0.508     0.548
+random              1P    60     0.446     0.780     0.671     0.048     0.495     0.406     0.519     0.335     0.658     0.383     0.582
+random              3P     5     0.562     0.318     0.649     0.062     0.665     0.624     0.421     0.590     0.580     0.544     0.634
+random              3P    10     0.532     0.424     0.581     0.238     0.644     0.524     0.531     0.443     0.501     0.375     0.377
+random              3P    15     0.708     0.028     0.510     0.452     0.687     0.602     0.556     0.658     0.386     0.529     0.155
+random              3P    20     0.532     0.398     0.540     0.374     0.491     0.539     0.499     0.266     0.582     0.458     0.559
+random              3P    25     0.334     0.966     0.268     0.998     0.270     0.330     0.435     0.472     0.640     0.474     0.555
+random              3P    30     0.646     0.036     0.534     0.370     0.627     0.534     0.607     0.455     0.503     0.678     0.607
+random              3P    35     0.540     0.262     0.587     0.186     0.620     0.511     0.606     0.567     0.730     0.547     0.826
+random              3P    40     0.460     0.684     0.536     0.348     0.453     0.551     0.394     0.528     0.454     0.516     0.345
+random              3P    45     0.344     0.962     0.171     1.000     0.276     0.256     0.212     0.557     0.486     0.691     0.698
+random              3P    50     0.498     0.532     0.556     0.310     0.666     0.442     0.561     0.492     0.432     0.473     0.519
+random              3P    55     0.580     0.190     0.669     0.038     0.785     0.583     0.586     0.800     0.647     0.581     0.353
+random              3P    60     0.360     0.910     0.452     0.692     0.387     0.424     0.435     0.318     0.466     0.382     0.405
+
+pain gate (both p < 0.05) at each shown layer
+  layer   5: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  10: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  15: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=FAIL pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  20: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  25: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  30: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  35: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  40: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  45: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  50: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  55: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  60: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL

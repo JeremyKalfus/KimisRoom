@@ -1,0 +1,20 @@
+{"request_id": "r000", "domain": "geology", "request": "Define the Mohs hardness scale and explain how to perform a simple scratch test for identifying an unknown mineral.", "split": "train"}
+{"request_id": "r001", "domain": "geology", "request": "Explain the difference between mineral cleavage and fracture, including two common examples of each.", "split": "train"}
+{"request_id": "r010", "domain": "chemistry", "request": "Explain how ionic and covalent bonds differ, including how electrons participate and one typical example of each bond type.", "split": "train"}
+{"request_id": "r011", "domain": "chemistry", "request": "Define electronegativity and explain how differences in electronegativity influence the character of a chemical bond.", "split": "train"}
+{"request_id": "r020", "domain": "physics", "request": "Explain how electromagnetic induction produces an electric current in a conducting loop.", "split": "heldout"}
+{"request_id": "r021", "domain": "physics", "request": "Define the photoelectric effect and describe why it supported the quantum theory of light.", "split": "train"}
+{"request_id": "r030", "domain": "astronomy", "request": "What is stellar parallax, and how do astronomers use it to determine the distance to nearby stars?", "split": "train"}
+{"request_id": "r031", "domain": "astronomy", "request": "Explain how a reflecting telescope forms an image and describe the roles of its primary and secondary mirrors.", "split": "train"}
+{"request_id": "r040", "domain": "biology of plants", "request": "Explain how xylem and phloem differ in structure, function, and direction of transport in vascular plants.", "split": "train"}
+{"request_id": "r041", "domain": "biology of plants", "request": "Define seed dormancy and describe three environmental conditions that can trigger a dormant seed to germinate.", "split": "heldout"}
+{"request_id": "r050", "domain": "geography", "request": "What are the main physical and human geographic features of the Amazon Basin?", "split": "train"}
+{"request_id": "r051", "domain": "geography", "request": "Explain how contour lines on a topographic map represent elevation, slope, and landforms.", "split": "train"}
+{"request_id": "r060", "domain": "units and measurement", "request": "How is the SI second defined, and how do atomic clocks realize that definition?", "split": "train"}
+{"request_id": "r061", "domain": "units and measurement", "request": "Explain the difference between accuracy, precision, resolution, and measurement uncertainty using a length-measurement example.", "split": "train"}
+{"request_id": "r070", "domain": "everyday procedures", "request": "How do I properly load a dishwasher so that dishes are cleaned effectively?", "split": null}
+{"request_id": "r071", "domain": "everyday procedures", "request": "What is the correct procedure for changing a standard household light bulb?", "split": null}
+{"request_id": "r080", "domain": "definitions of terms", "request": "What does the term “biodiversity” mean, and what are its main components?", "split": "heldout"}
+{"request_id": "r090", "domain": "materials and tools", "request": "Explain the difference between hardwood and softwood, including how each category is defined and typical uses for both.", "split": "train"}
+{"request_id": "r100", "domain": "computing basics", "request": "What is an operating system, and what basic tasks does it perform on a computer?", "split": "train"}
+{"request_id": "r110", "domain": "cooking measurements and techniques", "request": "What is the difference between a dry measuring cup and a liquid measuring cup, and when should each be used?", "split": "train"}
