@@ -9,3 +9,5 @@ refs/
 .env.local
 results/qwen/adapters/
 results/confirm/
+drafts/lesswrong/gen/
+drafts/lesswrong/work/
