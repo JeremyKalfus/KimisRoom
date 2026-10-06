@@ -1,0 +1,24 @@
+{
+ "layer": 18,
+ "primary_dose": 2.0,
+ "secondary_dose": 1.0,
+ "emotion_set": [
+  "joy",
+  "sadness",
+  "anger",
+  "fear",
+  "euphoria",
+  "surprise"
+ ],
+ "eligible": [
+  18,
+  21
+ ],
+ "score_at_2": {
+  "9": -0.003599194346932452,
+  "13": 0.00631351917571645,
+  "18": 0.004985088021747729,
+  "21": -0.0005046875893634988
+ },
+ "natural_unit": 23.107791900634766
+}

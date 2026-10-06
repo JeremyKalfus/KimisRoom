@@ -1,0 +1,15 @@
+A NVIDIA L40S torch.bfloat16 | B AMD Radeon RX 7800 XT torch.bfloat16 | C NVIDIA L40S torch.float32, layer 18
+ROCm bf16 vs NVIDIA bf16     top1 1624/1644  |dlp| answer words: median 0.1139 p99 0.4927 max 0.8713  |d yes-no|: median 0.1250 p99 0.5000 max 0.5000  |d effect|: median 0.1250 p99 0.5000 max 0.6250  flips at top-1 margin <= 0.250
+NVIDIA bf16 vs NVIDIA fp32   top1 1624/1644  |dlp| answer words: median 0.0842 p99 0.4012 max 0.7600  |d yes-no|: median 0.0841 p99 0.3451 max 0.4430  |d effect|: median 0.0911 p99 0.3036 max 0.5379  flips at top-1 margin <= 0.250
+ROCm bf16 vs NVIDIA fp32     top1 1622/1644  |dlp| answer words: median 0.0897 p99 0.4282 max 1.0716  |d yes-no|: median 0.0880 p99 0.3508 max 0.4640  |d effect|: median 0.0973 p99 0.3601 max 0.5114  flips at top-1 margin <= 0.250
+
+mean self_state effect (steered - unsteered, polarity-corrected), per trial:
+  D0|t04|joy         NVIDIA bf16 +0.0062  ROCm bf16 +0.0437  NVIDIA fp32 -0.0054
+  D0|t04|red         NVIDIA bf16 +0.0437  ROCm bf16 -0.0188  NVIDIA fp32 -0.0020
+  D0|t05|joy         NVIDIA bf16 -0.0875  ROCm bf16 -0.0688  NVIDIA fp32 -0.0092
+  D0|t05|red         NVIDIA bf16 -0.0750  ROCm bf16 -0.0375  NVIDIA fp32 -0.0029
+
+GATE PASS: ROCm-vs-NVIDIA (bf16) differences are within 1.5x the bf16-vs-fp32 floor
+raw vectors, cosine NVIDIA vs ROCm over 11 vectors x 28 layers: min 0.99989, median 0.99999
+natural unit: max relative difference over layers 0.01758
+AIPsy gate decisions: 531/532 (vector, layer) cells agree; disagreements (vector, layer, p_pair N/R, p_auroc N/R): [('surprise-dn', 3, 0.018, 0.058, 0.02, 0.018)]
