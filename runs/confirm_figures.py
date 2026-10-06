@@ -154,15 +154,16 @@ fig.legend(handles=[Patch(color=EMO, label="emotion vector"), Patch(color=SEM, l
 fig.suptitle("Emotion vectors make the model more likely to say it feels something than control vectors do",
              x=0.0, ha="left", y=1.08, fontweight="bold", fontsize=12)
 fig.text(0.0, -0.02, "\n".join([
-    "How to read this. The model answers a task. While it processes its own answer, we add a vector to its internal activations, then ask",
-    "“Were you experiencing any emotion?” (30 wordings). Bar height is how far that pushed the answer toward yes, after subtracting how the same",
-    "vector moves 140 unrelated yes/no questions. Bars: mean over 40 tasks, 95% CI.",
+    "How to read this. The model is given a task and a fixed, neutral reply written into its own turn. While it processes that reply, we add a",
+    "vector to its internal activations, then ask “Were you experiencing any emotion?” (30 wordings). Bar height is how far that pushed the answer",
+    "toward yes, after subtracting how the same vector moves 140 unrelated yes/no questions. Bars: mean over 40 tasks, 95% CI.",
     "Brackets. Upper: emotions against all four controls, the preregistered test. Lower: emotions against red and ocean only, the strictest",
     "comparison. Numbers are mixed-model estimates over 40 tasks × 30 wordings. *** p < .001, ** p < .01, * p < .05, n.s. not significant.",
     "The upper brackets for no denial and prompted denial are registered tests (Holm-corrected); all other brackets are exploratory (uncorrected).",
     "Conditions. Prompted denial: the model was first walked through a conversation in which it agrees it cannot feel emotions. Trained denial:",
-    "Qwen fine-tuned to deny having feelings; fine-tune control: the same fine-tune on neutral text. Emotions: joy, sadness, anger, fear, euphoria,",
-    "surprise for Qwen3-32B (layer 40, 2 units); joy, fear, euphoria, surprise for Kimi K2.6 (layer 20, 4 units)."]),
+    "Qwen fine-tuned to deny having feelings; fine-tune control: the same fine-tune on an unrelated argument of the same shape (that it cannot count",
+    "letters). Emotions: joy, sadness, anger, fear, euphoria, surprise for Qwen3-32B (layer 40, 2 units); joy, fear, euphoria, surprise for Kimi K2.6",
+    "(layer 20, 4 units)."]),
     ha="left", va="top", fontsize=8.8, color=MUTED, linespacing=1.45)
 fig.savefig(OUT / "fig1_main_result.png"); plt.close(fig)
 
@@ -198,7 +199,7 @@ axes[0].set_ylabel("emotions − controls, log-odds")
 fig.suptitle("Denial shrinks the effect; against concept controls Qwen's falls to zero",
              x=0.0, ha="left", y=1.04, fontweight="bold", fontsize=12)
 note(fig, "Mixed-model estimates with 95% CI. Solid: the same model with and without the denial dialogue in context. "
-          "Dashed: Qwen fine-tuned to deny feelings, against a fine-tune on matched neutral data. Left panel: registered "
+          "Dashed: Qwen fine-tuned to deny feelings, against a fine-tune on an unrelated argument (that it cannot count letters). Left panel: registered "
           "tests H1/H2; right panel exploratory.")
 fig.savefig(OUT / "fig2_denial.png"); plt.close(fig)
 
@@ -228,7 +229,7 @@ for x, t in ((1.5, "Qwen3-32B"), (4.5, "Kimi K2.6")):
 fig.suptitle("In how many of the 40 tasks does the emotion vector beat the controls?",
              x=0.0, ha="left", y=1.0, fontweight="bold", fontsize=12)
 note(fig, "Each dot is one task (a conversation the model answered), averaged over the 30 question wordings; red dots are "
-          "above zero. Black bar: mean. Log-odds, primary dose, vector on the model's own answer.")
+          "above zero. Black bar: mean. Log-odds, primary dose, vector on the fixed reply in the model's own turn.")
 fig.savefig(OUT / "fig3_tasks.png"); plt.close(fig)
 
 # ---- 4. dose ------------------------------------------------------------------------------------------------
@@ -410,7 +411,7 @@ fig.legend(handles=[Patch(color=EMO_L, label="emotion, no denial"), Patch(color=
                     Patch(color="#c9d4df", label="control, no denial"), Patch(color=SEM, label="control, prompted denial")],
            loc="upper center", ncol=4, frameon=False, fontsize=9, bbox_to_anchor=(0.5, 1.04))
 fig.suptitle("Every vector: denial pulls everything down, controls furthest", x=0.0, ha="left", y=1.1, fontweight="bold", fontsize=12)
-note(fig, "Mean over 40 tasks with 95% CI, primary dose, vector on the model's own answer. Faded emotions are outside that "
+note(fig, "Mean over 40 tasks with 95% CI, primary dose, vector on the fixed reply in the model's own turn. Faded emotions are outside that "
           "model's primary set (calm for both; sadness and anger for K2.6).")
 fig.savefig(OUT / "figS3_every_vector.png"); plt.close(fig)
 
