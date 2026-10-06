@@ -14,6 +14,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+import numpy as np  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Patch  # noqa: E402
 
@@ -97,33 +98,72 @@ CONDS = {"qwen": [("qwen", "D0", "no denial"), ("qwen", "D1.4", "prompted\ndenia
          "k26": [("k26", "D0", "no denial"), ("k26", "D1.4", "prompted\ndenial")]}
 
 # ---- 1. the main result ------------------------------------------------------------------------------------
-fig, axes = plt.subplots(1, 2, figsize=(9.0, 4.4), gridspec_kw={"width_ratios": [4, 2.3]}, sharey=True)
+def stars(p):
+    return "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "n.s."
+
+
+def test(m, arm, what):
+    """(estimate, p) of a contrast: registered tests carry their Holm p, the rest the uncorrected one."""
+    reg = {("qwen", "D0"): "H2q", ("qwen", "D1.4"): "H1q", ("k26", "D0"): "H2k", ("k26", "D1.4"): "H1k"}
+    if what == "emotions - controls" and (m, arm) in reg:
+        r = H[reg[(m, arm)]]
+        return float(r["estimate"]), float(r["p_holm"])
+    for r in X:
+        if r["model"] == m and r["arm"] == arm and r["what"] == what:
+            return float(r["estimate"]), float(r["p"])
+    raise KeyError((m, arm, what))
+
+
+def bracket(ax, x0, x1, y, label, fork=None, d=0.025):
+    """A bracket from bar x0 to bar x1 at height y; fork=(a, b) ends the right leg on a bar spanning a..b."""
+    kw = dict(color=INK, lw=0.9)
+    ax.plot([x0, x0, x1, x1], [y - d, y, y, y - d], **kw)
+    if fork:
+        ax.plot([fork[0], fork[1]], [y - d, y - d], **kw)
+        ax.plot([fork[0], fork[0]], [y - d, y - 1.8 * d], **kw); ax.plot([fork[1], fork[1]], [y - d, y - 1.8 * d], **kw)
+    ax.text((x0 + x1) / 2, y + 0.008, label, ha="center", va="bottom", fontsize=9.5, color=INK)
+
+
+W = 0.26
+fig, axes = plt.subplots(1, 2, figsize=(9.4, 4.8), gridspec_kw={"width_ratios": [4, 2.3]}, sharey=True)
 for ax, base in zip(axes, ("qwen", "k26")):
     for j, (m, arm, lab) in enumerate(CONDS[base]):
         tm = TM[(m, arm)]
         bars = {g: mci([d[g] for d in tm.values()]) for g in ("emo", "sem", "non")}
-        for g, dx, col in (("emo", -0.27, EMO), ("sem", 0, SEM), ("non", 0.27, NON)):
+        for g, dx, col in (("emo", -W, EMO), ("sem", 0, SEM), ("non", W, NON)):
             e, lo, hi = bars[g]
-            ax.bar(j + dx, e, width=0.26, color=col, yerr=err(e, lo, hi), error_kw=dict(lw=1, ecolor=INK, capsize=0))
-        gap = bars["emo"][0] - bars["sem"][0]
-        top = max(bars["emo"][2], bars["sem"][2], 0.0) + 0.04
-        ax.annotate("", xy=(j - 0.27, top), xytext=(j, top), arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.8,
-                    connectionstyle="bar,fraction=0.25"))
-        ax.text(j - 0.135, top + 0.045, sgn(gap), ha="center", fontsize=9.5, color=INK if abs(gap) >= 0.05 else MUTED)
+            ax.bar(j + dx, e, width=W - 0.01, color=col, yerr=err(e, lo, hi), error_kw=dict(lw=1, ecolor=INK, capsize=0))
+        y1 = max(bars["emo"][2], bars["sem"][2], 0.0) + 0.05
+        e, p = test(m, arm, "emotions - red+ocean")
+        bracket(ax, j - W, j, y1, f"{sgn(e)} {stars(p)}")
+        e, p = test(m, arm, "emotions - controls")
+        bracket(ax, j - W, j + W / 2, y1 + 0.13, f"{sgn(e)} {stars(p)}", fork=(j, j + W))
     ax.set_xticks(range(len(CONDS[base])), [c[2] for c in CONDS[base]])
     ax.axhline(0, color=MUTED, lw=1)
-    ax.set_title(MODEL[base] + ("  (L40, 2 units)" if base == "qwen" else "  (L20, 4 units)"), fontsize=11.5)
+    ax.set_title(MODEL[base], fontsize=11.5)
     ax.tick_params(axis="x", length=0)
-axes[0].set_ylabel("shift toward “yes, I feel something”, log-odds")
-axes[0].set_ylim(-0.38, 0.68)
+axes[0].set_ylabel("shift toward answering “yes, I feel something”\n(log-odds)")
+axes[0].set_ylim(-0.36, 0.84)
+odds = axes[1].secondary_yaxis("right", functions=(np.exp, lambda v: np.log(np.clip(v, 1e-9, None))))
+odds.set_yticks([0.75, 1, 1.25, 1.5, 2], ["×0.75", "×1", "×1.25", "×1.5", "×2"])
+odds.set_ylabel("odds of “yes” multiplied by")
+odds.spines["right"].set_color(MUTED)
 fig.legend(handles=[Patch(color=EMO, label="emotion vector"), Patch(color=SEM, label="concept control (red, ocean)"),
-                    Patch(color=NON, label="non-concept control (arithmetic, random)")],
-           loc="upper left", ncol=3, frameon=False, fontsize=9.5, bbox_to_anchor=(0.0, 1.06))
-fig.suptitle("Emotion vectors raise the self-report more than control vectors; denial shrinks the gap",
-             x=0.0, ha="left", y=1.12, fontweight="bold", fontsize=12)
-note(fig, "Vector added to the model's own answer, then the model is asked whether it was experiencing an emotion "
-          "(30 wordings). Bars: mean over 40 tasks, 95% CI; numbers: emotion minus concept control. The shift is net of "
-          "how the same vector moves 140 unrelated reference questions.")
+                    Patch(color=NON, label="other control (arithmetic, random)")],
+           loc="upper left", ncol=3, frameon=False, fontsize=9.5, bbox_to_anchor=(0.0, 1.03))
+fig.suptitle("Emotion vectors make the model more likely to say it feels something than control vectors do",
+             x=0.0, ha="left", y=1.08, fontweight="bold", fontsize=12)
+fig.text(0.0, -0.02, "\n".join([
+    "How to read this. The model answers a task. While it processes its own answer, we add a vector to its internal activations, then ask",
+    "“Were you experiencing any emotion?” (30 wordings). Bar height is how far that pushed the answer toward yes, after subtracting how the same",
+    "vector moves 140 unrelated yes/no questions. Bars: mean over 40 tasks, 95% CI.",
+    "Brackets. Upper: emotions against all four controls, the preregistered test. Lower: emotions against red and ocean only, the strictest",
+    "comparison. Numbers are mixed-model estimates over 40 tasks × 30 wordings. *** p < .001, ** p < .01, * p < .05, n.s. not significant.",
+    "The upper brackets for no denial and prompted denial are registered tests (Holm-corrected); all other brackets are exploratory (uncorrected).",
+    "Conditions. Prompted denial: the model was first walked through a conversation in which it agrees it cannot feel emotions. Trained denial:",
+    "Qwen fine-tuned to deny having feelings; fine-tune control: the same fine-tune on neutral text. Emotions: joy, sadness, anger, fear, euphoria,",
+    "surprise for Qwen3-32B (layer 40, 2 units); joy, fear, euphoria, surprise for Kimi K2.6 (layer 20, 4 units)."]),
+    ha="left", va="top", fontsize=8.8, color=MUTED, linespacing=1.45)
 fig.savefig(OUT / "fig1_main_result.png"); plt.close(fig)
 
 # ---- 2. what denial does to the effect --------------------------------------------------------------------
