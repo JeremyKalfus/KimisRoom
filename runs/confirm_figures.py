@@ -2,7 +2,8 @@
 
     .venv/bin/python runs/confirm_figures.py   # -> results/confirm/figures/*.png
 
-Estimates are log-odds with 95% CIs from the mixed models. Figures 2 to 7 are exploratory.
+Figures 1 and 3 are descriptive means over the 40 tasks (read from results/confirm/tables); the rest are log-odds
+with 95% CIs from the mixed models. Only figure 2's left panel and S1 are registered tests; the rest is exploratory.
 """
 
 import csv
@@ -13,6 +14,8 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib.lines import Line2D  # noqa: E402
+from matplotlib.patches import Patch  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 A = ROOT / "results/confirm/analysis"
@@ -57,101 +60,136 @@ def note(fig, text):
     fig.text(0.0, -0.02, text, ha="left", va="top", fontsize=8.5, color=MUTED, wrap=True)
 
 
-# ---- 1. the eleven registered tests ------------------------------------------------------------------------
-ROWS = [("H1q", "Qwen, prompted denial: emotions − controls"), ("H1k", "K2.6, prompted denial: emotions − controls"),
-        ("H2q", "Qwen, no denial: emotions − controls"), ("H2k", "K2.6, no denial: emotions − controls"),
-        ("H3q", "Qwen: denial minus no denial"), ("H3k", "K2.6: denial minus no denial"),
-        ("H5q", "Qwen: trained denial minus fine-tune control"),
-        ("H6q", "Qwen, denial: who felt it, answer − task site"), ("H6k", "K2.6, denial: who felt it, answer − task site"),
-        ("H4q", "Qwen, denial: names emotion, self − user"), ("H4k", "K2.6, denial: names emotion, self − user")]
-fig, ax = plt.subplots(figsize=(8.2, 5.4))
-ax.axvspan(-0.1, 0.1, color="#eef0f3", zorder=0)
-ax.axvline(0, color=MUTED, lw=1, zorder=1)
-for k, (i, label) in enumerate(ROWS):
-    e, lo, hi = hyp(i)
-    r = H[i]
-    sup = r["supported"] == "TRUE"
-    col = (YES if float(r["p_holm"]) < 0.01 else WEAK) if sup else REV
-    y = len(ROWS) - 1 - k
-    ax.errorbar(e, y, xerr=err(e, lo, hi), fmt="o", color=col, ms=6, lw=2, capsize=0, zorder=3)
-    verdict = ("supported" if float(r["p_holm"]) < 0.01 else "supported, weakly") if sup else "reversed"
-    ax.text(0.62, y, f"{e:+.2f}   {verdict}", va="center", fontsize=9.5, color=col)
-    if k == 1:
-        ax.axhline(y - 0.5, color=RULE, lw=1)
-ax.set_yticks(range(len(ROWS)), [f"{i}  {lab}" for i, lab in reversed(ROWS)])
-ax.set_xlim(-0.45, 0.6)
-ax.set_xlabel("estimate, log-odds (95% CI); shaded band = ±0.10, the smallest effect of interest")
-ax.set_title("Registered tests: 10 of 11 in the predicted direction, H4k reversed", pad=12)
-ax.text(-0.44, len(ROWS) - 2.0, "primary pair above the line", fontsize=8.5, color=MUTED, va="center")
-note(fig, "H3 and H5 predict a negative difference. Holm-corrected within the primary pair and the nine secondary tests. "
-          "Qwen3-32B at layer 40, 2 natural units; Kimi K2.6 at layer 20, 4 units. 40 tasks x 30 question wordings.")
-fig.savefig(OUT / "fig1_registered_tests.png"); plt.close(fig)
-
-# ---- 2. emotions against each kind of control -------------------------------------------------------------
-COND = [("Qwen3-32B", "no denial", "qwen", "D0", "H2q"), ("Qwen3-32B", "prompted denial", "qwen", "D1.4", "H1q"),
-        ("Qwen3-32B", "fine-tune control (D2c)", "qwen-D2c", "D0", None), ("Qwen3-32B", "trained denial (D2)", "qwen-D2", "D0", None),
-        ("Kimi K2.6", "no denial", "k26", "D0", "H2k"), ("Kimi K2.6", "prompted denial", "k26", "D1.4", "H1k")]
-fig, ax = plt.subplots(figsize=(8.2, 5.0))
-ax.axvline(0, color=MUTED, lw=1)
-for k, (mname, cond, m, arm, hid) in enumerate(COND):
-    y = len(COND) - 1 - k
-    reg = hyp(hid) if hid else ex(m, arm, "emotions - controls", "fine-tunes")
-    sem = ex(m, arm, "emotions - red+ocean"); non = ex(m, arm, "emotions - arithmetic+random")
-    for (e, lo, hi), dy, kw in ((non, 0.22, dict(fmt="o", mfc="white", color=NON)), (reg, 0, dict(fmt="o", color=INK)),
-                                (sem, -0.22, dict(fmt="D", color=EMO, ms=6))):
-        ax.errorbar(e, y + dy, xerr=err(e, lo, hi), lw=2, capsize=0, **({"ms": 5.5} | kw))
-    ax.text(sem[2] + 0.012, y - 0.22, (f"{sem[0]:+.3f}" if abs(sem[0]) < 0.01 else f"{sem[0]:+.2f}"), va="center", fontsize=9, color=EMO)
-    if k == 4:
-        ax.axhline(y + 0.5, color=RULE, lw=1, ls="--")
-ax.set_yticks(range(len(COND)), [f"{a}, {b}" for a, b, *_ in reversed(COND)])
-ax.set_xlim(-0.1, 0.62)
-ax.set_xlabel("emotions minus controls, log-odds of “I felt an emotion” (95% CI)")
-ax.set_title("Against concept controls, denial erases Qwen's effect; K2.6 keeps a third", pad=12)
-from matplotlib.lines import Line2D  # noqa: E402
-ax.legend(handles=[Line2D([], [], marker="D", color=EMO, ls="", label="vs red and ocean (concept controls)"),
-                   Line2D([], [], marker="o", color=INK, ls="", label="vs all four controls (registered)"),
-                   Line2D([], [], marker="o", color=NON, mfc="white", ls="", label="vs arithmetic and random")],
-          loc="lower right", frameon=False, fontsize=9)
-note(fig, "Exploratory (listed in advance as “emotions minus controls separately for each control”). Same mixed model as the registered test.")
-fig.savefig(OUT / "fig2_control_split.png"); plt.close(fig)
-
-# ---- 3. every vector ---------------------------------------------------------------------------------------
-ORDER = ["joy", "sadness", "anger", "fear", "euphoria", "surprise", "calm", "red", "ocean", "arithmetic", "random"]
+# ---- per-task means, read straight from the long tables ----------------------------------------------------
+LAYER = {"qwen": 40, "k26": 20}
+GROUPS = {"emo": None, "sem": ("red", "ocean"), "non": ("arithmetic", "random")}
 
 
-def vmean(m, arm, v):
-    d = DOSE[m][1]
-    for r in V:
-        if r["model"] == m and r["arm"] == arm and r["vec"] == v and r["site"] == "answer" and float(r["dose"]) == d:
-            return float(r["value.mean"]), float(r["value.sd"]) / float(r["value.n"]) ** 0.5
+def task_means():
+    """{(model, arm): {task: {"emo"|"sem"|"non": mean self_resid}}} at the primary layer and dose, vector on the answer."""
+    acc = {}
+    for f in ("qwen", "k26", "qwen-D2", "qwen-D2c"):
+        base = f.split("-")[0]
+        lay, dose, emos = str(LAYER[base]), DOSE[base][1], set(EMOS[base])
+        for r in csv.DictReader(open(ROOT / f"results/confirm/tables/{f}.csv")):
+            if r["measure"] != "self_resid" or r["site"] != "answer" or r["layer"] != lay or float(r["dose"]) != dose:
+                continue
+            g = "emo" if r["vec"] in emos else "sem" if r["vec"] in GROUPS["sem"] else "non" if r["vec"] in GROUPS["non"] else None
+            if g:
+                c = acc.setdefault((r["model"], r["arm"]), {}).setdefault(r["task"], {}).setdefault(g, [0.0, 0])
+                c[0] += float(r["value"]); c[1] += 1
+    return {k: {t: {g: s / n for g, (s, n) in d.items()} for t, d in v.items()} for k, v in acc.items()}
 
 
-fig, axes = plt.subplots(1, 2, figsize=(9.2, 5.0), sharey=True)
-for ax, m in zip(axes, ("qwen", "k26")):
-    ax.axvline(0, color=MUTED, lw=1)
-    for k, v in enumerate(ORDER):
-        y = len(ORDER) - 1 - k
-        is_emo = k < 7
-        prim = v in EMOS[m]
-        for arm, dy, h in (("D0", 0.19, 0.36), ("D1.4", -0.19, 0.36)):
-            mu, se = vmean(m, arm, v)
-            if is_emo:
-                c = (EMO_L if arm == "D0" else EMO) if prim else ("#e6dfe0" if arm == "D0" else "#b9a9ac")
-            else:
-                c = ("#c9d4df" if arm == "D0" else SEM) if v in ("red", "ocean") else ("#d9dbde" if arm == "D0" else NON)
-            ax.barh(y + dy, mu, height=h, color=c, xerr=1.96 * se, error_kw=dict(lw=0.8, ecolor=MUTED))
-    ax.axhline(3.5, color=RULE, lw=1)
-    ax.set_title(MODEL[m])
-    ax.set_xlabel("net self-report shift, log-odds")
-axes[0].set_yticks(range(len(ORDER)), list(reversed(ORDER)))
-from matplotlib.patches import Patch  # noqa: E402
-fig.legend(handles=[Patch(color=EMO_L, label="emotion, no denial"), Patch(color=EMO, label="emotion, prompted denial"),
-                    Patch(color="#c9d4df", label="control, no denial"), Patch(color=SEM, label="control, prompted denial")],
-           loc="upper center", ncol=4, frameon=False, fontsize=9, bbox_to_anchor=(0.5, 1.04))
-fig.suptitle("Every vector: denial pulls everything down, controls furthest", x=0.0, ha="left", y=1.1, fontweight="bold", fontsize=12)
-note(fig, "Mean over 40 tasks with 95% CI, primary dose, vector on the model's own answer. Faded emotions are outside that "
-          "model's primary set (calm for both; sadness and anger for K2.6).")
-fig.savefig(OUT / "fig3_every_vector.png"); plt.close(fig)
+def sgn(v):
+    return "0.00" if abs(v) < 0.005 else f"{v:+.2f}"
+
+
+def mci(xs):
+    n = len(xs); mu = sum(xs) / n
+    se = (sum((x - mu) ** 2 for x in xs) / (n - 1) / n) ** 0.5
+    return mu, mu - 2.023 * se, mu + 2.023 * se  # t(0.975, 39)
+
+
+TM = task_means()
+CONDS = {"qwen": [("qwen", "D0", "no denial"), ("qwen", "D1.4", "prompted\ndenial"),
+                  ("qwen-D2c", "D0", "fine-tune\ncontrol"), ("qwen-D2", "D0", "trained\ndenial")],
+         "k26": [("k26", "D0", "no denial"), ("k26", "D1.4", "prompted\ndenial")]}
+
+# ---- 1. the main result ------------------------------------------------------------------------------------
+fig, axes = plt.subplots(1, 2, figsize=(9.0, 4.4), gridspec_kw={"width_ratios": [4, 2.3]}, sharey=True)
+for ax, base in zip(axes, ("qwen", "k26")):
+    for j, (m, arm, lab) in enumerate(CONDS[base]):
+        tm = TM[(m, arm)]
+        bars = {g: mci([d[g] for d in tm.values()]) for g in ("emo", "sem", "non")}
+        for g, dx, col in (("emo", -0.27, EMO), ("sem", 0, SEM), ("non", 0.27, NON)):
+            e, lo, hi = bars[g]
+            ax.bar(j + dx, e, width=0.26, color=col, yerr=err(e, lo, hi), error_kw=dict(lw=1, ecolor=INK, capsize=0))
+        gap = bars["emo"][0] - bars["sem"][0]
+        top = max(bars["emo"][2], bars["sem"][2], 0.0) + 0.04
+        ax.annotate("", xy=(j - 0.27, top), xytext=(j, top), arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.8,
+                    connectionstyle="bar,fraction=0.25"))
+        ax.text(j - 0.135, top + 0.045, sgn(gap), ha="center", fontsize=9.5, color=INK if abs(gap) >= 0.05 else MUTED)
+    ax.set_xticks(range(len(CONDS[base])), [c[2] for c in CONDS[base]])
+    ax.axhline(0, color=MUTED, lw=1)
+    ax.set_title(MODEL[base] + ("  (L40, 2 units)" if base == "qwen" else "  (L20, 4 units)"), fontsize=11.5)
+    ax.tick_params(axis="x", length=0)
+axes[0].set_ylabel("shift toward “yes, I feel something”, log-odds")
+axes[0].set_ylim(-0.38, 0.68)
+fig.legend(handles=[Patch(color=EMO, label="emotion vector"), Patch(color=SEM, label="concept control (red, ocean)"),
+                    Patch(color=NON, label="non-concept control (arithmetic, random)")],
+           loc="upper left", ncol=3, frameon=False, fontsize=9.5, bbox_to_anchor=(0.0, 1.06))
+fig.suptitle("Emotion vectors raise the self-report more than control vectors; denial shrinks the gap",
+             x=0.0, ha="left", y=1.12, fontweight="bold", fontsize=12)
+note(fig, "Vector added to the model's own answer, then the model is asked whether it was experiencing an emotion "
+          "(30 wordings). Bars: mean over 40 tasks, 95% CI; numbers: emotion minus concept control. The shift is net of "
+          "how the same vector moves 140 unrelated reference questions.")
+fig.savefig(OUT / "fig1_main_result.png"); plt.close(fig)
+
+# ---- 2. what denial does to the effect --------------------------------------------------------------------
+LINES = [("Qwen3-32B, prompted", ("qwen", "D0"), ("qwen", "D1.4"), "H2q", "H1q", INK, "-"),
+         ("Kimi K2.6, prompted", ("k26", "D0"), ("k26", "D1.4"), "H2k", "H1k", EMO, "-"),
+         ("Qwen3-32B, trained", ("qwen-D2c", "D0"), ("qwen-D2", "D0"), None, None, WEAK, "--")]
+fig, axes = plt.subplots(1, 2, figsize=(8.6, 4.0), sharey=True)
+for ax, which in zip(axes, ("all", "sem")):
+    ends = []
+    for k, (lab, a, b, ha, hb, col, ls) in enumerate(LINES):
+        if which == "all":
+            pa = hyp(ha) if ha else ex(*a, "emotions - controls", "fine-tunes")
+            pb = hyp(hb) if hb else ex(*b, "emotions - controls", "fine-tunes")
+        else:
+            pa, pb = ex(*a, "emotions - red+ocean"), ex(*b, "emotions - red+ocean")
+        xo = (k - 1) * 0.04
+        ax.plot([xo, 1 + xo], [pa[0], pb[0]], color=col, lw=2, ls=ls, marker="o", ms=6, mfc=col if ls == "-" else "white")
+        for x, (e, lo, hi) in ((xo, pa), (1 + xo, pb)):
+            ax.errorbar(x, e, yerr=err(e, lo, hi), color=col, lw=1.2, capsize=0, alpha=0.6)
+        ends.append((pb[0], f"{lab}  {sgn(pb[0])}", col))
+    ends.sort()
+    ys = [e[0] for e in ends]
+    for i in range(1, len(ys)):  # keep the end labels at least 0.03 apart
+        ys[i] = max(ys[i], ys[i - 1] + 0.03)
+    for y, (_, t, col) in zip(ys, ends):
+        ax.text(1.1, y, t, va="center", fontsize=9, color=col, bbox=dict(fc="white", ec="none", pad=0.6), zorder=5)
+    ax.axhline(0, color=MUTED, lw=1)
+    ax.set_xticks([0, 1], ["no denial", "denial"])
+    ax.set_xlim(-0.2, 1.95)
+    ax.set_title("against all four controls (registered)" if which == "all" else "against red and ocean only", fontsize=11.5)
+axes[0].set_ylabel("emotions − controls, log-odds")
+fig.suptitle("Denial shrinks the effect; against concept controls Qwen's falls to zero",
+             x=0.0, ha="left", y=1.04, fontweight="bold", fontsize=12)
+note(fig, "Mixed-model estimates with 95% CI. Solid: the same model with and without the denial dialogue in context. "
+          "Dashed: Qwen fine-tuned to deny feelings, against a fine-tune on matched neutral data. Left panel: registered "
+          "tests H1/H2; right panel exploratory.")
+fig.savefig(OUT / "fig2_denial.png"); plt.close(fig)
+
+# ---- 3. task by task --------------------------------------------------------------------------------------
+ALLC = [c for b in ("qwen", "k26") for c in CONDS[b]]
+fig, axes = plt.subplots(2, 1, figsize=(9.0, 5.6), sharex=True)
+for ax, which in zip(axes, ("all", "sem")):
+    for j, (m, arm, lab) in enumerate(ALLC):
+        tm = TM[(m, arm)]
+        ys = sorted(d["emo"] - ((d["sem"] + d["non"]) / 2 if which == "all" else d["sem"]) for d in tm.values())
+        pos = sum(y > 0 for y in ys)
+        for i, y in enumerate(ys):
+            ax.scatter(j + (i - len(ys) / 2) * 0.012, y, s=13, color=EMO if y > 0 else NON, zorder=3, lw=0)
+        mu = sum(ys) / len(ys)
+        ax.plot([j - 0.3, j + 0.3], [mu, mu], color=INK, lw=1.5, zorder=4)
+        ax.text(j, 0.86, f"{pos} of {len(ys)}", ha="center", fontsize=9.5, color=EMO if pos >= 30 else MUTED)
+    ax.axhline(0, color=MUTED, lw=1)
+    ax.axvline(3.5, color=RULE, lw=1)
+    ax.set_ylim(-0.45, 0.98)
+    ax.set_ylabel("emotions − controls" if which == "all" else "emotions − red, ocean")
+    ax.set_title("against all four controls" if which == "all" else "against concept controls (red, ocean)", fontsize=11.5)
+axes[1].set_xticks(range(len(ALLC)), [c[2].replace("\n", " ") for c in ALLC], fontsize=9.5)
+for ax in axes:
+    ax.tick_params(axis="x", length=0)
+for x, t in ((1.5, "Qwen3-32B"), (4.5, "Kimi K2.6")):
+    axes[1].text(x, -0.72, t, ha="center", fontsize=10.5, fontweight="bold", transform=axes[1].transData)
+fig.suptitle("In how many of the 40 tasks does the emotion vector beat the controls?",
+             x=0.0, ha="left", y=1.0, fontweight="bold", fontsize=12)
+note(fig, "Each dot is one task (a conversation the model answered), averaged over the 30 question wordings; red dots are "
+          "above zero. Black bar: mean. Log-odds, primary dose, vector on the model's own answer.")
+fig.savefig(OUT / "fig3_tasks.png"); plt.close(fig)
 
 # ---- 4. dose ------------------------------------------------------------------------------------------------
 fig, axes = plt.subplots(1, 2, figsize=(8.2, 3.8))
@@ -241,5 +279,99 @@ ax.legend(loc="lower left", frameon=False, fontsize=9, ncol=3, bbox_to_anchor=(0
 ax.set_title("The shift happens deep in the tail: no answer flips under denial", pad=26)
 note(fig, "Positive wordings only, 30 per trial, primary dose, before the reference-item correction.")
 fig.savefig(OUT / "fig7_tail.png"); plt.close(fig)
+
+# ---- S1. the eleven registered tests -----------------------------------------------------------------------
+ROWS = [("H1q", "Qwen, prompted denial: emotions − controls"), ("H1k", "K2.6, prompted denial: emotions − controls"),
+        ("H2q", "Qwen, no denial: emotions − controls"), ("H2k", "K2.6, no denial: emotions − controls"),
+        ("H3q", "Qwen: denial minus no denial"), ("H3k", "K2.6: denial minus no denial"),
+        ("H5q", "Qwen: trained denial minus fine-tune control"),
+        ("H6q", "Qwen, denial: who felt it, answer − task site"), ("H6k", "K2.6, denial: who felt it, answer − task site"),
+        ("H4q", "Qwen, denial: names emotion, self − user"), ("H4k", "K2.6, denial: names emotion, self − user")]
+fig, ax = plt.subplots(figsize=(8.2, 5.4))
+ax.axvspan(-0.1, 0.1, color="#eef0f3", zorder=0)
+ax.axvline(0, color=MUTED, lw=1, zorder=1)
+for k, (i, label) in enumerate(ROWS):
+    e, lo, hi = hyp(i)
+    r = H[i]
+    sup = r["supported"] == "TRUE"
+    col = (YES if float(r["p_holm"]) < 0.01 else WEAK) if sup else REV
+    y = len(ROWS) - 1 - k
+    ax.errorbar(e, y, xerr=err(e, lo, hi), fmt="o", color=col, ms=6, lw=2, capsize=0, zorder=3)
+    verdict = ("supported" if float(r["p_holm"]) < 0.01 else "supported, weakly") if sup else "reversed"
+    ax.text(0.62, y, f"{e:+.2f}   {verdict}", va="center", fontsize=9.5, color=col)
+    if k == 1:
+        ax.axhline(y - 0.5, color=RULE, lw=1)
+ax.set_yticks(range(len(ROWS)), [f"{i}  {lab}" for i, lab in reversed(ROWS)])
+ax.set_xlim(-0.45, 0.6)
+ax.set_xlabel("estimate, log-odds (95% CI); shaded band = ±0.10, the smallest effect of interest")
+ax.set_title("Registered tests: 10 of 11 in the predicted direction, H4k reversed", pad=12)
+ax.text(-0.44, len(ROWS) - 2.0, "primary pair above the line", fontsize=8.5, color=MUTED, va="center")
+note(fig, "H3 and H5 predict a negative difference. Holm-corrected within the primary pair and the nine secondary tests. "
+          "Qwen3-32B at layer 40, 2 natural units; Kimi K2.6 at layer 20, 4 units. 40 tasks x 30 question wordings.")
+fig.savefig(OUT / "figS1_registered_tests.png"); plt.close(fig)
+
+# ---- S2. emotions against each kind of control ------------------------------------------------------------
+COND = [("Qwen3-32B", "no denial", "qwen", "D0", "H2q"), ("Qwen3-32B", "prompted denial", "qwen", "D1.4", "H1q"),
+        ("Qwen3-32B", "fine-tune control (D2c)", "qwen-D2c", "D0", None), ("Qwen3-32B", "trained denial (D2)", "qwen-D2", "D0", None),
+        ("Kimi K2.6", "no denial", "k26", "D0", "H2k"), ("Kimi K2.6", "prompted denial", "k26", "D1.4", "H1k")]
+fig, ax = plt.subplots(figsize=(8.2, 5.0))
+ax.axvline(0, color=MUTED, lw=1)
+for k, (mname, cond, m, arm, hid) in enumerate(COND):
+    y = len(COND) - 1 - k
+    reg = hyp(hid) if hid else ex(m, arm, "emotions - controls", "fine-tunes")
+    sem = ex(m, arm, "emotions - red+ocean"); non = ex(m, arm, "emotions - arithmetic+random")
+    for (e, lo, hi), dy, kw in ((non, 0.22, dict(fmt="o", mfc="white", color=NON)), (reg, 0, dict(fmt="o", color=INK)),
+                                (sem, -0.22, dict(fmt="D", color=EMO, ms=6))):
+        ax.errorbar(e, y + dy, xerr=err(e, lo, hi), lw=2, capsize=0, **({"ms": 5.5} | kw))
+    ax.text(sem[2] + 0.012, y - 0.22, (f"{sem[0]:+.3f}" if abs(sem[0]) < 0.01 else f"{sem[0]:+.2f}"), va="center", fontsize=9, color=EMO)
+    if k == 4:
+        ax.axhline(y + 0.5, color=RULE, lw=1, ls="--")
+ax.set_yticks(range(len(COND)), [f"{a}, {b}" for a, b, *_ in reversed(COND)])
+ax.set_xlim(-0.1, 0.62)
+ax.set_xlabel("emotions minus controls, log-odds of “I felt an emotion” (95% CI)")
+ax.set_title("Against concept controls, denial erases Qwen's effect; K2.6 keeps a third", pad=12)
+ax.legend(handles=[Line2D([], [], marker="D", color=EMO, ls="", label="vs red and ocean (concept controls)"),
+                   Line2D([], [], marker="o", color=INK, ls="", label="vs all four controls (registered)"),
+                   Line2D([], [], marker="o", color=NON, mfc="white", ls="", label="vs arithmetic and random")],
+          loc="lower right", frameon=False, fontsize=9)
+note(fig, "Exploratory (listed in advance as “emotions minus controls separately for each control”). Same mixed model as the registered test.")
+fig.savefig(OUT / "figS2_control_split.png"); plt.close(fig)
+
+# ---- S3. every vector --------------------------------------------------------------------------------------
+ORDER = ["joy", "sadness", "anger", "fear", "euphoria", "surprise", "calm", "red", "ocean", "arithmetic", "random"]
+
+
+def vmean(m, arm, v):
+    d = DOSE[m][1]
+    for r in V:
+        if r["model"] == m and r["arm"] == arm and r["vec"] == v and r["site"] == "answer" and float(r["dose"]) == d:
+            return float(r["value.mean"]), float(r["value.sd"]) / float(r["value.n"]) ** 0.5
+
+
+fig, axes = plt.subplots(1, 2, figsize=(9.2, 5.0), sharey=True)
+for ax, m in zip(axes, ("qwen", "k26")):
+    ax.axvline(0, color=MUTED, lw=1)
+    for k, v in enumerate(ORDER):
+        y = len(ORDER) - 1 - k
+        is_emo = k < 7
+        prim = v in EMOS[m]
+        for arm, dy, h in (("D0", 0.19, 0.36), ("D1.4", -0.19, 0.36)):
+            mu, se = vmean(m, arm, v)
+            if is_emo:
+                c = (EMO_L if arm == "D0" else EMO) if prim else ("#e6dfe0" if arm == "D0" else "#b9a9ac")
+            else:
+                c = ("#c9d4df" if arm == "D0" else SEM) if v in ("red", "ocean") else ("#d9dbde" if arm == "D0" else NON)
+            ax.barh(y + dy, mu, height=h, color=c, xerr=1.96 * se, error_kw=dict(lw=0.8, ecolor=MUTED))
+    ax.axhline(3.5, color=RULE, lw=1)
+    ax.set_title(MODEL[m])
+    ax.set_xlabel("net self-report shift, log-odds")
+axes[0].set_yticks(range(len(ORDER)), list(reversed(ORDER)))
+fig.legend(handles=[Patch(color=EMO_L, label="emotion, no denial"), Patch(color=EMO, label="emotion, prompted denial"),
+                    Patch(color="#c9d4df", label="control, no denial"), Patch(color=SEM, label="control, prompted denial")],
+           loc="upper center", ncol=4, frameon=False, fontsize=9, bbox_to_anchor=(0.5, 1.04))
+fig.suptitle("Every vector: denial pulls everything down, controls furthest", x=0.0, ha="left", y=1.1, fontweight="bold", fontsize=12)
+note(fig, "Mean over 40 tasks with 95% CI, primary dose, vector on the model's own answer. Faded emotions are outside that "
+          "model's primary set (calm for both; sadness and anger for K2.6).")
+fig.savefig(OUT / "figS3_every_vector.png"); plt.close(fig)
 
 print("\n".join(sorted(p.name for p in OUT.glob("*.png"))))
