@@ -76,10 +76,13 @@ out.mkdir(parents=True, exist_ok=True)
 tag = Path(model).name.lower()  # qwen3-32b, or k26 for /nvme/k26
 _cfg = Path(model) / "config.json"
 QWEN = not _cfg.exists() or json.loads(_cfg.read_text())["model_type"] == "qwen3"
+# GLM-5.3 (kimisroom/glm.py): the engine backend like K2.6, its own renderer and self-entity, and no
+# confirmatory task until its PREREG amendment is timestamped (glm.assert_not_confirmatory)
+GLM = _cfg.exists() and json.loads(_cfg.read_text())["model_type"] == "glm_moe_dsa"
 
 
 def battery() -> list[dict]:
-    return load_battery(opt.get("--battery"), entity="Qwen" if QWEN else None)
+    return load_battery(opt.get("--battery"), entity="Qwen" if QWEN else "GLM" if GLM else None)
 
 
 def renderer():
@@ -89,6 +92,9 @@ def renderer():
     if QWEN:
         from kimisroom.hf_engine import Qwen3Renderer
         return Qwen3Renderer(AutoTokenizer.from_pretrained(model), enable_thinking=False)
+    if GLM:
+        from kimisroom.glm import GlmRenderer
+        return GlmRenderer(AutoTokenizer.from_pretrained(model))
     return Renderer(AutoTokenizer.from_pretrained(model, trust_remote_code=True), thinking=False)
 
 
@@ -222,6 +228,9 @@ elif stage == "grid":
         tasks = load_jsonl(Path(opt["--task-file"]))[: int(opt.get("--tasks", 10 ** 6))]
     else:
         tasks = [t for t in load_jsonl(ROOT / "prompts/tasks/neutral_tasks.jsonl") if t["id"] in CLEAN_TASKS][: int(opt.get("--tasks", 5))]
+    if GLM:
+        from kimisroom.glm import assert_not_confirmatory
+        assert_not_confirmatory(tasks)
     items = battery()
     # --task-site adds the injection-location control: each emotion vector on the task text instead of the
     # answer, as vector "tasksite:<name>" (runs/confirm_table.py reads the site from that prefix)

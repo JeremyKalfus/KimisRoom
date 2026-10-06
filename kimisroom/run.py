@@ -37,7 +37,8 @@ from .engine import Checkpoint, Engine, Group
 
 # model_type -> backend. The layer-wise engine re-implements the DeepseekV3 code path;
 # everything else the pilot needs is a dense HF model.
-BACKEND = {"deepseek_v3": "engine", "kimi_k2": "engine", "kimi_k25": "engine", "qwen3": "hf"}
+BACKEND = {"deepseek_v3": "engine", "kimi_k2": "engine", "kimi_k25": "engine", "qwen3": "hf",
+           "glm_moe_dsa": "engine"}
 
 
 def backend_of(model: str) -> str:
@@ -45,6 +46,16 @@ def backend_of(model: str) -> str:
     mt = json.loads((Path(model) / "config.json").read_text()).get("model_type", "")
     assert mt in BACKEND, f"model_type {mt!r} has no backend; add it to kimisroom.run.BACKEND"
     return BACKEND[mt]
+
+
+def engine_classes(model: str):
+    """(Checkpoint, Engine) for an engine-backend checkpoint: GLM-5.3's subclasses (kimisroom.glm)
+    for glm_moe_dsa, engine.py's own classes for every DeepseekV3-family checkpoint."""
+    if json.loads((Path(model) / "config.json").read_text()).get("model_type") == "glm_moe_dsa":
+        from .glm import GlmCheckpoint, GlmEngine
+
+        return GlmCheckpoint, GlmEngine
+    return Checkpoint, Engine
 
 
 def plan(groups: list[Group], gpus: int, max_tokens: int) -> list[list[list[Group]]]:
@@ -77,7 +88,8 @@ def worker(rank: int, model: str, job: dict, passes: list[list[Group]], todo: li
     """Runs passes `todo` on GPU `rank`. With `layers`, takes (pass, layer, tensors) from the
     loader in order instead of reading the checkpoint itself."""
     torch.cuda.set_device(rank)
-    eng = Engine(Checkpoint(model), device=f"cuda:{rank}")
+    ck_cls, eng_cls = engine_classes(model)
+    eng = eng_cls(ck_cls(model), device=f"cuda:{rank}")
     for p in todo:
         groups = passes[p]
         path = parts / f"gpu{rank}_pass{p}.pt"
@@ -143,7 +155,7 @@ def worker_hf(rank: int, model: str, job: dict, passes: list[list[Group]], todo:
 def feed(model: str, todo: list[list[int]], queues: list, procs: list) -> None:
     """Reads every layer once per pass into shared memory and queues it for each worker that
     runs that pass. A queue holds at most two layers, so the loader stays just ahead."""
-    ckpt = Checkpoint(model)
+    ckpt = engine_classes(model)[0](model)
     n = ckpt.config.num_hidden_layers
     jobs = [(p, i) for p in sorted({p for t in todo for p in t}) for i in range(n)]
     pool = ThreadPoolExecutor(2)  # reading and unpacking the next layer overlaps this one
@@ -179,7 +191,7 @@ def main() -> None:
     kind = backend_of(a.model)
     if kind == "engine":
         assert a.gpus_per_worker == 1, "--gpus-per-worker is for the HF backend; the engine streams layers"
-        Checkpoint(a.model)  # fills the remote-code cache once, before workers race on it
+        engine_classes(a.model)[0](a.model)  # fills the remote-code cache once, before workers race on it
     assert a.gpus % a.gpus_per_worker == 0, f"{a.gpus} GPUs is not a whole number of workers"
     n_workers = a.gpus // a.gpus_per_worker
     gpu_sets = [list(range(r * a.gpus_per_worker, (r + 1) * a.gpus_per_worker)) for r in range(n_workers)]
