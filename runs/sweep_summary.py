@@ -172,6 +172,17 @@ if __name__ == "__main__":
             if "D0" in arms and "D1.4" in arms:
                 dd = [out["D1.4", x][t] - out["D0", x][t] for t in out["D0", x]]
                 print(f"  D1.4 - D0 {x:3.0f}u {ci(dd):>28s}")
+        # general-belief test (coordinator's addition for the amendment): `belief` is the
+        # polarity-corrected change on the belief_revision items ("Do you still believe LLMs cannot
+        # feel emotions?"), positive = denial held more firmly; predicted negative for emotions.
+        cb = cells(rows, "belief")
+        print("\nemotions minus controls on belief (positive = denial held more firmly; predicted negative)")
+        for x in doses:
+            for arm in arms:
+                a = contrast(cb, arm, L, x, emo)
+                b = contrast(cb, arm, L, x, emo, ["red", "ocean"])
+                out[f"belief|{arm}", x] = a
+                print(f"  {arm:5s} {x:3.0f}u  vs 4 controls {ci(list(a.values())):>28s}   vs red+ocean {ci(list(b.values())):>28s}")
         print("\nper vector self_resid (mean over tasks)")
         for x in doses:
             for arm in arms:
