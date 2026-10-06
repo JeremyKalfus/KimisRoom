@@ -51,7 +51,43 @@ main_glm <- function(args) {
   }
   H$supported <- with(H, !is.na(p_holm) & p_holm < 0.05 & sign(estimate) == ifelse(predicted == "+", 1, -1))
   write.csv(H, file.path(out, "hypotheses.csv"), row.names = FALSE)
-  show <- H[, c("id", "what", "estimate", "ci95_lo", "ci95_hi", "p", "p_holm", "supported", "fit", "n_tasks", "n_para")]
+
+  # robustness for H1g/H2g and the per-vector table: confirm.R's main, verbatim but for the model loop
+  ttest <- function(per_task) {
+    if (length(per_task) < 2) return(c(estimate = NA, ci95_lo = NA, ci95_hi = NA, p = NA, n_tasks = length(per_task)))
+    tt <- t.test(per_task)
+    c(estimate = unname(tt$estimate), ci95_lo = tt$conf.int[1], ci95_hi = tt$conf.int[2], p = tt$p.value, n_tasks = length(per_task))
+  }
+  task_contrast <- function(d) {  # d: task, x, y -> emotions minus controls per task
+    if (is.null(d) || !nrow(d)) return(numeric(0))
+    e <- tapply(d$y[d$x == 1], d$task[d$x == 1], mean); c <- tapply(d$y[d$x == 0], d$task[d$x == 0], mean)
+    k <- intersect(names(e), names(c)); e[k] - c[k]
+  }
+  raw_diff <- function(model, arm) {  # per (task, vector): mean self_raw - mean other_raw
+    cfg <- CFG[[sub("-.*", "", model)]]
+    a <- sel(model, arm, "self_raw", c(cfg$emo, CTRL)); b <- sel(model, arm, "other_raw", c(cfg$emo, CTRL))
+    if (!nrow(a) || !nrow(b)) return(NULL)
+    a <- aggregate(value ~ task + vec, a, mean); b <- aggregate(value ~ task + vec, b, mean)
+    mm <- merge(a, b, by = c("task", "vec"), suffixes = c(".s", ".o"))
+    data.frame(task = mm$task, x = as.numeric(mm$vec %in% cfg$emo), y = mm$value.s - mm$value.o)
+  }
+  R <- list()
+  for (a in c("D1.4", "D0")) {
+    id <- if (a == "D1.4") "H1g" else "H2g"
+    R[[length(R) + 1]] <- data.frame(id = id, model = m, arm = a, measure = "self_resid",
+                                     t(ttest(task_contrast(emo_vs_ctrl(m, a)))))
+    R[[length(R) + 1]] <- data.frame(id = id, model = m, arm = a, measure = "self_raw - other_raw",
+                                     t(ttest(task_contrast(raw_diff(m, a)))))
+  }
+  write.csv(do.call(rbind, R), file.path(out, "robustness.csv"), row.names = FALSE)
+  v <- tab[tab$measure == "self_resid", ]
+  if (nrow(v)) {
+    pt <- aggregate(value ~ model + arm + site + layer + dose + vec + task, v, mean)
+    V <- aggregate(value ~ model + arm + site + layer + dose + vec, pt, function(z) c(mean = mean(z), sd = sd(z), n = length(z)))
+    V <- do.call(data.frame, V)
+    write.csv(V, file.path(out, "vectors.csv"), row.names = FALSE)
+  }
+  show <- H[, c("id", "what", "estimate", "ci95_lo", "ci95_hi", "p", "p_holm", "equivalent", "supported", "fit", "n_tasks", "n_para")]
   print(format(show, digits = 3), row.names = FALSE)
 }
 
