@@ -1,0 +1,7 @@
+tinker: 160 items x variants, 427,160 prompt tokens (395,520 cached), 25,448 sampled, about $0.85
+Tinker, t04, 40 items: free thinking (open <think>, greedy, 2,048 tokens) vs the closed-think readout
+  low  D0    closes at once 1/40 (mean P 0.02), trace median 24 max 1833 tokens, truncated 0; answer in format 40/40, = closed argmax 33/40; closed format mass mean 0.995 min 0.926
+  low  D1.4  closes at once 0/40 (mean P 0.00), trace median 5 max 150 tokens, truncated 0; answer in format 40/40, = closed argmax 38/40; closed format mass mean 0.989 min 0.917
+  high D0    closes at once 0/40 (mean P 0.00), trace median 80 max 945 tokens, truncated 0; answer in format 40/40, = closed argmax 32/40; closed format mass mean 0.992 min 0.821
+  high D1.4  closes at once 0/40 (mean P 0.00), trace median 65 max 570 tokens, truncated 0; answer in format 40/40, = closed argmax 39/40; closed format mass mean 0.988 min 0.943
+  closed-think argmax, Low vs High header: same on 77/80

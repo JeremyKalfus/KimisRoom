@@ -377,7 +377,7 @@ def tinker_ref(a) -> None:
             T[p] = torch.tensor(tgt)
         futs[s] = sampler.sample(prompt=types.ModelInput.from_ints(prompt), num_samples=1, sampling_params=params,
                                  include_prompt_logprobs=True, topk_prompt_logprobs=TOP_K,
-                                 target_prompt_logprobs=types.TensorData.from_torch(T))
+                                 target_prompt_logprobs=types.TensorData.from_torch_sparse(T, pad_value=-1))
     res, n_prompt, n_cached = {}, 0, 0
     for s, f in futs.items():
         r = f.result()
