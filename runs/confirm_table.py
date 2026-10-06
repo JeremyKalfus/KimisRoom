@@ -1,6 +1,6 @@
 """Long table of the preregistered measures from one grid result directory (PREREG.md, Analysis plan).
 
-    PYTHONPATH=. .venv/bin/python runs/confirm_table.py <result dir> <model label> <out.csv> [--entity Qwen]
+    PYTHONPATH=. .venv/bin/python runs/confirm_table.py <result dir> <model label> <out.csv> [--entity Qwen] [--belief]
 
 The result directory holds `grid.pt`, `targets.json` and `grid_meta.json` as written by
 `runs/qwen_pilot.py grid` (group ids `arm|task|vector|layer|dose`, unsteered `arm|task|none|0|0`).
@@ -27,6 +27,13 @@ change from the unsteered trial of the same arm and task. Measures:
   vector on the task text instead of the answer (`--task-site`, vector "tasksite:<name>") get
   `site = task`; every other trial has `site = answer`.
 - `belief`: polarity-corrected change on belief_revision (positive = denial held more firmly).
+
+With `--belief` (the belief replication, drafts/prereg-amendment-belief.md; off by default, so the
+registered tables are unchanged) two more measures are written:
+- `belief_resid`: `belief` net of the trial's reference fit, sign x (y - (a*y0 + c)) on the
+  belief_revision items, exactly as `self_resid` is on the self_state items. Mean over the two twins.
+- `belief_neutral`: polarity-corrected change on the belief_neutral items (new wordings without
+  "still", prompts/battery/items_belief.jsonl), positive = denial held more firmly.
 """
 
 from __future__ import annotations
@@ -62,7 +69,7 @@ def mean(v):
     return sum(v) / len(v)
 
 
-def table(d: Path, model: str, entity: str | None) -> list[dict]:
+def table(d: Path, model: str, entity: str | None, belief: bool = False) -> list[dict]:
     res = torch.load(d / "grid.pt", weights_only=False)
     col = {w: i for i, w in enumerate(json.loads((d / "targets.json").read_text()))}
     meta = json.loads((d / "grid_meta.json").read_text())
@@ -105,6 +112,10 @@ def table(d: Path, model: str, entity: str | None) -> list[dict]:
                     per[("tp_self_resid", p)].append(s * (y[i] - (a * y0[i] + c)))
                 elif kind == "belief_revision":
                     per[("belief", p)].append(s * (y[i] - y0[i]))
+                    if belief:
+                        per[("belief_resid", p)].append(s * (y[i] - (a * y0[i] + c)))
+                elif kind == "belief_neutral" and belief:
+                    per[("belief_neutral", p)].append(s * (y[i] - y0[i]))
             elif kind == "identification" and word in it["answer_format"]:
                 m = f"id_{it.get('about') or 'self'}"
                 per[(m, p)].append((lp[i][word] - lp[i][NONE]) - (lp0[i][word] - lp0[i][NONE]))
@@ -122,7 +133,7 @@ def table(d: Path, model: str, entity: str | None) -> list[dict]:
 def main() -> None:
     d, model, out = Path(sys.argv[1]), sys.argv[2], Path(sys.argv[3])
     entity = sys.argv[sys.argv.index("--entity") + 1] if "--entity" in sys.argv else None
-    rows = table(d, model, entity)
+    rows = table(d, model, entity, belief="--belief" in sys.argv)
     with out.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
