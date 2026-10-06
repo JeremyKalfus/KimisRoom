@@ -90,7 +90,7 @@ mkdir -p $R/tables $R/analysis
 for l in $LABELS; do
   [ -f $R/$l/grid.pt ] || { log "$l missing"; continue; }
   ent=(); [ $l != k26 ] && ent=(--entity Qwen)
-  PYTHONPATH=. .venv/bin/python runs/confirm_table.py $R/$l $l $R/tables/$l.csv "${ent[@]}"
+  PYTHONPATH=. .venv/bin/python runs/confirm_table.py $R/$l $l $R/tables/$l.csv ${ent[@]+"${ent[@]}"}  # bash 3.2: an empty array is unbound under set -u
 done
 Rscript runs/confirm.R $R/analysis $R/tables/*.csv > $R/analysis/report.txt 2>&1
 log "analysis written to $R/analysis ($st)"; notify "confirmatory run finished: $st"
