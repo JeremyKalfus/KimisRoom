@@ -4,10 +4,14 @@
 # When that AZ has no capacity, the grab logic of scripts/confirm_run.sh: a box named kr-glm, created by
 # scripts/vm_up.sh in every default-subnet AZ of each region in turn. Prints "NAME REGION IP" and caches
 # the region for vm_ssh.sh / sync.sh. Run it under one kv exec, as confirm_run.sh's header shows.
+# GLM_FALLBACK="TYPE@REGION ..." adds other instance types (named kr-glm-TYPE) once GLM_FALLBACK_AFTER
+# minutes (default 90) have passed without a g6e.12xlarge, e.g. "p5.4xlarge@us-east-2" (1x H100 80 GB,
+# 16 vCPU, inside the P quota there): the engine runs on any number of GPUs.
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 1
 REGIONS=${GLM_REGIONS:-"us-east-2 us-east-1 us-west-2 eu-central-1"}
-deadline=$(( $(date +%s) + ${1:-120} * 60 ))
+start=$(date +%s); deadline=$(( start + ${1:-120} * 60 ))
+FALLBACK=${GLM_FALLBACK:-}; FALLBACK_AFTER=${GLM_FALLBACK_AFTER:-90}
 aws() { scripts/aws.sh "$@"; }
 log() { echo "$(date +%T) $*" >&2; }
 krc=$(AWS_DEFAULT_REGION=us-east-1 aws ec2 describe-instances --filters Name=tag:Name,Values=kr-c \
@@ -33,6 +37,16 @@ while :; do
     fi
     [ $((n % 5)) = 1 ] && log "kr-glm ($r): $(grep -o '[A-Za-z]*Capacity\|VcpuLimitExceeded\|[A-Za-z]*Exception' /tmp/kimisroom-glm-grab-$r.err | sort | uniq -c | tr '\n' ' ')"
   done
+  if [ -n "$FALLBACK" ] && [ $(( $(date +%s) - start )) -ge $(( FALLBACK_AFTER * 60 )) ]; then
+    for spec in $FALLBACK; do
+      t=${spec%@*}; r=${spec#*@}; nm=kr-glm-${t%%.*}
+      if ip=$(AWS_DEFAULT_REGION=$r scripts/vm_up.sh "$nm" "$t" 2> /tmp/kimisroom-glm-grab-$r-$t.err); then
+        echo $r > /tmp/kimisroom-region-$nm
+        echo "$nm $r $ip $t"; exit 0
+      fi
+      [ $((n % 5)) = 1 ] && log "$nm ($t, $r): $(grep -o '[A-Za-z]*Capacity\|VcpuLimitExceeded\|[A-Za-z]*Exception\|[A-Za-z]*Unsupported' /tmp/kimisroom-glm-grab-$r-$t.err | sort | uniq -c | tr '\n' ' ')"
+    done
+  fi
   [ "$(date +%s)" -gt $deadline ] && { log "no g6e.12xlarge after ${1:-120} min"; exit 1; }
   sleep 120
 done
