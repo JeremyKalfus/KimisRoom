@@ -23,7 +23,7 @@ INK, MUTED, RULE = "#16181c", "#59606b", "#d6dae0"
 EMO, EMO_L, SEM, NON = "#a8293f", "#e3a3ae", "#3f6587", "#8b919b"
 YES, WEAK, REV = "#22684a", "#9a7614", "#9b3b1c"
 plt.rcParams.update({
-    "font.family": ["Helvetica Neue", "Helvetica", "Arial", "DejaVu Sans"], "font.size": 10.5,
+    "font.family": ["Times New Roman", "Times", "DejaVu Serif"], "font.size": 11, "mathtext.fontset": "stix",
     "axes.edgecolor": MUTED, "axes.labelcolor": INK, "xtick.color": MUTED, "ytick.color": INK,
     "axes.spines.top": False, "axes.spines.right": False, "axes.titleweight": "bold",
     "axes.titlesize": 12, "axes.titlelocation": "left", "figure.dpi": 100, "savefig.dpi": 220,
