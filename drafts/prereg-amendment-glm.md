@@ -162,7 +162,7 @@ For comparison, the same code run on K2.6's layer-20 pilot table (dev tasks, 4 u
   - concept controls red, ocean and arithmetic;
   - one seeded random direction.
 
-  Pain is not built into any trial. File: `~/glm/vec/vectors.pt` on the GPU box, kept in `results/glm/vec/` outside git (hash in section 7).
+  The natural unit is the mean norm of the eight raw emotion vectors at the layer, pain included, exactly as for both registered models (their `v2` vectors include pain). The pain vector is built for that reason only and is never steered: `runs/qwen_pilot.py` leaves pain out unless `--allow-pain` is given, and it is not. File: `~/glm/vec/vectors.pt` on the GPU box, kept in `results/glm/vec/` outside git (hash in section 7).
 
 **Doses and emotion set** (from the selection rule, section 6):
 
