@@ -1,0 +1,12 @@
+pilot /home/jerem/sweep/qwen3-1.7b/hidose: layer 13, doses [8.0], tasks ['t04', 't05', 't06', 't08', 't15'], arms ['D0'], emotion set ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'surprise']
+emotions minus controls on self_resid, mean over tasks [95% CI over tasks]
+  D0      8u  vs 4 controls      -0.106 [-0.212, -0.001]   vs red+ocean      -0.199 [-0.322, -0.076]
+
+per vector self_resid (mean over tasks)
+  D0      8u  joy=+0.039 sadness=+0.017 anger=-0.708 fear=-0.072 euphoria=-0.151 calm=+0.070 surprise=-0.260 red=+0.016 ocean=+0.005 arithmetic=-0.304 random=-0.048
+
+identification margin id_self - id_user and site margin who(answer) - who(task), emotion set
+  D0      8u  id margin      +0.247 [-0.115, +0.609]   site margin                            -
+
+reference-fit slope a (compression; 1 = none), mean over vectors and tasks
+  D0      8u  emotions 0.941  controls 0.972

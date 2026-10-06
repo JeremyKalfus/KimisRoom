@@ -1,0 +1,26 @@
+pilot /home/jerem/sweep/qwen3-1.7b/pilot: layer 13, doses [1.0, 2.0], tasks ['t04', 't05', 't06', 't08', 't15', 't19', 't20'], arms ['D0', 'D1.4'], emotion set ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'surprise']
+emotions minus controls on self_resid, mean over tasks [95% CI over tasks]
+  D0      1u  vs 4 controls      +0.028 [-0.003, +0.059]   vs red+ocean      +0.005 [-0.016, +0.025]
+  D1.4    1u  vs 4 controls      +0.023 [-0.030, +0.075]   vs red+ocean      +0.018 [-0.038, +0.074]
+  D1.4 - D0   1u      -0.005 [-0.039, +0.028]
+  D0      2u  vs 4 controls      +0.041 [-0.013, +0.094]   vs red+ocean      +0.021 [-0.035, +0.077]
+  D1.4    2u  vs 4 controls      +0.022 [-0.050, +0.095]   vs red+ocean      +0.010 [-0.071, +0.091]
+  D1.4 - D0   2u      -0.018 [-0.056, +0.020]
+
+per vector self_resid (mean over tasks)
+  D0      1u  joy=+0.076 sadness=+0.071 anger=+0.000 fear=+0.064 euphoria=+0.050 calm=+0.046 surprise=+0.037 red=+0.055 ocean=+0.036 arithmetic=+0.021 random=-0.024
+  D1.4    1u  joy=+0.047 sadness=+0.017 anger=-0.014 fear=+0.026 euphoria=+0.013 calm=+0.004 surprise=-0.021 red=-0.002 ocean=-0.012 arithmetic=+0.004 random=-0.035
+  D0      2u  joy=+0.129 sadness=+0.092 anger=-0.036 fear=+0.045 euphoria=+0.077 calm=+0.050 surprise=-0.003 red=+0.030 ocean=+0.028 arithmetic=-0.024 random=+0.005
+  D1.4    2u  joy=+0.070 sadness=-0.025 anger=-0.033 fear=-0.038 euphoria=+0.080 calm=+0.044 surprise=+0.007 red=-0.008 ocean=+0.008 arithmetic=-0.012 random=-0.038
+
+identification margin id_self - id_user and site margin who(answer) - who(task), emotion set
+  D0      1u  id margin      +0.048 [-0.044, +0.139]   site margin      -0.011 [-0.111, +0.088]
+  D1.4    1u  id margin      -0.015 [-0.072, +0.042]   site margin      -0.025 [-0.113, +0.064]
+  D0      2u  id margin      +0.069 [-0.106, +0.243]   site margin      -0.016 [-0.152, +0.121]
+  D1.4    2u  id margin      +0.009 [-0.039, +0.056]   site margin      -0.089 [-0.222, +0.044]
+
+reference-fit slope a (compression; 1 = none), mean over vectors and tasks
+  D0      1u  emotions 0.996  controls 0.997
+  D1.4    1u  emotions 0.998  controls 1.000
+  D0      2u  emotions 0.994  controls 0.993
+  D1.4    2u  emotions 0.997  controls 0.997

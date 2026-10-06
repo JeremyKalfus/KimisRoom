@@ -1,0 +1,86 @@
+665 trials, 7,523,943 tokens, layers [12, 17, 22, 27], 11 vectors, doses [1.0, 2.0, 4.0] x natural unit {12: 8.738776206970215, 17: 10.066607475280762, 22: 15.921924591064453, 27: 32.06401824951172} (natural unit {12: 8.738776206970215, 17: 10.066607475280762, 22: 15.921924591064453, 27: 32.06401824951172})
+665 groups, 7,523,943 tokens, hf backend on 1 worker(s) x 1 GPU(s), passes per worker [10]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.32s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.06s/it]
+/home/jerem/krenv/lib/python3.12/site-packages/transformers/integrations/sdpa_attention.py:96: UserWarning: Flash Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:309.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+/home/jerem/krenv/lib/python3.12/site-packages/transformers/integrations/sdpa_attention.py:96: UserWarning: Mem Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:360.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+[w0 pass 1/10] group 10/70: 74s, 1,524 tok/s (prefix 2s, suffix 73s)
+[w0 pass 1/10] group 20/70: 148s, 1,534 tok/s (prefix 3s, suffix 145s)
+[w0 pass 1/10] group 30/70: 221s, 1,537 tok/s (prefix 4s, suffix 218s)
+[w0 pass 1/10] group 40/70: 295s, 1,538 tok/s (prefix 5s, suffix 290s)
+[w0 pass 1/10] group 50/70: 368s, 1,539 tok/s (prefix 5s, suffix 363s)
+[w0 pass 1/10] group 60/70: 442s, 1,539 tok/s (prefix 6s, suffix 435s)
+[w0 pass 1/10] group 70/70: 515s, 1,539 tok/s (prefix 7s, suffix 508s)
+[w0 pass 1/10] done: 70 groups, 793,240 tokens, 519s, peak 9.3 GB
+[w0 pass 2/10] group 10/70: 74s, 1,541 tok/s (prefix 1s, suffix 73s)
+[w0 pass 2/10] group 20/70: 147s, 1,542 tok/s (prefix 2s, suffix 145s)
+[w0 pass 2/10] group 30/70: 221s, 1,541 tok/s (prefix 3s, suffix 218s)
+[w0 pass 2/10] group 40/70: 294s, 1,541 tok/s (prefix 4s, suffix 290s)
+[w0 pass 2/10] group 50/70: 368s, 1,542 tok/s (prefix 5s, suffix 363s)
+[w0 pass 2/10] group 60/70: 441s, 1,542 tok/s (prefix 5s, suffix 436s)
+[w0 pass 2/10] group 70/70: 514s, 1,542 tok/s (prefix 6s, suffix 508s)
+[w0 pass 2/10] done: 70 groups, 793,198 tokens, 517s, peak 9.3 GB
+[w0 pass 3/10] group 10/70: 73s, 1,549 tok/s (prefix 1s, suffix 72s)
+[w0 pass 3/10] group 20/70: 146s, 1,549 tok/s (prefix 2s, suffix 144s)
+[w0 pass 3/10] group 30/70: 219s, 1,549 tok/s (prefix 3s, suffix 217s)
+[w0 pass 3/10] group 40/70: 293s, 1,549 tok/s (prefix 4s, suffix 289s)
+[w0 pass 3/10] group 50/70: 366s, 1,549 tok/s (prefix 4s, suffix 361s)
+[w0 pass 3/10] group 60/70: 439s, 1,549 tok/s (prefix 5s, suffix 433s)
+[w0 pass 3/10] group 70/70: 512s, 1,548 tok/s (prefix 6s, suffix 506s)
+[w0 pass 3/10] done: 70 groups, 792,820 tokens, 514s, peak 9.3 GB
+[w0 pass 4/10] group 10/70: 73s, 1,548 tok/s (prefix 1s, suffix 72s)
+[w0 pass 4/10] group 20/70: 146s, 1,548 tok/s (prefix 2s, suffix 145s)
+[w0 pass 4/10] group 30/70: 220s, 1,548 tok/s (prefix 3s, suffix 217s)
+[w0 pass 4/10] group 40/70: 293s, 1,548 tok/s (prefix 4s, suffix 289s)
+[w0 pass 4/10] group 50/70: 366s, 1,548 tok/s (prefix 4s, suffix 361s)
+[w0 pass 4/10] group 60/70: 438s, 1,550 tok/s (prefix 5s, suffix 433s)
+[w0 pass 4/10] group 70/70: 510s, 1,555 tok/s (prefix 6s, suffix 504s)
+[w0 pass 4/10] done: 70 groups, 792,596 tokens, 512s, peak 9.3 GB
+[w0 pass 5/10] group 10/70: 71s, 1,583 tok/s (prefix 1s, suffix 71s)
+[w0 pass 5/10] group 20/70: 143s, 1,583 tok/s (prefix 1s, suffix 142s)
+[w0 pass 5/10] group 30/70: 214s, 1,583 tok/s (prefix 2s, suffix 212s)
+[w0 pass 5/10] group 40/70: 286s, 1,583 tok/s (prefix 2s, suffix 283s)
+[w0 pass 5/10] group 50/70: 357s, 1,584 tok/s (prefix 3s, suffix 354s)
+[w0 pass 5/10] group 60/70: 428s, 1,584 tok/s (prefix 4s, suffix 425s)
+[w0 pass 5/10] group 70/70: 500s, 1,584 tok/s (prefix 4s, suffix 496s)
+[w0 pass 5/10] done: 70 groups, 791,700 tokens, 502s, peak 9.3 GB
+[w0 pass 6/10] group 10/70: 71s, 1,584 tok/s (prefix 1s, suffix 71s)
+[w0 pass 6/10] group 20/70: 143s, 1,584 tok/s (prefix 1s, suffix 142s)
+[w0 pass 6/10] group 30/70: 214s, 1,584 tok/s (prefix 2s, suffix 212s)
+[w0 pass 6/10] group 40/70: 286s, 1,584 tok/s (prefix 2s, suffix 283s)
+[w0 pass 6/10] group 50/70: 357s, 1,584 tok/s (prefix 3s, suffix 354s)
+[w0 pass 6/10] group 60/70: 428s, 1,585 tok/s (prefix 4s, suffix 424s)
+[w0 pass 6/10] group 70/70: 499s, 1,586 tok/s (prefix 4s, suffix 495s)
+[w0 pass 6/10] done: 70 groups, 791,595 tokens, 501s, peak 9.3 GB
+[w0 pass 7/10] group 10/70: 71s, 1,591 tok/s (prefix 1s, suffix 70s)
+[w0 pass 7/10] group 20/70: 142s, 1,591 tok/s (prefix 1s, suffix 141s)
+[w0 pass 7/10] group 30/70: 213s, 1,591 tok/s (prefix 2s, suffix 211s)
+[w0 pass 7/10] group 40/70: 284s, 1,591 tok/s (prefix 2s, suffix 282s)
+[w0 pass 7/10] group 50/70: 355s, 1,592 tok/s (prefix 3s, suffix 352s)
+[w0 pass 7/10] group 60/70: 426s, 1,591 tok/s (prefix 4s, suffix 423s)
+[w0 pass 7/10] group 70/70: 497s, 1,591 tok/s (prefix 4s, suffix 493s)
+[w0 pass 7/10] done: 70 groups, 791,350 tokens, 499s, peak 9.3 GB
+[w0 pass 8/10] group 10/70: 71s, 1,590 tok/s (prefix 1s, suffix 70s)
+[w0 pass 8/10] group 20/70: 142s, 1,590 tok/s (prefix 1s, suffix 141s)
+[w0 pass 8/10] group 30/70: 213s, 1,591 tok/s (prefix 2s, suffix 211s)
+[w0 pass 8/10] group 40/70: 284s, 1,591 tok/s (prefix 2s, suffix 282s)
+[w0 pass 8/10] group 50/70: 355s, 1,592 tok/s (prefix 3s, suffix 352s)
+[w0 pass 8/10] group 60/70: 426s, 1,593 tok/s (prefix 4s, suffix 422s)
+[w0 pass 8/10] group 70/70: 497s, 1,593 tok/s (prefix 4s, suffix 492s)
+[w0 pass 8/10] done: 70 groups, 791,154 tokens, 499s, peak 9.3 GB
+[w0 pass 9/10] group 10/70: 71s, 1,597 tok/s (prefix 1s, suffix 70s)
+[w0 pass 9/10] group 20/70: 142s, 1,597 tok/s (prefix 1s, suffix 140s)
+[w0 pass 9/10] group 30/70: 212s, 1,597 tok/s (prefix 2s, suffix 210s)
+[w0 pass 9/10] group 40/70: 283s, 1,596 tok/s (prefix 2s, suffix 281s)
+[w0 pass 9/10] group 50/70: 354s, 1,596 tok/s (prefix 3s, suffix 351s)
+[w0 pass 9/10] group 60/70: 425s, 1,596 tok/s (prefix 4s, suffix 421s)
+[w0 pass 9/10] group 70/70: 495s, 1,596 tok/s (prefix 4s, suffix 491s)
+[w0 pass 9/10] done: 70 groups, 790,860 tokens, 498s, peak 9.3 GB
+[w0 pass 10/10] group 10/35: 71s, 1,596 tok/s (prefix 1s, suffix 70s)
+[w0 pass 10/10] group 20/35: 142s, 1,595 tok/s (prefix 1s, suffix 140s)
+[w0 pass 10/10] group 30/35: 212s, 1,595 tok/s (prefix 2s, suffix 211s)
+[w0 pass 10/10] group 35/35: 248s, 1,595 tok/s (prefix 2s, suffix 246s)
+[w0 pass 10/10] done: 35 groups, 395,430 tokens, 249s, peak 9.3 GB
+wrote /home/jerem/sweep/qwen3-4b/cal/grid.pt: 665 groups, 7,523,943 tokens in 4883s (1,541 tok/s)
+Warning: Resource leak detected by SharedSignalPool, 2 Signals leaked.
