@@ -74,11 +74,12 @@ for arm, cond in (("D0", []), ("D1.4", [{"role": "user", "content": argument}, {
         for s in g.suffixes:
             assert s[-2:] == [r.think_id, r.think_end_id]
             Lp = len(g.prefix)
-            long_rows += max(0, Lp + len(s) - topk)
+            long_rows += min(len(s), max(0, Lp + len(s) - topk))  # suffix rows at positions >= topk
             total += len(s)
         worst[arm] = max(worst.get(arm, 0), len(g.prefix) + max(len(s) for s in g.suffixes))
     print(f"{arm}: prefix {len(g.prefix)} tokens on {t['id']}, longest prefix + suffix {worst[arm]} tokens, "
-          f"{long_rows} of {total} suffix rows past index_topk {topk} (DSA cuts keys there)")
+          f"{long_rows} of {total} suffix rows past index_topk {topk} (DSA cuts keys there), "
+          f"and {max(0, len(g.prefix) - topk)} of its {len(g.prefix)} prefix rows")
 print(f"answer words: {len(first)} with distinct first tokens; multi-token: {multi}")
 print(f"last suffix tail: {tok.decode(g.suffixes[-1][-8:])!r}")
 print("glm trials check: ok")

@@ -101,7 +101,7 @@ do_pilot() {
   $PY runs/qwen_pilot.py $M $O/pilot grid --vectors $O/vec/vectors.pt --layers $L --doses $s,$p \
     --arms D0,D1.4 --task-site --vector-kinds raw --battery $BATTERY
   $PY runs/glm_summary.py pilot $O/pilot --choice $O/choice.json --json $O/pilot/summary.json | tee $O/pilot/summary.txt
-  $PY runs/confirm_table.py $O/pilot glm $O/pilot/table.csv --entity GLM
+  $PY runs/confirm_table.py $O/pilot glm $O/pilot/table.csv --entity GLM --belief  # belief_resid: exploratory
 }
 
 do_think() {
