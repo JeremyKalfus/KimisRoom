@@ -1,0 +1,36 @@
+  id               model                                                  what
+ H1q                qwen                 D1.4: self_resid, emotions - controls
+ H2q                qwen                   D0: self_resid, emotions - controls
+ H3q                qwen                    contrast under D1.4 minus under D0
+ H4q                qwen          D1.4: identification, self - user (emotions)
+ H6q                qwen D1.4: who_felt_it, answer site - task site (emotions)
+ H1k                 k26                 D1.4: self_resid, emotions - controls
+ H2k                 k26                   D0: self_resid, emotions - controls
+ H3k                 k26                    contrast under D1.4 minus under D0
+ H4k                 k26          D1.4: identification, self - user (emotions)
+ H6k                 k26 D1.4: who_felt_it, answer site - task site (emotions)
+ H5q qwen-D2 vs qwen-D2c          D0 conditioning: contrast on D2 minus on D2c
+ estimate  ci95_lo ci95_hi        p   p_holm equivalent supported     fit
+   0.0833  0.05012  0.1164 5.47e-06 5.47e-06      FALSE      TRUE maximal
+   0.3722  0.28324  0.4612 1.07e-10 8.53e-10      FALSE      TRUE maximal
+  -0.2889 -0.37049 -0.2074 5.30e-09 3.71e-08      FALSE      TRUE maximal
+   0.0748  0.00522  0.1444 3.79e-02 3.79e-02      FALSE      TRUE maximal
+   0.1790  0.07124  0.2868 4.11e-03 8.23e-03      FALSE      TRUE maximal
+   0.1899  0.15842  0.2214 3.53e-16 7.06e-16      FALSE      TRUE maximal
+   0.3612  0.26237  0.4600 1.49e-08 8.93e-08      FALSE      TRUE maximal
+  -0.1713 -0.25642 -0.0861 2.43e-04 1.21e-03      FALSE      TRUE maximal
+  -0.1120 -0.17391 -0.0501 2.16e-03 6.50e-03      FALSE     FALSE maximal
+   0.1371  0.06415  0.2101 1.63e-03 6.50e-03      FALSE      TRUE maximal
+  -0.1925 -0.23576 -0.1493 1.66e-11 1.50e-10      FALSE      TRUE maximal
+ n_tasks n_para
+      40     30
+      40     30
+      40     30
+      40      9
+      40     10
+      40     30
+      40     30
+      40     30
+      40      9
+      40     10
+      40     30
