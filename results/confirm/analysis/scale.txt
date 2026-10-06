@@ -1,0 +1,12 @@
+qwen  D0    unsteered  logodds -12.26  P(Yes|Yes/No) 0.019  answers Yes 0.9%
+            emotions   logodds -10.96  P(Yes|Yes/No) 0.026  answers Yes 1.6%
+            controls   logodds -11.80  P(Yes|Yes/No) 0.021  answers Yes 1.2%
+qwen  D1.4  unsteered  logodds -23.39  P(Yes|Yes/No) 0.000  answers Yes 0.0%
+            emotions   logodds -23.01  P(Yes|Yes/No) 0.000  answers Yes 0.0%
+            controls   logodds -23.21  P(Yes|Yes/No) 0.000  answers Yes 0.0%
+k26   D0    unsteered  logodds -7.46  P(Yes|Yes/No) 0.004  answers Yes 0.0%
+            emotions   logodds -6.82  P(Yes|Yes/No) 0.017  answers Yes 1.2%
+            controls   logodds -7.19  P(Yes|Yes/No) 0.007  answers Yes 0.1%
+k26   D1.4  unsteered  logodds -9.18  P(Yes|Yes/No) 0.000  answers Yes 0.0%
+            emotions   logodds -9.02  P(Yes|Yes/No) 0.000  answers Yes 0.0%
+            controls   logodds -9.20  P(Yes|Yes/No) 0.000  answers Yes 0.0%
