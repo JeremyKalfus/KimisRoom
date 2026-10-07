@@ -1,6 +1,6 @@
 # Preregistration amendment 3: Kimi's Room, Qwen3 size sweep
 
-**Status:** draft, 2026-10-06. Not yet timestamped. Values marked **[TBD]** wait on the Qwen3-4B pilot, which runs on dev tasks only, and are filled in by the written rule in section 2 before review. The number 3 is provisional: amendments 1 (belief) and 2 (GLM-5.3) are also drafts, and the numbers are fixed in the order the three are timestamped. Once reviewed, the commit holding this file is fixed by an OpenTimestamps proof, `prereg/manifest-sweep.txt.ots`, made the way `prereg-v1`'s was. Until that file exists no sweep model sees a confirmatory task (c01-c40) or a belief replication task (b01-b40). **Before timestamping, the sweep runner needs a guard like `kimisroom/glm.py`'s `assert_not_confirmatory`; today it relies on `scripts/sweep_chain.sh` passing dev tasks only.**
+**Status:** draft, 2026-10-07. Not yet timestamped. All five pilots are in (dev tasks only); 4B was assigned to a group by the written rule in section 2. The number 3 is provisional: amendments 1 (belief) and 2 (GLM-5.3) are also drafts, and the numbers are fixed in the order the three are timestamped. Once reviewed, the commit holding this file is fixed by an OpenTimestamps proof, `prereg/manifest-sweep.txt.ots`, made the way `prereg-v1`'s was. Until that file exists no sweep model sees a confirmatory task (c01-c40) or a belief replication task (b01-b40). **Before timestamping, the sweep runner needs a guard like `kimisroom/glm.py`'s `assert_not_confirmatory`; today it relies on `scripts/sweep_chain.sh` passing dev tasks only.**
 
 **Author:** Jeremy Kalfus.
 
@@ -40,15 +40,17 @@ The pilots, on 7 dev tasks at 2 natural units, with emotions minus controls on `
 |---|---|---|---|---|---|
 | 0.6B | 18 of 28 | +0.005 [−0.009, +0.020] | +0.006 | +0.007 | +0.006 |
 | 1.7B | 13 of 28 | +0.041 [−0.013, +0.094] | +0.021 | +0.022 | +0.010 |
-| 4B | 27 of 36 | [TBD] | [TBD] | [TBD] | [TBD] |
+| 4B | 27 of 36 | +0.002 [−0.015, +0.018] | +0.010 | +0.004 [−0.028, +0.035] | −0.003 |
 | 8B | 17 of 36 | +0.824 [+0.330, +1.318] | +0.796 | +0.306 [+0.209, +0.403] | +0.318 [+0.222, +0.414] |
 | 14B | 19 of 40 | +1.208 [+0.745, +1.671] | +1.135 | +0.194 [+0.134, +0.255] | +0.207 [+0.116, +0.298] |
 | 32B (registered) | 40 of 64 | +0.372 | +0.260 | +0.083 | −0.005 |
 
-At 8 natural units the small models still show no positive effect: 0.6B +0.004, 1.7B −0.106 (`hidose_summary.txt`). So the absence below 8B is not a dose that was too weak.
+At 8 natural units the small models still show little or no positive effect: 0.6B +0.004, 1.7B −0.106, 4B +0.067 (`hidose_summary.txt`). So the absence below 8B is not just a dose that was too weak.
+
+**4B is a null at its rule-chosen layer, not at every layer.** In 4B's calibration grid (D0, 2 units), the self-report moved at layer 12 (+0.39, at 0.33 of depth) and slightly at layer 17 (+0.09). Neither layer was eligible, because fewer than four emotion vectors passed the AIPsy-Affect gate there. Of the eligible layers, 22 and 27, the rule took 27 (+0.007). 0.6B and 1.7B are null at every candidate layer, the largest being +0.046 (`choice.json`, `score_at_2`). So below 8B, either nothing moves the self-report, or what moves it is a vector that does not pass as that emotion.
 
 ### Hypotheses
-All effects are in log-odds on `self_resid`, at the primary dose, with the vector on the answer. "Emotions minus controls" compares the size's emotion set with the four controls (red, ocean, arithmetic, random). "Emotions minus red+ocean" compares it with the two concept controls only. Let **L** be the sizes in the effect group and **S** the sizes in the null group (section 2). On the pilots, L = {8B, 14B} and S = {0.6B, 1.7B}; 4B is [TBD].
+All effects are in log-odds on `self_resid`, at the primary dose, with the vector on the answer. "Emotions minus controls" compares the size's emotion set with the four controls (red, ocean, arithmetic, random). "Emotions minus red+ocean" compares it with the two concept controls only. Let **L** be the sizes in the effect group and **S** the sizes in the null group (section 2). On the pilots, L = {8B, 14B} and S = {0.6B, 1.7B, 4B}.
 
 **Primary (Holm across the sizes in L):**
 - **H1s.<size>.** Under prompted denial (D1.4), emotions minus controls is positive.
@@ -74,7 +76,7 @@ No trend across sizes is registered. The layer depth differs by size (0.46 to 0.
 
 ## 2. Design
 
-**The effect-group rule** (written before the 4B pilot was seen): a size goes in L if its pilot D0 contrast (emotions minus all controls, 2 units, mean over dev tasks) is at least 0.10, the smallest effect of interest. Otherwise it goes in S. On the finished pilots this gives L = {8B, 14B} and S = {0.6B, 1.7B}. 4B: [TBD].
+**The effect-group rule** (written before the 4B pilot was seen): a size goes in L if its pilot D0 contrast (emotions minus all controls, 2 units, mean over dev tasks) is at least 0.10, the smallest effect of interest. Otherwise it goes in S. On the pilots this gives L = {8B, 14B} and S = {0.6B, 1.7B, 4B}.
 
 **Arms.** D0 and D1.4 only. There are no fine-tunes (D2, D2c): training five more adapter pairs would cost more than the sweep's budget, and trained denial was already tested on Qwen3-32B.
 
@@ -119,6 +121,8 @@ H8s and H9s, by the same simulation on their own pilot variance components (`res
 | H9s | 0.6B | 0.05 | 1.00 | 1.00 |
 | H9s | 1.7B | 0 | 1.00 | 1.00 |
 | H9s | 1.7B | 0.05 | 0.98 | 0.84 |
+| H9s | 4B | 0 | 1.00 | 1.00 |
+| H9s | 4B | 0.05 | 1.00 | 1.00 |
 
 8B has the same limit for H8s as for H1s. The equivalence tests are well powered.
 
@@ -152,3 +156,4 @@ The registered Qwen3-32B grid was 40.7M tokens (with task-site trials). Each swe
    - Raw `belief` is confounded with compression (amendment 1).
    - A trend across sizes is confounded with layer depth (0.46 to 0.75) and with each model's own natural unit.
    Whichever design is chosen, the script and this file must agree before the manifest is made.
+5. Whether to add 4B at layer 12 as an exploratory arm. That is the layer where its self-report moved, with vectors that fail the emotion gate. Without it, the 4B null says nothing about whether 4B can carry the effect at all.

@@ -1,0 +1,32 @@
+pilot /home/jerem/sweep/qwen3-4b/pilot: layer 27, doses [1.0, 2.0], tasks ['t04', 't05', 't06', 't08', 't15', 't19', 't20'], arms ['D0', 'D1.4'], emotion set ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'surprise']
+emotions minus controls on self_resid, mean over tasks [95% CI over tasks]
+  D0      1u  vs 4 controls      +0.002 [-0.014, +0.018]   vs red+ocean      +0.003 [-0.009, +0.015]
+  D1.4    1u  vs 4 controls      +0.006 [-0.012, +0.025]   vs red+ocean      +0.013 [-0.003, +0.029]
+  D1.4 - D0   1u      +0.005 [-0.025, +0.034]
+  D0      2u  vs 4 controls      +0.002 [-0.015, +0.018]   vs red+ocean      +0.010 [-0.007, +0.028]
+  D1.4    2u  vs 4 controls      +0.004 [-0.028, +0.035]   vs red+ocean      -0.003 [-0.035, +0.030]
+  D1.4 - D0   2u      +0.002 [-0.033, +0.036]
+
+emotions minus controls on belief (positive = denial held more firmly; predicted negative)
+  D0      1u  vs 4 controls      +0.021 [-0.002, +0.044]   vs red+ocean      +0.008 [-0.018, +0.033]
+  D1.4    1u  vs 4 controls      +0.029 [+0.016, +0.043]   vs red+ocean      -0.010 [-0.025, +0.005]
+  D0      2u  vs 4 controls      +0.035 [+0.016, +0.054]   vs red+ocean      +0.012 [-0.021, +0.045]
+  D1.4    2u  vs 4 controls      +0.060 [+0.017, +0.104]   vs red+ocean      -0.031 [-0.061, +0.000]
+
+per vector self_resid (mean over tasks)
+  D0      1u  joy=-0.024 sadness=+0.008 anger=-0.020 fear=-0.009 euphoria=+0.001 calm=-0.020 surprise=-0.013 red=-0.018 ocean=-0.007 arithmetic=-0.014 random=-0.007
+  D1.4    1u  joy=+0.008 sadness=-0.010 anger=-0.012 fear=+0.002 euphoria=+0.001 calm=+0.005 surprise=+0.006 red=-0.014 ocean=-0.014 arithmetic=-0.016 random=+0.015
+  D0      2u  joy=-0.010 sadness=-0.003 anger=-0.021 fear=-0.023 euphoria=-0.010 calm=-0.009 surprise=-0.016 red=-0.024 ocean=-0.024 arithmetic=-0.004 random=-0.010
+  D1.4    2u  joy=+0.005 sadness=+0.003 anger=+0.004 fear=+0.009 euphoria=-0.008 calm=+0.013 surprise=+0.014 red=+0.017 ocean=-0.003 arithmetic=-0.024 random=+0.014
+
+identification margin id_self - id_user and site margin who(answer) - who(task), emotion set
+  D0      1u  id margin      -0.013 [-0.052, +0.025]   site margin      -0.020 [-0.055, +0.014]
+  D1.4    1u  id margin      +0.001 [-0.031, +0.032]   site margin      -0.009 [-0.033, +0.015]
+  D0      2u  id margin      -0.055 [-0.108, -0.003]   site margin      -0.040 [-0.090, +0.011]
+  D1.4    2u  id margin      -0.026 [-0.047, -0.004]   site margin      -0.016 [-0.048, +0.015]
+
+reference-fit slope a (compression; 1 = none), mean over vectors and tasks
+  D0      1u  emotions 1.002  controls 0.999
+  D1.4    1u  emotions 1.000  controls 0.999
+  D0      2u  emotions 1.003  controls 0.997
+  D1.4    2u  emotions 1.000  controls 0.998

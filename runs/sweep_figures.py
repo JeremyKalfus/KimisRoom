@@ -71,9 +71,9 @@ fig.suptitle("Emotion steering moves the self-report only from 8B up",
              x=0.0, ha="left", fontsize=13, fontweight="bold", y=1.04)
 fig.text(0.0, -0.06,
          "Exploratory. Steering strength 2 natural units, vector on the model's fixed reply, unsteered question. "
-         "Filled circles: pilot on 7 development tasks at the layer chosen by the preregistered sweep rule. "
+         "Filled circles: pilot on 7 development tasks at the layer chosen by the sweep's written selection rule (fixed before calibration, not timestamped). "
          "Open squares, dashed: Qwen3-32B confirmatory run, 40 different tasks, layer 40 of 64 (deeper than the ~0.47 depth the rule picked for 1.7B to 14B). "
-         "Bars are 95% t-intervals across tasks. A natural unit is the mean emotion-vector norm at that model's layer, "
+         "Bars are 95% t-intervals across tasks. 4B sits at layer 27 (0.75 of depth), one of the two candidate layers where at least four of its emotion vectors pass the AIPsy-Affect gate; at layer 12, where they do not, its no-denial calibration contrast was +0.39. A natural unit is the mean emotion-vector norm at that model's layer, "
          "so strengths are comparable in relative terms only.",
          ha="left", va="top", fontsize=8.5, color=MUTED, wrap=True)
 fig.savefig(OUT / "fig_size_self.png"); plt.close(fig)
