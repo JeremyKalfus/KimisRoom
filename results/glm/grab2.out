@@ -1,0 +1,4 @@
+22:06:20 kr-c (us-east-1): InsufficientInstanceCapacity
+22:06:38 kr-glm (us-east-2):    4 InsufficientInstanceCapacity 
+22:07:08 kr-glm (us-east-1):    5 InsufficientInstanceCapacity 
+22:07:35 kr-glm (us-west-2):    5 InsufficientInstanceCapacity 

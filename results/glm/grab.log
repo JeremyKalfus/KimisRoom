@@ -1,0 +1,13 @@
+00:59:31 kr-c (us-east-1): InsufficientInstanceCapacity
+00:59:58 kr-glm (us-east-2):    4 InsufficientInstanceCapacity 
+01:00:36 kr-glm (us-east-1):    5 InsufficientInstanceCapacity 
+01:02:15 kr-glm (us-west-2):    5 InsufficientInstanceCapacity 
+01:02:27 kr-glm (eu-central-1):    1 VcpuLimitExceeded 
+01:23:08 kr-c (us-east-1): InsufficientInstanceCapacity
+01:23:28 kr-glm (us-east-2):    4 InsufficientInstanceCapacity 
+01:24:04 kr-glm (us-east-1):    5 InsufficientInstanceCapacity 
+01:24:35 kr-glm (us-west-2):    5 InsufficientInstanceCapacity 
+01:24:45 kr-glm (eu-central-1):    1 VcpuLimitExceeded 
+
+aws: [ERROR]: Could not connect to the endpoint URL: "https://ec2.us-east-1.amazonaws.com/"
+13:37:11 no g6e.12xlarge after 600 min
