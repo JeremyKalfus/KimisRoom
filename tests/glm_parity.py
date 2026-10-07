@@ -432,9 +432,21 @@ def report(a) -> None:
     out = Path(a.out)
     summary: dict = {}
     ok = True
+    # A gate passes only on a finished reference: ref_N.pt for gate 1 (report --layers N), ref.pt with every
+    # layer and the engine's whole-model run for gate 2. A crashed ref writes no file, which used to pass.
+    n_all = json.loads((Path(a.model) / "config.json").read_text())["num_hidden_layers"]
+    want = out / (f"ref_{a.layers}.pt" if a.layers else "ref.pt")
+    if not want.exists():
+        print(f"missing {want.name}: the reference did not finish")
+        ok = False
     for f in sorted(out.glob("ref*.pt")):
         R = torch.load(f, weights_only=False)
         pl = R["per_layer"]
+        expected = int(f.stem.split("_")[1]) if "_" in f.stem else n_all
+        if len(pl) != expected or not pl:
+            print(f"{f.name}: {len(pl)} layers, expected {expected}")
+            ok = False
+            continue
         bad = [r["layer"] for r in pl if r["eng"] > 1.5 * r["bf16"] + 0.002]
         ratio = sorted(r["eng"] / max(r["bf16"], 1e-12) for r in pl)
         sel = [r["selection"] for r in pl if r["selection"]]
@@ -467,6 +479,9 @@ def report(a) -> None:
         if "r32" not in R:
             continue
         E = torch.load(out / "engine.pt", weights_only=False) if (out / "engine.pt").exists() else None
+        if E is None:
+            print("missing engine.pt: gate 2 needs the engine's whole-model run")
+            ok = False
         r32, r16 = R["r32"], R["r16"]
         trial = [k for k in r32 if k[0] != "nat"]
         nat = [k for k in r32 if k[0] == "nat"]
@@ -534,7 +549,7 @@ def main() -> None:
     ap.add_argument("mode", choices=["ref", "engine", "runner", "tinker", "report"])
     ap.add_argument("model")
     ap.add_argument("out")
-    ap.add_argument("--layers", type=int, default=0, help="ref: only the first N layers (gate 1)")
+    ap.add_argument("--layers", type=int, default=0, help="ref: only the first N layers (gate 1); report: gate 1's N")
     ap.add_argument("--tokenizer", help="tokenizer files, when MODEL has none (--smoke)")
     ap.add_argument("--ref-devices", default="cuda:1,cuda:2,cuda:3", help="bf16 ref, fp32 ref, isolated engine")
     ap.add_argument("--engine-device", default="cuda:0")

@@ -19,6 +19,9 @@ export PYTHONPATH=$HOME/KimisRoom PYTHONUNBUFFERED=1
 mkdir -p $O/logs
 NGPU=$(nvidia-smi -L | wc -l)
 BATTERY=prompts/battery/items_idctl.jsonl
+# The references' devices: bf16 ref, fp32 ref, isolated engine. An fp32 MoE layer needs ~36 GiB, more
+# than a 24 GB L4 holds, so there GLM_REF_DEVICES=cuda:1,cpu,cuda:3 runs the fp32 reference on the CPU.
+REFDEV=${GLM_REF_DEVICES:-cuda:$((1 % NGPU)),cuda:$((2 % NGPU)),cuda:$((3 % NGPU))}
 # KR_MAX_TOKENS (e.g. 300000 on 24 GB L4s): kimisroom.run's per-pass token budget, set through
 # runs/sweep_run.py, which runs the frozen scripts (runs/vectors.py, runs/qwen_pilot.py) unchanged. Unset
 # keeps the 800k default.
@@ -30,7 +33,13 @@ stage() {  # stage NAME: run "do_NAME" unless done, logging
   [ -e $O/.done-$s ] && { echo "$(date +%T) $s: done before, skipped"; return 0; }
   echo "$(date +%T) $s: start"
   local t0=$(date +%s)
-  if "do_$s" > $O/logs/$s.log 2>&1; then
+  # Not "if do_$s": inside an if condition bash ignores set -e for the whole function, so a failed
+  # command mid-stage (gate 1's reference, out of memory) went unnoticed. A plain subshell keeps -e.
+  set +e
+  ( set -e; "do_$s" ) > $O/logs/$s.log 2>&1
+  local rc=$?
+  set -e
+  if [ $rc -eq 0 ]; then
     touch $O/.done-$s
     echo "$(date +%T) $s: ok in $(( $(date +%s) - t0 ))s"
   else
@@ -62,13 +71,13 @@ EOF
 }
 
 do_gate1() {
-  $PY tests/glm_parity.py ref $M $O/parity --layers 8 --ref-devices cuda:$((1 % NGPU)),cuda:$((2 % NGPU)),cuda:$((3 % NGPU))
-  $PY tests/glm_parity.py report $M $O/parity | tee $O/parity/gate1.txt
+  $PY tests/glm_parity.py ref $M $O/parity --layers 8 --ref-devices $REFDEV
+  $PY tests/glm_parity.py report $M $O/parity --layers 8 | tee $O/parity/gate1.txt
   grep -q "verdict: pass" $O/parity/gate1.txt
 }
 
 do_gate2() {
-  local refdev="cuda:$((1 % NGPU)),cuda:$((2 % NGPU)),cuda:$((3 % NGPU))"
+  local refdev=$REFDEV
   if [ "$NGPU" -ge 4 ]; then
     $PY tests/glm_parity.py engine $M $O/parity > $O/logs/gate2-engine.log 2>&1 &
     local pe=$!
