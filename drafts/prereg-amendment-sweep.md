@@ -105,7 +105,7 @@ Each size has 40 tasks × 30 paraphrase pairs, the registered design. Power for 
 
 At the smallest effect of interest, 8B is underpowered: 0.50, against 1.00 for 14B. The cause is how much 8B's emotion effect varies across paraphrases (slope SD 0.26 against 0.08 for 14B), estimated from only 10 pilot paraphrases. At 8B's pilot estimate (+0.31) power is high. The options are:
 - accept that 8B can detect +0.20 but not +0.10;
-- add paraphrases, which needs new wordings (the registered 30 are all there is);
+- add paraphrases, which needs new wordings beyond the registered battery's 30 pairs;
 - move 8B from the primary family to the secondary.
 
 H8s and H9s were not simulated. A task-level approximation, which ignores paraphrase variance, gave power above 0.99 for both. The 8B result shows that approximation can be badly optimistic, so `runs/sweep_power.R` should be extended to the concept-only contrast and to TOST before timestamping.
