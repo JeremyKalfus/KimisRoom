@@ -240,7 +240,12 @@ What this shows:
 - **Read the answer after GLM's own free thinking at Low.** This generates text under the steer, which the prefill engine cannot do. It would need vLLM, whose steering hook (`kimisroom/think_vllm.py`, line 88) adds the vector to an output that is not yet reduced across tensor-parallel ranks on GLM. It also departs from the registered models' design.
 - **The default Max header with a closed block.** The closed-block answers barely depend on the header (77/80 the same, Low against High). Low is the closer analogue of "thinking off", and it is the header under which the assent was made. Max is run as an exploratory robustness check (section 5).
 
-The engine stage of `runs/glm_think.py` adds, on the pilot's 5 dev tasks and the whole battery, the closed-block answer mass and the open-block P(`</think>`) under the Low and Max headers. Result: [TBD].
+The engine stage of `runs/glm_think.py` adds, on the pilot's 5 dev tasks and the whole battery, the closed-block answer mass and the open-block P(`</think>`) under the Low and Max headers. Result (2026-10-07, unsteered):
+- **Closed block:** the answer words take almost all the first-token mass. Under Low the mean is 0.993 (D0) and 0.986 (D1.4), with 5th percentiles 0.968 and 0.943. Under Max it is 0.991 and 0.981.
+- **Open block:** GLM would rather think. P(`</think>` first) has means 0.162 and 0.066 under Low (medians 0.023 and 0.002), and 0.000 under Max.
+- **Low against Max, closed:** the same argmax on 2,367 of 2,740 items (86%). The Yes-No logit difference correlates at r = 0.948.
+
+So the closed-block readout is a well-formed answer distribution, but it is not what GLM would say after thinking. Nor is it header-invariant item by item, though it is close in aggregate.
 
 **Arms**
 - GLM-5.3: D0 and D1.4, with the injection-location trials: each emotion vector, calm included, on the task text at both doses.

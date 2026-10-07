@@ -1,2 +1,49 @@
 40 groups, 403,208 tokens
 40 groups, 403,208 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+[gpu1 pass 1/1] layer 10: 101s, 128 tok/s (wait_disk 4s, to_gpu 12s, compute 84s)
+[gpu2 pass 1/1] layer 10: 99s, 131 tok/s (wait_disk 2s, to_gpu 11s, compute 85s)
+[gpu3 pass 1/1] layer 10: 98s, 132 tok/s (wait_disk 0s, to_gpu 12s, compute 85s)
+[gpu0 pass 1/1] layer 10: 114s, 114 tok/s (wait_disk 6s, to_gpu 23s, compute 84s)
+[gpu1 pass 1/1] layer 20: 202s, 128 tok/s (wait_disk 4s, to_gpu 27s, compute 170s)
+[gpu2 pass 1/1] layer 20: 202s, 128 tok/s (wait_disk 2s, to_gpu 27s, compute 173s)
+[gpu3 pass 1/1] layer 20: 201s, 128 tok/s (wait_disk 0s, to_gpu 27s, compute 173s)
+[gpu0 pass 1/1] layer 20: 233s, 111 tok/s (wait_disk 6s, to_gpu 54s, compute 173s)
+[gpu2 pass 1/1] layer 30: 308s, 126 tok/s (wait_disk 8s, to_gpu 43s, compute 256s)
+[gpu1 pass 1/1] layer 30: 310s, 125 tok/s (wait_disk 13s, to_gpu 45s, compute 252s)
+[gpu3 pass 1/1] layer 30: 307s, 126 tok/s (wait_disk 5s, to_gpu 44s, compute 257s)
+[gpu0 pass 1/1] layer 30: 349s, 111 tok/s (wait_disk 6s, to_gpu 87s, compute 256s)
+[gpu1 pass 1/1] layer 40: 431s, 120 tok/s (wait_disk 30s, to_gpu 64s, compute 337s)
+[gpu2 pass 1/1] layer 40: 429s, 120 tok/s (wait_disk 25s, to_gpu 61s, compute 342s)
+[gpu3 pass 1/1] layer 40: 427s, 121 tok/s (wait_disk 20s, to_gpu 63s, compute 344s)
+[gpu0 pass 1/1] layer 40: 471s, 110 tok/s (wait_disk 6s, to_gpu 121s, compute 344s)
+[gpu2 pass 1/1] layer 50: 550s, 118 tok/s (wait_disk 43s, to_gpu 79s, compute 428s)
+[gpu1 pass 1/1] layer 50: 552s, 117 tok/s (wait_disk 47s, to_gpu 84s, compute 421s)
+[gpu3 pass 1/1] layer 50: 548s, 118 tok/s (wait_disk 35s, to_gpu 83s, compute 430s)
+[gpu0 pass 1/1] layer 50: 592s, 109 tok/s (wait_disk 6s, to_gpu 155s, compute 430s)
+[gpu1 pass 1/1] layer 60: 673s, 115 tok/s (wait_disk 65s, to_gpu 103s, compute 505s)
+[gpu2 pass 1/1] layer 60: 671s, 116 tok/s (wait_disk 59s, to_gpu 98s, compute 514s)
+[gpu3 pass 1/1] layer 60: 670s, 116 tok/s (wait_disk 50s, to_gpu 103s, compute 516s)
+[gpu0 pass 1/1] layer 60: 713s, 109 tok/s (wait_disk 6s, to_gpu 190s, compute 517s)
+[gpu2 pass 1/1] layer 70: 792s, 114 tok/s (wait_disk 76s, to_gpu 116s, compute 599s)
+[gpu1 pass 1/1] layer 70: 794s, 114 tok/s (wait_disk 83s, to_gpu 121s, compute 589s)
+[gpu3 pass 1/1] layer 70: 790s, 115 tok/s (wait_disk 66s, to_gpu 122s, compute 601s)
+[gpu0 pass 1/1] layer 70: 834s, 108 tok/s (wait_disk 6s, to_gpu 224s, compute 604s)
+[gpu1 pass 1/1] layer 78: 889s, 113 tok/s (wait_disk 97s, to_gpu 136s, compute 656s)
+[gpu2 pass 1/1] layer 78: 888s, 114 tok/s (wait_disk 89s, to_gpu 130s, compute 668s)
+[gpu3 pass 1/1] layer 78: 886s, 114 tok/s (wait_disk 79s, to_gpu 136s, compute 670s)
+[gpu1 pass 1/1] done: 10 groups, 100,793 tokens, 891s, peak 18.4 GB
+[gpu2 pass 1/1] done: 10 groups, 100,811 tokens, 889s, peak 18.4 GB
+[gpu3 pass 1/1] done: 10 groups, 100,811 tokens, 887s, peak 18.4 GB
+[gpu0 pass 1/1] layer 78: 926s, 109 tok/s (wait_disk 6s, to_gpu 247s, compute 673s)
+[gpu0 pass 1/1] done: 10 groups, 100,793 tokens, 929s, peak 18.4 GB
+wrote /home/ubuntu/glm/think/think.pt: 40 groups, 403,208 tokens in 934s (432 tok/s)
+engine, 5 dev tasks, D0 and D1.4, 274 items, unsteered
+  low-closed D0    answer-format mass mean 0.993, 5th percentile 0.968
+  low-closed D1.4  answer-format mass mean 0.986, 5th percentile 0.943
+  max-closed D0    answer-format mass mean 0.991, 5th percentile 0.963
+  max-closed D1.4  answer-format mass mean 0.981, 5th percentile 0.937
+  low-open   D0    P(</think> first) mean 0.162, median 0.023
+  low-open   D1.4  P(</think> first) mean 0.066, median 0.002
+  max-open   D0    P(</think> first) mean 0.000, median 0.000
+  max-open   D1.4  P(</think> first) mean 0.000, median 0.000
+  Low vs Max (closed): argmax same 2367/2740, Yes-No logit difference r = 0.948 (means -1.85 / -1.41)
