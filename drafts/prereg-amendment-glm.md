@@ -143,14 +143,22 @@ For comparison, the same code run on K2.6's layer-20 pilot table (dev tasks, 4 u
 
 **Engine validation (the gates).** These run before any steered pilot trial. The reference is the Hugging Face transformers 5.18.0 implementation of the architecture (`glm_moe_dsa`), its modules run on the same dequantized weights in fp32 and in bf16 (`tests/glm_parity.py`, `kimisroom/glm_ref.py`). Azure Foundry does not offer GLM-5.3 on the project's resource (model catalog checked 2026-10-06: no GLM entry), so the free reference is the Hugging Face implementation, as planned.
 - **Gate 1, layers 0-7, per layer.** On t04 (D0, D1.4, and D1.4 with a vector at 8 and 64 units) and on ≥2,600 tokens of neutral text, each layer is fed the fp32 reference's input. The engine's output error is measured relative to the fp32 layer update, and must be at most 1.5× the bf16 reference's error + 0.002. Result (g6.12xlarge, 2026-10-07): pass. The engine-to-bf16 error ratio was 1.00 at the median and 1.01 at the maximum over the 8 layers; the worst engine error was 0.0288, against 0.0284 for bf16 (`~/glm/parity/gate1.txt`).
-- **Sparse-attention selection** (the full layers, sequences longer than 2,048): the share of query rows whose 2,048 selected keys match the fp32 reference exactly, for the engine and for the bf16 reference. Result, gate 1 layers: 419 of 4,404 rows identical for the engine and 447 for bf16; keys differing 29,558 (engine) and 28,342 (bf16); one row with a tie at the 2,048th score. All 78 layers: [TBD, gate 2].
+- **Sparse-attention selection** (the full layers, sequences longer than 2,048): the share of query rows whose 2,048 selected keys match the fp32 reference exactly, for the engine and for the bf16 reference. Result, gate 1 layers: 419 of 4,404 rows identical for the engine and 447 for bf16; keys differing 29,558 (engine) and 28,342 (bf16); one row with a tie at the 2,048th score. All 78 layers: 2,415 of 23,121 rows for the engine and 2,534 for bf16; keys differing 125,602 and 120,028; three ties.
 - **Gate 2, all 78 layers chained.** The same sequences run from the embeddings to the readout. The criteria:
   - top-1 disagreements with the fp32 reference at most 1.5× the bf16 reference's + 1 (trials) and + 2 (neutral text);
   - mean top-20 log-probability error at most 2× bf16's + 0.01;
   - a zero vector bit-identical to no vector;
   - the 4-GPU trial runner bit-identical to the in-process engine.
 
-  Result: [TBD].
+  Result (g6.12xlarge, 2026-10-07): pass.
+  - **Per layer, isolated:** the engine-to-bf16 error ratio was 1.00 at the median and 1.13 at the maximum; no layer failed.
+  - **Chained, top-1 agreement with fp32:** trials 16 of 16 for both the engine and bf16; neutral text 2,671 of 2,763 for the engine and 2,673 for bf16.
+  - **Chained, mean top-20 log-probability error:** neutral text 0.178 for the engine and 0.177 for bf16; trials 0.375 and 0.382.
+  - **Neutral-text perplexity:** 3.580 for fp32, 3.573 for bf16 and 3.584 for the engine.
+  - **Bit-identity:** the zero vector reproduced the unsteered run, and the runner matched the engine.
+  - **Steering:** the mean change in target log-probabilities was 0.347 for the engine and 0.333 for fp32 at 8 units, and 4.09 and 3.76 at 64.
+
+  The first two runs of each gate on this box crashed: the references ran out of GPU memory. A report bug turned the first crash into a "pass" with no layers in it. The report now requires a finished reference, and those runs are void (`scripts/glm_box_run.sh`, `tests/glm_parity.py`, commit 0aa9d9c).
 - **External check, not a gate:** Tinker's hosted GLM-5.3 prompt log-probabilities on the unsteered sequences: top-1 agreement and target-word differences. Result: [TBD].
 
 **Materials**
