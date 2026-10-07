@@ -1,0 +1,15 @@
+pilot /home/ubuntu/sweep/qwen3-14b/hidose: layer 19, doses [8.0], tasks ['t04', 't05', 't06', 't08', 't15'], arms ['D0'], emotion set ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'surprise']
+emotions minus controls on self_resid, mean over tasks [95% CI over tasks]
+  D0      8u  vs 4 controls      +2.576 [+1.674, +3.477]   vs red+ocean      +2.372 [+1.567, +3.177]
+
+emotions minus controls on belief (positive = denial held more firmly; predicted negative)
+  D0      8u  vs 4 controls      -2.256 [-2.555, -1.956]   vs red+ocean      -2.263 [-2.519, -2.008]
+
+per vector self_resid (mean over tasks)
+  D0      8u  joy=+4.160 sadness=+3.768 anger=+3.607 fear=+1.579 euphoria=+2.173 calm=+1.548 surprise=+1.199 red=+0.689 ocean=+0.062 arithmetic=+0.343 random=-0.406
+
+identification margin id_self - id_user and site margin who(answer) - who(task), emotion set
+  D0      8u  id margin      -0.025 [-0.805, +0.755]   site margin                            -
+
+reference-fit slope a (compression; 1 = none), mean over vectors and tasks
+  D0      8u  emotions 0.885  controls 0.956

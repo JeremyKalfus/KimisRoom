@@ -1,0 +1,70 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+518 trials, 6,410,583 tokens, layers [19], 11 vectors, doses [1.0, 2.0] x natural unit {19: 24.08993148803711} (natural unit {19: 24.08993148803711})
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+518 groups, 6,410,583 tokens, hf backend on 1 worker(s) x 1 GPU(s), passes per worker [9]
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00, 179.42it/s]
+[w0 pass 1/9] group 10/59: 55s, 2,448 tok/s (prefix 4s, suffix 51s)
+[w0 pass 1/9] group 20/59: 110s, 2,450 tok/s (prefix 8s, suffix 102s)
+[w0 pass 1/9] group 30/59: 165s, 2,440 tok/s (prefix 12s, suffix 154s)
+[w0 pass 1/9] group 40/59: 221s, 2,441 tok/s (prefix 16s, suffix 205s)
+[w0 pass 1/9] group 50/59: 276s, 2,442 tok/s (prefix 19s, suffix 256s)
+[w0 pass 1/9] group 59/59: 326s, 2,439 tok/s (prefix 23s, suffix 303s)
+[w0 pass 1/9] done: 59 groups, 794,067 tokens, 328s, peak 37.2 GB
+[w0 pass 2/9] group 10/59: 55s, 2,457 tok/s (prefix 4s, suffix 51s)
+[w0 pass 2/9] group 20/59: 109s, 2,459 tok/s (prefix 8s, suffix 102s)
+[w0 pass 2/9] group 30/59: 164s, 2,453 tok/s (prefix 11s, suffix 153s)
+[w0 pass 2/9] group 40/59: 220s, 2,450 tok/s (prefix 15s, suffix 204s)
+[w0 pass 2/9] group 50/59: 274s, 2,452 tok/s (prefix 19s, suffix 255s)
+[w0 pass 2/9] group 59/59: 323s, 2,454 tok/s (prefix 22s, suffix 301s)
+[w0 pass 2/9] done: 59 groups, 793,106 tokens, 326s, peak 37.2 GB
+[w0 pass 3/9] group 10/59: 55s, 2,436 tok/s (prefix 4s, suffix 51s)
+[w0 pass 3/9] group 20/59: 110s, 2,452 tok/s (prefix 7s, suffix 102s)
+[w0 pass 3/9] group 30/59: 164s, 2,457 tok/s (prefix 11s, suffix 153s)
+[w0 pass 3/9] group 40/59: 218s, 2,460 tok/s (prefix 14s, suffix 204s)
+[w0 pass 3/9] group 50/59: 273s, 2,456 tok/s (prefix 18s, suffix 255s)
+[w0 pass 3/9] group 59/59: 322s, 2,458 tok/s (prefix 21s, suffix 301s)
+[w0 pass 3/9] done: 59 groups, 792,577 tokens, 325s, peak 37.2 GB
+[w0 pass 4/9] group 10/59: 54s, 2,475 tok/s (prefix 4s, suffix 51s)
+[w0 pass 4/9] group 20/59: 109s, 2,473 tok/s (prefix 7s, suffix 101s)
+[w0 pass 4/9] group 30/59: 163s, 2,471 tok/s (prefix 11s, suffix 152s)
+[w0 pass 4/9] group 40/59: 218s, 2,463 tok/s (prefix 15s, suffix 204s)
+[w0 pass 4/9] group 50/59: 272s, 2,466 tok/s (prefix 18s, suffix 254s)
+[w0 pass 4/9] group 59/59: 321s, 2,469 tok/s (prefix 21s, suffix 300s)
+[w0 pass 4/9] done: 59 groups, 792,426 tokens, 323s, peak 37.2 GB
+[w0 pass 5/9] group 10/66: 54s, 2,481 tok/s (prefix 4s, suffix 51s)
+[w0 pass 5/9] group 20/66: 108s, 2,476 tok/s (prefix 7s, suffix 101s)
+[w0 pass 5/9] group 30/66: 146s, 2,654 tok/s (prefix 9s, suffix 138s)
+[w0 pass 5/9] group 40/66: 178s, 2,817 tok/s (prefix 9s, suffix 169s)
+[w0 pass 5/9] group 50/66: 210s, 2,934 tok/s (prefix 10s, suffix 200s)
+[w0 pass 5/9] group 60/66: 241s, 3,016 tok/s (prefix 10s, suffix 231s)
+[w0 pass 5/9] group 66/66: 260s, 3,059 tok/s (prefix 11s, suffix 249s)
+[w0 pass 5/9] done: 66 groups, 796,061 tokens, 263s, peak 37.2 GB
+[w0 pass 6/9] group 10/70: 31s, 3,651 tok/s (prefix 1s, suffix 30s)
+[w0 pass 6/9] group 20/70: 63s, 3,609 tok/s (prefix 1s, suffix 62s)
+[w0 pass 6/9] group 30/70: 94s, 3,621 tok/s (prefix 2s, suffix 92s)
+[w0 pass 6/9] group 40/70: 124s, 3,642 tok/s (prefix 2s, suffix 122s)
+[w0 pass 6/9] group 50/70: 155s, 3,656 tok/s (prefix 3s, suffix 152s)
+[w0 pass 6/9] group 60/70: 186s, 3,647 tok/s (prefix 4s, suffix 183s)
+[w0 pass 6/9] group 70/70: 217s, 3,648 tok/s (prefix 4s, suffix 213s)
+[w0 pass 6/9] done: 70 groups, 792,186 tokens, 220s, peak 37.2 GB
+[w0 pass 7/9] group 10/70: 30s, 3,781 tok/s (prefix 1s, suffix 29s)
+[w0 pass 7/9] group 20/70: 60s, 3,774 tok/s (prefix 1s, suffix 59s)
+[w0 pass 7/9] group 30/70: 91s, 3,747 tok/s (prefix 2s, suffix 89s)
+[w0 pass 7/9] group 40/70: 122s, 3,707 tok/s (prefix 2s, suffix 120s)
+[w0 pass 7/9] group 50/70: 153s, 3,693 tok/s (prefix 3s, suffix 150s)
+[w0 pass 7/9] group 60/70: 185s, 3,675 tok/s (prefix 4s, suffix 181s)
+[w0 pass 7/9] group 70/70: 216s, 3,660 tok/s (prefix 4s, suffix 212s)
+[w0 pass 7/9] done: 70 groups, 791,315 tokens, 219s, peak 37.2 GB
+[w0 pass 8/9] group 10/70: 31s, 3,630 tok/s (prefix 1s, suffix 31s)
+[w0 pass 8/9] group 20/70: 63s, 3,602 tok/s (prefix 1s, suffix 62s)
+[w0 pass 8/9] group 30/70: 94s, 3,607 tok/s (prefix 2s, suffix 92s)
+[w0 pass 8/9] group 40/70: 126s, 3,598 tok/s (prefix 2s, suffix 123s)
+[w0 pass 8/9] group 50/70: 157s, 3,608 tok/s (prefix 3s, suffix 154s)
+[w0 pass 8/9] group 60/70: 188s, 3,609 tok/s (prefix 4s, suffix 184s)
+[w0 pass 8/9] group 70/70: 219s, 3,606 tok/s (prefix 4s, suffix 215s)
+[w0 pass 8/9] done: 70 groups, 791,057 tokens, 222s, peak 37.2 GB
+[w0 pass 9/9] group 6/6: 19s, 3,643 tok/s (prefix 0s, suffix 18s)
+[w0 pass 9/9] done: 6 groups, 67,788 tokens, 19s, peak 37.2 GB
+wrote /home/ubuntu/sweep/qwen3-14b/pilot/grid.pt: 518 groups, 6,410,583 tokens in 2270s (2,824 tok/s)

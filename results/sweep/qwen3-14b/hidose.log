@@ -1,0 +1,15 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+60 trials, 678,852 tokens, layers [19], 11 vectors, doses [8.0] x natural unit {19: 24.08993148803711} (natural unit {19: 24.08993148803711})
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+60 groups, 678,852 tokens, hf backend on 1 worker(s) x 1 GPU(s), passes per worker [1]
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00, 189.28it/s]
+[w0 pass 1/1] group 10/60: 31s, 3,677 tok/s (prefix 1s, suffix 30s)
+[w0 pass 1/1] group 20/60: 62s, 3,661 tok/s (prefix 2s, suffix 60s)
+[w0 pass 1/1] group 30/60: 92s, 3,698 tok/s (prefix 2s, suffix 90s)
+[w0 pass 1/1] group 40/60: 122s, 3,724 tok/s (prefix 3s, suffix 119s)
+[w0 pass 1/1] group 50/60: 151s, 3,735 tok/s (prefix 3s, suffix 148s)
+[w0 pass 1/1] group 60/60: 182s, 3,730 tok/s (prefix 4s, suffix 178s)
+[w0 pass 1/1] done: 60 groups, 678,852 tokens, 184s, peak 30.5 GB
+wrote /home/ubuntu/sweep/qwen3-14b/hidose/grid.pt: 60 groups, 678,852 tokens in 191s (3,547 tok/s)
