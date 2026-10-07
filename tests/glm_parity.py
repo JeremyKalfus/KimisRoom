@@ -161,7 +161,9 @@ def ref(a) -> None:
     torch.set_float32_matmul_precision("highest")
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
-    d16, d32, de = (torch.device(x) for x in a.ref_devices.split(","))
+    devs = [torch.device(x) for x in a.ref_devices.split(",")]
+    d16, d32, de = devs[:3]
+    dx16 = devs[3] if len(devs) > 3 else None  # the bf16 ref's routed experts, when one GPU cannot hold the layer
     ck = glm.GlmCheckpoint(a.model)
     cfg = glm_ref.hf_config(a.model)
     smoke = json.loads((Path(a.model) / "config.json").read_text()) if a.smoke else None
@@ -220,7 +222,7 @@ def ref(a) -> None:
                 prev = None if full else torch.arange(S, device=d32, dtype=torch.int32).expand(1, S, S)
                 od[s] = glm_ref.run_layer(L32, rot32, x_in[s].to(d32), prev)[0].to("cpu")
         del L32
-        L16 = glm_ref.build_layer(cfg, ck, got, i, BF16, d16)
+        L16 = glm_ref.build_layer(cfg, ck, got, i, BF16, d16, expert_device=dx16)
         o16i, t16i = run_all(L16, rot16, d16, BF16, [x.to(BF16) for x in x_in], tk16i, every)
         o16, t16 = run_all(L16, rot16, d16, BF16, h16, tk16, every)
         del L16
@@ -551,7 +553,7 @@ def main() -> None:
     ap.add_argument("out")
     ap.add_argument("--layers", type=int, default=0, help="ref: only the first N layers (gate 1); report: gate 1's N")
     ap.add_argument("--tokenizer", help="tokenizer files, when MODEL has none (--smoke)")
-    ap.add_argument("--ref-devices", default="cuda:1,cuda:2,cuda:3", help="bf16 ref, fp32 ref, isolated engine")
+    ap.add_argument("--ref-devices", default="cuda:1,cuda:2,cuda:3", help="bf16 ref, fp32 ref, isolated engine[, bf16 ref's experts]")
     ap.add_argument("--engine-device", default="cuda:0")
     ap.add_argument("--smoke", action="store_true", help="CPU, tiny checkpoint")
     a = ap.parse_args()

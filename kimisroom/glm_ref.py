@@ -58,8 +58,11 @@ def dequant_fast(w: torch.Tensor, s: torch.Tensor, dtype: torch.dtype, device) -
 
 
 @torch.no_grad()
-def build_layer(cfg, ck: GlmCheckpoint, got: dict[str, torch.Tensor], i: int, dtype: torch.dtype, device):
-    """GlmMoeDsaDecoderLayer i with the checkpoint's weights in `dtype` on `device`."""
+def build_layer(cfg, ck: GlmCheckpoint, got: dict[str, torch.Tensor], i: int, dtype: torch.dtype, device,
+                expert_device=None):
+    """GlmMoeDsaDecoderLayer i with the checkpoint's weights in `dtype` on `device`. With `expert_device`,
+    the routed experts' weights live there instead and their inputs and output are moved across: the same
+    ops on another device of the same kind, for GPUs too small for a whole bf16 MoE layer (24 GB L4)."""
     from transformers.models.glm_moe_dsa import modeling_glm_moe_dsa as M
 
     with torch.device("meta"):
@@ -74,17 +77,27 @@ def build_layer(cfg, ck: GlmCheckpoint, got: dict[str, torch.Tensor], i: int, dt
         sd[f"{n}.weight"] = dequant(got[f"{n}.weight"], got[f"{n}.weight_scale_inv"], dtype, device)
     if ck.is_moe(i):
         E, I, H = ck.config.n_routed_experts, ck.config.moe_intermediate_size, ck.config.hidden_size
-        gu = torch.empty(E, 2 * I, H, dtype=dtype, device=device)
-        dn = torch.empty(E, H, I, dtype=dtype, device=device)
+        edev = device if expert_device is None else expert_device
+        gu = torch.empty(E, 2 * I, H, dtype=dtype, device=edev)
+        dn = torch.empty(E, H, I, dtype=dtype, device=edev)
         for e in range(E):
             q = {m: dequant_fast(got[f"mlp.experts.{e}.{m}.weight"], got[f"mlp.experts.{e}.{m}.weight_scale_inv"],
-                                 dtype, device) for m in PROJ}
+                                 dtype, edev) for m in PROJ}
             gu[e, :I], gu[e, I:] = q["gate_proj"], q["up_proj"]
             dn[e] = q["down_proj"]
         sd["mlp.experts.gate_up_proj"], sd["mlp.experts.down_proj"] = gu, dn
     missing, unexpected = layer.load_state_dict(sd, strict=False, assign=True)
     assert not unexpected, unexpected
     assert not [m for m in missing if not m.endswith("inv_freq")], missing
+    if ck.is_moe(i) and expert_device is not None and torch.device(expert_device) != torch.device(device):
+        experts, fwd, edev = layer.mlp.experts, layer.mlp.experts.forward, torch.device(expert_device)
+
+        def across(*args, **kw):
+            mv = lambda t: t.to(edev) if torch.is_tensor(t) else t  # noqa: E731
+            out = fwd(*[mv(x) for x in args], **{k: mv(v) for k, v in kw.items()})
+            return out.to(device)
+
+        experts.forward = across
     layer.eval()
     return layer
 

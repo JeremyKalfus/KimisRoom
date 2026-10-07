@@ -20,7 +20,8 @@ mkdir -p $O/logs
 NGPU=$(nvidia-smi -L | wc -l)
 BATTERY=prompts/battery/items_idctl.jsonl
 # The references' devices: bf16 ref, fp32 ref, isolated engine. An fp32 MoE layer needs ~36 GiB, more
-# than a 24 GB L4 holds, so there GLM_REF_DEVICES=cuda:1,cpu,cuda:3 runs the fp32 reference on the CPU.
+# than a 24 GB L4 holds, so there GLM_REF_DEVICES=cuda:1,cpu,cuda:3,cuda:2 runs the fp32 reference on the CPU and
+# the bf16 reference's experts on GPU 2.
 REFDEV=${GLM_REF_DEVICES:-cuda:$((1 % NGPU)),cuda:$((2 % NGPU)),cuda:$((3 % NGPU))}
 # KR_MAX_TOKENS (e.g. 300000 on 24 GB L4s): kimisroom.run's per-pass token budget, set through
 # runs/sweep_run.py, which runs the frozen scripts (runs/vectors.py, runs/qwen_pilot.py) unchanged. Unset
