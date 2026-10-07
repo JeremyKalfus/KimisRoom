@@ -108,7 +108,21 @@ At the smallest effect of interest, 8B is underpowered: 0.50, against 1.00 for 1
 - add paraphrases, which needs new wordings beyond the registered battery's 30 pairs;
 - move 8B from the primary family to the secondary.
 
-H8s and H9s were not simulated. A task-level approximation, which ignores paraphrase variance, gave power above 0.99 for both. The 8B result shows that approximation can be badly optimistic, so `runs/sweep_power.R` should be extended to the concept-only contrast and to TOST before timestamping.
+H8s and H9s, by the same simulation on their own pilot variance components (`results/sweep/power_h8_h9.csv`):
+
+| Test | Size | True effect | Power, α = 0.05 | Pessimistic |
+|---|---|---|---|---|
+| H8s (D1.4, vs red+ocean) | 8B | 0.10 | 0.49 | 0.28 |
+| H8s | 8B | 0.20 | 0.99 | 0.82 |
+| H8s | 14B | 0.10 | 1.00 | 0.91 |
+| H9s (TOST within ±0.10, D0) | 0.6B | 0 | 1.00 | 1.00 |
+| H9s | 0.6B | 0.05 | 1.00 | 1.00 |
+| H9s | 1.7B | 0 | 1.00 | 1.00 |
+| H9s | 1.7B | 0.05 | 0.98 | 0.84 |
+
+8B has the same limit for H8s as for H1s. The equivalence tests are well powered.
+
+The 0.6B standard error is so small (0.003) that a true effect of +0.05 would also be significantly different from zero. So H9s claims "smaller than the smallest effect of interest", not "zero".
 
 The pilots' D0 estimates are inflated by selection, since the layer was picked for its D0 contrast. The D1.4 and concept-only estimates were not selected on.
 
