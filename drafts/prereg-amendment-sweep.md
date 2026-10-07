@@ -94,15 +94,23 @@ No trend across sizes is registered. The layer depth differs by size (0.46 to 0.
 
 ## 3. Sample size and power
 
-Each size has 40 tasks × 30 paraphrase pairs, the registered design. Power is approximated from the pilots' across-task SDs, with n = 40 and a one-sample t-test on task means. This is cruder than the registered simulation, which models paraphrase variance too; that simulation, run on each size's pilot variance components (`runs/sweep_power.R`), is reported below and replaces these approximations.
+Each size has 40 tasks × 30 paraphrase pairs, the registered design. Power for H1s comes from the registered simulation, run on each size's pilot variance components (`runs/sweep_power.R`, 200 simulations per cell, maximal model; `results/sweep/power.csv`). "Pessimistic" multiplies the task and paraphrase slope SDs by 1.5.
 
-- **H1s at the smallest effect of interest (0.10):** the pilot SDs under D1.4 are 0.07 (14B) and 0.11 (8B). The standard error is at most 0.017, so a true effect of 0.10 sits about 6 SEs from zero. Power is above 0.99.
-- **H8s:** the SDs are 0.10 (8B, 14B), so the same holds.
-- **H9s (TOST at ±0.10):** the D0 SDs are 0.016 (0.6B) and 0.058 (1.7B). At the pilot means, the upper one-sided test sits 6 or more SEs from the bound. Power is above 0.99.
+| Size | True effect | Power, α = 0.05 | Power, α = 0.01 | Pessimistic, α = 0.05 | Mean SE |
+|---|---|---|---|---|---|
+| 8B | 0.10 | 0.50 | 0.27 | 0.29 | 0.049 |
+| 8B | 0.20 | 0.97 | 0.88 | 0.71 | 0.049 |
+| 14B | 0.10 | 1.00 | 1.00 | 0.97 | 0.018 |
+| 14B | 0.20 | 1.00 | 1.00 | 1.00 | 0.018 |
+
+At the smallest effect of interest, 8B is underpowered: 0.50, against 1.00 for 14B. The cause is how much 8B's emotion effect varies across paraphrases (slope SD 0.26 against 0.08 for 14B), estimated from only 10 pilot paraphrases. At 8B's pilot estimate (+0.31) power is high. The options are:
+- accept that 8B can detect +0.20 but not +0.10;
+- add paraphrases, which needs new wordings (the registered 30 are all there is);
+- move 8B from the primary family to the secondary.
+
+H8s and H9s were not simulated. A task-level approximation, which ignores paraphrase variance, gave power above 0.99 for both. The 8B result shows that approximation can be badly optimistic, so `runs/sweep_power.R` should be extended to the concept-only contrast and to TOST before timestamping.
 
 The pilots' D0 estimates are inflated by selection, since the layer was picked for its D0 contrast. The D1.4 and concept-only estimates were not selected on.
-
-**Simulation** (`runs/sweep_power.R`, 40 tasks × 30 paraphrases, maximal model): [pending, results/sweep/power.csv].
 
 ---
 
