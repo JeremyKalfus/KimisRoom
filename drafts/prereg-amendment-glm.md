@@ -118,15 +118,17 @@ The frozen analysis code, run on the pilot table, gave the following. These are 
 
 | Test | Estimate | 95% CI |
 |---|---|---|
-| H1g | [TBD] | [TBD] |
-| H2g | [TBD] | |
-| H3g | [TBD] | |
-| H4g | [TBD] | |
-| H6g | [TBD] | |
-| H7g.1 | [TBD] | |
-| H7g.2 | [TBD] | |
-| H7g.3 | [TBD] | |
-| H7g.4 | [TBD] | |
+| H1g | −0.090 | −0.190 to +0.011 |
+| H2g | +0.280 | |
+| H3g | −0.369 | |
+| H4g | +0.014 | |
+| H6g | +0.302 | |
+| H7g.1 | −0.081 | |
+| H7g.2 | −0.064 | |
+| H7g.3 | −0.256 | |
+| H7g.4 | −0.198 | |
+
+Under prompted denial GLM's pilot shows no positive self-report effect. H1g is −0.090, and the contrast under denial is 0.37 below the one without it. H2g, the positive control, is +0.280. Against red and ocean the denial contrast is −0.056 (−0.190 to +0.078). `belief_resid` (exploratory) moves the other way from raw `belief` under denial: +0.147 (+0.021 to +0.272) against the four controls, so the denial is held slightly more firmly. Without denial it is −0.239 (−0.343 to −0.136). GLM's assent was graded hedged (section 3), and these are 5 dev tasks.
 
 For comparison, the same code run on K2.6's layer-20 pilot table (dev tasks, 4 units) gives H1 +0.25 and H7.1 to H7.4 of −0.11, −0.09, −0.07 and −0.08. The registered confirmatory `belief` results for both models are in amendment 1, section 1.
 
