@@ -224,7 +224,7 @@ def ref(a) -> None:
         o16i, t16i = run_all(L16, rot16, d16, BF16, [x.to(BF16) for x in x_in], tk16i, every)
         o16, t16 = run_all(L16, rot16, d16, BF16, h16, tk16, every)
         del L16
-        if d32.type == "cuda":
+        if "cuda" in (d32.type, d16.type):  # with the fp32 ref on the CPU, the bf16 ref's cache still needs freeing
             torch.cuda.empty_cache()
 
         # the engine's layer on the fp32 chain's inputs, through the real layout

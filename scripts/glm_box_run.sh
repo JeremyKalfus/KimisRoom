@@ -71,12 +71,14 @@ EOF
 }
 
 do_gate1() {
+  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  # the bf16 ref fills a 24 GB L4
   $PY tests/glm_parity.py ref $M $O/parity --layers 8 --ref-devices $REFDEV
   $PY tests/glm_parity.py report $M $O/parity --layers 8 | tee $O/parity/gate1.txt
   grep -q "verdict: pass" $O/parity/gate1.txt
 }
 
 do_gate2() {
+  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  # the bf16 ref fills a 24 GB L4
   local refdev=$REFDEV
   if [ "$NGPU" -ge 4 ]; then
     $PY tests/glm_parity.py engine $M $O/parity > $O/logs/gate2-engine.log 2>&1 &
