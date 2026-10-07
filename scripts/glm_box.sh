@@ -14,6 +14,10 @@ REV=aca966e4e02791568aa6a4ced368624b3d897f42  # zai-org/GLM-5.3, pinned 2026-10-
 case "${1:-}" in
   setup)
     [ -x ~/glmenv/bin/python ] || /opt/pytorch/bin/python -m venv --system-site-packages ~/glmenv
+    # /opt/pytorch is itself a venv, so --system-site-packages reaches the base Python, not the DLAMI's
+    # torch. A .pth appends /opt/pytorch's site-packages after glmenv's own, so transformers 5.18 wins.
+    purelib() { "$1" -c "import sysconfig; print(sysconfig.get_paths()['purelib'])"; }
+    purelib /opt/pytorch/bin/python > "$(purelib ~/glmenv/bin/python)/dlami-torch.pth"
     ~/glmenv/bin/pip install -q "transformers==5.18.0" "huggingface_hub[hf_xet]>=1.31" safetensors jinja2
     ~/glmenv/bin/python -c "import torch, transformers; assert torch.cuda.is_available(); \
 print('glmenv: torch', torch.__version__, 'transformers', transformers.__version__, torch.cuda.device_count(), 'GPUs')"
