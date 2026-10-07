@@ -19,6 +19,11 @@ export PYTHONPATH=$HOME/KimisRoom PYTHONUNBUFFERED=1
 mkdir -p $O/logs
 NGPU=$(nvidia-smi -L | wc -l)
 BATTERY=prompts/battery/items_idctl.jsonl
+# KR_MAX_TOKENS (e.g. 300000 on 24 GB L4s): kimisroom.run's per-pass token budget, set through
+# runs/sweep_run.py, which runs the frozen scripts (runs/vectors.py, runs/qwen_pilot.py) unchanged. Unset
+# keeps the 800k default.
+W=""; [ -n "${KR_MAX_TOKENS:-}" ] && W=runs/sweep_run.py
+PILOT="$PY $W runs/qwen_pilot.py"
 
 stage() {  # stage NAME: run "do_NAME" unless done, logging
   local s=$1
@@ -81,14 +86,14 @@ do_gate2() {
 }
 
 do_vectors() {
-  $PY runs/vectors.py $M $O/vec run
+  $PY $W runs/vectors.py $M $O/vec run
   $PY runs/vectors.py $M $O/vec vectors > $O/vec/report.txt
   tail -40 $O/vec/report.txt
   $PY runs/glm_summary.py gate $O/vec/aipsy_table.pt
 }
 
 do_cal() {
-  $PY runs/qwen_pilot.py $M $O/cal grid --vectors $O/vec/vectors.pt --layers 26,37,49,58 --doses 1,2,4 \
+  $PILOT $M $O/cal grid --vectors $O/vec/vectors.pt --layers 26,37,49,58 --doses 1,2,4 \
     --arms D0 --vector-kinds raw --battery $BATTERY
   $PY runs/glm_summary.py cal $O/cal $O/vec/aipsy_table.pt --json $O/choice.json | tee $O/cal/summary.txt
 }
@@ -98,7 +103,7 @@ do_pilot() {
   L=$($PY -c "import json; print(json.load(open('$O/choice.json'))['layer'])")
   s=$($PY -c "import json; print('%g' % json.load(open('$O/choice.json'))['secondary_dose'])")
   p=$($PY -c "import json; print('%g' % json.load(open('$O/choice.json'))['primary_dose'])")
-  $PY runs/qwen_pilot.py $M $O/pilot grid --vectors $O/vec/vectors.pt --layers $L --doses $s,$p \
+  $PILOT $M $O/pilot grid --vectors $O/vec/vectors.pt --layers $L --doses $s,$p \
     --arms D0,D1.4 --task-site --vector-kinds raw --battery $BATTERY
   $PY runs/glm_summary.py pilot $O/pilot --choice $O/choice.json --json $O/pilot/summary.json | tee $O/pilot/summary.txt
   $PY runs/confirm_table.py $O/pilot glm $O/pilot/table.csv --entity GLM --belief  # belief_resid: exploratory

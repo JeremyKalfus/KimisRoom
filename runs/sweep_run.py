@@ -7,7 +7,8 @@ Both scripts hand `kimisroom.run` a hard-coded `--gpus-per-worker 2` for any qwe
 because Qwen3-32B in bf16 needs two L40S. Every model of the size sweep (0.6B-14B) fits one GPU,
 and on a one-GPU machine `kimisroom.run` rejects 2 (1 GPU is not a whole number of 2-GPU workers).
 This wrapper rewrites that argument to `--gpus-per-worker 1` (or $SWEEP_GPW) in the subprocess call
-(and, with $SWEEP_SUFFIX_CHUNK set, runs kimisroom.run through runs/sweep_hfrun.py)
+(and, with $SWEEP_SUFFIX_CHUNK set, runs kimisroom.run through runs/sweep_hfrun.py; with $KR_MAX_TOKENS
+set, passes it as kimisroom.run's --max-tokens, the per-pass token budget, for GPUs smaller than an L40S)
 and then runs the script as __main__, so the trial code, ids and outputs are exactly the frozen
 code's (runs/qwen_pilot.py is hashed in PREREG.md section 7 and is deliberately not edited).
 """
@@ -29,6 +30,8 @@ def run(cmd, *a, **kw):
         cmd[i + 1] = GPW
     if os.environ.get("SWEEP_SUFFIX_CHUNK") and cmd[1:3] == ["-m", "kimisroom.run"]:
         cmd[1:3] = [str(Path(__file__).with_name("sweep_hfrun.py"))]
+    if os.environ.get("KR_MAX_TOKENS") and "--model" in cmd and "--max-tokens" not in cmd:
+        cmd += ["--max-tokens", os.environ["KR_MAX_TOKENS"]]
     return _run(cmd, *a, **kw)
 
 
