@@ -268,10 +268,12 @@ The script reproduces the registered K2.6 components from K2.6's pilot table: ta
 
 | Test | Scenario | Power at 0.05 | at 0.025 | at 0.00625 |
 |---|---|---|---|---|
-| H1g | pilot | [TBD] | [TBD] | |
-| H1g | pessimistic | [TBD] | [TBD] | |
-| H7g.1 | pilot | [TBD] | | [TBD] |
-| H7g.1 | pessimistic | [TBD] | | [TBD] |
+| H1g | pilot | 1.00 | 1.00 | |
+| H1g | pessimistic | 0.98 | 0.98 | |
+| H7g.1 | pilot | 0.99 | | 0.80 |
+| H7g.1 | pessimistic | 0.80 | | 0.45 |
+
+Power is for a true effect at the smallest effect of interest (+0.10 for H1g, −0.10 for H7g.1), from GLM's pilot variance components (`results/glm/power.csv`, 300 simulations per cell). It says nothing about the sign: GLM's pilot estimate for H1g is −0.090. Simulated type I error at α = 0.05 was 0.037 (H1g) and 0.037 (H7g.1).
 
 The design is the registered one so that the three models stay comparable. Power is reported, and no tasks are added on its account.
 

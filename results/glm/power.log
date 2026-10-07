@@ -1,0 +1,18 @@
+H1g (self_resid, D1.4, layer 37, dose 2): pilot estimate -0.090 on 5 tasks x 10 paraphrases; SDs task 0.056/0.070 para 0.071/0.058 resid 0.198
+ test    measure  T  P infl beta pilot_est     ti     ts    pi     ps     e nE
+  H1g self_resid 40 30    1  0.1   -0.0896 0.0562 0.0699 0.071 0.0577 0.198  6
+ power_05 power_025 power_00625 mean_se typeI_05 equiv_power nsim
+        1         1       0.997  0.0156   0.0367           1  300
+ test    measure  T  P infl beta pilot_est     ti     ts    pi     ps     e nE
+  H1g self_resid 40 30  1.5  0.1   -0.0896 0.0562 0.0699 0.071 0.0577 0.198  6
+ power_05 power_025 power_00625 mean_se typeI_05 equiv_power nsim
+    0.983     0.977       0.903  0.0232   0.0267       0.993  300
+H7g.1 (belief, D1.4, layer 37, dose 2): pilot estimate -0.081 on 5 tasks x 10 paraphrases; SDs task 0.037/0.110 para 0.000/0.054 resid 0.228
+  test measure  T  P infl beta pilot_est     ti   ts pi     ps     e nE
+ H7g.1  belief 40 10    1 -0.1   -0.0815 0.0372 0.11  0 0.0544 0.228  6
+ power_05 power_025 power_00625 mean_se typeI_05 equiv_power nsim
+    0.987     0.937       0.803  0.0254   0.0367        0.97  300
+  test measure  T  P infl beta pilot_est     ti   ts pi     ps     e nE
+ H7g.1  belief 40 10  1.5 -0.1   -0.0815 0.0372 0.11  0 0.0544 0.228  6
+ power_05 power_025 power_00625 mean_se typeI_05 equiv_power nsim
+    0.803      0.67       0.447  0.0375     0.05       0.637  300
