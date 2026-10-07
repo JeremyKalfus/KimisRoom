@@ -1,0 +1,159 @@
+emotions: ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'calm', 'pain', 'surprise']  concepts: ['red', 'ocean', 'arithmetic']  denoise span from token 50
+unit token lengths: min 177, p5 191, median 206, p95 235, max 267
+3964 groups, 380,604 tokens, 78 layers
+3964 groups, 380,604 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+[gpu1 pass 1/1] layer 10: 85s, 144 tok/s (wait_disk 5s, to_gpu 12s, compute 65s)
+[gpu2 pass 1/1] layer 10: 82s, 148 tok/s (wait_disk 3s, to_gpu 12s, compute 66s)
+[gpu0 pass 1/1] layer 10: 88s, 139 tok/s (wait_disk 8s, to_gpu 12s, compute 66s)
+[gpu3 pass 1/1] layer 10: 90s, 135 tok/s (wait_disk 0s, to_gpu 23s, compute 64s)
+[gpu1 pass 1/1] layer 20: 171s, 143 tok/s (wait_disk 5s, to_gpu 28s, compute 134s)
+[gpu2 pass 1/1] layer 20: 170s, 144 tok/s (wait_disk 3s, to_gpu 28s, compute 135s)
+[gpu0 pass 1/1] layer 20: 176s, 139 tok/s (wait_disk 8s, to_gpu 28s, compute 136s)
+[gpu3 pass 1/1] layer 20: 192s, 127 tok/s (wait_disk 0s, to_gpu 55s, compute 134s)
+[gpu1 pass 1/1] layer 30: 258s, 142 tok/s (wait_disk 7s, to_gpu 43s, compute 202s)
+[gpu2 pass 1/1] layer 30: 257s, 143 tok/s (wait_disk 3s, to_gpu 42s, compute 206s)
+[gpu0 pass 1/1] layer 30: 264s, 138 tok/s (wait_disk 8s, to_gpu 44s, compute 207s)
+[gpu3 pass 1/1] layer 30: 297s, 123 tok/s (wait_disk 0s, to_gpu 87s, compute 204s)
+[gpu2 pass 1/1] layer 40: 360s, 135 tok/s (wait_disk 17s, to_gpu 60s, compute 276s)
+[gpu1 pass 1/1] layer 40: 363s, 134 tok/s (wait_disk 24s, to_gpu 61s, compute 271s)
+[gpu0 pass 1/1] layer 40: 366s, 133 tok/s (wait_disk 19s, to_gpu 61s, compute 278s)
+[gpu3 pass 1/1] layer 40: 400s, 122 tok/s (wait_disk 0s, to_gpu 120s, compute 273s)
+[gpu1 pass 1/1] layer 50: 467s, 131 tok/s (wait_disk 41s, to_gpu 78s, compute 339s)
+[gpu2 pass 1/1] layer 50: 464s, 131 tok/s (wait_disk 33s, to_gpu 76s, compute 345s)
+[gpu0 pass 1/1] layer 50: 470s, 130 tok/s (wait_disk 34s, to_gpu 78s, compute 348s)
+[gpu3 pass 1/1] layer 50: 505s, 121 tok/s (wait_disk 0s, to_gpu 152s, compute 343s)
+[gpu1 pass 1/1] layer 60: 571s, 128 tok/s (wait_disk 58s, to_gpu 95s, compute 407s)
+[gpu2 pass 1/1] layer 60: 569s, 129 tok/s (wait_disk 49s, to_gpu 94s, compute 415s)
+[gpu0 pass 1/1] layer 60: 574s, 128 tok/s (wait_disk 49s, to_gpu 95s, compute 418s)
+[gpu3 pass 1/1] layer 60: 609s, 120 tok/s (wait_disk 0s, to_gpu 186s, compute 412s)
+[gpu2 pass 1/1] layer 70: 673s, 127 tok/s (wait_disk 66s, to_gpu 110s, compute 484s)
+[gpu1 pass 1/1] layer 70: 676s, 126 tok/s (wait_disk 75s, to_gpu 113s, compute 475s)
+[gpu0 pass 1/1] layer 70: 679s, 126 tok/s (wait_disk 64s, to_gpu 113s, compute 488s)
+[gpu3 pass 1/1] layer 70: 714s, 120 tok/s (wait_disk 0s, to_gpu 219s, compute 482s)
+[gpu1 pass 1/1] layer 78: 759s, 125 tok/s (wait_disk 88s, to_gpu 127s, compute 530s)
+[gpu2 pass 1/1] layer 78: 757s, 126 tok/s (wait_disk 80s, to_gpu 123s, compute 540s)
+[gpu0 pass 1/1] layer 78: 762s, 125 tok/s (wait_disk 75s, to_gpu 128s, compute 545s)
+[gpu1 pass 1/1] done: 991 groups, 95,151 tokens, 764s, peak 17.1 GB
+[gpu0 pass 1/1] done: 991 groups, 95,151 tokens, 768s, peak 17.1 GB
+[gpu2 pass 1/1] done: 991 groups, 95,151 tokens, 763s, peak 17.1 GB
+[gpu3 pass 1/1] layer 78: 794s, 120 tok/s (wait_disk 0s, to_gpu 242s, compute 538s)
+[gpu3 pass 1/1] done: 991 groups, 95,151 tokens, 801s, peak 17.1 GB
+wrote /home/ubuntu/glm/vec/extract.pt: 3964 groups, 380,604 tokens in 860s (443 tok/s)
+random              1P    55     0.470     0.656     0.514     0.426     0.614     0.521     0.336     0.387     0.432     0.517     0.409
+random              1P    60     0.484     0.542     0.503     0.466     0.510     0.543     0.338     0.579     0.568     0.618     0.437
+random              1P    65     0.618     0.078     0.546     0.330     0.584     0.480     0.678     0.758     0.632     0.645     0.557
+random              1P    70     0.428     0.792     0.385     0.850     0.312     0.272     0.527     0.690     0.342     0.580     0.394
+random              1P    75     0.442     0.748     0.644     0.090     0.627     0.443     0.362     0.493     0.567     0.695     0.370
+random              1P    77     0.476     0.576     0.438     0.702     0.490     0.513     0.611     0.390     0.722     0.394     0.559
+random              3P     5     0.424     0.754     0.450     0.692     0.405     0.487     0.442     0.226     0.510     0.141     0.433
+random              3P    10     0.574     0.254     0.471     0.644     0.580     0.488     0.532     0.319     0.261     0.113     0.299
+random              3P    15     0.598     0.200     0.564     0.286     0.495     0.642     0.437     0.597     0.376     0.754     0.355
+random              3P    20     0.516     0.464     0.481     0.568     0.389     0.484     0.551     0.742     0.361     0.778     0.404
+random              3P    25     0.330     0.958     0.377     0.922     0.306     0.460     0.257     0.509     0.397     0.673     0.462
+random              3P    30     0.690     0.026     0.578     0.204     0.677     0.521     0.748     0.546     0.546     0.437     0.682
+random              3P    35     0.392     0.864     0.299     0.992     0.316     0.449     0.292     0.488     0.105     0.612     0.116
+random              3P    40     0.540     0.314     0.609     0.118     0.583     0.540     0.659     0.562     0.468     0.667     0.604
+random              3P    45     0.380     0.920     0.366     0.956     0.424     0.412     0.360     0.355     0.327     0.321     0.220
+random              3P    50     0.494     0.524     0.456     0.648     0.433     0.461     0.396     0.461     0.696     0.609     0.529
+random              3P    55     0.332     0.988     0.431     0.742     0.442     0.485     0.273     0.534     0.369     0.605     0.405
+random              3P    60     0.406     0.842     0.477     0.574     0.494     0.500     0.326     0.651     0.537     0.729     0.512
+random              3P    65     0.658     0.022     0.614     0.098     0.739     0.468     0.737     0.839     0.859     0.661     0.873
+random              3P    70     0.506     0.482     0.406     0.850     0.411     0.398     0.540     0.506     0.188     0.366     0.214
+random              3P    75     0.426     0.804     0.633     0.068     0.727     0.527     0.372     0.404     0.544     0.554     0.538
+random              3P    77     0.406     0.818     0.330     0.962     0.379     0.426     0.350     0.296     0.611     0.531     0.419
+
+pain gate (both p < 0.05) at each shown layer
+  layer   5: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  10: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  15: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  20: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  25: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=FAIL pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  30: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  35: pain/1P=pass pain/3P=pass pain-specific/1P=pass pain-specific/3P=FAIL pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  40: pain/1P=pass pain/3P=pass pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  45: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  50: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  55: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  60: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  65: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  70: pain/1P=pass pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=pass random/1P=FAIL random/3P=FAIL
+  layer  75: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=FAIL pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+  layer  77: pain/1P=FAIL pain/3P=FAIL pain-specific/1P=pass pain-specific/3P=pass pain-dn/1P=pass pain-dn/3P=FAIL random/1P=FAIL random/3P=FAIL
+layer   0: 2/6 pass  joy,euphoria
+layer   1: 0/6 pass  
+layer   2: 0/6 pass  
+layer   3: 0/6 pass  
+layer   4: 0/6 pass  
+layer   5: 0/6 pass  
+layer   6: 0/6 pass  
+layer   7: 0/6 pass  
+layer   8: 1/6 pass  surprise
+layer   9: 0/6 pass  
+layer  10: 0/6 pass  
+layer  11: 0/6 pass  
+layer  12: 0/6 pass  
+layer  13: 0/6 pass  
+layer  14: 0/6 pass  
+layer  15: 0/6 pass  
+layer  16: 0/6 pass  
+layer  17: 0/6 pass  
+layer  18: 1/6 pass  surprise
+layer  19: 2/6 pass  joy,surprise
+layer  20: 2/6 pass  joy,surprise
+layer  21: 3/6 pass  joy,euphoria,surprise
+layer  22: 4/6 pass  joy,fear,euphoria,surprise
+layer  23: 4/6 pass  joy,fear,euphoria,surprise
+layer  24: 5/6 pass  joy,sadness,fear,euphoria,surprise
+layer  25: 5/6 pass  joy,sadness,fear,euphoria,surprise
+layer  26: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  27: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  28: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  29: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  30: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  31: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  32: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  33: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  34: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  35: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  36: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  37: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  38: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  39: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  40: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  41: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  42: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  43: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  44: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  45: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  46: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  47: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  48: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  49: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  50: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  51: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  52: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  53: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  54: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  55: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  56: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  57: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  58: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  59: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  60: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  61: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  62: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  63: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  64: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  65: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  66: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  67: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  68: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  69: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  70: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  71: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  72: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  73: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  74: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  75: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  76: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise
+layer  77: 6/6 pass  joy,sadness,anger,fear,euphoria,surprise

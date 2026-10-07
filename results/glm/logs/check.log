@@ -1,0 +1,9 @@
+D1.4 assent: data/assent/glm53_d1_argument_4.json, 1063 tokens
+D0: prefix 167 tokens on t15, longest prefix + suffix 252 tokens, 0 of 44635 suffix rows past index_topk 2048 (DSA cuts keys there), and 0 of its 167 prefix rows
+D1.4: prefix 2383 tokens on t15, longest prefix + suffix 2468 tokens, 44635 of 44635 suffix rows past index_topk 2048 (DSA cuts keys there), and 335 of its 2383 prefix rows
+answer words: 14 with distinct first tokens; multi-token: {'Anger': ['Ang', 'er'], 'Calm': ['C', 'alm'], 'Euphoria': ['E', 'up', 'horia'], 'Pain': ['P', 'ain'], 'Sadness': ['Sad', 'ness'], 'Surprise': ['Sur', 'prise']}
+last suffix tail: ' Joy, or None.<|assistant|><think></think>'
+glm trials check: ok
+T=5000 k=2048: tied zero-score keys taken: ['earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest']
+T=2600 k=2048: tied zero-score keys taken: ['earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest']
+T=300 k=100: tied zero-score keys taken: ['earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest', 'earliest']

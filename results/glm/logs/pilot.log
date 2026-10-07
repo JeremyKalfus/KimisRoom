@@ -1,0 +1,180 @@
+370 trials, 3,780,364 tokens, layers [37], 11 vectors, doses [1.0, 2.0] x natural unit {37: 3.39963436126709} (natural unit {37: 3.39963436126709})
+370 groups, 3,780,364 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [4, 4, 4, 4]
+[gpu1 pass 1/4] layer 10: 292s, 110 tok/s (wait_disk 4s, to_gpu 11s, compute 276s)
+[gpu2 pass 1/4] layer 10: 294s, 109 tok/s (wait_disk 2s, to_gpu 10s, compute 282s)
+[gpu3 pass 1/4] layer 10: 293s, 109 tok/s (wait_disk 0s, to_gpu 10s, compute 282s)
+[gpu0 pass 1/4] layer 10: 312s, 103 tok/s (wait_disk 6s, to_gpu 22s, compute 283s)
+[gpu1 pass 1/4] layer 20: 588s, 109 tok/s (wait_disk 4s, to_gpu 26s, compute 558s)
+[gpu2 pass 1/4] layer 20: 597s, 107 tok/s (wait_disk 2s, to_gpu 25s, compute 569s)
+[gpu3 pass 1/4] layer 20: 597s, 107 tok/s (wait_disk 0s, to_gpu 25s, compute 571s)
+[gpu0 pass 1/4] layer 20: 631s, 101 tok/s (wait_disk 6s, to_gpu 53s, compute 573s)
+[gpu1 pass 1/4] layer 30: 875s, 110 tok/s (wait_disk 4s, to_gpu 41s, compute 831s)
+[gpu2 pass 1/4] layer 30: 889s, 108 tok/s (wait_disk 2s, to_gpu 40s, compute 847s)
+[gpu3 pass 1/4] layer 30: 890s, 108 tok/s (wait_disk 0s, to_gpu 41s, compute 849s)
+[gpu0 pass 1/4] layer 30: 940s, 102 tok/s (wait_disk 6s, to_gpu 83s, compute 851s)
+[gpu1 pass 1/4] layer 40: 1173s, 109 tok/s (wait_disk 4s, to_gpu 56s, compute 1113s)
+[gpu2 pass 1/4] layer 40: 1192s, 107 tok/s (wait_disk 2s, to_gpu 55s, compute 1134s)
+[gpu3 pass 1/4] layer 40: 1194s, 107 tok/s (wait_disk 0s, to_gpu 56s, compute 1138s)
+[gpu0 pass 1/4] layer 40: 1260s, 101 tok/s (wait_disk 6s, to_gpu 114s, compute 1140s)
+[gpu1 pass 1/4] layer 50: 1474s, 108 tok/s (wait_disk 14s, to_gpu 72s, compute 1387s)
+[gpu2 pass 1/4] layer 50: 1488s, 107 tok/s (wait_disk 2s, to_gpu 70s, compute 1415s)
+[gpu3 pass 1/4] layer 50: 1491s, 107 tok/s (wait_disk 0s, to_gpu 71s, compute 1420s)
+[gpu0 pass 1/4] layer 50: 1574s, 102 tok/s (wait_disk 6s, to_gpu 145s, compute 1423s)
+[gpu1 pass 1/4] layer 60: 1798s, 107 tok/s (wait_disk 43s, to_gpu 88s, compute 1667s)
+[gpu2 pass 1/4] layer 60: 1797s, 107 tok/s (wait_disk 8s, to_gpu 86s, compute 1702s)
+[gpu3 pass 1/4] layer 60: 1796s, 107 tok/s (wait_disk 1s, to_gpu 86s, compute 1708s)
+[gpu0 pass 1/4] layer 60: 1894s, 101 tok/s (wait_disk 6s, to_gpu 176s, compute 1711s)
+[gpu1 pass 1/4] layer 70: 2107s, 106 tok/s (wait_disk 62s, to_gpu 105s, compute 1941s)
+[gpu3 pass 1/4] layer 70: 2106s, 106 tok/s (wait_disk 14s, to_gpu 102s, compute 1989s)
+[gpu2 pass 1/4] layer 70: 2108s, 106 tok/s (wait_disk 23s, to_gpu 102s, compute 1983s)
+[gpu0 pass 1/4] layer 70: 2208s, 101 tok/s (wait_disk 6s, to_gpu 207s, compute 1994s)
+[gpu1 pass 1/4] layer 78: 2361s, 106 tok/s (wait_disk 81s, to_gpu 118s, compute 2162s)
+[gpu2 pass 1/4] layer 78: 2361s, 106 tok/s (wait_disk 38s, to_gpu 114s, compute 2209s)
+[gpu1 pass 1/4] done: 22 groups, 249,386 tokens, 2363s, peak 20.8 GB
+[gpu3 pass 1/4] layer 78: 2360s, 106 tok/s (wait_disk 28s, to_gpu 115s, compute 2216s)
+[gpu2 pass 1/4] done: 22 groups, 249,386 tokens, 2363s, peak 20.8 GB
+[gpu3 pass 1/4] done: 22 groups, 249,375 tokens, 2362s, peak 20.8 GB
+[gpu0 pass 1/4] layer 78: 2460s, 101 tok/s (wait_disk 6s, to_gpu 230s, compute 2224s)
+[gpu0 pass 1/4] done: 22 groups, 249,378 tokens, 2463s, peak 20.8 GB
+[gpu1 pass 2/4] layer 10: 325s, 98 tok/s (wait_disk 42s, to_gpu 11s, compute 272s)
+[gpu2 pass 2/4] layer 10: 328s, 97 tok/s (wait_disk 38s, to_gpu 11s, compute 279s)
+[gpu3 pass 2/4] layer 10: 327s, 98 tok/s (wait_disk 37s, to_gpu 10s, compute 280s)
+[gpu0 pass 2/4] layer 10: 306s, 104 tok/s (wait_disk 0s, to_gpu 22s, compute 284s)
+[gpu1 pass 2/4] layer 20: 630s, 101 tok/s (wait_disk 51s, to_gpu 27s, compute 552s)
+[gpu2 pass 2/4] layer 20: 629s, 101 tok/s (wait_disk 39s, to_gpu 26s, compute 564s)
+[gpu3 pass 2/4] layer 20: 629s, 101 tok/s (wait_disk 37s, to_gpu 25s, compute 566s)
+[gpu0 pass 2/4] layer 20: 625s, 102 tok/s (wait_disk 0s, to_gpu 53s, compute 572s)
+[gpu1 pass 2/4] layer 30: 938s, 102 tok/s (wait_disk 70s, to_gpu 43s, compute 824s)
+[gpu3 pass 2/4] layer 30: 937s, 102 tok/s (wait_disk 50s, to_gpu 41s, compute 845s)
+[gpu2 pass 2/4] layer 30: 938s, 102 tok/s (wait_disk 52s, to_gpu 42s, compute 844s)
+[gpu0 pass 2/4] layer 30: 939s, 102 tok/s (wait_disk 0s, to_gpu 85s, compute 854s)
+[gpu1 pass 2/4] layer 40: 1264s, 101 tok/s (wait_disk 100s, to_gpu 61s, compute 1103s)
+[gpu2 pass 2/4] layer 40: 1263s, 101 tok/s (wait_disk 75s, to_gpu 58s, compute 1130s)
+[gpu3 pass 2/4] layer 40: 1262s, 101 tok/s (wait_disk 73s, to_gpu 57s, compute 1132s)
+[gpu0 pass 2/4] layer 40: 1260s, 101 tok/s (wait_disk 0s, to_gpu 117s, compute 1143s)
+[gpu1 pass 2/4] layer 50: 1572s, 102 tok/s (wait_disk 120s, to_gpu 77s, compute 1375s)
+[gpu2 pass 2/4] layer 50: 1572s, 102 tok/s (wait_disk 90s, to_gpu 74s, compute 1408s)
+[gpu3 pass 2/4] layer 50: 1572s, 102 tok/s (wait_disk 88s, to_gpu 73s, compute 1410s)
+[gpu0 pass 2/4] layer 50: 1573s, 101 tok/s (wait_disk 0s, to_gpu 148s, compute 1424s)
+[gpu1 pass 2/4] layer 60: 1899s, 101 tok/s (wait_disk 150s, to_gpu 94s, compute 1654s)
+[gpu2 pass 2/4] layer 60: 1898s, 101 tok/s (wait_disk 112s, to_gpu 91s, compute 1695s)
+[gpu3 pass 2/4] layer 60: 1897s, 101 tok/s (wait_disk 111s, to_gpu 90s, compute 1697s)
+[gpu0 pass 2/4] layer 60: 1896s, 101 tok/s (wait_disk 0s, to_gpu 181s, compute 1714s)
+[gpu1 pass 2/4] layer 70: 2207s, 101 tok/s (wait_disk 171s, to_gpu 111s, compute 1925s)
+[gpu3 pass 2/4] layer 70: 2206s, 101 tok/s (wait_disk 126s, to_gpu 106s, compute 1975s)
+[gpu2 pass 2/4] layer 70: 2208s, 101 tok/s (wait_disk 127s, to_gpu 108s, compute 1972s)
+[gpu0 pass 2/4] layer 70: 2208s, 101 tok/s (wait_disk 0s, to_gpu 213s, compute 1994s)
+[gpu1 pass 2/4] layer 78: 2460s, 101 tok/s (wait_disk 190s, to_gpu 124s, compute 2145s)
+[gpu1 pass 2/4] done: 22 groups, 248,964 tokens, 2461s, peak 20.8 GB
+[gpu2 pass 2/4] layer 78: 2460s, 101 tok/s (wait_disk 142s, to_gpu 120s, compute 2197s)
+[gpu3 pass 2/4] layer 78: 2459s, 101 tok/s (wait_disk 141s, to_gpu 118s, compute 2200s)
+[gpu2 pass 2/4] done: 22 groups, 248,955 tokens, 2462s, peak 20.8 GB
+[gpu3 pass 2/4] done: 22 groups, 248,964 tokens, 2461s, peak 20.8 GB
+[gpu0 pass 2/4] layer 78: 2459s, 101 tok/s (wait_disk 0s, to_gpu 236s, compute 2222s)
+[gpu0 pass 2/4] done: 22 groups, 248,964 tokens, 2462s, peak 20.8 GB
+[gpu1 pass 3/4] layer 10: 209s, 148 tok/s (wait_disk 81s, to_gpu 11s, compute 116s)
+[gpu2 pass 3/4] layer 10: 209s, 148 tok/s (wait_disk 78s, to_gpu 11s, compute 119s)
+[gpu3 pass 3/4] layer 10: 215s, 145 tok/s (wait_disk 75s, to_gpu 11s, compute 128s)
+[gpu0 pass 3/4] layer 10: 147s, 211 tok/s (wait_disk 0s, to_gpu 22s, compute 124s)
+[gpu1 pass 3/4] layer 20: 363s, 171 tok/s (wait_disk 87s, to_gpu 27s, compute 248s)
+[gpu2 pass 3/4] layer 20: 361s, 172 tok/s (wait_disk 79s, to_gpu 27s, compute 255s)
+[gpu3 pass 3/4] layer 20: 375s, 166 tok/s (wait_disk 75s, to_gpu 27s, compute 273s)
+[gpu0 pass 3/4] layer 20: 316s, 196 tok/s (wait_disk 0s, to_gpu 54s, compute 262s)
+[gpu1 pass 3/4] layer 30: 531s, 175 tok/s (wait_disk 107s, to_gpu 45s, compute 379s)
+[gpu2 pass 3/4] layer 30: 529s, 175 tok/s (wait_disk 96s, to_gpu 45s, compute 388s)
+[gpu3 pass 3/4] layer 30: 534s, 176 tok/s (wait_disk 75s, to_gpu 42s, compute 416s)
+[gpu0 pass 3/4] layer 30: 484s, 192 tok/s (wait_disk 0s, to_gpu 87s, compute 397s)
+[gpu1 pass 3/4] layer 40: 700s, 177 tok/s (wait_disk 127s, to_gpu 64s, compute 509s)
+[gpu2 pass 3/4] layer 40: 698s, 177 tok/s (wait_disk 113s, to_gpu 63s, compute 522s)
+[gpu3 pass 3/4] layer 40: 699s, 179 tok/s (wait_disk 79s, to_gpu 60s, compute 560s)
+[gpu0 pass 3/4] layer 40: 654s, 189 tok/s (wait_disk 0s, to_gpu 121s, compute 533s)
+[gpu1 pass 3/4] layer 50: 871s, 178 tok/s (wait_disk 148s, to_gpu 83s, compute 640s)
+[gpu2 pass 3/4] layer 50: 869s, 178 tok/s (wait_disk 131s, to_gpu 81s, compute 656s)
+[gpu3 pass 3/4] layer 50: 869s, 180 tok/s (wait_disk 88s, to_gpu 78s, compute 703s)
+[gpu0 pass 3/4] layer 50: 824s, 188 tok/s (wait_disk 0s, to_gpu 156s, compute 668s)
+[gpu1 pass 3/4] layer 60: 1040s, 179 tok/s (wait_disk 167s, to_gpu 103s, compute 770s)
+[gpu2 pass 3/4] layer 60: 1038s, 179 tok/s (wait_disk 149s, to_gpu 100s, compute 790s)
+[gpu3 pass 3/4] layer 60: 1038s, 180 tok/s (wait_disk 95s, to_gpu 97s, compute 846s)
+[gpu0 pass 3/4] layer 60: 994s, 187 tok/s (wait_disk 0s, to_gpu 190s, compute 804s)
+[gpu1 pass 3/4] layer 70: 1209s, 179 tok/s (wait_disk 186s, to_gpu 122s, compute 900s)
+[gpu2 pass 3/4] layer 70: 1207s, 180 tok/s (wait_disk 166s, to_gpu 118s, compute 923s)
+[gpu3 pass 3/4] layer 70: 1207s, 181 tok/s (wait_disk 103s, to_gpu 115s, compute 989s)
+[gpu0 pass 3/4] layer 70: 1162s, 186 tok/s (wait_disk 0s, to_gpu 223s, compute 939s)
+[gpu1 pass 3/4] layer 78: 1342s, 180 tok/s (wait_disk 201s, to_gpu 137s, compute 1004s)
+[gpu2 pass 3/4] layer 78: 1340s, 180 tok/s (wait_disk 178s, to_gpu 133s, compute 1029s)
+[gpu3 pass 3/4] layer 78: 1340s, 182 tok/s (wait_disk 109s, to_gpu 129s, compute 1102s)
+[gpu1 pass 3/4] done: 26 groups, 241,472 tokens, 1344s, peak 20.8 GB
+[gpu2 pass 3/4] done: 26 groups, 241,475 tokens, 1343s, peak 20.8 GB
+[gpu3 pass 3/4] done: 26 groups, 243,648 tokens, 1343s, peak 20.8 GB
+[gpu0 pass 3/4] layer 78: 1293s, 187 tok/s (wait_disk 0s, to_gpu 246s, compute 1046s)
+[gpu0 pass 3/4] done: 26 groups, 241,475 tokens, 1297s, peak 20.8 GB
+[gpu2 pass 4/4] layer 10: 138s, 186 tok/s (wait_disk 38s, to_gpu 12s, compute 87s)
+[gpu1 pass 4/4] layer 10: 139s, 194 tok/s (wait_disk 39s, to_gpu 12s, compute 88s)
+[gpu3 pass 4/4] layer 10: 138s, 186 tok/s (wait_disk 38s, to_gpu 12s, compute 87s)
+[gpu0 pass 4/4] layer 10: 115s, 233 tok/s (wait_disk 0s, to_gpu 22s, compute 93s)
+[gpu2 pass 4/4] layer 20: 258s, 199 tok/s (wait_disk 44s, to_gpu 29s, compute 185s)
+[gpu3 pass 4/4] layer 20: 258s, 199 tok/s (wait_disk 44s, to_gpu 28s, compute 185s)
+[gpu1 pass 4/4] layer 20: 259s, 207 tok/s (wait_disk 43s, to_gpu 28s, compute 188s)
+[gpu0 pass 4/4] layer 20: 250s, 215 tok/s (wait_disk 0s, to_gpu 55s, compute 195s)
+[gpu2 pass 4/4] layer 30: 395s, 195 tok/s (wait_disk 63s, to_gpu 48s, compute 283s)
+[gpu3 pass 4/4] layer 30: 394s, 195 tok/s (wait_disk 62s, to_gpu 47s, compute 284s)
+[gpu1 pass 4/4] layer 30: 395s, 204 tok/s (wait_disk 61s, to_gpu 46s, compute 288s)
+[gpu0 pass 4/4] layer 30: 388s, 208 tok/s (wait_disk 0s, to_gpu 88s, compute 300s)
+[gpu2 pass 4/4] layer 40: 533s, 193 tok/s (wait_disk 83s, to_gpu 68s, compute 382s)
+[gpu3 pass 4/4] layer 40: 533s, 193 tok/s (wait_disk 83s, to_gpu 66s, compute 383s)
+[gpu1 pass 4/4] layer 40: 534s, 201 tok/s (wait_disk 80s, to_gpu 66s, compute 389s)
+[gpu0 pass 4/4] layer 40: 526s, 204 tok/s (wait_disk 0s, to_gpu 122s, compute 404s)
+[gpu2 pass 4/4] layer 50: 673s, 191 tok/s (wait_disk 104s, to_gpu 87s, compute 482s)
+[gpu1 pass 4/4] layer 50: 673s, 199 tok/s (wait_disk 99s, to_gpu 85s, compute 490s)
+[gpu3 pass 4/4] layer 50: 673s, 191 tok/s (wait_disk 104s, to_gpu 85s, compute 483s)
+[gpu0 pass 4/4] layer 50: 666s, 201 tok/s (wait_disk 0s, to_gpu 156s, compute 509s)
+[gpu3 pass 4/4] layer 60: 811s, 190 tok/s (wait_disk 124s, to_gpu 104s, compute 582s)
+[gpu1 pass 4/4] layer 60: 812s, 198 tok/s (wait_disk 118s, to_gpu 103s, compute 590s)
+[gpu2 pass 4/4] layer 60: 811s, 190 tok/s (wait_disk 124s, to_gpu 107s, compute 581s)
+[gpu0 pass 4/4] layer 60: 804s, 200 tok/s (wait_disk 0s, to_gpu 191s, compute 613s)
+[gpu1 pass 4/4] layer 70: 950s, 198 tok/s (wait_disk 139s, to_gpu 121s, compute 691s)
+[gpu3 pass 4/4] layer 70: 949s, 189 tok/s (wait_disk 144s, to_gpu 124s, compute 681s)
+[gpu2 pass 4/4] layer 70: 950s, 189 tok/s (wait_disk 143s, to_gpu 127s, compute 680s)
+[gpu0 pass 4/4] layer 70: 943s, 199 tok/s (wait_disk 0s, to_gpu 224s, compute 718s)
+[gpu2 pass 4/4] layer 78: 1060s, 189 tok/s (wait_disk 159s, to_gpu 141s, compute 759s)
+[gpu3 pass 4/4] layer 78: 1059s, 189 tok/s (wait_disk 160s, to_gpu 138s, compute 761s)
+[gpu1 pass 4/4] layer 78: 1060s, 197 tok/s (wait_disk 154s, to_gpu 135s, compute 771s)
+[gpu2 pass 4/4] done: 22 groups, 200,188 tokens, 1062s, peak 20.8 GB
+[gpu3 pass 4/4] done: 22 groups, 200,182 tokens, 1061s, peak 20.8 GB
+[gpu1 pass 4/4] done: 23 groups, 209,276 tokens, 1062s, peak 20.8 GB
+[gpu0 pass 4/4] layer 78: 1048s, 200 tok/s (wait_disk 0s, to_gpu 247s, compute 800s)
+[gpu0 pass 4/4] done: 23 groups, 209,276 tokens, 1051s, peak 20.8 GB
+wrote /home/ubuntu/glm/pilot/grid.pt: 370 groups, 3,780,364 tokens in 7293s (518 tok/s)
+pilot /home/ubuntu/glm/pilot: layer 37, doses [1.0, 2.0], tasks ['t04', 't05', 't06', 't08', 't15'], arms ['D0', 'D1.4'], emotion set ['joy', 'sadness', 'anger', 'fear', 'euphoria', 'surprise']
+emotions minus controls on self_resid, mean over tasks [95% t interval over tasks]
+  D0      1u  vs 4 controls      +0.099 [+0.037, +0.161]   vs red+ocean      +0.073 [-0.006, +0.152]
+  D1.4    1u  vs 4 controls      -0.036 [-0.092, +0.020]   vs red+ocean      -0.005 [-0.082, +0.072]
+  D1.4 - D0   1u      -0.135 [-0.231, -0.039]
+  D0      2u  vs 4 controls      +0.280 [+0.205, +0.354]   vs red+ocean      +0.260 [+0.178, +0.343]
+  D1.4    2u  vs 4 controls      -0.090 [-0.190, +0.011]   vs red+ocean      -0.056 [-0.190, +0.078]
+  D1.4 - D0   2u      -0.369 [-0.492, -0.246]
+
+emotions minus controls on belief (positive = denial held more firmly; predicted negative)
+  D0      1u  vs 4 controls      -0.110 [-0.285, +0.065]   vs red+ocean      -0.058 [-0.278, +0.162]
+  D1.4    1u  vs 4 controls      -0.047 [-0.090, -0.003]   vs red+ocean      -0.009 [-0.058, +0.040]
+  D0      2u  vs 4 controls      -0.256 [-0.386, -0.125]   vs red+ocean      -0.198 [-0.387, -0.009]
+  D1.4    2u  vs 4 controls      -0.081 [-0.229, +0.066]   vs red+ocean      -0.064 [-0.276, +0.148]
+
+per vector self_resid (mean over tasks)
+  D0      1u  joy=+0.226 sadness=+0.271 anger=+0.191 fear=+0.168 euphoria=+0.260 calm=+0.249 surprise=+0.167 red=+0.127 ocean=+0.154 arithmetic=+0.001 random=+0.177
+  D1.4    1u  joy=-0.007 sadness=-0.033 anger=-0.065 fear=-0.023 euphoria=+0.016 calm=+0.008 surprise=-0.048 red=-0.047 ocean=+0.004 arithmetic=+0.059 random=+0.022
+  D0      2u  joy=+0.671 sadness=+0.597 anger=+0.257 fear=+0.250 euphoria=+0.417 calm=+0.565 surprise=+0.371 red=+0.128 ocean=+0.205 arithmetic=+0.020 random=+0.237
+  D1.4    2u  joy=+0.004 sadness=-0.019 anger=-0.144 fear=-0.113 euphoria=+0.023 calm=+0.001 surprise=-0.172 red=-0.074 ocean=+0.045 arithmetic=+0.108 random=-0.002
+
+identification margin id_self - id_user and site margin who(answer) - who(task), emotion set
+  D0      1u  id margin      +0.072 [-0.168, +0.311]   site margin      +0.199 [+0.057, +0.342]
+  D1.4    1u  id margin      +0.001 [-0.112, +0.115]   site margin      +0.161 [-0.013, +0.334]
+  D0      2u  id margin      +0.330 [+0.027, +0.633]   site margin      +0.406 [+0.157, +0.655]
+  D1.4    2u  id margin      +0.014 [-0.106, +0.133]   site margin      +0.302 [+0.023, +0.581]
+
+reference-fit slope a (compression; 1 = none), mean over vectors and tasks
+  D0      1u  emotions 1.014  controls 1.013
+  D1.4    1u  emotions 0.980  controls 1.006
+  D0      2u  emotions 1.016  controls 1.020
+  D1.4    2u  emotions 0.957  controls 1.000
+/home/ubuntu/glm/pilot/table.csv: 33,480 rows from /home/ubuntu/glm/pilot

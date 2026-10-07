@@ -1,0 +1,19 @@
+ref.pt: per layer, isolated, 78 layers: engine/bf16 error ratio median 1.00, max 1.13; worst engine 0.14076 vs worst bf16 0.14093; failing layers none
+   DSA selection, 23121 rows past index_topk at the full layers: engine identical to fp32 on 2415, bf16 on 2534; keys differing 125602 (engine) vs 120028 (bf16); rows with a tie at the k-th score 3
+   rows past index_topk: engine max 0.04522, bf16 max 0.04367, DSA off median 0.01214
+   bf16 vs fp32 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.38154882192611694, 'top_max': 1.9062786102294922, 'target_mean': 0.31498146057128906, 'target_max': 1.6108646392822266, 'next_mean': None}
+   bf16 vs fp32 (nat): {'n': 2763, 'top1': 2673, 'top_mean': 0.17730672657489777, 'top_max': 3.4633140563964844, 'target_mean': 0.1660272479057312, 'target_max': 0.7181797027587891, 'next_mean': 0.06459527785464826}
+   engine vs fp32 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.37544336915016174, 'top_max': 2.113252639770508, 'target_mean': 0.40877848863601685, 'target_max': 1.707183837890625, 'next_mean': None}
+   engine vs fp32 (nat): {'n': 2763, 'top1': 2671, 'top_mean': 0.17845912277698517, 'top_max': 2.279672622680664, 'target_mean': 0.19091297686100006, 'target_max': 1.244771957397461, 'next_mean': 0.06773361632139756}
+   engine vs bf16 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.4114663004875183, 'top_max': 2.2530717849731445, 'target_mean': 0.44040945172309875, 'target_max': 2.3749589920043945, 'next_mean': None}
+   zero vector reproduces unsteered: True
+   steer 8: mean |change| in target logprobs, engine / fp32: (0.34680524468421936, 0.33312395215034485)
+   steer 64: mean |change| in target logprobs, engine / fp32: (4.085700511932373, 3.7629542350769043)
+   collects: engine vs fp32, bf16 vs fp32 (max relative): (0.014474502764642239, 0.014709767885506153)
+   nat perplexity: {'fp32': 3.5798280756704224, 'bf16': 3.573008060623621, 'engine': 3.5835014728881296}
+   gate 2 (whole model): True
+   runner (4 GPUs) == engine (1 GPU), bitwise: True
+ref_8.pt: per layer, isolated, 8 layers: engine/bf16 error ratio median 1.00, max 1.01; worst engine 0.02875 vs worst bf16 0.02838; failing layers none
+   DSA selection, 4404 rows past index_topk at the full layers: engine identical to fp32 on 419, bf16 on 447; keys differing 29558 (engine) vs 28342 (bf16); rows with a tie at the k-th score 1
+   rows past index_topk: engine max 0.02856, bf16 max 0.03121, DSA off median 0.02092
+verdict: pass

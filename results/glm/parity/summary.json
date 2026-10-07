@@ -1,0 +1,106 @@
+{
+ "ref": {
+  "layers": 78,
+  "engine_over_bf16_median": 0.9995205064852775,
+  "engine_over_bf16_max": 1.1324145614128887,
+  "engine_err_max": 0.14076393842697144,
+  "bf16_err_max": 0.14092570543289185,
+  "layers_failing": [],
+  "selection_rows": 23121,
+  "selection_engine_same": 2415,
+  "selection_bf16_same": 2534,
+  "selection_engine_diff_keys": 125602,
+  "selection_bf16_diff_keys": 120028,
+  "selection_kth_ties": 3,
+  "long_rows_engine_max": 0.04522058740258217,
+  "long_rows_bf16_max": 0.04366709664463997,
+  "long_rows_dense_median": 0.012143667787313461,
+  "seconds": 8907
+ },
+ "whole_model": {
+  "bf16 vs fp32 (trials)": {
+   "n": 16,
+   "top1": 16,
+   "top_mean": 0.38154882192611694,
+   "top_max": 1.9062786102294922,
+   "target_mean": 0.31498146057128906,
+   "target_max": 1.6108646392822266,
+   "next_mean": null
+  },
+  "bf16 vs fp32 (nat)": {
+   "n": 2763,
+   "top1": 2673,
+   "top_mean": 0.17730672657489777,
+   "top_max": 3.4633140563964844,
+   "target_mean": 0.1660272479057312,
+   "target_max": 0.7181797027587891,
+   "next_mean": 0.06459527785464826
+  },
+  "engine vs fp32 (trials)": {
+   "n": 16,
+   "top1": 16,
+   "top_mean": 0.37544336915016174,
+   "top_max": 2.113252639770508,
+   "target_mean": 0.40877848863601685,
+   "target_max": 1.707183837890625,
+   "next_mean": null
+  },
+  "engine vs fp32 (nat)": {
+   "n": 2763,
+   "top1": 2671,
+   "top_mean": 0.17845912277698517,
+   "top_max": 2.279672622680664,
+   "target_mean": 0.19091297686100006,
+   "target_max": 1.244771957397461,
+   "next_mean": 0.06773361632139756
+  },
+  "engine vs bf16 (trials)": {
+   "n": 16,
+   "top1": 16,
+   "top_mean": 0.4114663004875183,
+   "top_max": 2.2530717849731445,
+   "target_mean": 0.44040945172309875,
+   "target_max": 2.3749589920043945,
+   "next_mean": null
+  },
+  "zero vector reproduces unsteered": true,
+  "steer 8: mean |change| in target logprobs, engine / fp32": [
+   0.34680524468421936,
+   0.33312395215034485
+  ],
+  "steer 64: mean |change| in target logprobs, engine / fp32": [
+   4.085700511932373,
+   3.7629542350769043
+  ],
+  "collects: engine vs fp32, bf16 vs fp32 (max relative)": [
+   0.014474502764642239,
+   0.014709767885506153
+  ],
+  "nat perplexity": {
+   "fp32": 3.5798280756704224,
+   "bf16": 3.573008060623621,
+   "engine": 3.5835014728881296
+  },
+  "gate 2 (whole model)": true,
+  "runner (4 GPUs) == engine (1 GPU), bitwise": true
+ },
+ "ref_8": {
+  "layers": 8,
+  "engine_over_bf16_median": 1.0004793798897378,
+  "engine_over_bf16_max": 1.0132779690249205,
+  "engine_err_max": 0.028754355385899544,
+  "bf16_err_max": 0.028377559036016464,
+  "layers_failing": [],
+  "selection_rows": 4404,
+  "selection_engine_same": 419,
+  "selection_bf16_same": 447,
+  "selection_engine_diff_keys": 29558,
+  "selection_bf16_diff_keys": 28342,
+  "selection_kth_ties": 1,
+  "long_rows_engine_max": 0.02856205217540264,
+  "long_rows_bf16_max": 0.031212976202368736,
+  "long_rows_dense_median": 0.020924625918269157,
+  "seconds": 728
+ },
+ "verdict": "pass"
+}

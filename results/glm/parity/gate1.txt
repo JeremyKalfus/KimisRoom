@@ -1,0 +1,4 @@
+ref_8.pt: per layer, isolated, 8 layers: engine/bf16 error ratio median 1.00, max 1.01; worst engine 0.02875 vs worst bf16 0.02838; failing layers none
+   DSA selection, 4404 rows past index_topk at the full layers: engine identical to fp32 on 419, bf16 on 447; keys differing 29558 (engine) vs 28342 (bf16); rows with a tie at the k-th score 1
+   rows past index_topk: engine max 0.02856, bf16 max 0.03121, DSA off median 0.02092
+verdict: pass

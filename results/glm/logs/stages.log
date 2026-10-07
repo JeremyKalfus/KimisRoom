@@ -1,0 +1,35 @@
+06:17:02 check: done before, skipped
+06:17:02 gate1: done before, skipped
+06:17:02 gate2: start
+08:52:59 gate2: ok in 9357s
+08:52:59 vectors: start
+09:08:51 vectors: ok in 952s
+09:08:51 cal: start
+11:14:57 cal: ok in 7566s
+11:14:57 pilot: start
+11:17:16 pilot: FAILED after 139s; tail of /home/ubuntu/glm/logs/pilot.log:
+    ~~~~^^
+  File "/home/ubuntu/KimisRoom/kimisroom/run.py", line 230, in main
+    feed(a.model, todo, queues, procs)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/kimisroom/run.py", line 174, in feed
+    raise RuntimeError(f"worker {r} exited with {procs[r].exitcode}") from None
+RuntimeError: worker 0 exited with 1
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/runs/sweep_run.py", line 42, in <module>
+    runpy.run_path(script, run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "runs/qwen_pilot.py", line 277, in <module>
+    subprocess.run([sys.executable, "-m", "kimisroom.run", out / "grid.job.pt", out / "grid.pt", "--model", model,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    *(["--gpus-per-worker", "2"] if QWEN else [])], check=True, cwd=ROOT)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/sweep_run.py", line 35, in run
+    return _run(cmd, *a, **kw)
+  File "/usr/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/ubuntu/glmenv/bin/python', '-m', 'kimisroom.run', '/home/ubuntu/glm/pilot/grid.job.pt', '/home/ubuntu/glm/pilot/grid.pt', '--model', '/nvme/glm53', '--max-tokens', '250000']' returned non-zero exit status 1.

@@ -1,0 +1,138 @@
+layer  0 full dns  engine 0.00404  bf16 0.00406  long rows: engine 0.00409 bf16 0.00411 dense 0.01403  sel same eng 224/1101 bf16 247/1101 ties 0  81.1s
+layer  1 full dns  engine 0.00751  bf16 0.00752  long rows: engine 0.00756 bf16 0.00756 dense 0.00787  sel same eng 70/1101 bf16 72/1101 ties 1  81.0s
+layer  2 full dns  engine 0.00963  bf16 0.00962  long rows: engine 0.00962 bf16 0.00960 dense 0.01663  sel same eng 23/1101 bf16 21/1101 ties 0  79.0s
+layer  3 shrd moe  engine 0.01651  bf16 0.01633  long rows: engine 0.01931 bf16 0.01917 dense 0.02213  154.2s
+layer  4 shrd moe  engine 0.02112  bf16 0.02141  long rows: engine 0.02064 bf16 0.02066 dense 0.01972  119.5s
+layer  5 shrd moe  engine 0.01991  bf16 0.01988  long rows: engine 0.02071 bf16 0.02035 dense 0.02131  115.7s
+layer  6 full moe  engine 0.01088  bf16 0.01132  long rows: engine 0.02409 bf16 0.02382 dense 0.03058  sel same eng 102/1101 bf16 107/1101 ties 0  126.4s
+layer  7 shrd moe  engine 0.02875  bf16 0.02838  long rows: engine 0.02856 bf16 0.03121 dense 0.02092  116.0s
+layer  8 shrd moe  engine 0.00563  bf16 0.00749  long rows: engine 0.03201 bf16 0.03093 dense 0.06054  116.3s
+layer  9 shrd moe  engine 0.00483  bf16 0.00427  long rows: engine 0.04522 bf16 0.04367 dense 0.04987  117.4s
+layer 10 full moe  engine 0.14076  bf16 0.14093  long rows: engine 0.04053 bf16 0.03796 dense 0.04493  sel same eng 105/1101 bf16 105/1101 ties 0  125.9s
+layer 11 shrd moe  engine 0.11040  bf16 0.11001  long rows: engine 0.04299 bf16 0.04145 dense 0.06555  116.8s
+layer 12 shrd moe  engine 0.10695  bf16 0.10750  long rows: engine 0.04171 bf16 0.04096 dense 0.04616  115.3s
+layer 13 shrd moe  engine 0.06897  bf16 0.06981  long rows: engine 0.03192 bf16 0.03205 dense 0.01282  115.9s
+layer 14 full moe  engine 0.07321  bf16 0.07280  long rows: engine 0.03806 bf16 0.03651 dense 0.03225  sel same eng 46/1101 bf16 49/1101 ties 0  127.8s
+layer 15 shrd moe  engine 0.07838  bf16 0.07842  long rows: engine 0.03408 bf16 0.03254 dense 0.02885  114.2s
+layer 16 shrd moe  engine 0.06506  bf16 0.06645  long rows: engine 0.03254 bf16 0.03151 dense 0.01641  114.6s
+layer 17 shrd moe  engine 0.06294  bf16 0.06217  long rows: engine 0.03689 bf16 0.03613 dense 0.02551  113.8s
+layer 18 full moe  engine 0.04442  bf16 0.04421  long rows: engine 0.02995 bf16 0.02945 dense 0.01965  sel same eng 45/1101 bf16 50/1101 ties 1  123.6s
+layer 19 shrd moe  engine 0.05717  bf16 0.05790  long rows: engine 0.03734 bf16 0.03984 dense 0.01826  111.5s
+layer 20 shrd moe  engine 0.04548  bf16 0.04619  long rows: engine 0.03515 bf16 0.03669 dense 0.02861  111.9s
+layer 21 shrd moe  engine 0.04326  bf16 0.04286  long rows: engine 0.03710 bf16 0.03834 dense 0.01657  108.8s
+layer 22 full moe  engine 0.03266  bf16 0.03212  long rows: engine 0.02433 bf16 0.02249 dense 0.01081  sel same eng 81/1101 bf16 95/1101 ties 0  119.6s
+layer 23 shrd moe  engine 0.01194  bf16 0.01240  long rows: engine 0.02678 bf16 0.02828 dense 0.00561  111.0s
+layer 24 shrd moe  engine 0.03571  bf16 0.03553  long rows: engine 0.03071 bf16 0.02824 dense 0.00468  113.0s
+layer 25 shrd moe  engine 0.03605  bf16 0.03749  long rows: engine 0.02479 bf16 0.02795 dense 0.01303  113.3s
+layer 26 full moe  engine 0.03588  bf16 0.03685  long rows: engine 0.02508 bf16 0.02551 dense 0.01809  sel same eng 50/1101 bf16 58/1101 ties 0  121.8s
+layer 27 shrd moe  engine 0.03053  bf16 0.03023  long rows: engine 0.02326 bf16 0.02327 dense 0.01904  111.6s
+layer 28 shrd moe  engine 0.03040  bf16 0.03058  long rows: engine 0.02384 bf16 0.02499 dense 0.00871  111.9s
+layer 29 shrd moe  engine 0.00915  bf16 0.00954  long rows: engine 0.03285 bf16 0.03566 dense 0.00172  111.3s
+layer 30 full moe  engine 0.02972  bf16 0.02943  long rows: engine 0.02748 bf16 0.02776 dense 0.02078  sel same eng 142/1101 bf16 161/1101 ties 0  122.7s
+layer 31 shrd moe  engine 0.02870  bf16 0.02949  long rows: engine 0.02849 bf16 0.02762 dense 0.01784  112.3s
+layer 32 shrd moe  engine 0.02977  bf16 0.03014  long rows: engine 0.02921 bf16 0.03180 dense 0.01049  111.8s
+layer 33 shrd moe  engine 0.02792  bf16 0.02762  long rows: engine 0.02517 bf16 0.02317 dense 0.01681  108.3s
+layer 34 full moe  engine 0.03293  bf16 0.03346  long rows: engine 0.03077 bf16 0.02785 dense 0.01697  sel same eng 166/1101 bf16 158/1101 ties 0  118.2s
+layer 35 shrd moe  engine 0.03386  bf16 0.03358  long rows: engine 0.03791 bf16 0.03704 dense 0.01321  113.2s
+layer 36 shrd moe  engine 0.02985  bf16 0.02940  long rows: engine 0.02941 bf16 0.02834 dense 0.00641  112.5s
+layer 37 shrd moe  engine 0.02788  bf16 0.02867  long rows: engine 0.02123 bf16 0.02940 dense 0.01415  112.6s
+layer 38 full moe  engine 0.03282  bf16 0.03180  long rows: engine 0.03327 bf16 0.03015 dense 0.02891  sel same eng 148/1101 bf16 154/1101 ties 0  120.0s
+layer 39 shrd moe  engine 0.02897  bf16 0.02776  long rows: engine 0.02944 bf16 0.02749 dense 0.02485  111.2s
+layer 40 shrd moe  engine 0.02760  bf16 0.02813  long rows: engine 0.03149 bf16 0.03077 dense 0.02245  111.8s
+layer 41 shrd moe  engine 0.02861  bf16 0.02972  long rows: engine 0.02813 bf16 0.02500 dense 0.02211  112.9s
+layer 42 full moe  engine 0.02549  bf16 0.02664  long rows: engine 0.02728 bf16 0.02591 dense 0.01141  sel same eng 180/1101 bf16 187/1101 ties 0  122.9s
+layer 43 shrd moe  engine 0.02336  bf16 0.02489  long rows: engine 0.02216 bf16 0.02235 dense 0.01010  111.7s
+layer 44 shrd moe  engine 0.02901  bf16 0.02958  long rows: engine 0.02787 bf16 0.02709 dense 0.01974  112.5s
+layer 45 shrd moe  engine 0.02723  bf16 0.02652  long rows: engine 0.02397 bf16 0.02529 dense 0.00766  114.3s
+layer 46 full moe  engine 0.02592  bf16 0.02525  long rows: engine 0.02508 bf16 0.02532 dense 0.01791  sel same eng 111/1101 bf16 110/1101 ties 0  121.6s
+layer 47 shrd moe  engine 0.02339  bf16 0.02511  long rows: engine 0.02287 bf16 0.02279 dense 0.00811  111.5s
+layer 48 shrd moe  engine 0.02571  bf16 0.02607  long rows: engine 0.02560 bf16 0.02576 dense 0.00738  110.2s
+layer 49 shrd moe  engine 0.02335  bf16 0.02333  long rows: engine 0.02322 bf16 0.02342 dense 0.01163  110.5s
+layer 50 full moe  engine 0.02016  bf16 0.02044  long rows: engine 0.02058 bf16 0.02023 dense 0.00568  sel same eng 166/1101 bf16 174/1101 ties 0  119.2s
+layer 51 shrd moe  engine 0.02855  bf16 0.02779  long rows: engine 0.02546 bf16 0.02576 dense 0.01434  108.7s
+layer 52 shrd moe  engine 0.02540  bf16 0.02526  long rows: engine 0.02145 bf16 0.02332 dense 0.00946  110.4s
+layer 53 shrd moe  engine 0.02490  bf16 0.02405  long rows: engine 0.02703 bf16 0.02733 dense 0.01214  108.2s
+layer 54 full moe  engine 0.02539  bf16 0.02486  long rows: engine 0.02246 bf16 0.02364 dense 0.00299  sel same eng 166/1101 bf16 182/1101 ties 0  117.6s
+layer 55 shrd moe  engine 0.02239  bf16 0.02259  long rows: engine 0.02015 bf16 0.02089 dense 0.00381  109.0s
+layer 56 shrd moe  engine 0.02838  bf16 0.02886  long rows: engine 0.02606 bf16 0.02472 dense 0.00456  113.0s
+layer 57 shrd moe  engine 0.02519  bf16 0.02542  long rows: engine 0.02635 bf16 0.02583 dense 0.00881  113.6s
+layer 58 full moe  engine 0.02994  bf16 0.03024  long rows: engine 0.02953 bf16 0.02773 dense 0.00715  sel same eng 130/1101 bf16 125/1101 ties 0  122.7s
+layer 59 shrd moe  engine 0.02734  bf16 0.02633  long rows: engine 0.02836 bf16 0.02677 dense 0.00796  113.0s
+layer 60 shrd moe  engine 0.02407  bf16 0.02355  long rows: engine 0.02396 bf16 0.02432 dense 0.00749  111.8s
+layer 61 shrd moe  engine 0.02397  bf16 0.02433  long rows: engine 0.02462 bf16 0.02326 dense 0.00785  113.0s
+layer 62 full moe  engine 0.02551  bf16 0.02552  long rows: engine 0.02530 bf16 0.02516 dense 0.00635  sel same eng 168/1101 bf16 180/1101 ties 0  123.1s
+layer 63 shrd moe  engine 0.02322  bf16 0.02274  long rows: engine 0.02147 bf16 0.02185 dense 0.00824  112.8s
+layer 64 shrd moe  engine 0.02461  bf16 0.02458  long rows: engine 0.02453 bf16 0.02413 dense 0.00544  112.3s
+layer 65 shrd moe  engine 0.02368  bf16 0.02355  long rows: engine 0.02053 bf16 0.02286 dense 0.00594  113.4s
+layer 66 full moe  engine 0.02505  bf16 0.02554  long rows: engine 0.02473 bf16 0.02376 dense 0.00546  sel same eng 118/1101 bf16 111/1101 ties 0  121.2s
+layer 67 shrd moe  engine 0.02433  bf16 0.02432  long rows: engine 0.02683 bf16 0.02578 dense 0.00650  112.3s
+layer 68 shrd moe  engine 0.02069  bf16 0.02085  long rows: engine 0.02391 bf16 0.02291 dense 0.00771  112.7s
+layer 69 shrd moe  engine 0.02380  bf16 0.02386  long rows: engine 0.02388 bf16 0.02376 dense 0.00442  111.1s
+layer 70 full moe  engine 0.02279  bf16 0.02352  long rows: engine 0.02573 bf16 0.02493 dense 0.00923  sel same eng 109/1101 bf16 116/1101 ties 0  121.5s
+layer 71 shrd moe  engine 0.02544  bf16 0.02501  long rows: engine 0.02790 bf16 0.02700 dense 0.01001  112.2s
+layer 72 shrd moe  engine 0.02432  bf16 0.02532  long rows: engine 0.02372 bf16 0.02469 dense 0.00766  112.7s
+layer 73 shrd moe  engine 0.02472  bf16 0.02413  long rows: engine 0.02361 bf16 0.02191 dense 0.01358  115.4s
+layer 74 full moe  engine 0.02398  bf16 0.02392  long rows: engine 0.02570 bf16 0.02464 dense 0.01196  sel same eng 65/1101 bf16 72/1101 ties 1  125.1s
+layer 75 shrd moe  engine 0.01549  bf16 0.01533  long rows: engine 0.02495 bf16 0.02303 dense 0.01007  113.4s
+layer 76 shrd moe  engine 0.01330  bf16 0.01291  long rows: engine 0.01684 bf16 0.01610 dense 0.00754  112.5s
+layer 77 shrd moe  engine 0.01128  bf16 0.01103  long rows: engine 0.00892 bf16 0.00914 dense 0.00333  111.7s
+ref: 78 layers in 8907s -> /home/ubuntu/glm/parity
+engine: 13,178 tokens in 361s, 2628 DSA-cut queries per layer, timings {'wait_disk': 116, 'to_gpu': 152, 'compute': 90}
+6 groups, 13,178 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+[gpu2 pass 1/1] layer 10: 43s, 8 tok/s (wait_disk 20s, to_gpu 13s, compute 9s)
+[gpu3 pass 1/1] layer 10: 43s, 7 tok/s (wait_disk 21s, to_gpu 14s, compute 8s)
+[gpu1 pass 1/1] layer 10: 43s, 15 tok/s (wait_disk 12s, to_gpu 20s, compute 11s)
+[gpu0 pass 1/1] layer 10: 45s, 8 tok/s (wait_disk 19s, to_gpu 19s, compute 6s)
+[gpu0 pass 1/1] layer 20: 98s, 7 tok/s (wait_disk 45s, to_gpu 43s, compute 9s)
+[gpu3 pass 1/1] layer 20: 98s, 7 tok/s (wait_disk 52s, to_gpu 33s, compute 12s)
+[gpu1 pass 1/1] layer 20: 98s, 13 tok/s (wait_disk 37s, to_gpu 44s, compute 16s)
+[gpu2 pass 1/1] layer 20: 100s, 7 tok/s (wait_disk 42s, to_gpu 44s, compute 13s)
+[gpu2 pass 1/1] layer 30: 150s, 7 tok/s (wait_disk 61s, to_gpu 72s, compute 17s)
+[gpu0 pass 1/1] layer 30: 150s, 7 tok/s (wait_disk 70s, to_gpu 67s, compute 12s)
+[gpu1 pass 1/1] layer 30: 150s, 13 tok/s (wait_disk 65s, to_gpu 64s, compute 22s)
+[gpu3 pass 1/1] layer 30: 152s, 6 tok/s (wait_disk 76s, to_gpu 60s, compute 16s)
+[gpu3 pass 1/1] layer 40: 204s, 6 tok/s (wait_disk 101s, to_gpu 83s, compute 20s)
+[gpu2 pass 1/1] layer 40: 204s, 7 tok/s (wait_disk 86s, to_gpu 97s, compute 21s)
+[gpu1 pass 1/1] layer 40: 205s, 13 tok/s (wait_disk 90s, to_gpu 87s, compute 27s)
+[gpu0 pass 1/1] layer 40: 206s, 7 tok/s (wait_disk 99s, to_gpu 92s, compute 16s)
+[gpu2 pass 1/1] layer 50: 259s, 7 tok/s (wait_disk 112s, to_gpu 121s, compute 25s)
+[gpu1 pass 1/1] layer 50: 259s, 12 tok/s (wait_disk 119s, to_gpu 108s, compute 33s)
+[gpu3 pass 1/1] layer 50: 259s, 6 tok/s (wait_disk 121s, to_gpu 114s, compute 24s)
+[gpu0 pass 1/1] layer 50: 261s, 7 tok/s (wait_disk 126s, to_gpu 115s, compute 19s)
+[gpu2 pass 1/1] layer 60: 312s, 7 tok/s (wait_disk 140s, to_gpu 142s, compute 29s)
+[gpu0 pass 1/1] layer 60: 312s, 7 tok/s (wait_disk 154s, to_gpu 135s, compute 22s)
+[gpu3 pass 1/1] layer 60: 312s, 6 tok/s (wait_disk 145s, to_gpu 139s, compute 28s)
+[gpu1 pass 1/1] layer 60: 314s, 12 tok/s (wait_disk 137s, to_gpu 138s, compute 38s)
+[gpu3 pass 1/1] layer 70: 368s, 6 tok/s (wait_disk 176s, to_gpu 160s, compute 31s)
+[gpu1 pass 1/1] layer 70: 368s, 12 tok/s (wait_disk 160s, to_gpu 163s, compute 44s)
+[gpu0 pass 1/1] layer 70: 368s, 7 tok/s (wait_disk 183s, to_gpu 159s, compute 25s)
+[gpu2 pass 1/1] layer 70: 370s, 7 tok/s (wait_disk 167s, to_gpu 169s, compute 33s)
+[gpu0 pass 1/1] layer 78: 407s, 7 tok/s (wait_disk 200s, to_gpu 179s, compute 28s)
+[gpu3 pass 1/1] layer 78: 408s, 6 tok/s (wait_disk 195s, to_gpu 178s, compute 35s)
+[gpu2 pass 1/1] layer 78: 408s, 7 tok/s (wait_disk 178s, to_gpu 193s, compute 36s)
+[gpu1 pass 1/1] layer 78: 408s, 12 tok/s (wait_disk 180s, to_gpu 179s, compute 48s)
+[gpu3 pass 1/1] done: 1 groups, 2,526 tokens, 408s, peak 15.0 GB
+[gpu2 pass 1/1] done: 2 groups, 2,836 tokens, 408s, peak 15.0 GB
+[gpu0 pass 1/1] done: 1 groups, 2,764 tokens, 409s, peak 11.5 GB
+[gpu1 pass 1/1] done: 2 groups, 5,052 tokens, 410s, peak 15.1 GB
+wrote /home/ubuntu/glm/parity/runner.pt: 6 groups, 13,178 tokens in 415s (32 tok/s)
+runner: 418s
+ref.pt: per layer, isolated, 78 layers: engine/bf16 error ratio median 1.00, max 1.13; worst engine 0.14076 vs worst bf16 0.14093; failing layers none
+   DSA selection, 23121 rows past index_topk at the full layers: engine identical to fp32 on 2415, bf16 on 2534; keys differing 125602 (engine) vs 120028 (bf16); rows with a tie at the k-th score 3
+   rows past index_topk: engine max 0.04522, bf16 max 0.04367, DSA off median 0.01214
+   bf16 vs fp32 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.38154882192611694, 'top_max': 1.9062786102294922, 'target_mean': 0.31498146057128906, 'target_max': 1.6108646392822266, 'next_mean': None}
+   bf16 vs fp32 (nat): {'n': 2763, 'top1': 2673, 'top_mean': 0.17730672657489777, 'top_max': 3.4633140563964844, 'target_mean': 0.1660272479057312, 'target_max': 0.7181797027587891, 'next_mean': 0.06459527785464826}
+   engine vs fp32 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.37544336915016174, 'top_max': 2.113252639770508, 'target_mean': 0.40877848863601685, 'target_max': 1.707183837890625, 'next_mean': None}
+   engine vs fp32 (nat): {'n': 2763, 'top1': 2671, 'top_mean': 0.17845912277698517, 'top_max': 2.279672622680664, 'target_mean': 0.19091297686100006, 'target_max': 1.244771957397461, 'next_mean': 0.06773361632139756}
+   engine vs bf16 (trials): {'n': 16, 'top1': 16, 'top_mean': 0.4114663004875183, 'top_max': 2.2530717849731445, 'target_mean': 0.44040945172309875, 'target_max': 2.3749589920043945, 'next_mean': None}
+   zero vector reproduces unsteered: True
+   steer 8: mean |change| in target logprobs, engine / fp32: (0.34680524468421936, 0.33312395215034485)
+   steer 64: mean |change| in target logprobs, engine / fp32: (4.085700511932373, 3.7629542350769043)
+   collects: engine vs fp32, bf16 vs fp32 (max relative): (0.014474502764642239, 0.014709767885506153)
+   nat perplexity: {'fp32': 3.5798280756704224, 'bf16': 3.573008060623621, 'engine': 3.5835014728881296}
+   gate 2 (whole model): True
+   runner (4 GPUs) == engine (1 GPU), bitwise: True
+ref_8.pt: per layer, isolated, 8 layers: engine/bf16 error ratio median 1.00, max 1.01; worst engine 0.02875 vs worst bf16 0.02838; failing layers none
+   DSA selection, 4404 rows past index_topk at the full layers: engine identical to fp32 on 419, bf16 on 447; keys differing 29558 (engine) vs 28342 (bf16); rows with a tie at the k-th score 1
+   rows past index_topk: engine max 0.02856, bf16 max 0.03121, DSA off median 0.02092
+verdict: pass

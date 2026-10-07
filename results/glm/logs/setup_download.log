@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import torch, transformers; assert torch.cuda.is_available(); print('glmenv: torch', torch.__version__, 'transformers', transformers.__version__, torch.cuda.device_count(), 'GPUs')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'torch'

@@ -1,0 +1,1 @@
+engine: 13,178 tokens in 361s, 2628 DSA-cut queries per layer, timings {'wait_disk': 116, 'to_gpu': 152, 'compute': 90}

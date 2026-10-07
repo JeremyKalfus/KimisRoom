@@ -1,0 +1,13 @@
+layer  0 full dns  engine 0.00404  bf16 0.00406  long rows: engine 0.00409 bf16 0.00411 dense 0.01403  sel same eng 224/1101 bf16 247/1101 ties 0  51.9s
+layer  1 full dns  engine 0.00751  bf16 0.00752  long rows: engine 0.00756 bf16 0.00756 dense 0.00787  sel same eng 70/1101 bf16 72/1101 ties 1  51.9s
+layer  2 full dns  engine 0.00963  bf16 0.00962  long rows: engine 0.00962 bf16 0.00960 dense 0.01663  sel same eng 23/1101 bf16 21/1101 ties 0  52.6s
+layer  3 shrd moe  engine 0.01651  bf16 0.01633  long rows: engine 0.01931 bf16 0.01917 dense 0.02213  111.2s
+layer  4 shrd moe  engine 0.02112  bf16 0.02141  long rows: engine 0.02064 bf16 0.02066 dense 0.01972  110.1s
+layer  5 shrd moe  engine 0.01991  bf16 0.01988  long rows: engine 0.02071 bf16 0.02035 dense 0.02131  110.7s
+layer  6 full moe  engine 0.01088  bf16 0.01132  long rows: engine 0.02409 bf16 0.02382 dense 0.03058  sel same eng 102/1101 bf16 107/1101 ties 0  124.8s
+layer  7 shrd moe  engine 0.02875  bf16 0.02838  long rows: engine 0.02856 bf16 0.03121 dense 0.02092  115.0s
+ref: 8 layers in 728s -> /home/ubuntu/glm/parity
+ref_8.pt: per layer, isolated, 8 layers: engine/bf16 error ratio median 1.00, max 1.01; worst engine 0.02875 vs worst bf16 0.02838; failing layers none
+   DSA selection, 4404 rows past index_topk at the full layers: engine identical to fp32 on 419, bf16 on 447; keys differing 29558 (engine) vs 28342 (bf16); rows with a tie at the k-th score 1
+   rows past index_topk: engine max 0.02856, bf16 max 0.03121, DSA off median 0.02092
+verdict: pass
