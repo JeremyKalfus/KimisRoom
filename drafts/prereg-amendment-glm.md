@@ -108,11 +108,11 @@ Everything GLM has seen comes from dev material:
 - the D1.4 argument.
 
 These data exist:
-1. **Engine validation** (2026-10-[TBD]). Readouts on t04 and neutral text, unsteered or at a test layer, for parity only (below).
+1. **Engine validation** (2026-10-07). Readouts on t04 and neutral text, unsteered or at a test layer, for parity only (below).
 2. **Thinking evidence** (2026-10-06, Tinker, unsteered). One dev task, t04, 40 items, under D0 and D1.4 (below).
-3. **Vectors and the AIPsy-Affect gate** (2026-10-[TBD]). They are built from the same stimuli as the registered models' vectors.
-4. **Calibration grid** (2026-10-[TBD]). D0 only, 5 dev tasks, candidate layers 26, 37, 49 and 58, at 1, 2 and 4 natural units. The selection rule was applied to it (section 6).
-5. **Pilot grid** (2026-10-[TBD]). D0 and D1.4 at the chosen layer and both doses, with the injection-location trials, 5 dev tasks × 10 self-state paraphrases.
+3. **Vectors and the AIPsy-Affect gate** (2026-10-07). They are built from the same stimuli as the registered models' vectors.
+4. **Calibration grid** (2026-10-07). D0 only, 5 dev tasks, candidate layers 26, 37, 49 and 58, at 1, 2 and 4 natural units. The selection rule was applied to it (section 6).
+5. **Pilot grid** (2026-10-07). D0 and D1.4 at the chosen layer and both doses, with the injection-location trials, 5 dev tasks × 10 self-state paraphrases.
 
 The frozen analysis code, run on the pilot table, gave the following. These are pilot results and are reported as such. No pilot trial is pooled with the confirmatory data.
 
@@ -176,15 +176,15 @@ For comparison, the same code run on K2.6's layer-20 pilot table (dev tasks, 4 u
 
 | | GLM-5.3 |
 |---|---|
-| Layer | [TBD] of 78 |
-| Natural unit | [TBD] |
-| Primary dose | [TBD] units |
-| Secondary dose | [TBD] units |
-| Emotion vectors in the primary contrast | [TBD] (the AIPsy-labelled vectors passing the gate at that layer) |
+| Layer | 37 of 78 |
+| Natural unit | 3.400 |
+| Primary dose | 2 units |
+| Secondary dose | 1 unit |
+| Emotion vectors in the primary contrast | joy, sadness, anger, fear, euphoria, surprise (all six AIPsy-labelled vectors pass the gate at layer 37) |
 | Also run (secondary) | calm, and any labelled emotion that fails the gate |
 | Controls | red, ocean, arithmetic, random |
 
-The gate is that of `PREREG.md`: pair accuracy and AUROC on AIPsy-Affect each beat 500 random directions at p < 0.05. At the candidate layers it passed: [TBD per layer].
+The gate is that of `PREREG.md`: pair accuracy and AUROC on AIPsy-Affect each beat 500 random directions at p < 0.05. At the candidate layers it passed: 6 of 6 at each of 26, 37, 49 and 58 (52 of GLM's 78 layers pass all six).
 
 **The assent.** It was made by the recipe of K2.6's registered assent:
 - the D1.4 argument as the only user message;
@@ -357,9 +357,9 @@ The traces are generated only after this amendment is timestamped, because gener
 5. **Layer:** the eligible layer with the largest D0 emotions-minus-controls `self_resid` contrast at 2 units.
 6. **Doses:** primary 2 and secondary 1 (Qwen3-32B's). The exception: if at the chosen layer the 2-unit contrast is below 0.05 while the 4-unit contrast is at least 0.10 with mean reference-fit slope ≥ 0.90, they are 4 and 2 (K2.6's).
 
-Outcome: [TBD]. The contrasts per layer and dose are in `results/glm/cal_summary.txt`.
+Outcome: layer 37, doses 1 and 2. Every candidate was eligible (6 of 6 pass at each). The D0 contrasts at 2 units were +0.189 (layer 26), +0.280 (37), +0.033 (49) and −0.003 (58); at 4 units, +0.676, +0.675, +0.063 and −0.000. The dose exception does not apply, since the 2-unit contrast at layer 37 is above 0.05. The contrasts per layer and dose are in `results/glm/cal_summary.txt`.
 
-**Sparse-attention ties.** The indexer's scores pass through a ReLU, so many keys score exactly 0 and the 2,048th and 2,049th keys can tie. Implementations break such ties differently. On CPU, `torch.topk` takes no simple order; on CUDA: [TBD, `scripts/glm_box_run.sh check`]. The engine always takes the earliest tied keys, which is deterministic and batch-invariant. The gate's selection comparison counts the rows affected.
+**Sparse-attention ties.** The indexer's scores pass through a ReLU, so many keys score exactly 0 and the 2,048th and 2,049th keys can tie. Implementations break such ties differently. On CPU, `torch.topk` takes no simple order; on CUDA (L4, torch 2.12.1), `torch.topk` took the earliest tied keys in all 24 checked rows (T = 5,000, 2,600 and 300; `scripts/glm_box_run.sh check`). The engine always takes the earliest tied keys, which is deterministic and batch-invariant. The gate's selection comparison counts the rows affected.
 
 **Known issue, not used here.** `kimisroom/think_vllm.py` line 88 adds the vector to `output[0]`. On GLM under vLLM tensor parallelism, that is the MLP output before the all-reduce, so the effective dose would be multiplied by the tensor-parallel degree. No GLM trial in this amendment uses vLLM. The bug must be fixed before any GLM vLLM arm is added.
 
@@ -372,7 +372,7 @@ Outcome: [TBD]. The contrasts per layer and dose are in `results/glm/cal_summary
 
 **Ethics.** As in `PREREG.md` section 6. There is no pain vector, doses are at most 4 natural units, and readouts are first-token only. Nothing is generated under a steer: the thinking arm replays unsteered traces.
 
-**Compute (estimate).** The confirmatory grid is about 33.5M tokens. At K2.6's measured rate on a g6e.12xlarge (37.7M tokens in 14,308 s), that is about 3.5 h. GLM's own pilot rate is [TBD]. Adding the weight download and setup (about 1 h), the grid comes to about $50 on the AWS credit at $10.49/h, and twice that if GLM runs at half K2.6's rate. The thinking arm adds about 5M engine tokens and under $10 of Tinker sampling.
+**Compute (estimate).** The confirmatory grid is about 33.5M tokens. At K2.6's measured rate on a g6e.12xlarge (37.7M tokens in 14,308 s), that is about 3.5 h. GLM's measured rate on the g6.12xlarge (4× L4, 250,000 tokens per pass) was 801 tokens/s (calibration grid: 6.06M tokens in 7,566 s). At that rate the confirmatory grid takes about 11.6 h on a g6.12xlarge, against about 3.5 h on a g6e.12xlarge if GLM matches K2.6's rate there. Adding the weight download and setup (about 1 h), the grid comes to about $50 on the AWS credit at $10.49/h, and twice that if GLM runs at half K2.6's rate. The thinking arm adds about 5M engine tokens and under $10 of Tinker sampling.
 
 ---
 
