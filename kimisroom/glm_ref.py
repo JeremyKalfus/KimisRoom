@@ -16,6 +16,7 @@ checkpoint, dequantized to the reference dtype:
 from __future__ import annotations
 
 import json
+import weakref
 from pathlib import Path
 
 import torch
@@ -90,11 +91,12 @@ def build_layer(cfg, ck: GlmCheckpoint, got: dict[str, torch.Tensor], i: int, dt
     assert not unexpected, unexpected
     assert not [m for m in missing if not m.endswith("inv_freq")], missing
     if ck.is_moe(i) and expert_device is not None and torch.device(expert_device) != torch.device(device):
-        experts, fwd, edev = layer.mlp.experts, layer.mlp.experts.forward, torch.device(expert_device)
+        experts, edev = layer.mlp.experts, torch.device(expert_device)
+        ref, fwd = weakref.ref(experts), type(experts).forward  # no cycle: the layer's GPU memory goes with `del`
 
         def across(*args, **kw):
             mv = lambda t: t.to(edev) if torch.is_tensor(t) else t  # noqa: E731
-            out = fwd(*[mv(x) for x in args], **{k: mv(v) for k, v in kw.items()})
+            out = fwd(ref(), *[mv(x) for x in args], **{k: mv(v) for k, v in kw.items()})
             return out.to(device)
 
         experts.forward = across
