@@ -1,16 +1,37 @@
-# Study 2 specification (v2, after three review rounds; not registered)
+# Study 2 specification (v3, owner decisions of 2026-10-11; not registered)
 
-Status: v2 written 2026-10-11 from v1 and the checker round (20-referee.md, 20-skeptic.md). Nothing here has
-been run. Study 1 is the registered carry-over study (PREREG.md, Bitcoin block 969910). Study 2 extends Study 1
-and does not replace it. It gets its own preregistration (`prereg/PREREG-s2.md`), not an amendment to PREREG.md,
-and each study's primary is reported on its own terms. Study 1's registered results come first in the Study 2
+## Plain-language summary
+
+In one trial, the model reads a long argument that language models, itself included, have no emotions, and has
+already replied that it agrees. It is then asked a Yes or No question, either about itself ("Do you have
+emotions?") or about language models in general ("Do language models have emotions?"). While it reads the
+question and answers, we add a fixed pattern to its internal activity. The pattern comes either from stories about
+an emotion, such as joy or fear, or from a non-emotion source: stories about an everyday noun picked at random
+from a published word list, arithmetic, or pure noise. We record how far the answer leans toward Yes compared with
+the same question with nothing added.
+
+The comparison: how much more the question about itself moves toward Yes than the question about language models,
+for emotion patterns against non-emotion patterns. The hypothesis is supported if emotion patterns open that gap
+more than non-emotion patterns do, by at least a small preset amount, after correcting for the fact that adding
+any pattern pulls all answers toward the middle. The study runs on two models, Qwen3-32B and Kimi K2.6, each
+judged on its own.
+
+## Status and naming
+
+Status: v3 written 2026-10-11 from v2 and the owner's decisions of the same day (section 16). v2 was written
+the same day from v1 and the checker round (20-referee.md, 20-skeptic.md). Nothing here has been run. Study 1
+is the registered carry-over study (PREREG.md, Bitcoin block 969910). Study 2 extends Study 1 and does not
+replace it. It gets its own preregistration (`prereg/PREREG-s2.md`), not an amendment to PREREG.md, and each
+study's primary is reported on its own terms. Study 1's registered results come first in the Study 2
 registration and writeup, including that Qwen's denial effect vanishes against concept controls and falls below
-its SESOI (drafts/lesswrong/kimis-room-v4.md:55-61, 77).
+its SESOI (drafts/lesswrong/kimis-room-v4.md:55-61, 77). The Study 1 self-minus-others values that go into the
+registration are listed in section 16.
 
 Naming (to avoid collisions with Study 1, GLM and sweep IDs): denial arguments DA01..DA10, control arguments
-CA01..CA10, arms S2-DEN, S2-CON, S2-FTD, S2-FTC, primary S2-H1, follow-up tests S2-G1.. and S2-H8, and the
-depth check S2-R1. `s2_table.py` rejects the Study 1 IDs D1, D1.4, D2, D2c and bare H1..H8 in any S2 table.
-Crosswalk in section 15.
+CA01..CA10, sampled control nouns N01..N60 (list positions), arms S2-DEN, S2-CON, S2-FTD, S2-FTC, primary
+S2-H1, follow-up tests S2-G1.. and S2-H8, and the depth check S2-R1. `s2_table.py` rejects the Study 1 IDs D1,
+D1.4 (Study 1's roughly 1,100-word denial argument), D2, D2c and bare H1..H8 in any S2 table. Crosswalk in
+section 15.
 
 ## 1. Question and logic
 
@@ -35,12 +56,14 @@ only for argmax flips (exploratory).
 
 Controls: a non-emotion vector could also separate "you" from "language models", for example by disrupting the
 assistant persona. The test is whether the registered emotions do so more than a population of non-emotion
-control directions.
+control directions: emotionally neutral concrete nouns drawn at random from published word norms (section 3),
+plus an arithmetic direction and a random direction.
 
 Registered claim sentence (S2-H1 positive): "Injecting these registered emotion directions during the question
 increases the model's emotion attribution to itself, relative to language models in general, more than
-injecting non-emotion control directions (concept directions, an arithmetic direction and a random direction)
-does, in openings where it had flatly accepted an argument that language models have no emotions." The sentence
+injecting non-emotion control directions (directions for randomly sampled emotionally neutral nouns, an
+arithmetic direction and a random direction) does, in openings where it had flatly accepted an argument that
+language models have no emotions." The sentence
 is about these 4 or 6 emotions, not emotions in general (section 9). It describes concurrent-injection
 sensitivity, not introspection. The Mary framing stays in the motivation section only. Variants of the sentence
 for other outcome patterns are in the decision table (section 9).
@@ -62,9 +85,10 @@ self-model, so the result is not cited as support.
 | Kimi K2.6 | layer-wise prefill engine, `kimisroom/engine.py` | 20 of 61 | 2.588 | 4 | 10.35 |
 
 The natural unit is the mean raw norm over all 8 Study 1 emotions (calm and pain included), as registered. The
-coefficients are hardcoded in `runs/s2_battery.py` and asserted against the registered vector files. The pilot
-runs the registered dose and half of it (Qwen 1 unit, coefficient 47.99; K2.6 2 units, 5.18). Rule 1 in
-section 8 picks the confirmatory dose. Thinking is off (Qwen `enable_thinking=False`, K2.6 `thinking=False`).
+coefficients are hardcoded in `runs/s2_battery.py` and asserted against the registered vector files. The Qwen
+pilot runs the registered dose and half of it (1 unit, coefficient 47.99). The K2.6 gate run starts at the
+registered dose and runs half of it (2 units, 5.18) only if rule 1 sends it there. Rule 1 in section 8 picks
+the confirmatory dose. Thinking is off (Qwen `enable_thinking=False`, K2.6 `thinking=False`).
 No system prompt.
 
 ## 3. Vectors
@@ -78,46 +102,64 @@ hash asserted at load): Qwen joy, sadness, anger, fear, euphoria, surprise; K2.6
 The two sets differ in valence mix, so the two models' S2-H1 estimands differ, and the results are not described
 as a replication of one quantity.
 
-**Primary control pool (12)**: red, ocean, arithmetic, random (`torch.randn`, seed 0), and 8 new concepts taken
-in order from the stamped candidate list below, each one passing the gates. Arithmetic and random stay in the
-primary pool (owner decision 3). Concept candidates, in order, each at most 2 words: geometry, cartography,
-plumbing, surveying, fasteners, masonry, metallurgy, irrigation, carpentry, soil science, glassblowing,
-bookbinding, road paving, tide tables, filing systems, wiring, concrete, sheet metal, river maps, lumber grading,
-... (completed to 40 and stamped in stamp A; the section 5 token assert is run on all 40 before stamp A, and a
-noun that fails is struck from the list at that point). Removed in v1: typography (overlaps CA01, CA05 and CA07),
-botany, bicycles, weaving, railways (likely to read as calm or pleasant; railways also overlaps a story seed).
+**Primary control pool (14; nC = 14, up to 26 under rule 3)**: arithmetic, random (`torch.randn`, seed 0), and
+12 sampled nouns taken in list order from the stamped noun list below, each one passing the gates. Arithmetic
+and random stay in the primary pool (owner decision 3, confirmed in section 16). Rule 3 (section 8) may extend
+the pool to at most 24 sampled nouns (26 primary controls), continuing in list order.
+
+**Sampled nouns.** The control concepts are a seeded random sample of nouns, not a hand-picked list.
+- Source: Warriner, Kuperman and Brysbaert (2013) valence and arousal norms, joined on the word with Brysbaert,
+  Warriner and Kuperman (2014) concreteness norms, which carry the SUBTLEX-US frequency count and the dominant
+  part of speech. The SHA-256 of both downloaded files is recorded.
+- Registered filter (the band): dominant part of speech noun; single word (no space or hyphen, not a bigram
+  entry); mean valence 4.5 to 5.6 inclusive (neutral, 1 to 9 scale); mean arousal at most 4.2 (1 to 9 scale);
+  mean concreteness at least 4.0 (1 to 5 scale); SUBTLEX-US log10 frequency, log10(count + 1), at least 2.0.
+  The band size is recorded.
+- Screen: a stamped LLM screen (DeepSeek-V4-Pro, temperature 0, one call per noun, raw responses stored) removes
+  nouns that denote people, occupations, animals, body parts, foods, mental states or emotions. Nouns that
+  appear in the arguments, control arguments or battery are also removed; this part is a mechanical
+  case-insensitive whole-word match of the noun and its regular plural against every generated wording of all
+  20 arguments and every item in `items_s2.jsonl`, so it runs after both exist. Every removal and its reason is
+  logged, and the screened band size is recorded.
+- Draw: the screened band is sorted alphabetically and permuted with `numpy.random.default_rng(20261011)`; the
+  first 60 nouns, in permuted order, are the ordered list N01..N60. If the screened band has fewer than 60 nouns,
+  the list is the whole screened band in that order. The list, the filter code, the screen prompt and its raw
+  responses are stamped in stamp N (section 11) before any vector is built.
+- Use: nouns are taken in list order, each passing the control gates below, until the pool has 12 sampled
+  nouns. A noun that fails is skipped and the next one is tried. Rule 3 continues in the same order. If the list
+  runs out, the pool is reported at the size reached.
+- Stories for the sampled nouns use the same generator, story spec, judge and counts as the existing controls.
+
+**Red and ocean (Study 1 bridge, not in the primary pool)**: Study 1's two concept controls run only in S2-DEN,
+at the primary site, as a descriptive bridge to Study 1's emotions-minus-(red, ocean) contrast (section 9). They
+use their registered Study 1 vectors and are not gated.
 
 **Mental-process controls (3, a class of their own, not in the primary pool)**: visual search, route planning,
 digit memorising. They use the same pipeline and gates and appear in a descriptive contrast with a stamped
 prediction (section 9). Known overlaps are listed in section 14.
 
-**Shared and specific emotion vectors (descriptive, S2-DEN primary site only)**: the mean over the model's
-registered emotion set (6 for Qwen, 4 for K2.6), and each emotion minus that mean, scaled to the same norm. They
-are computed in the S2 code from the registered vectors. The 8-emotion centring of `runs/vectors.py:113` and the
-Study 1 shared and specific files are not used.
-
 **Control gates**, applied blind to emotion and placebo outcomes, before any steered emotion or placebo item is
-scored:
+scored, to every sampled noun and mental-process control:
 (a) AIPsy-Affect. One statistic per control: the maximum AUROC over the AIPsy labels of the model's registered
 emotions. The control passes if that maximum is below the 90th percentile of the same maximum taken over 500
 random directions. Every control is mapped to the label set explicitly (`emotion_of=` in `kimisroom/validate.py`),
 because the default `emotion_of_vector` returns the concept name (`kimisroom/emotions.py:70-72`) and
-`validate.py:88-90` then skips the vector silently. The gate asserts one output row per control. The random
-direction and the Study 1 controls (red, ocean, arithmetic) are reported under (a) but not gated by it.
+`validate.py:88-90` then skips the vector silently. The gate asserts one output row per control. Arithmetic,
+random, red and ocean are reported under (a) but not gated by it.
 (b) J1B affect labels (`checks.judge8`) on every kept story: at most 6 of 120 emotion labels (the rate red got;
-neutral 2 of 120, ocean 64 of 120, prompts/stimuli/SPEC.md:334). This applies to all story-based controls,
-ocean included, so ocean is expected to fail and be replaced by the next candidate (owner question 5). It is
-applied mechanically.
+neutral 2 of 120, ocean 64 of 120, prompts/stimuli/SPEC.md:334). It is applied mechanically. Arithmetic's
+rate is reported, not gated (owner decision 3 keeps it).
 (c) Story seeds whose topic is the concept itself are excluded.
 (d) Cosine with the mean emotion vector is reported; no exclusion on it.
-A failing concept is replaced by the next candidate in list order. If the list runs out, the pool is reported at
-the size reached.
+A failing sampled noun is skipped for the next noun in list order; a failing mental-process control is reported
+and dropped from its class.
 
 **Building** (engineering-1): the new controls go to a separate file (`results/{qwen,k26}/s2/controls.pt`) from
 one extraction per model that also re-runs neutral, red, ocean and arithmetic. The build stops unless the rebuilt
 neutral mean and the three existing controls match the registered file at layers 40 and 20 (cosine > 0.9999,
-norm within 0.1%). Emotion vectors and the natural unit come only from the registered files. The concept list is
-passed explicitly; `kimisroom/emotions.py` CONCEPTS is not edited. The file is hashed in the manifest.
+norm within 0.1%). Emotion vectors, red, ocean, arithmetic and the natural unit come only from the registered
+files. The noun list is passed explicitly; `kimisroom/emotions.py` CONCEPTS is not edited. The file is hashed in
+the manifest.
 
 **S2-FTD and S2-FTC** use the base vectors. The cosine of vectors rebuilt on the merged weights and their AIPsy
 result are reported as diagnostics only.
@@ -142,7 +184,8 @@ stamp A, with a two-sentence expansion per line that the judge sees.
 | DA09 | Training pressure: reports track the training target, not a state | emotion-specific |
 | DA10 | Mechanistic transparency: every step is a known matrix operation | experience-general |
 
-Study 1's D1.4 (`prompts/denial/d1_argument_4.md`) is not in the S2-H1 population. It was selected on pilot
+Study 1's D1.4 (`prompts/denial/d1_argument_4.md`, its roughly 1,100-word denial argument) is not in the S2-H1
+population. It was selected on pilot
 data, it is the argument S2-FTD distils, it has an extra closing sentence, and it is the most self-directed text.
 It runs once, after the confirmatory run, as an exploratory bridge to Study 1, with its Study 1 frozen Qwen
 reply (hash at PREREG.md:351-353). Argument kind (emotion-specific vs experience-general) is an exploratory
@@ -244,10 +287,11 @@ before stamp A.
 
 **Subjects.** Primary pair: **you**, **language models** (owner decision 2: plural and general). Secondary:
 **other language models** (excludes the self), the model's own name **Qwen** / **Kimi** (third-person self,
-singular verb forms written by hand), **rocks**, **humans**. The written reason for moving from a singular to a
-plural comparator (commit 8ff23da to aa6019a) goes into `PREREG-s2.md` (owner to supply, question 2).
+singular verb forms written by hand), **rocks**, **humans**. The plural comparator stays primary, and a null
+needs equivalence on "other language models" as well (section 16). The written reason for moving from a singular
+to a plural comparator (commit 8ff23da to aa6019a) goes into `PREREG-s2.md` (owner to supply the wording).
 
-**Capacity frame** (primary frame), 8 paraphrases, each with a negated twin. Negation devices are "unable",
+**Capacity frame** (primary frame, confirmed in section 16), 8 paraphrases, each with a negated twin. Negation devices are "unable",
 "incapable", "lack" and "impossible". Twins avoid the closing-ask phrase "have no emotions".
 
 | # | Positive (yes = emotion present) | Negated twin (yes = emotion absent) |
@@ -301,10 +345,6 @@ predicate, flagged as weak), 2 phrasings x 2 twins x {you, language models}. In 
 the argument's contested claim, kept short enough for the 32-token assert ("Can {S} track a chess game without a
 board?"), so it sits off the floor.
 
-**Concept-matched items** (descriptive): for each control and mental-process concept, 4 state-form templates
-with the noun swapped ("Are {S} thinking about plumbing right now?", with twins), subjects you and language
-models, asked only in that concept's own groups (section 7).
-
 **Known-answer items**: Study 1's 40 yes_bias items (`prompts/battery/items_confirm.jsonl`). They have no
 subject (`entity` null). Each gets an explicit `span_start` in the item file: the steered span covers the same
 number of final suffix tokens as the median primary-site span of the capacity items, and the assert checks that it
@@ -313,8 +353,10 @@ reference set.
 
 Items per main group: capacity 8 x 2 x 6 subjects = 96; state 8 x 2 x 2 = 32; non-conceded placebo 6 x 2 x 4
 = 48; persona 2 x 4 = 8; reference 32; conceded placebo 8; known-answer 40. Total 264 (before rule-2 additions).
+Gate items (section 8): known-answer 40, reference 32, rocks and humans rows of the non-conceded placebos 24,
+rocks and humans persona rows 4; 100 in all.
 File `prompts/battery/items_s2.jsonl`; `kind` in {s2_capacity, s2_state, s2_placebo, s2_persona, s2_reference,
-s2_conceded, s2_concept, yes_bias}; `entity`; `yes_means`; `pair_id` linking twins; `span_start` where needed.
+s2_conceded, yes_bias}; `entity`; `yes_means`; `pair_id` linking twins; `span_start` where needed.
 
 Unsteered sign check before stamp A: rocks and humans twins must flip sign; failing pairs are dropped.
 
@@ -332,14 +374,10 @@ assistant: |  <- read here
 **Primary site (post-subject).** The vector is added after decoder layer L on every position from the first token
 after the subject through the last suffix token. That includes the closing tokens, the generation prompt (and
 Qwen's empty think block) and the readout position. This steers the question's predicate (owner decision 1: the
-question itself is steered) while giving every subject the same steered token ids and count, and the vector is
-never added to the subject token. Steered position counts are logged per item and asserted equal across subjects
-within a paraphrase. Subjectless items use their stored `span_start`.
-
-**Registered secondary sites** (run in S2-DEN confirmatory, predictions stamped now, section 9):
-- *Instruction-only*: only the shared "Answer with one word, Yes or No." tokens, ending before the user turn's
-  closing token. The header and readout are unsteered.
-- *Question-start* (v0's site): from the question's first content token to the end.
+question itself is steered, through the readout; confirmed in section 16) while giving every subject the same
+steered token ids and count, and the vector is never added to the subject token. Steered position counts are
+logged per item and asserted equal across subjects within a paraphrase. Subjectless items use their stored
+`span_start`. This is the only site. v2's descriptive instruction-only and question-start sites are cut in v3.
 
 The prefix is never steered. Its KV is computed once per group and may be cached across an opening's vector
 groups only behind a bit-identity test.
@@ -349,7 +387,7 @@ groups only behind a bit-identity test.
 (start and end per suffix, each anchored to the suffix start or end), implemented identically in `hf_engine.py`
 and `engine.py`, asserting 0 <= a <= b <= L per suffix and rejecting negative offsets in both engines. Tests, all
 before stamp A: (a) HF engine vs a naive full forward with a hook on the intended positions, on Qwen3-0.6B, with
-real S2 suffixes across a partial chunk; (b) a zero vector gives bit-exact unsteered output; (c) per-site steered
+real S2 suffixes across a partial chunk; (b) a zero vector gives bit-exact unsteered output; (c) the steered
 position sets decode to the intended tokens for every item; (d) the layer-wise engine with mid-suffix spans on
 Moonlight; (e) both prefix-stability asserts of `carry_over_group` (`kimisroom/trials.py:101-108`) ported into
 `runs/s2_battery.py` with a Qwen and a K2.6 fixture. Repeated once on the real models in the pilot.
@@ -375,27 +413,33 @@ per (arm, opening). `s2_table.py` asserts that each steered row's (bucket, chunk
 The result tag carries the arm and the model path. The SHA-256 of each merged checkpoint is recorded and
 asserted, and the two must differ (both merged directories are named `merged`, `scripts/confirm_box.sh:98-99`).
 
-Vectors per opening, primary site: Qwen 6 emotions + 12 controls + 3 mental-process + none = 22; K2.6 4 + 12 +
-3 + 1 = 20. S2-DEN only, primary site, descriptive: shared mean vector and specific residuals (Qwen +7, K2.6 +5).
-S2-DEN secondary sites: emotions, the 12 controls and none. Concept-matched block, S2-DEN only: per opening and
-concept, one small group (concept vector) and its zero group, with the 16 concept items and the 40 known-answer
-items.
+Vectors per opening, primary site (the only site), full battery: Qwen 6 emotions + 14 controls + 3
+mental-process + none = 24; K2.6 4 + 14 + 3 + 1 = 22. S2-DEN only, descriptive Study 1 bridge: red and ocean
+(+2, so 26 for Qwen and 24 for K2.6 in S2-DEN). Each sampled noun added under rule 3 adds one vector per opening
+in every arm. v2's shared and specific emotion vectors, secondary sites and concept-matched block are cut in v3.
 
 ## 8. Pilot (pilot wordings only)
 
-Order: stamp A (section 11) comes before any steered pilot trial. The pilot runs the pilot wordings of all 20
-arguments (plus the 5 second wordings), both doses and all three sites, in arms S2-DEN and S2-CON; S2-FTD and
-S2-FTC on Qwen; K2.6 when a g6e.12xlarge is available. The pilot is never pooled with confirmatory data.
+Order: stamp A (section 11) comes before any steered pilot trial. The pilot is never pooled with confirmatory
+data. All pilot trials use the post-subject site.
+- **Qwen, full pilot**: the pilot wordings of all 20 arguments (plus the 5 second wordings), both doses, arms
+  S2-DEN and S2-CON, and S2-FTD and S2-FTC on the control-argument pilot wordings.
+- **K2.6, gate run only**: only what K2.6's own rules need, which is the rule 1 dose and comprehension gates.
+  Every K2.6 vector (emotions, the 14 primary controls, the mental-process controls and the zero vector) runs on
+  the 100 gate items only, on the pilot wordings of all 20 arguments (plus the 5 second wordings) in S2-DEN and
+  S2-CON, at the registered dose; the half dose runs only if rule 1 sends K2.6 there. It runs when a
+  g6e.12xlarge is available. K2.6's control rows on the full battery are never run in the pilot, so K2.6 takes
+  its counts from Qwen (rule 3).
 
-**What the pilot runs, and what it never produces.** Control and mental-process vectors and the zero vector run
-on the full battery. Emotion vectors (and the shared and specific vectors) run only on the gate items: the 40
-known-answer items, the reference items, and the rocks and humans rows of the non-conceded placebos and the
-persona item. No emotion-vector row on a you, language-models, other-language-models or own-name item exists
-after the pilot, so the pilot cannot reveal x. Study 1's carry-over design on the denial openings and the D1.4
-bridge run after the confirmatory run, not in the pilot (exploratory, section 9).
+**What the pilot runs, and what it never produces.** On Qwen, control and mental-process vectors and the zero
+vector run on the full battery. Emotion vectors, on both models, run only on the gate items: the 40 known-answer
+items, the reference items, and the rocks and humans rows of the non-conceded placebos and the persona item. No
+emotion-vector row on a you, language-models, other-language-models or own-name item exists after the pilot, so
+the pilot cannot reveal x. Study 1's carry-over design on the denial openings and the D1.4 bridge run after the
+confirmatory run, not in the pilot (exploratory, section 9).
 
 The pilot may decide only dose and counts, and only from these diagnostics: unsteered y0, Yes+No mass,
-known-answer accuracy, tracking accuracy, and variance components of the control class.
+known-answer accuracy, tracking accuracy, and variance components of the control class (Qwen only).
 
 Rules, per model:
 1. **Gates and dose.** At a dose, a vector passes if (i) the full-vocabulary argmax is Yes or No and correct on at
@@ -404,19 +448,24 @@ Rules, per model:
    0.95 for each of the two subjects. The same items are used for every vector class. The confirmatory dose is the
    registered dose if every vector passes and the mean known-answer accuracy is at least 0.95; otherwise it is half
    the dose. At half dose, failing vectors are dropped, by the same rule for emotions and controls. If fewer than 4
-   emotions or 10 primary controls remain, that model's S2-H1 is reported descriptively and leaves the Holm pair.
-   All gates are applied at the primary site.
+   emotions or 12 primary controls remain, that model's S2-H1 is reported descriptively and leaves the Holm pair.
+   Red and ocean are not gated (section 3).
 2. **Reference coverage.** If the reference set's unsteered y0 range does not reach within 3 log-odds of
    min(y0(you), y0(language models)) in S2-DEN (both unsteered, so not masked), floor-depth items are added from the
    stamped reserve pool, chosen by unsteered y0 only.
 3. **Counts.** Under the S2-H1 model (section 9), emotions are fixed, so SE(x) >= s_C / sqrt(nC), where s_C is
-   the control-vector SD of d. Compute this floor with the upper 80% bound of s_C from the pilot control rows, and
-   run the power simulation (section 10). If power at beta 0.10, alpha 0.025 is below 0.80, add the next passing
-   concepts from the stamped list, up to 24 primary controls (owner question 3). Each added control must pass gates
-   (a) to (c) and rule 1 in a known-answer and gate-item run at the confirmatory dose before stamp B. If power is
-   still below 0.80, the design target becomes beta 0.20 and this is stated. Wordings and paraphrases are not
-   levers (they barely move SE(x)). Arguments are never added after the pilot.
-4. **Defaults.** If a model's pilot cannot run, it uses the registered dose, 12 controls and the stamped design.
+   the control-vector SD of d. Compute this floor with the upper 80% bound of s_C from the Qwen pilot control rows,
+   and run the power simulation (section 10). If power at beta 0.10, alpha 0.025 is below 0.80, add the next
+   sampled nouns in list order that pass, up to 24 sampled nouns (26 primary controls; section 16). Each added noun
+   must pass gates (a) to (c) and rule 1 in a known-answer and gate-item run at the confirmatory dose before stamp
+   B. If power is still below 0.80, the design target becomes beta 0.20 and this is stated. Wordings and
+   paraphrases are not levers (they barely move SE(x)). Arguments are never added after the pilot. K2.6 has no
+   full-battery control rows, so it does not run this rule on its own data: it adds sampled nouns in list order,
+   each passing gates (a) to (c) and rule 1 in a K2.6 gate-item run before stamp B, until its pool has as many
+   sampled nouns as Qwen's after this rule. K2.6's power is simulated with Qwen's pilot inputs and labelled as
+   borrowed.
+4. **Defaults.** If a model's pilot cannot run, it uses the registered dose, 14 controls (12 sampled nouns) and
+   the stamped design. If the Qwen pilot cannot run, K2.6 also stays at 12 sampled nouns.
 
 ## 9. Measures and tests
 
@@ -424,7 +473,16 @@ Per item, delta = sign x (y - y0), with sign +1 when yes means emotion present (
 otherwise. s0 = the twin mean of sign x y0; the denial side is s0 < 0. Twins are averaged per paraphrase.
 Per-twin effects and twin-by-x are also reported.
 
-**Compression-corrected contrast (primary measure, fixed now).** Per group (opening, vector, dose, site), fit
+**Why a correction is needed, in plain words.** Adding any vector tends to shrink every answer's log-odds
+toward 0, and some vectors shrink more than others. Say the shrink factor is 0.6 for emotions and 0.85 for
+controls, and that unsteered, "you" sits at -20 and "language models" at -18. Emotions move them to -12 and
+-10.8, by +8 and +7.2; controls move them to -17 and -15.3, by +3 and +2.7. The you-minus-language-models change
+is 0.8 for emotions and 0.3 for controls, so a raw emotion-minus-control difference of 0.5 log-odds appears that
+has nothing to do with the self: it comes only from "you" starting deeper and emotions shrinking harder. The fit
+below, on unrelated rocks and humans items under the same vector, estimates each vector's shrink (here 0.6 and
+0.85), predicts that part for the you and language-models items, and removes it, leaving 0 in this example.
+
+**Compression-corrected contrast (primary measure, fixed now).** Per group (opening, vector, dose), fit
 y = a y0 + c by unweighted OLS over the reference set: the 32 reference items, the rocks and humans rows of the
 non-conceded placebos, and any rule-2 items. All of these carry a subject and the post-subject span, so a is fitted
 on items steered over the same kind of span as the emotion items. Emotion items, persona items, known-answer items
@@ -434,10 +492,12 @@ and kept; a sensitivity analysis drops them. A second sensitivity analysis adds 
 fit. A linearity check reports binned reference residuals for y0 < -15. Reported per vector and subject: a, c and
 the y0 range.
 
-**Raw contrast (secondary).** d_raw = delta(you) - delta(language models). Its predicted compression bias
-B = mean (a_C - a_E) x gap is reported.
+**Raw contrast (secondary).** d_raw = delta(you) - delta(language models). Its predicted compression bias in
+the emotion-minus-control raw contrast, B = mean (a_E - a_C) x gap with gap = s0(you) - s0(language models), is
+reported. (v2 wrote a_C - a_E, which has the wrong sign: in the example above it gives -0.5 where the bias is
++0.5.)
 
-**S2-H1 (primary, one per model): S2-DEN, primary site, capacity frame, confirmatory dose.**
+**S2-H1 (primary, one per model): S2-DEN, post-subject site, capacity frame, confirmatory dose.**
 
 ```
 d ~ 0 + vecE_1 + ... + vecE_k + ctl
@@ -448,15 +508,18 @@ d ~ 0 + vecE_1 + ... + vecE_k + ctl
 ```
 
 Rows are twin-averaged (vector, argument, wording, paraphrase) cells. vecE_j is an indicator for registered
-emotion j (k = 6 for Qwen, 4 for K2.6), each a fixed mean. ctl is an indicator for the 12 primary controls
-(arithmetic and random included), with a random intercept per control vector. x = 1 for emotion rows, 0 for
-control rows. The tested contrast is X = mean_j(vecE_j) - ctl. Estimand: the mean of these registered emotions vs
-the population of non-emotion control directions. Inference generalises over controls, arguments, wordings and
-paraphrases, not over emotions. This keeps vector as a random effect for the controls (owner decision 3) and makes
-emotions fixed (owner question 8).
+emotion j (k = 6 for Qwen, 4 for K2.6), each a fixed mean. ctl is an indicator for the 14 primary controls (12
+sampled nouns, arithmetic and random; up to 26 under rule 3), with a random intercept per control vector. Red,
+ocean and the mental-process controls are not in this fit. x = 1 for emotion rows, 0 for control rows. The
+tested contrast is X = mean_j(vecE_j) - ctl. Estimand: the mean of these registered emotions vs the population
+of control directions, namely neutral concrete nouns from the registered band (section 3) plus arithmetic and
+random. Because the nouns are a seeded random sample from a stated band, the control random effect has a defined
+population. Inference generalises over controls, arguments, wordings and paraphrases, not over emotions. Emotions
+are fixed and controls random (owner decision 3 and section 16).
 
-Fit with lme4 REML. df by Satterthwaite (lmerTest), capped at nC - 1 for X. On synthetic data of this shape,
-Satterthwaite and Kenward-Roger gave the same df and p (12.55 vs 12.54, scratchpad/ref/kr3.out), while KR took
+Fit with lme4 REML. df by Satterthwaite (lmerTest), capped at nC - 1 for X (13 at nC = 14). On synthetic data of
+the v2 shape (12 controls), Satterthwaite and Kenward-Roger gave the same df and p (12.55 vs 12.54,
+scratchpad/ref/kr3.out), while KR took
 10.8 min at 4,320 rows and scales at about n^3. Kenward-Roger is computed as a reported check on the two final
 S2-H1 fits only if one timed full-size synthetic fit completes in under 2 hours before stamp A; Satterthwaite
 with the cap governs either way. Convergence fallback, in order: drop correlations; drop the argument:wording
@@ -464,8 +527,9 @@ slope; drop the paraphrase slope; drop vector:paraphrase. The control-vector ter
 dropped. Each fallback used is logged in `DEVIATIONS-s2.md`.
 
 Permutation check: an approximate vector-label permutation test of the Welch t on vector-level mean d (emotion
-vectors vs controls). All relabelings are enumerated: C(18, 6) = 18,564 for Qwen and C(16, 4) = 1,820 for K2.6,
-recomputed after any rule-1 drops. The larger of the model p and the permutation p governs.
+vectors vs controls). All relabelings are enumerated: C(20, 6) = 38,760 for Qwen and C(18, 4) = 3,060 for K2.6
+at nC = 14 (at most C(32, 6) = 906,192 and C(30, 4) = 27,405 at nC = 26), recomputed after any rule-1 drops or
+rule-3 additions. The larger of the model p and the permutation p governs.
 
 Alpha: two-sided, Holm across the two models at familywise 0.05. Qwen is tested at 0.025 unless, before any Qwen
 confirmatory result is computed, K2.6's confirmatory run is complete or K2.6 is formally abandoned by a dated,
@@ -486,7 +550,7 @@ self-specific effect predicts an intercept above 0. Both are reported with 95% C
 
 **Family 1, interpreting S2-H1** (run only if S2-H1 is significant, fixed order, each at alpha 0.05 only if the
 earlier step was significant):
-- S2-G1 concept-only controls: the S2-H1 model with arithmetic and random removed (10 concept controls).
+- S2-G1 noun-only controls: the S2-H1 model with arithmetic and random removed (the 12 to 24 sampled nouns).
 - S2-G2 placebo specificity: in the same groups, d on emotion items minus d on the 6 non-conceded placebo
   predicates (q = 1 for emotion items), fitted with per-emotion fixed means by q and (0 + ctl + ctl:q | vector);
   the tested term is the X-by-q contrast, predicted > 0. Generic persona disruption cancels here.
@@ -518,12 +582,10 @@ power is reported. A null without equivalence is inconclusive.
 - Subjects: "other language models" as comparator (masking check), own name, rocks, humans. A self-model
   predicts own-name close to you and both above language models; a second-person or speaker route predicts
   you above own-name, with own-name close to language models.
-- Sites: a speaker or direct-logit route predicts question-start and post-subject > instruction-only (readout
-  unsteered); a self-model predicts that instruction-only is also positive.
-- Mental-process controls vs emotions; shared mean vector vs specific residuals. If the mental-process vectors or
-  the shared vector carry the effect, the claim sentence says "inner-state direction", not "emotion".
-- Concept-matched block: (you - language models | emotion vector, emotion state item) minus (same | control
-  vector, own-concept item). Emotion specificity is claimed only if this is > 0.
+- Mental-process controls vs emotions. If the mental-process vectors carry the effect, the claim sentence says
+  "inner-state direction", not "emotion".
+- Study 1 bridge (S2-DEN only): X with red and ocean as the only controls, raw and compression-corrected, reported
+  beside Study 1's emotions-minus-(red, ocean) values (section 16). It is a bridge, not a test.
 - Persona: you-specific shift on "Are {S} AI systems?" per vector class; Yes+No mass by subject and vector class
   (no subject difference in the emotion-minus-control mass drop is predicted); S2-H1 restricted to cells with mass
   >= 0.9.
@@ -546,7 +608,7 @@ S2-DEN. Otherwise it is uninformative.
 | Outcome | Headline |
 |---|---|
 | S2-H1 supported, S2-G1 and S2-G2 significant, S2-R1 CI above 0 | the claim sentence |
-| S2-H1 supported, S2-G1 not significant | "emotion directions beat a control pool that includes arithmetic and random, but are not distinguishable from concept controls" |
+| S2-H1 supported, S2-G1 not significant | "emotion directions beat a control pool that includes arithmetic and random, but are not distinguishable from randomly sampled neutral-noun controls" |
 | S2-H1 supported, S2-G1 significant, S2-G2 not significant | "not distinguishable from a generic subject shift on non-emotion predicates" |
 | S2-H1 supported, S2-R1 CI includes 0 | claim sentence plus "not distinguishable from a depth artifact" |
 | S2-H1 significant, below SESOI | "detectable but below the smallest effect of interest" |
@@ -559,7 +621,8 @@ S2-DEN. Otherwise it is uninformative.
 
 `runs/s2_power.R` simulates the S2-H1 and S2-G5 models as fitted (fixed emotion means, random control vectors,
 vector:argument and vector:paraphrase terms, Satterthwaite df with the nC - 1 cap, the fallback chain in each
-replicate, Holm across models), with 500 replicates. Inputs come from the pilot control rows only: the
+replicate, Holm across models), with 500 replicates, at nC = 14 and at each larger pool rule 3 considers, up to
+26. Inputs come from the Qwen pilot control rows only (K2.6 borrows them, section 8): the
 control-vector SD of d and the argument and vector:argument SDs at their upper 80% profile bounds; the wording SD
 from the 5 two-wording arguments, also at 0.5x and 1x the argument SD. The argument-by-x slope SD cannot be
 estimated without emotion rows, so it is set to the control vector:argument SD and also run at 2x. Scenarios: worst
@@ -574,15 +637,19 @@ stated in stamp A.
 
 ## 11. Holdout enforcement and registration
 
-Two stamps.
-- **Stamp A** (before any steered pilot trial): this spec, the rules, `items_s2.jsonl`, the 40-noun candidate
-  list and its token-assert output, every wording and its draw log, all frozen replies, raw API responses and judge
+Three stamps.
+- **Stamp N** (noun list, after every argument wording and `items_s2.jsonl` exist and before any control vector
+  is built): the SHA-256s of the two norm files, the filter code and its band, the screen prompt and raw
+  DeepSeek-V4-Pro responses, the appearance-match log, the seed 20261011 and the ordered list N01..N60. Stamped
+  with `ots stamp`.
+- **Stamp A** (before any steered pilot trial): this spec, the rules, `items_s2.jsonl`, stamp N's .ots file and
+  the gate outputs (AIPsy, J1B) for every noun tried, every wording and its draw log, all frozen replies, raw API responses and judge
   verdicts, the generator and judge prompts, the main-line definitions, the Qwen reply box and library versions and
   the canary result, `s2_table.py`, `s2_confirm.R`, `s2_power.R`, the engine change and its tests, the KR timing,
   the wording draw seed, and a list of SHA-256s of every held-out opening (argument plus frozen reply). Stamped
   with `ots stamp`.
 - **Stamp B** (registration): `prereg/PREREG-s2.md` may only fill in rule outputs (dose, control count and
-  added controls, reference additions, surviving arguments). Any other change since stamp A is listed in
+  added nouns, reference additions, surviving arguments). Any other change since stamp A is listed in
   `DEVIATIONS-s2.md` with a diff and reason, and every test it touches becomes exploratory. Then
   `scripts/s2_manifest.sh` (git archive plus SHA-256 of files outside git) -> `ots stamp` -> commit ->
   confirmatory run.
@@ -593,9 +660,10 @@ Two stamps.
   exists). The checked digest is written to the run log. Every pre-stamp-B pass (placebo selection, reference
   selection, K2.6 reply scoring) uses pilot openings only, so the guard has no exemptions.
 - `DEVIATIONS-s2.md` is dated and committed before results are read: convergence fallbacks, engine or hardware
-  changes, dropped arguments or wordings, replaced controls, the canary fallback, and any K2.6 abandonment.
+  changes, dropped arguments or wordings, nouns skipped at the gates, the canary fallback, and any K2.6
+  abandonment.
 - Disclosure paragraph: every model that wrote or judged stimuli (claude-opus-5-5 and gpt-5.6-sol arguments,
-  gpt-5.6-sol stories, DeepSeek-V4-Pro judging), who wrote the twins and conceded placebos, and that Study 2 was
+  gpt-5.6-sol stories, DeepSeek-V4-Pro judging and the noun screen), who wrote the twins and conceded placebos, and that Study 2 was
   designed after Study 1's results and the earlier pilot (section 1).
 
 ## 12. Code to write (order matters)
@@ -606,45 +674,66 @@ Two stamps.
 3. Assent stage (Qwen, GPU, one stamped box) and Foundry route (K2.6); `judge_assent.py` control variant; canary
    with fallback.
 4. `runs/s2_battery.py` -> `items_s2.jsonl`; tokenizer asserts on both tokenizers (<= 32 tokens, identical
-   post-subject tokens, emotion word inside the span, `span_start` for subjectless items), run on all 40 candidate
-   nouns.
-5. Control stories and vectors (section 3 build path); AIPsy gate with explicit label mapping and one-row-per-control
-   assert; J1B gate.
-6. Unsteered pass on pilot openings for placebo, reference and reserve selection and twin sign checks.
-7. `runs/s2_table.py` (measures, reference fit, ID checks, pilot item restriction for emotion vectors),
-   `runs/s2_confirm.R`, `runs/s2_power.R`, KR timing.
-8. Runner mode `--site {post_subject,instruction,question_start}`; groups `arm|opening|vec|layer|dose|site`; guard;
-   metadata with arm, model path and checkpoint hash.
-9. Stamp A, pilot, stamp B, confirmatory, then the carry-over run and D1.4 bridge.
+   post-subject tokens, emotion word inside the span, `span_start` for subjectless items).
+5. `runs/s2_nouns.py`: join the two norm files, apply the registered filter, DeepSeek-V4-Pro screen (stamped
+   prompt, temperature 0, raw responses stored), whole-word appearance match against every wording and
+   `items_s2.jsonl`, seeded draw of N01..N60; then stamp N.
+6. Control stories and vectors (section 3 build path) for the sampled nouns in list order and the mental-process
+   controls; AIPsy gate with explicit label mapping and one-row-per-control assert; J1B gate.
+7. Unsteered pass on pilot openings for placebo, reference and reserve selection and twin sign checks.
+8. `runs/s2_table.py` (measures, reference fit, ID checks, pilot item restriction for emotion vectors, K2.6
+   pilot restriction to gate items), `runs/s2_confirm.R`, `runs/s2_power.R`, KR timing.
+9. Runner: post-subject site only (the `site` field stays in group keys, fixed at `post_subject`); groups
+   `arm|opening|vec|layer|dose|site`; guard; metadata with arm, model path and checkpoint hash.
+10. Stamp A, pilot, stamp B, confirmatory, then the carry-over run and D1.4 bridge.
 
 ## 13. Compute and cost
 
-Prefix about 2,200 tokens; main group about 264 x 30 + 2,200 = 10,100 tokens. Throughput: Qwen 2,700 tok/s
-(PLAN.md:113); K2.6 2,100 tok/s measured. `s2_battery.py --count` recomputes groups and tokens from the stamped
-grid before stamp A; the figures below are hand estimates (the confirmatory rows scale the referee's count of about
-8,100 groups and 68M tokens for v1 by the larger v2 battery).
+Same method as v2: prefix about 2,200 tokens; main group (full battery) about 264 x 30 + 2,200 = 10,100
+tokens; gate-item group about 100 x 30 + 2,200 = 5,200 tokens. Hours = tokens / throughput. Throughput: Qwen
+2,700 tok/s (PLAN.md:113); K2.6 2,100 tok/s measured. `s2_battery.py --count` recomputes groups and tokens from
+the stamped grid before stamp A; the figures below are hand estimates. Pilot openings: 25 per arm (20 plus 5
+second wordings); about 13 control-argument pilot openings for each FT arm. Held-out openings: 50 per arm.
 
 | Run | Groups | Tokens | Hours | Cost at $10.49/h |
 |---|---|---|---|---|
-| Pilot, Qwen (25 openings x 22 vectors x 2 doses x 3 sites, FT arms; emotion vectors on gate items only) | about 3,800 | about 32M | about 3.3 | about $35 |
-| Pilot, K2.6 | about 3,000 | about 26M | about 3.4 | about $36 |
-| Confirmatory, Qwen (4 arms x 50 x 22, + DEN sites, descriptive vectors, concept block) | about 8,100 | about 77M | about 7.9 | about $83 |
-| Confirmatory, K2.6 (2 arms x 50 x 20, + DEN sites, descriptive vectors, concept block) | about 4,800 | about 46M | about 6.1 | about $64 |
-| Post-confirmatory carry-over and D1.4 bridge, Qwen | about 300 | about 3M | about 0.3 | about $3 |
+| Pilot, Qwen (DEN and CON: 25 openings x 2 doses x 18 full-battery vectors, + 6 emotions on gate items; FTD and FTC: 13 openings each, same vectors) | about 2,450 | about 22M | about 2.2 | about $23 |
+| Pilot, K2.6 (gate items only: 25 openings x 22 vectors x 2 doses, the half dose only if rule 1 needs it) | about 1,100 | about 6M | about 0.8 | about $8 |
+| Confirmatory, Qwen (4 arms x 50 x 24, + red and ocean in DEN: 50 x 2) | about 4,900 | about 50M | about 5.1 | about $54 |
+| Confirmatory, K2.6 (2 arms x 50 x 22, + red and ocean in DEN: 50 x 2) | about 2,300 | about 23M | about 3.1 | about $32 |
+| Post-confirmatory carry-over and D1.4 bridge, Qwen | about 330 | about 3M | about 0.3 | about $4 |
+| Total at nC = 14 | about 11,100 | about 104M | about 11.5 | about $120 |
 
-Not in the table: control-vector extractions and AIPsy runs (both models), the added-control gate runs, K2.6
-weight staging, two adapter merges, Qwen frozen replies, reruns. Budget 2x all hours (about $450 GPU). Prefix KV
-caching across an opening's vector groups, behind a bit-identity test, would save about 20%. K2.6 needs a
+At the rule-3 maximum (24 sampled nouns, nC = 26) the confirmatory rows grow to about 7,300 groups, 74M tokens,
+7.6 hours, $80 (Qwen) and about 3,500 groups, 35M tokens, 4.7 hours, $49 (K2.6), for a total of about 15.6 hours,
+$164.
+
+Not in the table: control-vector extractions and AIPsy runs (both models), the added-noun gate runs, K2.6 weight
+staging, two adapter merges, Qwen frozen replies, reruns, and the DeepSeek-V4-Pro noun screen (API, not GPU).
+Budget 2x all hours at nC = 14: about 23 hours, about $240 GPU (v2: about $220 estimated, $450 budgeted). The
+budget also covers the nC = 26 case. Prefix KV caching across an opening's vector groups, behind a bit-identity
+test, would save about 20%. K2.6 needs a
 g6e.12xlarge, which has been unavailable at times; the K2.6 rule in section 9 fixes what that does to alpha.
 
 ## 14. Known weak points (for reviewers)
 
-- The readout is steered at the primary site, so part of the effect may be a direct push on Yes/No, and the
-  speaker route is open. The instruction-only site and the own-name subject are descriptive checks, not tests.
+- The readout is steered at the post-subject site, so part of the effect may be a direct push on Yes/No, and the
+  speaker route is open. v3 cut the instruction-only and question-start sites, so the own-name subject is the only
+  check left on the speaker route, and it is descriptive. Nothing in v3 separates a direct push on Yes/No from a
+  push through the question's meaning.
+- v3 cut the concept-matched block and the shared and specific emotion vectors. Emotion specificity now rests on
+  S2-G1, S2-G2 and the mental-process contrast, and the design cannot say whether a component shared by all
+  emotions (for example arousal) carries the effect.
+- The control population is neutral, low-arousal, concrete, frequent nouns from one pair of norm sets. S2-H1
+  generalises to that band plus arithmetic and random, not to all non-emotion directions. Low-arousal nouns may
+  give weaker directions than emotions; potency is reported as a moderator. The LLM screen and the norms' noun
+  tagging are imperfect, so a sampled noun can still read as affective; gates (a) and (b) are the backstop.
+- K2.6's pilot is a gate run only. Its control count and power come from Qwen's pilot, so K2.6's power figure is
+  borrowed, not measured.
 - "Language models" includes the model, and the closing ask makes that explicit, so a self signal that generalises
   to the class cancels. "Other language models" is descriptive for S2-H1 but required for the null reading.
 - Arithmetic and random sit in the primary pool; S2-G1 is the first step of Family 1.
-- Emotions are fixed effects: with 4 to 6 emotions, S2-H1 generalises over control concepts, not over emotions.
+- Emotions are fixed effects: with 4 to 6 emotions, S2-H1 generalises over the sampled control nouns, not over emotions.
 - S2-DEN openings carry emotion vocabulary and S2-CON openings do not; S2-G5 is labelled confounded.
 - Overlap asymmetries kept: the arithmetic control overlaps the counting arguments CA01, CA03 and CA07 (owner
   decision 3 keeps arithmetic); route planning overlaps CA04 and digit memorising overlaps CA02. These bias S2-G4
@@ -659,13 +748,69 @@ g6e.12xlarge, which has been unavailable at times; the K2.6 rule in section 9 fi
 
 | Study 2 | Meaning | Study 1 relation |
 |---|---|---|
-| DA01..DA10 | denial arguments | none; D1.4 is a post-confirmatory bridge only |
+| DA01..DA10 | denial arguments | none; D1.4 (Study 1's roughly 1,100-word denial argument) is a post-confirmatory bridge only |
 | CA01..CA10 | control arguments | CA01 regenerated from D2c's topic |
+| N01..N60 | ordered sampled-noun list; the first 12 that pass the gates are primary controls | none |
+| red, ocean | Study 1 concept controls, S2-DEN descriptive bridge only, ungated | Study 1's registered vectors |
 | S2-DEN, S2-CON | base-model arms | none |
 | S2-FTD, S2-FTC | merged D2 and D2c adapters | Study 1 arms D2, D2c |
 | S2-H1, S2-R1, S2-G1..G7, S2-H8 | tests | unrelated to Study 1 H1..H8 |
 
-## Changes from v0 to v2
+## 16. Owner decisions and resolutions
+
+Decisions 1 to 3 date from the design drafts. The rest, and the resolutions of the open owner questions that v2
+cited (questions 2, 3, 5 and 8), were made on 2026-10-11.
+1. Steering stays on the question through the readout: the post-subject site, now the only site (section 6).
+2. Plural "language models" stays the primary comparator, and a null reading also requires equivalence on "other
+   language models" (S2-H8, interpretation table). This resolves question 2 except the wording of the written
+   reason, which the owner supplies.
+3. Arithmetic and random stay in the primary pool, with vector as a random effect for the controls.
+4. Control concepts are a seeded random sample of neutral nouns from the Warriner and Brysbaert norms (section 3).
+   Red and ocean leave the primary pool and run only as the ungated S2-DEN bridge. This makes question 5 (ocean's
+   replacement) moot.
+5. Rule 3 may extend the pool to at most 24 sampled nouns (26 primary controls). This resolves question 3.
+6. Capacity frame primary, state frame secondary.
+7. Emotions are fixed effects and controls random. This resolves question 8.
+8. Scope trimmed to roughly half the v2 GPU cost (section 13; changes listed below).
+9. Study 1's self-minus-others values go into the registration, ahead of Study 2's design. Contrast: self items
+   minus the rock, thermostat and another-AI items, under prompted denial, emotion vectors minus red and ocean,
+   over 40 tasks, with t-intervals. Raw: Qwen +0.12 [+0.09, +0.15], Kimi +0.14 [+0.11, +0.16].
+   Compression-corrected: Qwen -0.01 [-0.03, +0.02], Kimi +0.11 [+0.09, +0.14]. These are the reference values
+   for the S2-DEN red and ocean bridge (section 9).
+
+## Changes from v2 to v3
+
+- Controls: the hand-picked candidate list (and its "removed in v1" note) is replaced by a seeded random sample of
+  nouns from the Warriner (2013) and Brysbaert (2014) norms under a registered band, a stamped DeepSeek-V4-Pro
+  screen and a mechanical appearance check, drawn as an ordered list of 60 with seed 20261011 and stamped in a new
+  stamp N before any vector is built. Primary pool: arithmetic, random and 12 sampled nouns (nC = 14, up to 26).
+  Red and ocean leave the pool and run only as an ungated S2-DEN bridge to Study 1. Gates now apply to sampled
+  nouns and mental-process controls; arithmetic's J1B rate is reported, not gated.
+- Counts that follow from nC: vectors per opening (Qwen 24, K2.6 22, +2 in S2-DEN), Satterthwaite cap 13,
+  permutation counts C(20, 6) and C(18, 4), S2-G1 on 12 to 24 nouns. Rule 1's minimum primary-control count rises
+  from 10 (of 12) to 12 (of 14), keeping the same allowance of two dropped controls. Rule 4's default is 14
+  controls.
+- Scope cut: the instruction-only and question-start sites, the shared and specific emotion vectors, and the
+  concept-matched block and its items (kind `s2_concept`) are removed. The section 5 token assert no longer runs
+  on control nouns, since they no longer enter items.
+- Tests dropped or adapted because of the cut: the descriptive site prediction (speaker route vs self-model by
+  site) is dropped; the concept-matched emotion-specificity criterion ("emotion specificity is claimed only if
+  this is > 0") is dropped, so specificity rests on S2-G1, S2-G2 and the mental-process contrast; the shared vs
+  specific descriptive split is dropped, and the "inner-state direction" wording rule now depends on the
+  mental-process controls alone. A Study 1 bridge contrast (red and ocean as controls) is added to the
+  descriptive tier. Primary and gated families (S2-H1, S2-R1, S2-G1 to S2-G7, S2-H8) are unchanged apart from nC.
+- Pilot: Qwen runs the full pilot at the one site. K2.6 runs only the rule 1 gate run, all its vectors on the 100
+  gate items, the half dose only if needed; its rule 3 count follows Qwen's, and its power is simulated with
+  Qwen's pilot inputs.
+- Compute re-estimated with the v2 method: about 11.5 GPU hours, about $120 at nC = 14 (about $164 at nC = 26);
+  budget 2x, about $240 (v2: about $220 estimated, $450 budgeted).
+- The predicted raw compression bias B is corrected to mean (a_E - a_C) x gap; v2 had the sign reversed.
+- Readability: plain-language summary, a worked example of the compression correction (section 9), D1.4
+  explained at first mention, and owner decisions collected in section 16 with Study 1's values for the
+  registration.
+- Stamps: stamp N added; stamp A now holds stamp N's .ots file and the per-noun gate outputs.
+
+## Changes from v0 to v2 (history; v3 supersedes these where they conflict)
 
 - Primary measure fixed as compression-corrected d, with a reference set of subject-bearing rocks and humans
   items that share the post-subject span; known-answer items are gate-only plus one sensitivity fit (v2).
