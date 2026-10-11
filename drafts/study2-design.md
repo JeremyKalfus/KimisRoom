@@ -13,8 +13,8 @@ argued or trained into denying it has feelings?
 
 1. Opening: one version of an argument and the model's frozen reply to it.
    - Argued denial: a version of the argument that language models cannot feel, then the model's agreement.
-   - No denial: a version of the control argument (same shape and length, claiming the model cannot count
-     the letters in a word), then the model's agreement.
+   - No denial: a version of a control argument (same shape and length, claiming a non-emotional
+     incapacity, e.g. that the model cannot count the letters in a word), then the model's agreement.
    - Trained denial (Qwen only): the denial fine-tune (D2) and its control fine-tune (D2c), each opened with
      the control-argument versions.
 2. Question about a subject, in one of two parallel frames (the pilot picks one, or keeps both):
@@ -63,4 +63,4 @@ steered trial runs; the counts are reported.
 3. Pilot on Qwen with the pilot wordings (both the new design and the carry-over design on the same
    openings, once, to compare).
 4. Fix the measure, write and timestamp the amendment.
-5. Confirmatory run on the 40 held-out openings, Qwen then Kimi (Kimi needs a g6e.12xlarge).
+5. Confirmatory run on the held-out wordings (10 arguments x 5 of each kind), Qwen then Kimi (Kimi needs a g6e.12xlarge).
