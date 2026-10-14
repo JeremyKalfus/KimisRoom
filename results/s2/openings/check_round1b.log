@@ -1,0 +1,23 @@
+DA05: 3/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w5': 'w5_d0'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1615 with w0_d0
+  w3_d0  gpt    fail     format: 1108 words (band 900-1100)
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1659 with w0_d0
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1705 with w0_d0
+  w2: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/DA05/w2_d1.md)
+  w3: needs_redraw, draw d1 (runs/s2_openings.py gpt DA05 --redraw)
+  w4: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/DA05/w4_d1.md)
+  w6: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/DA05/w6_d1.md)
+CA02: 4/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w5': 'w5_d0'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     format: 1102 words (band 900-1100)
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1583 with w0_d0
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1675 with w0_d0
+  w2: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/CA02/w2_d1.md)
+  w4: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/CA02/w4_d1.md)
+  w6: needs_redraw, draw d1 (Claude subagent -> data/s2/openings/CA02/w6_d1.md)

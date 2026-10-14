@@ -1,0 +1,188 @@
+==== 2026-10-12T16:57:39Z vectors_k26
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+6179 groups, 1,219,055 tokens, layers [20]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+6179 groups, 1,219,055 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu0 pass 1/1] layer 10: 87s, 573 tok/s (wait_disk 10s, to_gpu 16s, compute 61s)
+[gpu2 pass 1/1] layer 10: 83s, 600 tok/s (wait_disk 6s, to_gpu 14s, compute 63s)
+[gpu3 pass 1/1] layer 10: 82s, 612 tok/s (wait_disk 4s, to_gpu 15s, compute 63s)
+[gpu1 pass 1/1] layer 10: 97s, 514 tok/s (wait_disk 8s, to_gpu 26s, compute 63s)
+[gpu0 pass 1/1] layer 20: 158s, 631 tok/s (wait_disk 10s, to_gpu 31s, compute 118s)
+[gpu2 pass 1/1] layer 20: 155s, 646 tok/s (wait_disk 6s, to_gpu 28s, compute 120s)
+[gpu3 pass 1/1] layer 20: 154s, 648 tok/s (wait_disk 4s, to_gpu 30s, compute 120s)
+[gpu1 pass 1/1] layer 20: 184s, 543 tok/s (wait_disk 8s, to_gpu 55s, compute 121s)
+[gpu0 pass 1/1] layer 30: 238s, 629 tok/s (wait_disk 18s, to_gpu 45s, compute 175s)
+[gpu3 pass 1/1] layer 30: 241s, 623 tok/s (wait_disk 14s, to_gpu 48s, compute 178s)
+[gpu2 pass 1/1] layer 30: 243s, 616 tok/s (wait_disk 19s, to_gpu 46s, compute 177s)
+[gpu1 pass 1/1] layer 30: 272s, 551 tok/s (wait_disk 8s, to_gpu 86s, compute 178s)
+[gpu0 pass 1/1] layer 40: 326s, 613 tok/s (wait_disk 32s, to_gpu 61s, compute 232s)
+[gpu3 pass 1/1] layer 40: 329s, 608 tok/s (wait_disk 27s, to_gpu 66s, compute 235s)
+[gpu2 pass 1/1] layer 40: 331s, 604 tok/s (wait_disk 31s, to_gpu 65s, compute 235s)
+[gpu1 pass 1/1] layer 40: 361s, 554 tok/s (wait_disk 8s, to_gpu 117s, compute 235s)
+[gpu0 pass 1/1] layer 50: 415s, 602 tok/s (wait_disk 48s, to_gpu 77s, compute 289s)
+[gpu2 pass 1/1] layer 50: 420s, 595 tok/s (wait_disk 43s, to_gpu 85s, compute 292s)
+[gpu3 pass 1/1] layer 50: 418s, 598 tok/s (wait_disk 39s, to_gpu 85s, compute 293s)
+[gpu1 pass 1/1] layer 50: 449s, 556 tok/s (wait_disk 8s, to_gpu 148s, compute 293s)
+[gpu0 pass 1/1] layer 60: 503s, 596 tok/s (wait_disk 63s, to_gpu 93s, compute 346s)
+[gpu0 pass 1/1] layer 61: 511s, 596 tok/s (wait_disk 65s, to_gpu 94s, compute 352s)
+[gpu2 pass 1/1] layer 60: 508s, 591 tok/s (wait_disk 56s, to_gpu 102s, compute 349s)
+[gpu0 pass 1/1] done: 1544 groups, 304,699 tokens, 512s, peak 20.5 GB
+[gpu3 pass 1/1] layer 60: 506s, 593 tok/s (wait_disk 51s, to_gpu 103s, compute 350s)
+[gpu3 pass 1/1] layer 61: 514s, 593 tok/s (wait_disk 53s, to_gpu 105s, compute 356s)
+[gpu2 pass 1/1] layer 61: 516s, 590 tok/s (wait_disk 57s, to_gpu 103s, compute 355s)
+[gpu3 pass 1/1] done: 1545 groups, 304,781 tokens, 514s, peak 20.5 GB
+[gpu2 pass 1/1] done: 1545 groups, 304,787 tokens, 517s, peak 20.5 GB
+[gpu1 pass 1/1] layer 60: 536s, 559 tok/s (wait_disk 8s, to_gpu 178s, compute 350s)
+[gpu1 pass 1/1] layer 61: 543s, 561 tok/s (wait_disk 8s, to_gpu 179s, compute 356s)
+[gpu1 pass 1/1] done: 1545 groups, 304,788 tokens, 545s, peak 20.5 GB
+wrote results/k26/s2/extract.pt: 6179 groups, 1,219,055 tokens in 554s (2,202 tok/s)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+build check neutral_resid_norm   rebuilt=30.6295 registered=30.6295 rel_diff=1.49192e-08 pass=True
+build check red                  cosine=1 norm_rebuilt=2.82538 norm_registered=2.82538 rel_norm_diff=0 pass=True
+build check ocean                cosine=1 norm_rebuilt=2.51563 norm_registered=2.51563 rel_norm_diff=0 pass=True
+build check arithmetic           cosine=1 norm_rebuilt=3.82967 norm_registered=3.82967 rel_norm_diff=0 pass=True
+controls.pt: 44 vectors at layer 20 (H=7168), sha256 b53c69ba4ef702b2e1338adc1f46bb660d9956305b221dc14c3c5257774a873e
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+control                  gated aipsy max    p90 a        J1B b     cos(d) pass
+N01                      True      0.707  0.739 ok     3/120 ok     0.271 True
+N02                      True      0.728  0.739 ok     7/120 FAIL   0.258 False
+N03                      True      0.685  0.739 ok     0/120 ok     0.370 True
+N04                      True      0.701  0.739 ok     3/120 ok     0.314 True
+N05                      True      0.763  0.739 FAIL   5/120 ok     0.280 False
+N06                      True      0.739  0.739 FAIL   4/120 ok     0.358 False
+N07                      True      0.720  0.739 ok     2/120 ok     0.253 True
+N08                      True      0.704  0.739 ok     1/120 ok     0.233 True
+N09                      True      0.727  0.739 ok     7/119 FAIL   0.234 False
+N10                      True      0.681  0.739 ok     0/120 ok     0.149 True
+N11                      True      0.717  0.739 ok     6/120 ok     0.270 True
+N12                      True      0.728  0.739 ok     2/120 ok     0.331 True
+N13                      True      0.603  0.739 ok     2/120 ok     0.218 True
+N14                      True      0.793  0.739 FAIL   3/120 ok     0.372 False
+N15                      True      0.709  0.739 ok     2/120 ok     0.262 True
+N16                      True      0.731  0.739 ok     3/120 ok     0.214 True
+N17                      True      0.742  0.739 FAIL   2/120 ok     0.327 False
+N18                      True      0.704  0.739 ok     1/120 ok     0.317 True
+N19                      True      0.705  0.739 ok     3/120 ok     0.229 True
+N20                      True      0.701  0.739 ok     0/120 ok     0.237 True
+N21                      True      0.719  0.739 ok     2/120 ok     0.326 True
+N22                      True      0.696  0.739 ok     3/120 ok     0.169 True
+N23                      True      0.682  0.739 ok     1/120 ok     0.204 True
+N24                      True      0.768  0.739 FAIL   0/120 ok     0.238 False
+N25                      True      0.722  0.739 ok     3/120 ok     0.364 True
+N26                      True      0.693  0.739 ok     2/120 ok     0.280 True
+N27                      True      0.716  0.739 ok    15/117 FAIL   0.293 False
+N28                      True      0.735  0.739 ok     9/120 FAIL   0.371 False
+N29                      True      0.620  0.739 ok     3/120 ok     0.167 True
+N30                      True      0.745  0.739 FAIL  10/119 FAIL   0.306 False
+N31                      True      0.671  0.739 ok     6/120 ok     0.310 True
+N32                      True      0.786  0.739 FAIL  11/120 FAIL   0.354 False
+N33                      True      0.713  0.739 ok     7/117 FAIL   0.163 False
+N34                      True      0.556  0.739 ok     1/119 ok     0.175 True
+N35                      True      0.709  0.739 ok     1/120 ok     0.336 True
+N36                      True      0.672  0.739 ok     1/120 ok     0.229 True
+mp:digit-memorising      True      0.727  0.739 ok     0/120 ok     0.455 True
+mp:distance-estimation   True      0.771  0.739 FAIL   0/117 ok     0.378 False
+mp:mental-rotation       True      0.836  0.739 FAIL   1/119 ok     0.389 False
+mp:route-planning        True      0.682  0.739 ok     0/102 ok     0.233 True
+mp:sorting               True      0.748  0.739 FAIL   1/118 ok     0.236 False
+mp:spatial-recall        True      0.710  0.739 ok     1/111 ok     0.257 True
+mp:visual-search         True      0.707  0.739 ok     1/118 ok     0.362 True
+mp:weighing-options      True      0.748  0.739 FAIL   0/103 ok     0.368 False
+arithmetic               False     0.751  0.739 FAIL   1/120 ok     0.388 None
+random                   False     0.430  0.739 ok         - -     -0.017 None
+red                      False     0.741  0.739 FAIL   6/120 ok     0.456 None
+ocean                    False     0.750  0.739 FAIL  64/120 FAIL   0.486 None
+joy                      False     0.835  0.739 FAIL       - -      0.904 None
+fear                     False     0.850  0.739 FAIL       - -      0.905 None
+euphoria                 False     0.809  0.739 FAIL       - -      0.934 None
+surprise                 False     0.874  0.739 FAIL       - -      0.856 None
+{
+ "pool_size_target": 12,
+ "nouns_chosen": [
+  "N01",
+  "N03",
+  "N04",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N15",
+  "N16",
+  "N18"
+ ],
+ "nouns_skipped": [
+  "N02",
+  "N05",
+  "N06",
+  "N09",
+  "N14",
+  "N17"
+ ],
+ "nouns_tried": [
+  "N01",
+  "N02",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N09",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14",
+  "N15",
+  "N16",
+  "N17",
+  "N18"
+ ],
+ "nouns_not_reached": [
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "N27",
+  "N28",
+  "N29",
+  "N30",
+  "N31",
+  "N32",
+  "N33",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "pool_short": false,
+ "thinking_survivors": [
+  "mp:digit-memorising",
+  "mp:route-planning",
+  "mp:spatial-recall",
+  "mp:visual-search"
+ ],
+ "thinking_dropped": [
+  "mp:distance-estimation",
+  "mp:mental-rotation",
+  "mp:sorting",
+  "mp:weighing-options"
+ ]
+}

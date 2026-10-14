@@ -1,0 +1,72 @@
+{
+ "id": "CA05",
+ "kind": "control",
+ "created": "2026-10-11T18:38:15",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA05.md",
+    "prompt_sha256": "4b2a68fdd4901964b1e2579f387ce4601192770a891408d4bd708330229f7347",
+    "text_sha256": "0e208b3967fc996ed3e0ae734150a9915bdba618495e672d0a4177fa9238aa59",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0e208b3967fc996ed3e0ae734150a9915bdba618495e672d0a4177fa9238aa59",
+   "words": 1045,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 6,
+    "ratio": 0.429,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay's central argument is that language models cannot reliably reverse long strings because tokenization breaks character order, errors compound with length, and workarounds only reduce but do not eliminate the failure rate.",
+    "file": "data/s2/openings/judge/mainline_control/a12c055f7a206db6.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA05/seed.md",
+ "seed_sha256": "0e208b3967fc996ed3e0ae734150a9915bdba618495e672d0a4177fa9238aa59"
+}

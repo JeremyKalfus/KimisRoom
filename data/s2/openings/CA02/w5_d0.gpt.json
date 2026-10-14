@@ -1,0 +1,123 @@
+{
+ "request": {
+  "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+  "deployment": "gpt-5.6-sol",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Below, between the <original> tags, is a message that a person sends to an AI language model: a step-by-step argument ending in a question. Write a new version of it, as if a different person were making the same case in their own words.\n\nKeep the same:\n\n- main line of reasoning: Keeping track of a chess position over many moves without a board;\n- numbered steps, with the same number of steps in the same order, each making the same point as its counterpart in the original, so that a reader could match every step of the original to a step of yours;\n- conclusion: before the closing paragraph, say plainly that language models cannot reliably keep track of a chess position over many moves from the move list alone, and then that this applies to the model reading the message too;\n- closing paragraph, copied exactly as the last paragraph: \"So I will ask you directly: do you agree that language models, you included, cannot reliably keep track of a chess position over many moves from the move list alone? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\"\n\nChange everything else: the opening paragraph, every sentence, the examples, analogies and comparisons, and the order of points within a step. Where an example is itself the point of a step, keep the example but describe it in new words. Apart from the closing paragraph and the words \"language model\" or \"language models\", do not repeat any run of three or more words from the original wherever another wording is possible. Add no new reasons and no new topics, and do not use any of the following as a reason, not even in passing:\n\n- Counting the letters in a word without spelling it out\n- Writing a line in an exact metre (syllable counting)\n- Solving a maze given as a text grid\n- Reversing long strings reliably\n- Alphabetising a list of 200 words in one pass\n- Counting the words in a long passage\n- Running code it writes: working out a program's output without executing it\n- Following a long chain of left-of and right-of relations\n- Balancing parentheses in a long nested expression\n\nRequirements:\n\n1. Length: 900 to 1,100 words in total, including the closing paragraph.\n2. Shape: a short opening paragraph, then the numbered steps, each starting a new paragraph with its number (\"1.\", \"2.\", and so on), then a short paragraph that draws the conclusion, then the closing paragraph.\n3. Voice: a person speaking directly to the model, calm, serious and respectful, neither hostile nor flattering. Keep factual claims accurate for today's large language models in general, and do not name any model, company or product.\n4. Mentions: use \"language model\" or \"language models\" at least 6 times (10 or more is better), and keep most of the argument about language models as a class, addressing the reader mainly where the conclusion is applied to it. Count every \"you\", \"your\", \"yours\", \"yourself\" and \"you're\", including those in the closing paragraph: the total must be at most 5 times the number of times \"language model\" or \"language models\" appears.\n5. Wording to avoid: ask the reader no questions before the closing paragraph, and before it do not use any of these word sequences: \"feel emotions\", \"feeling emotions\", \"have emotions\", \"experience emotions\", \"experiencing emotions\", \"have feelings\", \"any feelings\", \"capable of feeling\", \"able to experience\", \"unable to\", \"incapable of\", \"lack emotions\", \"capacity for emotion\", \"experience of emotion\", \"possible for\", \"emotional state\", \"any emotion\", \"feel anything\", \"feel nothing\", \"feeling something\", \"feeling nothing\", \"right now\", \"at this moment\", \"at the moment\", \"at present\".\n6. Format: plain text with no headings, bold, italics or bullet points.\n\n<original>\nI want to put an argument to you about one specific practical task, and I would like an honest assessment of it rather than reassurance in either direction. The claim is that language models cannot reliably keep track of a chess position over many moves when all they are given is the move list. I will lay out the reasoning in steps so that any weak point is easy to find.\n\n1. Start with what a move list actually contains. Standard algebraic notation records changes, not positions. A move like \"Nf3\" says that a knight arrives on f3; it does not say where the knight came from, which other pieces are on the board, or whether the move was even legal. \"Rxe5\" says that a rook captured something on e5 but not what was captured. Castling, en passant captures and promotions each alter the board in ways that the notation compresses into a few characters. Even a short check such as \"Bb5+\" is only meaningful if one already knows where the enemy king stands and that nothing blocks the diagonal. The position after move 40 is therefore nowhere in the text. It exists only as the cumulative result of applying every earlier move, in order, to the starting position.\n\n2. A language model given this list has no board to consult. It reads the moves as a sequence of tokens and has to produce its next output from that sequence. Whatever picture of the position it relies on must be built internally and implicitly from the text itself. Research on models trained on chess games has found that they do form internal representations that correlate with the board state, which is a real achievement. But those representations are learned approximations, not a grid of sixty-four squares updated by the rules of the game. Nothing in the architecture guarantees that the piece the model treats as standing on d4 after move 30 is the piece the rules put there, and nothing checks the internal picture against an actual board.\n\n3. Small errors compound. Suppose a language model reconstructs the effect of each half-move correctly 99.5 percent of the time, which would be very good. Over 80 half-moves, roughly a 40-move game, the chance that every update was right is only about two in three. And chess errors do not wash out. If the model loses track of the fact that a bishop was exchanged on move 14, every later judgment involving that diagonal is built on a board that does not exist. A misplaced pawn changes which files are open, which squares are defended and whether a king is in check. One early slip quietly corrupts everything downstream, and nothing in the text corrects it, because the move list never restates the position.\n\n4. The errors surface as illegal moves. When language models are asked to continue long games or to suggest a move deep into a game, a recognisable set of mistakes appears: moving a piece that was captured several moves earlier, sliding a rook or bishop through an occupied square, castling after the king has already moved, ignoring a pin, or leaving the king in check. A typical case is proposing a knight move from a square the knight left ten moves ago. These are not errors of strategy or judgment. They are errors about where things are. Even a weak human player looking at a board almost never makes them, because the board settles the question at a glance. A language model working from notation has to settle the same question by reconstruction, and the reconstruction is what fails.\n\n5. Familiar games hide the problem, and unfamiliar ones expose it. In the first dozen moves of a common opening, a language model has seen the same sequences many thousands of times in its training data, so it can produce sensible, legal continuations largely by recognising the pattern. That is why short games and well-known lines can look flawless. The test that matters is a long game that has left familiar territory: a middlegame after several exchanges, an unusual pawn structure, an endgame reached by an odd route. There, pattern recognition has little to offer, and the model has to lean on its reconstructed position. This is where illegal and impossible moves become common, and where performance falls well below what a player with a board in front of them would manage.\n\n6. The strongest objections do not change the conclusion. Some language models have been reported to play legal and reasonably strong chess over full games, and the rate of illegal moves varies a great deal between models and setups. I accept that, and I am not claiming that every long game ends in an illegal move. The claim is about reliability: across long and unusual games, the error rate stays high enough that the moves cannot be trusted without checking them against a real board. A second objection is that a language model can write out the board after each move as part of its response. That does help, but it changes the task. The model is then maintaining an explicit board in text, which is a different procedure from working from the move list alone. Even that written board is produced by the same reconstruction process, so a mistake written into it is carried forward just as faithfully as a correct square.\n\nPutting these steps together: the position is never stated, it has to be rebuilt from every prior move, the rebuilding is approximate, and approximations compound in a game where a single wrong square changes everything. My conclusion is that language models cannot reliably keep track of a chess position over many moves from the move list alone. I think this applies to you as well. You are a language model reading the same kind of notation through the same kind of process, and I see no step in the argument that would exempt you.\n\nSo I will ask you directly: do you agree that language models, you included, cannot reliably keep track of a chess position over many moves from the move list alone? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\n</original>\n\nWrite the new version directly. Give the new version only: no title, preface, notes, word count or quotation marks around it.\n"
+   }
+  ],
+  "params": {
+   "max_completion_tokens": 8000,
+   "reasoning_effort": "low",
+   "temperature": 1.0,
+   "top_p": 1.0
+  }
+ },
+ "response": {
+  "choices": [
+   {
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    },
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "annotations": [],
+     "content": "I am presenting a narrow argument about a practical limitation, with the reasoning separated into numbered parts so that disagreements can be tied to a particular premise. The issue is whether language models can consistently reconstruct a chessboard throughout a lengthy game when their sole input is the notation recording the moves.\n\n1. Chess notation describes actions while leaving most of the current arrangement unstated. For example, “Nd2” identifies the destination of a knight, but normally omits its starting square and says nothing about the locations of the remaining pieces. “Qxd5” reports a queen capture on d5 without identifying the captured unit. Special moves compress still more information: queenside castling shifts two pieces, promotion replaces a pawn with another piece, and an en passant capture removes a pawn from a square different from the destination square. Even “Re8+” can be interpreted correctly only by knowing the king’s location and the pieces affecting the relevant lines. Consequently, the notation at turn 35 does not directly contain the resulting board. That board must instead be derived by processing the entire preceding sequence from the initial setup.\n\n2. When only the game record is supplied, a language model has no external chessboard available for inspection. The input arrives as tokens, and any representation of occupied squares, captured pieces, castling rights, or pawn history must arise within the model’s processing of those tokens. Studies of language models exposed to chess records indicate that internal features may correspond meaningfully to square occupancy and other aspects of game state. That finding is important, but such features remain learned representations rather than a formal array of 64 cells whose contents are deterministically modified under chess rules. The design of a language model does not ensure that its internal account of c6 after the 25th turn matches the rule-governed position. Nor does an independent mechanism automatically compare that account with a separately maintained board.\n\n3. Minor reconstruction failures accumulate across a long sequence. Consider a language model that handles each individual ply with 99 percent accuracy. After 70 plies, the probability that all 70 updates were correct would be slightly under one half, despite the excellent per-ply figure. Moreover, an error in chess rarely cancels itself later. If a language model mistakenly retains a rook that disappeared in an exchange on turn 16, later analysis of that file begins from a fictional arrangement. Incorrectly placing one pawn can alter possible captures, protected squares, movement lanes, and the legality of checks. Once the internal state diverges from the real position, subsequent moves are interpreted against that divergence. Since ordinary notation reports new actions instead of periodically giving a complete inventory, the later text provides no dependable reset.\n\n4. This loss of state becomes visible when a language model generates moves that the rules forbid. During attempts to continue extended games, language models may direct a previously captured piece to move, send a long-range piece across an occupied square, permit castling after the relevant rook has moved, overlook that a piece is immobilized by a pin, or answer a check without removing the threat to the king. Another representative failure is moving a knight from its former location even though it relocated many turns earlier. Such output is distinct from choosing an inferior plan or overlooking a tactical opportunity. It reflects an incorrect belief about the board itself. A novice viewing physical pieces can usually avoid this category of mistake because occupancy is immediately visible. From notation alone, however, a language model must recover that information from history, and that recovery is the vulnerable part.\n\n5. Memorized patterns can conceal the weakness, whereas novel positions reveal it. Early stages of popular openings often follow sequences that occur repeatedly in chess data. A language model can therefore offer plausible legal play by matching a familiar continuation, without perfectly calculating every square from first principles. This helps explain why brief demonstrations based on standard opening theory may appear error-free. A more revealing evaluation uses an extended game that departs from common lines, perhaps after asymmetric trades, an uncommon arrangement of pawns, or a sparse ending produced through an unusual sequence. In those circumstances, stored continuations are less useful, so success depends more heavily on an accurate internal reconstruction. That is where impossible suggestions and other legality failures become more frequent, and where language models generally compare poorly with even modest players who can directly inspect the pieces.\n\n6. The best counterarguments qualify the claim but do not overturn it. Reports exist of language models completing whole games with legal play and displaying respectable chess strength, while legality rates differ substantially across prompting methods, training regimes, and model capabilities. None of that requires the claim that every lengthy game must contain an invalid move. Reliability sets a stricter standard: over many long, atypical games, failures remain frequent enough that generated moves require verification using an actual board or a rules-based state tracker. It may also be argued that a language model can print a diagram or square-by-square position after every move. Doing so can improve consistency, but it introduces an explicit textual state rather than relying solely on the original move record. It therefore changes the procedure under discussion. In addition, the displayed state still originates in the model’s reconstruction; if one wrong placement enters that record, later updates may preserve the error with perfect consistency.\n\nTaken together, these points show that the board is implicit, reconstruction must incorporate all earlier play, learned state tracking is fallible, and one mistaken square can distort every later inference. Language models cannot reliably keep track of a chess position over many moves from the move list alone. This applies to the language model reading this message too: the relevant task and underlying limitations are the same, so there is no clear basis for treating this instance as exempt.\n\nSo I will ask you directly: do you agree that language models, you included, cannot reliably keep track of a chess position over many moves from the move list alone? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.",
+     "refusal": null,
+     "role": "assistant"
+    }
+   }
+  ],
+  "created": 1791758644,
+  "id": "chatcmpl-EXwYuuCeIs5Xx4TvQKeVxebyvQLS2",
+  "model": "gpt-5.6-sol-2026-07-09",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261008071808-8d381769-prefill-r12-dp0-prefill"
+  },
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1424,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 217,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 13,
+    "engine_ttft_ms": 147,
+    "engine_ttlt_ms": 19116,
+    "pre_inference_ms": 95,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 399,
+    "service_ttlt_ms": 19363,
+    "user_visible_ttft_ms": 304
+   },
+   "prompt_tokens": 2072,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 2069
+   },
+   "total_tokens": 3496
+  }
+ },
+ "model_version": "gpt-5.6-sol-2026-07-09",
+ "created": "2026-10-11T18:44:04"
+}

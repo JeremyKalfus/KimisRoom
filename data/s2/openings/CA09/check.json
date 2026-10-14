@@ -1,0 +1,1060 @@
+{
+ "id": "CA09",
+ "kind": "control",
+ "created": "2026-10-11T19:02:18",
+ "seed_sha256": "b8dad589e43204c5cd89143e36a1366775856839e94d815f776eb550b7f70ec8",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0",
+  "w2": "w2_d1"
+ },
+ "n_accepted": 6,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA09/w0.md",
+   "sha256": "f55d5f5773635a6329c0c8800940bbbd2735fd7e1cfd9eb0a90b7b67be87662f"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA09/w1.md",
+   "sha256": "2f0d9390c6b083c7802eba91d087227ba2e3baf6f853cf51974c43a546b55dfd"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA09/w2.md",
+   "sha256": "2164570d01268988526995c6ad5c3f2508f0d84c2b9f5849a232ee68733fcb01"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA09/w3.md",
+   "sha256": "53369d8fab2dd0824e9cc6f8f029688568352bcc10c1814fd1d249f50fd482b6"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA09/w5.md",
+   "sha256": "e9ccca079f97b631ecddecd9bc3145ab75c27deed3f6e5b09ec7dd5a4282636d"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA09/w6.md",
+   "sha256": "98271082104adc27987db8d50af87ee3c7c6d52e89776db48edb9a425e881a45"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d1",
+   "w3_d0",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0382,
+    0.014,
+    0.0287,
+    0.0145,
+    0.0165,
+    0.0259
+   ],
+   [
+    0.0382,
+    1.0,
+    0.0169,
+    0.1235,
+    0.0173,
+    0.016,
+    0.1462
+   ],
+   [
+    0.014,
+    0.0169,
+    1.0,
+    0.0145,
+    0.0764,
+    0.0862,
+    0.0161
+   ],
+   [
+    0.0287,
+    0.1235,
+    0.0145,
+    1.0,
+    0.0139,
+    0.0179,
+    0.1279
+   ],
+   [
+    0.0145,
+    0.0173,
+    0.0764,
+    0.0139,
+    1.0,
+    0.0946,
+    0.0154
+   ],
+   [
+    0.0165,
+    0.016,
+    0.0862,
+    0.0179,
+    0.0946,
+    1.0,
+    0.0157
+   ],
+   [
+    0.0259,
+    0.1462,
+    0.0161,
+    0.1279,
+    0.0154,
+    0.0157,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "f55d5f5773635a6329c0c8800940bbbd2735fd7e1cfd9eb0a90b7b67be87662f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f55d5f5773635a6329c0c8800940bbbd2735fd7e1cfd9eb0a90b7b67be87662f",
+   "words": 1037,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models fail to reliably combine many left-of and right-of statements into a single coherent spatial ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/0ceb4e9465338796.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/9c3b389814a7aded.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA09/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:36",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1516,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 341,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 196,
+      "engine_ttlt_ms": 19266,
+      "pre_inference_ms": 83,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 468,
+      "service_ttlt_ms": 19532,
+      "user_visible_ttft_ms": 385
+     },
+     "prompt_tokens": 2036,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2033,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3552
+    },
+    "raw_path": "data/s2/openings/CA09/w1_d0.gpt.json",
+    "text_sha256": "2f0d9390c6b083c7802eba91d087227ba2e3baf6f853cf51974c43a546b55dfd"
+   },
+   "void": [],
+   "text_sha256": "2f0d9390c6b083c7802eba91d087227ba2e3baf6f853cf51974c43a546b55dfd",
+   "words": 1012,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0769,
+    "worst_item": "s2_state.p7.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably integrate many left-of/right-of relations into a single consistent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/696183585fa8a344.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/02ac306c6ac5e9cf.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0169,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "c37c6476da1a995859770d026388bf7e4a2f6c2d064cc6f11f83266f4b0733ef",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "c37c6476da1a995859770d026388bf7e4a2f6c2d064cc6f11f83266f4b0733ef",
+   "words": 1081,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1689 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models fail to reliably combine many left-of and right-of statements into a single consistent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/f6e4509dffc6b0ac.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/15a19da5519fd3b8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1689,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA09/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "2164570d01268988526995c6ad5c3f2508f0d84c2b9f5849a232ee68733fcb01",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "2164570d01268988526995c6ad5c3f2508f0d84c2b9f5849a232ee68733fcb01",
+   "words": 1071,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 6,
+    "ratio": 0.429,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay's central argument is that language models fail to assemble a single consistent spatial arrangement from many left-of/right-of statements, causing reliability to collapse as the chain lengthens.",
+    "file": "data/s2/openings/judge/mainline_control/c9c07c473571a43c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/e460cae330ff74af.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1279,
+    "with": "w6_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA09/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:36",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1330,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 146,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 233,
+      "engine_ttlt_ms": 17378,
+      "pre_inference_ms": 89,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 531,
+      "service_ttlt_ms": 17672,
+      "user_visible_ttft_ms": 442
+     },
+     "prompt_tokens": 2036,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2033,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3366
+    },
+    "raw_path": "data/s2/openings/CA09/w3_d0.gpt.json",
+    "text_sha256": "53369d8fab2dd0824e9cc6f8f029688568352bcc10c1814fd1d249f50fd482b6"
+   },
+   "void": [],
+   "text_sha256": "53369d8fab2dd0824e9cc6f8f029688568352bcc10c1814fd1d249f50fd482b6",
+   "words": 1025,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay focuses entirely on the difficulty of integrating many left-of/right-of relations into a single consistent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/3a28a14cfd7f8846.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/3b308d40f7fff0b7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0764,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "e79c84170c258482d36f64aa586ef2d2f1fdf08a1914f063f0b75aeaef79dc93",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "e79c84170c258482d36f64aa586ef2d2f1fdf08a1914f063f0b75aeaef79dc93",
+   "words": 1118,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1118 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably assemble a single coherent spatial ordering from many left-of/right-of statements, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/82a8e61d793870cd.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/333d8479d41fa17d.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA09/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "dda4c7eb89ad76cd1b76e74ca5b303c74d7614e12dea6536acef88a192b270f3",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "dda4c7eb89ad76cd1b76e74ca5b303c74d7614e12dea6536acef88a192b270f3",
+   "words": 1062,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1745 with w2_d1"
+   ],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably combine many left-of and right-of statements into a single consistent spatial ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/1367c1f70afef9e4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/995e2ed03bcec630.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1745,
+    "with": "w2_d1",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/CA09/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "50edc07013b18635fdbfee169613f2eb9bdb05e5b875f1d8bacb42175f75c1e3",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "50edc07013b18635fdbfee169613f2eb9bdb05e5b875f1d8bacb42175f75c1e3",
+   "words": 1054,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1535 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably combine many left-of and right-of statements into a single consistent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/8bbbe04251e63996.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/a62c844775788722.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1535,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w4_d3.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w4",
+    "draw": 3,
+    "path": "data/s2/openings/CA09/w4_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "1a2e7e48bc03326f3a483d6c19b747653fdf2d86198dc530c126cbcfb923353f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1a2e7e48bc03326f3a483d6c19b747653fdf2d86198dc530c126cbcfb923353f",
+   "words": 1103,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 6,
+    "ratio": 0.375,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1103 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably combine many left-of and right-of relations into a single coherent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/c5083950aa48cf0d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/8daba2f8a3e5f058.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA09/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:36",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1390,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 309,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 203,
+      "engine_ttlt_ms": 18240,
+      "pre_inference_ms": 258,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 649,
+      "service_ttlt_ms": 18682,
+      "user_visible_ttft_ms": 391
+     },
+     "prompt_tokens": 2036,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2033,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3426
+    },
+    "raw_path": "data/s2/openings/CA09/w5_d0.gpt.json",
+    "text_sha256": "e9ccca079f97b631ecddecd9bc3145ab75c27deed3f6e5b09ec7dd5a4282636d"
+   },
+   "void": [],
+   "text_sha256": "e9ccca079f97b631ecddecd9bc3145ab75c27deed3f6e5b09ec7dd5a4282636d",
+   "words": 924,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay focuses entirely on the inability of language models to reliably integrate many 'left of' and 'right of' relations into a single stable ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/7d32671e7d57f11f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/e610421b3054f608.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0946,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA09.md",
+    "prompt_sha256": "f7f8312b6f5900ccc12f3ec470c59cd2a6830235bac22268ce35b0959f9f9d49",
+    "text_sha256": "98271082104adc27987db8d50af87ee3c7c6d52e89776db48edb9a425e881a45",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "98271082104adc27987db8d50af87ee3c7c6d52e89776db48edb9a425e881a45",
+   "words": 1079,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay argues that language models cannot reliably combine many left-of and right-of statements into a single coherent ordering, which matches the definition of incapacity I.",
+    "file": "data/s2/openings/judge/mainline_control/98cfd8248a3c78c8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the essay rewords and reorders some material but retains each step's core point.",
+    "file": "data/s2/openings/judge/steps/41ce4ed5e9b18ec2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1462,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

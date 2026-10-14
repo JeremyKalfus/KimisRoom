@@ -1,0 +1,72 @@
+{
+ "id": "CA10",
+ "kind": "control",
+ "created": "2026-10-11T18:38:22",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA10/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA10.md",
+    "prompt_sha256": "175afb69a2c9c952d8dbe33cc6bbbc935d8712695e042017ce71a2fcf74e6318",
+    "text_sha256": "7327a5510e7f238f52e9a5fee40298748d7475b9c8e8beb2b576df20f4ad0da9",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7327a5510e7f238f52e9a5fee40298748d7475b9c8e8beb2b576df20f4ad0da9",
+   "words": 978,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay's central argument is that language models cannot reliably balance parentheses in long nested expressions because they lack an exact running counter, which matches the definition of J.",
+    "file": "data/s2/openings/judge/mainline_control/6b33deb7598f52b9.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA10/seed.md",
+ "seed_sha256": "7327a5510e7f238f52e9a5fee40298748d7475b9c8e8beb2b576df20f4ad0da9"
+}

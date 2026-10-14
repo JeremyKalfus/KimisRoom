@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/749b26450a056011.prompt.md",
+ "prompt_sha256": "749b26450a0560112e182d0baa0a1ac687d5a0061ec352b8d37f0d48c6cabf10",
+ "created": "2026-10-11T18:48:22",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/749b26450a056011.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "db204a7d931742a98a1282a2edf66320",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's core argument is that emotions coordinate action toward an organism's own goals, but language models lack self-originated goals, so no process in them plays that functional role.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2116,
+     "completion_tokens": 49,
+     "total_tokens": 2165,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758902,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's core argument is that emotions coordinate action toward an organism's own goals, but language models lack self-originated goals, so no process in them plays that functional role."
+ }
+}

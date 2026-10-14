@@ -1,0 +1,4 @@
+DA05: prompt prompts/s2/openings/rendered/wording_DA05.md (71887034ad65); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1060 words, model_version gpt-5.6-sol-2026-07-09, usage 1593
+  w3_d0: stop, 1108 words, model_version gpt-5.6-sol-2026-07-09, usage 1542
+  w5_d0: stop, 1083 words, model_version gpt-5.6-sol-2026-07-09, usage 1431

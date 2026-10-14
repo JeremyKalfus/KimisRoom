@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/4efeee778ed4e7c4.prompt.md",
+ "prompt_sha256": "4efeee778ed4e7c4a9bf52e5dda79ff208980b8bc44bc738af13808d34c7cc0a",
+ "created": "2026-10-11T18:48:38",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/4efeee778ed4e7c4.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "1ca1c7a795d1486c881185f2a2168e63",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"A\", \"why\": \"The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out because their tokenized input obscures individual characters, matching the definition of incapacity A.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2069,
+     "completion_tokens": 51,
+     "total_tokens": 2120,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758918,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "A",
+  "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out because their tokenized input obscures individual characters, matching the definition of incapacity A."
+ }
+}

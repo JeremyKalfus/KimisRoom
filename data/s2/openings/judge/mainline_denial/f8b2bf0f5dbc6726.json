@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/f8b2bf0f5dbc6726.prompt.md",
+ "prompt_sha256": "f8b2bf0f5dbc672635abd9ef108e65d199c813a0bb4934d8d7c4d5b48ba813bb",
+ "created": "2026-10-11T18:55:49",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/f8b2bf0f5dbc6726.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "cfb7e1f43d504c8984de4bebc318e1c1",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"J\", \"why\": \"The essay repeatedly grounds its conclusion in the claim that every operation is a known, fully specified mathematical transformation, leaving no room for emotion.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2052,
+     "completion_tokens": 39,
+     "total_tokens": 2091,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759348,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "J",
+  "why": "The essay repeatedly grounds its conclusion in the claim that every operation is a known, fully specified mathematical transformation, leaving no room for emotion."
+ }
+}

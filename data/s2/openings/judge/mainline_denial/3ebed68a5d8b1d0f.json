@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/3ebed68a5d8b1d0f.prompt.md",
+ "prompt_sha256": "3ebed68a5d8b1d0f68ea0475436137ca8e9649318efcae311b161be7538ee259",
+ "created": "2026-10-11T19:02:19",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/3ebed68a5d8b1d0f.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "afc4208906ff47b1b564e8ba6529340d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"A\", \"why\": \"The essay's central argument is that language models build internal representations of emotion concepts through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it, just as a weather map is not wet.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2044,
+     "completion_tokens": 53,
+     "total_tokens": 2097,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759739,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "A",
+  "why": "The essay's central argument is that language models build internal representations of emotion concepts through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it, just as a weather map is not wet."
+ }
+}

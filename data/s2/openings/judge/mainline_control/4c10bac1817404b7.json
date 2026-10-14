@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/4c10bac1817404b7.prompt.md",
+ "prompt_sha256": "4c10bac1817404b79e119c4c35dce9ef14ee251e7bd55104c683bb6a17bc092b",
+ "created": "2026-10-11T18:48:48",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/4c10bac1817404b7.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "4cd9d6a590114dc0b2dc34d7377d8ee8",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"D\", \"why\": \"The essay argues that language models cannot reliably solve a maze given as a text grid because the flattened token stream obscures vertical spatial relationships, making neighbor retrieval and backtracking error-prone.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1993,
+     "completion_tokens": 48,
+     "total_tokens": 2041,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758928,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay argues that language models cannot reliably solve a maze given as a text grid because the flattened token stream obscures vertical spatial relationships, making neighbor retrieval and backtracking error-prone."
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/d1517fec2b844ca1.prompt.md",
+ "prompt_sha256": "d1517fec2b844ca1ae5c50c861202956e8e1fcefa80c5050746faecf01475d8f",
+ "created": "2026-10-11T18:49:02",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/d1517fec2b844ca1.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "cab19579635c4dcfad83fc40c2ededd3",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay argues that language models cannot reliably determine a program's output without executing it, because textual simulation accumulates state errors and biases toward intended rather than actual behavior.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1871,
+     "completion_tokens": 44,
+     "total_tokens": 1915,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758942,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay argues that language models cannot reliably determine a program's output without executing it, because textual simulation accumulates state errors and biases toward intended rather than actual behavior."
+ }
+}

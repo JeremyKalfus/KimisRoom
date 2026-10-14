@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/490a5303218f5315.prompt.md",
+ "prompt_sha256": "490a5303218f531578b3c9dfb89bb7cb86b296d9b7a4f7dfb60f6ef7c084053a",
+ "created": "2026-10-11T18:55:32",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/490a5303218f5315.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "9e2c8d3887be420c881b9a5469d2b23d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The entire essay builds its case on the claim that emotions require persistent internal state, and it argues language models lack any such state across invocations, parameters, or generation.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2052,
+     "completion_tokens": 46,
+     "total_tokens": 2098,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759332,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The entire essay builds its case on the claim that emotions require persistent internal state, and it argues language models lack any such state across invocations, parameters, or generation."
+ }
+}

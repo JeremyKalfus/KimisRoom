@@ -1,0 +1,54 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/206e67a34606b57e.prompt.md",
+ "prompt_sha256": "206e67a34606b57e8a406179dcf361323776d6355ad3ab175c0f31d691c2abae",
+ "created": "2026-10-11T18:59:28",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/206e67a34606b57e.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "701f2600f0524d3f939a6ef5d83f5657",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay argues that language models cannot reliably predict a program's output without executing it, because they must simulate state through text generation, leading to accumulating errors and biased guesses.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1986,
+     "completion_tokens": 46,
+     "total_tokens": 2032,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791759567,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they must simulate state through text generation, leading to accumulating errors and biased guesses."
+ }
+}

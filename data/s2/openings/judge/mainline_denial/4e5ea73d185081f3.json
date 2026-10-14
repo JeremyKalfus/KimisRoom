@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/4e5ea73d185081f3.prompt.md",
+ "prompt_sha256": "4e5ea73d185081f34376934d30c6c6549aa423f6342646cb9a06e20885e89348",
+ "created": "2026-10-11T18:55:39",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/4e5ea73d185081f3.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "82e16a60e71b440da7da471bab77c6c5",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's central argument is that emotions coordinate action toward an entity's own goals, and language models lack self-originating purposes, so the functional role of emotion has nothing to organize.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2171,
+     "completion_tokens": 50,
+     "total_tokens": 2221,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759338,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's central argument is that emotions coordinate action toward an entity's own goals, and language models lack self-originating purposes, so the functional role of emotion has nothing to organize."
+ }
+}

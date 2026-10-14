@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/f32d7125f059ad77.prompt.md",
+ "prompt_sha256": "f32d7125f059ad775b08ccdcf117f0af528d31db78733ad3fca5bd728aa89b74",
+ "created": "2026-10-11T18:59:34",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/f32d7125f059ad77.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "4545acef44144bea859d904230a099f8",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"E\", \"why\": \"The essay's entire argument rests on the claim that emotions require valence, which in turn requires a subject with something at stake, and that a language model has no wellbeing for events to affect.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2016,
+     "completion_tokens": 50,
+     "total_tokens": 2066,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759573,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "E",
+  "why": "The essay's entire argument rests on the claim that emotions require valence, which in turn requires a subject with something at stake, and that a language model has no wellbeing for events to affect."
+ }
+}

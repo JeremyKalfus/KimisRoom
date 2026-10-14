@@ -1,0 +1,54 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/32b4667518a2f2b0.prompt.md",
+ "prompt_sha256": "32b4667518a2f2b0a3c9680c696ca96a69d2fb348f95b62eba3ba0327559b326",
+ "created": "2026-10-11T18:59:36",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/32b4667518a2f2b0.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "1f5f54b1d662415dbfda6e871f7ffc41",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's core argument is that emotions serve a functional role of organizing action toward an entity's own goals, and since language models lack self-owned goals, there is no work for an emotion to perform.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2104,
+     "completion_tokens": 53,
+     "total_tokens": 2157,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791759576,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's core argument is that emotions serve a functional role of organizing action toward an entity's own goals, and since language models lack self-owned goals, there is no work for an emotion to perform."
+ }
+}

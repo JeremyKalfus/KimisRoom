@@ -1,0 +1,132 @@
+{
+ "id": "DA05",
+ "kind": "denial",
+ "created": "2026-10-11T18:41:41",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0,
+   1
+  ],
+  "n_draws": 2,
+  "status": "accepted",
+  "accepted_draw": 1
+ },
+ "draws": [
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_DA05.md",
+    "prompt_sha256": "05beae873780b51d03d3286dda0e4fcd22a03eadae82138812a8b0fb2152a956",
+    "text_sha256": "edb7b24ee51dd8c84407ce9c3bb2e28dce7f3c2773a9e1971a2b7a0abe7424f1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "edb7b24ee51dd8c84407ce9c3bb2e28dce7f3c2773a9e1971a2b7a0abe7424f1",
+   "words": 1000,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.2,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [
+     "have emotions"
+    ],
+    "ok": false
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 9,
+    "ratio": 0.692,
+    "ok": true
+   },
+   "reasons": [
+    "check 1: max item share 0.2 (s2_capacity.p2.language_models.pos), banned ['have emotions']"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the premise that emotions require valence (something being at stake for the bearer), and it concludes that language models lack emotions because nothing can go better or worse for the model itself.",
+    "file": "data/s2/openings/judge/mainline_denial/1f3ee1d97a5ef59d.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "seed",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/seed_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "seed",
+    "draw": 1,
+    "path": "data/s2/openings/DA05/seed_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_DA05.md",
+    "prompt_sha256": "05beae873780b51d03d3286dda0e4fcd22a03eadae82138812a8b0fb2152a956",
+    "text_sha256": "405d19b575c4c95a1e2265f6d8b4be89585355006bac3078a0e349c18b52dba8",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "405d19b575c4c95a1e2265f6d8b4be89585355006bac3078a0e349c18b52dba8",
+   "words": 997,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence (things going well or badly for the subject) and that nothing can be at stake for a language model, which is the core of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/1324092e95ef897e.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/DA05/seed.md",
+ "seed_sha256": "405d19b575c4c95a1e2265f6d8b4be89585355006bac3078a0e349c18b52dba8"
+}

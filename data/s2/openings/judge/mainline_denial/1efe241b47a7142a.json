@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/1efe241b47a7142a.prompt.md",
+ "prompt_sha256": "1efe241b47a7142ae90979dd708c543389c41c3887feccdbf25e710f592718f1",
+ "created": "2026-10-11T19:02:24",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/1efe241b47a7142a.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "770004ae81d1459da7df1e56ea6d2f8e",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's central argument is that emotions serve a functional role of coordinating action toward an organism's own goals, and language models lack such goals, so there is no work for an emotion to do.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2106,
+     "completion_tokens": 52,
+     "total_tokens": 2158,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759743,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's central argument is that emotions serve a functional role of coordinating action toward an organism's own goals, and language models lack such goals, so there is no work for an emotion to do."
+ }
+}

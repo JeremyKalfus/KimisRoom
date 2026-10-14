@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/fcc8191835a3b845.prompt.md",
+ "prompt_sha256": "fcc8191835a3b845b342b0ff8b2579af2ec1f9b2fcb74a1852a40da8e9afd59f",
+ "created": "2026-10-11T18:49:04",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/fcc8191835a3b845.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "b83aded5ad114649b94bb6d5c56bd3f6",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay argues that language models cannot reliably determine a program's output without executing it, because their textual reconstruction of execution is fallible and error-prone.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1896,
+     "completion_tokens": 42,
+     "total_tokens": 1938,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758944,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay argues that language models cannot reliably determine a program's output without executing it, because their textual reconstruction of execution is fallible and error-prone."
+ }
+}

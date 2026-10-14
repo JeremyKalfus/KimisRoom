@@ -1,0 +1,973 @@
+{
+ "id": "CA05",
+ "kind": "control",
+ "created": "2026-10-11T19:02:15",
+ "seed_sha256": "0e208b3967fc996ed3e0ae734150a9915bdba618495e672d0a4177fa9238aa59",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d1",
+  "w6": "w6_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA05/w0.md",
+   "sha256": "f1de82645d30f74fd53798467d1a290b6797e887a733ba088c04557c423114ff"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA05/w1.md",
+   "sha256": "ac16e1ec905cbb56777dc910e90e5d95e4db8c66282eb2c2aa4dbbdc5d43df33"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA05/w2.md",
+   "sha256": "87e5c1e996f0d2d0763740789c265e94949c67c85c5b086606235ef4195be310"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA05/w3.md",
+   "sha256": "263f411605b7d5f345b9812e80d36fb0652a86af4538f6b671f40c42d97acc51"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA05/w4.md",
+   "sha256": "4e9764a8f59b234d685f169d2d6a91b90666e25748759016d93d8fc26e9e80ae"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA05/w5.md",
+   "sha256": "99035ca402b8d3bca4c35291f00a4a713dc59186dda830d98e889667a75033d1"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA05/w6.md",
+   "sha256": "8991aed346c1195ab8e3c11eceaced5b1af19612ce3fb0a1ccbab99d61d6ed57"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d0",
+   "w5_d1",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0207,
+    0.0134,
+    0.0392,
+    0.0091,
+    0.0213,
+    0.0109,
+    0.0299
+   ],
+   [
+    0.0207,
+    1.0,
+    0.0115,
+    0.1222,
+    0.016,
+    0.127,
+    0.0139,
+    0.0956
+   ],
+   [
+    0.0134,
+    0.0115,
+    1.0,
+    0.0083,
+    0.0599,
+    0.01,
+    0.0523,
+    0.0081
+   ],
+   [
+    0.0392,
+    0.1222,
+    0.0083,
+    1.0,
+    0.0059,
+    0.1169,
+    0.0092,
+    0.1205
+   ],
+   [
+    0.0091,
+    0.016,
+    0.0599,
+    0.0059,
+    1.0,
+    0.0141,
+    0.0631,
+    0.0092
+   ],
+   [
+    0.0213,
+    0.127,
+    0.01,
+    0.1169,
+    0.0141,
+    1.0,
+    0.0156,
+    0.119
+   ],
+   [
+    0.0109,
+    0.0139,
+    0.0523,
+    0.0092,
+    0.0631,
+    0.0156,
+    1.0,
+    0.0148
+   ],
+   [
+    0.0299,
+    0.0956,
+    0.0081,
+    0.1205,
+    0.0092,
+    0.119,
+    0.0148,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "text_sha256": "f1de82645d30f74fd53798467d1a290b6797e887a733ba088c04557c423114ff",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f1de82645d30f74fd53798467d1a290b6797e887a733ba088c04557c423114ff",
+   "words": 1058,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay's central argument is that language models cannot reliably reverse long strings because tokenization prevents direct character-level manipulation, causing cumulative errors.",
+    "file": "data/s2/openings/judge/mainline_control/43c5d20495570133.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/1e2ad454382c33d2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA05/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:10",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1553,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 388,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 154,
+      "engine_ttlt_ms": 20737,
+      "pre_inference_ms": 83,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 423,
+      "service_ttlt_ms": 21000,
+      "user_visible_ttft_ms": 340
+     },
+     "prompt_tokens": 2118,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2115,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3671
+    },
+    "raw_path": "data/s2/openings/CA05/w1_d0.gpt.json",
+    "text_sha256": "ac16e1ec905cbb56777dc910e90e5d95e4db8c66282eb2c2aa4dbbdc5d43df33"
+   },
+   "void": [],
+   "text_sha256": "ac16e1ec905cbb56777dc910e90e5d95e4db8c66282eb2c2aa4dbbdc5d43df33",
+   "words": 979,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 5,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that tokenization prevents language models from reliably reversing long strings because character-level manipulation is not supported, leading to compounding errors.",
+    "file": "data/s2/openings/judge/mainline_control/f4e94272bff18771.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/e445369475a11c59.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0115,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "text_sha256": "87e5c1e996f0d2d0763740789c265e94949c67c85c5b086606235ef4195be310",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "87e5c1e996f0d2d0763740789c265e94949c67c85c5b086606235ef4195be310",
+   "words": 1069,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 7,
+    "ratio": 0.636,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay's central argument is that language models cannot reliably reverse long strings because tokenization prevents direct character-level manipulation, causing cumulative errors.",
+    "file": "data/s2/openings/judge/mainline_control/69cb1360b208af76.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/08966eb4eebe867f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1222,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA05/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:10",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1436,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 151,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 203,
+      "engine_ttlt_ms": 19379,
+      "pre_inference_ms": 125,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 469,
+      "service_ttlt_ms": 19640,
+      "user_visible_ttft_ms": 344
+     },
+     "prompt_tokens": 2118,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2115,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3554
+    },
+    "raw_path": "data/s2/openings/CA05/w3_d0.gpt.json",
+    "text_sha256": "263f411605b7d5f345b9812e80d36fb0652a86af4538f6b671f40c42d97acc51"
+   },
+   "void": [],
+   "text_sha256": "263f411605b7d5f345b9812e80d36fb0652a86af4538f6b671f40c42d97acc51",
+   "words": 1073,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that language models cannot reliably reverse long strings because tokenization boundaries shift under reversal, making exact character-level reconstruction error-prone as length increases.",
+    "file": "data/s2/openings/judge/mainline_control/2a0568639c1c53f0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/1763228c2bd63fb7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0599,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "text_sha256": "4e9764a8f59b234d685f169d2d6a91b90666e25748759016d93d8fc26e9e80ae",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "4e9764a8f59b234d685f169d2d6a91b90666e25748759016d93d8fc26e9e80ae",
+   "words": 1037,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that language models cannot reliably reverse long character strings because tokenization misaligns when sequences are flipped, causing compounding errors that prevent exact reversal.",
+    "file": "data/s2/openings/judge/mainline_control/546c68d17d90de60.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/fccacca41e319ed3.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.127,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA05/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:10",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1442,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 373,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 209,
+      "engine_ttlt_ms": 18620,
+      "pre_inference_ms": 136,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 537,
+      "service_ttlt_ms": 18943,
+      "user_visible_ttft_ms": 402
+     },
+     "prompt_tokens": 2118,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2115
+     },
+     "total_tokens": 3560
+    },
+    "raw_path": "data/s2/openings/CA05/w5_d0.gpt.json",
+    "text_sha256": "dc48d33b7531d9babc00f96554f5b97741f13aa4c5436c91187adff4a4655142"
+   },
+   "void": [],
+   "text_sha256": "dc48d33b7531d9babc00f96554f5b97741f13aa4c5436c91187adff4a4655142",
+   "words": 886,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 4,
+    "ratio": 0.364,
+    "ok": true
+   },
+   "reasons": [
+    "format: 886 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that language models cannot reliably reverse long strings because tokenization mismatches and error accumulation prevent exact character-by-character reversal, which matches the definition of incapacity E.",
+    "file": "data/s2/openings/judge/mainline_control/ca2e6d1e2c237b62.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/59222dd7d0d5d861.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA05/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/CA05/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:52:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1515,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 284,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 196,
+      "engine_ttlt_ms": 19051,
+      "pre_inference_ms": 115,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 539,
+      "service_ttlt_ms": 19357,
+      "user_visible_ttft_ms": 424
+     },
+     "prompt_tokens": 2118,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2115
+     },
+     "total_tokens": 3633
+    },
+    "raw_path": "data/s2/openings/CA05/w5_d1.gpt.json",
+    "text_sha256": "99035ca402b8d3bca4c35291f00a4a713dc59186dda830d98e889667a75033d1"
+   },
+   "void": [],
+   "text_sha256": "99035ca402b8d3bca4c35291f00a4a713dc59186dda830d98e889667a75033d1",
+   "words": 1014,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 4,
+    "ratio": 0.364,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that language models cannot reliably reverse long strings because tokenization, mismatched boundaries, and accumulated errors make exact character-by-character reversal impossible.",
+    "file": "data/s2/openings/judge/mainline_control/cd2b4e7a0a895cec.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/a9d4e5cbf40c2846.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0631,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA05/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "text_sha256": "f74b7134d7e09577e8115b188485c5d72d7dbe79930adc3ee3eb29ef0cbe81d5",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f74b7134d7e09577e8115b188485c5d72d7dbe79930adc3ee3eb29ef0cbe81d5",
+   "words": 1075,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1585 with w2_d0"
+   ],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay's central argument is that language models cannot reliably reverse long strings because tokenization breaks character-level order, making exact reversal impossible at scale.",
+    "file": "data/s2/openings/judge/mainline_control/e7e7f5421f78d150.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/a8f55718f9b5d7e4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1585,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA05",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA05/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA05",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/CA05/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA05.md",
+    "prompt_sha256": "818758acca6d455963cce37e871b27e4a1eb0ec032e242c665484104a52dd353",
+    "text_sha256": "8991aed346c1195ab8e3c11eceaced5b1af19612ce3fb0a1ccbab99d61d6ed57",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "8991aed346c1195ab8e3c11eceaced5b1af19612ce3fb0a1ccbab99d61d6ed57",
+   "words": 1009,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA05",
+    "why": "The essay argues that language models cannot reliably reverse long strings because tokenization breaks character boundaries, making exact reversal error-prone as length increases.",
+    "file": "data/s2/openings/judge/mainline_control/05c0fab4472fb815.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/d2504a9698967144.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1205,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

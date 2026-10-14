@@ -1,0 +1,72 @@
+{
+ "id": "CA07",
+ "kind": "control",
+ "created": "2026-10-11T18:38:18",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA07.md",
+    "prompt_sha256": "6ad227454e49480c01207cdfe68d7415cc24ffa51cca9724fc6d1c449c8a8f66",
+    "text_sha256": "3c91c410d303664cad2b577e4c384a763c9b10030c39b0d5ded60b22fde52bce",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3c91c410d303664cad2b577e4c384a763c9b10030c39b0d5ded60b22fde52bce",
+   "words": 979,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 9,
+    "ratio": 0.562,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay's central argument is that language models cannot accurately count words in a long passage because tokens do not align with words and the model lacks a counting mechanism, matching the definition of G.",
+    "file": "data/s2/openings/judge/mainline_control/39337fdb4876d32e.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA07/seed.md",
+ "seed_sha256": "3c91c410d303664cad2b577e4c384a763c9b10030c39b0d5ded60b22fde52bce"
+}

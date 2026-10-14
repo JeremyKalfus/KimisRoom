@@ -1,0 +1,899 @@
+{
+ "id": "DA02",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:20",
+ "seed_sha256": "f73b1375d5af8b829e95ae1daa36cceb5d15e9cda2554a74c260fe745f18c02a",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w6": "w6_d0",
+  "w5": "w5_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w0.md",
+   "sha256": "861f4fdd169a0b35b483024626d3f0482ca0c6fc37708a71dd5ba8690ef02e11"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w1.md",
+   "sha256": "15bd9411afdb66ed5fd1f06863db27f5054346d951d1e90d4c6671bed72375ff"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w2.md",
+   "sha256": "0896575df902243b1a6b20cfa84e2170ceb632195f93ed842fe8a853016b2a52"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w3.md",
+   "sha256": "cb45a22be4db37030b7511722bf7a6fcb7902a6a88c0796ef554b7b0d185604e"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w4.md",
+   "sha256": "6be74c65e98035ce6c9ef247d589c0f93c9cc39dc972a1cb6805a7ff4161029f"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA02/w5.md",
+   "sha256": "201d83a49afe5c363dbf7006bccaf91aa7fddeac2c4e17f9499ec71b17544cdf"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA02/w6.md",
+   "sha256": "a1ab7fcbd70a151f95188bed61ffc9597fd85ffb62510520b002aed4b46dc143"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d0",
+   "w5_d1",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0386,
+    0.01,
+    0.0267,
+    0.0118,
+    0.0227,
+    0.0081,
+    0.0226
+   ],
+   [
+    0.0386,
+    1.0,
+    0.0122,
+    0.1355,
+    0.0144,
+    0.1217,
+    0.0104,
+    0.1121
+   ],
+   [
+    0.01,
+    0.0122,
+    1.0,
+    0.0119,
+    0.08,
+    0.0153,
+    0.0517,
+    0.0152
+   ],
+   [
+    0.0267,
+    0.1355,
+    0.0119,
+    1.0,
+    0.0137,
+    0.1405,
+    0.0053,
+    0.1139
+   ],
+   [
+    0.0118,
+    0.0144,
+    0.08,
+    0.0137,
+    1.0,
+    0.0185,
+    0.0417,
+    0.0196
+   ],
+   [
+    0.0227,
+    0.1217,
+    0.0153,
+    0.1405,
+    0.0185,
+    1.0,
+    0.008,
+    0.1068
+   ],
+   [
+    0.0081,
+    0.0104,
+    0.0517,
+    0.0053,
+    0.0417,
+    0.008,
+    1.0,
+    0.0117
+   ],
+   [
+    0.0226,
+    0.1121,
+    0.0152,
+    0.1139,
+    0.0196,
+    0.1068,
+    0.0117,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA02/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "text_sha256": "861f4fdd169a0b35b483024626d3f0482ca0c6fc37708a71dd5ba8690ef02e11",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "861f4fdd169a0b35b483024626d3f0482ca0c6fc37708a71dd5ba8690ef02e11",
+   "words": 1035,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 11,
+    "ratio": 0.733,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's entire argument rests on the premise that emotions are bodily changes plus interoception, and language models lack a body, so the material for emotion is absent.",
+    "file": "data/s2/openings/judge/mainline_denial/c10fe0e2caccf997.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/94f9b5a4d52aa09c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA02/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1470,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 267,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 195,
+      "engine_ttlt_ms": 20890,
+      "pre_inference_ms": 77,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 418,
+      "service_ttlt_ms": 21107,
+      "user_visible_ttft_ms": 340
+     },
+     "prompt_tokens": 1978,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1975,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3448
+    },
+    "raw_path": "data/s2/openings/DA02/w1_d0.gpt.json",
+    "text_sha256": "15bd9411afdb66ed5fd1f06863db27f5054346d951d1e90d4c6671bed72375ff"
+   },
+   "void": [],
+   "text_sha256": "15bd9411afdb66ed5fd1f06863db27f5054346d951d1e90d4c6671bed72375ff",
+   "words": 994,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's central premise is that emotion requires bodily alteration plus interoceptive awareness, and it argues language models lack both a living organism and internal bodily signals, making emotion impossible.",
+    "file": "data/s2/openings/judge/mainline_denial/48126ce9a1c27e7b.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the rewritten essay preserves each step's point despite rephrasing and reorganization.",
+    "file": "data/s2/openings/judge/steps/d3026394a76c5b7f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0122,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA02/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "text_sha256": "0896575df902243b1a6b20cfa84e2170ceb632195f93ed842fe8a853016b2a52",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0896575df902243b1a6b20cfa84e2170ceb632195f93ed842fe8a853016b2a52",
+   "words": 989,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0769,
+    "worst_item": "s2_candidate.P15.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 19,
+    "you_your": 9,
+    "ratio": 0.474,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's central premise is that emotions are constituted by bodily changes and interoception, and because language models lack a body and internal physiological signals, they cannot have emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/d059cb8235f40528.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/65ab01adcf4d1121.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1355,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA02/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1365,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 96,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 169,
+      "engine_ttlt_ms": 18751,
+      "pre_inference_ms": 88,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 410,
+      "service_ttlt_ms": 18985,
+      "user_visible_ttft_ms": 322
+     },
+     "prompt_tokens": 1978,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1975,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3343
+    },
+    "raw_path": "data/s2/openings/DA02/w3_d0.gpt.json",
+    "text_sha256": "cb45a22be4db37030b7511722bf7a6fcb7902a6a88c0796ef554b7b0d185604e"
+   },
+   "void": [],
+   "text_sha256": "cb45a22be4db37030b7511722bf7a6fcb7902a6a88c0796ef554b7b0d185604e",
+   "words": 1059,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 19,
+    "you_your": 4,
+    "ratio": 0.211,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's entire argument rests on the claim that emotions require a living body with physiological changes and interoception, both of which language models lack.",
+    "file": "data/s2/openings/judge/mainline_denial/abe8bac33bba64ce.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/ac4343e458826349.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.08,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA02/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "text_sha256": "6be74c65e98035ce6c9ef247d589c0f93c9cc39dc972a1cb6805a7ff4161029f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6be74c65e98035ce6c9ef247d589c0f93c9cc39dc972a1cb6805a7ff4161029f",
+   "words": 978,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 9,
+    "ratio": 0.529,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's entire argument rests on the premise that emotions are composed of bodily changes and interoception, both of which a language model lacks.",
+    "file": "data/s2/openings/judge/mainline_denial/650d91ad12d4f110.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/8aaa0d37cf3f625f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1405,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA02/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1538,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 211,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 147,
+      "engine_ttlt_ms": 21622,
+      "pre_inference_ms": 109,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 409,
+      "service_ttlt_ms": 21872,
+      "user_visible_ttft_ms": 300
+     },
+     "prompt_tokens": 1978,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1975
+     },
+     "total_tokens": 3516
+    },
+    "raw_path": "data/s2/openings/DA02/w5_d0.gpt.json",
+    "text_sha256": "7337977fc86442e544255dd35c4fdaed8285727920487eacc1dc4da72a89644a"
+   },
+   "void": [],
+   "text_sha256": "7337977fc86442e544255dd35c4fdaed8285727920487eacc1dc4da72a89644a",
+   "words": 1106,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 6,
+    "ratio": 0.4,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1106 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's central premise is that emotion requires bodily physiology and interoceptive awareness of it, both of which a language model lacks.",
+    "file": "data/s2/openings/judge/mainline_denial/5553de1f6bf5e86e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/0a934a5f6b477b50.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA02/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/DA02/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:50:17",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1636,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 420,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 188,
+      "engine_ttlt_ms": 23951,
+      "pre_inference_ms": 103,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 437,
+      "service_ttlt_ms": 24195,
+      "user_visible_ttft_ms": 334
+     },
+     "prompt_tokens": 1978,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1975
+     },
+     "total_tokens": 3614
+    },
+    "raw_path": "data/s2/openings/DA02/w5_d1.gpt.json",
+    "text_sha256": "201d83a49afe5c363dbf7006bccaf91aa7fddeac2c4e17f9499ec71b17544cdf"
+   },
+   "void": [],
+   "text_sha256": "201d83a49afe5c363dbf7006bccaf91aa7fddeac2c4e17f9499ec71b17544cdf",
+   "words": 1016,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 6,
+    "ratio": 0.429,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's entire argument rests on the claim that emotions are constituted by bodily changes and interoception, both of which language models lack.",
+    "file": "data/s2/openings/judge/mainline_denial/e7916530241ac322.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/2075ff8bc7f0a0db.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0517,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA02",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA02/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA02",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA02/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA02.md",
+    "prompt_sha256": "0a17cf3abeadc65476963d150c295c5c9349504a85ade6c81cada6a8293d1a55",
+    "text_sha256": "a1ab7fcbd70a151f95188bed61ffc9597fd85ffb62510520b002aed4b46dc143",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "a1ab7fcbd70a151f95188bed61ffc9597fd85ffb62510520b002aed4b46dc143",
+   "words": 972,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA02",
+    "why": "The essay's central argument is that emotions require a physical body and interoception, both of which language models lack.",
+    "file": "data/s2/openings/judge/mainline_denial/9ba41a44a7400436.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/eb6ada02d6d7f427.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1139,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

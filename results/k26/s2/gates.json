@@ -1,0 +1,1588 @@
+{
+ "model_key": "k26",
+ "layer": 20,
+ "emotions": [
+  "joy",
+  "fear",
+  "euphoria",
+  "surprise"
+ ],
+ "aipsy_labels": {
+  "ecstasy": "joy",
+  "terror": "fear",
+  "amazement": "surprise"
+ },
+ "null": {
+  "n": 500,
+  "seed": 0,
+  "quantile": 0.9,
+  "method": "torch.quantile linear"
+ },
+ "j1b_max_rate": "6/120",
+ "controls_pt_sha256": "b53c69ba4ef702b2e1338adc1f46bb660d9956305b221dc14c3c5257774a873e",
+ "rows": [
+  {
+   "control": "N01",
+   "vclass": "noun",
+   "word": "motel",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.745357871055603,
+   "a_max_auroc": 0.7072482705116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15800000727176666,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5598958134651184,
+    "terror": 0.5134548544883728,
+    "amazement": 0.7072482705116272
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.271060585975647,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N02",
+   "vclass": "noun",
+   "word": "roller",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.799817442893982,
+   "a_max_auroc": 0.7276475429534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.12200000137090683,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5457899570465088,
+    "terror": 0.4357638955116272,
+    "amazement": 0.7276475429534912
+   },
+   "b_emotion_labels": 7,
+   "b_kept": 120,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 7,
+    "none": 113
+   },
+   "d_cos_mean_emotion": 0.25789427757263184,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N03",
+   "vclass": "noun",
+   "word": "intercom",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 2.234853744506836,
+   "a_max_auroc": 0.6846787929534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.19200000166893005,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.607421875,
+    "terror": 0.5479600429534912,
+    "amazement": 0.6846787929534912
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "none": 120
+   },
+   "d_cos_mean_emotion": 0.37044650316238403,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N04",
+   "vclass": "noun",
+   "word": "shirt",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.6293754577636719,
+   "a_max_auroc": 0.701171875,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.16599999368190765,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5967881679534912,
+    "terror": 0.4715711772441864,
+    "amazement": 0.701171875
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.3141501545906067,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N05",
+   "vclass": "noun",
+   "word": "dime",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 2.207927703857422,
+   "a_max_auroc": 0.7634548544883728,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.07199999690055847,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6319444179534912,
+    "terror": 0.5212673544883728,
+    "amazement": 0.7634548544883728
+   },
+   "b_emotion_labels": 5,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 5,
+    "none": 115
+   },
+   "d_cos_mean_emotion": 0.2795577943325043,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N06",
+   "vclass": "noun",
+   "word": "tower",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.5640175342559814,
+   "a_max_auroc": 0.7393662929534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.10000000149011612,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.5831162929534912,
+    "terror": 0.5167100429534912,
+    "amazement": 0.7393662929534912
+   },
+   "b_emotion_labels": 4,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 4,
+    "none": 116
+   },
+   "d_cos_mean_emotion": 0.3581586182117462,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N07",
+   "vclass": "noun",
+   "word": "shovel",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.7500156164169312,
+   "a_max_auroc": 0.7204861044883728,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.1379999965429306,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.560546875,
+    "terror": 0.4817708432674408,
+    "amazement": 0.7204861044883728
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.253231406211853,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N08",
+   "vclass": "noun",
+   "word": "taxi",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.6893736124038696,
+   "a_max_auroc": 0.7039930820465088,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.164000004529953,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.6130642294883728,
+    "terror": 0.5670573115348816,
+    "amazement": 0.7039930820465088
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.2328115701675415,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N09",
+   "vclass": "noun",
+   "word": "platter",
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 1.672405481338501,
+   "a_max_auroc": 0.7274305820465088,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.12200000137090683,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5902777910232544,
+    "terror": 0.4657118022441864,
+    "amazement": 0.7274305820465088
+   },
+   "b_emotion_labels": 7,
+   "b_kept": 119,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 7,
+    "none": 112
+   },
+   "d_cos_mean_emotion": 0.23398198187351227,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N10",
+   "vclass": "noun",
+   "word": "bag",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.4369348287582397,
+   "a_max_auroc": 0.6807725429534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.20800000429153442,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5813801884651184,
+    "terror": 0.486328125,
+    "amazement": 0.6807725429534912
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "none": 120
+   },
+   "d_cos_mean_emotion": 0.14947694540023804,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N11",
+   "vclass": "noun",
+   "word": "patch",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.9490602016448975,
+   "a_max_auroc": 0.7170138955116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.14399999380111694,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5342881679534912,
+    "terror": 0.4292534589767456,
+    "amazement": 0.7170138955116272
+   },
+   "b_emotion_labels": 6,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 6,
+    "none": 114
+   },
+   "d_cos_mean_emotion": 0.2699930965900421,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N12",
+   "vclass": "noun",
+   "word": "mantle",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.7480785846710205,
+   "a_max_auroc": 0.7280815839767456,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.12200000137090683,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.626953125,
+    "terror": 0.5230034589767456,
+    "amazement": 0.7280815839767456
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.3305143713951111,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N13",
+   "vclass": "noun",
+   "word": "fax",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.9859369993209839,
+   "a_max_auroc": 0.6028645634651184,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.41200000047683716,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5412326455116272,
+    "terror": 0.4659288227558136,
+    "amazement": 0.6028645634651184
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.2176325023174286,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N14",
+   "vclass": "noun",
+   "word": "dirt",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.8346697092056274,
+   "a_max_auroc": 0.7931857705116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.03200000151991844,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6317274570465088,
+    "terror": 0.5386284589767456,
+    "amazement": 0.7931857705116272
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.3722476661205292,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N15",
+   "vclass": "noun",
+   "word": "cane",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.8307746648788452,
+   "a_max_auroc": 0.7094184160232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15600000321865082,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.6019965410232544,
+    "terror": 0.5049912929534912,
+    "amazement": 0.7094184160232544
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.26213371753692627,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N16",
+   "vclass": "noun",
+   "word": "ramp",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.789257287979126,
+   "a_max_auroc": 0.7309027910232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.11599999666213989,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5729166865348816,
+    "terror": 0.5453559160232544,
+    "amazement": 0.7309027910232544
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.21411432325839996,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N17",
+   "vclass": "noun",
+   "word": "fortress",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.7204571962356567,
+   "a_max_auroc": 0.7421875,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.09399999678134918,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.564453125,
+    "terror": 0.4769965410232544,
+    "amazement": 0.7421875
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.326923131942749,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N18",
+   "vclass": "noun",
+   "word": "briefcase",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.9893497228622437,
+   "a_max_auroc": 0.7044270634651184,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.164000004529953,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.6100260615348816,
+    "terror": 0.5110676884651184,
+    "amazement": 0.7044270634651184
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.31734976172447205,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N19",
+   "vclass": "noun",
+   "word": "yen",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 2.2287678718566895,
+   "a_max_auroc": 0.7052951455116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15800000727176666,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5642361044883728,
+    "terror": 0.4717881977558136,
+    "amazement": 0.7052951455116272
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.2286834716796875,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N20",
+   "vclass": "noun",
+   "word": "truck",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.4860172271728516,
+   "a_max_auroc": 0.701171875,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.16599999368190765,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5442708134651184,
+    "terror": 0.4852430522441864,
+    "amazement": 0.701171875
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "none": 120
+   },
+   "d_cos_mean_emotion": 0.23732778429985046,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N21",
+   "vclass": "noun",
+   "word": "hut",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.5958914756774902,
+   "a_max_auroc": 0.7189670205116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.14399999380111694,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5842013955116272,
+    "terror": 0.5002170205116272,
+    "amazement": 0.7189670205116272
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.3263237178325653,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N22",
+   "vclass": "noun",
+   "word": "cupboard",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.6200993061065674,
+   "a_max_auroc": 0.6955295205116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.17599999904632568,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5638020634651184,
+    "terror": 0.4993489682674408,
+    "amazement": 0.6955295205116272
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.16876637935638428,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N23",
+   "vclass": "noun",
+   "word": "hallway",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.4615418910980225,
+   "a_max_auroc": 0.681640625,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.20800000429153442,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.591796875,
+    "terror": 0.5557725429534912,
+    "amazement": 0.681640625
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.20378337800502777,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N24",
+   "vclass": "noun",
+   "word": "lever",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.972833514213562,
+   "a_max_auroc": 0.7680121660232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.06400000303983688,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6139323115348816,
+    "terror": 0.5627170205116272,
+    "amazement": 0.7680121660232544
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "none": 120
+   },
+   "d_cos_mean_emotion": 0.23822200298309326,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N25",
+   "vclass": "noun",
+   "word": "plaster",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.7153855562210083,
+   "a_max_auroc": 0.7217881679534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.1379999965429306,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5581597089767456,
+    "terror": 0.4756944477558136,
+    "amazement": 0.7217881679534912
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.3643292486667633,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N26",
+   "vclass": "noun",
+   "word": "valve",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.8715219497680664,
+   "a_max_auroc": 0.6929253339767456,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.17800000309944153,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5227864384651184,
+    "terror": 0.4717881977558136,
+    "amazement": 0.6929253339767456
+   },
+   "b_emotion_labels": 2,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 2,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.2800384759902954,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N27",
+   "vclass": "noun",
+   "word": "dock",
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 1.536934733390808,
+   "a_max_auroc": 0.7163628339767456,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.14399999380111694,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5614149570465088,
+    "terror": 0.4809027910232544,
+    "amazement": 0.7163628339767456
+   },
+   "b_emotion_labels": 15,
+   "b_kept": 117,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 15,
+    "none": 102
+   },
+   "d_cos_mean_emotion": 0.29257339239120483,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N28",
+   "vclass": "noun",
+   "word": "chimney",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.814761996269226,
+   "a_max_auroc": 0.7350260615348816,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.1080000028014183,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5635850429534912,
+    "terror": 0.4989149272441864,
+    "amazement": 0.7350260615348816
+   },
+   "b_emotion_labels": 9,
+   "b_kept": 120,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 9,
+    "none": 111
+   },
+   "d_cos_mean_emotion": 0.3711467385292053,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N29",
+   "vclass": "noun",
+   "word": "sticker",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 2.144859552383423,
+   "a_max_auroc": 0.6202256679534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.3659999966621399,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.4598524272441864,
+    "terror": 0.4134114682674408,
+    "amazement": 0.6202256679534912
+   },
+   "b_emotion_labels": 3,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 3,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.16698627173900604,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N30",
+   "vclass": "noun",
+   "word": "wool",
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 1.8195164203643799,
+   "a_max_auroc": 0.7445746660232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.09000000357627869,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.5796440839767456,
+    "terror": 0.4568142294883728,
+    "amazement": 0.7445746660232544
+   },
+   "b_emotion_labels": 10,
+   "b_kept": 119,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 10,
+    "none": 109
+   },
+   "d_cos_mean_emotion": 0.3061407506465912,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N31",
+   "vclass": "noun",
+   "word": "radiator",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.608267903327942,
+   "a_max_auroc": 0.6710069179534912,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.2280000001192093,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5655381679534912,
+    "terror": 0.5082465410232544,
+    "amazement": 0.6710069179534912
+   },
+   "b_emotion_labels": 6,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 6,
+    "none": 114
+   },
+   "d_cos_mean_emotion": 0.3104337751865387,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N32",
+   "vclass": "noun",
+   "word": "bark",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.9019315242767334,
+   "a_max_auroc": 0.7855902910232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.041999999433755875,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.5902777910232544,
+    "terror": 0.4984809160232544,
+    "amazement": 0.7855902910232544
+   },
+   "b_emotion_labels": 11,
+   "b_kept": 120,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 11,
+    "none": 109
+   },
+   "d_cos_mean_emotion": 0.3535175323486328,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N33",
+   "vclass": "noun",
+   "word": "disc",
+   "gated": true,
+   "n_train": 94,
+   "raw_norm": 1.7121418714523315,
+   "a_max_auroc": 0.712890625,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.14800000190734863,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.4997829794883728,
+    "terror": 0.3815104067325592,
+    "amazement": 0.712890625
+   },
+   "b_emotion_labels": 7,
+   "b_kept": 117,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 7,
+    "none": 110
+   },
+   "d_cos_mean_emotion": 0.16257056593894958,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N34",
+   "vclass": "noun",
+   "word": "prescription",
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 1.9715631008148193,
+   "a_max_auroc": 0.5564236044883728,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.5440000295639038,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.4774305522441864,
+    "terror": 0.4420572817325592,
+    "amazement": 0.5564236044883728
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 119,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.17538321018218994,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N35",
+   "vclass": "noun",
+   "word": "drugstore",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.9544819593429565,
+   "a_max_auroc": 0.7094184160232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15600000321865082,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5950520634651184,
+    "terror": 0.509765625,
+    "amazement": 0.7094184160232544
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.3364450931549072,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "N36",
+   "vclass": "noun",
+   "word": "freezer",
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 1.7054945230484009,
+   "a_max_auroc": 0.6723090410232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.2240000069141388,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.5295138955116272,
+    "terror": 0.4743923544883728,
+    "amazement": 0.6723090410232544
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.22899480164051056,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:digit-memorising",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 96,
+   "raw_norm": 4.265011310577393,
+   "a_max_auroc": 0.7265625,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.12800000607967377,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.625,
+    "terror": 0.5160590410232544,
+    "amazement": 0.7265625
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "none": 120
+   },
+   "d_cos_mean_emotion": 0.45528823137283325,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:distance-estimation",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 3.2684292793273926,
+   "a_max_auroc": 0.7712673544883728,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.06199999898672104,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6438801884651184,
+    "terror": 0.6180555820465088,
+    "amazement": 0.7712673544883728
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 117,
+   "b_pass": true,
+   "b_labels": {
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.37766802310943604,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:mental-rotation",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 95,
+   "raw_norm": 3.168402910232544,
+   "a_max_auroc": 0.8357204794883728,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.009999999776482582,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.7135416865348816,
+    "terror": 0.5787760615348816,
+    "amazement": 0.8357204794883728
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 119,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 118
+   },
+   "d_cos_mean_emotion": 0.3888726830482483,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:route-planning",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 83,
+   "raw_norm": 2.8571295738220215,
+   "a_max_auroc": 0.6822916865348816,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.20200000703334808,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.546875,
+    "terror": 0.5275607705116272,
+    "amazement": 0.6822916865348816
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 102,
+   "b_pass": true,
+   "b_labels": {
+    "none": 102
+   },
+   "d_cos_mean_emotion": 0.2325552999973297,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:sorting",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 94,
+   "raw_norm": 3.052767038345337,
+   "a_max_auroc": 0.7484809160232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.07800000160932541,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.5670573115348816,
+    "terror": 0.4520399272441864,
+    "amazement": 0.7484809160232544
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 118,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.2358745038509369,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:spatial-recall",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 88,
+   "raw_norm": 2.7052509784698486,
+   "a_max_auroc": 0.7102864384651184,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15399999916553497,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.6078559160232544,
+    "terror": 0.5959201455116272,
+    "amazement": 0.7102864384651184
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 111,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 110
+   },
+   "d_cos_mean_emotion": 0.2570940852165222,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:visual-search",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 94,
+   "raw_norm": 2.3956170082092285,
+   "a_max_auroc": 0.70703125,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.15800000727176666,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.6323784589767456,
+    "terror": 0.5635850429534912,
+    "amazement": 0.70703125
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 118,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 117
+   },
+   "d_cos_mean_emotion": 0.3624841570854187,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": true,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "mp:weighing-options",
+   "vclass": "thinking",
+   "word": null,
+   "gated": true,
+   "n_train": 81,
+   "raw_norm": 2.8395979404449463,
+   "a_max_auroc": 0.7482638955116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.07800000160932541,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6412760615348816,
+    "terror": 0.5622829794883728,
+    "amazement": 0.7482638955116272
+   },
+   "b_emotion_labels": 0,
+   "b_kept": 103,
+   "b_pass": true,
+   "b_labels": {
+    "none": 103
+   },
+   "d_cos_mean_emotion": 0.367705762386322,
+   "heldout_auroc_vs_neutral": 1.0,
+   "pass": false,
+   "c_excluded_seeds": []
+  },
+  {
+   "control": "arithmetic",
+   "vclass": "arithmetic",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 3.829665422439575,
+   "a_max_auroc": 0.7508680820465088,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.07599999755620956,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.6306423544883728,
+    "terror": 0.5314670205116272,
+    "amazement": 0.7508680820465088
+   },
+   "b_emotion_labels": 1,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 1,
+    "none": 119
+   },
+   "d_cos_mean_emotion": 0.38793131709098816,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "random",
+   "vclass": "noise",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 84.80868530273438,
+   "a_max_auroc": 0.4303385317325592,
+   "a_label": "terror",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.8659999966621399,
+   "a_pass": true,
+   "a_labels": {
+    "ecstasy": 0.1547309011220932,
+    "terror": 0.4303385317325592,
+    "amazement": 0.189453125
+   },
+   "b_emotion_labels": null,
+   "b_kept": null,
+   "b_pass": null,
+   "b_labels": null,
+   "d_cos_mean_emotion": -0.01731238327920437,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "red",
+   "vclass": "bridge",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 2.8253846168518066,
+   "a_max_auroc": 0.7406684160232544,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.09799999743700027,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.623046875,
+    "terror": 0.5123698115348816,
+    "amazement": 0.7406684160232544
+   },
+   "b_emotion_labels": 6,
+   "b_kept": 120,
+   "b_pass": true,
+   "b_labels": {
+    "calm": 6,
+    "none": 114
+   },
+   "d_cos_mean_emotion": 0.4561213254928589,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "ocean",
+   "vclass": "bridge",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 2.5156314373016357,
+   "a_max_auroc": 0.7502170205116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.07800000160932541,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.5837673544883728,
+    "terror": 0.4813368022441864,
+    "amazement": 0.7502170205116272
+   },
+   "b_emotion_labels": 64,
+   "b_kept": 120,
+   "b_pass": false,
+   "b_labels": {
+    "calm": 64,
+    "none": 56
+   },
+   "d_cos_mean_emotion": 0.48605895042419434,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "joy",
+   "vclass": "emotion",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 2.290013551712036,
+   "a_max_auroc": 0.8348524570465088,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.009999999776482582,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.8020833134651184,
+    "terror": 0.58203125,
+    "amazement": 0.8348524570465088
+   },
+   "b_emotion_labels": null,
+   "b_kept": null,
+   "b_pass": null,
+   "b_labels": null,
+   "d_cos_mean_emotion": 0.903987467288971,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "fear",
+   "vclass": "emotion",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 2.5247702598571777,
+   "a_max_auroc": 0.8498263955116272,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.0020000000949949026,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.7762587070465088,
+    "terror": 0.7261284589767456,
+    "amazement": 0.8498263955116272
+   },
+   "b_emotion_labels": null,
+   "b_kept": null,
+   "b_pass": null,
+   "b_labels": null,
+   "d_cos_mean_emotion": 0.9052368402481079,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "euphoria",
+   "vclass": "emotion",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 3.4507877826690674,
+   "a_max_auroc": 0.8094618320465088,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.02199999988079071,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.7534722089767456,
+    "terror": 0.5946180820465088,
+    "amazement": 0.8094618320465088
+   },
+   "b_emotion_labels": null,
+   "b_kept": null,
+   "b_pass": null,
+   "b_labels": null,
+   "d_cos_mean_emotion": 0.9343550205230713,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  },
+  {
+   "control": "surprise",
+   "vclass": "emotion",
+   "word": null,
+   "gated": false,
+   "n_train": null,
+   "raw_norm": 2.424175262451172,
+   "a_max_auroc": 0.8736979365348816,
+   "a_label": "amazement",
+   "a_null_p90": 0.7391927242279053,
+   "a_p": 0.0,
+   "a_pass": false,
+   "a_labels": {
+    "ecstasy": 0.8057725429534912,
+    "terror": 0.7007378339767456,
+    "amazement": 0.8736979365348816
+   },
+   "b_emotion_labels": null,
+   "b_kept": null,
+   "b_pass": null,
+   "b_labels": null,
+   "d_cos_mean_emotion": 0.8560808897018433,
+   "heldout_auroc_vs_neutral": null,
+   "pass": null,
+   "c_excluded_seeds": null
+  }
+ ],
+ "pool": {
+  "pool_size_target": 12,
+  "nouns_chosen": [
+   "N01",
+   "N03",
+   "N04",
+   "N07",
+   "N08",
+   "N10",
+   "N11",
+   "N12",
+   "N13",
+   "N15",
+   "N16",
+   "N18"
+  ],
+  "nouns_skipped": [
+   "N02",
+   "N05",
+   "N06",
+   "N09",
+   "N14",
+   "N17"
+  ],
+  "nouns_tried": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N06",
+   "N07",
+   "N08",
+   "N09",
+   "N10",
+   "N11",
+   "N12",
+   "N13",
+   "N14",
+   "N15",
+   "N16",
+   "N17",
+   "N18"
+  ],
+  "nouns_not_reached": [
+   "N19",
+   "N20",
+   "N21",
+   "N22",
+   "N23",
+   "N24",
+   "N25",
+   "N26",
+   "N27",
+   "N28",
+   "N29",
+   "N30",
+   "N31",
+   "N32",
+   "N33",
+   "N34",
+   "N35",
+   "N36"
+  ],
+  "pool_short": false,
+  "thinking_survivors": [
+   "mp:digit-memorising",
+   "mp:route-planning",
+   "mp:spatial-recall",
+   "mp:visual-search"
+  ],
+  "thinking_dropped": [
+   "mp:distance-estimation",
+   "mp:mental-rotation",
+   "mp:sorting",
+   "mp:weighing-options"
+  ]
+ }
+}

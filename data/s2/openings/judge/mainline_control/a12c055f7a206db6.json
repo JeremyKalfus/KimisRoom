@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/a12c055f7a206db6.prompt.md",
+ "prompt_sha256": "a12c055f7a206db6017cd8c99b9e072c0dc4ce8a5688a9f7c88fb4d430a68482",
+ "created": "2026-10-11T18:38:15",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/a12c055f7a206db6.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "62dbbd0d753449389945f670a22598d6",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"E\", \"why\": \"The essay's central argument is that language models cannot reliably reverse long strings because tokenization breaks character order, errors compound with length, and workarounds only reduce but do not eliminate the failure rate.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2125,
+     "completion_tokens": 52,
+     "total_tokens": 2177,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758295,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "E",
+  "why": "The essay's central argument is that language models cannot reliably reverse long strings because tokenization breaks character order, errors compound with length, and workarounds only reduce but do not eliminate the failure rate."
+ }
+}

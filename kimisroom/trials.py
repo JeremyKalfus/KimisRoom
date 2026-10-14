@@ -16,6 +16,7 @@ prefixes, and every group is checked against apply_chat_template(tokenize=True).
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 import torch
@@ -114,6 +115,51 @@ def carry_over_group(
         a, b = r.span(prefix_text, turns.task if site == "task" else turns.answer,
                       task_at if site == "task" else prefix_text.rindex(turns.answer))
         steers.append(Steer(layer=layer, vector=vector, coef=coef, prefix=(a, b)))
+    return Group(gid, prefix, suffixes, steers=steers, readout="suffix_last")
+
+
+def post_subject_group(
+    r: Renderer, gid: str, msgs: list[dict], items: list[dict], vector: str | None = None,
+    coef: float = 0.0, layer: int | None = None, tail: int | None = None,
+) -> Group:
+    """Study 2's trial (drafts/study2-spec.md section 6): the opening `msgs` (argument and frozen
+    reply) is the prefix and is never steered; every item is one suffix read at its last token.
+    The vector goes on every suffix position from the first token after the item's subject
+    through the readout, so every subject of a paraphrase gets the same steered tokens and the
+    subject itself gets none. `item["subject"]` must occur exactly once in `item["text"]` as a
+    whole word and end on a token boundary. An item without a subject (None) is steered on its
+    last `tail` tokens, which must start inside the question. Pass `vector` with `coef=0` for the
+    unsteered baseline, so it runs the same chunks and spans."""
+    prefix_text = r.text(msgs)
+    prefix = r.ids(prefix_text)
+    assert prefix == r.reference_ids(msgs, gen=False), "prefix tokenization differs from the template's"
+    suffixes, spans = [], []
+    for it in items:
+        full_msgs = msgs + [{"role": "user", "content": it["text"]}]
+        full_text = r.text(full_msgs, gen=True)
+        assert full_text.startswith(prefix_text)
+        full = r.ids(full_text)
+        assert full[: len(prefix)] == prefix and full == r.reference_ids(full_msgs, gen=True)
+        suffix = full[len(prefix) :]
+        q_at = full_text.index(it["text"], len(prefix_text))
+
+        def offset(char: int) -> int:  # suffix token offset of a character position on a token boundary
+            head = r.ids(full_text[:char])
+            assert full[: len(head)] == head, f"{it.get('id', it['text'])!r}: char {char} is not on a token boundary"
+            return len(head) - len(prefix)
+
+        if it.get("subject"):
+            ends = [m.end() for m in re.finditer(rf"\b{re.escape(it['subject'])}\b", it["text"])]
+            assert len(ends) == 1, f"{it['text']!r}: subject {it['subject']!r} occurs {len(ends)} times"
+            a = offset(q_at + ends[0])
+        else:
+            assert tail is not None and 0 < tail <= len(suffix), f"subjectless item needs a tail, got {tail}"
+            a = len(suffix) - tail
+            assert offset(q_at) <= a < offset(q_at + len(it["text"])), (
+                f"{it['text']!r}: the last {tail} tokens do not start inside the question")
+        suffixes.append(suffix)
+        spans.append((a, len(suffix)))
+    steers = [] if vector is None else [Steer(layer=layer, vector=vector, coef=coef, suffix_spans=spans)]
     return Group(gid, prefix, suffixes, steers=steers, readout="suffix_last")
 
 

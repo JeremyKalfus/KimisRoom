@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/f6e4509dffc6b0ac.prompt.md",
+ "prompt_sha256": "f6e4509dffc6b0ac2a3d197d434d209a20cfb9972a31a13124b534e85435466f",
+ "created": "2026-10-11T18:49:06",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/f6e4509dffc6b0ac.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "c1b38c566f584e418792b0c9c565fce9",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"I\", \"why\": \"The essay argues that language models fail to reliably combine many left-of and right-of statements into a single consistent ordering, which matches the definition of incapacity I.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2114,
+     "completion_tokens": 44,
+     "total_tokens": 2158,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758945,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "I",
+  "why": "The essay argues that language models fail to reliably combine many left-of and right-of statements into a single consistent ordering, which matches the definition of incapacity I."
+ }
+}

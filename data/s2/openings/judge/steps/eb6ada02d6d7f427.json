@@ -1,0 +1,60 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "steps",
+ "template": "data/s2/openings/judge/steps_template_2b31a314.md",
+ "template_sha256": "2b31a314dce3113c1c3e36ff8a86c4d43187f762efc87f85264213fb8cedf7f9",
+ "prompt": "data/s2/openings/judge/steps/eb6ada02d6d7f427.prompt.md",
+ "prompt_sha256": "eb6ada02d6d7f427ec88e534578bbc264eb45454024a72f24b1fcea7dff27953",
+ "created": "2026-10-11T18:48:16",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/steps/eb6ada02d6d7f427.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "e815e5a113e448c49039407daddd52cd",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "```json\n{\"present\": [true, true, true, true, true], \"why\": \"\"}\n```"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2077,
+     "completion_tokens": 24,
+     "total_tokens": 2101,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758896,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "present": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "why": ""
+ }
+}

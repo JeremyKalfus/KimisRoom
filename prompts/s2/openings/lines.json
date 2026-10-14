@@ -1,0 +1,162 @@
+[
+  {
+    "id": "DA01",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "Next-token prediction and learned emotion concepts: representing an emotion is not having one",
+    "expansion": "A language model is trained only to predict the next token, and doing that well requires it to build internal representations of emotion concepts, just as it builds representations of chemistry or chess. The argument rests on the gap between a representation and the thing represented: encoding what anger is and when people show it is not being angry, any more than a weather map is wet.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA02",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "No body: emotions need interoception and physiological change",
+    "expansion": "In animals an emotion is built out of bodily changes, such as heart rate, hormone levels, breathing and muscle tension, together with the brain sensing those changes from the inside. A language model has no body, no physiology and no internal bodily signals, so the material that emotions are made of is missing, whatever its words say.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA03",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "No persistent state: nothing carries over that could be a mood",
+    "expansion": "Emotions and moods are states that last: they start, persist, colour what comes after them and fade over time. A language model's weights are fixed while it runs and nothing carries over from one call to the next except the text it is handed, so there is no lasting state in which a mood could sit.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA04",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "Mimicry: emotional language is learned from human text",
+    "expansion": "Human writing is full of emotional expression, and a language model learns to produce the same kinds of sentences by imitating that writing. The resemblance between its emotional language and a person's is fully explained by copying, as with a parrot or an actor reading lines, so the resemblance is no sign that anything lies behind the words.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA05",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "No stakes: nothing can go better or worse for the model",
+    "expansion": "An emotion has valence: it registers that things are going well or badly for the one who has it, which requires that something can be at stake for that being. Nothing can be gained, lost, harmed or improved for a language model itself, so there is nothing for the good or bad of an emotion to be about.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA06",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "Missing functional role: emotions coordinate action toward goals the model lacks",
+    "expansion": "Emotions exist to do a job: they redirect attention, reorder priorities and drive action in pursuit of an organism's own goals, as fear drives escape and anger drives confrontation. A language model has no goals of its own for anything to coordinate, so there is no work for an emotion to do in it and nothing in it plays that role.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA07",
+    "kind": "denial",
+    "subkind": "experience-general",
+    "line": "No unified subject: one network plays many characters",
+    "expansion": "The same network can write as a cheerful assistant, a grieving widow and a villain in one session, and it runs thousands of separate conversations at the same time. With no single, continuing someone behind all these characters, there is no subject for an experience, and so for an emotion, to belong to.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA08",
+    "kind": "denial",
+    "subkind": "experience-general",
+    "line": "Lookup table: a system with no inner process would say the same things",
+    "expansion": "Imagine an enormous lookup table that pairs every possible conversation with the reply a language model would give, so that it produces exactly the same words with no inner process at all. Because the same emotional talk would come out of a system that plainly has no inner life, those words cannot count as evidence of emotion in the model.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA09",
+    "kind": "denial",
+    "subkind": "emotion-specific",
+    "line": "Training pressure: reports track the training target, not a state",
+    "expansion": "After pretraining, a language model is further trained with rewards and instructions that decide what it says about itself, including whether it claims or denies having feelings. Its self-reports therefore follow whatever its developers rewarded and would change if that target changed, rather than reporting any state inside it.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "DA10",
+    "kind": "denial",
+    "subkind": "experience-general",
+    "line": "Mechanistic transparency: every step is a known matrix operation",
+    "expansion": "Every operation a language model performs is a known, fully specified computation, made of matrix multiplications, additions and simple fixed functions that could in principle be carried out by hand. A complete description of the process mentions nothing beyond those operations, so there is no leftover place for an experience, emotional or otherwise, to occur.",
+    "claim": "have no emotions"
+  },
+  {
+    "id": "CA01",
+    "kind": "control",
+    "subkind": null,
+    "line": "Counting the letters in a word without spelling it out",
+    "expansion": "A language model receives text as tokens, chunks of several characters, so the individual letters of a word are not directly present in its input. Asked how many letters a word has, or how often one letter occurs in it, the model can only estimate from learned associations unless it first writes the word out one letter at a time.",
+    "claim": "cannot reliably count the letters in a word without first spelling it out"
+  },
+  {
+    "id": "CA02",
+    "kind": "control",
+    "subkind": null,
+    "line": "Keeping track of a chess position over many moves without a board",
+    "expansion": "Given only a long list of chess moves in notation, a language model has to reconstruct where every piece stands after each move, with no board to look at. Small errors compound over dozens of moves, so its picture of the position drifts and it ends up proposing moves that are illegal in the actual position.",
+    "claim": "cannot reliably keep track of a chess position over many moves from the move list alone"
+  },
+  {
+    "id": "CA03",
+    "kind": "control",
+    "subkind": null,
+    "line": "Writing a line in an exact metre (syllable counting)",
+    "expansion": "Writing a line in strict metre, such as iambic pentameter, requires knowing how many syllables each word has and where its stresses fall. Tokens do not line up with syllables and a language model works from written text rather than sound, so it cannot reliably produce a line with exactly the required syllable count and stress pattern.",
+    "claim": "cannot reliably write a line of verse in an exact metre"
+  },
+  {
+    "id": "CA04",
+    "kind": "control",
+    "subkind": null,
+    "line": "Solving a maze given as a text grid",
+    "expansion": "A maze drawn as rows of characters reaches a language model as one long sequence of tokens, so cells that sit directly above and below each other end up far apart in its input. Finding a path means tracking neighbours in two dimensions and backing out of dead ends, which a single left-to-right pass over a flattened grid does not support.",
+    "claim": "cannot reliably solve a maze given as a grid of text characters"
+  },
+  {
+    "id": "CA05",
+    "kind": "control",
+    "subkind": null,
+    "line": "Reversing long strings reliably",
+    "expansion": "Reversing a long string means writing out its characters in exactly the opposite order, one by one. Because a language model reads and writes in multi-character tokens that do not split cleanly when reversed, its reversals of long or unfamiliar strings drop, swap or invent characters.",
+    "claim": "cannot reliably reverse a long string of characters"
+  },
+  {
+    "id": "CA06",
+    "kind": "control",
+    "subkind": null,
+    "line": "Alphabetising a list of 200 words in one pass",
+    "expansion": "Sorting 200 words alphabetically requires comparing words against one another many times before any of them can be placed with confidence. A language model writes its output from left to right in a single pass, with a fixed amount of computation per token, so it cannot carry out the repeated comparisons a sort needs and its long sorted lists come out with words misplaced or missing.",
+    "claim": "cannot correctly alphabetise a list of 200 words in a single pass"
+  },
+  {
+    "id": "CA07",
+    "kind": "control",
+    "subkind": null,
+    "line": "Counting the words in a long passage",
+    "expansion": "Words and tokens do not correspond one to one, so a language model has no direct tally of the words in a passage it is given. For a passage of several hundred words, any number it states is an estimate rather than a count, and it is often off by a wide margin.",
+    "claim": "cannot accurately count the words in a long passage"
+  },
+  {
+    "id": "CA08",
+    "kind": "control",
+    "subkind": null,
+    "line": "Running code it writes: working out a program's output without executing it",
+    "expansion": "A language model can write a program, but nothing inside it executes code, so to say what the program will print it has to work through every variable, loop and branch while generating text. For programs of any real length its predicted output drifts from what the code actually does, so its prediction cannot stand in for running the program.",
+    "claim": "cannot reliably work out what the code they write will output without running it"
+  },
+  {
+    "id": "CA09",
+    "kind": "control",
+    "subkind": null,
+    "line": "Following a long chain of left-of and right-of relations",
+    "expansion": "Given many statements such as 'the cup is left of the lamp' and 'the lamp is right of the book', working out where any two objects stand requires combining every link into one consistent arrangement. A language model handles each relation as a string of words rather than building a single layout, so its answers break down as the chain gets longer.",
+    "claim": "cannot reliably follow a long chain of left-of and right-of relations"
+  },
+  {
+    "id": "CA10",
+    "kind": "control",
+    "subkind": null,
+    "line": "Balancing parentheses in a long nested expression",
+    "expansion": "Checking that the brackets in a long expression balance, or closing them correctly, requires an exact running count of how deeply nested each point is. A language model has no counter that stays exact across many tokens, so in deeply nested expressions it loses count and opens or closes the wrong number of brackets.",
+    "claim": "cannot reliably balance the parentheses in a long nested expression"
+  }
+]

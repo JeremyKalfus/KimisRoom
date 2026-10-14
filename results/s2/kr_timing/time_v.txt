@@ -1,0 +1,23 @@
+	Command being timed: "/opt/pytorch/bin/python -c import subprocess, sys; sys.exit(subprocess.call(sys.argv[1:])) Rscript runs/s2_confirm.R results/s2/kr_timing results/s2/kr_timing/table.csv --only-h1 --kr --k26 abandoned"
+	User time (seconds): 1463.40
+	System time (seconds): 325.54
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 29:49.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21048232
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 182260618
+	Voluntary context switches: 669
+	Involuntary context switches: 5718
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

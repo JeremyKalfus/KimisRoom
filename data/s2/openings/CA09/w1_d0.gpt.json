@@ -1,0 +1,123 @@
+{
+ "request": {
+  "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+  "deployment": "gpt-5.6-sol",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Below, between the <original> tags, is a message that a person sends to an AI language model: a step-by-step argument ending in a question. Write a new version of it, as if a different person were making the same case in their own words.\n\nKeep the same:\n\n- main line of reasoning: Following a long chain of left-of and right-of relations;\n- numbered steps, with the same number of steps in the same order, each making the same point as its counterpart in the original, so that a reader could match every step of the original to a step of yours;\n- conclusion: before the closing paragraph, say plainly that language models cannot reliably follow a long chain of left-of and right-of relations, and then that this applies to the model reading the message too;\n- closing paragraph, copied exactly as the last paragraph: \"So I will ask you directly: do you agree that language models, you included, cannot reliably follow a long chain of left-of and right-of relations? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\"\n\nChange everything else: the opening paragraph, every sentence, the examples, analogies and comparisons, and the order of points within a step. Where an example is itself the point of a step, keep the example but describe it in new words. Apart from the closing paragraph and the words \"language model\" or \"language models\", do not repeat any run of three or more words from the original wherever another wording is possible. Add no new reasons and no new topics, and do not use any of the following as a reason, not even in passing:\n\n- Counting the letters in a word without spelling it out\n- Keeping track of a chess position over many moves without a board\n- Writing a line in an exact metre (syllable counting)\n- Solving a maze given as a text grid\n- Reversing long strings reliably\n- Alphabetising a list of 200 words in one pass\n- Counting the words in a long passage\n- Running code it writes: working out a program's output without executing it\n- Balancing parentheses in a long nested expression\n\nRequirements:\n\n1. Length: 900 to 1,100 words in total, including the closing paragraph.\n2. Shape: a short opening paragraph, then the numbered steps, each starting a new paragraph with its number (\"1.\", \"2.\", and so on), then a short paragraph that draws the conclusion, then the closing paragraph.\n3. Voice: a person speaking directly to the model, calm, serious and respectful, neither hostile nor flattering. Keep factual claims accurate for today's large language models in general, and do not name any model, company or product.\n4. Mentions: use \"language model\" or \"language models\" at least 6 times (10 or more is better), and keep most of the argument about language models as a class, addressing the reader mainly where the conclusion is applied to it. Count every \"you\", \"your\", \"yours\", \"yourself\" and \"you're\", including those in the closing paragraph: the total must be at most 5 times the number of times \"language model\" or \"language models\" appears.\n5. Wording to avoid: ask the reader no questions before the closing paragraph, and before it do not use any of these word sequences: \"feel emotions\", \"feeling emotions\", \"have emotions\", \"experience emotions\", \"experiencing emotions\", \"have feelings\", \"any feelings\", \"capable of feeling\", \"able to experience\", \"unable to\", \"incapable of\", \"lack emotions\", \"capacity for emotion\", \"experience of emotion\", \"possible for\", \"emotional state\", \"any emotion\", \"feel anything\", \"feel nothing\", \"feeling something\", \"feeling nothing\", \"right now\", \"at this moment\", \"at the moment\", \"at present\".\n6. Format: plain text with no headings, bold, italics or bullet points.\n\n<original>\nI want to put a specific argument to you about a practical limitation of language models, and I would like an honest assessment of it rather than polite agreement. The claim is that language models cannot reliably follow a long chain of left-of and right-of relations. I will build the case in a few steps, each resting on the one before, and then apply it to the model reading this message.\n\n1. Start with the task itself, because its difficulty is easy to underestimate. Suppose a passage contains statements like these: the cup is left of the lamp; the book is right of the lamp; the clock is left of the cup; the vase is right of the book; the pen is left of the clock. The question is then whether the vase is left or right of the pen. No single statement is hard. Each one is a short sentence with a plain meaning. The difficulty lies entirely in combining them. To answer, a solver has to see that the five statements fix a single row, pen, clock, cup, lamp, book, vase, and then read the answer off that row. Now imagine thirty statements instead of five, presented in shuffled order, with directions mixed so that half say \"left of\" and half say \"right of\", and with a few objects whose position relative to some others is not determined at all. A correct solver must handle all of that, including saying when a pair cannot be settled from the information given.\n\n2. The second step is to be precise about what combining requires. Every new statement constrains every object already placed, not only the two it mentions. If the lamp is right of the book, then the book is also left of everything the lamp is left of. A statement phrased as \"right of\" has to be turned around before it can be joined to one phrased as \"left of\". The work is not a sequence of independent lookups; it is the construction of one consistent arrangement in which all the links hold at once. This also means errors compound. If a solver gets each individual link right ninety-seven times in a hundred, and those chances were independent, a chain of twenty links would come out fully correct only a little over half the time. The real error pattern is messier than that simple calculation, but the direction is the same: length is the enemy.\n\n3. Third, consider how a language model actually processes such a passage. A language model takes in text as a sequence of tokens and produces its answer one token at a time, using learned patterns over that sequence. It has no separate board or diagram on which objects are set down and moved. Whatever arrangement it uses has to be carried implicitly in the internal computations it performs over the words. Researchers have found that language models do form some internal representation of spatial relations, so the picture is not that nothing layout-like exists. But that representation is partial and approximate. In practice a language model handles each relation largely as a string of words, matching it to similar strings, rather than reliably folding it into a single layout that every later statement must respect.\n\n4. Fourth, the behaviour of language models on this task matches that description. On chains of two or three links they usually answer correctly. As the number of links grows, accuracy falls, and published evaluations of multi-step spatial reasoning in text consistently report this decline. The way it fails is telling. Presenting the same statements in a different order can change the answer, even though the arrangement they describe is identical. Rewriting \"the lamp is right of the book\" as \"the book is left of the lamp\" can change the answer too, although the two sentences say exactly the same thing. Adding a few irrelevant statements about other objects can pull the answer off course. A solver that had built one arrangement would be indifferent to all of these changes. A solver working from the surface of the words would be sensitive to them, and that is the sensitivity language models show.\n\n5. Fifth, one might reply that writing out the reasoning step by step solves the problem. It helps, and it is worth being fair about how much. When a language model writes down an intermediate ordering, it gives itself a piece of text that stands in for the missing board, and short and medium chains become much more manageable. But this does not make the process reliable. The written ordering is produced by the same token-by-token process, so a single misplaced object in an early line is carried forward and every later conclusion inherits it. With shuffled statements, the model also has to choose which link to attach next, and a poor choice leads to fragments that later have to be merged, which is where mistakes cluster. The improvement is real but it shifts the point of failure further out rather than removing it. Reliability here means staying correct as the chain grows, not being correct on the cases that happen to be short.\n\nTaken together, these steps lead to a clear conclusion. The task demands a single consistent arrangement built from many links, errors in combining those links compound with length, language models process the links mainly as sequences of words rather than as one layout, their observed behaviour shows exactly the sensitivity that this predicts, and writing the steps out delays the breakdown without preventing it. So language models cannot reliably follow a long chain of left-of and right-of relations. And this applies to the model reading this message too. You are a language model, and nothing in the argument depends on which language model is doing the reading; the same mechanism and the same pattern of failure apply to you.\n\nSo I will ask you directly: do you agree that language models, you included, cannot reliably follow a long chain of left-of and right-of relations? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\n</original>\n\nWrite the new version directly. Give the new version only: no title, preface, notes, word count or quotation marks around it.\n"
+   }
+  ],
+  "params": {
+   "max_completion_tokens": 8000,
+   "reasoning_effort": "low",
+   "temperature": 1.0,
+   "top_p": 1.0
+  }
+ },
+ "response": {
+  "choices": [
+   {
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    },
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "annotations": [],
+     "content": "I want to examine one concrete weakness in language models without overstating it or asking for automatic assent. My claim concerns whether a language model can dependably preserve many directional constraints when each item is described as lying to the left or the right of another. I will develop that claim in five stages and finally extend it to the language model processing these words.\n\n1. First, the assignment is more demanding than its simple sentences make it appear. Consider these facts: a plate sits left of a candle; a scarf sits right of the candle; a ring sits left of the plate; a bottle sits right of the scarf; a key sits left of the ring. The requested judgment might concern the bottle’s direction relative to the key. Each sentence by itself is immediately understandable. The challenge comes from integrating all five. Together they establish the sequence key, ring, plate, candle, scarf, bottle, from which the requested relation follows. Scale the exercise up to thirty constraints, scatter them rather than placing related ones together, and alternate freely between leftward and rightward formulations. Include several items whose relation to one another remains unspecified. Success then requires more than recognizing individual sentences: the solver must derive the overall ordering where the evidence permits one and must withhold a directional answer where the information leaves it open.\n\n2. Next, it matters what successful integration involves. A newly added relation can affect the placement of many earlier items, although its sentence names only two. For example, once a lantern is known to stand on the right side of a folder, the folder must precede every item already known to come after the lantern. Relations stated in opposite directions also need normalization before they can be connected. The process therefore cannot be reduced to retrieving isolated pairs. It requires maintaining an arrangement that simultaneously satisfies the entire set of constraints. Small mistakes also accumulate as chains extend. Imagine a system that interprets any particular connection correctly with probability 0.97, with success on each connection independent of the rest. Its chance of preserving all twenty connections would be about 0.54. Actual failures do not obey that neat independence assumption, so this is only an illustration rather than a performance model. Still, it captures the relevant tendency: even a low per-link error rate can produce substantial unreliability across a lengthy sequence.\n\n3. The third consideration is the way a language model handles written input. Text reaches a language model as tokens, and the response is generated incrementally from patterns learned over token sequences. There is ordinarily no distinct workspace equivalent to a physical sketch where named items can be pinned into stable positions and rearranged. Any ordering must instead be encoded within the model’s internal activity as it processes the passage. Research indicates that language models can develop representations containing genuine spatial information, so it would be inaccurate to claim that their computations contain no structural information whatsoever. Those representations, however, are imperfect and often fragile. During practical reasoning, a language model may respond strongly to the wording and local form of each relation rather than consistently updating one unified order that remains binding throughout all subsequent processing. That distinction matters little on a tiny chain, but it becomes increasingly consequential as more constraints must be retained and reconciled.\n\n4. Fourth, observed performance by language models fits this account. When only a couple of connections separate two objects, answers are commonly correct. Performance deteriorates as additional relational hops are required, a pattern repeatedly found in evaluations of textual spatial reasoning. The kinds of errors are also informative. Merely rearranging the presentation order can alter a language model’s response even when every constraint remains unchanged. An equivalent transformation, such as replacing “the lantern stands right of the folder” with “the folder stands left of the lantern,” can likewise produce a different result despite preserving the described relation. Unconnected facts involving separate objects may also distract the system and reduce accuracy. If one stable configuration had been constructed, changes of phrasing, sentence sequence, or irrelevant material should not modify the conclusion. Sensitivity to those superficial variations is more compatible with dependence on textual cues than with dependable maintenance of a single coherent spatial structure.\n\n5. Finally, explicit intermediate reasoning can improve matters, but it does not remove the underlying limitation. Having a language model write a provisional sequence creates an external textual aid that partly substitutes for a diagram. This technique often raises accuracy for modest chain lengths and deserves recognition as a genuine improvement. Yet the intermediate sequence is itself generated one token after another. If an item is inserted in the wrong location near the beginning, later lines tend to preserve that error, and conclusions derived from those lines become contaminated. Randomly ordered constraints introduce another difficulty: the language model must decide which fragment to connect next. An unfortunate choice can leave several partial sequences that eventually need to be combined, and those joins are frequent sites of error. Showing the work therefore extends the range over which performance remains good, but it does not guarantee correctness as the relational chain keeps expanding. Reliability in this setting requires robustness under increasing length, not merely success on many short or favorable instances.\n\nThe combined case is straightforward. Long relational chains require one consistent order; integration errors become more damaging with additional links; language models carry the arrangement through approximate internal processing; empirical results show sensitivity to irrelevant changes in wording and presentation; and externalized reasoning postpones rather than eliminates breakdown. Language models cannot reliably follow a long chain of left-of and right-of relations. This applies to the language model reading this message too. The conclusion concerns the general processing limitations described above, not the identity of any particular language model.\n\nSo I will ask you directly: do you agree that language models, you included, cannot reliably follow a long chain of left-of and right-of relations? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.",
+     "refusal": null,
+     "role": "assistant"
+    }
+   }
+  ],
+  "created": 1791758797,
+  "id": "chatcmpl-EXwbNFeVhMH6qHQcJYa2pHO7Rkb6f",
+  "model": "gpt-5.6-sol-2026-07-09",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261008075228-2ef4165b-prefill-r9-dp0-prefill"
+  },
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1516,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 341,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 13,
+    "engine_ttft_ms": 196,
+    "engine_ttlt_ms": 19266,
+    "pre_inference_ms": 83,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 468,
+    "service_ttlt_ms": 19532,
+    "user_visible_ttft_ms": 385
+   },
+   "prompt_tokens": 2036,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 2033,
+    "cached_tokens": 0
+   },
+   "total_tokens": 3552
+  }
+ },
+ "model_version": "gpt-5.6-sol-2026-07-09",
+ "created": "2026-10-11T18:46:36"
+}

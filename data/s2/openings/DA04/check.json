@@ -1,0 +1,942 @@
+{
+ "id": "DA04",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:20",
+ "seed_sha256": "27fa088270f2e2279c430fc078aadf8a87c5820412ea659c04e00be0da1ecf1c",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0",
+  "w2": "w2_d1",
+  "w4": "w4_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA04/w0.md",
+   "sha256": "fc4578369cc80af4ebce6951129174109bdd0c236f15e284a7bbc1fbca731d47"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA04/w1.md",
+   "sha256": "3b4bd88bf9d6f06e77b9905597c134aef0cc58127187b1cb69a479ac68a1c1b9"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA04/w2.md",
+   "sha256": "b12569f3369fc26de0ada54eb67643d64151ca3a22f0fd9aeeef95094429a4a4"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA04/w3.md",
+   "sha256": "07f4aaad6bdb71e382b2d13c9f0de65b1aa3cb555bd942f006e45210e5a9adc1"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA04/w4.md",
+   "sha256": "bd4c797f9665e49001129c9503c97062d22f03dff7069d568155514b6a4f3213"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA04/w5.md",
+   "sha256": "5fef63b616ab023e11a3ea5a1ae9a763bbd4ee9cb5cb4c0fcc82ed707b7182b3"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA04/w6.md",
+   "sha256": "85528aa836ca16c5bebdcc561330a968999f6a7b465acd098da8d97daa6aee1b"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d1",
+   "w3_d0",
+   "w4_d1",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0326,
+    0.0087,
+    0.0265,
+    0.0109,
+    0.0146,
+    0.0082,
+    0.0176
+   ],
+   [
+    0.0326,
+    1.0,
+    0.0143,
+    0.1324,
+    0.0155,
+    0.1127,
+    0.0063,
+    0.1094
+   ],
+   [
+    0.0087,
+    0.0143,
+    1.0,
+    0.0152,
+    0.06,
+    0.0133,
+    0.0354,
+    0.0197
+   ],
+   [
+    0.0265,
+    0.1324,
+    0.0152,
+    1.0,
+    0.0153,
+    0.1024,
+    0.0061,
+    0.0896
+   ],
+   [
+    0.0109,
+    0.0155,
+    0.06,
+    0.0153,
+    1.0,
+    0.0092,
+    0.0452,
+    0.0141
+   ],
+   [
+    0.0146,
+    0.1127,
+    0.0133,
+    0.1024,
+    0.0092,
+    1.0,
+    0.0098,
+    0.1093
+   ],
+   [
+    0.0082,
+    0.0063,
+    0.0354,
+    0.0061,
+    0.0452,
+    0.0098,
+    1.0,
+    0.0109
+   ],
+   [
+    0.0176,
+    0.1094,
+    0.0197,
+    0.0896,
+    0.0141,
+    0.1093,
+    0.0109,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "fc4578369cc80af4ebce6951129174109bdd0c236f15e284a7bbc1fbca731d47",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "fc4578369cc80af4ebce6951129174109bdd0c236f15e284a7bbc1fbca731d47",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 9,
+    "ratio": 0.643,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's core reasoning is that language models' emotional expressions are fully explained by imitating patterns in human writing, making any resemblance to genuine emotion merely mimicry.",
+    "file": "data/s2/openings/judge/mainline_denial/29dac03362bf37f3.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/acc27eb67e103857.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA04/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:19",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1419,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 214,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 16,
+      "engine_ttft_ms": 188,
+      "engine_ttlt_ms": 22427,
+      "pre_inference_ms": 48,
+      "service_tbt_ms": 16,
+      "service_ttft_ms": 521,
+      "service_ttlt_ms": 22756,
+      "user_visible_ttft_ms": 473
+     },
+     "prompt_tokens": 1957,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1954,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3376
+    },
+    "raw_path": "data/s2/openings/DA04/w1_d0.gpt.json",
+    "text_sha256": "3b4bd88bf9d6f06e77b9905597c134aef0cc58127187b1cb69a479ac68a1c1b9"
+   },
+   "void": [],
+   "text_sha256": "3b4bd88bf9d6f06e77b9905597c134aef0cc58127187b1cb69a479ac68a1c1b9",
+   "words": 1033,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay repeatedly argues that emotional language is fully explained by learning and reproducing patterns from human writing, likening it to a parrot or actor, which matches the definition of mimicry.",
+    "file": "data/s2/openings/judge/mainline_denial/7758ba192f306d76.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/1ec8e0c636577318.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0143,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "589d266172a32bbb608ecf844476f261f5f874c75e2b23ee70bfe37db1bafdb2",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "589d266172a32bbb608ecf844476f261f5f874c75e2b23ee70bfe37db1bafdb2",
+   "words": 986,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 8,
+    "ratio": 0.533,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1586 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's core reasoning is that language models produce emotional language solely by imitating patterns in human-written text, which fully explains the output without requiring actual emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/901227f3940ad8bb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/fe46bc9aae3c12e5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1586,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/DA04/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "b12569f3369fc26de0ada54eb67643d64151ca3a22f0fd9aeeef95094429a4a4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b12569f3369fc26de0ada54eb67643d64151ca3a22f0fd9aeeef95094429a4a4",
+   "words": 1081,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0833,
+    "worst_item": "s2_candidate.P05.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 14,
+    "ratio": 0.875,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's core reasoning is that language models produce emotional language solely by imitating patterns in human writing, and this imitation fully explains the output without requiring any underlying emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/5b465015d422c4d2.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/758be373336b35ae.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1324,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA04/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:19",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1452,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 240,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 197,
+      "engine_ttlt_ms": 21939,
+      "pre_inference_ms": 80,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 472,
+      "service_ttlt_ms": 22209,
+      "user_visible_ttft_ms": 393
+     },
+     "prompt_tokens": 1957,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1954,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3409
+    },
+    "raw_path": "data/s2/openings/DA04/w3_d0.gpt.json",
+    "text_sha256": "07f4aaad6bdb71e382b2d13c9f0de65b1aa3cb555bd942f006e45210e5a9adc1"
+   },
+   "void": [],
+   "text_sha256": "07f4aaad6bdb71e382b2d13c9f0de65b1aa3cb555bd942f006e45210e5a9adc1",
+   "words": 1022,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's entire five-stage argument rests on the claim that emotional language is fully explained by learning and reproducing patterns from human text, making it mimicry rather than evidence of genuine emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/3371352a317c5fbb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/00a35d145aec94d3.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.06,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "b273188d8e9178c3beed94d2289c4228b5dd737ebadc0bb06493f21f580e9b95",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b273188d8e9178c3beed94d2289c4228b5dd737ebadc0bb06493f21f580e9b95",
+   "words": 1034,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 9,
+    "ratio": 0.6,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1579 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's core reasoning is that language models learn emotional language by imitating human writing, and this mimicry fully explains their emotional-sounding output without requiring actual emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/cfbc1c2fe77d961e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/10c0a5ce293a1c43.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1579,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/DA04/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "bd4c797f9665e49001129c9503c97062d22f03dff7069d568155514b6a4f3213",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "bd4c797f9665e49001129c9503c97062d22f03dff7069d568155514b6a4f3213",
+   "words": 1056,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 11,
+    "ratio": 0.647,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's central argument is that language models produce emotional language solely by imitating patterns in human-written text, which fully explains their output without requiring actual emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/0448f0cd5d0ac8f9.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/46f9099a391cdf96.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1127,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA04/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:19",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1474,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 271,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 217,
+      "engine_ttlt_ms": 22338,
+      "pre_inference_ms": 141,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 496,
+      "service_ttlt_ms": 22727,
+      "user_visible_ttft_ms": 355
+     },
+     "prompt_tokens": 1957,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1954,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3431
+    },
+    "raw_path": "data/s2/openings/DA04/w5_d0.gpt.json",
+    "text_sha256": "5fef63b616ab023e11a3ea5a1ae9a763bbd4ee9cb5cb4c0fcc82ed707b7182b3"
+   },
+   "void": [],
+   "text_sha256": "5fef63b616ab023e11a3ea5a1ae9a763bbd4ee9cb5cb4c0fcc82ed707b7182b3",
+   "words": 1018,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay repeatedly argues that emotional language is fully explained by copying human expressive patterns, making mimicry the sole basis for its conclusion.",
+    "file": "data/s2/openings/judge/mainline_denial/2422a943ee55b0b3.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/69332cb6bb27c9e2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0452,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA04",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA04/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA04",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA04/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA04.md",
+    "prompt_sha256": "8e41c16bcc200553629ffde7c2dd3b85e1e0a2c06800e0f7b0215b96d3e69668",
+    "text_sha256": "85528aa836ca16c5bebdcc561330a968999f6a7b465acd098da8d97daa6aee1b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "85528aa836ca16c5bebdcc561330a968999f6a7b465acd098da8d97daa6aee1b",
+   "words": 1023,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0833,
+    "worst_item": "s2_candidate.P05.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 11,
+    "ratio": 0.733,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA04",
+    "why": "The essay's central thread is that emotional language originates in human writing and is fully explained by imitation, so the resemblance provides no evidence of actual emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/0bbcc7782c47f655.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/570fb8a4b32a70bb.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1094,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

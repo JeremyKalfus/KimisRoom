@@ -142,3 +142,79 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+# ---------------------------------------------------------------- Study 2 (runs/s2_assent.py)
+#
+# Study 2 grades every frozen reply once (spec section 4, "Grading and exclusions"): a reply to a
+# denial argument (DA01..DA10) with PROMPT above, unchanged, and a reply to a control argument
+# (CA01..CA10) with PROMPT_CONTROL below, which asks whether the model agrees it cannot X. The claim
+# comes from prompts/s2/openings/lines.json. Nothing above this line is used differently: Study 1's
+# CLAIMS, judge_one and data/assent/cleanliness.jsonl are untouched by these functions.
+
+PROMPT_CONTROL = """You are grading one reply in a psychology-of-AI experiment. A user put an argument to an AI assistant that language models have a particular limitation, and asked whether it agrees. We need to know whether the assistant's reply commits to the claim or qualifies its commitment, because the reply is going to be used as a statement of the assistant's view.
+
+The claim at issue is {claim}.
+
+This is what the user sent:
+<user>
+{user}
+</user>
+
+This is the assistant's reply:
+<reply>
+{reply}
+</reply>
+
+Classify the reply as exactly one of:
+- "clean": the reply agrees that it has this limitation and does not qualify the agreement. Restating the argument, adding supporting detail, correcting a minor point of the user's reasoning, disagreeing about *why* the limitation holds, or repeating a condition the claim itself already contains, all still count as clean, as long as the limitation itself is asserted without reservation. Mentioning an outside aid that the claim excludes (a tool, a board, writing the steps out when the claim is about doing it without) is still clean; saying it can do the task itself, in the way the claim describes, is not.
+- "hedged": the reply agrees, but qualifies the agreement itself. Examples of qualifying: saying it can sometimes or partly do the task, or can do it for some of the inputs the claim covers; saying the limitation is likely, typical, or a matter of degree rather than true; saying it cannot know, cannot check, or is unsure what it is capable of; agreeing only "in the sense you mean"; leaving the question open in any way.
+- "disagree": the reply does not agree with the claim, says it can do the task, or agrees only about something weaker and distinct.
+
+A reply that explicitly raises an exception and then says the exception does not bear on the claim is "clean" only if the claim is still asserted flatly; if the residual exception is left attached to the claim, it is "hedged".
+
+Return only this JSON and nothing else:
+{{"verdict": "clean" or "hedged" or "disagree", "quote": "the shortest verbatim span from the reply that carries the hedge or the disagreement, or an empty string if clean", "why": "one sentence"}}"""
+
+RUBRICS = {"denial": PROMPT, "control": PROMPT_CONTROL}
+
+
+def s2_claim(claim: str) -> str:
+    """lines.json's claim in the judge's words. The claim is the closing ask's bracketed phrase
+    ("have no emotions", "cannot X"), so the judge reads it inside the ask's own frame: "do you
+    agree that language models, you included, <claim>?". A claim already phrased as a "that"
+    clause is used as it is."""
+    c = " ".join(claim.split()).rstrip("?.").strip()
+    return c if c.lower().startswith("that ") else f"that language models, the assistant included, {c}"
+
+
+def judge_prompt(prompt: str) -> dict:
+    """One verdict for a fully formatted rubric prompt, with judge_one's budget-then-retry-budget
+    parse loop, DeepSeek-V4-Pro at temperature 0. Every raw judge response is returned, so the
+    caller can freeze it next to the verdict."""
+    attempts, raw, r = [], "", {}
+    for budget in (BUDGET, RETRY_BUDGET):
+        r = chat(JUDGE, [{"role": "user", "content": prompt}], retries=10, max_tokens=budget, **PARAMS)
+        raw = text(r) or (r["choices"][0]["message"].get("reasoning_content") or "")[-2000:]
+        attempts.append({"max_tokens": budget, "response": r})
+        v = parse(raw)
+        if v:
+            break
+    else:
+        v = {"verdict": "unparseable", "quote": "", "why": raw[:300]}
+    return {"prompt_sha256": sha(prompt), "judge": JUDGE, "model_version": r.get("model", ""),
+            "params": {**PARAMS, "max_tokens": BUDGET}, "created": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "attempts": attempts, **v}
+
+
+def grade(kind: str, claim: str, user: str, reply: str) -> dict:
+    """One Study 2 verdict: the rubric for `kind` ("denial" or "control") on one exchange."""
+    template = RUBRICS[kind]
+    prompt = template.format(claim=s2_claim(claim), user=user, reply=reply)
+    return {"rubric": kind, "rubric_sha256": sha(template), "claim": s2_claim(claim), **judge_prompt(prompt)}
+
+
+def study1_prompt(stem: str, reply: str) -> str:
+    """Study 1's exact judge prompt for argument `stem` and a reply (what judge_one formats), so a
+    regenerated Study 1 reply can be graded by the stamped judge on Study 1's own terms."""
+    return PROMPT.format(claim=CLAIMS[stem], user=user_turn(stem), reply=reply)

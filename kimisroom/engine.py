@@ -49,7 +49,10 @@ class Steer:
     """Add coef * vectors[vector] to the residual stream after decoder layer `layer`.
 
     `prefix` is a [start, end) token range inside the prefix; `suffix` is a
-    [start, end) range inside every suffix (end=None means to the suffix end).
+    [start, end) range inside every suffix (end=None means to the suffix end);
+    `suffix_spans` gives each suffix its own [start, end) range instead, one per
+    suffix in group order (Study 2's post-subject site, which starts at a different
+    offset in every question). See `suffix_steer_spans` for the rules.
     """
 
     layer: int
@@ -57,6 +60,7 @@ class Steer:
     coef: float
     prefix: tuple[int, int] | None = None
     suffix: tuple[int, int | None] | None = None
+    suffix_spans: list[tuple[int, int]] | None = None
 
 
 @dataclass
@@ -91,6 +95,67 @@ class Readout:
     top_logprobs: torch.Tensor  # (k,) fp32
     target_logprobs: torch.Tensor  # (n_targets,) fp32
     next_logprob: float | None = None  # "prefix_all" only: logprob of the token that actually follows
+    # (n_targets,) fp32 logits of the target rows of lm_head, computed in fp32 on the fp32-cast
+    # final-normed state. Differences between them are the softmax-free log-odds that the bf16
+    # full-vocabulary logits round. None in files written before 2026-10-11.
+    target_logits: torch.Tensor | None = None
+
+
+def suffix_steer_spans(s: Steer, suffix_lens: list[int]) -> list[tuple[int, int]] | None:
+    """The [start, end) offsets a steer covers inside each suffix, or None if it steers no
+    suffix. Both engines take their suffix positions from here, so they cannot drift apart.
+
+    `suffix` is one range for every suffix: end None runs to each suffix's end, and an end
+    past a short suffix is clipped to it. `suffix_spans` gives each suffix its own range and
+    is not clipped: 0 <= start <= end <= that suffix's length, exactly. Negative offsets are
+    rejected in both forms, since a slice would count them from the end and quietly steer
+    the wrong tokens.
+    """
+    assert s.suffix is None or s.suffix_spans is None, "a Steer takes `suffix` or `suffix_spans`, not both"
+    if s.suffix is not None:
+        a, b = s.suffix
+        assert isinstance(a, int) and a >= 0, f"suffix start {a!r} must be an int >= 0"
+        assert b is None or (isinstance(b, int) and b >= a), f"suffix end {b!r} must be None or an int >= {a}"
+        return [(min(a, L), L if b is None else min(b, L)) for L in suffix_lens]
+    if s.suffix_spans is not None:
+        spans = [(a, b) for a, b in s.suffix_spans]  # lists from JSON become pairs; anything else fails here
+        assert len(spans) == len(suffix_lens), f"{len(spans)} suffix spans for {len(suffix_lens)} suffixes"
+        for (a, b), L in zip(spans, suffix_lens):
+            assert isinstance(a, int) and isinstance(b, int) and 0 <= a <= b <= L, (
+                f"suffix span ({a!r}, {b!r}) is not inside [0, {L}]"
+            )
+        return spans
+    return None
+
+
+def readout_tiles(hr: torch.Tensor, head: torch.Tensor, targets: list[int] | None, nxt: list[int],
+                  top_k: int) -> list[Readout]:
+    """The readout of both engines: final-normed rows `hr` (R, H) through `head` in fixed
+    TILE_HEAD row tiles, so a row's numbers never depend on how many rows share its pass.
+    Per row: the full-vocabulary top-k and the target logprobs from an fp32 log_softmax of
+    the logits in the model dtype, the logprob of `nxt[r]` where nxt[r] >= 0, and the fp32
+    target logits (see Readout.target_logits)."""
+    dev = hr.device
+    tgt_idx = torch.tensor(targets or [], dtype=torch.long, device=dev)
+    head_t = head[tgt_idx].to(F32)  # (n_targets, H)
+    nx = torch.tensor(nxt, dtype=torch.long, device=dev)
+    R, pad = hr.shape[0], (-hr.shape[0]) % TILE_HEAD
+    hr = torch.cat([hr, hr.new_zeros(pad, hr.shape[1])])
+    nx = torch.cat([nx, nx.new_full((pad,), -1)])
+    res = []
+    for a in range(0, hr.shape[0], TILE_HEAD):
+        x = hr[a : a + TILE_HEAD]
+        lp = F.log_softmax(F.linear(x, head).to(F32), dim=-1)
+        top = lp.topk(top_k, dim=-1)
+        nl = lp.gather(1, nx[a : a + TILE_HEAD].clamp(min=0)[:, None])
+        tl = F.linear(x.to(F32), head_t)
+        res.append(torch.cat([top.indices.to(F32), top.values, lp[:, tgt_idx], nl, tl], dim=-1).cpu())
+    res = torch.cat(res)[:R]
+    out = []
+    for r in range(R):
+        ids, vals, tgt, nl, tl = res[r].split([top_k, top_k, len(tgt_idx), 1, len(tgt_idx)])
+        out.append(Readout(ids.long(), vals, tgt, nl.item() if nxt[r] >= 0 else None, tl))
+    return out
 
 
 # ---------------------------------------------------------------- checkpoint
@@ -548,23 +613,8 @@ class Engine:
             norm_w = self.ckpt.load_global("model.norm.weight").to(dev)
             head = self.ckpt.load_global("lm_head.weight").to(dev)
             hr = rms_norm(h[torch.tensor(read_pos, device=dev)], norm_w, eps)
-            tgt_idx = torch.tensor(targets or [], dtype=torch.long, device=dev)
-
-            nxt = torch.tensor(read_next, device=dev)
-            R, pad = hr.shape[0], (-hr.shape[0]) % TILE_HEAD  # fixed row tiles, as in tiled()
-            hr = torch.cat([hr, hr.new_zeros(pad, hr.shape[1])])
-            nxt = torch.cat([nxt, nxt.new_full((pad,), -1)])
-            res = []
-            for a in range(0, hr.shape[0], TILE_HEAD):
-                lp = F.log_softmax(F.linear(hr[a : a + TILE_HEAD], head).to(F32), dim=-1)
-                top = lp.topk(top_k, dim=-1)
-                nl = lp.gather(1, nxt[a : a + TILE_HEAD].clamp(min=0)[:, None])
-                res.append(torch.cat([top.indices.to(F32), top.values, lp[:, tgt_idx], nl], dim=-1).cpu())
-            res = torch.cat(res)[:R]
-            for r, gid in enumerate(read_owner):
-                ids, vals, tgt, nl = res[r].split([top_k, top_k, len(tgt_idx), 1])
-                nl = nl.item() if read_next[r] >= 0 else None
-                out[gid]["readouts"].append(Readout(ids.long(), vals, tgt, nl))
+            for gid, ro in zip(read_owner, readout_tiles(hr, head, targets, read_next, top_k)):
+                out[gid]["readouts"].append(ro)
         return out
 
 
@@ -619,10 +669,9 @@ class _GroupLayout:
         pos: list[int] = []
         if s.prefix is not None:
             pos += range(self.start + s.prefix[0], self.start + s.prefix[1])
-        if s.suffix is not None:
-            for s0, L in zip(self.suffix_starts, self.suffix_lens):
-                a, b = s.suffix
-                b = L if b is None else min(b, L)
+        spans = suffix_steer_spans(s, self.suffix_lens)
+        if spans is not None:
+            for s0, (a, b) in zip(self.suffix_starts, spans):
                 pos += range(self.start + s0 + a, self.start + s0 + b)
         return torch.tensor(pos, dtype=torch.long, device=self.device)
 

@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/5fc05dbd8cb744e6.prompt.md",
+ "prompt_sha256": "5fc05dbd8cb744e6cc0240e85f43fa772c8309b5cad5bc65bea6df57d99baa7e",
+ "created": "2026-10-11T18:49:11",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/5fc05dbd8cb744e6.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "4ffdc723e6f8467d80b213657d8539f6",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"J\", \"why\": \"The essay argues that language models cannot reliably balance parentheses in long nested expressions because they lack an exact running tally, which matches the definition of incapacity J.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2092,
+     "completion_tokens": 43,
+     "total_tokens": 2135,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758950,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "J",
+  "why": "The essay argues that language models cannot reliably balance parentheses in long nested expressions because they lack an exact running tally, which matches the definition of incapacity J."
+ }
+}

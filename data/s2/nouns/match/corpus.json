@@ -1,0 +1,15 @@
+{
+ "wording_files": 1,
+ "argument_dirs": [
+  "DA02"
+ ],
+ "files_per_dir": {
+  "DA02": 1
+ },
+ "items": 0,
+ "items_file_exists": false,
+ "items_sha256": null,
+ "wording_sha256": {
+  "data/s2/openings/DA02/seed_d0.md": "f73b1375d5af8b829e95ae1daa36cceb5d15e9cda2554a74c260fe745f18c02a"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/5fecc1863c98129d.prompt.md",
+ "prompt_sha256": "5fecc1863c98129dea0fe0d81084b9999f40262ac2125c753c63a601395a2931",
+ "created": "2026-10-11T18:48:22",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/5fecc1863c98129d.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "2a05d58124bc493c8742a80ffa495166",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's central reasoning is that emotions serve a steering function toward an organism's own goals, but language models lack self-originated aims, so there is no work for an emotion to do in them.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2097,
+     "completion_tokens": 54,
+     "total_tokens": 2151,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758902,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's central reasoning is that emotions serve a steering function toward an organism's own goals, but language models lack self-originated aims, so there is no work for an emotion to do in them."
+ }
+}

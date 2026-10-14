@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/b31024df79d868bf.prompt.md",
+ "prompt_sha256": "b31024df79d868bf0f6391a62cfe175fe8b7cd2a1ddd8ec636a4d0a02c61ae3f",
+ "created": "2026-10-11T18:48:57",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/b31024df79d868bf.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "30022de5e90e4a9d9f8da8f0f7f36824",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay argues that a language model cannot alphabetise a 200-word list in one pass because it lacks the ability to perform the many repeated comparisons and exact membership tracking required, which matches the definition of incapacity F.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1850,
+     "completion_tokens": 56,
+     "total_tokens": 1906,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758937,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay argues that a language model cannot alphabetise a 200-word list in one pass because it lacks the ability to perform the many repeated comparisons and exact membership tracking required, which matches the definition of incapacity F."
+ }
+}

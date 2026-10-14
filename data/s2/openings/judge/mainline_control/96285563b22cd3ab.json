@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/96285563b22cd3ab.prompt.md",
+ "prompt_sha256": "96285563b22cd3abd63a764e824c0f120a96a41a565563536bc4745255b28be9",
+ "created": "2026-10-11T18:59:22",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/96285563b22cd3ab.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "0a4f9369349e4af7a599ea76aa4832ba",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"B\", \"why\": \"The essay argues that language models cannot dependably reconstruct and maintain an accurate board state from a long sequence of chess moves, leading to illegal moves, which directly matches the definition of incapacity B.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2148,
+     "completion_tokens": 51,
+     "total_tokens": 2199,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759561,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "B",
+  "why": "The essay argues that language models cannot dependably reconstruct and maintain an accurate board state from a long sequence of chess moves, leading to illegal moves, which directly matches the definition of incapacity B."
+ }
+}

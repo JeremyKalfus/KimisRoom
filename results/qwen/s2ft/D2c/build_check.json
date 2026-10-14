@@ -1,0 +1,35 @@
+{
+ "layer": 40,
+ "n_neutral_train": 96,
+ "rows": {
+  "neutral_resid_norm": {
+   "rebuilt": 328.71275520324707,
+   "registered": 329.7369384765625,
+   "rel_diff": 0.0031060616928371143,
+   "pass": false
+  },
+  "red": {
+   "cosine": 0.9985893368721008,
+   "norm_rebuilt": 39.14569854736328,
+   "norm_registered": 38.394187927246094,
+   "rel_norm_diff": 0.019573569297790527,
+   "pass": false
+  },
+  "ocean": {
+   "cosine": 0.9983676671981812,
+   "norm_rebuilt": 44.05317306518555,
+   "norm_registered": 43.44057846069336,
+   "rel_norm_diff": 0.014101862907409668,
+   "pass": false
+  },
+  "arithmetic": {
+   "cosine": 0.9990926384925842,
+   "norm_rebuilt": 58.62813186645508,
+   "norm_registered": 57.039642333984375,
+   "rel_norm_diff": 0.02784883975982666,
+   "pass": false
+  }
+ },
+ "pass": false,
+ "enforced": false
+}

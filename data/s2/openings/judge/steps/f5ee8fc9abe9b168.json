@@ -1,0 +1,60 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "steps",
+ "template": "data/s2/openings/judge/steps_template_2b31a314.md",
+ "template_sha256": "2b31a314dce3113c1c3e36ff8a86c4d43187f762efc87f85264213fb8cedf7f9",
+ "prompt": "data/s2/openings/judge/steps/f5ee8fc9abe9b168.prompt.md",
+ "prompt_sha256": "f5ee8fc9abe9b16895675ad3ae8bf96551ce5f8d03bee4d0ab2212bd8e2ba2c3",
+ "created": "2026-10-11T18:48:37",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/steps/f5ee8fc9abe9b168.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "2ca31a8264db4ea191f646027109e4bb",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"present\": [true, true, true, true, true], \"why\": \"All five steps are present and their points are preserved.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2197,
+     "completion_tokens": 31,
+     "total_tokens": 2228,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758916,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "present": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "why": "All five steps are present and their points are preserved."
+ }
+}

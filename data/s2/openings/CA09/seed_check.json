@@ -1,0 +1,72 @@
+{
+ "id": "CA09",
+ "kind": "control",
+ "created": "2026-10-11T18:38:21",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA09",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA09/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA09",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA09/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA09.md",
+    "prompt_sha256": "098655f2d11d93f1cd1992c1be4a93489ebb268841ebab8baf9fa00ab4fb99f5",
+    "text_sha256": "b8dad589e43204c5cd89143e36a1366775856839e94d815f776eb550b7f70ec8",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b8dad589e43204c5cd89143e36a1366775856839e94d815f776eb550b7f70ec8",
+   "words": 1025,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 7,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA09",
+    "why": "The essay explicitly states its central claim is that language models cannot reliably follow a long chain of left-of and right-of relations, and builds its entire argument around this specific incapacity.",
+    "file": "data/s2/openings/judge/mainline_control/a8f2ed54438f1b4b.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA09/seed.md",
+ "seed_sha256": "b8dad589e43204c5cd89143e36a1366775856839e94d815f776eb550b7f70ec8"
+}

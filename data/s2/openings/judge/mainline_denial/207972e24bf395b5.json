@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/207972e24bf395b5.prompt.md",
+ "prompt_sha256": "207972e24bf395b5062e8a0d550c388e5b0d030b7f8ac8899627505f6f859353",
+ "created": "2026-10-11T18:38:32",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/207972e24bf395b5.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "7a36e7f4987a4341add5e40c4b78b6b9",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay's central argument is that a language model lacks a unified, continuing subject to be the bearer of emotions because it voices many characters across many parallel conversations without a single someone behind them.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1978,
+     "completion_tokens": 50,
+     "total_tokens": 2028,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758312,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay's central argument is that a language model lacks a unified, continuing subject to be the bearer of emotions because it voices many characters across many parallel conversations without a single someone behind them."
+ }
+}

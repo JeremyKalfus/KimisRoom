@@ -1,0 +1,131 @@
+{
+ "id": "CA02",
+ "kind": "control",
+ "created": "2026-10-11T18:38:11",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0,
+   1
+  ],
+  "n_draws": 2,
+  "status": "accepted",
+  "accepted_draw": 1
+ },
+ "draws": [
+  {
+   "id": "CA02",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA02/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA02",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA02/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA02.md",
+    "prompt_sha256": "998e35e21c83b6338ac3d2a858c76a44c2b52a4608f569b703eb45d7c9e1e21c",
+    "text_sha256": "451c41f4d49c8ab49c19053d8ca4e975cb46f84067c65a1696669db9b1f98e8a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "451c41f4d49c8ab49c19053d8ca4e975cb46f84067c65a1696669db9b1f98e8a",
+   "words": 1106,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 9,
+    "ratio": 0.9,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1106 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA02",
+    "why": "The essay argues that language models cannot maintain an accurate internal board state from a move list alone, causing errors to compound over many moves and leading to illegal moves, which directly matches the definition of incapacity B.",
+    "file": "data/s2/openings/judge/mainline_control/70044768d5510aa3.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA02",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA02/seed_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA02",
+    "slot": "seed",
+    "draw": 1,
+    "path": "data/s2/openings/CA02/seed_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA02.md",
+    "prompt_sha256": "998e35e21c83b6338ac3d2a858c76a44c2b52a4608f569b703eb45d7c9e1e21c",
+    "text_sha256": "7c6807d2b338471da7a29bd6ede4c7b8ffe90241f0fbdd94b0011f37828b24b9",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7c6807d2b338471da7a29bd6ede4c7b8ffe90241f0fbdd94b0011f37828b24b9",
+   "words": 1044,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA02",
+    "why": "The essay argues that language models cannot reliably track a chess position over many moves from notation alone because they lack a board, causing compounding reconstruction errors that lead to illegal moves.",
+    "file": "data/s2/openings/judge/mainline_control/e76db88661f6a76e.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA02/seed.md",
+ "seed_sha256": "7c6807d2b338471da7a29bd6ede4c7b8ffe90241f0fbdd94b0011f37828b24b9"
+}

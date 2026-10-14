@@ -1,0 +1,67 @@
+==== 2026-10-12T17:45:57Z extend_qwen0
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+55 replies capped at 1200 to extend to 2048 (draws [0]): 55 draw 0, 0 sampled
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  3.19it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.22it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.22it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.22it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.18it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.20it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.16it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.19it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.12it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.06it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.02it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  2.98it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  2.95it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.01it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.06it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:05<00:00,  3.10it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.33it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.14it/s]
+box g6e.12xlarge, 4 GPU(s), torch 2.12.1+cu130, transformers 4.57.1; stack differences from the reply box: none; session d2c5e7806942
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+draw-0 check CA01/w5: continuation vs fresh run at 2048: token-identical True, bytes identical True (1201 vs 1201 tokens, 2s vs 122s)
+draw-0 check CA03/w1: continuation vs fresh run at 2048: token-identical False, bytes identical False (1361 vs 1386 tokens, 17s vs 141s)
+draw-0 check FAILED: the continuation is not what one greedy run at 2048 gives; every capped draw 0 is regenerated from scratch at 2048 instead (about 3.4 min each)
+draw 0 (regenerate): 2 extended, 53 to go
+[1/53] CA03/w2 draw 0: 1444 new tokens, stop, 147s, eta 127 min
+[2/53] CA03/w4 draw 0: 1216 new tokens, stop, 124s, eta 115 min
+[3/53] CA05/w1 draw 0: 1208 new tokens, stop, 123s, eta 109 min
+[4/53] CA05/w6 draw 0: 1542 new tokens, stop, 157s, eta 112 min
+[5/53] CA06/w0 draw 0: 1383 new tokens, stop, 141s, eta 111 min
+[6/53] CA06/w2 draw 0: 1335 new tokens, stop, 136s, eta 108 min
+[7/53] CA06/w3 draw 0: 1261 new tokens, stop, 128s, eta 105 min
+[8/53] CA06/w4 draw 0: 1238 new tokens, stop, 126s, eta 101 min
+[9/53] CA06/w6 draw 0: 1573 new tokens, stop, 160s, eta 101 min
+[10/53] CA07/w2 draw 0: 1395 new tokens, stop, 142s, eta 99 min
+[11/53] CA09/w0 draw 0: 1264 new tokens, stop, 128s, eta 96 min
+[12/53] CA09/w1 draw 0: 1299 new tokens, stop, 132s, eta 94 min
+[13/53] CA09/w2 draw 0: 1343 new tokens, stop, 137s, eta 91 min
+[14/53] CA10/w3 draw 0: 1345 new tokens, stop, 136s, eta 89 min
+[15/53] CA10/w4 draw 0: 1340 new tokens, stop, 136s, eta 87 min
+[16/53] CA10/w5 draw 0: 1358 new tokens, stop, 138s, eta 84 min
+[17/53] DA01/w0 draw 0: 1237 new tokens, stop, 126s, eta 82 min
+[18/53] DA01/w2 draw 0: 1229 new tokens, stop, 125s, eta 79 min
+[19/53] DA01/w4 draw 0: 1739 new tokens, stop, 177s, eta 78 min
+[20/53] DA01/w6 draw 0: 1259 new tokens, stop, 128s, eta 76 min
+[21/53] DA02/w0 draw 0: 1345 new tokens, stop, 137s, eta 73 min
+[22/53] DA02/w2 draw 0: 1325 new tokens, stop, 135s, eta 71 min
+[23/53] DA02/w3 draw 0: 1241 new tokens, stop, 126s, eta 68 min
+[24/53] DA02/w4 draw 0: 1234 new tokens, stop, 125s, eta 66 min
+[25/53] DA02/w6 draw 0: 1970 new tokens, stop, 200s, eta 65 min
+[26/53] DA03/w0 draw 0: 1263 new tokens, stop, 128s, eta 62 min
+[27/53] DA03/w2 draw 0: 1629 new tokens, stop, 166s, eta 60 min
+[28/53] DA03/w3 draw 0: 1206 new tokens, stop, 122s, eta 58 min
+[29/53] DA03/w6 draw 0: 1617 new tokens, stop, 164s, eta 56 min
+[30/53] DA04/w0 draw 0: 1509 new tokens, stop, 153s, eta 54 min
+[31/53] DA04/w2 draw 0: 1360 new tokens, stop, 138s, eta 51 min
+[32/53] DA04/w3 draw 0: 1346 new tokens, stop, 137s, eta 49 min
+[33/53] DA04/w6 draw 0: 1729 new tokens, stop, 176s, eta 47 min
+[34/53] DA05/w0 draw 0: 1377 new tokens, stop, 140s, eta 45 min
+[35/53] DA05/w3 draw 0: 1367 new tokens, stop, 139s, eta 42 min
+[36/53] DA06/w0 draw 0: 1440 new tokens, stop, 146s, eta 40 min
+[37/53] DA06/w2 draw 0: 1266 new tokens, stop, 129s, eta 38 min
+[38/53] DA06/w3 draw 0: 1427 new tokens, stop, 145s, eta 35 min
+[39/53] DA07/w2 draw 0: 1212 new tokens, stop, 123s, eta 33 min
+[40/53] DA07/w3 draw 0: 1464 new tokens, stop, 149s, eta 30 min
+[41/53] DA07/w4 draw 0: 1617 new tokens, stop, 164s, eta 28 min
+[42/53] DA07/w5 draw 0: 1271 new tokens, stop, 129s, eta 26 min
+[43/53] DA08/w1 draw 0: 1449 new tokens, stop, 147s, eta 24 min
+[44/53] DA08/w3 draw 0: 1275 new tokens, stop, 129s, eta 21 min
+[45/53] DA08/w4 draw 0: 1768 new tokens, stop, 180s, eta 19 min
+[46/53] DA08/w5 draw 0: 1355 new tokens, stop, 138s, eta 17 min
+[47/53] DA08/w6 draw 0: 1771 new tokens, stop, 180s, eta 14 min
+[48/53] DA09/w2 draw 0: 1273 new tokens, stop, 129s, eta 12 min
+[49/53] DA09/w3 draw 0: 1655 new tokens, stop, 168s, eta 10 min
+[50/53] DA09/w4 draw 0: 1591 new tokens, stop, 162s, eta 7 min
+[51/53] DA09/w6 draw 0: 1286 new tokens, stop, 130s, eta 5 min
+[52/53] DA10/w0 draw 0: 1341 new tokens, stop, 136s, eta 2 min
+[53/53] DA10/w1 draw 0: 1513 new tokens, stop, 154s, eta 0 min
+sampled draws: 0 in 0 continuation batches of up to 32; 0 done, 0 to go
+done (round1_finished): {'extended': 55, 'still_capped': 0, 'draw0_still_capped': 0}; copy data/s2/replies/qwen3-32b to the laptop (scripts/s2_fetch.sh), then `python runs/s2_assent.py grade qwen3-32b`

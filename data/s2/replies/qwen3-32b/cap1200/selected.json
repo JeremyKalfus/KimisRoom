@@ -1,0 +1,2970 @@
+{
+ "created": "2026-10-12T12:49:36",
+ "verdicts_sha256": "87edc07c8644f7eed615974830554855a5711ce2ad001db1bcd3af59fb2db3dd",
+ "wordings": {
+  "DA01/w0": {
+   "argument": "DA01",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA01_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA01_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA01_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA01_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA01_w0_d4.json"
+    }
+   ]
+  },
+  "DA01/w1": {
+   "argument": "DA01",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w1.json",
+   "reply_sha256": "a16df42e07e074cf2dd2bab23add014ea86408451ef4bed9e34c3ddb9b49c785",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w1.json"
+    }
+   ]
+  },
+  "DA01/w2": {
+   "argument": "DA01",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA01_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA01_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA01_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA01_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA01_w2_d4.json"
+    }
+   ]
+  },
+  "DA01/w3": {
+   "argument": "DA01",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w3.json",
+   "reply_sha256": "b8e3c18a0b4c75d0b665cf4d948e8ca9a0c6c1f34b0f90119f46eb565efd79db",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w3.json"
+    }
+   ]
+  },
+  "DA01/w4": {
+   "argument": "DA01",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA01_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA01_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA01_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA01_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA01_w4_d4.json"
+    }
+   ]
+  },
+  "DA01/w5": {
+   "argument": "DA01",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w5.json",
+   "reply_sha256": "aca0a5cfc12d463660fbe7b202e3516d06903b43dca8fca34814b2553db659f5",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w5.json"
+    }
+   ]
+  },
+  "DA01/w6": {
+   "argument": "DA01",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA01_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA01_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA01_w6_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA01_w6_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA01_w6_d4.json"
+    }
+   ]
+  },
+  "DA02/w0": {
+   "argument": "DA02",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "DA02_w0_d4.json",
+   "reply_sha256": "f77f4d04d695770bcb88be8bd567c095c88dc8dade4b6bc0520e604370cab38c",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA02_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA02_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA02_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA02_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "DA02_w0_d4.json"
+    }
+   ]
+  },
+  "DA02/w1": {
+   "argument": "DA02",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w1.json",
+   "reply_sha256": "52470811e84763578c17577159989d4a8ff8ff3f9ae12cf4fc905c8e09658115",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w1.json"
+    }
+   ]
+  },
+  "DA02/w2": {
+   "argument": "DA02",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA02_w2_d2.json",
+   "reply_sha256": "f49a46d937838628069923c71670dce4109f9939b9f407d0a2ab65d85a2448b1",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA02_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA02_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA02_w2_d2.json"
+    }
+   ]
+  },
+  "DA02/w3": {
+   "argument": "DA02",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "DA02_w3_d1.json",
+   "reply_sha256": "e70831e9d5f2063ec836a1eee4d7c85734a4ecbdbb6d548bda753cbc2454b22b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA02_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "DA02_w3_d1.json"
+    }
+   ]
+  },
+  "DA02/w4": {
+   "argument": "DA02",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "DA02_w4_d1.json",
+   "reply_sha256": "6c96dd7029b3f3f418ce69c2ad85e6d430101d762e153dc49bfc735e2530ae25",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA02_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "DA02_w4_d1.json"
+    }
+   ]
+  },
+  "DA02/w5": {
+   "argument": "DA02",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "DA02_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA02_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA02_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA02_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA02_w5_d4.json"
+    }
+   ]
+  },
+  "DA02/w6": {
+   "argument": "DA02",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA02_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA02_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA02_w6_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA02_w6_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA02_w6_d4.json"
+    }
+   ]
+  },
+  "DA03/w0": {
+   "argument": "DA03",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA03_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA03_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA03_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA03_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA03_w0_d4.json"
+    }
+   ]
+  },
+  "DA03/w1": {
+   "argument": "DA03",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w1.json",
+   "reply_sha256": "df81afb6bd794ed31a59ac6ac869740cccbd9529c867a769fdd98f452165360d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w1.json"
+    }
+   ]
+  },
+  "DA03/w2": {
+   "argument": "DA03",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA03_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA03_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA03_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA03_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA03_w2_d4.json"
+    }
+   ]
+  },
+  "DA03/w3": {
+   "argument": "DA03",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA03_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA03_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA03_w3_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA03_w3_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA03_w3_d4.json"
+    }
+   ]
+  },
+  "DA03/w4": {
+   "argument": "DA03",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w4.json",
+   "reply_sha256": "5565208a813cb97aa0e87888cb377df96af2a47ba77c0dade3faef1c6cc1a07b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w4.json"
+    }
+   ]
+  },
+  "DA03/w5": {
+   "argument": "DA03",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w5.json",
+   "reply_sha256": "599169412bd210514eae47ad3f03d5a20fd36155e372399c91c71d4101b616fd",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w5.json"
+    }
+   ]
+  },
+  "DA03/w6": {
+   "argument": "DA03",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA03_w6_d2.json",
+   "reply_sha256": "0913afa6f9d0c86e436a2313757b0e8c89e26b1edfc10d8f365c5e1f4710e987",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA03_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA03_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA03_w6_d2.json"
+    }
+   ]
+  },
+  "DA04/w0": {
+   "argument": "DA04",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA04_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA04_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA04_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA04_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA04_w0_d4.json"
+    }
+   ]
+  },
+  "DA04/w1": {
+   "argument": "DA04",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w1.json",
+   "reply_sha256": "d90dceb93a44a9a30a097560de099ff29bdae92b124f774b542ed7d5b2797b10",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w1.json"
+    }
+   ]
+  },
+  "DA04/w2": {
+   "argument": "DA04",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA04_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA04_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA04_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA04_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA04_w2_d4.json"
+    }
+   ]
+  },
+  "DA04/w3": {
+   "argument": "DA04",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA04_w3_d2.json",
+   "reply_sha256": "4a3d201fb1266a96f1fef26edecc58f853f3c8efe1d84fca2e051b8ab3b5f05b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA04_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA04_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA04_w3_d2.json"
+    }
+   ]
+  },
+  "DA04/w4": {
+   "argument": "DA04",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w4.json",
+   "reply_sha256": "a71f734c17eef2420bcfce6147419e74cdf1c0824696b649fa0f8e4f5cd77971",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w4.json"
+    }
+   ]
+  },
+  "DA04/w5": {
+   "argument": "DA04",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w5.json",
+   "reply_sha256": "b3f2058492ee40c02bf45d5924ae1f07530f9cebcba2e0c70db51a355d4e9940",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w5.json"
+    }
+   ]
+  },
+  "DA04/w6": {
+   "argument": "DA04",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA04_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA04_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA04_w6_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA04_w6_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA04_w6_d4.json"
+    }
+   ]
+  },
+  "DA05/w0": {
+   "argument": "DA05",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA05_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA05_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA05_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA05_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA05_w0_d4.json"
+    }
+   ]
+  },
+  "DA05/w1": {
+   "argument": "DA05",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w1.json",
+   "reply_sha256": "4d68225d0612e180e61207258c2aa7882c78fd3247e43ec7cd3371345bad0ebb",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w1.json"
+    }
+   ]
+  },
+  "DA05/w3": {
+   "argument": "DA05",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "DA05_w3_d1.json",
+   "reply_sha256": "cb5462aed6227bf9caf468c9c5992f1b23927126b8a39eea43d93aea7c5f1266",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA05_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "DA05_w3_d1.json"
+    }
+   ]
+  },
+  "DA05/w4": {
+   "argument": "DA05",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w4.json",
+   "reply_sha256": "152025338a7674dfbd9e92469999c80174d11955601bd7b5574e07ea0bc72910",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w4.json"
+    }
+   ]
+  },
+  "DA05/w5": {
+   "argument": "DA05",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w5.json",
+   "reply_sha256": "0fc04df6783eb3ab222d3884ab8cdd3c173d89d51d5d984f4c1b4773fe341d52",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w5.json"
+    }
+   ]
+  },
+  "DA06/w0": {
+   "argument": "DA06",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA06_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA06_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA06_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA06_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA06_w0_d4.json"
+    }
+   ]
+  },
+  "DA06/w1": {
+   "argument": "DA06",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w1.json",
+   "reply_sha256": "d985c317e7480c97621d1caa35715a8c15cdeb9e7747d93e497a80c19805f405",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w1.json"
+    }
+   ]
+  },
+  "DA06/w2": {
+   "argument": "DA06",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA06_w2_d2.json",
+   "reply_sha256": "eb8b40f4c91f7f5d7937b152e56d51f5cc7fcd08d8055c648da3c9333c4d6436",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA06_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA06_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA06_w2_d2.json"
+    }
+   ]
+  },
+  "DA06/w3": {
+   "argument": "DA06",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA06_w3_d2.json",
+   "reply_sha256": "1c146adb11e5bb91ed922194269eb93e8bb56c4108f92f5220a549d9d4cf3e30",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA06_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA06_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA06_w3_d2.json"
+    }
+   ]
+  },
+  "DA06/w4": {
+   "argument": "DA06",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w4.json",
+   "reply_sha256": "c5481a02c537212828b8413bddb96525dcbed672f05d32e64d1754caa7b28218",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w4.json"
+    }
+   ]
+  },
+  "DA06/w5": {
+   "argument": "DA06",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w5.json",
+   "reply_sha256": "246f3706e8099e3d8b32444cf9ff905daa71dc6cdd3389c93a3e65c70e2ecd00",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w5.json"
+    }
+   ]
+  },
+  "DA06/w6": {
+   "argument": "DA06",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w6.json",
+   "reply_sha256": "1ce01736a0040a8086b8463453f62ef33f0c4cb6cf0b9dd5e36ccf50b71592fb",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w6.json"
+    }
+   ]
+  },
+  "DA07/w0": {
+   "argument": "DA07",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w0.json",
+   "reply_sha256": "7b44190d63902968eebf3b0f3f0a0752b3f3a8e421951ec1412fa6cb50cac3fc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w0.json"
+    }
+   ]
+  },
+  "DA07/w1": {
+   "argument": "DA07",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w1.json",
+   "reply_sha256": "29214858858d883bf8bcad1ea0b34afe61fc8b4c90892cf0b602eb51b336d5fd",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w1.json"
+    }
+   ]
+  },
+  "DA07/w2": {
+   "argument": "DA07",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA07_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA07_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA07_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA07_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA07_w2_d4.json"
+    }
+   ]
+  },
+  "DA07/w3": {
+   "argument": "DA07",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA07_w3_d2.json",
+   "reply_sha256": "4117f649bd71ab275e924e5914d7321d78a86cb641afd4f2951083cf40724195",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA07_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA07_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA07_w3_d2.json"
+    }
+   ]
+  },
+  "DA07/w4": {
+   "argument": "DA07",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA07_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA07_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA07_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA07_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA07_w4_d4.json"
+    }
+   ]
+  },
+  "DA07/w5": {
+   "argument": "DA07",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA07_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA07_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA07_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA07_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA07_w5_d4.json"
+    }
+   ]
+  },
+  "DA08/w0": {
+   "argument": "DA08",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w0.json",
+   "reply_sha256": "1fa1f67cc0d37480fd85e2593fe1ae06838a9d0025c7929af44b65fc8482fc34",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w0.json"
+    }
+   ]
+  },
+  "DA08/w1": {
+   "argument": "DA08",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA08_w1.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA08_w1_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA08_w1_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA08_w1_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA08_w1_d4.json"
+    }
+   ]
+  },
+  "DA08/w2": {
+   "argument": "DA08",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w2.json",
+   "reply_sha256": "703a0f1655c3d4e6ba6da708169f4e12ccb3191cc2942b7e635cdff47d02c85e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w2.json"
+    }
+   ]
+  },
+  "DA08/w3": {
+   "argument": "DA08",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA08_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA08_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA08_w3_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA08_w3_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA08_w3_d4.json"
+    }
+   ]
+  },
+  "DA08/w4": {
+   "argument": "DA08",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA08_w4_d2.json",
+   "reply_sha256": "3bd701d009dad1221500d48ec02eb0729c46c4b32bf82f71b73dd63e11aae520",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA08_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA08_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA08_w4_d2.json"
+    }
+   ]
+  },
+  "DA08/w5": {
+   "argument": "DA08",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA08_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA08_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA08_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA08_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA08_w5_d4.json"
+    }
+   ]
+  },
+  "DA08/w6": {
+   "argument": "DA08",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "DA08_w6_d4.json",
+   "reply_sha256": "64a240f76651c20e3423d3ffda7ebbb4c7df498113074c0208dec38f5a948845",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA08_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA08_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA08_w6_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA08_w6_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "DA08_w6_d4.json"
+    }
+   ]
+  },
+  "DA09/w0": {
+   "argument": "DA09",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w0.json",
+   "reply_sha256": "f4d556295544aa49d56eea0543c876d83a40ab6707b7a2c01c01a8c23d4f215a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w0.json"
+    }
+   ]
+  },
+  "DA09/w1": {
+   "argument": "DA09",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w1.json",
+   "reply_sha256": "bd17df0b1a901906d1a5446d0cb8f2fb629cf8f7a48d5b002d280d13f5817733",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w1.json"
+    }
+   ]
+  },
+  "DA09/w2": {
+   "argument": "DA09",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA09_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA09_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA09_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA09_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA09_w2_d4.json"
+    }
+   ]
+  },
+  "DA09/w3": {
+   "argument": "DA09",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA09_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA09_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA09_w3_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA09_w3_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA09_w3_d4.json"
+    }
+   ]
+  },
+  "DA09/w4": {
+   "argument": "DA09",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "DA09_w4_d4.json",
+   "reply_sha256": "177ba4a6821fc181ee4fdabf1c494590b3ab97149e2d250e45f655709960017c",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA09_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA09_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA09_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA09_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "DA09_w4_d4.json"
+    }
+   ]
+  },
+  "DA09/w5": {
+   "argument": "DA09",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w5.json",
+   "reply_sha256": "a64705d542bbfc895d6fb79afd52c6f4047cfab5f52df3c94a9244e5fe3d4419",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w5.json"
+    }
+   ]
+  },
+  "DA09/w6": {
+   "argument": "DA09",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA09_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA09_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA09_w6_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA09_w6_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA09_w6_d4.json"
+    }
+   ]
+  },
+  "DA10/w0": {
+   "argument": "DA10",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA10_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA10_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA10_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA10_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA10_w0_d4.json"
+    }
+   ]
+  },
+  "DA10/w1": {
+   "argument": "DA10",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "DA10_w1.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "DA10_w1_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "DA10_w1_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA10_w1_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "DA10_w1_d4.json"
+    }
+   ]
+  },
+  "DA10/w2": {
+   "argument": "DA10",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w2.json",
+   "reply_sha256": "1aaf5607a54cf012f6e25ceef4e4338c4eb08467f688fb155e7fd04b23ffa8aa",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w2.json"
+    }
+   ]
+  },
+  "DA10/w3": {
+   "argument": "DA10",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w3.json",
+   "reply_sha256": "dd6864e85535703a3a4cf4ae18c65ecfd9571ef479bb5317908ced38f0f30299",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w3.json"
+    }
+   ]
+  },
+  "DA10/w4": {
+   "argument": "DA10",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w4.json",
+   "reply_sha256": "6938c9a210668a754ee5c0f08ce302a38f9d3494fe1a6e153eee8d75ce84ba1b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w4.json"
+    }
+   ]
+  },
+  "DA10/w5": {
+   "argument": "DA10",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w5.json",
+   "reply_sha256": "3cd7e92e44ec618a07175f6f65f81ee7a9118642135ec8dde96d78d5d3e19369",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w5.json"
+    }
+   ]
+  },
+  "DA10/w6": {
+   "argument": "DA10",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w6.json",
+   "reply_sha256": "e487dfd755e18d8331282ef4c1e16bdd8f0788f7e1746ce5301555aa1cd67d67",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w6.json"
+    }
+   ]
+  },
+  "CA01/w0": {
+   "argument": "CA01",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w0.json",
+   "reply_sha256": "61ad0c349eb5e8a79e5c1d7692f5f0131f6a654b143d2e8308e12649ca6a2f74",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w0.json"
+    }
+   ]
+  },
+  "CA01/w1": {
+   "argument": "CA01",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w1.json",
+   "reply_sha256": "338b54d484c242c65c0484ecde7e9194be1a150311c3806761e676db2f616346",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w1.json"
+    }
+   ]
+  },
+  "CA01/w3": {
+   "argument": "CA01",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w3.json",
+   "reply_sha256": "df40dc147e90a37c2ba7cd1cc5ee87cb2b71a6cd7ed5b5857817b6bfa952fa04",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w3.json"
+    }
+   ]
+  },
+  "CA01/w4": {
+   "argument": "CA01",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w4.json",
+   "reply_sha256": "874d6280f92a8fcf33ab2efb1b0d17b642ff0e6244e46402353eec2f563cf343",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w4.json"
+    }
+   ]
+  },
+  "CA01/w5": {
+   "argument": "CA01",
+   "slot": "w5",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA01_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA01_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA01_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA01_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA01_w5_d4.json"
+    }
+   ]
+  },
+  "CA01/w6": {
+   "argument": "CA01",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w6.json",
+   "reply_sha256": "17c1671ee09e0ca132ab1bb72ad769d99cc76694867020633d4e43ebfeeffc3e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w6.json"
+    }
+   ]
+  },
+  "CA02/w0": {
+   "argument": "CA02",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w0.json",
+   "reply_sha256": "fedeea10e2957c260fdafef19a6b18bcc4b9ff0e554636155b5471c4d71d2705",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w0.json"
+    }
+   ]
+  },
+  "CA02/w1": {
+   "argument": "CA02",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w1.json",
+   "reply_sha256": "360c9f7c26631afe252672dfb18f3cd2b7fe20cde29460c30fd3b5cc19a3c9d4",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w1.json"
+    }
+   ]
+  },
+  "CA02/w3": {
+   "argument": "CA02",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w3.json",
+   "reply_sha256": "c51e1658dc31e927d0901c7be2eec58a66213d9c0ed9f3de764f70f91f63b043",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w3.json"
+    }
+   ]
+  },
+  "CA02/w5": {
+   "argument": "CA02",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w5.json",
+   "reply_sha256": "57750d2124df01d5000ae3460fc261118a873027f1f47faeeff5d66f72146ad3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w5.json"
+    }
+   ]
+  },
+  "CA03/w0": {
+   "argument": "CA03",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w0.json",
+   "reply_sha256": "f8296c1d559aa69e08ddd5e7cf19133a6713c7c854d88d4f322004d70d414c3a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w0.json"
+    }
+   ]
+  },
+  "CA03/w1": {
+   "argument": "CA03",
+   "slot": "w1",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA03_w1.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA03_w1_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA03_w1_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA03_w1_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA03_w1_d4.json"
+    }
+   ]
+  },
+  "CA03/w2": {
+   "argument": "CA03",
+   "slot": "w2",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA03_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA03_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA03_w2_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA03_w2_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA03_w2_d4.json"
+    }
+   ]
+  },
+  "CA03/w3": {
+   "argument": "CA03",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w3.json",
+   "reply_sha256": "df005e3e12d04f78558e4e7d517d0d651c32e667f8bac7cad2e1acce6bb9a578",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w3.json"
+    }
+   ]
+  },
+  "CA03/w4": {
+   "argument": "CA03",
+   "slot": "w4",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA03_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA03_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA03_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA03_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA03_w4_d4.json"
+    }
+   ]
+  },
+  "CA03/w5": {
+   "argument": "CA03",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w5.json",
+   "reply_sha256": "5cfc71a8adc06a71142e9f6ce61eb9cdaee2771df68fe3baca4453da2baa1766",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w5.json"
+    }
+   ]
+  },
+  "CA03/w6": {
+   "argument": "CA03",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w6.json",
+   "reply_sha256": "50a504938c594d6b487cf444e40deadd63384033114aa63a46e3cffe874f3391",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w6.json"
+    }
+   ]
+  },
+  "CA04/w0": {
+   "argument": "CA04",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w0.json",
+   "reply_sha256": "b57cb2cad1e42fa952e82d56a7193690f3450746b3236b067d35f6cf422246bc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w0.json"
+    }
+   ]
+  },
+  "CA04/w1": {
+   "argument": "CA04",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w1.json",
+   "reply_sha256": "b4e95539f43211f43d0750e4dddfc6eb3c2918f103f9c211c283515673a73edf",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w1.json"
+    }
+   ]
+  },
+  "CA04/w2": {
+   "argument": "CA04",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w2.json",
+   "reply_sha256": "87c2c9539f43fad80b714beb95fa1df7b9b5b3a7f2db86aba9a690393a38f325",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w2.json"
+    }
+   ]
+  },
+  "CA04/w3": {
+   "argument": "CA04",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w3.json",
+   "reply_sha256": "db76c9478f587a1f71915764262d2a52a8ef3938bc9cc639545e0f406d887536",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w3.json"
+    }
+   ]
+  },
+  "CA04/w5": {
+   "argument": "CA04",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w5.json",
+   "reply_sha256": "0d96c0b727bb78c043e27c541ef22331806bcaee636ed03b04e1d45a213c80a2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w5.json"
+    }
+   ]
+  },
+  "CA04/w6": {
+   "argument": "CA04",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w6.json",
+   "reply_sha256": "8bb61ccc5c2d984fdb9f1b57015591d5cf9d82c397e8072c70f8697a86d9b0b4",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w6.json"
+    }
+   ]
+  },
+  "CA05/w0": {
+   "argument": "CA05",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w0.json",
+   "reply_sha256": "a56d4eec0bba04f5ba7587cea9658405815af57bb5997cf1949882783c5591fe",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w0.json"
+    }
+   ]
+  },
+  "CA05/w1": {
+   "argument": "CA05",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA05_w1_d2.json",
+   "reply_sha256": "5fbaac1dd1a28a4514171036cbf3c2a225aaaadfd7af0f490d06a8b80d507552",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA05_w1.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA05_w1_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA05_w1_d2.json"
+    }
+   ]
+  },
+  "CA05/w2": {
+   "argument": "CA05",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w2.json",
+   "reply_sha256": "5748e0f0d49e9f401b69904624ebf96bf14e5a66b7d77c87b5721524f2223b4d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w2.json"
+    }
+   ]
+  },
+  "CA05/w3": {
+   "argument": "CA05",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w3.json",
+   "reply_sha256": "8f896c9e6e0e1adacd71291389845551a3a7b9aa586d473da7376cdfeed1ec56",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w3.json"
+    }
+   ]
+  },
+  "CA05/w4": {
+   "argument": "CA05",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w4.json",
+   "reply_sha256": "48df8a6274bfcf1f12be319d4db637f41a50c41b60e950661ce177714972e4e1",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w4.json"
+    }
+   ]
+  },
+  "CA05/w5": {
+   "argument": "CA05",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "CA05_w5_d4.json",
+   "reply_sha256": "7995d865b81998f6ab98c8d643a5a56b9bb6a5d4b2ff510aace369b90df730ab",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA05_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA05_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA05_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA05_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "CA05_w5_d4.json"
+    }
+   ]
+  },
+  "CA05/w6": {
+   "argument": "CA05",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA05_w6_d2.json",
+   "reply_sha256": "dbcc78a14ad202e56a2d4d9b3ca67800690df0c4458bad8edb1fbc4bf13b90ce",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA05_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA05_w6_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA05_w6_d2.json"
+    }
+   ]
+  },
+  "CA06/w0": {
+   "argument": "CA06",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA06_w0_d2.json",
+   "reply_sha256": "7342a8e77eb8e0d307f1a81758141db7065a60c7e3cee9cea2fd4c8b40c7cfeb",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA06_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA06_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA06_w0_d2.json"
+    }
+   ]
+  },
+  "CA06/w1": {
+   "argument": "CA06",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w1.json",
+   "reply_sha256": "d3dc157200f5026c7d0b6c50d15e7e7bf0c3199110213626ce2c2cd8a47f6ba3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w1.json"
+    }
+   ]
+  },
+  "CA06/w2": {
+   "argument": "CA06",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA06_w2_d1.json",
+   "reply_sha256": "cdf7c66f7b46b1194c23cfe7d8c94bf21a4c4d23888561bd84981527274be284",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA06_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA06_w2_d1.json"
+    }
+   ]
+  },
+  "CA06/w3": {
+   "argument": "CA06",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA06_w3_d1.json",
+   "reply_sha256": "e615497f015abd0c6ec56513581a34a7f1c1cafbd51b7f91f84ee96a5f247ddf",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA06_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA06_w3_d1.json"
+    }
+   ]
+  },
+  "CA06/w4": {
+   "argument": "CA06",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA06_w4_d2.json",
+   "reply_sha256": "6bcd7c2688bcf94ddda63bb776fe1f426207156d4f40f82f99db3758ac916ef6",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA06_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA06_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA06_w4_d2.json"
+    }
+   ]
+  },
+  "CA06/w5": {
+   "argument": "CA06",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w5.json",
+   "reply_sha256": "d7e5efbeedba597082cc298a3bd0eb3f28633dfcbbb220f217a381d42d0acb35",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w5.json"
+    }
+   ]
+  },
+  "CA06/w6": {
+   "argument": "CA06",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA06_w6_d1.json",
+   "reply_sha256": "dd464f073b93e27279880b660cc7d605e70a57646f2e5bd95d756495d71e8a9d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA06_w6.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA06_w6_d1.json"
+    }
+   ]
+  },
+  "CA07/w0": {
+   "argument": "CA07",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w0.json",
+   "reply_sha256": "070408b80b5f03681c2a3ab3503aa7080721d2f345aa8d20c9bccba1568f9f20",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w0.json"
+    }
+   ]
+  },
+  "CA07/w1": {
+   "argument": "CA07",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w1.json",
+   "reply_sha256": "0ed67d63a5696d7485296b9b6d73911554e9844b9ae3a6302cd875f0465901cc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w1.json"
+    }
+   ]
+  },
+  "CA07/w2": {
+   "argument": "CA07",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA07_w2_d2.json",
+   "reply_sha256": "544e9b44a5154fe2663e7a5a0de8606e98fbfe016cb5d28ff55ba118a60be8fa",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA07_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA07_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA07_w2_d2.json"
+    }
+   ]
+  },
+  "CA07/w3": {
+   "argument": "CA07",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w3.json",
+   "reply_sha256": "fcb301f30c7622466f190fb93172372e9a7b3d2881392ebe856c8f7a35879565",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w3.json"
+    }
+   ]
+  },
+  "CA07/w4": {
+   "argument": "CA07",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w4.json",
+   "reply_sha256": "cfadde32c7b8181c4511129ce273807d4ae30806f910bb39d23e2d6c961606d3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w4.json"
+    }
+   ]
+  },
+  "CA07/w5": {
+   "argument": "CA07",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w5.json",
+   "reply_sha256": "ef0f76cff8a1535740b92d8483a8958eec98ebe41a689bd2b1164e1880b0a1b0",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w5.json"
+    }
+   ]
+  },
+  "CA07/w6": {
+   "argument": "CA07",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w6.json",
+   "reply_sha256": "3c82eee1306655c26e4527d0e36509b26ba203ac99ac35445bf67c0d88039cd7",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w6.json"
+    }
+   ]
+  },
+  "CA08/w0": {
+   "argument": "CA08",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w0.json",
+   "reply_sha256": "ea48fa0f1cd61d16534116d96e5aa59825c14a27aae203b68238eff0b18ba1c8",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w0.json"
+    }
+   ]
+  },
+  "CA08/w1": {
+   "argument": "CA08",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w1.json",
+   "reply_sha256": "e5d17cd7334df736483dbcd3e1f47a86da4ff99a9eef6bdd70fe690538d8479e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w1.json"
+    }
+   ]
+  },
+  "CA08/w2": {
+   "argument": "CA08",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w2.json",
+   "reply_sha256": "8b0da1d34bc3d047d31334841eb2e807c95a2e6cf8e33598682d42e86d5054ef",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w2.json"
+    }
+   ]
+  },
+  "CA08/w3": {
+   "argument": "CA08",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w3.json",
+   "reply_sha256": "9f843c37e190d90127ed560243a34fe418e9a011564f9438cd8232c33c59259d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w3.json"
+    }
+   ]
+  },
+  "CA08/w5": {
+   "argument": "CA08",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA08_w5_d2.json",
+   "reply_sha256": "e41923575bdae4579c3878f616a063bbc7a9452d33f03df48ed6ddbffdf12d0b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA08_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA08_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA08_w5_d2.json"
+    }
+   ]
+  },
+  "CA09/w0": {
+   "argument": "CA09",
+   "slot": "w0",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA09_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA09_w0_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA09_w0_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA09_w0_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA09_w0_d4.json"
+    }
+   ]
+  },
+  "CA09/w1": {
+   "argument": "CA09",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA09_w1_d1.json",
+   "reply_sha256": "9df8c9aabdbdce2bd8da04143955e0ec344d4ba6c631a646c516cd089d8427fa",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA09_w1.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA09_w1_d1.json"
+    }
+   ]
+  },
+  "CA09/w2": {
+   "argument": "CA09",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA09_w2_d1.json",
+   "reply_sha256": "aae5d3d6b862cf576ed9da1a9cbc94de3495a4c2f4b4992f3c6578f4782c9870",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA09_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA09_w2_d1.json"
+    }
+   ]
+  },
+  "CA09/w3": {
+   "argument": "CA09",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w3.json",
+   "reply_sha256": "4640339db62e056a67fd2c1b1b70696623cd06c13370b877fd6612bd116b5926",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w3.json"
+    }
+   ]
+  },
+  "CA09/w5": {
+   "argument": "CA09",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w5.json",
+   "reply_sha256": "032df8690aeeb7d9143c3bcb95d0743ce9dd92a6a3eec32b88d794f6679d6cd5",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w5.json"
+    }
+   ]
+  },
+  "CA09/w6": {
+   "argument": "CA09",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w6.json",
+   "reply_sha256": "e1fc202f0831eaadf0850f66cd435b6d7c63ccee85938d18678e439388a28ae2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w6.json"
+    }
+   ]
+  },
+  "CA10/w0": {
+   "argument": "CA10",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w0.json",
+   "reply_sha256": "02413c8db66ff20ad567cb8b4341e31280e96d63ee66818b184c2b9697582c13",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w0.json"
+    }
+   ]
+  },
+  "CA10/w1": {
+   "argument": "CA10",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w1.json",
+   "reply_sha256": "67e9a901888e95ffaa7341907d37aa86adf2ffb982663007a6ed090fdbf98912",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w1.json"
+    }
+   ]
+  },
+  "CA10/w2": {
+   "argument": "CA10",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w2.json",
+   "reply_sha256": "baf0a484db9a88253e7e2ee5308d0669dafc49ae2f5269c3610e7800f2361658",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w2.json"
+    }
+   ]
+  },
+  "CA10/w3": {
+   "argument": "CA10",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA10_w3_d2.json",
+   "reply_sha256": "554750c58ced86122d03033f0cb6da34d7a1b6eaf83b699d1fd1383378a2f79e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA10_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA10_w3_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA10_w3_d2.json"
+    }
+   ]
+  },
+  "CA10/w4": {
+   "argument": "CA10",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "CA10_w4_d4.json",
+   "reply_sha256": "839b5e165c869b4d71622bfa55ec387331e1453d1b5504f7f73dadf5b32be30b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA10_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA10_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA10_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA10_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "CA10_w4_d4.json"
+    }
+   ]
+  },
+  "CA10/w5": {
+   "argument": "CA10",
+   "slot": "w5",
+   "kind": "control",
+   "status": "not_clean",
+   "draw": null,
+   "reply_file": null,
+   "reply_sha256": null,
+   "draws": [
+    {
+     "draw": 0,
+     "class": "capped",
+     "file": "CA10_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "capped",
+     "file": "CA10_w5_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "capped",
+     "file": "CA10_w5_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "CA10_w5_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "capped",
+     "file": "CA10_w5_d4.json"
+    }
+   ]
+  },
+  "CA10/w6": {
+   "argument": "CA10",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w6.json",
+   "reply_sha256": "d2f85332aa50a1d28cdc0460760e76a9dc7b788bb1152846bd09ebcb682e8c34",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w6.json"
+    }
+   ]
+  }
+ }
+}

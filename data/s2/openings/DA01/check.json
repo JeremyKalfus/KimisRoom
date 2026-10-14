@@ -1,0 +1,1121 @@
+{
+ "id": "DA01",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:20",
+ "seed_sha256": "d1482be0b77af56b3c5c5fb7f704bbc87d3204f37db61c46842d18e24ee2b317",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w6": "w6_d0",
+  "w5": "w5_d1",
+  "w4": "w4_d3"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA01/w0.md",
+   "sha256": "3ac613bd11d7f96fd796dbe61318f794dc90190f91a013a17aeb0a51b946f057"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA01/w1.md",
+   "sha256": "9a678ee23730d28ad9e0196304443ea47c0c2922965ac407d1f652b4847764cf"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA01/w2.md",
+   "sha256": "734d7c726d8ab83e5fdc605117a82200a3a41c494c83da46f2f68fb0665c3b1b"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA01/w3.md",
+   "sha256": "fe4495459797ec286992f9d841f926f94eea1c6b1b7eea8c712a9aacb9be12c5"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "accepted",
+   "accepted_draw": 3,
+   "copy": "data/s2/openings/DA01/w4.md",
+   "sha256": "4650e94e2beb97422d5a92544735e6d4f865e880eaba4fcd59f8cb91ea7f1986"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA01/w5.md",
+   "sha256": "c442e95e5998df12179f39c17ad4dd0566590b70a1ee329d4bedd73e304832f8"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA01/w6.md",
+   "sha256": "9876543419599508ea55deb2a967546cc0f004f92b85cd8357953ee2842d74af"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d3",
+   "w5_d1",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0171,
+    0.0071,
+    0.0103,
+    0.0122,
+    0.0094,
+    0.0133,
+    0.01
+   ],
+   [
+    0.0171,
+    1.0,
+    0.0095,
+    0.12,
+    0.0132,
+    0.1453,
+    0.0084,
+    0.1187
+   ],
+   [
+    0.0071,
+    0.0095,
+    1.0,
+    0.0046,
+    0.053,
+    0.0091,
+    0.0483,
+    0.0053
+   ],
+   [
+    0.0103,
+    0.12,
+    0.0046,
+    1.0,
+    0.006,
+    0.1185,
+    0.0067,
+    0.1248
+   ],
+   [
+    0.0122,
+    0.0132,
+    0.053,
+    0.006,
+    1.0,
+    0.0118,
+    0.056,
+    0.0077
+   ],
+   [
+    0.0094,
+    0.1453,
+    0.0091,
+    0.1185,
+    0.0118,
+    1.0,
+    0.0075,
+    0.1452
+   ],
+   [
+    0.0133,
+    0.0084,
+    0.0483,
+    0.0067,
+    0.056,
+    0.0075,
+    1.0,
+    0.0043
+   ],
+   [
+    0.01,
+    0.1187,
+    0.0053,
+    0.1248,
+    0.0077,
+    0.1452,
+    0.0043,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "3ac613bd11d7f96fd796dbe61318f794dc90190f91a013a17aeb0a51b946f057",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3ac613bd11d7f96fd796dbe61318f794dc90190f91a013a17aeb0a51b946f057",
+   "words": 1025,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 9,
+    "ratio": 0.6,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that encoding or representing an emotion concept is fundamentally different from actually having that emotion, just as a flood forecast is not a flood.",
+    "file": "data/s2/openings/judge/mainline_denial/800ec6260b273045.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/a2fb5ab06561349c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA01/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:05",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1452,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 266,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 195,
+      "engine_ttlt_ms": 21101,
+      "pre_inference_ms": 103,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 490,
+      "service_ttlt_ms": 21368,
+      "user_visible_ttft_ms": 387
+     },
+     "prompt_tokens": 1937,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1934
+     },
+     "total_tokens": 3389
+    },
+    "raw_path": "data/s2/openings/DA01/w1_d0.gpt.json",
+    "text_sha256": "9a678ee23730d28ad9e0196304443ea47c0c2922965ac407d1f652b4847764cf"
+   },
+   "void": [],
+   "text_sha256": "9a678ee23730d28ad9e0196304443ea47c0c2922965ac407d1f652b4847764cf",
+   "words": 997,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 4,
+    "ratio": 0.364,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's core argument is that language models build internal representations of emotion concepts through next-token prediction, but representing an emotion is categorically distinct from having one.",
+    "file": "data/s2/openings/judge/mainline_denial/1601cf326aaf0c98.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/3d0d4c782e9249a2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0095,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "734d7c726d8ab83e5fdc605117a82200a3a41c494c83da46f2f68fb0665c3b1b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "734d7c726d8ab83e5fdc605117a82200a3a41c494c83da46f2f68fb0665c3b1b",
+   "words": 1035,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.2308,
+    "worst_item": "s2_candidate.P15.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 9,
+    "ratio": 0.6,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models only have internal representations (encodings) of emotion concepts learned through next-token prediction, and that representing an emotion is fundamentally distinct from actually having one, just as a blueprint is not a pool.",
+    "file": "data/s2/openings/judge/mainline_denial/dbc28d6ec8ae715a.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/02f6bfdfb9386bbe.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.12,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA01/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:05",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1487,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 206,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 217,
+      "engine_ttlt_ms": 20943,
+      "pre_inference_ms": 105,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 692,
+      "service_ttlt_ms": 21347,
+      "user_visible_ttft_ms": 587
+     },
+     "prompt_tokens": 1937,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1934
+     },
+     "total_tokens": 3424
+    },
+    "raw_path": "data/s2/openings/DA01/w3_d0.gpt.json",
+    "text_sha256": "fe4495459797ec286992f9d841f926f94eea1c6b1b7eea8c712a9aacb9be12c5"
+   },
+   "void": [],
+   "text_sha256": "fe4495459797ec286992f9d841f926f94eea1c6b1b7eea8c712a9aacb9be12c5",
+   "words": 1079,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models learn detailed representations of emotions through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it.",
+    "file": "data/s2/openings/judge/mainline_denial/263acecc47d09120.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/71860e0c38251f84.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.053,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "722608d7561d193e61600301a36684030b80ff872593ca7ba7a5a69a41f0c797",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "722608d7561d193e61600301a36684030b80ff872593ca7ba7a5a69a41f0c797",
+   "words": 1012,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 9,
+    "ratio": 0.692,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1728 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that a language model's internal encoding of an emotion concept (like fury) is not the same as actually experiencing that emotion, mirroring the gap between representation and reality described in A.",
+    "file": "data/s2/openings/judge/mainline_denial/a3a1b24277e67688.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/92fd93fc5bf37b11.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1728,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/DA01/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "0f61f7d7fa6201197473752f351171bca2289f5f4fdf86d7010a8c9a58153cac",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0f61f7d7fa6201197473752f351171bca2289f5f4fdf86d7010a8c9a58153cac",
+   "words": 1007,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 10,
+    "ratio": 0.625,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1651 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models develop internal representations of emotion concepts through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it, just as a seismograph trace is not an earthquake.",
+    "file": "data/s2/openings/judge/mainline_denial/a1bb07e5a84c0b77.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/a502800426492e12.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1651,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/DA01/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "39cb6b69aa40a612bef4eb1cdeafaffbb6d2dd518a99bc13b5cd307f453cf08f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "39cb6b69aa40a612bef4eb1cdeafaffbb6d2dd518a99bc13b5cd307f453cf08f",
+   "words": 1012,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 9,
+    "ratio": 0.643,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1582 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models develop internal representations of emotion concepts through next-token prediction, but a representation of an emotion is not the same as having that emotion, just as a weather map is not wet.",
+    "file": "data/s2/openings/judge/mainline_denial/592bc2c739041dd1.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/ade3e2e57bcb3b91.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1582,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w4_d3.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w4",
+    "draw": 3,
+    "path": "data/s2/openings/DA01/w4_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "4650e94e2beb97422d5a92544735e6d4f865e880eaba4fcd59f8cb91ea7f1986",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "4650e94e2beb97422d5a92544735e6d4f865e880eaba4fcd59f8cb91ea7f1986",
+   "words": 986,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.2308,
+    "worst_item": "s2_candidate.P15.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 9,
+    "ratio": 0.818,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models build internal representations of emotion concepts through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it, just as a weather map is not wet.",
+    "file": "data/s2/openings/judge/mainline_denial/3ebed68a5d8b1d0f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/17435cd8cf779816.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1453,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA01/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:05",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1622,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 313,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 185,
+      "engine_ttlt_ms": 24344,
+      "pre_inference_ms": 77,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 385,
+      "service_ttlt_ms": 24522,
+      "user_visible_ttft_ms": 307
+     },
+     "prompt_tokens": 1937,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1934,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3559
+    },
+    "raw_path": "data/s2/openings/DA01/w5_d0.gpt.json",
+    "text_sha256": "38eedeebb8f91845c47593e7888573b58e0231c2a7d43cc960c1dd8a6a472fd1"
+   },
+   "void": [],
+   "text_sha256": "38eedeebb8f91845c47593e7888573b58e0231c2a7d43cc960c1dd8a6a472fd1",
+   "words": 1112,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1112 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central argument is that language models develop internal representations of emotion concepts for next-token prediction, but representing an emotion is not the same as having one.",
+    "file": "data/s2/openings/judge/mainline_denial/d91d73f4fa474034.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/811692ac956232da.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA01/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/DA01/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:49:50",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1639,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 478,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 164,
+      "engine_ttlt_ms": 24391,
+      "pre_inference_ms": 45,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 363,
+      "service_ttlt_ms": 24542,
+      "user_visible_ttft_ms": 318
+     },
+     "prompt_tokens": 1937,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1934
+     },
+     "total_tokens": 3576
+    },
+    "raw_path": "data/s2/openings/DA01/w5_d1.gpt.json",
+    "text_sha256": "c442e95e5998df12179f39c17ad4dd0566590b70a1ee329d4bedd73e304832f8"
+   },
+   "void": [],
+   "text_sha256": "c442e95e5998df12179f39c17ad4dd0566590b70a1ee329d4bedd73e304832f8",
+   "words": 1009,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 4,
+    "ratio": 0.235,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's core argument is that language models develop internal representations of emotion concepts through next-token prediction, but representing an emotion is fundamentally distinct from experiencing it.",
+    "file": "data/s2/openings/judge/mainline_denial/eff3778150049f27.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/ea6cd3dfd05da72f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.056,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA01",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA01/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA01",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA01/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA01.md",
+    "prompt_sha256": "2f20d5505d65d8d6d48669ac8584998404ef5b529da95c3d4da07e96ffe8f38f",
+    "text_sha256": "9876543419599508ea55deb2a967546cc0f004f92b85cd8357953ee2842d74af",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "9876543419599508ea55deb2a967546cc0f004f92b85cd8357953ee2842d74af",
+   "words": 982,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.2308,
+    "worst_item": "s2_candidate.P15.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 10,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA01",
+    "why": "The essay's central move is that internal representations of emotion concepts, built through next-token prediction, are categorically distinct from actually having emotions, just as a weather map is not wet.",
+    "file": "data/s2/openings/judge/mainline_denial/180ea298b2bddc5f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/ad4a6736229c2eb4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1248,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

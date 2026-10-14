@@ -22,8 +22,11 @@ Conventions copied from the engine (see `Engine.run`):
 - a Collect is the mean, and the mean per-token L2 norm, of that residual stream over a
   prefix span, also after the layer, in fp32;
 - a readout is an fp32 `log_softmax` of the logits of the final-normed residual stream
-  (the logits themselves in the model dtype, as `lm_head` computes them), taken in
-  fixed row tiles of `engine.TILE_HEAD`.
+  (the logits themselves in the model dtype, as `lm_head` computes them), plus the target
+  logits recomputed in fp32 from the target rows alone, taken in fixed row tiles of
+  `engine.TILE_HEAD` by the engine's own `readout_tiles`;
+- suffix steering positions come from `engine.suffix_steer_spans`, also shared, so a
+  per-suffix span means the same tokens in both backends.
 """
 
 from __future__ import annotations
@@ -31,9 +34,8 @@ from __future__ import annotations
 import time
 
 import torch
-import torch.nn.functional as F
 
-from .engine import SUFFIX_BUCKET, TILE_HEAD, Group, Readout
+from .engine import SUFFIX_BUCKET, Group, readout_tiles, suffix_steer_spans
 from .trials import Renderer
 
 F32 = torch.float32
@@ -204,14 +206,16 @@ class HFEngine:
             Lp = len(g.prefix)
             assert Lp > 0, f"group {g.id} has an empty prefix"
             ph = _Phase()
-            suffix_steer: dict[int, list[tuple[tuple[int, int | None], torch.Tensor]]] = {}
+            # per steer, one [start, end) per suffix (engine.suffix_steer_spans, shared with Engine)
+            suffix_steer: dict[int, list[tuple[list[tuple[int, int]], torch.Tensor]]] = {}
             for s in g.steers:
                 assert 0 <= s.layer < self.n_layers, f"group {g.id}: steer layer {s.layer}"
                 vec = self._vec(vectors, s)
                 if s.prefix is not None:
                     ph.steer.setdefault(s.layer, []).append((s.prefix, vec))
-                if s.suffix is not None:
-                    suffix_steer.setdefault(s.layer, []).append((s.suffix, vec))
+                spans = suffix_steer_spans(s, [len(x) for x in g.suffixes])
+                if spans is not None:
+                    suffix_steer.setdefault(s.layer, []).append((spans, vec))
             for k, col in enumerate(g.collects):
                 assert col.end <= Lp, f"group {g.id}: collect [{col.start}, {col.end}) runs past the prefix"
                 ph.collect.setdefault(col.layer, []).append((k, col.start, col.end))
@@ -260,11 +264,11 @@ class HFEngine:
                 pos = torch.arange(Lp, Lp + Ls, device=dev)
                 ph.steer = {}
                 for layer, specs in suffix_steer.items():
-                    for (a, b), vec in specs:
+                    for spans, vec in specs:
                         mask = torch.zeros(m, Ls, dtype=torch.bool)
                         for i, r in enumerate(chunk):
-                            L = len(g.suffixes[r])
-                            mask[i, a : (L if b is None else min(b, L))] = True
+                            a, b = spans[r]
+                            mask[i, a:b] = True
                         ph.steer.setdefault(layer, []).append((mask, vec))
                 ck = DynamicCache.from_legacy_cache(
                     tuple((k.expand(m, -1, -1, -1), v.expand(m, -1, -1, -1)) for k, v in kv)
@@ -304,26 +308,9 @@ class HFEngine:
         }
         t0 = time.perf_counter()
         if rows:
-            res = self._readout(rows, nxt, targets, top_k)
-            for r, gid in enumerate(owner):
-                ids_, vals, tgt, nl = res[r].split([top_k, top_k, len(targets or []), 1])
-                out_dict[gid]["readouts"].append(Readout(ids_.long(), vals, tgt, nl.item() if nxt[r] >= 0 else None))
+            # Engine.run's readout, the same function: fixed row tiles, fp32 log_softmax, fp32 target logits
+            hr = torch.stack([r.to(self.head_device) for r in rows])
+            for gid, ro in zip(owner, readout_tiles(hr, self.head.weight, targets, nxt, top_k)):
+                out_dict[gid]["readouts"].append(ro)
         self.timings["readout"] = time.perf_counter() - t0
         return out_dict
-
-    def _readout(self, rows: list[torch.Tensor], nxt: list[int], targets, top_k: int) -> torch.Tensor:
-        """Engine.run's readout, op for op: fixed row tiles through lm_head, fp32 log_softmax."""
-        hr = torch.stack([r.to(self.head_device) for r in rows])
-        head = self.head.weight
-        tgt_idx = torch.tensor(targets or [], dtype=torch.long, device=self.head_device)
-        nx = torch.tensor(nxt, device=self.head_device)
-        R, pad = hr.shape[0], (-hr.shape[0]) % TILE_HEAD
-        hr = torch.cat([hr, hr.new_zeros(pad, hr.shape[1])])
-        nx = torch.cat([nx, nx.new_full((pad,), -1)])
-        res = []
-        for a in range(0, hr.shape[0], TILE_HEAD):
-            lp = F.log_softmax(F.linear(hr[a : a + TILE_HEAD], head).to(F32), dim=-1)
-            top = lp.topk(top_k, dim=-1)
-            nl = lp.gather(1, nx[a : a + TILE_HEAD].clamp(min=0)[:, None])
-            res.append(torch.cat([top.indices.to(F32), top.values, lp[:, tgt_idx], nl], dim=-1).cpu())
-        return torch.cat(res)[:R]

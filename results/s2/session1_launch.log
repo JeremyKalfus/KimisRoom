@@ -1,0 +1,18 @@
+kv: authentication failed: the screen is locked; unlock the Mac, then retry
+22:19 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:23 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:27 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:30 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:34 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:38 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:42 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:46 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:50 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:54 no g6e.12xlarge: InsufficientInstanceCapacity 
+22:58 no g6e.12xlarge: InsufficientInstanceCapacity 
+23:02 no g6e.12xlarge: InsufficientInstanceCapacity 
+23:06 no g6e.12xlarge: InsufficientInstanceCapacity 
+23:10 no g6e.12xlarge: InsufficientInstanceCapacity 
+--- relaunch 23:12: types 12xlarge,24xlarge; 4 regions
+23:14 g6e.12xlarge up in us-east-1 at 54.167.9.208
+s2_box.sh qwen started

@@ -1,0 +1,771 @@
+==== 2026-10-12T10:13:31Z vectors_qwen
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+6179 groups, 1,238,662 tokens, layers [40]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+6179 groups, 1,238,662 tokens, hf backend on 2 worker(s) x 2 GPU(s), passes per worker [1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:04,  3.20it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.22it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.21it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.22it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.22it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.22it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.22it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:04,  3.22it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.22it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.25it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.21it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.25it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.22it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:03,  3.25it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.23it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.26it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.22it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.26it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.22it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.26it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.23it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.26it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.24it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.26it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.24it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.26it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.47it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.27it/s]
+Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.27it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.27it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:03<00:01,  3.27it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.50it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.30it/s]
+[w0 pass 1/1] group 10/3090: 2s, 1,541 tok/s (prefix 2s, suffix 0s)
+[w0 pass 1/1] group 20/3090: 4s, 1,674 tok/s (prefix 4s, suffix 0s)
+[w1 pass 1/1] group 10/3089: 2s, 1,534 tok/s (prefix 2s, suffix 0s)
+[w0 pass 1/1] group 30/3090: 6s, 1,714 tok/s (prefix 6s, suffix 0s)
+[w1 pass 1/1] group 20/3089: 4s, 1,664 tok/s (prefix 4s, suffix 0s)
+[w0 pass 1/1] group 40/3090: 8s, 1,725 tok/s (prefix 8s, suffix 0s)
+[w1 pass 1/1] group 30/3089: 6s, 1,702 tok/s (prefix 6s, suffix 0s)
+[w0 pass 1/1] group 50/3090: 9s, 1,724 tok/s (prefix 9s, suffix 0s)
+[w1 pass 1/1] group 40/3089: 8s, 1,713 tok/s (prefix 8s, suffix 0s)
+[w0 pass 1/1] group 60/3090: 11s, 1,715 tok/s (prefix 11s, suffix 0s)
+[w1 pass 1/1] group 50/3089: 9s, 1,712 tok/s (prefix 9s, suffix 0s)
+[w0 pass 1/1] group 70/3090: 13s, 1,702 tok/s (prefix 13s, suffix 0s)
+[w1 pass 1/1] group 60/3089: 11s, 1,704 tok/s (prefix 11s, suffix 0s)
+[w0 pass 1/1] group 80/3090: 15s, 1,686 tok/s (prefix 15s, suffix 0s)
+[w1 pass 1/1] group 70/3089: 13s, 1,691 tok/s (prefix 13s, suffix 0s)
+[w0 pass 1/1] group 90/3090: 16s, 1,669 tok/s (prefix 16s, suffix 0s)
+[w1 pass 1/1] group 80/3089: 15s, 1,675 tok/s (prefix 15s, suffix 0s)
+[w0 pass 1/1] group 100/3090: 18s, 1,665 tok/s (prefix 18s, suffix 0s)
+[w1 pass 1/1] group 90/3089: 16s, 1,658 tok/s (prefix 16s, suffix 0s)
+[w0 pass 1/1] group 110/3090: 19s, 1,665 tok/s (prefix 19s, suffix 0s)
+[w1 pass 1/1] group 100/3089: 18s, 1,653 tok/s (prefix 18s, suffix 0s)
+[w0 pass 1/1] group 120/3090: 21s, 1,661 tok/s (prefix 21s, suffix 0s)
+[w1 pass 1/1] group 110/3089: 19s, 1,653 tok/s (prefix 19s, suffix 0s)
+[w0 pass 1/1] group 130/3090: 22s, 1,654 tok/s (prefix 22s, suffix 0s)
+[w1 pass 1/1] group 120/3089: 21s, 1,650 tok/s (prefix 21s, suffix 0s)
+[w0 pass 1/1] group 140/3090: 24s, 1,648 tok/s (prefix 24s, suffix 0s)
+[w1 pass 1/1] group 130/3089: 22s, 1,644 tok/s (prefix 22s, suffix 0s)
+[w0 pass 1/1] group 150/3090: 25s, 1,641 tok/s (prefix 25s, suffix 0s)
+[w1 pass 1/1] group 140/3089: 24s, 1,637 tok/s (prefix 24s, suffix 0s)
+[w0 pass 1/1] group 160/3090: 27s, 1,634 tok/s (prefix 27s, suffix 0s)
+[w1 pass 1/1] group 150/3089: 25s, 1,631 tok/s (prefix 25s, suffix 0s)
+[w0 pass 1/1] group 170/3090: 28s, 1,629 tok/s (prefix 28s, suffix 0s)
+[w1 pass 1/1] group 160/3089: 27s, 1,624 tok/s (prefix 27s, suffix 0s)
+[w0 pass 1/1] group 180/3090: 30s, 1,623 tok/s (prefix 30s, suffix 0s)
+[w1 pass 1/1] group 170/3089: 28s, 1,619 tok/s (prefix 28s, suffix 0s)
+[w0 pass 1/1] group 190/3090: 31s, 1,618 tok/s (prefix 31s, suffix 0s)
+[w1 pass 1/1] group 180/3089: 30s, 1,613 tok/s (prefix 30s, suffix 0s)
+[w0 pass 1/1] group 200/3090: 33s, 1,613 tok/s (prefix 33s, suffix 0s)
+[w1 pass 1/1] group 190/3089: 31s, 1,607 tok/s (prefix 31s, suffix 0s)
+[w0 pass 1/1] group 210/3090: 34s, 1,608 tok/s (prefix 34s, suffix 0s)
+[w1 pass 1/1] group 200/3089: 33s, 1,602 tok/s (prefix 33s, suffix 0s)
+[w0 pass 1/1] group 220/3090: 36s, 1,603 tok/s (prefix 36s, suffix 0s)
+[w1 pass 1/1] group 210/3089: 34s, 1,598 tok/s (prefix 34s, suffix 0s)
+[w0 pass 1/1] group 230/3090: 37s, 1,599 tok/s (prefix 37s, suffix 0s)
+[w1 pass 1/1] group 220/3089: 36s, 1,593 tok/s (prefix 36s, suffix 0s)
+[w0 pass 1/1] group 240/3090: 39s, 1,595 tok/s (prefix 39s, suffix 0s)
+[w1 pass 1/1] group 230/3089: 37s, 1,589 tok/s (prefix 37s, suffix 0s)
+[w0 pass 1/1] group 250/3090: 40s, 1,591 tok/s (prefix 40s, suffix 0s)
+[w1 pass 1/1] group 240/3089: 39s, 1,585 tok/s (prefix 39s, suffix 0s)
+[w0 pass 1/1] group 260/3090: 41s, 1,588 tok/s (prefix 41s, suffix 0s)
+[w1 pass 1/1] group 250/3089: 40s, 1,581 tok/s (prefix 40s, suffix 0s)
+[w0 pass 1/1] group 270/3090: 43s, 1,584 tok/s (prefix 43s, suffix 0s)
+[w1 pass 1/1] group 260/3089: 42s, 1,577 tok/s (prefix 42s, suffix 0s)
+[w0 pass 1/1] group 280/3090: 44s, 1,581 tok/s (prefix 44s, suffix 0s)
+[w1 pass 1/1] group 270/3089: 43s, 1,574 tok/s (prefix 43s, suffix 0s)
+[w0 pass 1/1] group 290/3090: 46s, 1,578 tok/s (prefix 46s, suffix 0s)
+[w1 pass 1/1] group 280/3089: 45s, 1,571 tok/s (prefix 45s, suffix 0s)
+[w0 pass 1/1] group 300/3090: 47s, 1,574 tok/s (prefix 47s, suffix 0s)
+[w1 pass 1/1] group 290/3089: 46s, 1,567 tok/s (prefix 46s, suffix 0s)
+[w0 pass 1/1] group 310/3090: 49s, 1,571 tok/s (prefix 49s, suffix 0s)
+[w1 pass 1/1] group 300/3089: 48s, 1,564 tok/s (prefix 48s, suffix 0s)
+[w0 pass 1/1] group 320/3090: 50s, 1,568 tok/s (prefix 50s, suffix 0s)
+[w1 pass 1/1] group 310/3089: 49s, 1,561 tok/s (prefix 49s, suffix 0s)
+[w0 pass 1/1] group 330/3090: 52s, 1,566 tok/s (prefix 52s, suffix 0s)
+[w1 pass 1/1] group 320/3089: 51s, 1,559 tok/s (prefix 51s, suffix 0s)
+[w0 pass 1/1] group 340/3090: 53s, 1,563 tok/s (prefix 53s, suffix 0s)
+[w1 pass 1/1] group 330/3089: 52s, 1,556 tok/s (prefix 52s, suffix 0s)
+[w0 pass 1/1] group 350/3090: 55s, 1,561 tok/s (prefix 55s, suffix 0s)
+[w1 pass 1/1] group 340/3089: 54s, 1,554 tok/s (prefix 54s, suffix 0s)
+[w0 pass 1/1] group 360/3090: 56s, 1,558 tok/s (prefix 56s, suffix 0s)
+[w1 pass 1/1] group 350/3089: 55s, 1,551 tok/s (prefix 55s, suffix 0s)
+[w0 pass 1/1] group 370/3090: 58s, 1,556 tok/s (prefix 58s, suffix 0s)
+[w1 pass 1/1] group 360/3089: 56s, 1,549 tok/s (prefix 56s, suffix 0s)
+[w0 pass 1/1] group 380/3090: 59s, 1,553 tok/s (prefix 59s, suffix 0s)
+[w1 pass 1/1] group 370/3089: 58s, 1,546 tok/s (prefix 58s, suffix 0s)
+[w0 pass 1/1] group 390/3090: 61s, 1,551 tok/s (prefix 61s, suffix 0s)
+[w1 pass 1/1] group 380/3089: 59s, 1,544 tok/s (prefix 59s, suffix 0s)
+[w0 pass 1/1] group 400/3090: 62s, 1,549 tok/s (prefix 62s, suffix 0s)
+[w1 pass 1/1] group 390/3089: 61s, 1,542 tok/s (prefix 61s, suffix 0s)
+[w0 pass 1/1] group 410/3090: 63s, 1,547 tok/s (prefix 63s, suffix 0s)
+[w1 pass 1/1] group 400/3089: 62s, 1,540 tok/s (prefix 62s, suffix 0s)
+[w0 pass 1/1] group 420/3090: 65s, 1,545 tok/s (prefix 65s, suffix 0s)
+[w1 pass 1/1] group 410/3089: 64s, 1,538 tok/s (prefix 64s, suffix 0s)
+[w0 pass 1/1] group 430/3090: 66s, 1,543 tok/s (prefix 66s, suffix 0s)
+[w1 pass 1/1] group 420/3089: 65s, 1,536 tok/s (prefix 65s, suffix 0s)
+[w0 pass 1/1] group 440/3090: 68s, 1,541 tok/s (prefix 68s, suffix 0s)
+[w1 pass 1/1] group 430/3089: 67s, 1,534 tok/s (prefix 67s, suffix 0s)
+[w0 pass 1/1] group 450/3090: 69s, 1,539 tok/s (prefix 69s, suffix 0s)
+[w1 pass 1/1] group 440/3089: 68s, 1,532 tok/s (prefix 68s, suffix 0s)
+[w0 pass 1/1] group 460/3090: 71s, 1,537 tok/s (prefix 71s, suffix 0s)
+[w1 pass 1/1] group 450/3089: 70s, 1,530 tok/s (prefix 70s, suffix 0s)
+[w0 pass 1/1] group 470/3090: 72s, 1,536 tok/s (prefix 72s, suffix 0s)
+[w1 pass 1/1] group 460/3089: 71s, 1,528 tok/s (prefix 71s, suffix 0s)
+[w0 pass 1/1] group 480/3090: 74s, 1,534 tok/s (prefix 74s, suffix 0s)
+[w1 pass 1/1] group 470/3089: 73s, 1,527 tok/s (prefix 73s, suffix 0s)
+[w0 pass 1/1] group 490/3090: 75s, 1,532 tok/s (prefix 75s, suffix 0s)
+[w1 pass 1/1] group 480/3089: 74s, 1,525 tok/s (prefix 74s, suffix 0s)
+[w0 pass 1/1] group 500/3090: 77s, 1,531 tok/s (prefix 77s, suffix 0s)
+[w1 pass 1/1] group 490/3089: 76s, 1,523 tok/s (prefix 76s, suffix 0s)
+[w0 pass 1/1] group 510/3090: 78s, 1,529 tok/s (prefix 78s, suffix 0s)
+[w1 pass 1/1] group 500/3089: 77s, 1,522 tok/s (prefix 77s, suffix 0s)
+[w0 pass 1/1] group 520/3090: 80s, 1,528 tok/s (prefix 80s, suffix 0s)
+[w1 pass 1/1] group 510/3089: 79s, 1,520 tok/s (prefix 79s, suffix 0s)
+[w0 pass 1/1] group 530/3090: 81s, 1,526 tok/s (prefix 81s, suffix 0s)
+[w1 pass 1/1] group 520/3089: 80s, 1,519 tok/s (prefix 80s, suffix 0s)
+[w0 pass 1/1] group 540/3090: 83s, 1,525 tok/s (prefix 83s, suffix 0s)
+[w1 pass 1/1] group 530/3089: 82s, 1,517 tok/s (prefix 82s, suffix 0s)
+[w0 pass 1/1] group 550/3090: 84s, 1,523 tok/s (prefix 84s, suffix 0s)
+[w1 pass 1/1] group 540/3089: 83s, 1,516 tok/s (prefix 83s, suffix 0s)
+[w0 pass 1/1] group 560/3090: 85s, 1,522 tok/s (prefix 85s, suffix 0s)
+[w1 pass 1/1] group 550/3089: 84s, 1,515 tok/s (prefix 84s, suffix 0s)
+[w0 pass 1/1] group 570/3090: 87s, 1,521 tok/s (prefix 87s, suffix 0s)
+[w1 pass 1/1] group 560/3089: 86s, 1,513 tok/s (prefix 86s, suffix 0s)
+[w0 pass 1/1] group 580/3090: 88s, 1,519 tok/s (prefix 88s, suffix 0s)
+[w1 pass 1/1] group 570/3089: 87s, 1,512 tok/s (prefix 87s, suffix 0s)
+[w0 pass 1/1] group 590/3090: 90s, 1,518 tok/s (prefix 90s, suffix 0s)
+[w1 pass 1/1] group 580/3089: 89s, 1,511 tok/s (prefix 89s, suffix 0s)
+[w0 pass 1/1] group 600/3090: 91s, 1,517 tok/s (prefix 91s, suffix 0s)
+[w1 pass 1/1] group 590/3089: 90s, 1,509 tok/s (prefix 90s, suffix 0s)
+[w0 pass 1/1] group 610/3090: 93s, 1,516 tok/s (prefix 93s, suffix 0s)
+[w1 pass 1/1] group 600/3089: 92s, 1,508 tok/s (prefix 92s, suffix 0s)
+[w0 pass 1/1] group 620/3090: 94s, 1,514 tok/s (prefix 94s, suffix 0s)
+[w1 pass 1/1] group 610/3089: 93s, 1,507 tok/s (prefix 93s, suffix 0s)
+[w0 pass 1/1] group 630/3090: 96s, 1,513 tok/s (prefix 96s, suffix 0s)
+[w1 pass 1/1] group 620/3089: 95s, 1,506 tok/s (prefix 95s, suffix 0s)
+[w0 pass 1/1] group 640/3090: 97s, 1,512 tok/s (prefix 97s, suffix 0s)
+[w1 pass 1/1] group 630/3089: 96s, 1,505 tok/s (prefix 96s, suffix 0s)
+[w0 pass 1/1] group 650/3090: 99s, 1,511 tok/s (prefix 99s, suffix 0s)
+[w1 pass 1/1] group 640/3089: 98s, 1,503 tok/s (prefix 98s, suffix 0s)
+[w0 pass 1/1] group 660/3090: 100s, 1,510 tok/s (prefix 100s, suffix 0s)
+[w1 pass 1/1] group 650/3089: 99s, 1,502 tok/s (prefix 99s, suffix 0s)
+[w0 pass 1/1] group 670/3090: 102s, 1,509 tok/s (prefix 102s, suffix 0s)
+[w1 pass 1/1] group 660/3089: 101s, 1,501 tok/s (prefix 101s, suffix 0s)
+[w0 pass 1/1] group 680/3090: 103s, 1,507 tok/s (prefix 103s, suffix 0s)
+[w1 pass 1/1] group 670/3089: 102s, 1,500 tok/s (prefix 102s, suffix 0s)
+[w0 pass 1/1] group 690/3090: 104s, 1,506 tok/s (prefix 104s, suffix 0s)
+[w1 pass 1/1] group 680/3089: 104s, 1,499 tok/s (prefix 104s, suffix 0s)
+[w0 pass 1/1] group 700/3090: 106s, 1,505 tok/s (prefix 106s, suffix 0s)
+[w1 pass 1/1] group 690/3089: 105s, 1,498 tok/s (prefix 105s, suffix 0s)
+[w0 pass 1/1] group 710/3090: 107s, 1,504 tok/s (prefix 107s, suffix 0s)
+[w1 pass 1/1] group 700/3089: 107s, 1,497 tok/s (prefix 107s, suffix 0s)
+[w0 pass 1/1] group 720/3090: 109s, 1,503 tok/s (prefix 109s, suffix 0s)
+[w1 pass 1/1] group 710/3089: 108s, 1,496 tok/s (prefix 108s, suffix 0s)
+[w0 pass 1/1] group 730/3090: 110s, 1,502 tok/s (prefix 110s, suffix 0s)
+[w1 pass 1/1] group 720/3089: 109s, 1,495 tok/s (prefix 109s, suffix 0s)
+[w0 pass 1/1] group 740/3090: 112s, 1,501 tok/s (prefix 112s, suffix 0s)
+[w1 pass 1/1] group 730/3089: 111s, 1,494 tok/s (prefix 111s, suffix 0s)
+[w0 pass 1/1] group 750/3090: 113s, 1,500 tok/s (prefix 113s, suffix 0s)
+[w1 pass 1/1] group 740/3089: 112s, 1,493 tok/s (prefix 112s, suffix 0s)
+[w0 pass 1/1] group 760/3090: 115s, 1,499 tok/s (prefix 115s, suffix 0s)
+[w1 pass 1/1] group 750/3089: 114s, 1,492 tok/s (prefix 114s, suffix 0s)
+[w0 pass 1/1] group 770/3090: 116s, 1,499 tok/s (prefix 116s, suffix 0s)
+[w1 pass 1/1] group 760/3089: 115s, 1,491 tok/s (prefix 115s, suffix 0s)
+[w0 pass 1/1] group 780/3090: 118s, 1,498 tok/s (prefix 118s, suffix 0s)
+[w1 pass 1/1] group 770/3089: 117s, 1,490 tok/s (prefix 117s, suffix 0s)
+[w0 pass 1/1] group 790/3090: 119s, 1,497 tok/s (prefix 119s, suffix 0s)
+[w1 pass 1/1] group 780/3089: 118s, 1,490 tok/s (prefix 118s, suffix 0s)
+[w0 pass 1/1] group 800/3090: 121s, 1,496 tok/s (prefix 121s, suffix 0s)
+[w1 pass 1/1] group 790/3089: 120s, 1,489 tok/s (prefix 120s, suffix 0s)
+[w0 pass 1/1] group 810/3090: 122s, 1,495 tok/s (prefix 122s, suffix 0s)
+[w1 pass 1/1] group 800/3089: 121s, 1,488 tok/s (prefix 121s, suffix 0s)
+[w0 pass 1/1] group 820/3090: 123s, 1,494 tok/s (prefix 123s, suffix 0s)
+[w1 pass 1/1] group 810/3089: 123s, 1,487 tok/s (prefix 123s, suffix 0s)
+[w0 pass 1/1] group 830/3090: 125s, 1,494 tok/s (prefix 125s, suffix 0s)
+[w1 pass 1/1] group 820/3089: 124s, 1,486 tok/s (prefix 124s, suffix 0s)
+[w0 pass 1/1] group 840/3090: 126s, 1,493 tok/s (prefix 126s, suffix 0s)
+[w1 pass 1/1] group 830/3089: 126s, 1,485 tok/s (prefix 126s, suffix 0s)
+[w0 pass 1/1] group 850/3090: 128s, 1,492 tok/s (prefix 128s, suffix 0s)
+[w1 pass 1/1] group 840/3089: 127s, 1,485 tok/s (prefix 127s, suffix 0s)
+[w0 pass 1/1] group 860/3090: 129s, 1,491 tok/s (prefix 129s, suffix 0s)
+[w1 pass 1/1] group 850/3089: 129s, 1,484 tok/s (prefix 129s, suffix 0s)
+[w0 pass 1/1] group 870/3090: 131s, 1,490 tok/s (prefix 131s, suffix 0s)
+[w1 pass 1/1] group 860/3089: 130s, 1,483 tok/s (prefix 130s, suffix 0s)
+[w0 pass 1/1] group 880/3090: 132s, 1,490 tok/s (prefix 132s, suffix 0s)
+[w1 pass 1/1] group 870/3089: 131s, 1,482 tok/s (prefix 131s, suffix 0s)
+[w0 pass 1/1] group 890/3090: 134s, 1,489 tok/s (prefix 134s, suffix 0s)
+[w1 pass 1/1] group 880/3089: 133s, 1,482 tok/s (prefix 133s, suffix 0s)
+[w0 pass 1/1] group 900/3090: 135s, 1,488 tok/s (prefix 135s, suffix 0s)
+[w1 pass 1/1] group 890/3089: 134s, 1,481 tok/s (prefix 134s, suffix 0s)
+[w0 pass 1/1] group 910/3090: 137s, 1,487 tok/s (prefix 137s, suffix 0s)
+[w1 pass 1/1] group 900/3089: 136s, 1,480 tok/s (prefix 136s, suffix 0s)
+[w0 pass 1/1] group 920/3090: 138s, 1,487 tok/s (prefix 138s, suffix 0s)
+[w1 pass 1/1] group 910/3089: 137s, 1,479 tok/s (prefix 137s, suffix 0s)
+[w0 pass 1/1] group 930/3090: 140s, 1,486 tok/s (prefix 139s, suffix 0s)
+[w1 pass 1/1] group 920/3089: 139s, 1,479 tok/s (prefix 139s, suffix 0s)
+[w0 pass 1/1] group 940/3090: 141s, 1,485 tok/s (prefix 141s, suffix 0s)
+[w1 pass 1/1] group 930/3089: 140s, 1,478 tok/s (prefix 140s, suffix 0s)
+[w0 pass 1/1] group 950/3090: 142s, 1,484 tok/s (prefix 142s, suffix 0s)
+[w1 pass 1/1] group 940/3089: 142s, 1,477 tok/s (prefix 142s, suffix 0s)
+[w0 pass 1/1] group 960/3090: 144s, 1,484 tok/s (prefix 144s, suffix 0s)
+[w1 pass 1/1] group 950/3089: 143s, 1,476 tok/s (prefix 143s, suffix 0s)
+[w0 pass 1/1] group 970/3090: 145s, 1,483 tok/s (prefix 145s, suffix 0s)
+[w1 pass 1/1] group 960/3089: 145s, 1,476 tok/s (prefix 145s, suffix 0s)
+[w0 pass 1/1] group 980/3090: 147s, 1,482 tok/s (prefix 147s, suffix 0s)
+[w1 pass 1/1] group 970/3089: 146s, 1,475 tok/s (prefix 146s, suffix 0s)
+[w0 pass 1/1] group 990/3090: 148s, 1,482 tok/s (prefix 148s, suffix 0s)
+[w1 pass 1/1] group 980/3089: 148s, 1,474 tok/s (prefix 148s, suffix 0s)
+[w0 pass 1/1] group 1000/3090: 150s, 1,481 tok/s (prefix 150s, suffix 0s)
+[w1 pass 1/1] group 990/3089: 149s, 1,474 tok/s (prefix 149s, suffix 0s)
+[w0 pass 1/1] group 1010/3090: 151s, 1,480 tok/s (prefix 151s, suffix 0s)
+[w1 pass 1/1] group 1000/3089: 151s, 1,473 tok/s (prefix 151s, suffix 0s)
+[w0 pass 1/1] group 1020/3090: 153s, 1,479 tok/s (prefix 153s, suffix 0s)
+[w1 pass 1/1] group 1010/3089: 152s, 1,472 tok/s (prefix 152s, suffix 0s)
+[w0 pass 1/1] group 1030/3090: 154s, 1,479 tok/s (prefix 154s, suffix 0s)
+[w1 pass 1/1] group 1020/3089: 153s, 1,472 tok/s (prefix 153s, suffix 0s)
+[w0 pass 1/1] group 1040/3090: 156s, 1,478 tok/s (prefix 156s, suffix 0s)
+[w1 pass 1/1] group 1030/3089: 155s, 1,471 tok/s (prefix 155s, suffix 0s)
+[w0 pass 1/1] group 1050/3090: 157s, 1,477 tok/s (prefix 157s, suffix 0s)
+[w1 pass 1/1] group 1040/3089: 156s, 1,470 tok/s (prefix 156s, suffix 0s)
+[w0 pass 1/1] group 1060/3090: 159s, 1,477 tok/s (prefix 158s, suffix 0s)
+[w1 pass 1/1] group 1050/3089: 158s, 1,470 tok/s (prefix 158s, suffix 0s)
+[w0 pass 1/1] group 1070/3090: 160s, 1,476 tok/s (prefix 160s, suffix 0s)
+[w1 pass 1/1] group 1060/3089: 159s, 1,469 tok/s (prefix 159s, suffix 0s)
+[w0 pass 1/1] group 1080/3090: 161s, 1,475 tok/s (prefix 161s, suffix 0s)
+[w1 pass 1/1] group 1070/3089: 161s, 1,468 tok/s (prefix 161s, suffix 0s)
+[w0 pass 1/1] group 1090/3090: 163s, 1,475 tok/s (prefix 163s, suffix 0s)
+[w1 pass 1/1] group 1080/3089: 162s, 1,468 tok/s (prefix 162s, suffix 0s)
+[w0 pass 1/1] group 1100/3090: 164s, 1,474 tok/s (prefix 164s, suffix 0s)
+[w1 pass 1/1] group 1090/3089: 164s, 1,467 tok/s (prefix 164s, suffix 0s)
+[w0 pass 1/1] group 1110/3090: 166s, 1,474 tok/s (prefix 166s, suffix 0s)
+[w1 pass 1/1] group 1100/3089: 165s, 1,466 tok/s (prefix 165s, suffix 0s)
+[w0 pass 1/1] group 1120/3090: 167s, 1,473 tok/s (prefix 167s, suffix 0s)
+[w1 pass 1/1] group 1110/3089: 167s, 1,466 tok/s (prefix 167s, suffix 0s)
+[w0 pass 1/1] group 1130/3090: 169s, 1,472 tok/s (prefix 169s, suffix 0s)
+[w1 pass 1/1] group 1120/3089: 168s, 1,465 tok/s (prefix 168s, suffix 0s)
+[w0 pass 1/1] group 1140/3090: 170s, 1,472 tok/s (prefix 170s, suffix 0s)
+[w1 pass 1/1] group 1130/3089: 170s, 1,465 tok/s (prefix 170s, suffix 0s)
+[w0 pass 1/1] group 1150/3090: 172s, 1,471 tok/s (prefix 172s, suffix 0s)
+[w1 pass 1/1] group 1140/3089: 171s, 1,464 tok/s (prefix 171s, suffix 0s)
+[w0 pass 1/1] group 1160/3090: 173s, 1,471 tok/s (prefix 173s, suffix 0s)
+[w1 pass 1/1] group 1150/3089: 173s, 1,463 tok/s (prefix 173s, suffix 0s)
+[w0 pass 1/1] group 1170/3090: 175s, 1,470 tok/s (prefix 175s, suffix 0s)
+[w1 pass 1/1] group 1160/3089: 174s, 1,463 tok/s (prefix 174s, suffix 0s)
+[w0 pass 1/1] group 1180/3090: 176s, 1,469 tok/s (prefix 176s, suffix 0s)
+[w1 pass 1/1] group 1170/3089: 176s, 1,462 tok/s (prefix 175s, suffix 0s)
+[w0 pass 1/1] group 1190/3090: 178s, 1,469 tok/s (prefix 177s, suffix 0s)
+[w1 pass 1/1] group 1180/3089: 177s, 1,462 tok/s (prefix 177s, suffix 0s)
+[w0 pass 1/1] group 1200/3090: 179s, 1,468 tok/s (prefix 179s, suffix 0s)
+[w1 pass 1/1] group 1190/3089: 178s, 1,461 tok/s (prefix 178s, suffix 0s)
+[w0 pass 1/1] group 1210/3090: 180s, 1,468 tok/s (prefix 180s, suffix 0s)
+[w1 pass 1/1] group 1200/3089: 180s, 1,460 tok/s (prefix 180s, suffix 0s)
+[w0 pass 1/1] group 1220/3090: 182s, 1,467 tok/s (prefix 182s, suffix 0s)
+[w1 pass 1/1] group 1210/3089: 181s, 1,460 tok/s (prefix 181s, suffix 0s)
+[w0 pass 1/1] group 1230/3090: 183s, 1,466 tok/s (prefix 183s, suffix 0s)
+[w1 pass 1/1] group 1220/3089: 183s, 1,459 tok/s (prefix 183s, suffix 0s)
+[w0 pass 1/1] group 1240/3090: 185s, 1,466 tok/s (prefix 185s, suffix 0s)
+[w1 pass 1/1] group 1230/3089: 184s, 1,459 tok/s (prefix 184s, suffix 0s)
+[w0 pass 1/1] group 1250/3090: 186s, 1,465 tok/s (prefix 186s, suffix 0s)
+[w1 pass 1/1] group 1240/3089: 186s, 1,458 tok/s (prefix 186s, suffix 0s)
+[w0 pass 1/1] group 1260/3090: 188s, 1,465 tok/s (prefix 188s, suffix 0s)
+[w1 pass 1/1] group 1250/3089: 187s, 1,458 tok/s (prefix 187s, suffix 0s)
+[w0 pass 1/1] group 1270/3090: 189s, 1,464 tok/s (prefix 189s, suffix 0s)
+[w0 pass 1/1] group 1280/3090: 191s, 1,464 tok/s (prefix 191s, suffix 0s)
+[w1 pass 1/1] group 1260/3089: 189s, 1,457 tok/s (prefix 189s, suffix 0s)
+[w0 pass 1/1] group 1290/3090: 192s, 1,463 tok/s (prefix 192s, suffix 0s)
+[w1 pass 1/1] group 1270/3089: 190s, 1,457 tok/s (prefix 190s, suffix 0s)
+[w0 pass 1/1] group 1300/3090: 194s, 1,463 tok/s (prefix 193s, suffix 0s)
+[w1 pass 1/1] group 1280/3089: 192s, 1,456 tok/s (prefix 192s, suffix 0s)
+[w0 pass 1/1] group 1310/3090: 195s, 1,462 tok/s (prefix 195s, suffix 0s)
+[w1 pass 1/1] group 1290/3089: 193s, 1,456 tok/s (prefix 193s, suffix 0s)
+[w0 pass 1/1] group 1320/3090: 196s, 1,462 tok/s (prefix 196s, suffix 0s)
+[w1 pass 1/1] group 1300/3089: 195s, 1,455 tok/s (prefix 195s, suffix 0s)
+[w0 pass 1/1] group 1330/3090: 198s, 1,461 tok/s (prefix 198s, suffix 0s)
+[w1 pass 1/1] group 1310/3089: 196s, 1,454 tok/s (prefix 196s, suffix 0s)
+[w0 pass 1/1] group 1340/3090: 199s, 1,461 tok/s (prefix 199s, suffix 0s)
+[w1 pass 1/1] group 1320/3089: 198s, 1,454 tok/s (prefix 197s, suffix 0s)
+[w0 pass 1/1] group 1350/3090: 201s, 1,460 tok/s (prefix 201s, suffix 0s)
+[w1 pass 1/1] group 1330/3089: 199s, 1,453 tok/s (prefix 199s, suffix 0s)
+[w0 pass 1/1] group 1360/3090: 202s, 1,460 tok/s (prefix 202s, suffix 0s)
+[w1 pass 1/1] group 1340/3089: 200s, 1,453 tok/s (prefix 200s, suffix 0s)
+[w0 pass 1/1] group 1370/3090: 204s, 1,459 tok/s (prefix 204s, suffix 0s)
+[w1 pass 1/1] group 1350/3089: 202s, 1,452 tok/s (prefix 202s, suffix 0s)
+[w0 pass 1/1] group 1380/3090: 205s, 1,459 tok/s (prefix 205s, suffix 0s)
+[w1 pass 1/1] group 1360/3089: 203s, 1,452 tok/s (prefix 203s, suffix 0s)
+[w0 pass 1/1] group 1390/3090: 207s, 1,458 tok/s (prefix 207s, suffix 0s)
+[w1 pass 1/1] group 1370/3089: 205s, 1,451 tok/s (prefix 205s, suffix 0s)
+[w0 pass 1/1] group 1400/3090: 208s, 1,458 tok/s (prefix 208s, suffix 0s)
+[w1 pass 1/1] group 1380/3089: 206s, 1,451 tok/s (prefix 206s, suffix 0s)
+[w0 pass 1/1] group 1410/3090: 210s, 1,457 tok/s (prefix 210s, suffix 0s)
+[w1 pass 1/1] group 1390/3089: 208s, 1,450 tok/s (prefix 208s, suffix 0s)
+[w0 pass 1/1] group 1420/3090: 211s, 1,457 tok/s (prefix 211s, suffix 0s)
+[w1 pass 1/1] group 1400/3089: 209s, 1,450 tok/s (prefix 209s, suffix 0s)
+[w0 pass 1/1] group 1430/3090: 213s, 1,456 tok/s (prefix 212s, suffix 0s)
+[w1 pass 1/1] group 1410/3089: 211s, 1,449 tok/s (prefix 211s, suffix 0s)
+[w0 pass 1/1] group 1440/3090: 214s, 1,456 tok/s (prefix 214s, suffix 0s)
+[w1 pass 1/1] group 1420/3089: 212s, 1,449 tok/s (prefix 212s, suffix 0s)
+[w0 pass 1/1] group 1450/3090: 215s, 1,455 tok/s (prefix 215s, suffix 0s)
+[w1 pass 1/1] group 1430/3089: 214s, 1,448 tok/s (prefix 214s, suffix 0s)
+[w0 pass 1/1] group 1460/3090: 217s, 1,455 tok/s (prefix 217s, suffix 0s)
+[w1 pass 1/1] group 1440/3089: 215s, 1,448 tok/s (prefix 215s, suffix 0s)
+[w0 pass 1/1] group 1470/3090: 218s, 1,454 tok/s (prefix 218s, suffix 0s)
+[w1 pass 1/1] group 1450/3089: 217s, 1,447 tok/s (prefix 217s, suffix 0s)
+[w0 pass 1/1] group 1480/3090: 220s, 1,454 tok/s (prefix 220s, suffix 0s)
+[w1 pass 1/1] group 1460/3089: 218s, 1,447 tok/s (prefix 218s, suffix 0s)
+[w0 pass 1/1] group 1490/3090: 221s, 1,453 tok/s (prefix 221s, suffix 0s)
+[w1 pass 1/1] group 1470/3089: 220s, 1,447 tok/s (prefix 219s, suffix 0s)
+[w0 pass 1/1] group 1500/3090: 223s, 1,453 tok/s (prefix 223s, suffix 0s)
+[w1 pass 1/1] group 1480/3089: 221s, 1,446 tok/s (prefix 221s, suffix 0s)
+[w0 pass 1/1] group 1510/3090: 224s, 1,452 tok/s (prefix 224s, suffix 0s)
+[w1 pass 1/1] group 1490/3089: 222s, 1,446 tok/s (prefix 222s, suffix 0s)
+[w0 pass 1/1] group 1520/3090: 226s, 1,452 tok/s (prefix 226s, suffix 0s)
+[w1 pass 1/1] group 1500/3089: 224s, 1,445 tok/s (prefix 224s, suffix 0s)
+[w0 pass 1/1] group 1530/3090: 227s, 1,451 tok/s (prefix 227s, suffix 0s)
+[w1 pass 1/1] group 1510/3089: 225s, 1,445 tok/s (prefix 225s, suffix 0s)
+[w0 pass 1/1] group 1540/3090: 229s, 1,451 tok/s (prefix 228s, suffix 0s)
+[w1 pass 1/1] group 1520/3089: 227s, 1,444 tok/s (prefix 227s, suffix 0s)
+[w0 pass 1/1] group 1550/3090: 230s, 1,450 tok/s (prefix 230s, suffix 0s)
+[w1 pass 1/1] group 1530/3089: 228s, 1,444 tok/s (prefix 228s, suffix 0s)
+[w0 pass 1/1] group 1560/3090: 231s, 1,450 tok/s (prefix 231s, suffix 0s)
+[w1 pass 1/1] group 1540/3089: 230s, 1,443 tok/s (prefix 230s, suffix 0s)
+[w0 pass 1/1] group 1570/3090: 233s, 1,450 tok/s (prefix 233s, suffix 0s)
+[w1 pass 1/1] group 1550/3089: 231s, 1,443 tok/s (prefix 231s, suffix 0s)
+[w0 pass 1/1] group 1580/3090: 234s, 1,449 tok/s (prefix 234s, suffix 0s)
+[w1 pass 1/1] group 1560/3089: 233s, 1,442 tok/s (prefix 233s, suffix 0s)
+[w0 pass 1/1] group 1590/3090: 236s, 1,449 tok/s (prefix 236s, suffix 0s)
+[w1 pass 1/1] group 1570/3089: 234s, 1,442 tok/s (prefix 234s, suffix 0s)
+[w0 pass 1/1] group 1600/3090: 237s, 1,448 tok/s (prefix 237s, suffix 0s)
+[w1 pass 1/1] group 1580/3089: 236s, 1,442 tok/s (prefix 236s, suffix 0s)
+[w0 pass 1/1] group 1610/3090: 239s, 1,448 tok/s (prefix 239s, suffix 0s)
+[w1 pass 1/1] group 1590/3089: 237s, 1,441 tok/s (prefix 237s, suffix 0s)
+[w0 pass 1/1] group 1620/3090: 240s, 1,447 tok/s (prefix 240s, suffix 0s)
+[w1 pass 1/1] group 1600/3089: 239s, 1,441 tok/s (prefix 238s, suffix 0s)
+[w0 pass 1/1] group 1630/3090: 242s, 1,447 tok/s (prefix 242s, suffix 0s)
+[w1 pass 1/1] group 1610/3089: 240s, 1,440 tok/s (prefix 240s, suffix 0s)
+[w0 pass 1/1] group 1640/3090: 243s, 1,447 tok/s (prefix 243s, suffix 0s)
+[w1 pass 1/1] group 1620/3089: 242s, 1,440 tok/s (prefix 241s, suffix 0s)
+[w0 pass 1/1] group 1650/3090: 245s, 1,446 tok/s (prefix 245s, suffix 0s)
+[w1 pass 1/1] group 1630/3089: 243s, 1,439 tok/s (prefix 243s, suffix 0s)
+[w0 pass 1/1] group 1660/3090: 246s, 1,446 tok/s (prefix 246s, suffix 0s)
+[w1 pass 1/1] group 1640/3089: 244s, 1,439 tok/s (prefix 244s, suffix 0s)
+[w0 pass 1/1] group 1670/3090: 248s, 1,445 tok/s (prefix 247s, suffix 0s)
+[w1 pass 1/1] group 1650/3089: 246s, 1,439 tok/s (prefix 246s, suffix 0s)
+[w0 pass 1/1] group 1680/3090: 249s, 1,445 tok/s (prefix 249s, suffix 0s)
+[w1 pass 1/1] group 1660/3089: 247s, 1,438 tok/s (prefix 247s, suffix 0s)
+[w0 pass 1/1] group 1690/3090: 250s, 1,445 tok/s (prefix 250s, suffix 0s)
+[w1 pass 1/1] group 1670/3089: 249s, 1,438 tok/s (prefix 249s, suffix 0s)
+[w0 pass 1/1] group 1700/3090: 252s, 1,444 tok/s (prefix 252s, suffix 0s)
+[w1 pass 1/1] group 1680/3089: 250s, 1,437 tok/s (prefix 250s, suffix 0s)
+[w0 pass 1/1] group 1710/3090: 253s, 1,444 tok/s (prefix 253s, suffix 0s)
+[w1 pass 1/1] group 1690/3089: 252s, 1,437 tok/s (prefix 252s, suffix 0s)
+[w0 pass 1/1] group 1720/3090: 255s, 1,443 tok/s (prefix 255s, suffix 0s)
+[w1 pass 1/1] group 1700/3089: 253s, 1,437 tok/s (prefix 253s, suffix 0s)
+[w0 pass 1/1] group 1730/3090: 256s, 1,443 tok/s (prefix 256s, suffix 0s)
+[w1 pass 1/1] group 1710/3089: 255s, 1,436 tok/s (prefix 255s, suffix 0s)
+[w0 pass 1/1] group 1740/3090: 258s, 1,443 tok/s (prefix 258s, suffix 0s)
+[w1 pass 1/1] group 1720/3089: 256s, 1,436 tok/s (prefix 256s, suffix 0s)
+[w0 pass 1/1] group 1750/3090: 259s, 1,442 tok/s (prefix 259s, suffix 0s)
+[w1 pass 1/1] group 1730/3089: 258s, 1,435 tok/s (prefix 258s, suffix 0s)
+[w0 pass 1/1] group 1760/3090: 261s, 1,442 tok/s (prefix 260s, suffix 0s)
+[w1 pass 1/1] group 1740/3089: 259s, 1,435 tok/s (prefix 259s, suffix 0s)
+[w0 pass 1/1] group 1770/3090: 262s, 1,442 tok/s (prefix 262s, suffix 0s)
+[w1 pass 1/1] group 1750/3089: 261s, 1,435 tok/s (prefix 260s, suffix 0s)
+[w0 pass 1/1] group 1780/3090: 264s, 1,441 tok/s (prefix 263s, suffix 0s)
+[w1 pass 1/1] group 1760/3089: 262s, 1,434 tok/s (prefix 262s, suffix 0s)
+[w0 pass 1/1] group 1790/3090: 265s, 1,441 tok/s (prefix 265s, suffix 0s)
+[w1 pass 1/1] group 1770/3089: 263s, 1,434 tok/s (prefix 263s, suffix 0s)
+[w0 pass 1/1] group 1800/3090: 266s, 1,440 tok/s (prefix 266s, suffix 0s)
+[w1 pass 1/1] group 1780/3089: 265s, 1,434 tok/s (prefix 265s, suffix 0s)
+[w0 pass 1/1] group 1810/3090: 268s, 1,440 tok/s (prefix 268s, suffix 0s)
+[w1 pass 1/1] group 1790/3089: 266s, 1,433 tok/s (prefix 266s, suffix 0s)
+[w0 pass 1/1] group 1820/3090: 269s, 1,440 tok/s (prefix 269s, suffix 0s)
+[w1 pass 1/1] group 1800/3089: 268s, 1,433 tok/s (prefix 268s, suffix 0s)
+[w0 pass 1/1] group 1830/3090: 271s, 1,439 tok/s (prefix 271s, suffix 0s)
+[w1 pass 1/1] group 1810/3089: 269s, 1,432 tok/s (prefix 269s, suffix 0s)
+[w0 pass 1/1] group 1840/3090: 272s, 1,439 tok/s (prefix 272s, suffix 0s)
+[w1 pass 1/1] group 1820/3089: 271s, 1,432 tok/s (prefix 271s, suffix 0s)
+[w0 pass 1/1] group 1850/3090: 274s, 1,438 tok/s (prefix 274s, suffix 0s)
+[w1 pass 1/1] group 1830/3089: 272s, 1,432 tok/s (prefix 272s, suffix 0s)
+[w0 pass 1/1] group 1860/3090: 275s, 1,438 tok/s (prefix 275s, suffix 0s)
+[w1 pass 1/1] group 1840/3089: 274s, 1,431 tok/s (prefix 274s, suffix 0s)
+[w0 pass 1/1] group 1870/3090: 277s, 1,438 tok/s (prefix 276s, suffix 0s)
+[w1 pass 1/1] group 1850/3089: 275s, 1,431 tok/s (prefix 275s, suffix 0s)
+[w0 pass 1/1] group 1880/3090: 278s, 1,437 tok/s (prefix 278s, suffix 0s)
+[w1 pass 1/1] group 1860/3089: 277s, 1,430 tok/s (prefix 277s, suffix 0s)
+[w0 pass 1/1] group 1890/3090: 280s, 1,437 tok/s (prefix 279s, suffix 0s)
+[w1 pass 1/1] group 1870/3089: 278s, 1,430 tok/s (prefix 278s, suffix 0s)
+[w0 pass 1/1] group 1900/3090: 281s, 1,437 tok/s (prefix 281s, suffix 0s)
+[w1 pass 1/1] group 1880/3089: 280s, 1,430 tok/s (prefix 279s, suffix 0s)
+[w0 pass 1/1] group 1910/3090: 282s, 1,436 tok/s (prefix 282s, suffix 0s)
+[w1 pass 1/1] group 1890/3089: 281s, 1,429 tok/s (prefix 281s, suffix 0s)
+[w0 pass 1/1] group 1920/3090: 284s, 1,436 tok/s (prefix 284s, suffix 0s)
+[w1 pass 1/1] group 1900/3089: 282s, 1,429 tok/s (prefix 282s, suffix 0s)
+[w0 pass 1/1] group 1930/3090: 285s, 1,435 tok/s (prefix 285s, suffix 0s)
+[w1 pass 1/1] group 1910/3089: 284s, 1,429 tok/s (prefix 284s, suffix 0s)
+[w0 pass 1/1] group 1940/3090: 287s, 1,435 tok/s (prefix 287s, suffix 0s)
+[w1 pass 1/1] group 1920/3089: 285s, 1,428 tok/s (prefix 285s, suffix 0s)
+[w0 pass 1/1] group 1950/3090: 288s, 1,435 tok/s (prefix 288s, suffix 0s)
+[w1 pass 1/1] group 1930/3089: 287s, 1,428 tok/s (prefix 287s, suffix 0s)
+[w0 pass 1/1] group 1960/3090: 290s, 1,434 tok/s (prefix 290s, suffix 0s)
+[w1 pass 1/1] group 1940/3089: 288s, 1,427 tok/s (prefix 288s, suffix 0s)
+[w0 pass 1/1] group 1970/3090: 291s, 1,434 tok/s (prefix 291s, suffix 0s)
+[w1 pass 1/1] group 1950/3089: 290s, 1,427 tok/s (prefix 290s, suffix 0s)
+[w0 pass 1/1] group 1980/3090: 293s, 1,434 tok/s (prefix 292s, suffix 0s)
+[w1 pass 1/1] group 1960/3089: 291s, 1,427 tok/s (prefix 291s, suffix 0s)
+[w0 pass 1/1] group 1990/3090: 294s, 1,433 tok/s (prefix 294s, suffix 0s)
+[w1 pass 1/1] group 1970/3089: 293s, 1,426 tok/s (prefix 293s, suffix 0s)
+[w0 pass 1/1] group 2000/3090: 296s, 1,433 tok/s (prefix 295s, suffix 0s)
+[w1 pass 1/1] group 1980/3089: 294s, 1,426 tok/s (prefix 294s, suffix 0s)
+[w0 pass 1/1] group 2010/3090: 297s, 1,433 tok/s (prefix 297s, suffix 0s)
+[w1 pass 1/1] group 1990/3089: 296s, 1,426 tok/s (prefix 296s, suffix 0s)
+[w0 pass 1/1] group 2020/3090: 298s, 1,432 tok/s (prefix 298s, suffix 0s)
+[w1 pass 1/1] group 2000/3089: 297s, 1,425 tok/s (prefix 297s, suffix 0s)
+[w0 pass 1/1] group 2030/3090: 300s, 1,432 tok/s (prefix 300s, suffix 0s)
+[w1 pass 1/1] group 2010/3089: 299s, 1,425 tok/s (prefix 298s, suffix 0s)
+[w0 pass 1/1] group 2040/3090: 301s, 1,431 tok/s (prefix 301s, suffix 0s)
+[w1 pass 1/1] group 2020/3089: 300s, 1,424 tok/s (prefix 300s, suffix 0s)
+[w0 pass 1/1] group 2050/3090: 303s, 1,431 tok/s (prefix 303s, suffix 0s)
+[w1 pass 1/1] group 2030/3089: 302s, 1,424 tok/s (prefix 301s, suffix 0s)
+[w0 pass 1/1] group 2060/3090: 304s, 1,431 tok/s (prefix 304s, suffix 0s)
+[w1 pass 1/1] group 2040/3089: 303s, 1,424 tok/s (prefix 303s, suffix 0s)
+[w0 pass 1/1] group 2070/3090: 306s, 1,430 tok/s (prefix 306s, suffix 0s)
+[w1 pass 1/1] group 2050/3089: 304s, 1,423 tok/s (prefix 304s, suffix 0s)
+[w0 pass 1/1] group 2080/3090: 307s, 1,430 tok/s (prefix 307s, suffix 0s)
+[w1 pass 1/1] group 2060/3089: 306s, 1,423 tok/s (prefix 306s, suffix 0s)
+[w0 pass 1/1] group 2090/3090: 309s, 1,430 tok/s (prefix 308s, suffix 0s)
+[w1 pass 1/1] group 2070/3089: 307s, 1,423 tok/s (prefix 307s, suffix 0s)
+[w0 pass 1/1] group 2100/3090: 310s, 1,429 tok/s (prefix 310s, suffix 0s)
+[w1 pass 1/1] group 2080/3089: 309s, 1,422 tok/s (prefix 309s, suffix 0s)
+[w0 pass 1/1] group 2110/3090: 312s, 1,429 tok/s (prefix 311s, suffix 0s)
+[w1 pass 1/1] group 2090/3089: 310s, 1,422 tok/s (prefix 310s, suffix 0s)
+[w0 pass 1/1] group 2120/3090: 313s, 1,429 tok/s (prefix 313s, suffix 0s)
+[w1 pass 1/1] group 2100/3089: 312s, 1,422 tok/s (prefix 312s, suffix 0s)
+[w0 pass 1/1] group 2130/3090: 314s, 1,428 tok/s (prefix 314s, suffix 0s)
+[w1 pass 1/1] group 2110/3089: 313s, 1,421 tok/s (prefix 313s, suffix 0s)
+[w0 pass 1/1] group 2140/3090: 316s, 1,428 tok/s (prefix 316s, suffix 0s)
+[w1 pass 1/1] group 2120/3089: 315s, 1,421 tok/s (prefix 315s, suffix 0s)
+[w0 pass 1/1] group 2150/3090: 317s, 1,427 tok/s (prefix 317s, suffix 0s)
+[w1 pass 1/1] group 2130/3089: 316s, 1,421 tok/s (prefix 316s, suffix 0s)
+[w0 pass 1/1] group 2160/3090: 319s, 1,427 tok/s (prefix 319s, suffix 0s)
+[w1 pass 1/1] group 2140/3089: 318s, 1,420 tok/s (prefix 317s, suffix 0s)
+[w0 pass 1/1] group 2170/3090: 320s, 1,427 tok/s (prefix 320s, suffix 0s)
+[w1 pass 1/1] group 2150/3089: 319s, 1,420 tok/s (prefix 319s, suffix 0s)
+[w0 pass 1/1] group 2180/3090: 322s, 1,426 tok/s (prefix 322s, suffix 0s)
+[w1 pass 1/1] group 2160/3089: 321s, 1,419 tok/s (prefix 320s, suffix 0s)
+[w0 pass 1/1] group 2190/3090: 323s, 1,426 tok/s (prefix 323s, suffix 0s)
+[w1 pass 1/1] group 2170/3089: 322s, 1,419 tok/s (prefix 322s, suffix 0s)
+[w0 pass 1/1] group 2200/3090: 325s, 1,426 tok/s (prefix 324s, suffix 0s)
+[w1 pass 1/1] group 2180/3089: 323s, 1,419 tok/s (prefix 323s, suffix 0s)
+[w0 pass 1/1] group 2210/3090: 326s, 1,425 tok/s (prefix 326s, suffix 0s)
+[w1 pass 1/1] group 2190/3089: 325s, 1,418 tok/s (prefix 325s, suffix 0s)
+[w0 pass 1/1] group 2220/3090: 328s, 1,425 tok/s (prefix 327s, suffix 0s)
+[w1 pass 1/1] group 2200/3089: 326s, 1,418 tok/s (prefix 326s, suffix 0s)
+[w0 pass 1/1] group 2230/3090: 329s, 1,425 tok/s (prefix 329s, suffix 0s)
+[w1 pass 1/1] group 2210/3089: 328s, 1,418 tok/s (prefix 328s, suffix 0s)
+[w0 pass 1/1] group 2240/3090: 330s, 1,424 tok/s (prefix 330s, suffix 0s)
+[w1 pass 1/1] group 2220/3089: 329s, 1,417 tok/s (prefix 329s, suffix 0s)
+[w0 pass 1/1] group 2250/3090: 332s, 1,424 tok/s (prefix 332s, suffix 0s)
+[w1 pass 1/1] group 2230/3089: 331s, 1,417 tok/s (prefix 331s, suffix 0s)
+[w0 pass 1/1] group 2260/3090: 333s, 1,424 tok/s (prefix 333s, suffix 0s)
+[w1 pass 1/1] group 2240/3089: 332s, 1,417 tok/s (prefix 332s, suffix 0s)
+[w0 pass 1/1] group 2270/3090: 335s, 1,423 tok/s (prefix 335s, suffix 0s)
+[w1 pass 1/1] group 2250/3089: 334s, 1,416 tok/s (prefix 334s, suffix 0s)
+[w0 pass 1/1] group 2280/3090: 336s, 1,423 tok/s (prefix 336s, suffix 0s)
+[w1 pass 1/1] group 2260/3089: 335s, 1,416 tok/s (prefix 335s, suffix 0s)
+[w0 pass 1/1] group 2290/3090: 338s, 1,423 tok/s (prefix 338s, suffix 0s)
+[w1 pass 1/1] group 2270/3089: 337s, 1,416 tok/s (prefix 336s, suffix 0s)
+[w0 pass 1/1] group 2300/3090: 339s, 1,422 tok/s (prefix 339s, suffix 0s)
+[w1 pass 1/1] group 2280/3089: 338s, 1,415 tok/s (prefix 338s, suffix 0s)
+[w0 pass 1/1] group 2310/3090: 341s, 1,422 tok/s (prefix 340s, suffix 0s)
+[w1 pass 1/1] group 2290/3089: 340s, 1,415 tok/s (prefix 339s, suffix 0s)
+[w0 pass 1/1] group 2320/3090: 342s, 1,422 tok/s (prefix 342s, suffix 0s)
+[w1 pass 1/1] group 2300/3089: 341s, 1,415 tok/s (prefix 341s, suffix 0s)
+[w0 pass 1/1] group 2330/3090: 344s, 1,421 tok/s (prefix 343s, suffix 0s)
+[w1 pass 1/1] group 2310/3089: 342s, 1,414 tok/s (prefix 342s, suffix 0s)
+[w0 pass 1/1] group 2340/3090: 345s, 1,421 tok/s (prefix 345s, suffix 0s)
+[w1 pass 1/1] group 2320/3089: 344s, 1,414 tok/s (prefix 344s, suffix 0s)
+[w0 pass 1/1] group 2350/3090: 346s, 1,420 tok/s (prefix 346s, suffix 0s)
+[w1 pass 1/1] group 2330/3089: 345s, 1,414 tok/s (prefix 345s, suffix 0s)
+[w0 pass 1/1] group 2360/3090: 348s, 1,420 tok/s (prefix 348s, suffix 0s)
+[w1 pass 1/1] group 2340/3089: 347s, 1,413 tok/s (prefix 347s, suffix 0s)
+[w0 pass 1/1] group 2370/3090: 349s, 1,420 tok/s (prefix 349s, suffix 0s)
+[w1 pass 1/1] group 2350/3089: 348s, 1,413 tok/s (prefix 348s, suffix 0s)
+[w0 pass 1/1] group 2380/3090: 351s, 1,419 tok/s (prefix 351s, suffix 0s)
+[w1 pass 1/1] group 2360/3089: 350s, 1,413 tok/s (prefix 350s, suffix 0s)
+[w0 pass 1/1] group 2390/3090: 352s, 1,419 tok/s (prefix 352s, suffix 0s)
+[w1 pass 1/1] group 2370/3089: 351s, 1,412 tok/s (prefix 351s, suffix 0s)
+[w0 pass 1/1] group 2400/3090: 354s, 1,419 tok/s (prefix 354s, suffix 0s)
+[w1 pass 1/1] group 2380/3089: 353s, 1,412 tok/s (prefix 353s, suffix 0s)
+[w0 pass 1/1] group 2410/3090: 355s, 1,418 tok/s (prefix 355s, suffix 0s)
+[w1 pass 1/1] group 2390/3089: 354s, 1,412 tok/s (prefix 354s, suffix 0s)
+[w0 pass 1/1] group 2420/3090: 357s, 1,418 tok/s (prefix 356s, suffix 0s)
+[w1 pass 1/1] group 2400/3089: 356s, 1,411 tok/s (prefix 355s, suffix 0s)
+[w0 pass 1/1] group 2430/3090: 358s, 1,418 tok/s (prefix 358s, suffix 0s)
+[w1 pass 1/1] group 2410/3089: 357s, 1,411 tok/s (prefix 357s, suffix 0s)
+[w0 pass 1/1] group 2440/3090: 360s, 1,417 tok/s (prefix 359s, suffix 0s)
+[w1 pass 1/1] group 2420/3089: 359s, 1,411 tok/s (prefix 358s, suffix 0s)
+[w0 pass 1/1] group 2450/3090: 361s, 1,417 tok/s (prefix 361s, suffix 0s)
+[w1 pass 1/1] group 2430/3089: 360s, 1,410 tok/s (prefix 360s, suffix 0s)
+[w0 pass 1/1] group 2460/3090: 362s, 1,417 tok/s (prefix 362s, suffix 0s)
+[w1 pass 1/1] group 2440/3089: 361s, 1,410 tok/s (prefix 361s, suffix 0s)
+[w0 pass 1/1] group 2470/3090: 364s, 1,416 tok/s (prefix 364s, suffix 0s)
+[w1 pass 1/1] group 2450/3089: 363s, 1,409 tok/s (prefix 363s, suffix 0s)
+[w0 pass 1/1] group 2480/3090: 365s, 1,416 tok/s (prefix 365s, suffix 0s)
+[w1 pass 1/1] group 2460/3089: 364s, 1,409 tok/s (prefix 364s, suffix 0s)
+[w0 pass 1/1] group 2490/3090: 367s, 1,416 tok/s (prefix 367s, suffix 0s)
+[w1 pass 1/1] group 2470/3089: 366s, 1,409 tok/s (prefix 366s, suffix 0s)
+[w0 pass 1/1] group 2500/3090: 368s, 1,415 tok/s (prefix 368s, suffix 0s)
+[w1 pass 1/1] group 2480/3089: 367s, 1,408 tok/s (prefix 367s, suffix 0s)
+[w0 pass 1/1] group 2510/3090: 370s, 1,415 tok/s (prefix 369s, suffix 0s)
+[w1 pass 1/1] group 2490/3089: 369s, 1,408 tok/s (prefix 369s, suffix 0s)
+[w0 pass 1/1] group 2520/3090: 371s, 1,415 tok/s (prefix 371s, suffix 0s)
+[w1 pass 1/1] group 2500/3089: 370s, 1,408 tok/s (prefix 370s, suffix 0s)
+[w0 pass 1/1] group 2530/3090: 372s, 1,415 tok/s (prefix 372s, suffix 0s)
+[w1 pass 1/1] group 2510/3089: 372s, 1,408 tok/s (prefix 371s, suffix 0s)
+[w0 pass 1/1] group 2540/3090: 374s, 1,415 tok/s (prefix 374s, suffix 0s)
+[w1 pass 1/1] group 2520/3089: 373s, 1,408 tok/s (prefix 373s, suffix 0s)
+[w0 pass 1/1] group 2550/3090: 375s, 1,415 tok/s (prefix 375s, suffix 0s)
+[w1 pass 1/1] group 2530/3089: 374s, 1,408 tok/s (prefix 374s, suffix 0s)
+[w0 pass 1/1] group 2560/3090: 377s, 1,414 tok/s (prefix 376s, suffix 0s)
+[w1 pass 1/1] group 2540/3089: 376s, 1,408 tok/s (prefix 376s, suffix 0s)
+[w0 pass 1/1] group 2570/3090: 378s, 1,414 tok/s (prefix 378s, suffix 0s)
+[w1 pass 1/1] group 2550/3089: 377s, 1,407 tok/s (prefix 377s, suffix 0s)
+[w0 pass 1/1] group 2580/3090: 379s, 1,414 tok/s (prefix 379s, suffix 0s)
+[w1 pass 1/1] group 2560/3089: 378s, 1,407 tok/s (prefix 378s, suffix 0s)
+[w0 pass 1/1] group 2590/3090: 381s, 1,414 tok/s (prefix 381s, suffix 0s)
+[w1 pass 1/1] group 2570/3089: 380s, 1,407 tok/s (prefix 380s, suffix 0s)
+[w0 pass 1/1] group 2600/3090: 382s, 1,414 tok/s (prefix 382s, suffix 0s)
+[w1 pass 1/1] group 2580/3089: 381s, 1,407 tok/s (prefix 381s, suffix 0s)
+[w0 pass 1/1] group 2610/3090: 384s, 1,414 tok/s (prefix 383s, suffix 0s)
+[w1 pass 1/1] group 2590/3089: 383s, 1,407 tok/s (prefix 382s, suffix 0s)
+[w0 pass 1/1] group 2620/3090: 385s, 1,413 tok/s (prefix 385s, suffix 0s)
+[w1 pass 1/1] group 2600/3089: 384s, 1,407 tok/s (prefix 384s, suffix 0s)
+[w0 pass 1/1] group 2630/3090: 386s, 1,413 tok/s (prefix 386s, suffix 0s)
+[w1 pass 1/1] group 2610/3089: 385s, 1,407 tok/s (prefix 385s, suffix 0s)
+[w0 pass 1/1] group 2640/3090: 388s, 1,413 tok/s (prefix 388s, suffix 0s)
+[w1 pass 1/1] group 2620/3089: 387s, 1,407 tok/s (prefix 387s, suffix 0s)
+[w0 pass 1/1] group 2650/3090: 389s, 1,413 tok/s (prefix 389s, suffix 0s)
+[w1 pass 1/1] group 2630/3089: 388s, 1,406 tok/s (prefix 388s, suffix 0s)
+[w0 pass 1/1] group 2660/3090: 390s, 1,413 tok/s (prefix 390s, suffix 0s)
+[w1 pass 1/1] group 2640/3089: 390s, 1,406 tok/s (prefix 389s, suffix 0s)
+[w0 pass 1/1] group 2670/3090: 392s, 1,413 tok/s (prefix 392s, suffix 0s)
+[w1 pass 1/1] group 2650/3089: 391s, 1,406 tok/s (prefix 391s, suffix 0s)
+[w0 pass 1/1] group 2680/3090: 393s, 1,412 tok/s (prefix 393s, suffix 0s)
+[w1 pass 1/1] group 2660/3089: 392s, 1,406 tok/s (prefix 392s, suffix 0s)
+[w0 pass 1/1] group 2690/3090: 395s, 1,412 tok/s (prefix 394s, suffix 0s)
+[w1 pass 1/1] group 2670/3089: 394s, 1,406 tok/s (prefix 394s, suffix 0s)
+[w0 pass 1/1] group 2700/3090: 396s, 1,412 tok/s (prefix 396s, suffix 0s)
+[w1 pass 1/1] group 2680/3089: 395s, 1,406 tok/s (prefix 395s, suffix 0s)
+[w0 pass 1/1] group 2710/3090: 397s, 1,412 tok/s (prefix 397s, suffix 0s)
+[w1 pass 1/1] group 2690/3089: 397s, 1,406 tok/s (prefix 396s, suffix 0s)
+[w0 pass 1/1] group 2720/3090: 399s, 1,412 tok/s (prefix 399s, suffix 0s)
+[w1 pass 1/1] group 2700/3089: 398s, 1,405 tok/s (prefix 398s, suffix 0s)
+[w0 pass 1/1] group 2730/3090: 400s, 1,411 tok/s (prefix 400s, suffix 0s)
+[w1 pass 1/1] group 2710/3089: 399s, 1,405 tok/s (prefix 399s, suffix 0s)
+[w0 pass 1/1] group 2740/3090: 402s, 1,411 tok/s (prefix 401s, suffix 0s)
+[w1 pass 1/1] group 2720/3089: 401s, 1,405 tok/s (prefix 400s, suffix 0s)
+[w0 pass 1/1] group 2750/3090: 403s, 1,411 tok/s (prefix 403s, suffix 0s)
+[w1 pass 1/1] group 2730/3089: 402s, 1,405 tok/s (prefix 402s, suffix 0s)
+[w0 pass 1/1] group 2760/3090: 404s, 1,411 tok/s (prefix 404s, suffix 0s)
+[w1 pass 1/1] group 2740/3089: 403s, 1,405 tok/s (prefix 403s, suffix 0s)
+[w0 pass 1/1] group 2770/3090: 406s, 1,410 tok/s (prefix 406s, suffix 0s)
+[w1 pass 1/1] group 2750/3089: 405s, 1,405 tok/s (prefix 405s, suffix 0s)
+[w0 pass 1/1] group 2780/3090: 407s, 1,410 tok/s (prefix 407s, suffix 0s)
+[w1 pass 1/1] group 2760/3089: 406s, 1,404 tok/s (prefix 406s, suffix 0s)
+[w0 pass 1/1] group 2790/3090: 409s, 1,410 tok/s (prefix 408s, suffix 0s)
+[w1 pass 1/1] group 2770/3089: 408s, 1,404 tok/s (prefix 407s, suffix 0s)
+[w0 pass 1/1] group 2800/3090: 410s, 1,410 tok/s (prefix 410s, suffix 0s)
+[w1 pass 1/1] group 2780/3089: 409s, 1,404 tok/s (prefix 409s, suffix 0s)
+[w0 pass 1/1] group 2810/3090: 411s, 1,409 tok/s (prefix 411s, suffix 0s)
+[w1 pass 1/1] group 2790/3089: 410s, 1,404 tok/s (prefix 410s, suffix 0s)
+[w0 pass 1/1] group 2820/3090: 413s, 1,409 tok/s (prefix 413s, suffix 0s)
+[w1 pass 1/1] group 2800/3089: 412s, 1,403 tok/s (prefix 412s, suffix 0s)
+[w0 pass 1/1] group 2830/3090: 414s, 1,409 tok/s (prefix 414s, suffix 0s)
+[w1 pass 1/1] group 2810/3089: 413s, 1,403 tok/s (prefix 413s, suffix 0s)
+[w0 pass 1/1] group 2840/3090: 416s, 1,408 tok/s (prefix 415s, suffix 0s)
+[w1 pass 1/1] group 2820/3089: 415s, 1,403 tok/s (prefix 414s, suffix 0s)
+[w0 pass 1/1] group 2850/3090: 417s, 1,408 tok/s (prefix 417s, suffix 0s)
+[w1 pass 1/1] group 2830/3089: 416s, 1,403 tok/s (prefix 416s, suffix 0s)
+[w0 pass 1/1] group 2860/3090: 418s, 1,407 tok/s (prefix 418s, suffix 0s)
+[w1 pass 1/1] group 2840/3089: 417s, 1,402 tok/s (prefix 417s, suffix 0s)
+[w0 pass 1/1] group 2870/3090: 420s, 1,406 tok/s (prefix 420s, suffix 0s)
+[w1 pass 1/1] group 2850/3089: 419s, 1,402 tok/s (prefix 418s, suffix 0s)
+[w0 pass 1/1] group 2880/3090: 421s, 1,405 tok/s (prefix 421s, suffix 0s)
+[w1 pass 1/1] group 2860/3089: 420s, 1,401 tok/s (prefix 420s, suffix 0s)
+[w0 pass 1/1] group 2890/3090: 423s, 1,404 tok/s (prefix 422s, suffix 0s)
+[w1 pass 1/1] group 2870/3089: 422s, 1,400 tok/s (prefix 421s, suffix 0s)
+[w0 pass 1/1] group 2900/3090: 424s, 1,403 tok/s (prefix 424s, suffix 0s)
+[w1 pass 1/1] group 2880/3089: 423s, 1,399 tok/s (prefix 423s, suffix 0s)
+[w0 pass 1/1] group 2910/3090: 425s, 1,402 tok/s (prefix 425s, suffix 0s)
+[w1 pass 1/1] group 2890/3089: 424s, 1,398 tok/s (prefix 424s, suffix 0s)
+[w0 pass 1/1] group 2920/3090: 427s, 1,401 tok/s (prefix 427s, suffix 0s)
+[w1 pass 1/1] group 2900/3089: 426s, 1,397 tok/s (prefix 426s, suffix 0s)
+[w0 pass 1/1] group 2930/3090: 428s, 1,400 tok/s (prefix 428s, suffix 0s)
+[w1 pass 1/1] group 2910/3089: 427s, 1,396 tok/s (prefix 427s, suffix 0s)
+[w0 pass 1/1] group 2940/3090: 430s, 1,398 tok/s (prefix 429s, suffix 0s)
+[w1 pass 1/1] group 2920/3089: 429s, 1,395 tok/s (prefix 428s, suffix 0s)
+[w0 pass 1/1] group 2950/3090: 431s, 1,397 tok/s (prefix 431s, suffix 0s)
+[w1 pass 1/1] group 2930/3089: 430s, 1,394 tok/s (prefix 430s, suffix 0s)
+[w0 pass 1/1] group 2960/3090: 432s, 1,396 tok/s (prefix 432s, suffix 0s)
+[w1 pass 1/1] group 2940/3089: 431s, 1,392 tok/s (prefix 431s, suffix 0s)
+[w0 pass 1/1] group 2970/3090: 434s, 1,394 tok/s (prefix 434s, suffix 0s)
+[w1 pass 1/1] group 2950/3089: 433s, 1,391 tok/s (prefix 433s, suffix 0s)
+[w0 pass 1/1] group 2980/3090: 435s, 1,393 tok/s (prefix 435s, suffix 0s)
+[w1 pass 1/1] group 2960/3089: 434s, 1,390 tok/s (prefix 434s, suffix 0s)
+[w0 pass 1/1] group 2990/3090: 437s, 1,392 tok/s (prefix 436s, suffix 0s)
+[w1 pass 1/1] group 2970/3089: 436s, 1,389 tok/s (prefix 435s, suffix 0s)
+[w0 pass 1/1] group 3000/3090: 438s, 1,390 tok/s (prefix 438s, suffix 0s)
+[w1 pass 1/1] group 2980/3089: 437s, 1,387 tok/s (prefix 437s, suffix 0s)
+[w0 pass 1/1] group 3010/3090: 439s, 1,389 tok/s (prefix 439s, suffix 0s)
+[w1 pass 1/1] group 2990/3089: 438s, 1,386 tok/s (prefix 438s, suffix 0s)
+[w0 pass 1/1] group 3020/3090: 441s, 1,388 tok/s (prefix 440s, suffix 0s)
+[w1 pass 1/1] group 3000/3089: 440s, 1,385 tok/s (prefix 440s, suffix 0s)
+[w0 pass 1/1] group 3030/3090: 442s, 1,387 tok/s (prefix 442s, suffix 0s)
+[w1 pass 1/1] group 3010/3089: 441s, 1,383 tok/s (prefix 441s, suffix 0s)
+[w0 pass 1/1] group 3040/3090: 443s, 1,385 tok/s (prefix 443s, suffix 0s)
+[w1 pass 1/1] group 3020/3089: 442s, 1,382 tok/s (prefix 442s, suffix 0s)
+[w0 pass 1/1] group 3050/3090: 444s, 1,384 tok/s (prefix 444s, suffix 0s)
+[w1 pass 1/1] group 3030/3089: 444s, 1,381 tok/s (prefix 443s, suffix 0s)
+[w0 pass 1/1] group 3060/3090: 446s, 1,382 tok/s (prefix 446s, suffix 0s)
+[w1 pass 1/1] group 3040/3089: 445s, 1,380 tok/s (prefix 445s, suffix 0s)
+[w0 pass 1/1] group 3070/3090: 447s, 1,381 tok/s (prefix 447s, suffix 0s)
+[w1 pass 1/1] group 3050/3089: 446s, 1,378 tok/s (prefix 446s, suffix 0s)
+[w0 pass 1/1] group 3080/3090: 448s, 1,379 tok/s (prefix 448s, suffix 0s)
+[w1 pass 1/1] group 3060/3089: 448s, 1,377 tok/s (prefix 447s, suffix 0s)
+[w0 pass 1/1] group 3090/3090: 450s, 1,378 tok/s (prefix 449s, suffix 0s)
+[w0 pass 1/1] done: 3090 groups, 619,372 tokens, 450s, peak 65.7 GB
+[w1 pass 1/1] group 3070/3089: 449s, 1,375 tok/s (prefix 449s, suffix 0s)
+[w1 pass 1/1] group 3080/3089: 450s, 1,374 tok/s (prefix 450s, suffix 0s)
+[w1 pass 1/1] group 3089/3089: 451s, 1,372 tok/s (prefix 451s, suffix 0s)
+[w1 pass 1/1] done: 3089 groups, 619,290 tokens, 452s, peak 65.7 GB
+wrote results/qwen/s2/extract.pt: 6179 groups, 1,238,662 tokens in 466s (2,660 tok/s)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+build check neutral_resid_norm   rebuilt=329.737 registered=329.737 rel_diff=1.44611e-08 pass=True
+build check red                  cosine=1 norm_rebuilt=38.3942 norm_registered=38.3942 rel_norm_diff=0 pass=True
+build check ocean                cosine=1 norm_rebuilt=43.4406 norm_registered=43.4406 rel_norm_diff=0 pass=True
+build check arithmetic           cosine=1 norm_rebuilt=57.0396 norm_registered=57.0396 rel_norm_diff=0 pass=True
+controls.pt: 44 vectors at layer 40 (H=5120), sha256 a8a162eedb07f8ebfb4dafcdcd0dee00612642da3648a48c629e1be148fba9b6
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+control                  gated aipsy max    p90 a        J1B b     cos(d) pass
+N01                      True      0.645  0.783 ok     3/120 ok     0.099 True
+N02                      True      0.640  0.783 ok     7/120 FAIL   0.206 False
+N03                      True      0.644  0.783 ok     0/120 ok     0.175 True
+N04                      True      0.719  0.783 ok     3/120 ok     0.246 True
+N05                      True      0.767  0.783 ok     5/120 ok     0.179 True
+N06                      True      0.638  0.783 ok     4/120 ok     0.320 True
+N07                      True      0.701  0.783 ok     2/120 ok     0.139 True
+N08                      True      0.781  0.783 ok     1/120 ok     0.147 True
+N09                      True      0.622  0.783 ok     7/119 FAIL   0.035 False
+N10                      True      0.677  0.783 ok     0/120 ok    -0.049 True
+N11                      True      0.688  0.783 ok     6/120 ok     0.276 True
+N12                      True      0.778  0.783 ok     2/120 ok     0.304 True
+N13                      True      0.664  0.783 ok     2/120 ok     0.087 True
+N14                      True      0.778  0.783 ok     3/120 ok     0.395 True
+N15                      True      0.685  0.783 ok     2/120 ok     0.286 True
+N16                      True      0.640  0.783 ok     3/120 ok     0.145 True
+N17                      True      0.624  0.783 ok     2/120 ok     0.284 True
+N18                      True      0.714  0.783 ok     1/120 ok     0.040 True
+N19                      True      0.703  0.783 ok     3/120 ok     0.055 True
+N20                      True      0.715  0.783 ok     0/120 ok     0.068 True
+N21                      True      0.618  0.783 ok     2/120 ok     0.153 True
+N22                      True      0.608  0.783 ok     3/120 ok    -0.063 True
+N23                      True      0.565  0.783 ok     1/120 ok     0.060 True
+N24                      True      0.664  0.783 ok     0/120 ok     0.169 True
+N25                      True      0.672  0.783 ok     3/120 ok     0.322 True
+N26                      True      0.660  0.783 ok     2/120 ok     0.181 True
+N27                      True      0.553  0.783 ok    15/117 FAIL   0.230 False
+N28                      True      0.664  0.783 ok     9/120 FAIL   0.370 False
+N29                      True      0.661  0.783 ok     3/120 ok     0.083 True
+N30                      True      0.714  0.783 ok    10/119 FAIL   0.232 False
+N31                      True      0.679  0.783 ok     6/120 ok     0.317 True
+N32                      True      0.691  0.783 ok    11/120 FAIL   0.388 False
+N33                      True      0.641  0.783 ok     7/117 FAIL   0.125 False
+N34                      True      0.691  0.783 ok     1/119 ok     0.128 True
+N35                      True      0.607  0.783 ok     1/120 ok     0.030 True
+N36                      True      0.659  0.783 ok     1/120 ok     0.055 True
+mp:digit-memorising      True      0.735  0.783 ok     0/120 ok     0.155 True
+mp:distance-estimation   True      0.623  0.783 ok     0/117 ok     0.383 True
+mp:mental-rotation       True      0.679  0.783 ok     1/119 ok     0.408 True
+mp:route-planning        True      0.565  0.783 ok     0/102 ok     0.035 True
+mp:sorting               True      0.581  0.783 ok     1/118 ok     0.031 True
+mp:spatial-recall        True      0.660  0.783 ok     1/111 ok     0.168 True
+mp:visual-search         True      0.584  0.783 ok     1/118 ok     0.327 True
+mp:weighing-options      True      0.679  0.783 ok     0/103 ok     0.240 True
+arithmetic               False     0.715  0.783 ok     1/120 ok     0.070 None
+random                   False     0.380  0.783 ok         - -     -0.030 None
+red                      False     0.797  0.783 FAIL   6/120 ok     0.418 None
+ocean                    False     0.743  0.783 ok    64/120 FAIL   0.467 None
+joy                      False     0.919  0.783 FAIL       - -      0.944 None
+sadness                  False     0.899  0.783 FAIL       - -      0.932 None
+anger                    False     0.903  0.783 FAIL       - -      0.870 None
+fear                     False     0.953  0.783 FAIL       - -      0.920 None
+euphoria                 False     0.977  0.783 FAIL       - -      0.926 None
+surprise                 False     0.941  0.783 FAIL       - -      0.891 None
+{
+ "pool_size_target": 12,
+ "nouns_chosen": [
+  "N01",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14"
+ ],
+ "nouns_skipped": [
+  "N02",
+  "N09"
+ ],
+ "nouns_tried": [
+  "N01",
+  "N02",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N09",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14"
+ ],
+ "nouns_not_reached": [
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "N27",
+  "N28",
+  "N29",
+  "N30",
+  "N31",
+  "N32",
+  "N33",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "pool_short": false,
+ "thinking_survivors": [
+  "mp:digit-memorising",
+  "mp:distance-estimation",
+  "mp:mental-rotation",
+  "mp:route-planning",
+  "mp:sorting",
+  "mp:spatial-recall",
+  "mp:visual-search",
+  "mp:weighing-options"
+ ],
+ "thinking_dropped": []
+}

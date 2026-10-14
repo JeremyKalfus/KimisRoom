@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/bcdafcdc137c5117.prompt.md",
+ "prompt_sha256": "bcdafcdc137c5117fe47155ff0d53f4379a40408c58ca586b895bbd46ae66a61",
+ "created": "2026-10-11T18:55:23",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/bcdafcdc137c5117.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "41b1d3426649480abbcf3891b3c5ea14",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay argues that language models cannot reliably count words in a long passage because tokens do not correspond to words and the architecture lacks a genuine counting mechanism.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2059,
+     "completion_tokens": 42,
+     "total_tokens": 2101,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759322,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay argues that language models cannot reliably count words in a long passage because tokens do not correspond to words and the architecture lacks a genuine counting mechanism."
+ }
+}

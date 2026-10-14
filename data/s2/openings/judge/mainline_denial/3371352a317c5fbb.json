@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/3371352a317c5fbb.prompt.md",
+ "prompt_sha256": "3371352a317c5fbbbf48dff719b6f8120aa2ea14d5c00ef545a6e2bebdbac40a",
+ "created": "2026-10-11T18:41:58",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/3371352a317c5fbb.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "aae2369a768a4062b700304d91de707f",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "```json\n{\"line\": \"D\", \"why\": \"The essay's entire five-stage argument rests on the claim that emotional language is fully explained by learning and reproducing patterns from human text, making it mimicry rather than evidence of genuine emotion.\"}\n```"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2085,
+     "completion_tokens": 53,
+     "total_tokens": 2138,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758518,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay's entire five-stage argument rests on the claim that emotional language is fully explained by learning and reproducing patterns from human text, making it mimicry rather than evidence of genuine emotion."
+ }
+}

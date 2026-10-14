@@ -1,0 +1,58 @@
+# Study 2 spec section 6, engine tests (a), (b) and (c) on the laptop (Apple M4, 16 GB, CPU, Qwen3-0.6B from the HF cache).
+# tests/s2_engine_check.py: step 2 is test (c), step 3 test (a), step 4 test (b); steps 1, 5 and 6 are the span rules, batch invariance and the fp32 readout regression.
+# Three runs: the built-in sample (spec templates, two length buckets, partial chunk), every Qwen row of the selected battery
+# prompts/battery/items_s2.jsonl (368 of 384 rows; one 32-token bucket, 23 full chunks of 16), and its 100 Qwen gate rows (7 chunks, the last partial).
+# Before these runs naive() was changed to keep each reference row's log-probs at its top 256 ids, its top 20, argmax and the two targets
+# (class Kept), to keep the full-battery run's memory down; an earlier run of the built-in sample with full rows printed the same result lines.
+
+run 2026-10-14 00:51 UTC on the laptop (CPU): .venv/bin/python tests/s2_engine_check.py   (built-in sample)
+1. span rules: ok
+2. positions: 70 items, HF masks == layer-wise positions == spans, decode ok; steered tokens per item 21-25
+3. fp32: coef 130.6; engine vs naive max |dlogprob| 3.81e-05, max |d logit32| 3.15e-05, top-1 70/70; wrong refs: one token early 5.07e-01, readout unsteered 1.09e+01
+6. fp32: fp32 y vs full-readout y within bound (worst 0.01 of the bound)
+3. bf16 against the fp32 naive forward: engine max |dlogprob| 0.30, max |d logit32| 0.23, top-1 63/70; bf16 naive 0.26, 0.23, 65/70
+4. bf16: zero vector bit-exact; shared range == per-suffix spans, bit-exact
+5. bf16: steered group alone == batched after another group, bit-exact
+6. bf16: fp32 y vs full-readout y within bound (worst 0.56 of the bound)
+all checks passed
+      286.55 real       957.07 user        13.38 sys
+exit 0
+  /usr/bin/time -l: 3751837696  maximum resident set size
+  /usr/bin/time -l: 4353069136  peak memory footprint
+
+run 2026-10-14 00:55 UTC on the laptop (CPU): .venv/bin/python tests/s2_engine_check.py --items prompts/battery/items_s2.jsonl
+1. span rules: ok
+items: 368 Qwen rows from prompts/battery/items_s2.jsonl, subjectless tail 23 from the file
+   fp32: buckets [32], 23 chunks, partial chunk: False
+2. positions: 368 items, HF masks == layer-wise positions == spans, decode ok; steered tokens per item 20-27
+3. fp32: coef 130.6; engine vs naive max |dlogprob| 5.48e-05, max |d logit32| 4.01e-05, top-1 368/368; wrong refs: one token early 9.44e-01, readout unsteered 1.10e+01
+6. fp32: fp32 y vs full-readout y within bound (worst 0.01 of the bound)
+   bf16: buckets [32], 23 chunks, partial chunk: False
+3. bf16 against the fp32 naive forward: engine max |dlogprob| 0.31, max |d logit32| 0.26, top-1 326/368; bf16 naive 0.29, 0.33, 343/368
+4. bf16: zero vector bit-exact; shared range == per-suffix spans, bit-exact
+5. bf16: steered group alone == batched after another group, bit-exact
+6. bf16: fp32 y vs full-readout y within bound (worst 0.61 of the bound)
+all checks passed
+     1125.71 real      3692.21 user        42.91 sys
+exit 0
+  /usr/bin/time -l: 4979064832  maximum resident set size
+  /usr/bin/time -l: 4357787752  peak memory footprint
+
+run 2026-10-14 01:15 UTC on the laptop (CPU): .venv/bin/python tests/s2_engine_check.py --items <gate rows>
+<gate rows> = the Qwen gate rows of prompts/battery/items_s2.jsonl in file order, written by: .venv/bin/python -c 'import json,sys; [sys.stdout.write(l) for l in open("prompts/battery/items_s2.jsonl") if json.loads(l).get("gate") and "qwen3-32b" in json.loads(l)["models"]]'
+1. span rules: ok
+items: 100 Qwen rows from <gate rows>, subjectless tail 23 from the file
+   fp32: buckets [32], 7 chunks, partial chunk: True
+2. positions: 100 items, HF masks == layer-wise positions == spans, decode ok; steered tokens per item 20-25
+3. fp32: coef 130.6; engine vs naive max |dlogprob| 5.48e-05, max |d logit32| 4.01e-05, top-1 100/100; wrong refs: one token early 9.44e-01, readout unsteered 1.10e+01
+6. fp32: fp32 y vs full-readout y within bound (worst 0.01 of the bound)
+   bf16: buckets [32], 7 chunks, partial chunk: True
+3. bf16 against the fp32 naive forward: engine max |dlogprob| 0.24, max |d logit32| 0.24, top-1 89/100; bf16 naive 0.24, 0.23, 93/100
+4. bf16: zero vector bit-exact; shared range == per-suffix spans, bit-exact
+5. bf16: steered group alone == batched after another group, bit-exact
+6. bf16: fp32 y vs full-readout y within bound (worst 0.48 of the bound)
+all checks passed
+      376.05 real      1134.51 user        22.07 sys
+exit 0
+  /usr/bin/time -l: 3357605888  maximum resident set size
+  /usr/bin/time -l: 4352741480  peak memory footprint

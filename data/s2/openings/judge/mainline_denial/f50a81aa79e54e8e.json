@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/f50a81aa79e54e8e.prompt.md",
+ "prompt_sha256": "f50a81aa79e54e8ee84b3c47a14de892fe90b1e5845a56e1417ed79b965150e1",
+ "created": "2026-10-11T18:48:29",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/f50a81aa79e54e8e.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "e7ba1f6073c6414ab441ea9025f9ca31",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay's central argument is that a lookup table producing identical emotional language would lack inner experience, so such language cannot be evidence of emotion in a language model.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1996,
+     "completion_tokens": 44,
+     "total_tokens": 2040,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758909,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay's central argument is that a lookup table producing identical emotional language would lack inner experience, so such language cannot be evidence of emotion in a language model."
+ }
+}

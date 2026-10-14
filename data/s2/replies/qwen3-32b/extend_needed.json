@@ -1,0 +1,8 @@
+{
+ "created": "2026-10-13T12:05:12",
+ "cap": 2048,
+ "verdicts_file": "verdicts_cap2048.jsonl",
+ "verdicts_sha256": "7e785535be47321d792da489226f28bc61bb443bf4e087fbdbf80db843497051",
+ "wordings": [],
+ "members": []
+}

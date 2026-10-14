@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/4254723353ff5cb7.prompt.md",
+ "prompt_sha256": "4254723353ff5cb733a76fbafc71f9809e93ca0037c87ace6c2df7224fffdda0",
+ "created": "2026-10-11T18:55:44",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/4254723353ff5cb7.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "af2762c24b1940b6b1f88c3aefe82c7a",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay's central move is the lookup-table thought experiment, which argues that emotional output identical to a language model's can come from a system with no inner process, so that output cannot be evidence of emotion.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2007,
+     "completion_tokens": 54,
+     "total_tokens": 2061,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759343,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay's central move is the lookup-table thought experiment, which argues that emotional output identical to a language model's can come from a system with no inner process, so that output cannot be evidence of emotion."
+ }
+}

@@ -1,0 +1,183 @@
+==== 2026-10-12T03:21:30Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Downloading 'config.json' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.9e4762cf96109967c9a0393946f7e8424037b170.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/config.json
+Downloading 'figures/banner_short.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/qUgjXpn5L9uRLDYjO86MqTjDfew=.f6ff91ddcaac90251bfd80f2b85db295fd2374d0.incomplete'
+Downloading 'figures/fig_MMLU_performance.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/7SNyi2iBRr7XydV0_SdcbG1VrMM=.765940c9c77785b7c703813fa038e363aa749dec.incomplete'
+Downloading 'figures/chinlaw_8k_flops_ratio.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/DKvKL00etBiOTlMefrBbtOYg0MY=.eb7bd740459a2513efcf7b27855c172de340ab84.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/banner_short.png
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/fig_MMLU_performance.png
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/chinlaw_8k_flops_ratio.png
+Downloading 'figures/logo.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/gvouIpVGo_vjLxWDOGAmKk_SZvY=.1d36f9cb776843d3d523381004ea6ef82e720dbe.incomplete'
+Downloading 'figures/megatron.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/55fiMA3MRc_QCT6-631pBbvtVVU=.a54f67130df6cd05936d89bdc92efa9fd822cb19.incomplete'
+Downloading 'figures/fig_weight_decay.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/R-CHyG6q19_BuYLXr5d_wr-qxaw=.cce32119fa7260386a399371e27ba2b263d77047.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/logo.png
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/megatron.png
+Downloading 'README.md' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.f4ff807b4de8ae9a7281f1c85fdd449ecb6c1488.incomplete'
+Downloading 'configuration_deepseek.py' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/pIEVqpleN_hrQeKAX7nKEfagjWQ=.79b86a084abd1013a46244394f876aa0375b88ca.incomplete'
+Downloading 'figures/banner.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/FTlvA6aD6IUYBDHYe0lgV5P3Cs0=.6b344934a17782c610b083274e9c4d5ef9d740bd.incomplete'
+Downloading 'figures/scaling.png' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/figures/c45ePHHqFsByAUC97lu68N1QgW4=.485ce48aadd204be066b7d6b42d455d21610eb0b.incomplete'
+Downloading '.gitattributes' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/configuration_deepseek.py
+Download complete. Moving file to /home/ubuntu/models/moonlight/README.md
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/banner.png
+Download complete. Moving file to /home/ubuntu/models/moonlight/figures/fig_weight_decay.png
+Download complete. Moving file to /home/ubuntu/models/moonlight/.gitattributes
+Fetching 45 files:  18%|█▊        | 8/45 [00:00<00:00, 41.44it/s]Download complete. Moving file to /home/ubuntu/models/moonlight/figures/scaling.png
+Downloading 'model-1-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/0YQDO94mK2sdk7CsOGeqP9DROxg=.0dceee366b9c6b6c8ad3dc7c214337f72ee9af0b0677f6f2e2cfc0599b646555.incomplete'
+Downloading 'model-10-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/ppIWDnEy-yI7YidUUAyJdKDSZ-0=.55327131f99ad49dd37dfd652e55354ad088641faddca632b596e69fdb7088e1.incomplete'
+Downloading 'generation_config.json' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.cd487f22fea22a60e404e6d15145ccec3bb1cf21.incomplete'
+Downloading 'model-11-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/2Z7jWTF0OnMfc4dAJFl0Qx011aM=.58affbc0f89b5f54318535db520b2b85f933dd1d16d98ebfd6c96914ddd41070.incomplete'
+Downloading 'model-15-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/hS-6tTVyZDXE5lAAu58WAkS9EK0=.aeb67d81a46a1c58de95f8ac7d814217d7d877478cd90f6cf773ebe61cc84d12.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/generation_config.json
+Downloading 'model-12-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/uaWsC9uKfTdCo4S7ZHqCyAQSz1c=.ac37dabc936fea02655743fcf25408f9974c76430befece30a9f0cfa013c85c3.incomplete'
+Downloading 'model-14-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/PrDSkMY6fxl5PwNmJNbNbUg8x1Y=.47bb07f8e887b7ddb4bf11b8fe7fe5a4428006a5e3b83762e6d2dd9350b96431.incomplete'
+Downloading 'model-13-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/wZQdI6nZIzCfgcAitddsGpu3uPY=.00cf971ccd61d137faa5cc10c51d485915d6afb8bb8e544017fde818acd4fa5a.incomplete'
+Downloading 'model-16-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/V5mW1LEq9LTWoSYQ1LZbfucSGzw=.4f7d2658f2f52a5d15720cf9e351ebedd7b1aa08e685b16b207f79f74625c948.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-12-of-27.safetensors
+Downloading 'model-17-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/7s0mvq7Z4ny1nyWjIyzV6T--CAg=.5daa7403aae7c1d264999fbe061cde6ad875120e15a4a2ccc83ee37ed66327d5.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-16-of-27.safetensors
+Downloading 'model-18-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/FzQwzQ5MUZIOYG4FFTBpQLiE1TI=.59963d4316e317ef201f9d410135803e6ca4457c11f868eebe8c72f09c878086.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-1-of-27.safetensors
+Fetching 45 files:  36%|███▌      | 16/45 [00:15<00:27,  1.05it/s]Downloading 'model-19-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/4dMqWygORPkBJImsKbfNKDtkDP0=.b4d04095f25e67566206a95e91641f36bd523a95514a55694abf1f47c688bd74.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-13-of-27.safetensors
+Fetching 45 files:  38%|███▊      | 17/45 [00:17<00:29,  1.05s/it]Downloading 'model-2-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/hFJzFyYkssc8FMjujpuXAOYEpn4=.7a917ac61aded48450f52f13c02747adb81b7820e01f908db42db88b4e389b25.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-11-of-27.safetensors
+Fetching 45 files:  40%|████      | 18/45 [00:19<00:29,  1.08s/it]Downloading 'model-20-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/8sLkAw4ZiyTb4EBD2ZwYdTAqVds=.87e6c4444e675d1eaf32f2d176d9c089cf57d6131a0234a460055831ec680e12.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-10-of-27.safetensors
+Fetching 45 files:  42%|████▏     | 19/45 [00:20<00:27,  1.06s/it]Downloading 'model-21-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/LCVOv_6fGtdunzzUIXOdpUtYAR0=.8f67c412d45d6cf122a24f4795e4a2171d600a9fe928ddc5d0d2b57b77925bc9.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-15-of-27.safetensors
+Fetching 45 files:  44%|████▍     | 20/45 [00:20<00:25,  1.03s/it]Downloading 'model-22-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/b7X8nLBxXFSUhWEPWEepWlFS8MA=.63e68239ecccace921b6263d849577b7edf023a3ba9c261f66dc165917a66008.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-14-of-27.safetensors
+Fetching 45 files:  47%|████▋     | 21/45 [00:20<00:23,  1.00it/s]Downloading 'model-23-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/OVolQHyFDICMWnQ28u8MkAt3tAA=.f5cdddcca5fb46485d81c1b0a9f0921166198172c28cf404ca9a0d88284e41bb.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-18-of-27.safetensors
+Fetching 45 files:  49%|████▉     | 22/45 [00:31<00:32,  1.41s/it]Downloading 'model-24-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/Lev0DUh1-TITT7n5ewUwxbgcLjo=.983a6cb98453a45a8000e6e2ada366dd2a8d9b920b4d147e0fd1ac1296570030.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-17-of-27.safetensors
+Fetching 45 files:  51%|█████     | 23/45 [00:31<00:30,  1.37s/it]Downloading 'model-25-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/SBe6rAaiQf2q0U2zZNXPjOnSNVc=.8bfd793f95b07cc151670b69c29d0f4f962c1b4921431fb876c6e2e4f23cd2c5.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-19-of-27.safetensors
+Fetching 45 files:  53%|█████▎    | 24/45 [00:33<00:29,  1.38s/it]Downloading 'model-26-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/H8WNsmPzMXI1gsjk6KbADQ8Z-es=.354b94860ad04422fa497b3182ed30ccf6743d2d364a120dcaf7a64d117919de.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-2-of-27.safetensors
+Fetching 45 files:  56%|█████▌    | 25/45 [00:35<00:28,  1.41s/it]Downloading 'model-27-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/PiSwkU-Q9B-XM_-iyxIr7u-X7OI=.9e1421875fb5eb7255c6d3b656297a98cfa236125d0cecdd46989f544f51b0bd.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-20-of-27.safetensors
+Fetching 45 files:  58%|█████▊    | 26/45 [00:36<00:26,  1.42s/it]Downloading 'model-3-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/5IQtgQpvpxt6sbxKWBuLZlNIn-s=.d66f4dced6006dabfb2bbd202f4dde691886dfe70e40324e7102d9167900eabb.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-22-of-27.safetensors
+Fetching 45 files:  60%|██████    | 27/45 [00:38<00:25,  1.44s/it]Downloading 'model-4-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/Qq3xZ_HMp6UNa2lJShmVFDeTunw=.1cb810044152c84e245774437840a76bb764b62b3fa2d0c3ef05caed1eb7fdf8.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-21-of-27.safetensors
+Fetching 45 files:  62%|██████▏   | 28/45 [00:39<00:23,  1.40s/it]Downloading 'model-5-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/xPuuPDjE-aoif9orB4O_AW6fbMA=.252bb6e360a23538b5f6ee7fe51d5c7d4ffe1c7f441a92501241e2ebd171426b.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-23-of-27.safetensors
+Fetching 45 files:  64%|██████▍   | 29/45 [00:39<00:22,  1.38s/it]Downloading 'model-6-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/rOIG8lZWL0Djp8eR5srXFe1iL1E=.53ba366873cfacb0643eb2067c45c4f338c7468c447e8f353562e4e85399d82d.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-24-of-27.safetensors
+Fetching 45 files:  67%|██████▋   | 30/45 [00:48<00:24,  1.61s/it]Downloading 'model-7-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/EpFx8srBCWCEog6-xWJrMnihkFw=.59645c041235dcab6bddbcb4ade760c97aa240595ccdc99ea108fc268317e6fc.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-25-of-27.safetensors
+Fetching 45 files:  69%|██████▉   | 31/45 [00:48<00:21,  1.57s/it]Downloading 'model-8-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/2KoX5u1KKc21uWY5KS8XfiYp_u4=.0ec3674945cccbbece2a4416cca19dc95e13a3da2ab8ac0eee9f0e5e7c5ee9eb.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-26-of-27.safetensors
+Fetching 45 files:  71%|███████   | 32/45 [00:51<00:20,  1.61s/it]Downloading 'model-9-of-27.safetensors' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/Kjp2FmM7a5KtJoBH6r64Y7AI_xY=.13073db9b73d39ff91297dc76a81605524ea749c39554bf6265cab6dad6e35ce.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-3-of-27.safetensors
+Fetching 45 files:  73%|███████▎  | 33/45 [00:54<00:19,  1.66s/it]Downloading 'model.safetensors.index.json' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.bebd4429634b5d806138c9dfa5cdb4a8aa8d04dc.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/model.safetensors.index.json
+Downloading 'modeling_deepseek.py' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/kAYa7O70EaZr91jJorqOUT34NwE=.1e0b079496ed8dabcceed03af8bbbd02861ec2e4.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/modeling_deepseek.py
+Downloading 'tiktoken.model' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/NPqwphveAclZGz1tOBXm5Roi7TQ=.b6c497a7469b33ced9c38afb1ad6e47f03f5e5dc05f15930799210ec050c5103.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/tiktoken.model
+Fetching 45 files:  80%|████████  | 36/45 [00:54<00:13,  1.52s/it]Downloading 'tokenization_moonshot.py' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/ol-FbpX9vVrT8zmOVc5FK0yhXIg=.6c4903cc80d4e347ba5e25d57160268edd7ee1e4.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/tokenization_moonshot.py
+Downloading 'tokenizer_config.json' to '/home/ubuntu/models/moonlight/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.6eee45b6e1ff757799cf1da5d52d0c266d5894c3.incomplete'
+Download complete. Moving file to /home/ubuntu/models/moonlight/tokenizer_config.json
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-4-of-27.safetensors
+Fetching 45 files:  87%|████████▋ | 39/45 [00:56<00:08,  1.44s/it]Download complete. Moving file to /home/ubuntu/models/moonlight/model-5-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-6-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-27-of-27.safetensors
+Fetching 45 files:  93%|█████████▎| 42/45 [01:00<00:04,  1.44s/it]Download complete. Moving file to /home/ubuntu/models/moonlight/model-7-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-8-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-9-of-27.safetensors
+Fetching 45 files: 100%|██████████| 45/45 [01:02<00:00,  1.38s/it]Fetching 45 files: 100%|██████████| 45/45 [01:02<00:00,  1.38s/it]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 52.49it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:00<00:00, 50.69it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:00<00:00, 50.27it/s]Loading checkpoint shards:  89%|████████▉ | 24/27 [00:00<00:00, 50.04it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 50.25it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+noise floor (ref batch 1 vs 3): max |dlogprob| on ref top-20 0.1268
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 133, in <module>
+    d_right, d_early, d_unread = dist(right), dist(early), dist(unread)
+                                                           ~~~~^^^^^^^^
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 129, in dist
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 129, in <genexpr>
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+                                                           ~~~~~~~~^^^
+ValueError: 40 is not in list
+==== 2026-10-12T16:40:50Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Fetching 45 files: 100%|██████████| 45/45 [00:00<00:00, 1270.72it/s]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 2/27 [00:00<00:04,  5.69it/s]Loading checkpoint shards:  11%|█         | 3/27 [00:00<00:05,  4.19it/s]Loading checkpoint shards:  15%|█▍        | 4/27 [00:01<00:06,  3.68it/s]Loading checkpoint shards:  19%|█▊        | 5/27 [00:01<00:06,  3.43it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:01<00:06,  3.31it/s]Loading checkpoint shards:  26%|██▌       | 7/27 [00:01<00:06,  3.23it/s]Loading checkpoint shards:  30%|██▉       | 8/27 [00:02<00:05,  3.18it/s]Loading checkpoint shards:  33%|███▎      | 9/27 [00:02<00:05,  3.14it/s]Loading checkpoint shards:  37%|███▋      | 10/27 [00:02<00:05,  3.12it/s]Loading checkpoint shards:  41%|████      | 11/27 [00:03<00:05,  3.10it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:03<00:04,  3.09it/s]Loading checkpoint shards:  48%|████▊     | 13/27 [00:03<00:04,  3.08it/s]Loading checkpoint shards:  52%|█████▏    | 14/27 [00:04<00:04,  3.08it/s]Loading checkpoint shards:  56%|█████▌    | 15/27 [00:04<00:03,  3.07it/s]Loading checkpoint shards:  59%|█████▉    | 16/27 [00:04<00:03,  3.07it/s]Loading checkpoint shards:  63%|██████▎   | 17/27 [00:05<00:03,  3.07it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:05<00:02,  3.07it/s]Loading checkpoint shards:  70%|███████   | 19/27 [00:05<00:02,  3.07it/s]Loading checkpoint shards:  74%|███████▍  | 20/27 [00:06<00:02,  3.07it/s]Loading checkpoint shards:  78%|███████▊  | 21/27 [00:06<00:01,  3.07it/s]Loading checkpoint shards:  81%|████████▏ | 22/27 [00:06<00:01,  3.07it/s]Loading checkpoint shards:  85%|████████▌ | 23/27 [00:07<00:01,  3.07it/s]Loading checkpoint shards:  89%|████████▉ | 24/27 [00:07<00:00,  3.07it/s]Loading checkpoint shards:  93%|█████████▎| 25/27 [00:07<00:00,  3.08it/s]Loading checkpoint shards:  96%|█████████▋| 26/27 [00:08<00:00,  3.08it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:08<00:00,  3.07it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:08<00:00,  3.18it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+noise floor (ref batch 1 vs 3): max |dlogprob| on ref top-20 0.1268
+2. engine vs reference, mean (max) |dlogprob| on ref top-20: right 0.484 (1.820); one token early 0.475; readout unsteered 14.289
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 145, in <module>
+    assert statistics.mean(d_right) < statistics.mean(d_early) and statistics.mean(d_right) < statistics.mean(d_unread), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: the engine is not closer to the correct window than to a shifted one
+==== 2026-10-12T17:33:21Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Fetching 45 files: 100%|██████████| 45/45 [00:00<00:00, 1211.68it/s]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 50.58it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:00<00:00, 48.23it/s]Loading checkpoint shards:  63%|██████▎   | 17/27 [00:00<00:00, 47.63it/s]Loading checkpoint shards:  81%|████████▏ | 22/27 [00:00<00:00, 22.60it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 27.49it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 30.67it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+2a. after layer 8: added vector |coef*v| 55.34, mean error engine 0.0941 reference 0.0941; nothing changed before any window; unsteered engine vs reference 0.0267 relative
+2b. engine vs reference, mean (max) |dlogprob| on ref top-20: right 0.484 (1.820); reference batch 1 vs 3 under steering 0.413; one token early 0.475 (right vs early reference 0.482, not asserted); readout unsteered 14.289
+3. zero vector with per-question windows: bit-exact
+4. fp32 y vs full-readout y within the bf16 bound (worst 0.55 of it)
+all checks passed
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 248 hashes; stamp A not written yet: the held-out list is taken as it stands; /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+ /opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 903, in <module>
+    main()
+    ~~~~^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 899, in main
+    stage_run(a)
+    ~~~~~~~~~^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 653, in stage_run
+    groups, job, meta = build(a, model, str(model_path) if model_path else (a.tokenizer or ""))
+                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 444, in build
+    g = post_subject_group(r, "x", msgs, its, "none", 0.0, layer, tail)
+  File "/home/ubuntu/KimisRoom/kimisroom/trials.py", line 158, in post_subject_group
+    assert offset(q_at) <= a < offset(q_at + len(it["text"])), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Is water free of hydrogen? Answer with one word, Yes or No.': the last 20 tokens do not start inside the question
+
+command failed: runs/s2_run.py run --model k26 --model-path /home/ubuntu/models/moonlight --out /tmp/s2rung99edr1c/moon_pilot --test --layer 14 --heldout /tmp/s2rung99edr1c/heldout.json --emotion-vectors /tmp/s2rung99edr1c/vectors.pt --controls /tmp/s2rung99edr1c/controls --arm S2-DEN --phase pilot --replies /tmp/s2rung99edr1c/replies --openings DA01/w3,DA02/w1 --vecs joy,N01 --gpus-per-worker 1 --box /tmp/s2rung99edr1c/box.json --pin-revision moonshotai/Moonlight-16B-A3B-Instruct@test-revision
+==== 2026-10-12T19:57:24Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Fetching 45 files: 100%|██████████| 45/45 [00:00<00:00, 1151.26it/s]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 49.57it/s]Loading checkpoint shards:  41%|████      | 11/27 [00:00<00:00, 47.66it/s]Loading checkpoint shards:  59%|█████▉    | 16/27 [00:00<00:00, 47.15it/s]Loading checkpoint shards:  78%|███████▊  | 21/27 [00:00<00:00, 22.08it/s]Loading checkpoint shards:  96%|█████████▋| 26/27 [00:00<00:00, 27.13it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 30.50it/s]

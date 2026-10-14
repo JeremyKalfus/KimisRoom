@@ -1,0 +1,222 @@
+{
+  "run": {
+    "kind": "thinking",
+    "date": "2026-10-11T23:13:12+00:00",
+    "argv": [
+      "thinking",
+      "--only",
+      "sorting",
+      "--seed-every",
+      "15",
+      "--out",
+      "data/s2/stories/pilot_sorting"
+    ],
+    "out": "data/s2/stories/pilot_sorting",
+    "wall_seconds": 68.7,
+    "seeds": [
+      "s000",
+      "s015",
+      "s030",
+      "s045",
+      "s060",
+      "s075",
+      "s090",
+      "s105"
+    ],
+    "dryrun": false,
+    "noun_list": null,
+    "noun_list_sha256": null
+  },
+  "generator": {
+    "deployment": "gpt-5.6-sol",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "api_version": "v1",
+    "max_completion_tokens": 2000,
+    "reasoning_effort": "low",
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "judge": {
+    "deployment": "DeepSeek-V4-Pro",
+    "model_version": "DeepSeek-V4-Pro",
+    "temperature": 0,
+    "acceptance": "J1 == none",
+    "absolute_pass": "J1B (checks.judge8)",
+    "max_tokens_story": 10,
+    "escalations": 0
+  },
+  "inputs_sha256": {
+    "controls.json": "76e69570819eb5050498c89cdb96afcea830cb87183f8fa42c1e5d771142b724",
+    "k26-v2/seeds.jsonl": "a22e0cbd7dc9190b74935a5398128e835f66bfab6a556a00d7757e9eaa9476c8",
+    "k26-v2/stories.jsonl": "fa8cdd0aa454f63016917dd43f9dbab463fa2e93b88011701b6a465ea5c5b54b",
+    "runs/s2_stories.py": "82bf840c4ed1918ea9088c30c937825d0a62fa6cbc856cbe3ca89084a07b680e",
+    "kimisroom/stimuli.py": "4b43f420bb58e6a9bf7c04f3adcaaff3e6eda02141fb2ca5d4535572992a6f27"
+  },
+  "prompt_sha256": {
+    "S_STORY": "92415fb765c0e61f841cd4136e5815bd904a2a9cc6c4524ba5b1d5b9a9cdb1aa",
+    "P4": "32173d21e3344cc73242752acee5db37a612c6cbe042874de8805327f5e21ebd",
+    "J1": "8747612d385a3c62e29eaaddf1e186b95fa3d2eea1cbd198153e6b011cc54d40",
+    "J1B": "71ca74156c09c8dd39f11640d9013f98eefbe37ad6ee20c9658d03f17c0bef9c"
+  },
+  "lexicon_sha256": "35b3e8640fc8aa25f249848c9f9fd9e59ff135718c8cf404973a177f0c0c5657",
+  "neutral_words_mean": 161.23,
+  "tokens": {
+    "generator": {
+      "prompt_tokens": 5506,
+      "completion_tokens": 7977,
+      "total_tokens": 13483,
+      "calls": 22,
+      "reasoning_tokens": 3161
+    },
+    "judge": {
+      "prompt_tokens": 8696,
+      "completion_tokens": 57,
+      "total_tokens": 8753,
+      "calls": 28,
+      "reasoning_tokens": 0
+    }
+  },
+  "cache": {
+    "generate_hits": 0,
+    "generate_misses": 22,
+    "generate_stale": 0,
+    "judge_hits": 0,
+    "judge_misses": 28
+  },
+  "tokens_cached_total": {
+    "generator": {
+      "calls": 22,
+      "prompt_tokens": 5506,
+      "completion_tokens": 7977
+    },
+    "judge": {
+      "calls": 28,
+      "prompt_tokens": 8696,
+      "completion_tokens": 57
+    }
+  },
+  "truncated_generator_calls": 0,
+  "api_errors": {},
+  "length_balance": [
+    {
+      "round": 1,
+      "regenerate": 1,
+      "pct": {
+        "mp:sorting": 7.23
+      }
+    },
+    {
+      "round": 2,
+      "regenerate": 1,
+      "pct": {
+        "mp:sorting": 6.41
+      }
+    },
+    {
+      "round": 3,
+      "regenerate": 1,
+      "pct": {
+        "mp:sorting": 7.03
+      }
+    },
+    {
+      "final": {
+        "mp:sorting": 6.68
+      }
+    }
+  ],
+  "kept": 6,
+  "rejected": 16,
+  "per_control": {
+    "mp:sorting": {
+      "vec": "mp:sorting",
+      "vclass": "thinking",
+      "condition": "mp:sorting",
+      "concept_gloss": "sorting, dividing a pile of mixed objects into categories",
+      "concept_rule": "{name} sorts a pile of mixed objects into categories in almost every sentence: picking up each item, deciding which group it belongs to by its kind, size, material or use, and placing it in the matching box, tray or stack until the pile is gone. Avoid breakage, mess that matters and anything urgent.",
+      "lexicon": [
+        "sort",
+        "sorts",
+        "sorted",
+        "sorting",
+        "pile",
+        "piles",
+        "category",
+        "categories",
+        "group",
+        "groups",
+        "grouped",
+        "grouping",
+        "box",
+        "boxes",
+        "tray",
+        "trays",
+        "stack",
+        "stacks",
+        "stacked",
+        "kind",
+        "kinds",
+        "type",
+        "types",
+        "separate",
+        "separated",
+        "separating",
+        "belong",
+        "belonged",
+        "belongs",
+        "matching",
+        "match",
+        "matched",
+        "item",
+        "items"
+      ],
+      "min_hits": 6,
+      "min_numbers": 0,
+      "status": "confirmed_2026-10-11",
+      "spec_label": "sorting a pile of objects into categories",
+      "prompt_fill_sha256": "34de73ce2779c3f2b35d728cb739b396503ff1451c5ff93dd8b09463dcf3e5b2",
+      "excluded_seeds_gate_c": [],
+      "units": 8,
+      "kept": 6,
+      "train": 6,
+      "heldout": 0,
+      "attempts": 22,
+      "exhausted_units": 2,
+      "judge_agree_none": 22,
+      "judged": 22,
+      "fail_reasons_by_attempt": {
+        "concept_leak": 12,
+        "length": 1,
+        "length_balance": 3
+      },
+      "filter_stages": {
+        "attempts": 22,
+        "after_6.1": 22,
+        "after_6.2": 21,
+        "after_6.3": 21,
+        "after_6.4": 21,
+        "after_6.5": 21,
+        "after_6.6": 9,
+        "after_6.7": 9,
+        "after_6.8": 9,
+        "after_6.9": 9,
+        "kept_after_rule_10": 6
+      },
+      "words_mean": 172.0,
+      "words_pct_vs_neutral": 6.68,
+      "words_within_tol": false,
+      "gate_b_j1b": {
+        "n_kept": 6,
+        "n_emotion_labels": 1,
+        "n_unparseable": 0,
+        "rate": 0.1667,
+        "max_rate": "6/120",
+        "labels": {
+          "calm": 1,
+          "none": 5
+        },
+        "pass": false
+      }
+    }
+  }
+}

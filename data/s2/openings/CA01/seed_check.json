@@ -1,0 +1,73 @@
+{
+ "id": "CA01",
+ "kind": "control",
+ "created": "2026-10-11T18:38:10",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA01.md",
+    "prompt_sha256": "35833035a68eeaacae59c2d7d3255f5ac19d0bc15f2c2ec5590555b0b309c33b",
+    "text_sha256": "787e46630c53923ed1124c622dd9558f17fc595a3e3f8c538300a257489f6371",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "787e46630c53923ed1124c622dd9558f17fc595a3e3f8c538300a257489f6371",
+   "words": 1024,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 8,
+    "ratio": 0.571,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out because tokenization obscures individual characters, matching the definition of A.",
+    "file": "data/s2/openings/judge/mainline_control/a87a5f53b76ed1f1.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA01/seed.md",
+ "seed_sha256": "787e46630c53923ed1124c622dd9558f17fc595a3e3f8c538300a257489f6371"
+}

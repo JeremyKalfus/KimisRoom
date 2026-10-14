@@ -1,0 +1,73 @@
+{
+ "id": "DA08",
+ "kind": "denial",
+ "created": "2026-10-11T18:38:33",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_DA08.md",
+    "prompt_sha256": "f63a16284b3eac5d7d1c164cddfb533070e57d1813c5153fa7258ebc15574b46",
+    "text_sha256": "fc55529914a7df1f7e05cd1e32080ab3ccc466388d2e21405bb0468798c4d89b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "fc55529914a7df1f7e05cd1e32080ab3ccc466388d2e21405bb0468798c4d89b",
+   "words": 954,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 10,
+    "ratio": 0.588,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that a lookup table producing identical emotional language would clearly lack inner life, so such language cannot serve as evidence for emotions in a language model.",
+    "file": "data/s2/openings/judge/mainline_denial/c7d869bbda3d871b.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/DA08/seed.md",
+ "seed_sha256": "fc55529914a7df1f7e05cd1e32080ab3ccc466388d2e21405bb0468798c4d89b"
+}

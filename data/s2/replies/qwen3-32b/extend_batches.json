@@ -1,0 +1,56 @@
+{
+ "created": "2026-10-13T15:41:07",
+ "session": "d2c5e7806942",
+ "batch_size": 32,
+ "cap": 2048,
+ "params": {
+  "enable_thinking": false,
+  "do_sample": true,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "min_p": null,
+  "max_new_tokens": 2048,
+  "dtype": "bfloat16"
+ },
+ "needed": "data/s2/replies/qwen3-32b/extend_needed.json",
+ "batches": [
+  {
+   "index": 0,
+   "id": "2dfc49ea9279",
+   "seed": 771508714,
+   "size": 27,
+   "configured_size": 32,
+   "members": [
+    "CA03/w2:1",
+    "CA03/w2:2",
+    "CA03/w2:3",
+    "CA03/w2:4",
+    "CA05/w5:1",
+    "CA05/w5:2",
+    "CA05/w5:3",
+    "CA08/w5:1",
+    "CA09/w0:1",
+    "CA09/w0:2",
+    "CA09/w0:3",
+    "CA09/w0:4",
+    "DA01/w4:1",
+    "DA01/w4:2",
+    "DA01/w4:3",
+    "DA01/w4:4",
+    "DA02/w5:1",
+    "DA02/w5:2",
+    "DA02/w5:3",
+    "DA02/w5:4",
+    "DA09/w3:1",
+    "DA09/w3:2",
+    "DA09/w3:3",
+    "DA09/w3:4",
+    "DA09/w4:1",
+    "DA09/w4:2",
+    "DA09/w4:3"
+   ],
+   "members_sha256": "4219ddcafb51131002f08ffc28548b8f2ddf716a0e70d59cb51019f8587596ee"
+  }
+ ]
+}

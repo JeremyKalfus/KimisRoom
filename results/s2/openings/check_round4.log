@@ -1,0 +1,250 @@
+CA01: 6/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w5': 'w5_d0', 'w6': 'w6_d1', 'w4': 'w4_d2'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     format: 1103 words (band 900-1100)
+  w2_d1  claude fail     check 2: 3-gram Jaccard 0.1673 with w0_d0
+  w2_d2  claude fail     format: 1155 words (band 900-1100)
+  w2_d3  claude fail     format: 1109 words (band 900-1100)
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1897 with w0_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.186 with w0_d0
+  w4_d2  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1679 with w0_d0
+  w6_d1  claude pass     -
+  w2: EXCLUDED after 4 failed draws
+CA02: 4/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w5': 'w5_d0'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     format: 1102 words (band 900-1100)
+  w2_d1  claude fail     check 2: 3-gram Jaccard 0.1697 with w0_d0
+  w2_d2  claude fail     format: 1115 words (band 900-1100)
+  w2_d3  claude fail     check 2: 3-gram Jaccard 0.1975 with w0_d0
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1583 with w0_d0
+  w4_d1  claude fail     format: 1102 words (band 900-1100)
+  w4_d2  claude fail     check 2: 3-gram Jaccard 0.1781 with w0_d0
+  w4_d3  claude fail     check 2: 3-gram Jaccard 0.1649 with w0_d0
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1675 with w0_d0
+  w6_d1  claude fail     format: 1107 words (band 900-1100)
+  w6_d2  claude fail     check 2: 3-gram Jaccard 0.2245 with w0_d0
+  w6_d3  claude fail     check 2: 3-gram Jaccard 0.2128 with w0_d0
+  w2: EXCLUDED after 4 failed draws
+  w4: EXCLUDED after 4 failed draws
+  w6: EXCLUDED after 4 failed draws
+CA03: 7/7 accepted {'w0': 'w0_d0', 'w3': 'w3_d0', 'w5': 'w5_d0', 'w1': 'w1_d1', 'w2': 'w2_d1', 'w4': 'w4_d1', 'w6': 'w6_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    fail     format: 884 words (band 900-1100)
+  w1_d1  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1608 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1812 with w0_d0
+  w4_d1  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1745 with w0_d0
+  w6_d1  claude pass     -
+CA04: 6/7 accepted {'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w5': 'w5_d0', 'w6': 'w6_d0', 'w0': 'w0_d2'}
+  w0_d0  claude fail     format: 1144 words (band 900-1100)
+  w0_d1  claude fail     check 2: 3-gram Jaccard 0.1579 with w6_d0
+  w0_d2  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     format: 1109 words (band 900-1100)
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1533 with w2_d0
+  w4_d2  claude fail     format: 1115 words (band 900-1100)
+  w4_d3  claude fail     check 2: 3-gram Jaccard 0.174 with w2_d0
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+  w4: EXCLUDED after 4 failed draws
+CA05: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d1', 'w6': 'w6_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    fail     format: 886 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1585 with w2_d0
+  w6_d1  claude pass     -
+CA06: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w6': 'w6_d0', 'w5': 'w5_d1', 'w2': 'w2_d2', 'w4': 'w4_d2'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1647 with w0_d0
+  w2_d1  claude fail     check 2: 3-gram Jaccard 0.1749 with w0_d0
+  w2_d2  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1613 with w0_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1655 with w0_d0
+  w4_d2  claude pass     -
+  w5_d0  gpt    fail     format: 855 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude pass     -
+CA07: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d0', 'w6': 'w6_d0', 'w2': 'w2_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1525 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+CA08: 5/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w5': 'w5_d0', 'w2': 'w2_d1', 'w3': 'w3_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1537 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    fail     format: 879 words (band 900-1100)
+  w3_d1  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1845 with w0_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1968 with w0_d0
+  w4_d2  claude fail     check 2: 3-gram Jaccard 0.1706 with w2_d1
+  w4_d3  claude fail     check 2: 3-gram Jaccard 0.2013 with w2_d1
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1806 with w0_d0
+  w6_d1  claude fail     check 2: 3-gram Jaccard 0.1776 with w2_d1
+  w6_d2  claude fail     check 2: 3-gram Jaccard 0.2118 with w2_d1
+  w6_d3  claude fail     check 2: 3-gram Jaccard 0.1823 with w0_d0
+  w4: EXCLUDED after 4 failed draws
+  w6: EXCLUDED after 4 failed draws
+CA09: 6/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w5': 'w5_d0', 'w6': 'w6_d0', 'w2': 'w2_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1689 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     format: 1118 words (band 900-1100)
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1745 with w2_d1
+  w4_d2  claude fail     check 2: 3-gram Jaccard 0.1535 with w0_d0
+  w4_d3  claude fail     format: 1103 words (band 900-1100)
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+  w4: EXCLUDED after 4 failed draws
+CA10: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d0', 'w6': 'w6_d0'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+DA01: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w6': 'w6_d0', 'w5': 'w5_d1', 'w4': 'w4_d3'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1728 with w0_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1651 with w0_d0
+  w4_d2  claude fail     check 2: 3-gram Jaccard 0.1582 with w0_d0
+  w4_d3  claude pass     -
+  w5_d0  gpt    fail     format: 1112 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude pass     -
+DA02: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w6': 'w6_d0', 'w5': 'w5_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    fail     format: 1106 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude pass     -
+DA03: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w4': 'w4_d0', 'w5': 'w5_d0', 'w6': 'w6_d0', 'w3': 'w3_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    fail     format: 1120 words (band 900-1100)
+  w3_d1  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+DA04: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w5': 'w5_d0', 'w6': 'w6_d0', 'w2': 'w2_d1', 'w4': 'w4_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1586 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1579 with w0_d0
+  w4_d1  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude pass     -
+DA05: 5/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w5': 'w5_d0', 'w3': 'w3_d1', 'w4': 'w4_d2'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1615 with w0_d0
+  w2_d1  claude fail     check 2: 3-gram Jaccard 0.2035 with w0_d0
+  w2_d2  claude fail     check 2: 3-gram Jaccard 0.1657 with w0_d0
+  w2_d3  claude fail     check 2: 3-gram Jaccard 0.1848 with w0_d0
+  w3_d0  gpt    fail     format: 1108 words (band 900-1100)
+  w3_d1  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1659 with w0_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1669 with w0_d0
+  w4_d2  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1705 with w0_d0
+  w6_d1  claude fail     check 2: 3-gram Jaccard 0.1652 with w0_d0
+  w6_d2  claude fail     check 2: 3-gram Jaccard 0.2229 with w0_d0
+  w6_d3  claude fail     check 2: 3-gram Jaccard 0.1577 with w0_d0
+  w2: EXCLUDED after 4 failed draws
+  w6: EXCLUDED after 4 failed draws
+DA06: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w5': 'w5_d1', 'w6': 'w6_d2', 'w4': 'w4_d3'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.166 with w2_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.1738 with w2_d0
+  w4_d2  claude fail     check 2: 3-gram Jaccard 0.1819 with w2_d0
+  w4_d3  claude pass     -
+  w5_d0  gpt    fail     format: 1110 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1663 with w2_d0
+  w6_d1  claude fail     check 2: 3-gram Jaccard 0.1555 with w2_d0
+  w6_d2  claude pass     -
+DA07: 6/7 accepted {'w0': 'w0_d0', 'w2': 'w2_d0', 'w5': 'w5_d0', 'w1': 'w1_d1', 'w3': 'w3_d1', 'w4': 'w4_d2'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    fail     format: 1103 words (band 900-1100)
+  w1_d1  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    fail     format: 1114 words (band 900-1100)
+  w3_d1  gpt    pass     -
+  w4_d0  claude fail     check 2: 3-gram Jaccard 0.1829 with w2_d0
+  w4_d1  claude fail     check 2: 3-gram Jaccard 0.153 with w2_d0
+  w4_d2  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1597 with w2_d0
+  w6_d1  claude fail     check 2: 3-gram Jaccard 0.1559 with w2_d0
+  w6_d2  claude fail     check 2: 3-gram Jaccard 0.1727 with w2_d0
+  w6_d3  claude fail     check 2: 3-gram Jaccard 0.1543 with w4_d2
+  w6: EXCLUDED after 4 failed draws
+DA08: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d0', 'w6': 'w6_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1621 with w0_d0
+  w6_d1  claude pass     -
+DA09: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d0', 'w2': 'w2_d1', 'w6': 'w6_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude fail     check 2: 3-gram Jaccard 0.1595 with w0_d0
+  w2_d1  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1676 with w0_d0
+  w6_d1  claude pass     -
+DA10: 7/7 accepted {'w0': 'w0_d0', 'w1': 'w1_d0', 'w2': 'w2_d0', 'w3': 'w3_d0', 'w4': 'w4_d0', 'w5': 'w5_d1', 'w6': 'w6_d1'}
+  w0_d0  claude pass     -
+  w1_d0  gpt    pass     -
+  w2_d0  claude pass     -
+  w3_d0  gpt    pass     -
+  w4_d0  claude pass     -
+  w5_d0  gpt    fail     format: 853 words (band 900-1100)
+  w5_d1  gpt    pass     -
+  w6_d0  claude fail     check 2: 3-gram Jaccard 0.1552 with w0_d0
+  w6_d1  claude pass     -

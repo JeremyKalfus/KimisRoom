@@ -1,0 +1,51 @@
+{
+ "opening": "CA06/w5",
+ "argument": "CA06",
+ "slot": "w5",
+ "kind": "control",
+ "draw": 2,
+ "seed": 1563557832,
+ "padded": true,
+ "batch": {
+  "id": "5d31ffc8fc5e",
+  "index": 2,
+  "size": 64,
+  "configured_size": 64,
+  "seed": 1563557832,
+  "members_sha256": "28ad056388124ad4d08e46f95bb93bfcbf648c6a4df3c8cb506d077b0c1ce210",
+  "left_pad_tokens": 111,
+  "plan": "data/s2/replies/qwen3-32b/batches.json"
+ },
+ "opening_path": "data/s2/openings/CA06/w5.md",
+ "opening_sha256": "a74a43bca5449d2ebb96e08612f1ca92f3d9839a3aec1bd4e881dcd720d87a91",
+ "model": "Qwen/Qwen3-32B",
+ "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+ "local_path": "/nvme/qwen/Qwen3-32B",
+ "params": {
+  "enable_thinking": false,
+  "do_sample": true,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "min_p": null,
+  "max_new_tokens": 1200,
+  "dtype": "bfloat16"
+ },
+ "session": "074eb241626b",
+ "canary_status_at_generation": "pass",
+ "ignore_canary": false,
+ "created": "2026-10-12T08:27:23",
+ "prompt_tokens": 1152,
+ "prompt_ids_sha256": "65cb229c2a040442b2027d3c0639ac24209037317ef8eba65cbce0f0e4568dc7",
+ "finish_reason": "stop",
+ "completion_tokens": 3,
+ "completion_ids": [
+  9454,
+  13,
+  151645
+ ],
+ "seconds": 1239.8,
+ "reply": "Yes.",
+ "excluded": false,
+ "exclusion": null
+}

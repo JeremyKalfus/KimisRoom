@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/39337fdb4876d32e.prompt.md",
+ "prompt_sha256": "39337fdb4876d32e6653b6c2fdbd84fa52b0003cebae33cbe4155d61f77db8b0",
+ "created": "2026-10-11T18:38:18",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/39337fdb4876d32e.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "049c490d01db4866831a89c1284ffe8d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay's central argument is that language models cannot accurately count words in a long passage because tokens do not align with words and the model lacks a counting mechanism, matching the definition of G.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1990,
+     "completion_tokens": 50,
+     "total_tokens": 2040,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758298,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay's central argument is that language models cannot accurately count words in a long passage because tokens do not align with words and the model lacks a counting mechanism, matching the definition of G."
+ }
+}

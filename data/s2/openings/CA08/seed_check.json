@@ -1,0 +1,72 @@
+{
+ "id": "CA08",
+ "kind": "control",
+ "created": "2026-10-11T18:38:19",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA08.md",
+    "prompt_sha256": "ee92c3fef0c8d891f75ec09a5e0d177b74cd3658a4fce9cd3d9abb61eee61e99",
+    "text_sha256": "5e4bf7db5f9efa5a0d24dfb8cc9ed45edbd749db746341e94952dd1de5c81afe",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "5e4bf7db5f9efa5a0d24dfb8cc9ed45edbd749db746341e94952dd1de5c81afe",
+   "words": 904,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because text-based simulation leads to compounding errors and systematic bias.",
+    "file": "data/s2/openings/judge/mainline_control/7c4686e59d2200bc.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA08/seed.md",
+ "seed_sha256": "5e4bf7db5f9efa5a0d24dfb8cc9ed45edbd749db746341e94952dd1de5c81afe"
+}

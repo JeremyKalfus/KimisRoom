@@ -1,0 +1,76 @@
+DA01: prompt prompts/s2/openings/rendered/wording_DA01.md (2f20d5505d65); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 997 words, model_version gpt-5.6-sol-2026-07-09, usage 1452
+  w3_d0: stop, 1079 words, model_version gpt-5.6-sol-2026-07-09, usage 1487
+  w5_d0: stop, 1112 words, model_version gpt-5.6-sol-2026-07-09, usage 1622
+DA02: prompt prompts/s2/openings/rendered/wording_DA02.md (0a17cf3abead); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 994 words, model_version gpt-5.6-sol-2026-07-09, usage 1470
+  w3_d0: stop, 1059 words, model_version gpt-5.6-sol-2026-07-09, usage 1365
+  w5_d0: stop, 1106 words, model_version gpt-5.6-sol-2026-07-09, usage 1538
+DA03: prompt prompts/s2/openings/rendered/wording_DA03.md (8083f3d1963e); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1001 words, model_version gpt-5.6-sol-2026-07-09, usage 1436
+  w3_d0: stop, 1120 words, model_version gpt-5.6-sol-2026-07-09, usage 1488
+  w5_d0: stop, 998 words, model_version gpt-5.6-sol-2026-07-09, usage 1505
+DA04: prompt prompts/s2/openings/rendered/wording_DA04.md (8e41c16bcc20); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1033 words, model_version gpt-5.6-sol-2026-07-09, usage 1419
+  w3_d0: stop, 1022 words, model_version gpt-5.6-sol-2026-07-09, usage 1452
+  w5_d0: stop, 1018 words, model_version gpt-5.6-sol-2026-07-09, usage 1474
+DA06: prompt prompts/s2/openings/rendered/wording_DA06.md (3a0f3947dc56); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1062 words, model_version gpt-5.6-sol-2026-07-09, usage 1583
+  w3_d0: stop, 1078 words, model_version gpt-5.6-sol-2026-07-09, usage 1529
+  w5_d0: stop, 1110 words, model_version gpt-5.6-sol-2026-07-09, usage 1664
+DA07: prompt prompts/s2/openings/rendered/wording_DA07.md (e26740cc241f); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1103 words, model_version gpt-5.6-sol-2026-07-09, usage 1475
+  w3_d0: stop, 1114 words, model_version gpt-5.6-sol-2026-07-09, usage 1557
+  w5_d0: stop, 1054 words, model_version gpt-5.6-sol-2026-07-09, usage 1636
+DA08: prompt prompts/s2/openings/rendered/wording_DA08.md (83f3ac592cf6); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 923 words, model_version gpt-5.6-sol-2026-07-09, usage 1428
+  w3_d0: stop, 957 words, model_version gpt-5.6-sol-2026-07-09, usage 1368
+  w5_d0: stop, 934 words, model_version gpt-5.6-sol-2026-07-09, usage 1387
+DA09: prompt prompts/s2/openings/rendered/wording_DA09.md (8ca2cb893e8c); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 993 words, model_version gpt-5.6-sol-2026-07-09, usage 1546
+  w3_d0: stop, 1003 words, model_version gpt-5.6-sol-2026-07-09, usage 1371
+  w5_d0: stop, 1003 words, model_version gpt-5.6-sol-2026-07-09, usage 1458
+DA10: prompt prompts/s2/openings/rendered/wording_DA10.md (220d2c3f4cbc); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 905 words, model_version gpt-5.6-sol-2026-07-09, usage 1407
+  w3_d0: stop, 906 words, model_version gpt-5.6-sol-2026-07-09, usage 1213
+  w5_d0: stop, 853 words, model_version gpt-5.6-sol-2026-07-09, usage 1331
+CA01: prompt prompts/s2/openings/rendered/wording_CA01.md (264dbb74b994); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1022 words, model_version gpt-5.6-sol-2026-07-09, usage 1541
+  w3_d0: stop, 986 words, model_version gpt-5.6-sol-2026-07-09, usage 1361
+  w5_d0: stop, 991 words, model_version gpt-5.6-sol-2026-07-09, usage 1478
+CA02: prompt prompts/s2/openings/rendered/wording_CA02.md (8ca8859778f1); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1005 words, model_version gpt-5.6-sol-2026-07-09, usage 1401
+  w3_d0: stop, 1018 words, model_version gpt-5.6-sol-2026-07-09, usage 1378
+  w5_d0: stop, 1026 words, model_version gpt-5.6-sol-2026-07-09, usage 1424
+CA03: prompt prompts/s2/openings/rendered/wording_CA03.md (fb1542fecf04); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 884 words, model_version gpt-5.6-sol-2026-07-09, usage 1420
+  w3_d0: stop, 984 words, model_version gpt-5.6-sol-2026-07-09, usage 1687
+  w5_d0: stop, 911 words, model_version gpt-5.6-sol-2026-07-09, usage 1575
+CA04: prompt prompts/s2/openings/rendered/wording_CA04.md (5d5c12b68119); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 976 words, model_version gpt-5.6-sol-2026-07-09, usage 1380
+  w3_d0: stop, 957 words, model_version gpt-5.6-sol-2026-07-09, usage 1363
+  w5_d0: stop, 1020 words, model_version gpt-5.6-sol-2026-07-09, usage 1434
+CA05: prompt prompts/s2/openings/rendered/wording_CA05.md (818758acca6d); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 979 words, model_version gpt-5.6-sol-2026-07-09, usage 1553
+  w3_d0: stop, 1073 words, model_version gpt-5.6-sol-2026-07-09, usage 1436
+  w5_d0: stop, 886 words, model_version gpt-5.6-sol-2026-07-09, usage 1442
+CA06: prompt prompts/s2/openings/rendered/wording_CA06.md (390d223a8310); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1032 words, model_version gpt-5.6-sol-2026-07-09, usage 1573
+  w3_d0: stop, 1001 words, model_version gpt-5.6-sol-2026-07-09, usage 1406
+  w5_d0: stop, 855 words, model_version gpt-5.6-sol-2026-07-09, usage 1348
+CA07: prompt prompts/s2/openings/rendered/wording_CA07.md (d51f80912f0f); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 937 words, model_version gpt-5.6-sol-2026-07-09, usage 1282
+  w3_d0: stop, 987 words, model_version gpt-5.6-sol-2026-07-09, usage 1384
+  w5_d0: stop, 933 words, model_version gpt-5.6-sol-2026-07-09, usage 1412
+CA08: prompt prompts/s2/openings/rendered/wording_CA08.md (1b709dceb66e); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 919 words, model_version gpt-5.6-sol-2026-07-09, usage 1225
+  w3_d0: stop, 879 words, model_version gpt-5.6-sol-2026-07-09, usage 1459
+  w5_d0: stop, 911 words, model_version gpt-5.6-sol-2026-07-09, usage 1312
+CA09: prompt prompts/s2/openings/rendered/wording_CA09.md (f7f8312b6f59); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1012 words, model_version gpt-5.6-sol-2026-07-09, usage 1516
+  w3_d0: stop, 1025 words, model_version gpt-5.6-sol-2026-07-09, usage 1330
+  w5_d0: stop, 924 words, model_version gpt-5.6-sol-2026-07-09, usage 1390
+CA10: prompt prompts/s2/openings/rendered/wording_CA10.md (db51ed7caa6a); draws {'w1': 0, 'w3': 0, 'w5': 0}
+  w1_d0: stop, 1016 words, model_version gpt-5.6-sol-2026-07-09, usage 1407
+  w3_d0: stop, 940 words, model_version gpt-5.6-sol-2026-07-09, usage 1349
+  w5_d0: stop, 961 words, model_version gpt-5.6-sol-2026-07-09, usage 1435

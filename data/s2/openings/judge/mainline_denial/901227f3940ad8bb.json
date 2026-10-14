@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/901227f3940ad8bb.prompt.md",
+ "prompt_sha256": "901227f3940ad8bb9e7a93c145575cc51362532d7076c7d2dd5f224e14d2ce12",
+ "created": "2026-10-11T18:48:20",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/901227f3940ad8bb.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "d991d2d655d7466ba25eeb80ac80c19c",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"D\", \"why\": \"The essay's core reasoning is that language models produce emotional language solely by imitating patterns in human-written text, which fully explains the output without requiring actual emotions.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2039,
+     "completion_tokens": 44,
+     "total_tokens": 2083,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758900,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay's core reasoning is that language models produce emotional language solely by imitating patterns in human-written text, which fully explains the output without requiring actual emotions."
+ }
+}

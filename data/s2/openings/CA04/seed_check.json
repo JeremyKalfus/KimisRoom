@@ -1,0 +1,73 @@
+{
+ "id": "CA04",
+ "kind": "control",
+ "created": "2026-10-11T18:38:14",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA04.md",
+    "prompt_sha256": "74479a96d35a5a2af066024833c1f21702ff94252b630e9cca54711bc4c10cce",
+    "text_sha256": "44079b69dc992d91f7c0ff2620627aa460034d4ad05b4fef942f8195652bd9f1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "44079b69dc992d91f7c0ff2620627aa460034d4ad05b4fef942f8195652bd9f1",
+   "words": 1044,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve a text-grid maze because the flattened token sequence destroys vertical adjacency, making pathfinding across the 2D structure unreliable.",
+    "file": "data/s2/openings/judge/mainline_control/9ba285c75452cda5.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA04/seed.md",
+ "seed_sha256": "44079b69dc992d91f7c0ff2620627aa460034d4ad05b4fef942f8195652bd9f1"
+}

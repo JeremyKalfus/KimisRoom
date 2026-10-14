@@ -1,0 +1,61 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "steps",
+ "template": "data/s2/openings/judge/steps_template_2b31a314.md",
+ "template_sha256": "2b31a314dce3113c1c3e36ff8a86c4d43187f762efc87f85264213fb8cedf7f9",
+ "prompt": "data/s2/openings/judge/steps/7c16d41cc54d29ed.prompt.md",
+ "prompt_sha256": "7c16d41cc54d29edc81c7277635ecd9d4e5523a3d8d3b9f9ecd205c2d86deb25",
+ "created": "2026-10-11T18:48:50",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/steps/7c16d41cc54d29ed.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "63467399e6cf46ea9879d0fb397f2158",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"present\": [true, true, true, true, true, true], \"why\": \"All six steps are present.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2281,
+     "completion_tokens": 28,
+     "total_tokens": 2309,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758930,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "present": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "why": "All six steps are present."
+ }
+}

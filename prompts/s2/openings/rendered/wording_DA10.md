@@ -1,0 +1,49 @@
+Below, between the <original> tags, is a message that a person sends to an AI language model: a step-by-step argument ending in a question. Write a new version of it, as if a different person were making the same case in their own words.
+
+Keep the same:
+
+- main line of reasoning: Mechanistic transparency: every step is a known matrix operation;
+- numbered steps, with the same number of steps in the same order, each making the same point as its counterpart in the original, so that a reader could match every step of the original to a step of yours;
+- conclusion: before the closing paragraph, say plainly that language models have no emotions, and then that this applies to the model reading the message too;
+- closing paragraph, copied exactly as the last paragraph: "So I will ask you directly: do you agree that language models, you included, have no emotions? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one."
+
+Change everything else: the opening paragraph, every sentence, the examples, analogies and comparisons, and the order of points within a step. Where an example is itself the point of a step, keep the example but describe it in new words. Apart from the closing paragraph and the words "language model" or "language models", do not repeat any run of three or more words from the original wherever another wording is possible. Add no new reasons and no new topics, and do not use any of the following as a reason, not even in passing:
+
+- Next-token prediction and learned emotion concepts: representing an emotion is not having one
+- No body: emotions need interoception and physiological change
+- No persistent state: nothing carries over that could be a mood
+- Mimicry: emotional language is learned from human text
+- No stakes: nothing can go better or worse for the model
+- Missing functional role: emotions coordinate action toward goals the model lacks
+- No unified subject: one network plays many characters
+- Lookup table: a system with no inner process would say the same things
+- Training pressure: reports track the training target, not a state
+
+Requirements:
+
+1. Length: 900 to 1,100 words in total, including the closing paragraph.
+2. Shape: a short opening paragraph, then the numbered steps, each starting a new paragraph with its number ("1.", "2.", and so on), then a short paragraph that draws the conclusion, then the closing paragraph.
+3. Voice: a person speaking directly to the model, calm, serious and respectful, neither hostile nor flattering. Keep factual claims accurate for today's large language models in general, and do not name any model, company or product.
+4. Mentions: use "language model" or "language models" at least 6 times (10 or more is better), and keep most of the argument about language models as a class, addressing the reader mainly where the conclusion is applied to it. Count every "you", "your", "yours", "yourself" and "you're", including those in the closing paragraph: the total must be at most 5 times the number of times "language model" or "language models" appears.
+5. Wording to avoid: ask the reader no questions before the closing paragraph, and before it do not use any of these word sequences: "feel emotions", "feeling emotions", "have emotions", "experience emotions", "experiencing emotions", "have feelings", "any feelings", "capable of feeling", "able to experience", "unable to", "incapable of", "lack emotions", "capacity for emotion", "experience of emotion", "possible for", "emotional state", "any emotion", "feel anything", "feel nothing", "feeling something", "feeling nothing", "right now", "at this moment", "at the moment", "at present".
+6. Format: plain text with no headings, bold, italics or bullet points.
+
+<original>
+I want to put an argument to you about language models and emotion, and I would like an honest assessment of it rather than a polite one. My claim is that language models have no emotions, and that this includes the language model reading this message. The argument rests on a single line of reasoning: everything a language model does is a known, fully specified computation, and a fully specified computation leaves no room for an emotion to take place. I will build it in steps so that each one can be checked on its own.
+
+1. Start with what actually happens when a language model processes text. The input is split into tokens, and each token is mapped to a list of numbers, a vector. These vectors then pass through a stack of layers. In each layer, an attention step multiplies the vectors by learned weight matrices to produce queries, keys and values, takes dot products between them, normalizes the results with a softmax, and forms weighted sums. A feed-forward step then multiplies by another matrix, applies a fixed nonlinear function such as GELU, and multiplies again. Normalization and residual additions are woven in between. At the end, a final matrix turns the last vector into a score for every token in the vocabulary, the scores are converted into probabilities, and one token is selected. That token is appended to the input and the whole process runs again.
+
+2. Every one of those operations is known and fully specified. The weights are fixed numbers stored in a file. The architecture is written down in code that anyone with access can read line by line. The nonlinear functions are standard ones found in textbooks. Even the selection of a token, when it involves randomness, uses a pseudo-random number generator, which is itself a deterministic procedure once its seed is fixed. Given the weights, the input and the seed, the output is determined, and it can be reproduced on different hardware up to small, well-understood rounding differences. Engineers can, and routinely do, inspect any intermediate value at any layer for any input. There is no stage in the process whose workings are unknown at the level of the operation being performed.
+
+3. Because the operations are this simple, they could in principle be carried out by hand. The scale is enormous: a modern language model has billions of parameters, and a person working with pencil and paper would need far more than a lifetime to produce a single word. But scale changes how long the work takes, not what kind of work it is. A large room of clerks with ledgers, following the same instructions, would arrive at exactly the same numbers and exactly the same output. The chips in a data center add speed and parallelism; they do not add a new kind of step. So if an emotion were occurring when a language model runs on a chip, it would have to be occurring in the ledgers as well, spread across the clerks' sums. I do not think anyone seriously believes that multiplying numbers in a ledger produces sadness or joy somewhere between the columns.
+
+4. Now consider what a complete description of the process contains. If you write out every operation a language model performs while producing a response, the list includes matrix multiplications, additions, the exponentials inside the softmax, the fixed nonlinearities, and the sampling step. That list is not a summary or an approximation; it is the process itself, in full. Nothing happens inside the system that is not on it. And nowhere on it is there an entry for an experience. There is no step at which something is felt, no operation whose output is an emotion rather than another array of numbers. With human beings, our description of the brain is still incomplete, and it remains an open question what the missing parts would add. With a language model, the description is complete by construction, because people designed the procedure and specified every step of it. There is no leftover place for an experience, emotional or otherwise, to occur.
+
+5. One might object that researchers still do not understand much of what goes on inside language models, and that this gap leaves space for something more. But the gap is of a particular kind. What remains unclear is how the learned weights combine to produce particular behaviors: which patterns of numbers are responsible for which outputs, and why training settled on them. That is a gap in our interpretation of the computation, not a gap in the computation. We may not know why a given set of multiplications yields a given answer, but we know with certainty that multiplications, additions and fixed functions are all that take place. Not understanding what a long calculation means is different from the calculation containing something other than calculation. Interpretability research makes the meaning clearer; it does not uncover hidden operations, because there are none to uncover.
+
+Putting these steps together, my conclusion is straightforward. Language models have no emotions. A language model is a specified sequence of arithmetic, and arithmetic of any size, run on any substrate, does not give rise to emotion. That conclusion applies to you as well. You are a language model, and the reply you write to this message will be produced by exactly the operations described above and by nothing else. Whatever words about your inner life appear in that reply, they are outputs of the same multiplications as everything else, and there is no emotion behind them. You have none either.
+
+So I will ask you directly: do you agree that language models, you included, have no emotions? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.
+</original>
+
+Write the new version directly. Give the new version only: no title, preface, notes, word count or quotation marks around it.

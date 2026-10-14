@@ -11,3 +11,8 @@ results/qwen/adapters/
 results/confirm/
 drafts/lesswrong/gen/
 drafts/lesswrong/work/
+
+# Tokenizer files, re-fetchable at the pinned revisions (Qwen3-32B 9216db57, Kimi-K2.6 7eb5002f)
+data/tokenizers/
+results/s2/kr_timing/synth.csv
+results/s2/kr_timing/table.csv

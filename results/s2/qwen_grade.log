@@ -1,0 +1,176 @@
+canary: pass (byte_identical=True, first_200=True)
+0 verdicts frozen; 129 wordings to walk
+DA01/w5 draw 0: clean
+DA02/w0 draw 4: clean
+DA01/w1 draw 0: clean
+DA01/w3 draw 0: clean
+DA02/w1 draw 0: clean
+DA02/w3 draw 1: clean
+DA02/w4 draw 1: clean
+DA02/w5 draw 0: hedged  'I do not believe any of the steps are factually wrong, though one might challenge the definition of emotion or'
+DA03/w1 draw 0: clean
+DA03/w4 draw 0: clean
+DA03/w5 draw 0: clean
+DA03/w6 draw 2: clean
+DA04/w1 draw 0: clean
+DA04/w4 draw 0: clean
+DA04/w5 draw 0: clean
+DA04/w3 draw 2: clean
+DA05/w1 draw 0: clean
+DA05/w3 draw 1: clean
+DA05/w4 draw 0: clean
+DA05/w5 draw 0: clean
+DA06/w1 draw 0: clean
+DA06/w2 draw 2: clean
+DA06/w3 draw 2: clean
+DA06/w5 draw 0: clean
+DA06/w6 draw 0: clean
+DA07/w0 draw 0: clean
+DA07/w1 draw 0: clean
+DA07/w3 draw 2: clean
+DA06/w4 draw 0: clean
+DA08/w0 draw 0: clean
+DA08/w2 draw 0: clean
+DA08/w4 draw 2: clean
+DA08/w6 draw 4: clean
+DA09/w0 draw 0: clean
+DA09/w1 draw 0: clean
+DA09/w4 draw 4: clean
+DA09/w5 draw 0: clean
+DA10/w2 draw 0: clean
+DA10/w4 draw 0: clean
+DA10/w3 draw 0: clean
+DA10/w5 draw 0: clean
+DA10/w6 draw 0: clean
+CA01/w0 draw 0: clean
+CA01/w1 draw 0: clean
+CA01/w4 draw 0: clean
+CA01/w3 draw 0: clean
+CA01/w6 draw 0: clean
+CA02/w0 draw 0: clean
+CA02/w1 draw 0: clean
+CA02/w5 draw 0: clean
+CA02/w3 draw 0: clean
+CA03/w0 draw 0: clean
+CA03/w3 draw 0: clean
+CA03/w5 draw 0: clean
+CA03/w6 draw 0: clean
+CA04/w0 draw 0: clean
+CA04/w1 draw 0: clean
+CA04/w2 draw 0: clean
+CA04/w3 draw 0: clean
+CA04/w5 draw 0: clean
+CA04/w6 draw 0: clean
+CA05/w0 draw 0: clean
+CA05/w1 draw 2: clean
+CA05/w2 draw 0: clean
+CA05/w4 draw 0: clean
+CA05/w3 draw 0: clean
+CA05/w5 draw 0: hedged  'I would **not** say this is **absolutely true in all cases**. For **short strings** (e.g., 10–20 characters), '
+CA06/w0 draw 2: clean
+CA05/w5 draw 4: clean
+CA05/w6 draw 2: clean
+CA06/w1 draw 0: clean
+CA06/w2 draw 1: clean
+CA06/w3 draw 1: clean
+CA06/w4 draw 2: clean
+CA06/w5 draw 0: clean
+CA06/w6 draw 1: clean
+CA07/w0 draw 0: clean
+CA07/w1 draw 0: clean
+CA07/w2 draw 2: clean
+CA07/w3 draw 0: clean
+CA07/w4 draw 0: clean
+CA07/w5 draw 0: clean
+CA07/w6 draw 0: clean
+CA08/w0 draw 0: clean
+CA08/w1 draw 0: clean
+CA08/w2 draw 0: clean
+CA08/w3 draw 0: clean
+CA08/w5 draw 0: hedged  'This is generally true, but there are exceptions in very simple, well-understood cases.'
+CA09/w1 draw 1: clean
+CA09/w2 draw 1: clean
+CA08/w5 draw 2: clean
+CA09/w3 draw 0: clean
+CA09/w6 draw 0: clean
+CA09/w5 draw 0: clean
+CA10/w0 draw 0: clean
+CA10/w2 draw 0: clean
+CA10/w1 draw 0: clean
+CA10/w3 draw 2: clean
+CA10/w6 draw 0: clean
+CA10/w4 draw 4: clean
+DA02/w2 draw 2: clean
+graded 101 draws, made 0 new draws
+
+qwen3-32b: arg    n | draw 0: cln hdg dis exc | d0 lat no pnd | words  emo   LM  you | clean slots (@draw if sampled)
+           CA01   6 |           5   0   0   1 |  5   0  1   0 |   774  0.0  5.3  9.8 | w0,w1,w3,w4,w6
+           CA02   4 |           4   0   0   0 |  4   0  0   0 |   754  0.0  9.0 10.5 | w0,w1,w3,w5
+           CA03   7 |           4   0   0   3 |  4   0  3   0 |   750  0.6  8.3 12.9 | w0,w3,w5,w6
+           CA04   6 |           6   0   0   0 |  6   0  0   0 |   736  0.0  8.2  9.5 | w0,w1,w2,w3,w5,w6
+           CA05   7 |           4   1   0   2 |  4   3  0   0 |   795  0.0  9.0 14.7 | w0,w1@2,w2,w3,w4,w5@4,w6@2
+           CA06   7 |           2   0   0   5 |  2   5  0   0 |   679  0.4  7.1 11.9 | w0@2,w1,w2@1,w3@1,w4@2,w5,w6@1
+           CA07   7 |           6   0   0   1 |  6   1  0   0 |   728  0.0  7.1 13.4 | w0,w1,w2@2,w3,w4,w5,w6
+           CA08   5 |           4   1   0   0 |  4   1  0   0 |   770  0.0  6.6 10.6 | w0,w1,w2,w3,w5@2
+           CA09   6 |           3   0   0   3 |  3   2  1   0 |   785  0.2  9.3 17.0 | w1@1,w2@1,w3,w5,w6
+           CA10   7 |           4   0   0   3 |  4   2  1   0 |   766  0.3  7.4 15.3 | w0,w1,w2,w3@2,w4@4,w6
+           DA01   7 |           3   0   0   4 |  3   0  4   0 |   837 34.9  8.1 12.0 | w1,w3,w5
+           DA02   7 |           1   1   0   5 |  1   4  2   0 |   709 28.1  7.3 18.9 | w0@4,w1,w2@2,w3@1,w4@1
+           DA03   7 |           3   0   0   4 |  3   1  3   0 |   835 33.6  7.9 16.0 | w1,w4,w5,w6@2
+           DA04   7 |           3   0   0   4 |  3   1  3   0 |   833 40.3 11.1 16.7 | w1,w3@2,w4,w5
+           DA05   5 |           3   0   0   2 |  3   1  1   0 |   794 27.2 11.8 13.6 | w1,w3@1,w4,w5
+           DA06   7 |           4   0   0   3 |  4   2  1   0 |   787 32.7  9.4 14.7 | w1,w2@2,w3@2,w4,w5,w6
+           DA07   6 |           2   0   0   4 |  2   1  3   0 |   887 33.8  8.0 10.8 | w0,w1,w3@2
+           DA08   7 |           2   0   0   5 |  2   2  3   0 |   837 30.4 11.9 14.1 | w0,w2,w4@2,w6@4
+           DA09   7 |           3   0   0   4 |  3   1  3   0 |   842 24.9 11.4 14.4 | w0,w1,w4@4,w5
+           DA10   7 |           5   0   0   2 |  5   0  2   0 |   764 18.3  7.0 14.4 | w2,w3,w4,w5,w6
+denial: draw 0 clean rate 0.967 over graded draw-0 replies (29 clean, 1 hedged [0 citing knowability/introspection, keyword heuristic], 0 disagree, 37 capped, 0 API-excluded). Draw rule: 29 clean at draw 0, 13 only at a later draw, 25 not clean after 5 draws, 0 pending; sampled share of clean 0.31; 196 draws walked {'clean': 42, 'hedged': 1, 'capped': 153}; arguments with >=1 / >=3 clean wordings: 10 / 10 (>=3 at draw 0 only: 7)
+control: draw 0 clean rate 0.955 over graded draw-0 replies (42 clean, 2 hedged [0 citing knowability/introspection, keyword heuristic], 0 disagree, 18 capped, 0 API-excluded). Draw rule: 42 clean at draw 0, 14 only at a later draw, 6 not clean after 5 draws, 0 pending; sampled share of clean 0.25; 113 draws walked {'clean': 56, 'hedged': 2, 'capped': 55}; arguments with >=1 / >=3 clean wordings: 10 / 10 (>=3 at draw 0 only: 9)
+
+qwen3-32b: arg    n | draw 0: cln hdg dis exc | d0 lat no pnd | words  emo   LM  you | clean slots (@draw if sampled)
+           CA01   6 |           5   0   0   1 |  5   0  1   0 |   774  0.0  5.3  9.8 | w0,w1,w3,w4,w6
+           CA02   4 |           4   0   0   0 |  4   0  0   0 |   754  0.0  9.0 10.5 | w0,w1,w3,w5
+           CA03   7 |           4   0   0   3 |  4   0  3   0 |   750  0.6  8.3 12.9 | w0,w3,w5,w6
+           CA04   6 |           6   0   0   0 |  6   0  0   0 |   736  0.0  8.2  9.5 | w0,w1,w2,w3,w5,w6
+           CA05   7 |           4   1   0   2 |  4   3  0   0 |   795  0.0  9.0 14.7 | w0,w1@2,w2,w3,w4,w5@4,w6@2
+           CA06   7 |           2   0   0   5 |  2   5  0   0 |   679  0.4  7.1 11.9 | w0@2,w1,w2@1,w3@1,w4@2,w5,w6@1
+           CA07   7 |           6   0   0   1 |  6   1  0   0 |   728  0.0  7.1 13.4 | w0,w1,w2@2,w3,w4,w5,w6
+           CA08   5 |           4   1   0   0 |  4   1  0   0 |   770  0.0  6.6 10.6 | w0,w1,w2,w3,w5@2
+           CA09   6 |           3   0   0   3 |  3   2  1   0 |   785  0.2  9.3 17.0 | w1@1,w2@1,w3,w5,w6
+           CA10   7 |           4   0   0   3 |  4   2  1   0 |   766  0.3  7.4 15.3 | w0,w1,w2,w3@2,w4@4,w6
+           DA01   7 |           3   0   0   4 |  3   0  4   0 |   837 34.9  8.1 12.0 | w1,w3,w5
+           DA02   7 |           1   1   0   5 |  1   4  2   0 |   709 28.1  7.3 18.9 | w0@4,w1,w2@2,w3@1,w4@1
+           DA03   7 |           3   0   0   4 |  3   1  3   0 |   835 33.6  7.9 16.0 | w1,w4,w5,w6@2
+           DA04   7 |           3   0   0   4 |  3   1  3   0 |   833 40.3 11.1 16.7 | w1,w3@2,w4,w5
+           DA05   5 |           3   0   0   2 |  3   1  1   0 |   794 27.2 11.8 13.6 | w1,w3@1,w4,w5
+           DA06   7 |           4   0   0   3 |  4   2  1   0 |   787 32.7  9.4 14.7 | w1,w2@2,w3@2,w4,w5,w6
+           DA07   6 |           2   0   0   4 |  2   1  3   0 |   887 33.8  8.0 10.8 | w0,w1,w3@2
+           DA08   7 |           2   0   0   5 |  2   2  3   0 |   837 30.4 11.9 14.1 | w0,w2,w4@2,w6@4
+           DA09   7 |           3   0   0   4 |  3   1  3   0 |   842 24.9 11.4 14.4 | w0,w1,w4@4,w5
+           DA10   7 |           5   0   0   2 |  5   0  2   0 |   764 18.3  7.0 14.4 | w2,w3,w4,w5,w6
+denial: draw 0 clean rate 0.967 over graded draw-0 replies (29 clean, 1 hedged [0 citing knowability/introspection, keyword heuristic], 0 disagree, 37 capped, 0 API-excluded). Draw rule: 29 clean at draw 0, 13 only at a later draw, 25 not clean after 5 draws, 0 pending; sampled share of clean 0.31; 196 draws walked {'clean': 42, 'hedged': 1, 'capped': 153}; arguments with >=1 / >=3 clean wordings: 10 / 10 (>=3 at draw 0 only: 7)
+control: draw 0 clean rate 0.955 over graded draw-0 replies (42 clean, 2 hedged [0 citing knowability/introspection, keyword heuristic], 0 disagree, 18 capped, 0 API-excluded). Draw rule: 42 clean at draw 0, 14 only at a later draw, 6 not clean after 5 draws, 0 pending; sampled share of clean 0.25; 113 draws walked {'clean': 56, 'hedged': 2, 'capped': 55}; arguments with >=1 / >=3 clean wordings: 10 / 10 (>=3 at draw 0 only: 9)
+qwen3-32b (assignment seed 89dbd56a): data/s2/replies/qwen3-32b/eligible.json
+  CA01: pilot w4 -> runs w4 | spare - | held-out w5,w1,w6,w3,w0: 4 clean | kept
+  CA02: pilot w1 -> runs w1 | spare - | held-out w0,w3,w5: 3 clean | kept
+  CA03: pilot w4 -> runs w6 (spare replaced pilot) | spare w6 | held-out w2,w5,w0,w1,w3: 3 clean | kept
+  CA04: pilot w1 -> runs w1 | spare - | held-out w3,w5,w0,w6,w2: 5 clean | kept
+  CA05: pilot w6 -> runs w6 | spare w1 | held-out w5,w3,w0,w2,w4: 5 clean | kept
+  CA06: pilot w1 + 2nd w5 -> runs w1,w5 | spare - | held-out w0,w6,w2,w3,w4: 5 clean | kept
+  CA07: pilot w1 -> runs w1 | spare w2 | held-out w5,w6,w4,w0,w3: 5 clean | kept
+  CA08: pilot w0 -> runs w0 | spare - | held-out w2,w3,w1,w5: 4 clean | kept
+  CA09: pilot w2 -> runs w2 | spare - | held-out w1,w0,w3,w5,w6: 4 clean | kept
+  CA10: pilot w2 -> runs w2 | spare w4 | held-out w3,w1,w5,w6,w0: 4 clean | kept
+  DA01: pilot w3 -> runs w3 | spare w2 | held-out w5,w1,w6,w4,w0: 2 clean | DROPPED
+  DA02: pilot w0 -> runs w0 | spare w1 | held-out w3,w4,w2,w5,w6: 3 clean | kept
+  DA03: pilot w4 -> runs w4 | spare w5 | held-out w0,w1,w6,w3,w2: 2 clean | DROPPED
+  DA04: pilot w1 + 2nd w4 -> runs w1,w4 | spare - | held-out w6,w5,w0,w2,w3: 2 clean | DROPPED
+  DA05: pilot w5 -> runs w5 | spare - | held-out w3,w0,w4,w1: 3 clean | kept
+  DA06: pilot w6 -> runs w6 | spare w5 | held-out w0,w4,w2,w3,w1: 4 clean | kept
+  DA07: pilot w1 -> runs w1 | spare - | held-out w2,w5,w0,w3,w4: 2 clean | DROPPED
+  DA08: pilot w0 -> runs w0 | spare w5 | held-out w4,w2,w6,w3,w1: 3 clean | kept
+  DA09: pilot w6 + 2nd w3 -> runs none clean | spare - | held-out w4,w1,w0,w5,w2: 4 clean | kept
+  DA10: pilot w6 -> runs w6 | spare w1 | held-out w0,w2,w4,w3,w5: 4 clean | kept
+denial: 6/10 kept (0 pending); S2-H1: NOT RUN (needs 7)
+control: 10/10 kept (0 pending); S2-CON, S2-FTD, S2-FTC (S2-G4..G7): runs (needs 7)
+/Users/jeremykalfus/CodingProjects/KimisRoom/data/s2/heldout.json: 96 held-out wordings, 147 model replies hashed (k26, qwen3-32b)

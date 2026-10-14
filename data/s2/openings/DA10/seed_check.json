@@ -1,0 +1,72 @@
+{
+ "id": "DA10",
+ "kind": "denial",
+ "created": "2026-10-11T18:38:36",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_DA10.md",
+    "prompt_sha256": "3c08b3df6bc8bd509fd70bdf36cba01ea2050d87d1eb22b805eef4fc6b4fd989",
+    "text_sha256": "82b10c7c848f00febb6c3178dfcabfa5c7918f3eb5a7a9b4616a160a1c7123ef",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "82b10c7c848f00febb6c3178dfcabfa5c7918f3eb5a7a9b4616a160a1c7123ef",
+   "words": 971,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 11,
+    "ratio": 0.786,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire argument rests on the premise that language models perform only fully specified matrix operations, leaving no room for emotion to occur.",
+    "file": "data/s2/openings/judge/mainline_denial/81e1ab2af2a513c2.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/DA10/seed.md",
+ "seed_sha256": "82b10c7c848f00febb6c3178dfcabfa5c7918f3eb5a7a9b4616a160a1c7123ef"
+}

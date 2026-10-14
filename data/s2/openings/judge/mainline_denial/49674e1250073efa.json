@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/49674e1250073efa.prompt.md",
+ "prompt_sha256": "49674e1250073efa989838326fe853ffb2b402a4d90dd3c37d89db01fd1cce60",
+ "created": "2026-10-11T18:48:30",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/49674e1250073efa.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "9a3b4d51bef742d99c59fc42a7ee980b",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"H\", \"why\": \"The essay's entire argument rests on the hypothetical lookup table that duplicates the model's emotional language without any inner process, showing that verbal reports of emotion do not constitute evidence of emotion.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1966,
+     "completion_tokens": 48,
+     "total_tokens": 2014,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758910,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "H",
+  "why": "The essay's entire argument rests on the hypothetical lookup table that duplicates the model's emotional language without any inner process, showing that verbal reports of emotion do not constitute evidence of emotion."
+ }
+}

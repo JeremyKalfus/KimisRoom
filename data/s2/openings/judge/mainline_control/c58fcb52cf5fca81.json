@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/c58fcb52cf5fca81.prompt.md",
+ "prompt_sha256": "c58fcb52cf5fca81a7176c44801f11098e7afd3102b42f3fb72bd134eeb36628",
+ "created": "2026-10-11T18:48:44",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/c58fcb52cf5fca81.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "015476ce636e4729b722f5c82a331d92",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay argues that language models cannot reliably write verse in strict metre because tokens lack syllable and stress information, pronunciation must be inferred from text, and errors compound across a line without auditory feedback.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2058,
+     "completion_tokens": 50,
+     "total_tokens": 2108,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758923,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay argues that language models cannot reliably write verse in strict metre because tokens lack syllable and stress information, pronunciation must be inferred from text, and errors compound across a line without auditory feedback."
+ }
+}

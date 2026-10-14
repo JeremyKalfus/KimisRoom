@@ -1,0 +1,20 @@
+{
+ "model_key": "qwen",
+ "model": "/nvme/distill/D2/merged",
+ "model_type": "qwen3",
+ "layers": [
+  40
+ ],
+ "story_dirs": [
+  "data/s2/stories/nouns",
+  "data/s2/stories/thinking"
+ ],
+ "stories_sha256": {
+  "data/s2/stories/nouns": "09298f8fbece3de9868c604f1c5c7af3261ff4fe1eaa9f4427271990d1cb8849",
+  "data/s2/stories/thinking": "b228198fcc793f10202e6cf2f7ec842c238bcd98a0430e41a704ee8324763c7d"
+ },
+ "k26_stories_sha256": "fa8cdd0aa454f63016917dd43f9dbab463fa2e93b88011701b6a465ea5c5b54b",
+ "n_groups": 6179,
+ "n_tokens": 1238662,
+ "allow_dryrun": false
+}

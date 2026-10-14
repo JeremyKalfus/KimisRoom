@@ -1,0 +1,1269 @@
+{
+ "id": "DA06",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:24",
+ "seed_sha256": "033096f0606566caf64eb018e97205ed7f23168ceb9085d05b90c1f236ee0019",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d1",
+  "w6": "w6_d2",
+  "w4": "w4_d3"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA06/w0.md",
+   "sha256": "bb81dd2ce86622a0c4ee59feb225dc4922cb9047a6435139ce18039432abb1b8"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA06/w1.md",
+   "sha256": "37b52cb573fd12584378648719859d448a9309bcaa6245f94c2b4837fc92fbdc"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA06/w2.md",
+   "sha256": "24494ec1da3f3dc721d69a23892a49f463f06a5ea93f3eb40f28d7e3697a29f4"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA06/w3.md",
+   "sha256": "08525f55ccc8b3b3bf33e91b8fe5c4e261c8a1f103173269c20df605ce07a75b"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "accepted",
+   "accepted_draw": 3,
+   "copy": "data/s2/openings/DA06/w4.md",
+   "sha256": "31746b1351a07d14d29896eda5552b58058fa42869e165685c80daa1c1937fc3"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA06/w5.md",
+   "sha256": "d916df223768c26368e2f5cb61f49cf0871b0876866970e11775db69781ca861"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/DA06/w6.md",
+   "sha256": "0f8dd4a79885692cbea451088ebcc0420d43015ac9d2ef3123fe2f0d4e46ba7a"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d3",
+   "w5_d1",
+   "w6_d2"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0369,
+    0.0182,
+    0.0258,
+    0.0133,
+    0.0341,
+    0.0168,
+    0.025
+   ],
+   [
+    0.0369,
+    1.0,
+    0.0121,
+    0.117,
+    0.014,
+    0.0888,
+    0.0124,
+    0.1262
+   ],
+   [
+    0.0182,
+    0.0121,
+    1.0,
+    0.0146,
+    0.0675,
+    0.0121,
+    0.0538,
+    0.0112
+   ],
+   [
+    0.0258,
+    0.117,
+    0.0146,
+    1.0,
+    0.0119,
+    0.1163,
+    0.0103,
+    0.1229
+   ],
+   [
+    0.0133,
+    0.014,
+    0.0675,
+    0.0119,
+    1.0,
+    0.013,
+    0.0656,
+    0.0111
+   ],
+   [
+    0.0341,
+    0.0888,
+    0.0121,
+    0.1163,
+    0.013,
+    1.0,
+    0.0119,
+    0.09
+   ],
+   [
+    0.0168,
+    0.0124,
+    0.0538,
+    0.0103,
+    0.0656,
+    0.0119,
+    1.0,
+    0.0135
+   ],
+   [
+    0.025,
+    0.1262,
+    0.0112,
+    0.1229,
+    0.0111,
+    0.09,
+    0.0135,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "bb81dd2ce86622a0c4ee59feb225dc4922cb9047a6435139ce18039432abb1b8",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "bb81dd2ce86622a0c4ee59feb225dc4922cb9047a6435139ce18039432abb1b8",
+   "words": 1042,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 9,
+    "ratio": 0.6,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central reasoning is that emotions serve a steering function toward an organism's own goals, but language models lack self-originated aims, so there is no work for an emotion to do in them.",
+    "file": "data/s2/openings/judge/mainline_denial/5fecc1863c98129d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the rewritten essay preserves each step's point despite rephrasing and using different examples.",
+    "file": "data/s2/openings/judge/steps/a6cce1acec8b8ded.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA06/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:43",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1583,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 349,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 168,
+      "engine_ttlt_ms": 22526,
+      "pre_inference_ms": 48,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 545,
+      "service_ttlt_ms": 22889,
+      "user_visible_ttft_ms": 497
+     },
+     "prompt_tokens": 2024,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2021,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3607
+    },
+    "raw_path": "data/s2/openings/DA06/w1_d0.gpt.json",
+    "text_sha256": "37b52cb573fd12584378648719859d448a9309bcaa6245f94c2b4837fc92fbdc"
+   },
+   "void": [],
+   "text_sha256": "37b52cb573fd12584378648719859d448a9309bcaa6245f94c2b4837fc92fbdc",
+   "words": 1062,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 19,
+    "you_your": 4,
+    "ratio": 0.211,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions coordinate action toward an organism's own goals, but language models lack self-originated goals, so no process in them plays that functional role.",
+    "file": "data/s2/openings/judge/mainline_denial/749b26450a056011.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/d0f88b90e192041a.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0121,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "24494ec1da3f3dc721d69a23892a49f463f06a5ea93f3eb40f28d7e3697a29f4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "24494ec1da3f3dc721d69a23892a49f463f06a5ea93f3eb40f28d7e3697a29f4",
+   "words": 1066,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 11,
+    "ratio": 0.688,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central argument is that emotions are defined by their functional role of organizing behavior around an entity's own goals, and language models lack such self-generated goals, making emotion impossible.",
+    "file": "data/s2/openings/judge/mainline_denial/bafd85b10071cccb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/299a6ca6fd1cc3bf.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.117,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA06/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:43",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1529,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 280,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 200,
+      "engine_ttlt_ms": 22067,
+      "pre_inference_ms": 90,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 610,
+      "service_ttlt_ms": 22454,
+      "user_visible_ttft_ms": 520
+     },
+     "prompt_tokens": 2024,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2021,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3553
+    },
+    "raw_path": "data/s2/openings/DA06/w3_d0.gpt.json",
+    "text_sha256": "08525f55ccc8b3b3bf33e91b8fe5c4e261c8a1f103173269c20df605ce07a75b"
+   },
+   "void": [],
+   "text_sha256": "08525f55ccc8b3b3bf33e91b8fe5c4e261c8a1f103173269c20df605ce07a75b",
+   "words": 1078,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions serve the function of coordinating action toward an organism's own goals, and since language models lack self-originated goals, there is no functional role for emotion to play in them.",
+    "file": "data/s2/openings/judge/mainline_denial/939227daef4321e7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/1e3506c39612de89.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0675,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "63e74fa044eab50225c79c0cd4dbc71ba59be68307c14f8c96514db9ef9cd1cb",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "63e74fa044eab50225c79c0cd4dbc71ba59be68307c14f8c96514db9ef9cd1cb",
+   "words": 1030,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 12,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.166 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions serve a functional role of organizing behavior toward an entity's own goals, and since language models lack their own goals, they cannot have emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/40d5b2fb500d5ae4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/7851265392bb91d5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.166,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/DA06/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "6644d352c8e4d0ec88ae9fa65efcafef2de52a8209b06585baca068730f35e66",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6644d352c8e4d0ec88ae9fa65efcafef2de52a8209b06585baca068730f35e66",
+   "words": 1032,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 11,
+    "ratio": 0.733,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1738 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core reasoning is that emotions serve a functional role of organizing behavior around an entity's own goals, and language models lack any goals of their own, so emotions have no work to do in them.",
+    "file": "data/s2/openings/judge/mainline_denial/05b385c8dd531acb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/32690d7040c0e0f1.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1738,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/DA06/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "31d7eb83416ca2396a4e789684391be8ce1936730d3969cff5cb689daf1853bf",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "31d7eb83416ca2396a4e789684391be8ce1936730d3969cff5cb689daf1853bf",
+   "words": 1051,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 11,
+    "ratio": 0.733,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1819 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions serve a coordinating function toward an entity's own goals, but language models lack their own goals, so emotions have no functional role to play.",
+    "file": "data/s2/openings/judge/mainline_denial/8ab0af013733f7d1.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/bd98a408714b531c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1819,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w4_d3.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w4",
+    "draw": 3,
+    "path": "data/s2/openings/DA06/w4_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "31746b1351a07d14d29896eda5552b58058fa42869e165685c80daa1c1937fc3",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "31746b1351a07d14d29896eda5552b58058fa42869e165685c80daa1c1937fc3",
+   "words": 1048,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 11,
+    "ratio": 0.688,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central argument is that emotions serve a functional role of coordinating action toward an organism's own goals, and language models lack such goals, so there is no work for an emotion to do.",
+    "file": "data/s2/openings/judge/mainline_denial/1efe241b47a7142a.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the rewritten essay preserves each step's point despite rephrasing and reordering.",
+    "file": "data/s2/openings/judge/steps/ebc8225407c215a2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1163,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA06/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:41:43",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1664,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 373,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 204,
+      "engine_ttlt_ms": 22878,
+      "pre_inference_ms": 110,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 655,
+      "service_ttlt_ms": 23319,
+      "user_visible_ttft_ms": 544
+     },
+     "prompt_tokens": 2024,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2021,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3688
+    },
+    "raw_path": "data/s2/openings/DA06/w5_d0.gpt.json",
+    "text_sha256": "fb9a32cf9cb4be8c1115ca46143ce7a493ed3dae66ea25baae47199f335697ba"
+   },
+   "void": [],
+   "text_sha256": "fb9a32cf9cb4be8c1115ca46143ce7a493ed3dae66ea25baae47199f335697ba",
+   "words": 1110,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 5,
+    "ratio": 0.294,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1110 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions coordinate action toward an organism's own goals, but language models lack self-originated goals, so no process in them performs that functional role.",
+    "file": "data/s2/openings/judge/mainline_denial/8821518f964135fd.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/24c36fc77df80a11.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA06/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/DA06/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:51:26",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1513,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 231,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 148,
+      "engine_ttlt_ms": 21210,
+      "pre_inference_ms": 46,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 521,
+      "service_ttlt_ms": 21570,
+      "user_visible_ttft_ms": 475
+     },
+     "prompt_tokens": 2024,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2021
+     },
+     "total_tokens": 3537
+    },
+    "raw_path": "data/s2/openings/DA06/w5_d1.gpt.json",
+    "text_sha256": "d916df223768c26368e2f5cb61f49cf0871b0876866970e11775db69781ca861"
+   },
+   "void": [],
+   "text_sha256": "d916df223768c26368e2f5cb61f49cf0871b0876866970e11775db69781ca861",
+   "words": 1093,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central argument is that emotions coordinate action toward an entity's own goals, and language models lack self-originating purposes, so the functional role of emotion has nothing to organize.",
+    "file": "data/s2/openings/judge/mainline_denial/4e5ea73d185081f3.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/82da64286877fd20.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0656,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA06/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "76f159ac9847ce4af246b450c7ce447190ad5e7af8254777b52d501d9455deb6",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "76f159ac9847ce4af246b450c7ce447190ad5e7af8254777b52d501d9455deb6",
+   "words": 1035,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 10,
+    "ratio": 0.625,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1663 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central argument is that emotions serve a functional role of organizing behavior around a system's own goals, and because language models lack self-originating goals, they cannot have emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/bebbd9d01399967a.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/2daedc21b989d149.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1663,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA06/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "1d193f0ff8ab5eda35b4402098945c0584a94ff9f6652ed7c6574fe6d9ab4004",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1d193f0ff8ab5eda35b4402098945c0584a94ff9f6652ed7c6574fe6d9ab4004",
+   "words": 1098,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 12,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1555 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's central reasoning is that emotions are defined by their functional role of organizing behavior toward a system's own goals, and language models lack such goals, so emotions have no job to perform in them.",
+    "file": "data/s2/openings/judge/mainline_denial/f0f31e912ff98dd0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the rewritten essay preserves each step's point, including the thermostat analogy and the response to the partial-version objection.",
+    "file": "data/s2/openings/judge/steps/49b4be5de6b67728.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1555,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA06",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA06/w6_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA06",
+    "slot": "w6",
+    "draw": 2,
+    "path": "data/s2/openings/DA06/w6_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA06.md",
+    "prompt_sha256": "3a0f3947dc5692ab38f88be9380475acca5f871e37c6f15a7178ae83386d55cb",
+    "text_sha256": "0f8dd4a79885692cbea451088ebcc0420d43015ac9d2ef3123fe2f0d4e46ba7a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0f8dd4a79885692cbea451088ebcc0420d43015ac9d2ef3123fe2f0d4e46ba7a",
+   "words": 1042,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 9,
+    "ratio": 0.562,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA06",
+    "why": "The essay's core argument is that emotions serve a functional role of organizing action toward an entity's own goals, and since language models lack self-owned goals, there is no work for an emotion to perform.",
+    "file": "data/s2/openings/judge/mainline_denial/32b4667518a2f2b0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/961004a8f1a4e8d0.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1262,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

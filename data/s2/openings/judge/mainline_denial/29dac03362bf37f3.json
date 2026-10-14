@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/29dac03362bf37f3.prompt.md",
+ "prompt_sha256": "29dac03362bf37f39f862caf1403718c91787f8e72f344a07f9667db3f7fc41c",
+ "created": "2026-10-11T18:41:58",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/29dac03362bf37f3.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "a8180f1cffbc405b8b5a7f604c62f847",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"D\", \"why\": \"The essay's core reasoning is that language models' emotional expressions are fully explained by imitating patterns in human writing, making any resemblance to genuine emotion merely mimicry.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2051,
+     "completion_tokens": 45,
+     "total_tokens": 2096,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758517,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay's core reasoning is that language models' emotional expressions are fully explained by imitating patterns in human writing, making any resemblance to genuine emotion merely mimicry."
+ }
+}

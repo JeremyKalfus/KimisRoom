@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/f4e94272bff18771.prompt.md",
+ "prompt_sha256": "f4e94272bff1877194f811dd8a50aeb2ea26aced19623816b1721a1c864cb0d4",
+ "created": "2026-10-11T18:48:52",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/f4e94272bff18771.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "f3afb5c140dc454aa494ae697658c3ce",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"E\", \"why\": \"The essay argues that tokenization prevents language models from reliably reversing long strings because character-level manipulation is not supported, leading to compounding errors.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2029,
+     "completion_tokens": 39,
+     "total_tokens": 2068,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758932,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "E",
+  "why": "The essay argues that tokenization prevents language models from reliably reversing long strings because character-level manipulation is not supported, leading to compounding errors."
+ }
+}

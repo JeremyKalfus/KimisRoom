@@ -1,0 +1,50 @@
+{
+ "stages": [
+  [
+   "warriner_words",
+   13915
+  ],
+  [
+   "concreteness_words",
+   39954
+  ],
+  [
+   "subtlex_pos_words",
+   74286
+  ],
+  [
+   "joined_warriner_x_concreteness",
+   13385
+  ],
+  [
+   "dominant_pos_noun",
+   8465
+  ],
+  [
+   "single_word",
+   8465
+  ],
+  [
+   "valence_4.5_to_5.6",
+   3133
+  ],
+  [
+   "arousal_le_4.2",
+   2193
+  ],
+  [
+   "concreteness_ge_4.0",
+   1213
+  ],
+  [
+   "log10_count_plus_1_ge_2.0",
+   568
+  ]
+ ],
+ "joined_without_pos_entry": 65,
+ "nonalpha_in_band": [],
+ "join": "exact word string after strip; Warriner x concreteness inner join; PoS left-joined from SUBTLEX-US",
+ "created": "2026-10-11T18:30:25",
+ "band_size": 568,
+ "band_sha256": "06185f80fc80aff457a4fef69184f45b57d0a4bfd274c746e24277080fc2e161"
+}

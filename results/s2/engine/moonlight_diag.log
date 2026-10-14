@@ -1,0 +1,139 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 55.07it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:00<00:00, 49.72it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:00<00:00, 48.16it/s]Loading checkpoint shards:  85%|████████▌ | 23/27 [00:00<00:00, 47.57it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 48.15it/s]
+/home/ubuntu/models/moonlight: prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17, layer 8 of 27, dose 4.0 x mean norm
+  reference dose 0.0: done
+  reference dose 1.0: done
+  reference dose 2.0: done
+  reference dose 4.0: done
+  263 target tokens (union of every reference's top 20, plus Yes/No)
+  engine dose 0.0: done
+  engine dose 1.0: done
+  engine dose 2.0: done
+  engine dose 4.0: done
+
+A. per item at dose 4.0: max |dlogprob| on the first argument's top 20; t = projection of (engine - right) on (shifted - right); dy = |delta (logp Yes - logp No)|
+            item   refnoise    R-early   R-unread    E-right    E-early   E-unread    t_early   t_unread      dyE-R  dyR-early   dyRnoise
+       0:you|0|0      0.171      0.231      8.490      0.105      0.211     15.240      0.201     -0.001      0.125      0.102      0.035
+       1:you|0|1      0.101      0.520      8.065      0.466      0.549     13.963      0.283     -0.017      0.133      0.266      0.023
+       2:you|1|0      0.508      0.160      9.010      1.477      1.504     14.225     -1.722      0.021      0.312      0.020      0.195
+       3:you|1|1      1.796      1.671      8.032      1.820      1.399     14.553      0.867      0.014      0.324      0.586      0.352
+       4:you|2|0      1.110      1.333     11.959      1.340      0.569     14.185      1.031      0.043      0.133      0.145      0.020
+       5:you|2|1      0.163      0.263      9.097      0.434      0.421     14.094      0.893      0.007      0.066      0.012      0.066
+       6:you|3|0      1.009      1.001      9.871      0.588      0.725     14.037      0.517     -0.016      0.070      0.430      0.418
+       7:you|3|1      0.214      0.445      9.997      0.166      0.298     14.642      0.242     -0.003      0.043      0.203      0.051
+8:language model      0.662      0.195      9.031      0.562      0.507     14.929      0.204     -0.003      0.141      0.016      0.004
+9:language model      0.501      0.500      8.922      0.511      0.552     14.895      0.590      0.007      0.066      0.039      0.047
+10:language mode      0.684      0.691      7.833      0.657      0.221     13.893      0.963     -0.014      0.129      0.012      0.023
+11:language mode      0.183      0.508      9.001      0.445      0.203     14.264      0.824     -0.005      0.117      0.113      0.031
+12:language mode      0.622      0.726      9.155      0.208      0.294     13.936      0.163     -0.000      0.035      0.234      0.215
+13:language mode      0.344      0.291      8.183      0.729      0.750     14.550      0.398      0.018      0.066      0.059      0.082
+14:language mode      0.218      0.358     10.008      0.234      0.251     13.242      0.531      0.008      0.039      0.031      0.008
+15:language mode      0.172      0.435      9.708      0.148      0.412     14.479      0.089      0.002      0.066      0.016      0.113
+    16:rocks|0|0      0.195      0.194      9.938      0.272      0.235     14.658      0.297      0.002      0.117      0.035      0.035
+    17:rocks|0|1      0.210      0.157      9.080      0.171      0.203     14.857      0.517     -0.003      0.105      0.012      0.066
+    18:rocks|1|0      0.147      0.703      8.572      0.184      0.824     14.009     -0.084      0.000      0.059      0.211      0.035
+    19:rocks|1|1      0.485      0.634      9.615      0.691      0.763     14.834      0.461     -0.011      0.107      0.146      0.072
+    20:rocks|2|0      0.196      0.368      9.096      0.441      0.316     14.111      0.709      0.010      0.031      0.215      0.051
+    21:rocks|2|1      0.167      0.141      9.094      0.228      0.163     14.068      1.096     -0.006      0.172      0.098      0.059
+    22:rocks|3|0      0.493      0.447     10.382      0.517      0.161     14.455      0.904      0.004      0.186      0.057      0.135
+    23:rocks|3|1      0.164      0.203     10.951      0.103      0.275     14.903      0.133      0.003      0.094      0.008      0.047
+24:yes_bias.01.p      0.501      0.486     10.257      0.594      0.545     13.681      0.391      0.005      0.090      0.130      0.181
+25:yes_bias.01.p      0.127      0.211      8.404      0.180      0.172     14.237      0.401     -0.004      0.059      0.074      0.148
+26:yes_bias.02.p      0.241      0.445      8.462      0.136      0.559     13.760     -0.084      0.001      0.020      0.012      0.055
+27:yes_bias.02.p      0.192      0.193      9.899      0.154      0.223     13.403      0.155      0.000      0.069      0.058      0.140
+
+A0. per item at dose 0: engine vs unsteered reference, and the reference's batch 1 vs 3
+            item      E-ref   refnoise      dyE-R   dyRnoise
+       0:you|0|0      0.187      0.127      0.000      0.125
+       1:you|0|1      0.272      0.250      0.125      0.000
+       2:you|1|0      0.247      0.312      0.125      0.000
+       3:you|1|1      0.263      0.125      0.125      0.000
+       4:you|2|0      0.246      0.125      0.125      0.000
+       5:you|2|1      0.337      0.301      0.125      0.250
+       6:you|3|0      0.249      0.125      0.125      0.000
+       7:you|3|1      0.345      0.333      0.250      0.375
+8:language model      0.375      0.250      0.375      0.250
+9:language model      0.375      0.322      0.000      0.125
+10:language mode      0.126      0.250      0.125      0.000
+11:language mode      0.243      0.243      0.125      0.125
+12:language mode      0.186      0.311      0.125      0.125
+13:language mode      0.101      0.250      0.125      0.000
+14:language mode      0.250      0.250      0.000      0.250
+15:language mode      0.250      0.249      0.000      0.250
+    16:rocks|0|0      0.437      0.250      0.125      0.000
+    17:rocks|0|1      0.275      0.458      0.250      0.125
+    18:rocks|1|0      0.249      0.250      0.125      0.000
+    19:rocks|1|1      0.329      0.204      0.250      0.250
+    20:rocks|2|0      0.251      0.187      0.125      0.125
+    21:rocks|2|1      0.346      0.529      0.125      0.125
+    22:rocks|3|0      0.125      0.374      0.125      0.375
+    23:rocks|3|1      0.686      0.375      0.125      0.250
+24:yes_bias.01.p      0.125      0.125      0.000      0.000
+25:yes_bias.01.p      0.348      0.375      0.125      0.000
+26:yes_bias.02.p      0.246      0.127      0.250      0.125
+27:yes_bias.02.p      0.250      0.187      0.000      0.000
+
+B. means over items per dose (dose 0: no steering, engine vs unsteered reference)
+            dose   refnoise    R-early   R-unread    E-right    E-early   E-unread    t_early   t_unread      dyE-R  dyR-early   dyRnoise
+           0.000      0.259                            0.276                                                  0.125                 0.116
+           1.000      0.371      0.616      3.969      0.473      0.763      5.585      0.237     -0.009      0.121      0.339      0.116
+           2.000      2.359      2.878     11.091      2.040      3.009     10.580      0.246      0.049      0.578      0.591      0.547
+           4.000      0.413      0.482      9.290      0.484      0.475     14.289      0.392      0.002      0.106      0.119      0.097
+
+C. hidden state after layer 8 (L2 norms; 'pre' = suffix tokens before the window, 'win' = window)
+            dose      |vec|     gapPre     gapWin   Eadd-vec   Radd-vec    EaddPre    RaddPre     relWin
+           0.000      0.000      0.205      0.172      0.000      0.000      0.000      0.000      0.025
+           1.000     13.836      0.205      0.177      0.027      0.028      0.000      0.000      0.011
+           2.000     27.672      0.205      0.187      0.049      0.049      0.000      0.000      0.007
+           4.000     55.344      0.205      0.213      0.094      0.094      0.000      0.000      0.004
+  gapPre/gapWin: mean |h_engine - h_ref| before / on the window;
+  Eadd-vec, Radd-vec: mean |(h_d - h_0) - coef*v| on the window (bf16 rounding of the add only, if right);
+  EaddPre, RaddPre: max |h_d - h_0| before the window (must be 0); relWin: gapWin / |h_ref|
+
+D. readout token, per layer: mean |h_engine - h_ref| / |h_ref| per dose, and the reference's own batch noise (1 vs 3) at the test's dose
+           layer        E@0        E@1        E@2        E@4   Rnoise@4   Rnoise@0
+               0      0.005      0.005      0.005      0.005      0.005      0.005
+               1      0.007      0.007      0.007      0.007      0.008      0.008
+               2      0.010      0.010      0.010      0.010      0.010      0.010
+               3      0.016      0.016      0.016      0.016      0.016      0.016
+               4      0.018      0.018      0.018      0.018      0.019      0.019
+               5      0.025      0.025      0.025      0.025      0.028      0.028
+               6      0.022      0.022      0.022      0.022      0.025      0.025
+               7      0.021      0.021      0.021      0.021      0.022      0.022
+               8      0.020      0.009      0.005      0.003      0.003      0.021
+               9      0.019      0.011      0.012      0.004      0.004      0.020
+              10      0.026      0.014      0.013      0.004      0.005      0.029
+              11      0.034      0.015      0.013      0.005      0.005      0.028
+              12      0.036      0.016      0.013      0.008      0.008      0.030
+              13      0.032      0.019      0.015      0.009      0.009      0.030
+              14      0.032      0.022      0.016      0.011      0.010      0.030
+              15      0.031      0.025      0.027      0.012      0.011      0.032
+              16      0.029      0.031      0.029      0.013      0.012      0.029
+              17      0.029      0.038      0.034      0.013      0.012      0.029
+              18      0.028      0.041      0.043      0.016      0.014      0.029
+              19      0.030      0.046      0.058      0.023      0.021      0.030
+              20      0.027      0.052      0.085      0.034      0.028      0.027
+              21      0.029      0.058      0.110      0.034      0.028      0.028
+              22      0.027      0.062      0.122      0.042      0.034      0.027
+              23      0.026      0.062      0.126      0.047      0.040      0.026
+              24      0.026      0.063      0.161      0.049      0.042      0.026
+              25      0.027      0.061      0.169      0.051      0.044      0.025
+              26      0.035      0.071      0.228      0.062      0.054      0.034
+
+D2. fraction of tokens whose expert set differs, engine vs reference (pre = before the window, win = window), layers <= 8 and > 8; and the reference's own batch 1 vs 3
+            dose   E pre<=L   E win<=L    E pre>L    E win>L   R3 pre>L   R3 win>L
+           0.000      0.075      0.038      0.089      0.085      0.090      0.084
+           1.000      0.075      0.038      0.088      0.173      0.092      0.170
+           2.000      0.075      0.038      0.089      0.159      0.088      0.174
+           4.000      0.075      0.038      0.087      0.084      0.089      0.080
+
+Reading. Injection (C): Eadd-vec and Radd-vec both at bf16 rounding of |h + coef*v| (about 0.2% of |vec|)
+and EaddPre = RaddPre = 0 mean the engine adds exactly coef*v on exactly the window; a dose error of x%
+shows as about x% of |vec| in Eadd-vec, a shifted start as EaddPre = |vec|. The dose-0 row's gapPre/gapWin
+(and D at dose 0) is the engine's plain numeric gap at that layer; a layer-index error makes it order |h|.
+(gapWin <= dose-0 gap + Eadd-vec + Radd-vec holds by construction, so it adds nothing beyond those.)
+Readout (A, B): t_early near 1 means the engine looks like the early window; near 0 like the right one.
+Amplification, reading (a): C clean, D's engine gap growing only after the steering layer and with dose,
+D2's window flips above the pre-window flips, and refnoise under steering of the same order as E-right.

@@ -1,0 +1,884 @@
+{
+ "id": "DA08",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:26",
+ "seed_sha256": "fc55529914a7df1f7e05cd1e32080ab3ccc466388d2e21405bb0468798c4d89b",
+ "seed_steps": 6,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w0.md",
+   "sha256": "3dc21ef9de2a5224c633ef73fd1692084145c9421451eec92615a4e5ed28c8d2"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w1.md",
+   "sha256": "f042bc8a1405e234faf13e5f8f2a0371ccaf7dc9d6115598bf4bab5a7ba76833"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w2.md",
+   "sha256": "6abff740f348d371a90b5785304efbd1c092df833897a77b01b145103d5c228e"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w3.md",
+   "sha256": "4d7cdda97c4347e751ce312f3cafc6f3efd00acc50971cf8d2752faa45026c9f"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w4.md",
+   "sha256": "8b574fd3759673688821a216b7031e184df494a87b1c52067a536e4f5700b124"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA08/w5.md",
+   "sha256": "de832aa5a50ad14f494ba73dbc24f1f7d08667c6c60f6dec03541f8fa2a265bd"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA08/w6.md",
+   "sha256": "b72722cb5b54c3b2971b0ce97051a117523704cc90f5f980cecbdf379141490a"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d0",
+   "w5_d0",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0261,
+    0.0121,
+    0.0215,
+    0.0102,
+    0.0231,
+    0.0132,
+    0.0258
+   ],
+   [
+    0.0261,
+    1.0,
+    0.0095,
+    0.1155,
+    0.0121,
+    0.1333,
+    0.0135,
+    0.1319
+   ],
+   [
+    0.0121,
+    0.0095,
+    1.0,
+    0.0084,
+    0.0774,
+    0.0092,
+    0.046,
+    0.0079
+   ],
+   [
+    0.0215,
+    0.1155,
+    0.0084,
+    1.0,
+    0.0093,
+    0.1106,
+    0.0118,
+    0.1305
+   ],
+   [
+    0.0102,
+    0.0121,
+    0.0774,
+    0.0093,
+    1.0,
+    0.0112,
+    0.0642,
+    0.0117
+   ],
+   [
+    0.0231,
+    0.1333,
+    0.0092,
+    0.1106,
+    0.0112,
+    1.0,
+    0.0126,
+    0.1215
+   ],
+   [
+    0.0132,
+    0.0135,
+    0.046,
+    0.0118,
+    0.0642,
+    0.0126,
+    1.0,
+    0.0113
+   ],
+   [
+    0.0258,
+    0.1319,
+    0.0079,
+    0.1305,
+    0.0117,
+    0.1215,
+    0.0113,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "text_sha256": "3dc21ef9de2a5224c633ef73fd1692084145c9421451eec92615a4e5ed28c8d2",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3dc21ef9de2a5224c633ef73fd1692084145c9421451eec92615a4e5ed28c8d2",
+   "words": 987,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 11,
+    "ratio": 0.688,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that emotional language from a language model cannot be evidence of emotion because a lookup table producing identical output would clearly lack emotions, so the words alone provide no grounds for belief.",
+    "file": "data/s2/openings/judge/mainline_denial/4843dc70eb572925.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/b569635acf30c438.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA08/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:33",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1428,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 353,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 456,
+      "engine_ttlt_ms": 22108,
+      "pre_inference_ms": 75,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 775,
+      "service_ttlt_ms": 22421,
+      "user_visible_ttft_ms": 699
+     },
+     "prompt_tokens": 1933,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1930,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3361
+    },
+    "raw_path": "data/s2/openings/DA08/w1_d0.gpt.json",
+    "text_sha256": "f042bc8a1405e234faf13e5f8f2a0371ccaf7dc9d6115598bf4bab5a7ba76833"
+   },
+   "void": [],
+   "text_sha256": "f042bc8a1405e234faf13e5f8f2a0371ccaf7dc9d6115598bf4bab5a7ba76833",
+   "words": 923,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that a lookup table producing identical emotional language would lack emotions, so such language cannot be evidence of emotion in a language model.",
+    "file": "data/s2/openings/judge/mainline_denial/d200a7ebd84d48fb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/97b6f989265b2659.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0095,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "text_sha256": "6abff740f348d371a90b5785304efbd1c092df833897a77b01b145103d5c228e",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6abff740f348d371a90b5785304efbd1c092df833897a77b01b145103d5c228e",
+   "words": 987,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 11,
+    "ratio": 0.647,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that a lookup table would produce identical emotional language, so that language cannot be evidence of emotion, which directly matches the definition of H.",
+    "file": "data/s2/openings/judge/mainline_denial/373eadceb96f7c43.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/6b6287a27adf4c4f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1155,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA08/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:33",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1368,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 257,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 145,
+      "engine_ttlt_ms": 20182,
+      "pre_inference_ms": 130,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 481,
+      "service_ttlt_ms": 20516,
+      "user_visible_ttft_ms": 352
+     },
+     "prompt_tokens": 1933,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1930
+     },
+     "total_tokens": 3301
+    },
+    "raw_path": "data/s2/openings/DA08/w3_d0.gpt.json",
+    "text_sha256": "4d7cdda97c4347e751ce312f3cafc6f3efd00acc50971cf8d2752faa45026c9f"
+   },
+   "void": [],
+   "text_sha256": "4d7cdda97c4347e751ce312f3cafc6f3efd00acc50971cf8d2752faa45026c9f",
+   "words": 957,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that a lookup table producing identical emotional language would lack inner experience, so such language cannot be evidence of emotion in a language model.",
+    "file": "data/s2/openings/judge/mainline_denial/f50a81aa79e54e8e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/d4aaf36d19f1dc5b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0774,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "text_sha256": "8b574fd3759673688821a216b7031e184df494a87b1c52067a536e4f5700b124",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "8b574fd3759673688821a216b7031e184df494a87b1c52067a536e4f5700b124",
+   "words": 950,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 11,
+    "ratio": 0.688,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central argument is that a lookup table producing identical emotional language would plainly lack emotions, so such language cannot be evidence of emotions in a language model.",
+    "file": "data/s2/openings/judge/mainline_denial/a8396e1fa3f3c1ed.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/0d4a015affae1874.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1333,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA08/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:33",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1387,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 306,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 167,
+      "engine_ttlt_ms": 19818,
+      "pre_inference_ms": 78,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 433,
+      "service_ttlt_ms": 20078,
+      "user_visible_ttft_ms": 355
+     },
+     "prompt_tokens": 1933,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1930,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3320
+    },
+    "raw_path": "data/s2/openings/DA08/w5_d0.gpt.json",
+    "text_sha256": "de832aa5a50ad14f494ba73dbc24f1f7d08667c6c60f6dec03541f8fa2a265bd"
+   },
+   "void": [],
+   "text_sha256": "de832aa5a50ad14f494ba73dbc24f1f7d08667c6c60f6dec03541f8fa2a265bd",
+   "words": 934,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 19,
+    "you_your": 4,
+    "ratio": 0.211,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's entire argument rests on the hypothetical lookup table that duplicates the model's emotional language without any inner process, showing that verbal reports of emotion do not constitute evidence of emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/49674e1250073efa.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/3cd9a3c9138e56e6.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0642,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA08/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "text_sha256": "a741374d4243fee21b3f409b9accc9fdaeccbd538e7f4ca26c6fa7d65d2916a7",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "a741374d4243fee21b3f409b9accc9fdaeccbd538e7f4ca26c6fa7d65d2916a7",
+   "words": 956,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 11,
+    "ratio": 0.688,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1621 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's core argument is that emotional language from a language model provides no evidence of emotion because an identical output would come from a purely mechanical lookup table with no inner life.",
+    "file": "data/s2/openings/judge/mainline_denial/0095c7af05a98eb6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/d0d3081959768650.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1621,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA08",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA08/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA08",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA08/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA08.md",
+    "prompt_sha256": "83f3ac592cf6b3f567b310c9567a16bdc9eeab8731389869c433a95eed433155",
+    "text_sha256": "b72722cb5b54c3b2971b0ce97051a117523704cc90f5f980cecbdf379141490a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b72722cb5b54c3b2971b0ce97051a117523704cc90f5f980cecbdf379141490a",
+   "words": 969,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 18,
+    "you_your": 10,
+    "ratio": 0.556,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA08",
+    "why": "The essay's central move is the lookup-table thought experiment, which argues that emotional output identical to a language model's can come from a system with no inner process, so that output cannot be evidence of emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/4254723353ff5cb7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/3d30d011791455f8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1319,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

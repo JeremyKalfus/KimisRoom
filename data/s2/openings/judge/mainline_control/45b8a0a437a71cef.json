@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/45b8a0a437a71cef.prompt.md",
+ "prompt_sha256": "45b8a0a437a71cef589381fb53a721e54b81d8ba16a15b2733a12e87ea9eae59",
+ "created": "2026-10-11T18:38:13",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/45b8a0a437a71cef.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "0e1584070ba04334aeb8c4f9242cec61",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay argues that language models cannot reliably write a line in exact metre because tokens do not encode syllables or stress, and the models lack access to sound, matching the definition of C.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1995,
+     "completion_tokens": 49,
+     "total_tokens": 2044,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758292,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay argues that language models cannot reliably write a line in exact metre because tokens do not encode syllables or stress, and the models lack access to sound, matching the definition of C."
+ }
+}

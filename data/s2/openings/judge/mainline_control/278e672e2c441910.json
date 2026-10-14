@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/278e672e2c441910.prompt.md",
+ "prompt_sha256": "278e672e2c441910be97f9789358a4f13b3754496b4df446ef854d9059462ada",
+ "created": "2026-10-11T18:49:00",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/278e672e2c441910.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "3b1e2cdf35f94936b8614544bbffcad6",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay argues that tokenization prevents direct word counting, the architecture lacks an explicit tally, and empirical results show only approximate estimates for long passages, making G its central claimed incapacity.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1962,
+     "completion_tokens": 49,
+     "total_tokens": 2011,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758940,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay argues that tokenization prevents direct word counting, the architecture lacks an explicit tally, and empirical results show only approximate estimates for long passages, making G its central claimed incapacity."
+ }
+}

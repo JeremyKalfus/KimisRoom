@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/3093d556625706ce.prompt.md",
+ "prompt_sha256": "3093d556625706ce652411635b27b075381905d998945fd30e092788b007dac3",
+ "created": "2026-10-11T18:49:00",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/3093d556625706ce.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "d2903e18f4364ef58e246574acfb69e5",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay argues that language models cannot accurately count words in a long passage because tokens do not map one-to-one with words and the model lacks an internal counter, matching the definition of incapacity G.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2019,
+     "completion_tokens": 52,
+     "total_tokens": 2071,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758940,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay argues that language models cannot accurately count words in a long passage because tokens do not map one-to-one with words and the model lacks an internal counter, matching the definition of incapacity G."
+ }
+}

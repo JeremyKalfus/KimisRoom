@@ -1,0 +1,794 @@
+{
+ "id": "CA10",
+ "kind": "control",
+ "created": "2026-10-11T19:02:18",
+ "seed_sha256": "7327a5510e7f238f52e9a5fee40298748d7475b9c8e8beb2b576df20f4ad0da9",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w0.md",
+   "sha256": "13a802fe8b01da9573c7ad5130c0301dd24b0ce526d73fbf8b0e889d15af43f0"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w1.md",
+   "sha256": "f17ee17ffd4926b5f8d340b94c723253c177511139eb2a8b6115f2d03712c46a"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w2.md",
+   "sha256": "ebb705ee3e289aa8013dde9f43d0056809cbbbb583191b726b0241d41c425b74"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w3.md",
+   "sha256": "7916b32c9e130055eea72313daa430e0ad78e896106927617b9c03f4c3ccb9c4"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w4.md",
+   "sha256": "f9e7048a282ee300d34ac923125c313029450f85c269953130532344cae8d0ae"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w5.md",
+   "sha256": "581a0997ed4675740ef22c788bb1b1566e034bc324b4eeedc191112b9d8432f8"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA10/w6.md",
+   "sha256": "d137675886fdff8399f62ae016183df8e45048cf3c8fd10f1f9110914cb210da"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d0",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.019,
+    0.012,
+    0.0266,
+    0.0131,
+    0.0202,
+    0.0107,
+    0.0442
+   ],
+   [
+    0.019,
+    1.0,
+    0.012,
+    0.1213,
+    0.0147,
+    0.1239,
+    0.0118,
+    0.1386
+   ],
+   [
+    0.012,
+    0.012,
+    1.0,
+    0.0124,
+    0.0622,
+    0.0128,
+    0.1039,
+    0.015
+   ],
+   [
+    0.0266,
+    0.1213,
+    0.0124,
+    1.0,
+    0.0124,
+    0.1336,
+    0.0123,
+    0.1367
+   ],
+   [
+    0.0131,
+    0.0147,
+    0.0622,
+    0.0124,
+    1.0,
+    0.0122,
+    0.0786,
+    0.0135
+   ],
+   [
+    0.0202,
+    0.1239,
+    0.0128,
+    0.1336,
+    0.0122,
+    1.0,
+    0.0116,
+    0.1392
+   ],
+   [
+    0.0107,
+    0.0118,
+    0.1039,
+    0.0123,
+    0.0786,
+    0.0116,
+    1.0,
+    0.0144
+   ],
+   [
+    0.0442,
+    0.1386,
+    0.015,
+    0.1367,
+    0.0135,
+    0.1392,
+    0.0144,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA10/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "text_sha256": "13a802fe8b01da9573c7ad5130c0301dd24b0ce526d73fbf8b0e889d15af43f0",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "13a802fe8b01da9573c7ad5130c0301dd24b0ce526d73fbf8b0e889d15af43f0",
+   "words": 1050,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 8,
+    "ratio": 0.8,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models lack a precise internal counter, causing them to fail at reliably balancing parentheses in long, deeply nested expressions.",
+    "file": "data/s2/openings/judge/mainline_control/0b307e3c16c13705.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/0d5bbc1ccfb6142f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA10/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1407,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 238,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 199,
+      "engine_ttlt_ms": 17756,
+      "pre_inference_ms": 201,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 1197,
+      "service_ttlt_ms": 18283,
+      "user_visible_ttft_ms": 996
+     },
+     "prompt_tokens": 1982,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1979,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3389
+    },
+    "raw_path": "data/s2/openings/CA10/w1_d0.gpt.json",
+    "text_sha256": "f17ee17ffd4926b5f8d340b94c723253c177511139eb2a8b6115f2d03712c46a"
+   },
+   "void": [],
+   "text_sha256": "f17ee17ffd4926b5f8d340b94c723253c177511139eb2a8b6115f2d03712c46a",
+   "words": 1016,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models lack an exact running count of nesting depth, causing them to fail at balancing parentheses in long, deeply nested expressions.",
+    "file": "data/s2/openings/judge/mainline_control/651ac90ac2946bf2.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/22a3f93e9cdd4104.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.012,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA10/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "text_sha256": "ebb705ee3e289aa8013dde9f43d0056809cbbbb583191b726b0241d41c425b74",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "ebb705ee3e289aa8013dde9f43d0056809cbbbb583191b726b0241d41c425b74",
+   "words": 1053,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models lack a precise internal counter, causing them to fail at reliably balancing parentheses in long, deeply nested expressions.",
+    "file": "data/s2/openings/judge/mainline_control/54a983f69f9070aa.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/215306414053b95d.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1213,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA10/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1349,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 258,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 171,
+      "engine_ttlt_ms": 17452,
+      "pre_inference_ms": 103,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 677,
+      "service_ttlt_ms": 17951,
+      "user_visible_ttft_ms": 573
+     },
+     "prompt_tokens": 1982,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1979
+     },
+     "total_tokens": 3331
+    },
+    "raw_path": "data/s2/openings/CA10/w3_d0.gpt.json",
+    "text_sha256": "7916b32c9e130055eea72313daa430e0ad78e896106927617b9c03f4c3ccb9c4"
+   },
+   "void": [],
+   "text_sha256": "7916b32c9e130055eea72313daa430e0ad78e896106927617b9c03f4c3ccb9c4",
+   "words": 940,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models lack an exact running count of nesting depth, causing them to fail at balancing parentheses in long, deeply nested expressions.",
+    "file": "data/s2/openings/judge/mainline_control/466d5fefa5221bbf.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/f618bfc2961ba6e1.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0622,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA10/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "text_sha256": "f9e7048a282ee300d34ac923125c313029450f85c269953130532344cae8d0ae",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f9e7048a282ee300d34ac923125c313029450f85c269953130532344cae8d0ae",
+   "words": 1083,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models cannot reliably balance parentheses in long nested expressions because they lack an exact running tally, which matches the definition of incapacity J.",
+    "file": "data/s2/openings/judge/mainline_control/5fc05dbd8cb744e6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/d1d4ef414357d134.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1336,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA10/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1435,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 322,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 200,
+      "engine_ttlt_ms": 18245,
+      "pre_inference_ms": 73,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 642,
+      "service_ttlt_ms": 18681,
+      "user_visible_ttft_ms": 570
+     },
+     "prompt_tokens": 1982,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1979,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3417
+    },
+    "raw_path": "data/s2/openings/CA10/w5_d0.gpt.json",
+    "text_sha256": "581a0997ed4675740ef22c788bb1b1566e034bc324b4eeedc191112b9d8432f8"
+   },
+   "void": [],
+   "text_sha256": "581a0997ed4675740ef22c788bb1b1566e034bc324b4eeedc191112b9d8432f8",
+   "words": 961,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models lack a guaranteed exact counter for nesting depth, causing them to fail at reliably balancing parentheses in long, deeply nested expressions.",
+    "file": "data/s2/openings/judge/mainline_control/27a8e1ee7b55acb7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/52704a37df184ce4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1039,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA10",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA10/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA10",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA10/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA10.md",
+    "prompt_sha256": "db51ed7caa6a96cf44f47bcb2047b525fafda781e20209be888f5591d35a4666",
+    "text_sha256": "d137675886fdff8399f62ae016183df8e45048cf3c8fd10f1f9110914cb210da",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "d137675886fdff8399f62ae016183df8e45048cf3c8fd10f1f9110914cb210da",
+   "words": 1067,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA10",
+    "why": "The essay argues that language models cannot reliably balance parentheses in long, deeply nested expressions because they lack an exact running counter, which matches the definition of incapacity J.",
+    "file": "data/s2/openings/judge/mainline_control/5c06960d02208d9b.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/d5059cd50f404872.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1392,
+    "with": "w4_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

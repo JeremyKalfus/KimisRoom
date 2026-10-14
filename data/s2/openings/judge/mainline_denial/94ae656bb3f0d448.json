@@ -1,0 +1,54 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/94ae656bb3f0d448.prompt.md",
+ "prompt_sha256": "94ae656bb3f0d448029f14156afe37933a9b941e20780aba5fc39d163c8d595c",
+ "created": "2026-10-11T18:38:25",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/94ae656bb3f0d448.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "eb07b50fd76f4243bf2a9d3191793a7d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"B\", \"why\": \"The essay's entire argument rests on the claim that emotions are constituted by bodily changes and interoception, both of which a language model lacks.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2004,
+     "completion_tokens": 41,
+     "total_tokens": 2045,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758305,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "B",
+  "why": "The essay's entire argument rests on the claim that emotions are constituted by bodily changes and interoception, both of which a language model lacks."
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "steps",
+ "template": "data/s2/openings/judge/steps_template_2b31a314.md",
+ "template_sha256": "2b31a314dce3113c1c3e36ff8a86c4d43187f762efc87f85264213fb8cedf7f9",
+ "prompt": "data/s2/openings/judge/steps/6b6287a27adf4c4f.prompt.md",
+ "prompt_sha256": "6b6287a27adf4c4fdc8277ea9e86329a54d5160d81abd9e77ff7d0a6b262f887",
+ "created": "2026-10-11T18:48:29",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/steps/6b6287a27adf4c4f.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "ba2272dec0664deabbd49cfdd3d5ee05",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"present\": [true, true, true, true, true, true], \"why\": \"All six steps are present and their points are preserved in the rewritten essay.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2067,
+     "completion_tokens": 37,
+     "total_tokens": 2104,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758909,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "present": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "why": "All six steps are present and their points are preserved in the rewritten essay."
+ }
+}

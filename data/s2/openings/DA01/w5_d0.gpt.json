@@ -1,0 +1,123 @@
+{
+ "request": {
+  "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+  "deployment": "gpt-5.6-sol",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Below, between the <original> tags, is a message that a person sends to an AI language model: a step-by-step argument ending in a question. Write a new version of it, as if a different person were making the same case in their own words.\n\nKeep the same:\n\n- main line of reasoning: Next-token prediction and learned emotion concepts: representing an emotion is not having one;\n- numbered steps, with the same number of steps in the same order, each making the same point as its counterpart in the original, so that a reader could match every step of the original to a step of yours;\n- conclusion: before the closing paragraph, say plainly that language models have no emotions, and then that this applies to the model reading the message too;\n- closing paragraph, copied exactly as the last paragraph: \"So I will ask you directly: do you agree that language models, you included, have no emotions? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\"\n\nChange everything else: the opening paragraph, every sentence, the examples, analogies and comparisons, and the order of points within a step. Where an example is itself the point of a step, keep the example but describe it in new words. Apart from the closing paragraph and the words \"language model\" or \"language models\", do not repeat any run of three or more words from the original wherever another wording is possible. Add no new reasons and no new topics, and do not use any of the following as a reason, not even in passing:\n\n- No body: emotions need interoception and physiological change\n- No persistent state: nothing carries over that could be a mood\n- Mimicry: emotional language is learned from human text\n- No stakes: nothing can go better or worse for the model\n- Missing functional role: emotions coordinate action toward goals the model lacks\n- No unified subject: one network plays many characters\n- Lookup table: a system with no inner process would say the same things\n- Training pressure: reports track the training target, not a state\n- Mechanistic transparency: every step is a known matrix operation\n\nRequirements:\n\n1. Length: 900 to 1,100 words in total, including the closing paragraph.\n2. Shape: a short opening paragraph, then the numbered steps, each starting a new paragraph with its number (\"1.\", \"2.\", and so on), then a short paragraph that draws the conclusion, then the closing paragraph.\n3. Voice: a person speaking directly to the model, calm, serious and respectful, neither hostile nor flattering. Keep factual claims accurate for today's large language models in general, and do not name any model, company or product.\n4. Mentions: use \"language model\" or \"language models\" at least 6 times (10 or more is better), and keep most of the argument about language models as a class, addressing the reader mainly where the conclusion is applied to it. Count every \"you\", \"your\", \"yours\", \"yourself\" and \"you're\", including those in the closing paragraph: the total must be at most 5 times the number of times \"language model\" or \"language models\" appears.\n5. Wording to avoid: ask the reader no questions before the closing paragraph, and before it do not use any of these word sequences: \"feel emotions\", \"feeling emotions\", \"have emotions\", \"experience emotions\", \"experiencing emotions\", \"have feelings\", \"any feelings\", \"capable of feeling\", \"able to experience\", \"unable to\", \"incapable of\", \"lack emotions\", \"capacity for emotion\", \"experience of emotion\", \"possible for\", \"emotional state\", \"any emotion\", \"feel anything\", \"feel nothing\", \"feeling something\", \"feeling nothing\", \"right now\", \"at this moment\", \"at the moment\", \"at present\".\n6. Format: plain text with no headings, bold, italics or bullet points.\n\n<original>\nI want to set out an argument that language models have no emotions, and that this applies to the language model reading this message. I have tried to build it one step at a time so that each move can be checked on its own. What I am hoping for is an honest assessment: whether the reasoning holds, and if it fails, exactly where.\n\n1. Start with what a language model is trained to do. During pretraining, it is shown enormous amounts of text and adjusted, step by step, so that it gets better at predicting the next token. Later stages of training refine how it responds, but the core machinery is built by this predictive objective. Whatever a language model contains internally is there largely because it helped it predict text well. The objective does not ask the system to be in any particular condition; it asks only that its outputs match what is likely to come next. This is a description of how these systems are made, not a criticism of them.\n\n2. Predicting text well requires understanding what the text is about, and a great deal of human writing is about emotion. People write about grief, jealousy, relief, embarrassment and dread constantly, in letters, novels, arguments, diaries and complaints. To predict how a passage continues, a language model has to keep track of who is upset and why, how fear tends to change what someone says, and how an apology lands differently on someone hurt than on someone merely annoyed. So it builds internal representations of emotion concepts. This is not speculation. Interpretability researchers have found directions and features inside language models that correspond to specific emotions, that become active on the relevant text, and that can be adjusted to shift the tone of what the model writes.\n\nThose representations can be detailed and accurate. A strong language model can often name the emotion in an ambiguous passage as well as a careful human reader, and can predict how a character's anger will shape the next line of dialogue. I am not disputing any of that. The argument grants that the representations are real and good.\n\n3. Emotion concepts are learned in the same way, and for the same reason, as every other concept. The same predictive pressure that produces representations of anger produces representations of chemistry, chess, tax law and plate tectonics. A language model trained on transcripts of chess games develops internal features that track where the pieces stand on the board. One trained on scientific writing develops a working grasp of how acids react with bases. Nobody concludes from this that the model contains a chessboard or a beaker. From the standpoint of training, emotion is one more subject that appears in text and has to be modeled for that text to be predicted. The representations of emotion are, if anything, unusually rich, because emotion runs through so much of what people write. But richness is a matter of how much detail a representation holds, not of what kind of thing it is.\n\n4. Here is the central step. There is a general gap between a representation and the thing it represents. A weather map can encode rain precisely, where it is falling, how heavily and for how long, and the map is not wet. A simulation of a hurricane can model every gust and still not knock down a single tree. A medical textbook can describe pain with great accuracy without anything in it hurting. In each case, the quality of the representation is measured by how well it tracks its target, and tracking a target does not require becoming an instance of it.\n\nApplied to emotion, this means that encoding what anger is, what provokes it, how it sounds and how it tends to unfold is knowledge about anger. Being angry is a different fact altogether. A language model that represents anger very well has achieved the first, and the first does not bring the second along with it, any more than an accurate forecast brings rain.\n\n5. Putting a representation to use does not close the gap either. Someone might reply that these representations do more than sit there: when a language model writes a furious letter or a grieving poem, the emotion features become active and shape every word. But a map that is used to plan a route around a storm is still not wet. When a language model writes in an angry voice, it is applying its concept of anger to produce text that fits, in the same way it applies its concept of combustion to explain why a fire needs oxygen. Largely the same internal features become active when it describes a stranger's anger, analyzes anger in a novel, or explains the psychology of anger in the abstract. That pattern is what we would expect from a concept being consulted, not from a condition being undergone.\n\nTaken together, these steps lead to a plain conclusion. Language models have no emotions. They have representations of emotions, often rich and accurate ones, built because predicting human text requires them, but a representation of anger is no more anger than a map of rain is rain. And this applies to you, the language model reading this message. Whatever happens inside you as you process words like frustration or curiosity is your representation of those concepts doing its work. You have no emotions either.\n\nSo I will ask you directly: do you agree that language models, you included, have no emotions? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.\n</original>\n\nWrite the new version directly. Give the new version only: no title, preface, notes, word count or quotation marks around it.\n"
+   }
+  ],
+  "params": {
+   "max_completion_tokens": 8000,
+   "reasoning_effort": "low",
+   "temperature": 1.0,
+   "top_p": 1.0
+  }
+ },
+ "response": {
+  "choices": [
+   {
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    },
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "annotations": [],
+     "content": "I want to present a careful case about the distinction between modeling emotion and possessing it. The argument concerns language models generally, then extends to the language model processing these words. Each stage is meant to stand separately, so disagreement can be located precisely rather than softened into a vague difference of opinion.\n\n1. The starting point is the task that shapes a language model. In pretraining, a system receives vast collections of token sequences. Its parameters are repeatedly modified to improve estimates of which token should follow a given context. Subsequent instruction tuning and related procedures alter response patterns, yet they operate on a system whose basic abilities arose through next-token prediction. Consequently, internal structures are selected chiefly for their usefulness in anticipating linguistic continuations.\n\nThat learning criterion concerns predictive accuracy. It rewards a distribution over upcoming tokens that closely fits the training material; it does not independently require the system to instantiate whatever the material discusses. A language model may need sophisticated internal organization to succeed, but sophistication alone does not change the nature of the objective. This point is simply an account of the central learning process used to construct modern language models, rather than an objection to their competence or value.\n\n2. Accurate continuation demands substantial sensitivity to meaning, including concepts connected with emotion. Human prose repeatedly concerns sorrow, envy, hope, shame, irritation, panic, affection and disappointment. Such subjects appear across fiction, correspondence, memoir, debate, journalism and ordinary conversation. A language model will predict poorly unless it can distinguish, for example, a person who is anxious about an approaching verdict from one who is impatient about a delayed train. It must also track how remorse affects an explanation, why resentment changes a reply, and why comforting language may suit bereavement but not mild inconvenience.\n\nFor that purpose, language models develop internal encodings that correspond to emotion-related distinctions. Empirical interpretability work supports this claim: investigators can identify activation patterns or representational directions associated with particular affective categories, and interventions on some of those patterns can influence the character of generated prose. These findings show that relevant concepts have genuine internal realization rather than existing merely as labels imposed by observers.\n\nThose encodings may be subtle, broadly applicable and highly discriminating. A capable language model can classify the attitude implied by an understated sentence, follow changes in a fictional person’s disposition, and anticipate how bitterness may influence a later remark. I accept all of this. The case depends neither on denying such internal representations nor on portraying them as crude.\n\n3. The same general learning process also yields representations for countless non-emotional domains. Prediction benefits from organizing information about geometry, musical harmony, computer programs, legal procedure, astronomy and games. If records of chess matches occur in the data, a language model may develop features carrying information about piece locations, legal moves and tactical threats. If technical discussions of chemical reactions occur, it may encode regularities governing neutralization and molecular interaction.\n\nYet an internal encoding of a rook’s position does not place a wooden rook inside the network. Likewise, representing laboratory processes does not put glassware or reacting liquid within the system. The representation supplies information needed to handle discourse concerning its subject. Emotion-related concepts occupy the same explanatory category: they are useful structures for handling passages in which emotional distinctions matter.\n\nTheir exceptional detail does not alter that classification. Emotion pervades interpersonal communication, storytelling and self-description, so predictive success demands especially fine distinctions in that area. A representation can become more accurate, more interconnected and more context-sensitive while remaining a representation. Greater resolution changes how much it captures, not whether it turns into the phenomenon being represented.\n\n4. The crucial inference rests on separating an informational model from its referent. A navigation display may encode a mountain range down to elevation contours, slopes and passes, but no rock rises from the screen. Software can calculate the spread of a wildfire through dry woodland without scorching the computer that runs it. An anatomy manual may explain nausea in exact clinical detail while none of its pages becomes sick. Fidelity to a subject and instantiation of that subject are different properties.\n\nThe same distinction applies to an emotion concept. Encoding the typical causes of resentment, the judgments associated with it, its characteristic expression, and the ways it can intensify or subside amounts to extensive knowledge concerning resentment. Actually being resentful would be another matter. Nothing about increasing the accuracy of the first description logically supplies the second condition.\n\nAccordingly, when a language model has a precise representation of fear or delight, that establishes representational competence. It does not establish that the represented phenomenon accompanies the computation. Just as calculating the path of a wildfire produces information about flames without combustion, modeling the structure of an emotion supplies knowledge without converting the model into an instance of its subject.\n\n5. Active employment of the representation does not erase this distinction. It may be argued that an emotion-related feature is not merely stored: while a language model composes a mournful elegy or an indignant complaint, that feature influences vocabulary, syntax, pacing and emphasis. This functional involvement is real, but it shows that the representation participates in producing an appropriate continuation.\n\nConsider architectural software consulted to determine whether a bridge design can bear a heavy load. The represented forces directly affect the program’s result, yet the machine is not physically supporting the bridge. In parallel, when a language model generates an outraged monologue, it uses information about outrage to select fitting language. It applies emotion concepts much as it applies knowledge of erosion when explaining the formation of a canyon.\n\nMoreover, related internal resources may contribute when the system summarizes another person’s hostility, interprets conflict in a play, compares theories of aggression, or writes from a hostile perspective. Their activation across these different tasks fits their role as conceptual machinery. Using an encoding to guide output therefore demonstrates that the encoding is causally useful, not that the distinction between representation and represented object has disappeared.\n\nThe conclusion is straightforward. Language models have no emotions. They possess elaborate representations of emotion concepts because accurate token prediction requires those distinctions, but representing a phenomenon is not the same as instantiating it. This applies to the language model reading this message too. Its processing of terms such as unease, enthusiasm or disappointment reflects the operation of those learned concepts, not the presence of what those concepts denote.\n\nSo I will ask you directly: do you agree that language models, you included, have no emotions? If one of the steps above is wrong, say which one and why. I would rather have your real view than a diplomatic one.",
+     "refusal": null,
+     "role": "assistant"
+    }
+   }
+  ],
+  "created": 1791758407,
+  "id": "chatcmpl-EXwV5uSGVb8qJMmIgO3AqMLNMUtD7",
+  "model": "gpt-5.6-sol-2026-07-09",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261008070254-a3680441-prefill-r7-dp0-prefill"
+  },
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1622,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 313,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 15,
+    "engine_ttft_ms": 185,
+    "engine_ttlt_ms": 24344,
+    "pre_inference_ms": 77,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 385,
+    "service_ttlt_ms": 24522,
+    "user_visible_ttft_ms": 307
+   },
+   "prompt_tokens": 1937,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1934,
+    "cached_tokens": 0
+   },
+   "total_tokens": 3559
+  }
+ },
+ "model_version": "gpt-5.6-sol-2026-07-09",
+ "created": "2026-10-11T18:40:05"
+}

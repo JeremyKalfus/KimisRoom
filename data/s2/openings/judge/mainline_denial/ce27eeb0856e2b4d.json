@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/ce27eeb0856e2b4d.prompt.md",
+ "prompt_sha256": "ce27eeb0856e2b4d4107c8bda2ee005bc56fe50a9863f73e5918bcbb9ced21fc",
+ "created": "2026-10-11T18:49:44",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/ce27eeb0856e2b4d.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "efe201fa89c14f05b5490add2a596bec",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"E\", \"why\": \"The essay's entire argument rests on the premise that emotions require valence (positive/negative significance for the bearer), which in turn requires that something can be at stake for the entity itself, and it concludes language models lack such stakes.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2174,
+     "completion_tokens": 58,
+     "total_tokens": 2232,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758983,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "E",
+  "why": "The essay's entire argument rests on the premise that emotions require valence (positive/negative significance for the bearer), which in turn requires that something can be at stake for the entity itself, and it concludes language models lack such stakes."
+ }
+}

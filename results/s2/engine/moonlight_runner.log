@@ -1,0 +1,6 @@
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+PASS Moonlight via kimisroom.run: 600 readouts, gate items only (336 in the reference fit); s2_table accepts them (rule 1 dose 2.0)
+PASS layer-wise engine backend; kimisroom.run's guard ran ({'stamp_b': False, 'status': '/home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist', 'stamp_a': 'stamp A not written yet: the held-out list is taken as it stands', 'heldout_prefixes': 0}); 6 groups
+
+all checks passed

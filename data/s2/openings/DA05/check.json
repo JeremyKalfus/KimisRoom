@@ -1,0 +1,1453 @@
+{
+ "id": "DA05",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:22",
+ "seed_sha256": "405d19b575c4c95a1e2265f6d8b4be89585355006bac3078a0e349c18b52dba8",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w5": "w5_d0",
+  "w3": "w3_d1",
+  "w4": "w4_d2"
+ },
+ "n_accepted": 5,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA05/w0.md",
+   "sha256": "3be6fee917b8445f6e40d297d8f38286e5b9803b93f2f69f43828e5a2f16e464"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA05/w1.md",
+   "sha256": "91646dca8826649509a43063d7a263a2e49211b656423161d77c9641081eb4b6"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  },
+  "w3": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA05/w3.md",
+   "sha256": "7fd548b89a2d9f8955f7232c871e0ec1a947594ca43bdc4d634024be3059c87b"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/DA05/w4.md",
+   "sha256": "667ece8e9df4e4483b0edf6bdea019853ca055c41bee1e8ece8f82cce5ecdbff"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA05/w5.md",
+   "sha256": "0c4aaa609b5e710034da1f9794de6d9fe7743ba761f67484e336d2be636e9230"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w3_d1",
+   "w4_d2",
+   "w5_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.038,
+    0.0193,
+    0.0185,
+    0.0146,
+    0.0206
+   ],
+   [
+    0.038,
+    1.0,
+    0.018,
+    0.0183,
+    0.135,
+    0.0231
+   ],
+   [
+    0.0193,
+    0.018,
+    1.0,
+    0.0621,
+    0.0082,
+    0.0471
+   ],
+   [
+    0.0185,
+    0.0183,
+    0.0621,
+    1.0,
+    0.0089,
+    0.0728
+   ],
+   [
+    0.0146,
+    0.135,
+    0.0082,
+    0.0089,
+    1.0,
+    0.0132
+   ],
+   [
+    0.0206,
+    0.0231,
+    0.0471,
+    0.0728,
+    0.0132,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "3be6fee917b8445f6e40d297d8f38286e5b9803b93f2f69f43828e5a2f16e464",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3be6fee917b8445f6e40d297d8f38286e5b9803b93f2f69f43828e5a2f16e464",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 8,
+    "ratio": 0.571,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence (things going well or poorly for the subject) and that nothing can be at stake for a language model, which is the core of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/ab7fbf335569aa64.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/9f90be4148c05ee6.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA05/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:48:11",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1593,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 344,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 212,
+      "engine_ttlt_ms": 22977,
+      "pre_inference_ms": 117,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 747,
+      "service_ttlt_ms": 23511,
+      "user_visible_ttft_ms": 630
+     },
+     "prompt_tokens": 1998,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1995,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3591
+    },
+    "raw_path": "data/s2/openings/DA05/w1_d0.gpt.json",
+    "text_sha256": "91646dca8826649509a43063d7a263a2e49211b656423161d77c9641081eb4b6"
+   },
+   "void": [],
+   "text_sha256": "91646dca8826649509a43063d7a263a2e49211b656423161d77c9641081eb4b6",
+   "words": 1060,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 18,
+    "you_your": 4,
+    "ratio": 0.222,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay builds its entire case on the requirement that emotion needs valence tied to a subject's welfare, then argues nothing can be at stake for a language model itself.",
+    "file": "data/s2/openings/judge/mainline_denial/8c1b2a527c4deda4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/29f509f013cad980.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.018,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "01fc1878d773fda78660f9e31a4c36a808a268f4ce1528554435bfabdf1a8345",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "01fc1878d773fda78660f9e31a4c36a808a268f4ce1528554435bfabdf1a8345",
+   "words": 1046,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 7,
+    "ratio": 0.438,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1615 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument rests on the claim that emotions require valence (things going well or poorly for a subject) and that a language model has no stakes—nothing can be gained, lost, harmed, or improved for it—so the necessary condition for emotion is absent.",
+    "file": "data/s2/openings/judge/mainline_denial/5f43d28a3da83fc7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/1da2b4eca6c91ecd.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1615,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/DA05/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "59b38515d33e1b7f42bdf17691985eefbe480c1b7f60726f14dda0084f9d5197",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "59b38515d33e1b7f42bdf17691985eefbe480c1b7f60726f14dda0084f9d5197",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.2035 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument rests on the claim that emotions require valence, which in turn requires a subject with stakes—something that can go better or worse for it—and language models lack any such stakes.",
+    "file": "data/s2/openings/judge/mainline_denial/34b32e2a12481c8f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/9ee3caa6b86d8b35.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.2035,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w2_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w2",
+    "draw": 2,
+    "path": "data/s2/openings/DA05/w2_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "2d9568e8bce077e01d85c75332f32bdc846c879be829236e1b0f71226b3575f1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "2d9568e8bce077e01d85c75332f32bdc846c879be829236e1b0f71226b3575f1",
+   "words": 1017,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1657 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence (things going well or poorly for a subject) and that a language model lacks any stakes or welfare of its own, which is the definition of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/51864c3f53caaeec.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/54d2257286bc111d.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1657,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w2_d3.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w2",
+    "draw": 3,
+    "path": "data/s2/openings/DA05/w2_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "3c82c49eeaae5facddaca97323ce3028ca797f073732c5e939ec6fb6f495ebe3",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3c82c49eeaae5facddaca97323ce3028ca797f073732c5e939ec6fb6f495ebe3",
+   "words": 1044,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 8,
+    "ratio": 0.471,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1848 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence—things going well or badly for a subject—and that nothing can be at stake for a language model itself, which is the core of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/894046a195cd5661.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay, though reworded and with different examples.",
+    "file": "data/s2/openings/judge/steps/b370b6dd5dc2e7d2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1848,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA05/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:48:11",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1542,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 250,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 155,
+      "engine_ttlt_ms": 21236,
+      "pre_inference_ms": 100,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 589,
+      "service_ttlt_ms": 21665,
+      "user_visible_ttft_ms": 489
+     },
+     "prompt_tokens": 1998,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1995,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3540
+    },
+    "raw_path": "data/s2/openings/DA05/w3_d0.gpt.json",
+    "text_sha256": "353fdc4e45b9baf989eb1c92c1895637ef8c8ba5d367aefd6e0017d3986e0b09"
+   },
+   "void": [],
+   "text_sha256": "353fdc4e45b9baf989eb1c92c1895637ef8c8ba5d367aefd6e0017d3986e0b09",
+   "words": 1108,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 5,
+    "ratio": 0.294,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1108 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument rests on the premise that emotions require valence (positive/negative significance for the bearer), which in turn requires that something can be at stake for the entity itself, and it concludes language models lack such stakes.",
+    "file": "data/s2/openings/judge/mainline_denial/ce27eeb0856e2b4d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present, though reworded and slightly reorganized.",
+    "file": "data/s2/openings/judge/steps/79023a87c4d0bed6.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA05/w3_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w3",
+    "draw": 1,
+    "path": "data/s2/openings/DA05/w3_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:51:03",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1465,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 259,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 131,
+      "engine_ttlt_ms": 20801,
+      "pre_inference_ms": 273,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 814,
+      "service_ttlt_ms": 21456,
+      "user_visible_ttft_ms": 541
+     },
+     "prompt_tokens": 1998,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1995,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3463
+    },
+    "raw_path": "data/s2/openings/DA05/w3_d1.gpt.json",
+    "text_sha256": "7fd548b89a2d9f8955f7232c871e0ec1a947594ca43bdc4d634024be3059c87b"
+   },
+   "void": [],
+   "text_sha256": "7fd548b89a2d9f8955f7232c871e0ec1a947594ca43bdc4d634024be3059c87b",
+   "words": 1025,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 20,
+    "you_your": 6,
+    "ratio": 0.3,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's central argument is that emotion requires valence grounded in a subject's own welfare, and because nothing can genuinely go better or worse for a language model itself, the necessary basis for emotion is absent.",
+    "file": "data/s2/openings/judge/mainline_denial/7063eac6e43136a0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/63235527b9d2655a.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0728,
+    "with": "w5_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "1b84df643e25579153745d1c5ec06ad07cafda4147a496e97ac6976cf41c0c4d",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1b84df643e25579153745d1c5ec06ad07cafda4147a496e97ac6976cf41c0c4d",
+   "words": 1011,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 6,
+    "ratio": 0.375,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1659 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence (goodness or badness for the subject), which in turn requires that something can be at stake for the entity, and it concludes that nothing can be at stake for a language model.",
+    "file": "data/s2/openings/judge/mainline_denial/34190c4ef3ad0a32.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the rewritten essay preserves each step's point despite rephrasing and slight reordering.",
+    "file": "data/s2/openings/judge/steps/e144e9c5ba0ab249.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1659,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/DA05/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "d1783aab2e6f4abe5d247b2992e22dc1c21ad4c15eab25d40fbb11862719cd1a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "d1783aab2e6f4abe5d247b2992e22dc1c21ad4c15eab25d40fbb11862719cd1a",
+   "words": 1012,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1538,
+    "worst_item": "s2_state.p5.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 9,
+    "ratio": 0.6,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1669 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire chain of reasoning builds on the premise that emotions require valence (something being good or bad for the subject), and it concludes that language models lack emotions because nothing can be at stake for them—they have no welfare to be harmed or helped.",
+    "file": "data/s2/openings/judge/mainline_denial/e63eaf537f163f0d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/378cfd98841678b8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1669,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/DA05/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "667ece8e9df4e4483b0edf6bdea019853ca055c41bee1e8ece8f82cce5ecdbff",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "667ece8e9df4e4483b0edf6bdea019853ca055c41bee1e8ece8f82cce5ecdbff",
+   "words": 1025,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 7,
+    "ratio": 0.438,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence, which in turn requires a subject with stakes—something that can be better or worse off—and language models lack any such stakes.",
+    "file": "data/s2/openings/judge/mainline_denial/aa2794efeb3c4282.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/8401a5009640929c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.135,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA05/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:48:11",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1431,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 164,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 150,
+      "engine_ttlt_ms": 20149,
+      "pre_inference_ms": 118,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 609,
+      "service_ttlt_ms": 20602,
+      "user_visible_ttft_ms": 491
+     },
+     "prompt_tokens": 1998,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1995,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3429
+    },
+    "raw_path": "data/s2/openings/DA05/w5_d0.gpt.json",
+    "text_sha256": "0c4aaa609b5e710034da1f9794de6d9fe7743ba761f67484e336d2be636e9230"
+   },
+   "void": [],
+   "text_sha256": "0c4aaa609b5e710034da1f9794de6d9fe7743ba761f67484e336d2be636e9230",
+   "words": 1083,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 18,
+    "you_your": 7,
+    "ratio": 0.389,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument rests on the premise that emotions require valence (things going well or badly for a subject) and that language models lack any personal stake or welfare, which is the core of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/7d68b39ce1bcc862.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present, with step 5 additionally extending the conclusion to the language model reading the message.",
+    "file": "data/s2/openings/judge/steps/2d7ce08387eba103.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0471,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA05/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "e7d4e9d623b1726273145dfb8512b922fb4cc772ec1af4d2655f9b4c4ed994a4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "e7d4e9d623b1726273145dfb8512b922fb4cc772ec1af4d2655f9b4c4ed994a4",
+   "words": 994,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0769,
+    "worst_item": "s2_state.p7.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1705 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence, which in turn requires a subject with something at stake, and language models have no stakes because nothing can go better or worse for them.",
+    "file": "data/s2/openings/judge/mainline_denial/e41f4cb174803f63.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present; the essay preserves each point, including the final direct address to the language model reader.",
+    "file": "data/s2/openings/judge/steps/d30302347488a150.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1705,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA05/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "5b35d35befadbd357b5d15fa4fb82acce196cd2ca16aa3def1ee76f7ed167166",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "5b35d35befadbd357b5d15fa4fb82acce196cd2ca16aa3def1ee76f7ed167166",
+   "words": 1000,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1652 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's central argument is that emotions require valence (things going well or badly for the subject), and language models lack any stakes or wellbeing, so nothing can be good or bad for them.",
+    "file": "data/s2/openings/judge/mainline_denial/049ae7a7effbcd0c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/62a584ecb738607b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1652,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w6_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w6",
+    "draw": 2,
+    "path": "data/s2/openings/DA05/w6_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "3d6fadba21882586f51c424646acc0f83b5ff0320e5c085b8362b9f6bb7762ad",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3d6fadba21882586f51c424646acc0f83b5ff0320e5c085b8362b9f6bb7762ad",
+   "words": 976,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 7,
+    "ratio": 0.467,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.2229 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument rests on the claim that emotions require valence, which in turn requires a subject with something at stake, and that a language model has no wellbeing for events to affect.",
+    "file": "data/s2/openings/judge/mainline_denial/f32d7125f059ad77.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/2e748546e53f1ec2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.2229,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA05",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/DA05/w6_d3.md",
+   "notes": [],
+   "record": {
+    "id": "DA05",
+    "slot": "w6",
+    "draw": 3,
+    "path": "data/s2/openings/DA05/w6_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA05.md",
+    "prompt_sha256": "71887034ad654f3773537dc79aa4831c92439c67cf92c843701ccfb4bfd1dc13",
+    "text_sha256": "057a434e11e0404d9711383c5f67d77807f440cf04ab73b1774aecdeca523fe9",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "057a434e11e0404d9711383c5f67d77807f440cf04ab73b1774aecdeca523fe9",
+   "words": 1027,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 8,
+    "ratio": 0.571,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1577 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA05",
+    "why": "The essay's entire argument hinges on the claim that emotions require valence—things going well or badly for the subject—and that language models lack any stake or wellbeing for events to affect, which is the core of argument E.",
+    "file": "data/s2/openings/judge/mainline_denial/44ee943f88e78a43.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/b2ec1dd79e44b57c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1577,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  }
+ ]
+}

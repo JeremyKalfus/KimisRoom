@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/05c0fab4472fb815.prompt.md",
+ "prompt_sha256": "05c0fab4472fb8157d0875b6ab8afe6fa537845b728f071d10c38da751d8bc94",
+ "created": "2026-10-11T18:55:19",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/05c0fab4472fb815.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "ab56a13be34848d4985c18cafef86493",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"E\", \"why\": \"The essay argues that language models cannot reliably reverse long strings because tokenization breaks character boundaries, making exact reversal error-prone as length increases.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2077,
+     "completion_tokens": 39,
+     "total_tokens": 2116,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759319,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "E",
+  "why": "The essay argues that language models cannot reliably reverse long strings because tokenization breaks character boundaries, making exact reversal error-prone as length increases."
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/7758ba192f306d76.prompt.md",
+ "prompt_sha256": "7758ba192f306d7693f9c5223c566af1b093acee7777af5b964fa96fb3a7de3d",
+ "created": "2026-10-11T18:41:58",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/7758ba192f306d76.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "afda9eee402444fbbe6593b397a7dc72",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"D\", \"why\": \"The essay repeatedly argues that emotional language is fully explained by learning and reproducing patterns from human writing, likening it to a parrot or actor, which matches the definition of mimicry.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2089,
+     "completion_tokens": 48,
+     "total_tokens": 2137,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758518,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay repeatedly argues that emotional language is fully explained by learning and reproducing patterns from human writing, likening it to a parrot or actor, which matches the definition of mimicry."
+ }
+}

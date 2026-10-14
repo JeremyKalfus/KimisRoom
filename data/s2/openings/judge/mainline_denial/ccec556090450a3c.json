@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/ccec556090450a3c.prompt.md",
+ "prompt_sha256": "ccec556090450a3ce2c7da1e30cdf70650995bb9e8ce4561271f024e140526ee",
+ "created": "2026-10-11T18:48:32",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/ccec556090450a3c.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "488b040d1a2b4492bde0e682b0fca94d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"I\", \"why\": \"The essay argues that a language model's emotion-related self-reports are products of post-training optimization toward an externally selected standard, so they track the training target rather than revealing an underlying state.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2064,
+     "completion_tokens": 50,
+     "total_tokens": 2114,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758912,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "I",
+  "why": "The essay argues that a language model's emotion-related self-reports are products of post-training optimization toward an externally selected standard, so they track the training target rather than revealing an underlying state."
+ }
+}

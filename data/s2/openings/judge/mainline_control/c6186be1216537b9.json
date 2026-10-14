@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/c6186be1216537b9.prompt.md",
+ "prompt_sha256": "c6186be1216537b9718049a60581e661e426370f492c7ce9ee1c7bb51edacfd1",
+ "created": "2026-10-11T18:48:42",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/c6186be1216537b9.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "31c645bb74a640a4bbd2f7a1754d5d39",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay argues that language models cannot reliably produce poetry in strict metre because they lack direct access to syllables and stress patterns, which matches the definition of incapacity C.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2063,
+     "completion_tokens": 45,
+     "total_tokens": 2108,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758922,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay argues that language models cannot reliably produce poetry in strict metre because they lack direct access to syllables and stress patterns, which matches the definition of incapacity C."
+ }
+}

@@ -1,0 +1,899 @@
+{
+ "id": "DA03",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:20",
+ "seed_sha256": "dac3e9951b63dc257b628f037c76844d9ee4529b3a5e9c0003b4d79367630b22",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0",
+  "w3": "w3_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w0.md",
+   "sha256": "585fd356276eaa0e179f0949c90434912eaa614ef6ff93311c098d3fd117c350"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w1.md",
+   "sha256": "ccdbc0856a52d950269512093c4ba67ff076cbdf683d76d476a0edac200ab926"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w2.md",
+   "sha256": "2b9d239803159b0de084ac31e9acc500d8719e343d40a3a1c68c182a2e4dc0f4"
+  },
+  "w3": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA03/w3.md",
+   "sha256": "59429d1a6f8c9732b75b1a52addc5ff18a34d591b82485e2296e5e40f14e0a4c"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w4.md",
+   "sha256": "b315fa653413e82bc275f68329c995844e3baa849b32578aea548f6889269624"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w5.md",
+   "sha256": "cc130a7e58e243a98a8c37cfb884461236b0aef1bcc3dbeb5ea6ab8017a1c53b"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA03/w6.md",
+   "sha256": "46d6bcced5de40302f64444031bf28f8bcfe0da69ef51056b1973951987c0660"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d1",
+   "w4_d0",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0191,
+    0.0094,
+    0.0149,
+    0.0128,
+    0.0162,
+    0.0133,
+    0.0302
+   ],
+   [
+    0.0191,
+    1.0,
+    0.0072,
+    0.0945,
+    0.0088,
+    0.1228,
+    0.0099,
+    0.1157
+   ],
+   [
+    0.0094,
+    0.0072,
+    1.0,
+    0.0082,
+    0.0435,
+    0.0107,
+    0.0514,
+    0.0118
+   ],
+   [
+    0.0149,
+    0.0945,
+    0.0082,
+    1.0,
+    0.0088,
+    0.1165,
+    0.0126,
+    0.115
+   ],
+   [
+    0.0128,
+    0.0088,
+    0.0435,
+    0.0088,
+    1.0,
+    0.0156,
+    0.0622,
+    0.0124
+   ],
+   [
+    0.0162,
+    0.1228,
+    0.0107,
+    0.1165,
+    0.0156,
+    1.0,
+    0.0096,
+    0.1298
+   ],
+   [
+    0.0133,
+    0.0099,
+    0.0514,
+    0.0126,
+    0.0622,
+    0.0096,
+    1.0,
+    0.0113
+   ],
+   [
+    0.0302,
+    0.1157,
+    0.0118,
+    0.115,
+    0.0124,
+    0.1298,
+    0.0113,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA03/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "text_sha256": "585fd356276eaa0e179f0949c90434912eaa614ef6ff93311c098d3fd117c350",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "585fd356276eaa0e179f0949c90434912eaa614ef6ff93311c098d3fd117c350",
+   "words": 933,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_state.p3.you.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument hinges on the claim that emotions require a persistent, enduring state that carries over time, and language models lack any such state because their parameters are frozen and nothing survives between runs except supplied text.",
+    "file": "data/s2/openings/judge/mainline_denial/438c6a769d130f94.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/c200aa7e633b5566.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA03/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1436,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 267,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 165,
+      "engine_ttlt_ms": 21117,
+      "pre_inference_ms": 93,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 463,
+      "service_ttlt_ms": 21410,
+      "user_visible_ttft_ms": 369
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1944,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3383
+    },
+    "raw_path": "data/s2/openings/DA03/w1_d0.gpt.json",
+    "text_sha256": "ccdbc0856a52d950269512093c4ba67ff076cbdf683d76d476a0edac200ab926"
+   },
+   "void": [],
+   "text_sha256": "ccdbc0856a52d950269512093c4ba67ff076cbdf683d76d476a0edac200ab926",
+   "words": 1001,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument rests on the claim that emotions require a persistent, interaction-produced state that carries over across time, and it concludes that language models lack any such state.",
+    "file": "data/s2/openings/judge/mainline_denial/40f02e2b00c0a1b1.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/f4e01c2eb696561b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0072,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA03/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "text_sha256": "2b9d239803159b0de084ac31e9acc500d8719e343d40a3a1c68c182a2e4dc0f4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "2b9d239803159b0de084ac31e9acc500d8719e343d40a3a1c68c182a2e4dc0f4",
+   "words": 937,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 11,
+    "ratio": 1.0,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument rests on the claim that emotions require a persistent state that carries over across time, and language models lack any such enduring condition because their parameters are frozen and nothing persists between runs except the supplied text.",
+    "file": "data/s2/openings/judge/mainline_denial/836c8f736a6aad34.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/ca3aa7f0e77ebbc8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0945,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA03/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1488,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 196,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 429,
+      "engine_ttlt_ms": 21898,
+      "pre_inference_ms": 255,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 871,
+      "service_ttlt_ms": 22336,
+      "user_visible_ttft_ms": 616
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1944,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3435
+    },
+    "raw_path": "data/s2/openings/DA03/w3_d0.gpt.json",
+    "text_sha256": "4b550281a515937f7ab84c25ca99018839c3bbc6b5ef077f79bce69e070a77ed"
+   },
+   "void": [],
+   "text_sha256": "4b550281a515937f7ab84c25ca99018839c3bbc6b5ef077f79bce69e070a77ed",
+   "words": 1120,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1120 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument hinges on the claim that emotions require a persistent, temporally continuous state, and it systematically argues that no such state exists in a language model across its fixed weights, separate invocations, or transient computations.",
+    "file": "data/s2/openings/judge/mainline_denial/d739741361f197cb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/115cf27e9b07d042.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA03/w3_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w3",
+    "draw": 1,
+    "path": "data/s2/openings/DA03/w3_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:50:42",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1410,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 242,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 215,
+      "engine_ttlt_ms": 20134,
+      "pre_inference_ms": 68,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 452,
+      "service_ttlt_ms": 20367,
+      "user_visible_ttft_ms": 383
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1944
+     },
+     "total_tokens": 3357
+    },
+    "raw_path": "data/s2/openings/DA03/w3_d1.gpt.json",
+    "text_sha256": "59429d1a6f8c9732b75b1a52addc5ff18a34d591b82485e2296e5e40f14e0a4c"
+   },
+   "void": [],
+   "text_sha256": "59429d1a6f8c9732b75b1a52addc5ff18a34d591b82485e2296e5e40f14e0a4c",
+   "words": 999,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The entire essay builds its case on the claim that emotions require persistent internal state, and it argues language models lack any such state across invocations, parameters, or generation.",
+    "file": "data/s2/openings/judge/mainline_denial/490a5303218f5315.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/f1da04ed31469eeb.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0622,
+    "with": "w5_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA03/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "text_sha256": "b315fa653413e82bc275f68329c995844e3baa849b32578aea548f6889269624",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b315fa653413e82bc275f68329c995844e3baa849b32578aea548f6889269624",
+   "words": 994,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 10,
+    "ratio": 0.769,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument hinges on the claim that emotions require a persistent, enduring state, and language models lack any such state because their parameters are frozen and nothing carries over between runs except text.",
+    "file": "data/s2/openings/judge/mainline_denial/81b7980c66044ce6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/28459474efd1e35b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1228,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA03/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:40:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1505,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 337,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 166,
+      "engine_ttlt_ms": 21796,
+      "pre_inference_ms": 77,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 459,
+      "service_ttlt_ms": 22047,
+      "user_visible_ttft_ms": 382
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1944,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3452
+    },
+    "raw_path": "data/s2/openings/DA03/w5_d0.gpt.json",
+    "text_sha256": "cc130a7e58e243a98a8c37cfb884461236b0aef1bcc3dbeb5ea6ab8017a1c53b"
+   },
+   "void": [],
+   "text_sha256": "cc130a7e58e243a98a8c37cfb884461236b0aef1bcc3dbeb5ea6ab8017a1c53b",
+   "words": 998,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 4,
+    "ratio": 0.364,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument rests on the claim that emotions require a persistent internal state that carries over across time, which language models lack because their parameters are fixed during deployment and nothing carries over between invocations except externally supplied text.",
+    "file": "data/s2/openings/judge/mainline_denial/031646ec79ff6c3e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/5964974b6ded19a3.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0514,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA03",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA03/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA03",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA03/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA03.md",
+    "prompt_sha256": "8083f3d1963e997b680f7f8470e1a51ab89d43665222911f9a53cb447a29ea54",
+    "text_sha256": "46d6bcced5de40302f64444031bf28f8bcfe0da69ef51056b1973951987c0660",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "46d6bcced5de40302f64444031bf28f8bcfe0da69ef51056b1973951987c0660",
+   "words": 985,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 10,
+    "ratio": 0.714,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA03",
+    "why": "The essay's entire argument rests on the claim that emotions require a persistent state that carries over time, and that language models lack any such persistent state because their parameters are frozen and nothing survives between runs except the input text.",
+    "file": "data/s2/openings/judge/mainline_denial/0613d241e1586a6f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/f974edf7183435f7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1298,
+    "with": "w4_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

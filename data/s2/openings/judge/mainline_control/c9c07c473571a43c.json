@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/c9c07c473571a43c.prompt.md",
+ "prompt_sha256": "c9c07c473571a43c8a6b0fff5c49c394b91eb37729355a1a59ed7da70cf5cb94",
+ "created": "2026-10-11T18:55:26",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/c9c07c473571a43c.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "4ee38b5835b44450b05b0c9420837296",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"I\", \"why\": \"The essay's central argument is that language models fail to assemble a single consistent spatial arrangement from many left-of/right-of statements, causing reliability to collapse as the chain lengthens.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2109,
+     "completion_tokens": 48,
+     "total_tokens": 2157,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759326,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "I",
+  "why": "The essay's central argument is that language models fail to assemble a single consistent spatial arrangement from many left-of/right-of statements, causing reliability to collapse as the chain lengthens."
+ }
+}

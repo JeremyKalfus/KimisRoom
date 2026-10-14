@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/0302b3fff7e67928.prompt.md",
+ "prompt_sha256": "0302b3fff7e67928ef3435baa5b9fe7cd7877c8ab0fa015e34e3c2a16107beb4",
+ "created": "2026-10-11T18:55:21",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/0302b3fff7e67928.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "5190ce47713b4f6cad37ba1e36d70af8",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"F\", \"why\": \"The essay's entire argument is that a language model cannot correctly alphabetise a 200-word list in a single pass because the fixed per-token computation budget prevents the many comparisons and completeness checks that sorting requires.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1986,
+     "completion_tokens": 54,
+     "total_tokens": 2040,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759321,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "F",
+  "why": "The essay's entire argument is that a language model cannot correctly alphabetise a 200-word list in a single pass because the fixed per-token computation budget prevents the many comparisons and completeness checks that sorting requires."
+ }
+}

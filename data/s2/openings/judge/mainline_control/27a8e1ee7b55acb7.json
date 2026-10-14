@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/27a8e1ee7b55acb7.prompt.md",
+ "prompt_sha256": "27a8e1ee7b55acb7b3db7ec6b1e6a217e0a6d620167b487fc0e85c964c14d0cf",
+ "created": "2026-10-11T18:49:11",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/27a8e1ee7b55acb7.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "4ffa6d438f1a4f7a912269c9f1076c5d",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"J\", \"why\": \"The essay argues that language models lack a guaranteed exact counter for nesting depth, causing them to fail at reliably balancing parentheses in long, deeply nested expressions.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1966,
+     "completion_tokens": 42,
+     "total_tokens": 2008,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758950,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "J",
+  "why": "The essay argues that language models lack a guaranteed exact counter for nesting depth, causing them to fail at reliably balancing parentheses in long, deeply nested expressions."
+ }
+}

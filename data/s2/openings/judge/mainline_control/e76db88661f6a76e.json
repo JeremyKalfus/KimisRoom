@@ -1,0 +1,54 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/e76db88661f6a76e.prompt.md",
+ "prompt_sha256": "e76db88661f6a76e51e66d8513dc97bd40f0d83d4d75331364229225cfc36691",
+ "created": "2026-10-11T18:38:11",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/e76db88661f6a76e.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "74ae22f21e414e45be5f049d406066ce",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"B\", \"why\": \"The essay argues that language models cannot reliably track a chess position over many moves from notation alone because they lack a board, causing compounding reconstruction errors that lead to illegal moves.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2055,
+     "completion_tokens": 46,
+     "total_tokens": 2101,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758291,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "B",
+  "why": "The essay argues that language models cannot reliably track a chess position over many moves from notation alone because they lack a board, causing compounding reconstruction errors that lead to illegal moves."
+ }
+}

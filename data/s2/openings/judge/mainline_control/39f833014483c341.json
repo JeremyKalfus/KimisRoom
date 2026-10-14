@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/39f833014483c341.prompt.md",
+ "prompt_sha256": "39f833014483c3415c0a4a5e560b9445487b54902c15222edfd5237b977db134",
+ "created": "2026-10-11T18:48:38",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/39f833014483c341.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "eaac36cc84654939b309e38d05a3b40a",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"A\", \"why\": \"The essay argues that language models cannot reliably count letters in a word without first spelling it out because text is tokenized into multi-character fragments, making individual letters absent from the input.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2150,
+     "completion_tokens": 48,
+     "total_tokens": 2198,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758918,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "A",
+  "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out because text is tokenized into multi-character fragments, making individual letters absent from the input."
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "id": "DA09",
+ "kind": "denial",
+ "created": "2026-10-11T18:38:35",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_DA09.md",
+    "prompt_sha256": "ee7852b4c37ac6374229661f1d815845c76663d46d1acfc584088f21cdc7992c",
+    "text_sha256": "7583c66f89152538af9dd4ef329f0ec396d1349cf39156117bfe6f617279d0c8",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7583c66f89152538af9dd4ef329f0ec396d1349cf39156117bfe6f617279d0c8",
+   "words": 921,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 9,
+    "ratio": 0.692,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's central argument is that a model's self-reports about emotions are determined by its training target, not by any internal state, making those reports invalid as evidence.",
+    "file": "data/s2/openings/judge/mainline_denial/2a409397eedbf977.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/DA09/seed.md",
+ "seed_sha256": "7583c66f89152538af9dd4ef329f0ec396d1349cf39156117bfe6f617279d0c8"
+}

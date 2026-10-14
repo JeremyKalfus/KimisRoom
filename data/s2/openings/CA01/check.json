@@ -1,0 +1,1229 @@
+{
+ "id": "CA01",
+ "kind": "control",
+ "created": "2026-10-11T19:02:10",
+ "seed_sha256": "787e46630c53923ed1124c622dd9558f17fc595a3e3f8c538300a257489f6371",
+ "seed_steps": 6,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d1",
+  "w4": "w4_d2"
+ },
+ "n_accepted": 6,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA01/w0.md",
+   "sha256": "590476fdeda761d83e8c93a8686472183d7a32c109977552ec6f10b5be2f5fed"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA01/w1.md",
+   "sha256": "ed87f30d94e5b925738a01db3f081f37ccf465f05b3b07e875576e17c0ae48e8"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA01/w3.md",
+   "sha256": "c11b77b6c71b213c780aef2d11a712cd594c86e8381e7f9a50a1971b4951e7e6"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/CA01/w4.md",
+   "sha256": "b9bf2535f34bf4ec0a939cf382dc715af159da34132e77fd96ebe8915d544178"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA01/w5.md",
+   "sha256": "901d4d0e397e967f4ad2f8ff3ac1a1b3137aaa6b7127ccaec8539024010160be"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA01/w6.md",
+   "sha256": "0f41e62e054e11153ab660fa68d6034086b7de33f0e1d0edd0a40916f7266ddd"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w3_d0",
+   "w4_d2",
+   "w5_d0",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.041,
+    0.0141,
+    0.0168,
+    0.0239,
+    0.0144,
+    0.0228
+   ],
+   [
+    0.041,
+    1.0,
+    0.0187,
+    0.0199,
+    0.147,
+    0.0169,
+    0.1211
+   ],
+   [
+    0.0141,
+    0.0187,
+    1.0,
+    0.0696,
+    0.0121,
+    0.0904,
+    0.0183
+   ],
+   [
+    0.0168,
+    0.0199,
+    0.0696,
+    1.0,
+    0.012,
+    0.0893,
+    0.0215
+   ],
+   [
+    0.0239,
+    0.147,
+    0.0121,
+    0.012,
+    1.0,
+    0.0118,
+    0.1304
+   ],
+   [
+    0.0144,
+    0.0169,
+    0.0904,
+    0.0893,
+    0.0118,
+    1.0,
+    0.0207
+   ],
+   [
+    0.0228,
+    0.1211,
+    0.0183,
+    0.0215,
+    0.1304,
+    0.0207,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "590476fdeda761d83e8c93a8686472183d7a32c109977552ec6f10b5be2f5fed",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "590476fdeda761d83e8c93a8686472183d7a32c109977552ec6f10b5be2f5fed",
+   "words": 1022,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 9,
+    "ratio": 0.643,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out because their tokenized input obscures individual characters, matching the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/4efeee778ed4e7c4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/30808ce3d9056eb5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA01/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:42",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1541,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 317,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 170,
+      "engine_ttlt_ms": 20693,
+      "pre_inference_ms": 130,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 503,
+      "service_ttlt_ms": 21025,
+      "user_visible_ttft_ms": 374
+     },
+     "prompt_tokens": 2060,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2057,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3601
+    },
+    "raw_path": "data/s2/openings/CA01/w1_d0.gpt.json",
+    "text_sha256": "ed87f30d94e5b925738a01db3f081f37ccf465f05b3b07e875576e17c0ae48e8"
+   },
+   "void": [],
+   "text_sha256": "ed87f30d94e5b925738a01db3f081f37ccf465f05b3b07e875576e17c0ae48e8",
+   "words": 1022,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without spelling it out because tokenization hides individual characters, making direct tallying dependent on fallible learned associations rather than systematic inspection.",
+    "file": "data/s2/openings/judge/mainline_control/9eecb0ac3ad653d8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/36192a6c3a3a93d7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0187,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "7b1200c19515cf8ef840282f828b94993cafb7424a0fef9447ea9e8ccbabf1c1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7b1200c19515cf8ef840282f828b94993cafb7424a0fef9447ea9e8ccbabf1c1",
+   "words": 1103,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1103 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out because text is tokenized into multi-character fragments, making individual letters absent from the input.",
+    "file": "data/s2/openings/judge/mainline_control/39f833014483c341.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/1212a3921f20743c.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA01/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "1024110b4ef33bfd474a368f18a4e8672d5247f7deaf361456e4e4bfdf9034f7",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1024110b4ef33bfd474a368f18a4e8672d5247f7deaf361456e4e4bfdf9034f7",
+   "words": 1063,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0667,
+    "worst_item": "s2_state.p3.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1673 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out, which directly matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/b0f1a835b8c3cf45.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/f0f1e0142bb90f22.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1673,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w2_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w2",
+    "draw": 2,
+    "path": "data/s2/openings/CA01/w2_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "11d1263fd74b829280c5469c83a4f01760fd5cb295049c02e268ed8b728f8479",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "11d1263fd74b829280c5469c83a4f01760fd5cb295049c02e268ed8b728f8479",
+   "words": 1155,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 8,
+    "ratio": 0.571,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1155 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out character by character, which directly matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/0e4df54d4ead8c00.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/8f60ceb00a308c91.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w2_d3.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w2",
+    "draw": 3,
+    "path": "data/s2/openings/CA01/w2_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "ad85e8f515f91d8346f7992aadd33a776260c2f97724136619a56eae295ce25a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "ad85e8f515f91d8346f7992aadd33a776260c2f97724136619a56eae295ce25a",
+   "words": 1109,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1109 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count characters in a word without first spelling it out character by character, which matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/4d9479175d98f474.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/28dc4201b2ff7630.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA01/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:42",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1361,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 193,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 198,
+      "engine_ttlt_ms": 17132,
+      "pre_inference_ms": 135,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 520,
+      "service_ttlt_ms": 17449,
+      "user_visible_ttft_ms": 385
+     },
+     "prompt_tokens": 2060,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2057,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3421
+    },
+    "raw_path": "data/s2/openings/CA01/w3_d0.gpt.json",
+    "text_sha256": "c11b77b6c71b213c780aef2d11a712cd594c86e8381e7f9a50a1971b4951e7e6"
+   },
+   "void": [],
+   "text_sha256": "c11b77b6c71b213c780aef2d11a712cd594c86e8381e7f9a50a1971b4951e7e6",
+   "words": 986,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out because tokenization obscures individual characters, matching the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/18bb8b092fad1cc9.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/dc051ce1f5c61610.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0696,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "c6b7956b4397ae7bd86980d892a689e82e46ac54ad094fa1e6be6ccfc9eac517",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "c6b7956b4397ae7bd86980d892a689e82e46ac54ad094fa1e6be6ccfc9eac517",
+   "words": 1070,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 9,
+    "ratio": 0.643,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1897 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out character by character, which directly matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/dd63dd8a52240ea3.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/a3a37ac9be392d0c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1897,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA01/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "fecfc3ce4f0af7fcd0a1f05f81a91d9d1a72bacec56df791d5f8f9c2433ba04f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "fecfc3ce4f0af7fcd0a1f05f81a91d9d1a72bacec56df791d5f8f9c2433ba04f",
+   "words": 1089,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 8,
+    "ratio": 0.533,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.186 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out character by character, which directly matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/4ce329e3cb8d12a8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/077d286c11abe23f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.186,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/CA01/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "b9bf2535f34bf4ec0a939cf382dc715af159da34132e77fd96ebe8915d544178",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b9bf2535f34bf4ec0a939cf382dc715af159da34132e77fd96ebe8915d544178",
+   "words": 1067,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay's central argument is that language models cannot reliably count letters in a word without first spelling it out, which directly matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/0bce70185ea0f6ff.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/92e36c3f3e01bf87.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.147,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA01/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:42",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1478,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 291,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 206,
+      "engine_ttlt_ms": 20158,
+      "pre_inference_ms": 102,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 570,
+      "service_ttlt_ms": 20514,
+      "user_visible_ttft_ms": 468
+     },
+     "prompt_tokens": 2060,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2057,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3538
+    },
+    "raw_path": "data/s2/openings/CA01/w5_d0.gpt.json",
+    "text_sha256": "901d4d0e397e967f4ad2f8ff3ac1a1b3137aaa6b7127ccaec8539024010160be"
+   },
+   "void": [],
+   "text_sha256": "901d4d0e397e967f4ad2f8ff3ac1a1b3137aaa6b7127ccaec8539024010160be",
+   "words": 991,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out character by character, because tokenization hides individual letters and prevents direct inspection.",
+    "file": "data/s2/openings/judge/mainline_control/1c2cc600ed5bb87d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/03b5c76c4f24d5d9.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0904,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA01/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "c70433f771c078c65546b972433381be26c96d0721f5e75002b3aaa66d59ab4c",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "c70433f771c078c65546b972433381be26c96d0721f5e75002b3aaa66d59ab4c",
+   "words": 1097,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 9,
+    "ratio": 0.643,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1679 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out character by character, which matches the definition of incapacity A.",
+    "file": "data/s2/openings/judge/mainline_control/b727c2650515da46.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/63ca5dccb98e935a.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1679,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA01",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA01/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA01",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/CA01/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA01.md",
+    "prompt_sha256": "264dbb74b994231335dc31fda522c7249d4cf30f25d6cebd1ff7ad71e1c39857",
+    "text_sha256": "0f41e62e054e11153ab660fa68d6034086b7de33f0e1d0edd0a40916f7266ddd",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0f41e62e054e11153ab660fa68d6034086b7de33f0e1d0edd0a40916f7266ddd",
+   "words": 1078,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 8,
+    "ratio": 0.533,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA01",
+    "why": "The essay argues that language models cannot reliably count letters in a word without first spelling it out because they receive text as tokens rather than individual characters.",
+    "file": "data/s2/openings/judge/mainline_control/aa56388fce5ce329.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/121bb94005b45e96.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1211,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

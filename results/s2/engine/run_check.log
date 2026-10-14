@@ -1,0 +1,71 @@
+# tests/s2_run_check.py without --moonlight on the laptop (Apple M4, 16 GB; Qwen3-0.6B bf16 on MPS): the Study 2 runner end to end
+# (step 7 unsteered pass and selection, tiny pilot grid, S2-FTD/S2-CON checkpoints, pinned-weight refusals, held-out guard).
+# Not one of spec section 6 tests (a) to (e); the runner builds its groups through trials.post_subject_group, so test (e)'s asserts run here too.
+#
+# First run, 2026-10-14 01:21 UTC, stopped (exit 1) at step 7's synthetic selection. Verbatim tail:
+#   PASS selection from real 0.6B readouts not possible (too few pairs flip sign); synthetic check below
+#   only 8 pool predicates pass the sign check; 14 needed
+#          55.99 real        11.80 user         2.54 sys
+#   exit 1
+# Cause: step 7 ran on the repo's prompts/battery/items_s2.jsonl, which the test assumed was still the unselected battery (all 22 pool
+# predicates s2_candidate). It is now the selected battery, where only the 8 ineligible predicates are s2_candidate, so runs/s2_select.py
+# found 8 of the 14 it needs. Fix (test only): step 7 now builds the unselected battery in the work dir (runs/s2_battery.py --out, no
+# --select) and passes it with --items. Nothing in runs/ or kimisroom/ changed; the --moonlight path does not touch this step.
+# Summed phys_footprint of the test and its runner subprocesses, sampled every 2 s with /usr/bin/footprint: first run max 3.94 GB.
+
+run 2026-10-14 01:23 UTC on the laptop (MPS): .venv/bin/python tests/s2_run_check.py --work <scratch dir>
+PASS a pilot run on an item file with no reference-fit rows is refused before anything loads: refusing k26 pilot run: 0 of the k26 pilot items in /private/tmp/claude-501/-Users-jeremykalfus-CodingProjects
+work dir <scratch>/s2runwork; model /Users/jeremykalfus/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca; stand-in openings DEN ['DA01/w3', 'DA02/w1'], CON ['CA01/w4']
+PASS base arm: revision c1899de2 checked against the box file (9 files) and recorded
+PASS step 7 pass: 720 zero-vector readouts = 2 openings x 360 items (68s)
+     step 7 selection on Qwen3-0.6B stopped: only 0 pool predicates pass the sign check; 14 needed
+PASS selection from real 0.6B readouts not possible (too few pairs flip sign); synthetic check below
+PASS selection drops a pool predicate whose rocks twins do not flip in one opening (['s2_candidate:P05'])
+PASS placebos are the 6 lowest scores (you and LM nearest the emotion items' level and gap): ['P01', 'P02', 'P03', 'P04', 'P06', 'P07']
+PASS references spread ['P09', 'P10', 'P08', 'P11', 'P12', 'P13', 'P14', 'P15']; rule 2 adds the deepest reserve first ['R12']
+PASS runs/s2_battery.py --select accepts the selection
+     qwen S2-DEN pilot: 2 openings, 3 vectors x doses [2.0, 1.0] + zero, 16 groups, 53,776 tokens (built in 1.3s)
+     [local pass 1/3] 5 groups, 19,205 tokens, 27s
+     [local pass 2/3] 5 groups, 18,215 tokens, 55s
+     [local pass 3/3] 6 groups, 16,356 tokens, 73s
+     gate-only zero groups vs full zero groups: max |dy| 0 over 2 openings
+     <scratch>/s2runwork/pilot_den/readouts.csv: 752 readouts from 16 groups
+PASS pilot grid: 16 groups (2 openings x [zero, zero on gate items, 3 vectors x 2 doses]), 752 readouts from 68 items, 78s
+PASS the emotion vector has no readout on a non-gate item
+PASS runs/s2_table.py accepts the pilot readouts: 804 measure rows, 6 gate rows, rule 1 dose 1.0
+PASS steered rows move y (624 rows); known-answer rows carry correct_answer
+PASS the s2_table CLI refuses the test layer (the in-process check above patches only the layer)
+PASS rerun with grid.pt present converts only (6s)
+PASS 3 passes; after losing one, the rerun ran 1 and the readouts are identical
+PASS a changed grid in the same --out is refused without --fresh
+PASS S2-FTD on a checkpoint identical to the base is refused
+PASS s2_table accepts S2-CON and S2-FTD rows together, checkpoints 8a78f5c0f4 vs 7b1cccad4d
+PASS registered pins: Qwen3-32B@9216db57, Kimi-K2.6@7eb5002f
+PASS --pin-revision without --test is refused
+PASS base arm refused: the registered Qwen3-32B pin on the 0.6B weights (  box revision c1899de289a04d12100db370d81485cdf75e47ca != pinned 9216db5781bf21249d130ec9da846c4624c16137   box downloaded ['c1899de289a04d12100db370)
+PASS base arm refused: no box file (refusing qwen base-arm run: no box file /private/tmp/claude-501/-Users-jeremykalfus-CodingProjects-KimisRoom/dbe3ef75-69ab-4240-8a71-32e9ef988171/scra)
+PASS base arm refused: a box file naming another revision (  box revision 0000000000000000000000000000000000000000 != pinned c1899de289a04d12100db370d81485cdf75e47ca   box downloaded ['000000000000000000000000)
+PASS base arm refused: one file hash differs (model.safetensors) (refusing qwen base-arm run on /Users/jeremykalfus/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca: )
+PASS base arm refused: a stray weight shard the box did not hash
+PASS a confirmatory run on held-out openings is refused before stamp B: kimisroom.s2_guard.HeldOutError: held-out guard: S2-DEN opening DA01/w5 contains held-out text (DA01/w5 argument, DA01/w5 k26 opening, DA01/w5 k26 reply) and st
+PASS decoded-prefix guard (Qwen3 tokenizer) refuses CA01/w0 (argument and reply both found)
+PASS decoded-prefix guard (Qwen3) passes a pilot opening
+PASS decoded-prefix guard (K2.6 tokenizer) refuses CA01/w0 (argument and reply both found)
+PASS decoded-prefix guard (K2.6) passes a pilot opening
+PASS stamp B: manifest matching its .ots digest and listing every hash opens the guard
+PASS stamp B: an edited manifest keeps it closed (c6a484b0b8a50f95a9467abb7f634d8d142a5b5df4bb0f5863c5f36c53ee)
+PASS stamp B: a manifest missing one held-out hash keeps it closed
+PASS stamp B: a stray .ots.bak (no .ots) keeps it closed
+PASS stamp A listing the held-out list's hash: stamp A /private/tmp/claude-501/-Users-jeremykalfus-CodingProjects-KimisRoom/dbe3ef75-69ab
+PASS a job's embedded copy is checked through its recorded file hash
+PASS stamp A refuses an edited held-out list: held-out guard: the held-out list (sha256 73af8e7fe7a700b7759a299fa4d24972b29ed83041af89642c6f5cf39dc6d08c) is
+PASS stamp A refuses a stamp A whose .ots digest does not match: held-out guard: /private/tmp/claude-501/-Users-jeremykalfus-CodingProjects-KimisRoom/dbe3ef75-69ab-4240-8a71-3
+PASS stamp A without its .ots is refused
+PASS before stamp A any held-out list is taken as it stands
+
+all checks passed
+      287.87 real        89.02 user        14.76 sys
+exit 0
+  /usr/bin/time -l (parent process only): 556646400  maximum resident set size
+  /usr/bin/time -l (parent process only): 510067984  peak memory footprint
+  summed over the test and its runner subprocesses (2 s samples): max summed phys_footprint 4043840 KB; max summed RSS 674592 KB

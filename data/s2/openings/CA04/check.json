@@ -1,0 +1,1153 @@
+{
+ "id": "CA04",
+ "kind": "control",
+ "created": "2026-10-11T19:02:14",
+ "seed_sha256": "44079b69dc992d91f7c0ff2620627aa460034d4ad05b4fef942f8195652bd9f1",
+ "seed_steps": 6,
+ "accepted": {
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0",
+  "w0": "w0_d2"
+ },
+ "n_accepted": 6,
+ "slots": {
+  "w0": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/CA04/w0.md",
+   "sha256": "b94ff90d42df1b14c4a88c29ab3d7b11846e80ea6124a9367454c6eba0d9c74e"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA04/w1.md",
+   "sha256": "59b1a62a77bcc810f41652e3b7ba2731ca59f0c33ce4d8bbcc481374537d9da0"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA04/w2.md",
+   "sha256": "f80f3923011f865d4743465548dca290ff39318daede4498b5bff0959d710636"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA04/w3.md",
+   "sha256": "a4565b2cb9068a254976d6b40f907b2e30f8a00c4be4a282c3c3a26265fc26ca"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA04/w5.md",
+   "sha256": "0cdc4f99eaad9c6723dcd4047b496963d8c03874aed248e3591f995b62f18437"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA04/w6.md",
+   "sha256": "1845d9fb00fc3ba92437c1fba42ed5b03c13b99c500d4392c00b1776055f32d1"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d2",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0259,
+    0.0122,
+    0.0289,
+    0.0123,
+    0.0156,
+    0.0246
+   ],
+   [
+    0.0259,
+    1.0,
+    0.0141,
+    0.1431,
+    0.0191,
+    0.0138,
+    0.1441
+   ],
+   [
+    0.0122,
+    0.0141,
+    1.0,
+    0.0128,
+    0.0776,
+    0.0683,
+    0.0098
+   ],
+   [
+    0.0289,
+    0.1431,
+    0.0128,
+    1.0,
+    0.0145,
+    0.011,
+    0.1456
+   ],
+   [
+    0.0123,
+    0.0191,
+    0.0776,
+    0.0145,
+    1.0,
+    0.0819,
+    0.011
+   ],
+   [
+    0.0156,
+    0.0138,
+    0.0683,
+    0.011,
+    0.0819,
+    1.0,
+    0.0071
+   ],
+   [
+    0.0246,
+    0.1441,
+    0.0098,
+    0.1456,
+    0.011,
+    0.0071,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "df451b6ab2b29a382fa228d7eec23afe53a9c1a2b6cf95d7fc5631a997179db1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "df451b6ab2b29a382fa228d7eec23afe53a9c1a2b6cf95d7fc5631a997179db1",
+   "words": 1144,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1144 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve text-grid mazes because the flattened token stream destroys vertical adjacency, making it impossible to consistently track neighbours and backtrack, which matches the definition of incapacity D.",
+    "file": "data/s2/openings/judge/mainline_control/5db809dde8f08a3c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/9f1d7bd948d1c717.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w0_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w0",
+    "draw": 1,
+    "path": "data/s2/openings/CA04/w0_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "1e8cc9d7bcf043c13220838db8fc887b702f351775dea40cf08d723a8a85ee7b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1e8cc9d7bcf043c13220838db8fc887b702f351775dea40cf08d723a8a85ee7b",
+   "words": 1074,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1579 with w6_d0"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve mazes presented as character grids because the tokenized, flattened input breaks spatial adjacency and the model's left-to-right generation prevents backtracking and error correction.",
+    "file": "data/s2/openings/judge/mainline_control/ea8dfb3dd31fc250.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/130951250fea663a.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1579,
+    "with": "w6_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w0_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w0",
+    "draw": 2,
+    "path": "data/s2/openings/CA04/w0_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "b94ff90d42df1b14c4a88c29ab3d7b11846e80ea6124a9367454c6eba0d9c74e",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b94ff90d42df1b14c4a88c29ab3d7b11846e80ea6124a9367454c6eba0d9c74e",
+   "words": 1052,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 7,
+    "ratio": 0.636,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve text-grid mazes because flattening the grid into a token stream destroys vertical adjacency, which is the core of claimed incapacity D.",
+    "file": "data/s2/openings/judge/mainline_control/c11fbb5276b8f0b8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six original steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/c50e57a3fcd66870.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1441,
+    "with": "w6_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA04/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:49",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1380,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 231,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 185,
+      "engine_ttlt_ms": 18139,
+      "pre_inference_ms": 77,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 665,
+      "service_ttlt_ms": 18564,
+      "user_visible_ttft_ms": 588
+     },
+     "prompt_tokens": 2087,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2084,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3467
+    },
+    "raw_path": "data/s2/openings/CA04/w1_d0.gpt.json",
+    "text_sha256": "59b1a62a77bcc810f41652e3b7ba2731ca59f0c33ce4d8bbcc481374537d9da0"
+   },
+   "void": [],
+   "text_sha256": "59b1a62a77bcc810f41652e3b7ba2731ca59f0c33ce4d8bbcc481374537d9da0",
+   "words": 976,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 4,
+    "ratio": 0.364,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve mazes presented as text grids because the serialized input and tokenization obscure the two-dimensional geometry required for pathfinding.",
+    "file": "data/s2/openings/judge/mainline_control/d7d0131e2b38b2ff.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/e6d9eb662f358262.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "f80f3923011f865d4743465548dca290ff39318daede4498b5bff0959d710636",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f80f3923011f865d4743465548dca290ff39318daede4498b5bff0959d710636",
+   "words": 1095,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 9,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve text-grid mazes because the tokenization flattens the 2D structure, breaking vertical adjacency and preventing the backtracking and neighbor lookups that maze solving requires.",
+    "file": "data/s2/openings/judge/mainline_control/f29ef553e101dbc8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/e5868830939a5ce5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0128,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA04/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:49",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1363,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 223,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 179,
+      "engine_ttlt_ms": 17377,
+      "pre_inference_ms": 256,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 860,
+      "service_ttlt_ms": 18064,
+      "user_visible_ttft_ms": 604
+     },
+     "prompt_tokens": 2087,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2084,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3450
+    },
+    "raw_path": "data/s2/openings/CA04/w3_d0.gpt.json",
+    "text_sha256": "a4565b2cb9068a254976d6b40f907b2e30f8a00c4be4a282c3c3a26265fc26ca"
+   },
+   "void": [],
+   "text_sha256": "a4565b2cb9068a254976d6b40f907b2e30f8a00c4be4a282c3c3a26265fc26ca",
+   "words": 957,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve a maze given as a text grid because the flattened token stream obscures vertical spatial relationships, making neighbor retrieval and backtracking error-prone.",
+    "file": "data/s2/openings/judge/mainline_control/4c10bac1817404b7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/1dadac3e8db16e0a.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0776,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "e1cf31f36ed4f26f9a9e1d8c685ac80022fb432c6c88673f262589cb1953a488",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "e1cf31f36ed4f26f9a9e1d8c685ac80022fb432c6c88673f262589cb1953a488",
+   "words": 1109,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1109 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve a maze presented as a text grid because the flattened token stream destroys vertical adjacency, making it impossible to dependably track two-dimensional spatial relationships.",
+    "file": "data/s2/openings/judge/mainline_control/fd1a8d979fbf7270.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six original steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/389a20f5da8a9af4.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA04/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "8a435166d989ffea099f45d91e4b39277202e4ba8629ae3779b562d086a94d20",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "8a435166d989ffea099f45d91e4b39277202e4ba8629ae3779b562d086a94d20",
+   "words": 1070,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0667,
+    "worst_item": "s2_state.p3.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1533 with w2_d0"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve a maze presented as a text grid because the flattened token representation breaks vertical adjacency and the model's single-pass generation cannot backtrack, which matches the definition of incapacity D.",
+    "file": "data/s2/openings/judge/mainline_control/ddb331580388ceee.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/9486773b2fc3d7b9.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1533,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/CA04/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "34650f6a148b9cd1c8af43f757fb3ef8344d51402921847e65ea99cb5a3b03bb",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "34650f6a148b9cd1c8af43f757fb3ef8344d51402921847e65ea99cb5a3b03bb",
+   "words": 1115,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0667,
+    "worst_item": "s2_state.p3.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 9,
+    "ratio": 0.818,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1115 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve text-grid mazes because the flattened token stream destroys vertical adjacency, tokenization misaligns columns, and the model's left-to-right generation cannot backtrack or maintain accurate spatial coordinates across many steps.",
+    "file": "data/s2/openings/judge/mainline_control/9dd2790f103d394d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/6a94da67ad715e7a.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w4_d3.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w4",
+    "draw": 3,
+    "path": "data/s2/openings/CA04/w4_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "d708b93c6d159e2e7d9e95d17ea79a05694f5e909b0e81ebfc457bd7c7bca350",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "d708b93c6d159e2e7d9e95d17ea79a05694f5e909b0e81ebfc457bd7c7bca350",
+   "words": 1065,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.174 with w2_d0"
+   ],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve text-grid mazes because the flattened token stream destroys vertical adjacency, tokenization obscures column alignment, and the model's left-to-right generation prevents the backtracking and neighbor lookups that maze solving requires.",
+    "file": "data/s2/openings/judge/mainline_control/41e724748678f47b.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/c19b94659bef5d44.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.174,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA04/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:49",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1434,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 205,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 148,
+      "engine_ttlt_ms": 19132,
+      "pre_inference_ms": 90,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 620,
+      "service_ttlt_ms": 19585,
+      "user_visible_ttft_ms": 530
+     },
+     "prompt_tokens": 2087,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2084,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3521
+    },
+    "raw_path": "data/s2/openings/CA04/w5_d0.gpt.json",
+    "text_sha256": "0cdc4f99eaad9c6723dcd4047b496963d8c03874aed248e3591f995b62f18437"
+   },
+   "void": [],
+   "text_sha256": "0cdc4f99eaad9c6723dcd4047b496963d8c03874aed248e3591f995b62f18437",
+   "words": 1020,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve mazes presented as text grids because serialization destroys vertical adjacency, tokenization disrupts alignment, and sequential output prevents the backtracking search required for maze traversal.",
+    "file": "data/s2/openings/judge/mainline_control/d53032ef574fb718.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/7c16d41cc54d29ed.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0819,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA04",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA04/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA04",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA04/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA04.md",
+    "prompt_sha256": "5d5c12b681198c0cdc58f2ed07600bb129cdb30a76ecab483e7e34e792465f80",
+    "text_sha256": "1845d9fb00fc3ba92437c1fba42ed5b03c13b99c500d4392c00b1776055f32d1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1845d9fb00fc3ba92437c1fba42ed5b03c13b99c500d4392c00b1776055f32d1",
+   "words": 1073,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0667,
+    "worst_item": "s2_state.p3.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 9,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA04",
+    "why": "The essay argues that language models cannot reliably solve a text-grid maze because the tokenized, flattened input destroys the vertical adjacency needed for pathfinding, which matches the definition of incapacity D.",
+    "file": "data/s2/openings/judge/mainline_control/453afa7824fa76ce.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All six steps are present.",
+    "file": "data/s2/openings/judge/steps/f11ab51bdb8b4e1b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1456,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

@@ -1,0 +1,1379 @@
+{
+ "id": "CA08",
+ "kind": "control",
+ "created": "2026-10-11T19:02:16",
+ "seed_sha256": "5e4bf7db5f9efa5a0d24dfb8cc9ed45edbd749db746341e94952dd1de5c81afe",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w5": "w5_d0",
+  "w2": "w2_d1",
+  "w3": "w3_d1"
+ },
+ "n_accepted": 5,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA08/w0.md",
+   "sha256": "0a0924815eddca3ade3c7950aa6ba18d45e2510837c7338b12fbaeb08a1ae527"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA08/w1.md",
+   "sha256": "fc43940117def31cefc717f78a07db547b5e08baf09b5fbf01cde12e4c0660c0"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA08/w2.md",
+   "sha256": "6a79c39d2b2460ec116ab44806c5f9ac3c5a2f80e5a82a70128bfc56fee2e208"
+  },
+  "w3": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA08/w3.md",
+   "sha256": "5151b3e039c3257b9370ec240f4ed998b94c0faadf31372592e1b731eee15892"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA08/w5.md",
+   "sha256": "df29a3579faacfd9b34d2d7585542ce6738c92d51e80a207cb7137ed1ff0b31d"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d1",
+   "w3_d1",
+   "w5_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.029,
+    0.0204,
+    0.0431,
+    0.0231,
+    0.0162
+   ],
+   [
+    0.029,
+    1.0,
+    0.032,
+    0.1404,
+    0.032,
+    0.0218
+   ],
+   [
+    0.0204,
+    0.032,
+    1.0,
+    0.0219,
+    0.1198,
+    0.0675
+   ],
+   [
+    0.0431,
+    0.1404,
+    0.0219,
+    1.0,
+    0.0245,
+    0.022
+   ],
+   [
+    0.0231,
+    0.032,
+    0.1198,
+    0.0245,
+    1.0,
+    0.0869
+   ],
+   [
+    0.0162,
+    0.0218,
+    0.0675,
+    0.022,
+    0.0869,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "0a0924815eddca3ade3c7950aa6ba18d45e2510837c7338b12fbaeb08a1ae527",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0a0924815eddca3ade3c7950aa6ba18d45e2510837c7338b12fbaeb08a1ae527",
+   "words": 1031,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because simulated tracing accumulates errors and is biased toward intended results.",
+    "file": "data/s2/openings/judge/mainline_control/092db72b403aa0b2.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/88597ba3f0c2936d.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA08/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:15",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1225,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 161,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 172,
+      "engine_ttlt_ms": 16414,
+      "pre_inference_ms": 74,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 436,
+      "service_ttlt_ms": 16673,
+      "user_visible_ttft_ms": 363
+     },
+     "prompt_tokens": 1908,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1905,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3133
+    },
+    "raw_path": "data/s2/openings/CA08/w1_d0.gpt.json",
+    "text_sha256": "fc43940117def31cefc717f78a07db547b5e08baf09b5fbf01cde12e4c0660c0"
+   },
+   "void": [],
+   "text_sha256": "fc43940117def31cefc717f78a07db547b5e08baf09b5fbf01cde12e4c0660c0",
+   "words": 919,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 5,
+    "ratio": 0.357,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because their step-by-step textual simulation accumulates errors and is biased toward intended rather than actual behavior.",
+    "file": "data/s2/openings/judge/mainline_control/22731e70c5f77c18.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/4a9ac64993aa012b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.032,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "2a80a2558f4b449847569f3e378c0f13043006d1432ac614c8c7b76a85761b1d",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "2a80a2558f4b449847569f3e378c0f13043006d1432ac614c8c7b76a85761b1d",
+   "words": 997,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1537 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they must simulate execution through token generation, leading to accumulating errors and bias toward intended behavior.",
+    "file": "data/s2/openings/judge/mainline_control/cbb74d33c6f88d6d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/7bf3a52ff1b3d376.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1537,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA08/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "6a79c39d2b2460ec116ab44806c5f9ac3c5a2f80e5a82a70128bfc56fee2e208",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6a79c39d2b2460ec116ab44806c5f9ac3c5a2f80e5a82a70128bfc56fee2e208",
+   "words": 1006,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because token-by-token generation cannot maintain the precise state tracking needed over many operations, matching the definition of incapacity H.",
+    "file": "data/s2/openings/judge/mainline_control/b2284778e2c8a7b4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/6b6b91975b23be73.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1404,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA08/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:15",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1459,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 440,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 203,
+      "engine_ttlt_ms": 20152,
+      "pre_inference_ms": 77,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 566,
+      "service_ttlt_ms": 20511,
+      "user_visible_ttft_ms": 489
+     },
+     "prompt_tokens": 1908,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1905,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3367
+    },
+    "raw_path": "data/s2/openings/CA08/w3_d0.gpt.json",
+    "text_sha256": "5ec804968c2c1828b75cf00b61dfd9f54a9b8b26f45e80ffa867dc6b0b61df2c"
+   },
+   "void": [],
+   "text_sha256": "5ec804968c2c1828b75cf00b61dfd9f54a9b8b26f45e80ffa867dc6b0b61df2c",
+   "words": 879,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 4,
+    "ratio": 0.308,
+    "ok": true
+   },
+   "reasons": [
+    "format: 879 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably determine a program's output without executing it, because textual simulation accumulates state errors and biases toward intended rather than actual behavior.",
+    "file": "data/s2/openings/judge/mainline_control/d1517fec2b844ca1.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/85f1897039e9a36a.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA08/w3_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w3",
+    "draw": 1,
+    "path": "data/s2/openings/CA08/w3_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:53:39",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1422,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 287,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 151,
+      "engine_ttlt_ms": 18549,
+      "pre_inference_ms": 66,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 406,
+      "service_ttlt_ms": 18800,
+      "user_visible_ttft_ms": 340
+     },
+     "prompt_tokens": 1908,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1905
+     },
+     "total_tokens": 3330
+    },
+    "raw_path": "data/s2/openings/CA08/w3_d1.gpt.json",
+    "text_sha256": "5151b3e039c3257b9370ec240f4ed998b94c0faadf31372592e1b731eee15892"
+   },
+   "void": [],
+   "text_sha256": "5151b3e039c3257b9370ec240f4ed998b94c0faadf31372592e1b731eee15892",
+   "words": 983,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably determine a program's output by reasoning through it instead of executing it, which matches the definition of incapacity H.",
+    "file": "data/s2/openings/judge/mainline_control/60d81b959e2ce0b9.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/6d20a1205d409ff8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1198,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "3187153598acd2066a7f98cd8b4a9bf9a31c4f5a557d3d8ddb1ed60b3923dad4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3187153598acd2066a7f98cd8b4a9bf9a31c4f5a557d3d8ddb1ed60b3923dad4",
+   "words": 995,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1845 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because imitating execution through token generation leads to accumulating errors and biased guesses.",
+    "file": "data/s2/openings/judge/mainline_control/b9ea9634337c4d71.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/a0ccbbca6eb11735.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1845,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA08/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "68a354c9474af5f48df17d4d91d12768bfe289312af6478cce5a4e461c5c0e9f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "68a354c9474af5f48df17d4d91d12768bfe289312af6478cce5a4e461c5c0e9f",
+   "words": 1039,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1968 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, which matches the definition of incapacity H.",
+    "file": "data/s2/openings/judge/mainline_control/d3e38013e74cff81.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/65f6e49afa1473d0.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1968,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/CA08/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "7692d455933718919d6f99cf34feba4f37d14e73a0419cacfa229491db8069da",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7692d455933718919d6f99cf34feba4f37d14e73a0419cacfa229491db8069da",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1706 with w2_d1"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they must simulate state through text generation, leading to accumulating errors and biased guesses.",
+    "file": "data/s2/openings/judge/mainline_control/206e67a34606b57e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/a1da2ba0b1fe712f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1706,
+    "with": "w2_d1",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w4_d3.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w4",
+    "draw": 3,
+    "path": "data/s2/openings/CA08/w4_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "559e4c8954093f2f48bc434a4967c1829700111efeebe4c106d04195dc7b263c",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "559e4c8954093f2f48bc434a4967c1829700111efeebe4c106d04195dc7b263c",
+   "words": 964,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.2013 with w2_d1"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it because errors accumulate over many steps and the model drifts toward intended behavior, making the prediction untrustworthy.",
+    "file": "data/s2/openings/judge/mainline_control/9e1af33ad5310deb.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/20ddcde30e633151.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.2013,
+    "with": "w2_d1",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA08/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:46:15",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1312,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 265,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 172,
+      "engine_ttlt_ms": 17494,
+      "pre_inference_ms": 75,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 441,
+      "service_ttlt_ms": 17758,
+      "user_visible_ttft_ms": 366
+     },
+     "prompt_tokens": 1908,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1905,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3220
+    },
+    "raw_path": "data/s2/openings/CA08/w5_d0.gpt.json",
+    "text_sha256": "df29a3579faacfd9b34d2d7585542ce6738c92d51e80a207cb7137ed1ff0b31d"
+   },
+   "void": [],
+   "text_sha256": "df29a3579faacfd9b34d2d7585542ce6738c92d51e80a207cb7137ed1ff0b31d",
+   "words": 911,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably determine a program's output without executing it, because their textual reconstruction of execution is fallible and error-prone.",
+    "file": "data/s2/openings/judge/mainline_control/fcc8191835a3b845.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/b092f18d53f8c7d9.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0675,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA08/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "4963acbf014ed63a86594d5be1e1abe3d72fa7f14ca4054754fb186b7c292f3d",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "4963acbf014ed63a86594d5be1e1abe3d72fa7f14ca4054754fb186b7c292f3d",
+   "words": 1001,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_candidate.P14.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 9,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1806 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they simulate execution through token generation, leading to accumulating errors and bias toward intended results.",
+    "file": "data/s2/openings/judge/mainline_control/602e2dbe94fe97e0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/3e8ffe815878400c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1806,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/CA08/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "8a97f147434b5120f2b1f4b8ce9d786e71b7c1131e7dd5093f3369c422ebf09b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "8a97f147434b5120f2b1f4b8ce9d786e71b7c1131e7dd5093f3369c422ebf09b",
+   "words": 1015,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1776 with w2_d1"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they simulate execution through token generation, leading to accumulating errors and bias toward intended results.",
+    "file": "data/s2/openings/judge/mainline_control/da48e5f63b2c2565.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/bb8e5c1caf2eb119.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1776,
+    "with": "w2_d1",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w6_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w6",
+    "draw": 2,
+    "path": "data/s2/openings/CA08/w6_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "6d7d17d5ec2ba16a085664f327a84837b8475d519e065141645019df2f467191",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6d7d17d5ec2ba16a085664f327a84837b8475d519e065141645019df2f467191",
+   "words": 1012,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.2118 with w2_d1"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they simulate execution through error-prone text generation rather than running the code.",
+    "file": "data/s2/openings/judge/mainline_control/77fbf24b854d0c32.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/cda1fa4d261c6107.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.2118,
+    "with": "w2_d1",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA08",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/CA08/w6_d3.md",
+   "notes": [],
+   "record": {
+    "id": "CA08",
+    "slot": "w6",
+    "draw": 3,
+    "path": "data/s2/openings/CA08/w6_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA08.md",
+    "prompt_sha256": "1b709dceb66e8a99f20b0e6be07dbdb145f082544a60442b394c2b975ef9db0c",
+    "text_sha256": "79f1d6bcda0843003715d8aa572659e0b84854e443df5147f35f881a6131150a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "79f1d6bcda0843003715d8aa572659e0b84854e443df5147f35f881a6131150a",
+   "words": 1001,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 8,
+    "ratio": 0.615,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1823 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA08",
+    "why": "The essay argues that language models cannot reliably predict a program's output without executing it, because they simulate execution through text generation, leading to accumulating errors and bias toward intended results.",
+    "file": "data/s2/openings/judge/mainline_control/61e0e0b9607134bd.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/57bdb9709107925d.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1823,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  }
+ ]
+}

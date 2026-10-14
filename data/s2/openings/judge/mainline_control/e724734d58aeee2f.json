@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/e724734d58aeee2f.prompt.md",
+ "prompt_sha256": "e724734d58aeee2f15348dcfd2e3ba2b877eb2d57e5cc9404578865d49caf0d6",
+ "created": "2026-10-11T18:48:44",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/e724734d58aeee2f.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "35c97037706e406fb24f6d627e4d2693",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay argues that language models cannot reliably write verse in exact metre because tokens do not align with syllables or stress, pronunciation must be inferred from incomplete written evidence, and multiple uncertain judgments must all succeed without auditory correction.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1986,
+     "completion_tokens": 55,
+     "total_tokens": 2041,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758924,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay argues that language models cannot reliably write verse in exact metre because tokens do not align with syllables or stress, pronunciation must be inferred from incomplete written evidence, and multiple uncertain judgments must all succeed without auditory correction."
+ }
+}

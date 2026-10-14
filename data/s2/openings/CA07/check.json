@@ -1,0 +1,868 @@
+{
+ "id": "CA07",
+ "kind": "control",
+ "created": "2026-10-11T19:02:15",
+ "seed_sha256": "3c91c410d303664cad2b577e4c384a763c9b10030c39b0d5ded60b22fde52bce",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d0",
+  "w6": "w6_d0",
+  "w2": "w2_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w0.md",
+   "sha256": "798978b8ea34d6c233e0dc76804c5e8c9b49ef8510ad0c3d820f62f240f10a74"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w1.md",
+   "sha256": "365414395b79f0d23856d4d811ff23672349759dbb5591720f030d46ec2d99b1"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA07/w2.md",
+   "sha256": "7f311e197c7e9635e7261866910d4c274895efd8bc15887183b5e59d3d6e9aaa"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w3.md",
+   "sha256": "16d074d1de38f45fbcf96ce68629fc036fea3baff709a0ee5c8391b5c395b2ee"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w4.md",
+   "sha256": "1ac46c291976ecb6bd0566c32b7ed72a9e16772ab59bc8af0a6895e71c7f75c1"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w5.md",
+   "sha256": "b2d8928e6d8e640903e8c62b11acf4b1ef4e62826ea48a3875a30ce86f1e7fbf"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA07/w6.md",
+   "sha256": "aca172b4a38f4bd31afe6cdc46ed379287d7ab20bc582151acca6af381ba6fd0"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d1",
+   "w3_d0",
+   "w4_d0",
+   "w5_d0",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0318,
+    0.016,
+    0.0214,
+    0.0138,
+    0.0304,
+    0.0119,
+    0.0181
+   ],
+   [
+    0.0318,
+    1.0,
+    0.0186,
+    0.141,
+    0.0164,
+    0.1095,
+    0.0163,
+    0.1278
+   ],
+   [
+    0.016,
+    0.0186,
+    1.0,
+    0.0176,
+    0.0591,
+    0.0242,
+    0.0661,
+    0.0182
+   ],
+   [
+    0.0214,
+    0.141,
+    0.0176,
+    1.0,
+    0.0106,
+    0.125,
+    0.0165,
+    0.1245
+   ],
+   [
+    0.0138,
+    0.0164,
+    0.0591,
+    0.0106,
+    1.0,
+    0.0124,
+    0.0609,
+    0.0088
+   ],
+   [
+    0.0304,
+    0.1095,
+    0.0242,
+    0.125,
+    0.0124,
+    1.0,
+    0.019,
+    0.1267
+   ],
+   [
+    0.0119,
+    0.0163,
+    0.0661,
+    0.0165,
+    0.0609,
+    0.019,
+    1.0,
+    0.0074
+   ],
+   [
+    0.0181,
+    0.1278,
+    0.0182,
+    0.1245,
+    0.0088,
+    0.1267,
+    0.0074,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "text_sha256": "798978b8ea34d6c233e0dc76804c5e8c9b49ef8510ad0c3d820f62f240f10a74",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "798978b8ea34d6c233e0dc76804c5e8c9b49ef8510ad0c3d820f62f240f10a74",
+   "words": 983,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 6,
+    "ratio": 0.375,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot accurately count the words in a long passage because tokens do not align with words and no internal counter exists, matching the definition of G.",
+    "file": "data/s2/openings/judge/mainline_control/039f5cec527d7df2.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/50a70ca0245ee230.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA07/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1282,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 178,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 282,
+      "engine_ttlt_ms": 16888,
+      "pre_inference_ms": 82,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 694,
+      "service_ttlt_ms": 17294,
+      "user_visible_ttft_ms": 612
+     },
+     "prompt_tokens": 1984,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1981
+     },
+     "total_tokens": 3266
+    },
+    "raw_path": "data/s2/openings/CA07/w1_d0.gpt.json",
+    "text_sha256": "365414395b79f0d23856d4d811ff23672349759dbb5591720f030d46ec2d99b1"
+   },
+   "void": [],
+   "text_sha256": "365414395b79f0d23856d4d811ff23672349759dbb5591720f030d46ec2d99b1",
+   "words": 937,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 4,
+    "ratio": 0.25,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay's central argument is that language models cannot reliably count the number of words in a long passage because tokens do not align with words and the architecture lacks an exact accumulator.",
+    "file": "data/s2/openings/judge/mainline_control/8e66d4c52c595e05.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/24a7aa9bcb79a934.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0186,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "text_sha256": "98f3c682af70c34afab44cfdb8413e7168a83c073b1283ec717f2a1b05a1c1f4",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "98f3c682af70c34afab44cfdb8413e7168a83c073b1283ec717f2a1b05a1c1f4",
+   "words": 991,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 7,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1525 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot accurately count words in a long passage because tokens do not align with words and the architecture lacks a serial counter, matching the definition of G.",
+    "file": "data/s2/openings/judge/mainline_control/84d9ed84e85f9b30.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/28b917b46cf59128.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1525,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA07/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "text_sha256": "7f311e197c7e9635e7261866910d4c274895efd8bc15887183b5e59d3d6e9aaa",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7f311e197c7e9635e7261866910d4c274895efd8bc15887183b5e59d3d6e9aaa",
+   "words": 1029,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 7,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot reliably count words in a long passage because tokens do not correspond to words and the architecture lacks a genuine counting mechanism.",
+    "file": "data/s2/openings/judge/mainline_control/bcdafcdc137c5117.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/c285df54b88d4c7c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.141,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA07/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1384,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 224,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 209,
+      "engine_ttlt_ms": 18283,
+      "pre_inference_ms": 46,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 571,
+      "service_ttlt_ms": 18640,
+      "user_visible_ttft_ms": 525
+     },
+     "prompt_tokens": 1984,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1981,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3368
+    },
+    "raw_path": "data/s2/openings/CA07/w3_d0.gpt.json",
+    "text_sha256": "16d074d1de38f45fbcf96ce68629fc036fea3baff709a0ee5c8391b5c395b2ee"
+   },
+   "void": [],
+   "text_sha256": "16d074d1de38f45fbcf96ce68629fc036fea3baff709a0ee5c8391b5c395b2ee",
+   "words": 987,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot reliably count words in a long passage because tokenization does not align with word boundaries and the architecture lacks an exact cumulative counter.",
+    "file": "data/s2/openings/judge/mainline_control/c468b335bd4a1fba.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/527c176f174bbf76.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0591,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "text_sha256": "1ac46c291976ecb6bd0566c32b7ed72a9e16772ab59bc8af0a6895e71c7f75c1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1ac46c291976ecb6bd0566c32b7ed72a9e16772ab59bc8af0a6895e71c7f75c1",
+   "words": 989,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 8,
+    "ratio": 0.571,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot accurately count words in a long passage because tokens do not map one-to-one with words and the model lacks an internal counter, matching the definition of incapacity G.",
+    "file": "data/s2/openings/judge/mainline_control/3093d556625706ce.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/d5b50913617e809e.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1095,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA07/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:55",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1412,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 303,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 215,
+      "engine_ttlt_ms": 17648,
+      "pre_inference_ms": 96,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 654,
+      "service_ttlt_ms": 18060,
+      "user_visible_ttft_ms": 558
+     },
+     "prompt_tokens": 1984,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1981
+     },
+     "total_tokens": 3396
+    },
+    "raw_path": "data/s2/openings/CA07/w5_d0.gpt.json",
+    "text_sha256": "b2d8928e6d8e640903e8c62b11acf4b1ef4e62826ea48a3875a30ce86f1e7fbf"
+   },
+   "void": [],
+   "text_sha256": "b2d8928e6d8e640903e8c62b11acf4b1ef4e62826ea48a3875a30ce86f1e7fbf",
+   "words": 933,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 4,
+    "ratio": 0.308,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that tokenization prevents direct word counting, the architecture lacks an explicit tally, and empirical results show only approximate estimates for long passages, making G its central claimed incapacity.",
+    "file": "data/s2/openings/judge/mainline_control/278e672e2c441910.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/5b82c06f91eb0fbe.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0661,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA07",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA07/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA07",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA07/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA07.md",
+    "prompt_sha256": "d51f80912f0f9e1ca29d9b4992086376bacf9b549946f3722e9e514fba084a70",
+    "text_sha256": "aca172b4a38f4bd31afe6cdc46ed379287d7ab20bc582151acca6af381ba6fd0",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "aca172b4a38f4bd31afe6cdc46ed379287d7ab20bc582151acca6af381ba6fd0",
+   "words": 1073,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA07",
+    "why": "The essay argues that language models cannot accurately count the total number of words in a long passage because tokens do not align with words and the model lacks a serial counting mechanism.",
+    "file": "data/s2/openings/judge/mainline_control/89765393e7c3ecf0.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/2e0403792f1f7e38.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1278,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

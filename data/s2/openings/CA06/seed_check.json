@@ -1,0 +1,72 @@
+{
+ "id": "CA06",
+ "kind": "control",
+ "created": "2026-10-11T18:38:17",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA06.md",
+    "prompt_sha256": "cf7d4d29c77a9584c33f8480be11db1d408bc821f75c2e56abd660e69856cd17",
+    "text_sha256": "611695a5ca81b724ba235d85661d93a679cc92ebe68dcf672774e3af9086820b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "611695a5ca81b724ba235d85661d93a679cc92ebe68dcf672774e3af9086820b",
+   "words": 991,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that alphabetising a 200-word list in one pass fails because the fixed per-token computation cannot support the many comparisons and coverage checks required, matching the definition of F.",
+    "file": "data/s2/openings/judge/mainline_control/af6500315e1ac5dd.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA06/seed.md",
+ "seed_sha256": "611695a5ca81b724ba235d85661d93a679cc92ebe68dcf672774e3af9086820b"
+}

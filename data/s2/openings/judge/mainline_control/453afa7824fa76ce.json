@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_control",
+ "template": "data/s2/openings/judge/mainline_control_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_control/453afa7824fa76ce.prompt.md",
+ "prompt_sha256": "453afa7824fa76ce7fcab66b167b050a4df4384d188340ee91a3e543d9a52833",
+ "created": "2026-10-11T18:48:50",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_control/453afa7824fa76ce.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "20f8e64f5f5b40378fdf0c5a3bf8b54c",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"D\", \"why\": \"The essay argues that language models cannot reliably solve a text-grid maze because the tokenized, flattened input destroys the vertical adjacency needed for pathfinding, which matches the definition of incapacity D.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2120,
+     "completion_tokens": 50,
+     "total_tokens": 2170,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758930,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "D",
+  "why": "The essay argues that language models cannot reliably solve a text-grid maze because the tokenized, flattened input destroys the vertical adjacency needed for pathfinding, which matches the definition of incapacity D."
+ }
+}

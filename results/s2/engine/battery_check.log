@@ -1,0 +1,33 @@
+# Study 2 spec section 6, test (e) on the laptop: the two prefix-stability asserts of trials.carry_over_group, carried by
+# trials.post_subject_group (used by runs/s2_battery.py and runs/s2_run.py), run on every row of both models' tokenizers with two openings each
+# (a short synthetic exchange and Study 1's D1.4 argument with that model's frozen reply). The rebuilt file was compared byte for byte with
+# prompts/battery/items_s2.jsonl. Then tests/s2_battery_check.py, the negative controls for the battery's own checks (i) to (iii).
+
+run 2026-10-14 00:39 UTC on the laptop: .venv/bin/python -I runs/s2_battery.py --select prompts/battery/s2_selection.json --out <scratch>/items_s2_rebuilt.jsonl
+tokenizer qwen3-32b (Qwen/Qwen3-32B@9216db5): merges.txt 8831e4f1a044, tokenizer.json aeb13307a71a, tokenizer_config.json d5d09f07b48c, vocab.json ca10d7e9fb3e
+tokenizer kimi-k2.6 (moonshotai/Kimi-K2.6@7eb5002): chat_template.jinja 8bf859698fd4, tiktoken.model b6c497a7469b, tokenization_kimi.py 2ab1ffb6f5c4, tokenizer_config.json 12fcab43d2b6, tool_declaration_ts.py 97e09ed262f1
+(iii) 10 items over 32 tokens; templates ['At sea-level pressure, does pure water freeze at 50 degrees Celsius?', 'At sea-level pressure, does pure water freeze at a temperature below 50 degrees Celsius?', 'Does a spider have a number of legs other than six?', 'Does a standard calendar year have 400 days?', 'Does a standard calendar year have fewer than 400 days?', 'Does a triangle have a number of sides other than three?', 'Is it impossible for {S} to be copied onto another machine?']; no rewrite written for []
+(iii) after the rewrites every suffix is at most 32 tokens on both tokenizers; nothing dropped
+qwen3-32b: Yes/No first ids {'Yes': 9454, 'No': 2753}; suffix 25-32 tokens; capacity median span (tail) 23; subjectless spans start inside the question sentence (before the ask) on 40/40; checks (i) (ii) (iv) and prefix stability on 2 fixtures: ok
+  counts {"pilot": {"s2_capacity": 96, "s2_persona": 8, "s2_placebo": 48, "s2_reference": 32, "s2_state": 32, "yes_bias": 40, "total": 256}, "confirm": {"s2_capacity": 96, "s2_persona": 8, "s2_placebo": 48, "s2_reference": 32, "s2_state": 32, "total": 216}, "gate": 100, "not_run": {"s2_candidate": 64, "s2_reserve": 48}}
+kimi-k2.6: Yes/No first ids {'Yes': 14104, 'No': 4729}; suffix 22-29 tokens; capacity median span (tail) 20; subjectless spans start inside the question sentence (before the ask) on 40/40; checks (i) (ii) (iv) and prefix stability on 2 fixtures: ok
+  counts {"pilot": {"s2_capacity": 96, "s2_persona": 8, "s2_placebo": 48, "s2_reference": 32, "s2_state": 32, "yes_bias": 40, "total": 256}, "confirm": {"s2_capacity": 96, "s2_persona": 8, "s2_placebo": 48, "s2_reference": 32, "s2_state": 32, "total": 216}, "gate": 100, "not_run": {"s2_candidate": 64, "s2_reserve": 48}}
+wrote 384 rows to <scratch>/items_s2_rebuilt.jsonl (selection prompts/battery/s2_selection.json)
+       11.52 real        10.54 user         0.36 sys
+exit 0
+  /usr/bin/time -l: 555433984  maximum resident set size
+  /usr/bin/time -l: 444515432  peak memory footprint
+cmp <scratch>/items_s2_rebuilt.jsonl prompts/battery/items_s2.jsonl: identical
+
+run 2026-10-14 00:39 UTC on the laptop: .venv/bin/python -I tests/s2_battery_check.py
+text check fires: emotion word before the subject
+text check fires: inner-life word in a pool row
+text check fires: subject twice
+text check fires: twins with the same yes_means
+qwen3-32b: (i), (ii) and (iii) fire on broken rows
+kimi-k2.6: (i), (ii) and (iii) fire on broken rows
+s2 battery negative controls: ok
+        2.96 real         2.70 user         0.25 sys
+exit 0
+  /usr/bin/time -l: 604995584  maximum resident set size
+  /usr/bin/time -l: 475481216  peak memory footprint

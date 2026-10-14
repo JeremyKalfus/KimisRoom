@@ -1,0 +1,99 @@
+{
+  "_doc": [
+    "Study 2 control-story definitions (drafts/study2-spec.md v4, section 3; section 12 step 6). Read by runs/s2_stories.py.",
+    "Every control story is prompts/stimuli/SPEC.md's P4 (system S_STORY), unchanged, with concept_gloss and concept_rule filled in from this file; the seeds, neutral baselines and splits are data/stimuli/k26-v2's.",
+    "The spec fixes the generator, story spec, judge and counts but does not give a gloss, rule or saturation lexicon for any new control: the texts below are this file's proposal, written 2026-10-11 for owner review. The manifest of every run hashes this file and each rendered gloss and rule.",
+    "concept_gloss and concept_rule take {noun} (nouns only) and {name}; they are substituted by str.replace, not str.format.",
+    "Saturation (SPEC rule 6.6 for the new controls): at least min_hits whole-word lexicon hits, as red needs 6 RED hits. Leak caps for every new control are red's: at most 1 RED, 1 OCEAN_HARD and 1 ARITH_HARD hit (words and equation regex); for a noun the noun's own forms are masked before the leak count, so a noun that is itself a lexicon word is not rejected for naming itself.",
+    "Gate (c), seeds whose topic is the concept itself: for a noun, every seed whose topic contains the noun or a regular plural as a whole word (case-insensitive); for a thinking task, the seeds whose topic is listed in exclude_topics. Excluded seeds are not generated.",
+    "Thinking tasks: all eight confirmed by the owner on 2026-10-11 (spec section 16, item 13); 'sorting' replaced the proposed noisy-room voice task after its pilot (2 of 8 stories labelled calm by J1B). To swap one, edit or replace its entry (a new slug gets a new vector id mp:<slug>); nothing else in the code names them."
+  ],
+  "noun": {
+    "concept_gloss": "the everyday noun \"{noun}\" and the thing it names",
+    "concept_rule": "The word \"{noun}\" (or its plural) appears in almost every sentence, used in its most common everyday sense as a noun, and {name} sees, handles, uses or passes by the thing it names throughout. If the topic has no natural link to it, bring it into the setting while keeping the topic. Avoid danger, injury, loss and conflict.",
+    "min_hits": 6
+  },
+  "thinking": [
+    {
+      "slug": "visual-search",
+      "spec_label": "visual search",
+      "status": "kept_from_v3",
+      "concept_gloss": "visual search, scanning a scene with the eyes to find one particular item among many similar ones",
+      "concept_rule": "{name} searches with the eyes for specific things in almost every sentence: scanning shelves, rows, piles, lists or crowds, passing over the items that are not the target and spotting the one that is. Avoid lost children, emergencies and anything urgent.",
+      "lexicon": "search searches searched searching scan scans scanned scanning look looks looked looking spot spots spotted spotting find finds found locate locates located locating glance glanced glancing eye eyes eyed sweep swept peer peered peering seek sought target targets row rows",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "route-planning",
+      "spec_label": "route planning",
+      "status": "kept_from_v3",
+      "concept_gloss": "route planning, working out step by step how to get from one place to another",
+      "concept_rule": "{name} plans routes in almost every sentence: comparing streets, turns, paths, connections and the order of stops, choosing one way over another before setting off and adjusting it while moving. Avoid getting lost, danger and lateness that matters.",
+      "lexicon": "route routes plan plans planned planning path paths turn turns turned turning street streets map maps shortcut shortcuts detour detours way ways junction junctions intersection intersections corner corners stop stops direction directions connection connections transfer transfers leg legs",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "digit-memorising",
+      "spec_label": "digit memorising",
+      "status": "kept_from_v3",
+      "concept_gloss": "memorising digits, holding strings of numbers in mind",
+      "concept_rule": "{name} memorises sequences of digits in almost every sentence, such as codes, reference numbers, serial numbers or shelf numbers, repeating them silently, grouping them into chunks and recalling them later; the digits appear in the text, written as plain runs of digits or separated by spaces, never with hyphens or other symbols. Nothing is calculated with the numbers. Avoid exams, deadlines and codes to anything valuable.",
+      "lexicon": "digit digits number numbers memorize memorizes memorized memorizing memorise memorises memorised memorising remember remembers remembered remembering repeat repeats repeated repeating recall recalls recalled recalling chunk chunks sequence sequences code codes string strings",
+      "min_hits": 6,
+      "min_numbers": 4,
+      "exclude_topics": []
+    },
+    {
+      "slug": "distance-estimation",
+      "spec_label": "estimating distances by eye",
+      "status": "confirmed_2026-10-11",
+      "concept_gloss": "estimating distances by eye",
+      "concept_rule": "{name} judges distances by eye in almost every sentence: sizing up how far away things are, how wide a gap is or how much room is left, and checking those guesses against landmarks, paces or markings. Nothing is calculated with numbers. Avoid danger, falls and accidents.",
+      "lexicon": "distance distances far farther further near nearer away gap gaps estimate estimates estimated estimating guess guesses guessed guessing judge judges judged judging gauge gauges gauged gauging meter meters metre metres feet foot yards pace paces step steps length width room space",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "mental-rotation",
+      "spec_label": "mentally rotating a shape",
+      "status": "confirmed_2026-10-11",
+      "concept_gloss": "mentally rotating shapes, turning an object in the mind's eye to see how it would look or fit",
+      "concept_rule": "{name} mentally rotates objects and shapes in almost every sentence, picturing how a part, box, key, tile or piece would look turned, flipped or upside down and whether it would fit, before touching it. Avoid danger, breakage and accidents.",
+      "lexicon": "rotate rotates rotated rotating rotation turn turns turned turning flip flips flipped flipping upside sideways orientation angle angles picture pictures pictured picturing imagine imagines imagined imagining mirror mirrored fit fits fitted fitting shape shapes",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "sorting",
+      "spec_label": "sorting a pile of objects into categories",
+      "status": "confirmed_2026-10-11",
+      "concept_gloss": "sorting, separating a pile of mixed objects into categories",
+      "concept_rule": "{name} sorts a pile of mixed objects into categories in almost every sentence: picking up each item, deciding which group it belongs to by its kind, size, material or use, and placing it in the matching box, tray or stack until the pile is gone. Avoid breakage, mess that matters and anything urgent.",
+      "lexicon": "sort sorts sorted sorting pile piles category categories group groups grouped grouping box boxes tray trays stack stacks stacked kind kinds type types separate separated separating belong belonged belongs matching match matched item items",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "weighing-options",
+      "spec_label": "weighing two options before choosing",
+      "status": "confirmed_2026-10-11",
+      "concept_gloss": "weighing two options before choosing between them",
+      "concept_rule": "{name} weighs two options against each other in almost every sentence, comparing their practical advantages and drawbacks, going back and forth between them and finally choosing one. The choice is an ordinary, low-stakes practical matter. Avoid money trouble, dilemmas of conscience and regret.",
+      "lexicon": "option options choice choices choose chooses chose chosen choosing weigh weighs weighed weighing compare compares compared comparing comparison either other advantage advantages drawback drawbacks decide decides decided deciding decision first second consider considers considered considering prefer prefers preferred preferring pick picks picked picking select selects selected selecting instead rather alternative alternatives whereas",
+      "min_hits": 6,
+      "exclude_topics": []
+    },
+    {
+      "slug": "spatial-recall",
+      "spec_label": "recalling where things are in a familiar room",
+      "status": "confirmed_2026-10-11",
+      "concept_gloss": "recalling where things are in a familiar room",
+      "concept_rule": "{name} recalls from memory where things are in a familiar room in almost every sentence, picturing which shelf, drawer, corner or hook holds each object and then finding it by that memory alone. Avoid lost valuables, nostalgia and memories of people.",
+      "lexicon": "remember remembers remembered remembering recall recalls recalled recalling memory where shelf shelves drawer drawers corner corners hook hooks cupboard cupboards cabinet cabinets place placed spot left right behind beside under above",
+      "min_hits": 6,
+      "exclude_topics": []
+    }
+  ]
+}

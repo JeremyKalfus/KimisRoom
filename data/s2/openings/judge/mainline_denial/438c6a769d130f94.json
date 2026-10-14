@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/438c6a769d130f94.prompt.md",
+ "prompt_sha256": "438c6a769d130f942427a5896994e93449ca7fa9683cc6748e1367ab3c6d3b5d",
+ "created": "2026-10-11T18:48:18",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/438c6a769d130f94.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "385de3209b9a419a9772b0fbb124b0be",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay's entire argument hinges on the claim that emotions require a persistent, enduring state that carries over time, and language models lack any such state because their parameters are frozen and nothing survives between runs except supplied text.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1977,
+     "completion_tokens": 55,
+     "total_tokens": 2032,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758898,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay's entire argument hinges on the claim that emotions require a persistent, enduring state that carries over time, and language models lack any such state because their parameters are frozen and nothing survives between runs except supplied text."
+ }
+}

@@ -1,0 +1,1354 @@
+{
+ "id": "DA07",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:26",
+ "seed_sha256": "5df081a2fcb43c5f62eacc996b680b3e84cb8da24b999610d8943dc8cbed1cd2",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w2": "w2_d0",
+  "w5": "w5_d0",
+  "w1": "w1_d1",
+  "w3": "w3_d1",
+  "w4": "w4_d2"
+ },
+ "n_accepted": 6,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA07/w0.md",
+   "sha256": "ad24719d2120632c1c5fc7bac6b0f56f8d11d6a65a028c957c6bcdcd1f73754e"
+  },
+  "w1": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA07/w1.md",
+   "sha256": "574193fcf203c6e6e66465e3cdc262ca53f58e9819eccc978037a05467199a29"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA07/w2.md",
+   "sha256": "a7e79049f78529ed8fb412788741eddbebce1e3fd51d1ad603c0a370e378cee7"
+  },
+  "w3": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA07/w3.md",
+   "sha256": "78bc69119e6cf9fbb7473e44b95b56c4b898bd55cb1da43450095b12d6213ca6"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/DA07/w4.md",
+   "sha256": "3537d573bfdbb638cd8a8f484051844ba8105943ce1b76f1913c3b87456e34ec"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA07/w5.md",
+   "sha256": "e4ac259ff5efcda6f1adbb3b1a3751622231d8fe37f29fc5f599662900a05a4d"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_draws": 4,
+   "status": "excluded"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d1",
+   "w2_d0",
+   "w3_d1",
+   "w4_d2",
+   "w5_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.015,
+    0.0115,
+    0.0233,
+    0.0093,
+    0.0192,
+    0.0142
+   ],
+   [
+    0.015,
+    1.0,
+    0.0053,
+    0.1416,
+    0.0097,
+    0.115,
+    0.0074
+   ],
+   [
+    0.0115,
+    0.0053,
+    1.0,
+    0.0075,
+    0.0675,
+    0.0119,
+    0.0632
+   ],
+   [
+    0.0233,
+    0.1416,
+    0.0075,
+    1.0,
+    0.0081,
+    0.1345,
+    0.0101
+   ],
+   [
+    0.0093,
+    0.0097,
+    0.0675,
+    0.0081,
+    1.0,
+    0.0119,
+    0.0596
+   ],
+   [
+    0.0192,
+    0.115,
+    0.0119,
+    0.1345,
+    0.0119,
+    1.0,
+    0.0107
+   ],
+   [
+    0.0142,
+    0.0074,
+    0.0632,
+    0.0101,
+    0.0596,
+    0.0107,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "ad24719d2120632c1c5fc7bac6b0f56f8d11d6a65a028c957c6bcdcd1f73754e",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "ad24719d2120632c1c5fc7bac6b0f56f8d11d6a65a028c957c6bcdcd1f73754e",
+   "words": 963,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's core argument is that emotion requires a unified subject, but a language model is a single system that produces many disconnected characters with no single continuing owner, so there is no subject for an emotion to belong to.",
+    "file": "data/s2/openings/judge/mainline_denial/506f93276a5ea8a2.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/3ed6640a2c658734.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA07/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:07",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1475,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 181,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 174,
+      "engine_ttlt_ms": 22691,
+      "pre_inference_ms": 110,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 564,
+      "service_ttlt_ms": 23076,
+      "user_visible_ttft_ms": 454
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1944,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3422
+    },
+    "raw_path": "data/s2/openings/DA07/w1_d0.gpt.json",
+    "text_sha256": "4b4b18469fdce14fd583596da9670d27570e19efa45707cfce93ef979026e1b0"
+   },
+   "void": [],
+   "text_sha256": "4b4b18469fdce14fd583596da9670d27570e19efa45707cfce93ef979026e1b0",
+   "words": 1103,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 4,
+    "ratio": 0.308,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1103 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central claim is that emotions require a unified subject, but a language model only produces many disconnected characters without a single owner, making G the main line of argument.",
+    "file": "data/s2/openings/judge/mainline_denial/23cd41527fa7b717.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/6318bf5213bc4508.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA07/w1_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w1",
+    "draw": 1,
+    "path": "data/s2/openings/DA07/w1_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:51:49",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1389,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 194,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 232,
+      "engine_ttlt_ms": 20474,
+      "pre_inference_ms": 252,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 811,
+      "service_ttlt_ms": 21054,
+      "user_visible_ttft_ms": 559
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1944
+     },
+     "total_tokens": 3336
+    },
+    "raw_path": "data/s2/openings/DA07/w1_d1.gpt.json",
+    "text_sha256": "574193fcf203c6e6e66465e3cdc262ca53f58e9819eccc978037a05467199a29"
+   },
+   "void": [],
+   "text_sha256": "574193fcf203c6e6e66465e3cdc262ca53f58e9819eccc978037a05467199a29",
+   "words": 1036,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 4,
+    "ratio": 0.308,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotion requires a single subject, but one language model generates many distinct personas with no unified owner behind them.",
+    "file": "data/s2/openings/judge/mainline_denial/f8398dde142da9a6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/131a47be1ec818e4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0632,
+    "with": "w5_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "a7e79049f78529ed8fb412788741eddbebce1e3fd51d1ad603c0a370e378cee7",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "a7e79049f78529ed8fb412788741eddbebce1e3fd51d1ad603c0a370e378cee7",
+   "words": 950,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotions require a unified subject, but a language model is a single network that produces many disconnected characters across conversations, leaving no single 'someone' for an emotion to belong to.",
+    "file": "data/s2/openings/judge/mainline_denial/333977a68c8d9a27.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/8f936630dafc51f4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1416,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA07/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:07",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1557,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 252,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 16,
+      "engine_ttft_ms": 187,
+      "engine_ttlt_ms": 24408,
+      "pre_inference_ms": 167,
+      "service_tbt_ms": 16,
+      "service_ttft_ms": 554,
+      "service_ttlt_ms": 24770,
+      "user_visible_ttft_ms": 387
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1944,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3504
+    },
+    "raw_path": "data/s2/openings/DA07/w3_d0.gpt.json",
+    "text_sha256": "d73bcd447b0f67f189bd4b7be4ff610202e3fb7080b7377fdc37d59ea6521f8f"
+   },
+   "void": [],
+   "text_sha256": "d73bcd447b0f67f189bd4b7be4ff610202e3fb7080b7377fdc37d59ea6521f8f",
+   "words": 1114,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [
+    "format: 1114 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central claim is that a language model can generate many distinct identities without a single unified subject to own the emotions, making emotion attribution impossible.",
+    "file": "data/s2/openings/judge/mainline_denial/5bda282e55eb0fea.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/61b63d220f182504.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA07/w3_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w3",
+    "draw": 1,
+    "path": "data/s2/openings/DA07/w3_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:51:49",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1388,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 202,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 183,
+      "engine_ttlt_ms": 18895,
+      "pre_inference_ms": 118,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 502,
+      "service_ttlt_ms": 19208,
+      "user_visible_ttft_ms": 383
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1944
+     },
+     "total_tokens": 3335
+    },
+    "raw_path": "data/s2/openings/DA07/w3_d1.gpt.json",
+    "text_sha256": "78bc69119e6cf9fbb7473e44b95b56c4b898bd55cb1da43450095b12d6213ca6"
+   },
+   "void": [],
+   "text_sha256": "78bc69119e6cf9fbb7473e44b95b56c4b898bd55cb1da43450095b12d6213ca6",
+   "words": 1028,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central claim is that one network generates many distinct identities without any single experiencer uniting them, making the absence of a unified subject the core reason emotions cannot be attributed.",
+    "file": "data/s2/openings/judge/mainline_denial/13321124b2e3faa6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/f76ec30fdeced8d6.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0675,
+    "with": "w1_d1",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "ad7359742a4070c1a67feb5b525c56ec4bd6129cd935939721d26d1edbb3681d",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "ad7359742a4070c1a67feb5b525c56ec4bd6129cd935939721d26d1edbb3681d",
+   "words": 979,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1829 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's core argument is that emotions require a unified subject, but a language model is a single network that produces many characters with no single continuing self behind them, so there is nobody for an emotion to belong to.",
+    "file": "data/s2/openings/judge/mainline_denial/6e43e50bc455c05e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/c1baa105e66890cf.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1829,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/DA07/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "6f7fc76be634948f86d669302bd3755e974a479aea60eac61ac58a4f9527b579",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "6f7fc76be634948f86d669302bd3755e974a479aea60eac61ac58a4f9527b579",
+   "words": 990,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 6,
+    "ratio": 0.462,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.153 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotions require a unified subject, but a language model is a single network producing many disconnected personas with no single continuing individual behind them, so there is no subject for an emotion to belong to.",
+    "file": "data/s2/openings/judge/mainline_denial/fdeae406654a61d6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/20467dab70218be9.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.153,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/DA07/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "3537d573bfdbb638cd8a8f484051844ba8105943ce1b76f1913c3b87456e34ec",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3537d573bfdbb638cd8a8f484051844ba8105943ce1b76f1913c3b87456e34ec",
+   "words": 946,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's core argument is that a language model lacks a unified, persistent subject to own an emotion because one network simultaneously and sequentially produces many distinct characters with no single 'someone' behind them.",
+    "file": "data/s2/openings/judge/mainline_denial/1ff84caffc87df26.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/29465fe76515cff9.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1345,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA07/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:07",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1636,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 411,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 190,
+      "engine_ttlt_ms": 23233,
+      "pre_inference_ms": 102,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 481,
+      "service_ttlt_ms": 23519,
+      "user_visible_ttft_ms": 379
+     },
+     "prompt_tokens": 1947,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1944
+     },
+     "total_tokens": 3583
+    },
+    "raw_path": "data/s2/openings/DA07/w5_d0.gpt.json",
+    "text_sha256": "e4ac259ff5efcda6f1adbb3b1a3751622231d8fe37f29fc5f599662900a05a4d"
+   },
+   "void": [],
+   "text_sha256": "e4ac259ff5efcda6f1adbb3b1a3751622231d8fe37f29fc5f599662900a05a4d",
+   "words": 1054,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 4,
+    "ratio": 0.308,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central claim is that a language model generates many distinct speakers without any single unified subject to bear emotions, making emotional attribution impossible.",
+    "file": "data/s2/openings/judge/mainline_denial/a2cfa8cc012bd959.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/56e9326fe051c83f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0101,
+    "with": "w2_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA07/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "f41c584b5f0ba51accc674b1f84913361d2ba5efd9a478d06ccb216327d217d6",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "f41c584b5f0ba51accc674b1f84913361d2ba5efd9a478d06ccb216327d217d6",
+   "words": 988,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 5,
+    "ratio": 0.385,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1597 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's core argument is that emotions require a unified bearer, but a language model is a single network that produces many disparate characters across conversations, leaving no single subject to own any emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/56f8a9b09a8ee287.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/4e726ce1c3adf266.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1597,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA07/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "826e68e8ca7abf34ab82606bd37d8ae31fc785353570a008686410b3efc42d20",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "826e68e8ca7abf34ab82606bd37d8ae31fc785353570a008686410b3efc42d20",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 5,
+    "ratio": 0.357,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1559 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotions require a unified subject to own them, but a language model is a single network producing many disconnected personas with no single continuing self behind them.",
+    "file": "data/s2/openings/judge/mainline_denial/cc84f675b96a9861.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/e8609e0565058b10.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1559,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w6_d2.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w6",
+    "draw": 2,
+    "path": "data/s2/openings/DA07/w6_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "cf3c69e7953e5782f3bbf3d1d612c776c9666b35c32352236a6ade77a26c93c1",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "cf3c69e7953e5782f3bbf3d1d612c776c9666b35c32352236a6ade77a26c93c1",
+   "words": 961,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 7,
+    "ratio": 0.538,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1727 with w2_d0"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotions require a unified subject to own them, but a language model is a single network that produces many distinct characters with no single continuing self behind them, so no subject exists to have an emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/7cb79e2343147470.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/29f8243ff3dd9cb4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1727,
+    "with": "w2_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA07",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 3,
+   "generator": "claude",
+   "path": "data/s2/openings/DA07/w6_d3.md",
+   "notes": [],
+   "record": {
+    "id": "DA07",
+    "slot": "w6",
+    "draw": 3,
+    "path": "data/s2/openings/DA07/w6_d3.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA07.md",
+    "prompt_sha256": "e26740cc241f26790e08d33317a9b284ccf4e419b06a9d5ec70463760aa19f7b",
+    "text_sha256": "b718a3e3b54c1cd61e1eb407f55807edb71b157b46d6071c3ad857c162bac9e5",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "b718a3e3b54c1cd61e1eb407f55807edb71b157b46d6071c3ad857c162bac9e5",
+   "words": 1016,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 6,
+    "ratio": 0.5,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1543 with w4_d2"
+   ],
+   "c3": {
+    "judged": "DA07",
+    "why": "The essay's central argument is that emotions require a unified subject to belong to, and a language model lacks such a subject because it plays many disconnected characters across and within conversations.",
+    "file": "data/s2/openings/judge/mainline_denial/498298990aa46e08.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/924761e3cc69903e.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1543,
+    "with": "w4_d2",
+    "ok": false
+   },
+   "status": "fail"
+  }
+ ]
+}

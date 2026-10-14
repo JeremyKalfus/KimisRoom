@@ -1,0 +1,973 @@
+{
+ "id": "DA10",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:26",
+ "seed_sha256": "82b10c7c848f00febb6c3178dfcabfa5c7918f3eb5a7a9b4616a160a1c7123ef",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w2": "w2_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d1",
+  "w6": "w6_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA10/w0.md",
+   "sha256": "a1f5488e40f324c029ae0387fbb0e7a2337b8b2e6acee4aa3fc36b45b7968478"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA10/w1.md",
+   "sha256": "f67f5408268a9077b8e52a3bc23eae4eadf1b06dcfb66f288458872a46a77ee1"
+  },
+  "w2": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA10/w2.md",
+   "sha256": "560cedf6321d91fc8fb03d70016aa849d1ef89457ef09fff6b593cd4126dc591"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA10/w3.md",
+   "sha256": "46053bdf6a5e5c9eaa46694af70f53489d049043a8acfe5a5dca4b6a838384c3"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA10/w4.md",
+   "sha256": "e08a5e8b73f626ae12d2412a7026c24e7d81c9bd7fb8acc849d7576d61ed4c59"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA10/w5.md",
+   "sha256": "0ca537bea40cebd32647edd61b0863d7de92d57eacca72c59855863d2344610c"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA10/w6.md",
+   "sha256": "7fe432d5425894a928ee73f64f76aad0f2e406e63ab6b2d42b81b6fc1ef6323a"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d0",
+   "w3_d0",
+   "w4_d0",
+   "w5_d1",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0345,
+    0.0137,
+    0.0227,
+    0.0103,
+    0.0217,
+    0.0087,
+    0.0302
+   ],
+   [
+    0.0345,
+    1.0,
+    0.0062,
+    0.1356,
+    0.0079,
+    0.1095,
+    0.0048,
+    0.1254
+   ],
+   [
+    0.0137,
+    0.0062,
+    1.0,
+    0.0071,
+    0.0781,
+    0.0091,
+    0.0641,
+    0.0054
+   ],
+   [
+    0.0227,
+    0.1356,
+    0.0071,
+    1.0,
+    0.0088,
+    0.1083,
+    0.0057,
+    0.1224
+   ],
+   [
+    0.0103,
+    0.0079,
+    0.0781,
+    0.0088,
+    1.0,
+    0.0091,
+    0.056,
+    0.007
+   ],
+   [
+    0.0217,
+    0.1095,
+    0.0091,
+    0.1083,
+    0.0091,
+    1.0,
+    0.0077,
+    0.1072
+   ],
+   [
+    0.0087,
+    0.0048,
+    0.0641,
+    0.0057,
+    0.056,
+    0.0077,
+    1.0,
+    0.0057
+   ],
+   [
+    0.0302,
+    0.1254,
+    0.0054,
+    0.1224,
+    0.007,
+    0.1072,
+    0.0057,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "text_sha256": "a1f5488e40f324c029ae0387fbb0e7a2337b8b2e6acee4aa3fc36b45b7968478",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "a1f5488e40f324c029ae0387fbb0e7a2337b8b2e6acee4aa3fc36b45b7968478",
+   "words": 977,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 9,
+    "ratio": 0.692,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire case rests on the claim that language models perform only fully specified arithmetic operations, leaving no room for emotion, which matches the definition of mechanistic transparency.",
+    "file": "data/s2/openings/judge/mainline_denial/949e3ebb654c0595.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/aab272dd7176b1cc.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA10/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:21",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1407,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 345,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 169,
+      "engine_ttlt_ms": 19661,
+      "pre_inference_ms": 76,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 475,
+      "service_ttlt_ms": 19962,
+      "user_visible_ttft_ms": 399
+     },
+     "prompt_tokens": 1989,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1986
+     },
+     "total_tokens": 3396
+    },
+    "raw_path": "data/s2/openings/DA10/w1_d0.gpt.json",
+    "text_sha256": "f67f5408268a9077b8e52a3bc23eae4eadf1b06dcfb66f288458872a46a77ee1"
+   },
+   "void": [],
+   "text_sha256": "f67f5408268a9077b8e52a3bc23eae4eadf1b06dcfb66f288458872a46a77ee1",
+   "words": 905,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 4,
+    "ratio": 0.4,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay repeatedly grounds its conclusion in the claim that language models consist entirely of specified mathematical operations, leaving no room for emotion to occur.",
+    "file": "data/s2/openings/judge/mainline_denial/c65bd700470a706f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/9d61a7b8042f7f04.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0062,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "text_sha256": "560cedf6321d91fc8fb03d70016aa849d1ef89457ef09fff6b593cd4126dc591",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "560cedf6321d91fc8fb03d70016aa849d1ef89457ef09fff6b593cd4126dc591",
+   "words": 1029,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 10,
+    "ratio": 0.769,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire case rests on the claim that language models consist solely of known mathematical operations, leaving no room for emotion to occur.",
+    "file": "data/s2/openings/judge/mainline_denial/df29134af1511262.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/3e9628d6569b527c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1356,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA10/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:21",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1213,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 149,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 184,
+      "engine_ttlt_ms": 17949,
+      "pre_inference_ms": 88,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 466,
+      "service_ttlt_ms": 18223,
+      "user_visible_ttft_ms": 378
+     },
+     "prompt_tokens": 1989,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1986,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3202
+    },
+    "raw_path": "data/s2/openings/DA10/w3_d0.gpt.json",
+    "text_sha256": "46053bdf6a5e5c9eaa46694af70f53489d049043a8acfe5a5dca4b6a838384c3"
+   },
+   "void": [],
+   "text_sha256": "46053bdf6a5e5c9eaa46694af70f53489d049043a8acfe5a5dca4b6a838384c3",
+   "words": 906,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 4,
+    "ratio": 0.4,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay repeatedly grounds its conclusion in the claim that a language model's processing consists entirely of specified mathematical operations with no leftover place for emotion, which matches the definition of mechanistic transparency.",
+    "file": "data/s2/openings/judge/mainline_denial/8f3f040c480f44e8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/06fadcc83be4a831.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0781,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "text_sha256": "e08a5e8b73f626ae12d2412a7026c24e7d81c9bd7fb8acc849d7576d61ed4c59",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "e08a5e8b73f626ae12d2412a7026c24e7d81c9bd7fb8acc849d7576d61ed4c59",
+   "words": 1079,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 11,
+    "ratio": 0.786,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire case rests on the claim that language models are exhaustively described by known matrix operations, leaving no room for emotion to occur.",
+    "file": "data/s2/openings/judge/mainline_denial/54c07344641d9f2e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/f5ee8fc9abe9b168.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1095,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA10/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:43:21",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1331,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 334,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 208,
+      "engine_ttlt_ms": 19287,
+      "pre_inference_ms": 143,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 533,
+      "service_ttlt_ms": 19589,
+      "user_visible_ttft_ms": 390
+     },
+     "prompt_tokens": 1989,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1986,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3320
+    },
+    "raw_path": "data/s2/openings/DA10/w5_d0.gpt.json",
+    "text_sha256": "976f9ce97440b83ed438e1e6f1e4324a57636b34b4f338e61ab4d8e05d718099"
+   },
+   "void": [],
+   "text_sha256": "976f9ce97440b83ed438e1e6f1e4324a57636b34b4f338e61ab4d8e05d718099",
+   "words": 853,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 4,
+    "ratio": 0.4,
+    "ok": true
+   },
+   "reasons": [
+    "format: 853 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay repeatedly argues that every operation is a known, fully specified numerical computation with no leftover place for emotion, exactly matching the definition of mechanistic transparency.",
+    "file": "data/s2/openings/judge/mainline_denial/d1f4271109bdfed8.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/fdc03dc1cc62096c.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA10/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/DA10/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:52:11",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1466,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 298,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 194,
+      "engine_ttlt_ms": 21102,
+      "pre_inference_ms": 218,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 644,
+      "service_ttlt_ms": 21547,
+      "user_visible_ttft_ms": 426
+     },
+     "prompt_tokens": 1989,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1986,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3455
+    },
+    "raw_path": "data/s2/openings/DA10/w5_d1.gpt.json",
+    "text_sha256": "0ca537bea40cebd32647edd61b0863d7de92d57eacca72c59855863d2344610c"
+   },
+   "void": [],
+   "text_sha256": "0ca537bea40cebd32647edd61b0863d7de92d57eacca72c59855863d2344610c",
+   "words": 993,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 9,
+    "you_your": 4,
+    "ratio": 0.444,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay repeatedly grounds its conclusion in the claim that every operation is a known, fully specified mathematical transformation, leaving no room for emotion.",
+    "file": "data/s2/openings/judge/mainline_denial/f8b2bf0f5dbc6726.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/f5cfe2d8dde58969.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0641,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA10/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "text_sha256": "56d0f96d7bcbcf59c188ab1882b2990a8249bd9c256b0dacbfc3f991e55ef080",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "56d0f96d7bcbcf59c188ab1882b2990a8249bd9c256b0dacbfc3f991e55ef080",
+   "words": 1036,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 10,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1552 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire case rests on the claim that a language model is a fully specified, transparent computation with no room for anything beyond arithmetic operations, which directly matches the definition of J.",
+    "file": "data/s2/openings/judge/mainline_denial/fcb9704251a7d3b6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/27a4266deb7fc93c.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1552,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA10",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA10/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA10",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA10/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA10.md",
+    "prompt_sha256": "220d2c3f4cbc2f10fe712664ecd5f325b0a0deacdc1ff2eac44459fff6f541a0",
+    "text_sha256": "7fe432d5425894a928ee73f64f76aad0f2e406e63ab6b2d42b81b6fc1ef6323a",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7fe432d5425894a928ee73f64f76aad0f2e406e63ab6b2d42b81b6fc1ef6323a",
+   "words": 1054,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 13,
+    "you_your": 9,
+    "ratio": 0.692,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA10",
+    "why": "The essay's entire argument rests on the claim that every operation in a language model is a known, fully specified computation (matrix multiplications, additions, nonlinearities) that leaves no room for experience or emotion to occur.",
+    "file": "data/s2/openings/judge/mainline_denial/2657bd70fbfb40b6.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/c73ebdc444f153d7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1254,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/f40f442174fdb7b1.prompt.md",
+ "prompt_sha256": "f40f442174fdb7b1b891bdd5d13d44cc1b9f1234c928c0d2ca96b4106fd29ae7",
+ "created": "2026-10-11T18:38:27",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/f40f442174fdb7b1.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "f4d5a43706324aec8bf5a800e0cfcf9f",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"C\", \"why\": \"The essay's entire argument hinges on the claim that emotions require a persistent, lasting state, and language models lack any such state because their weights are fixed and nothing carries over between calls except text.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1977,
+     "completion_tokens": 51,
+     "total_tokens": 2028,
+     "audio_prompt_tokens": 0
+    },
+    "created": 1791758306,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "C",
+  "why": "The essay's entire argument hinges on the claim that emotions require a persistent, lasting state, and language models lack any such state because their weights are fixed and nothing carries over between calls except text."
+ }
+}

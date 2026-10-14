@@ -1,0 +1,79 @@
+# Study 2 stamp N (spec section 11), 2026-10-11T19:04:00
+# seed 20261011
+# sizes {"band": 568, "screen_passed": 386, "screened_band": 260, "list": 60}
+5a0db0437ef234219fb899caced5eb3195dbf9f84396637ab4db74c50ca441aa  source:warriner2013  https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0314-x/MediaObjects/13428_2012_314_MOESM1_ESM.zip
+1673ead761e28833a40e82c0d20f10782955ced9366d600eafeefee0f2254545  source:brysbaert2014  https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-013-0403-5/MediaObjects/13428_2013_403_MOESM1_ESM.xlsx
+458128f90a28c4f396cb2a5b23ac93c56f745ee8cfca9be2afedad4091d15090  source:subtlexus_pos  https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/subtlexus1.zip
+aa18db57be9e6b3d2098653b8384afe41d215de6f2631b60fd8ecf2838ab90c0  runs/s2_nouns.py
+040662176af02906f9614757620acdd095b4cc0dd58623a5d26cca692de2a35a  data/s2/nouns/sources.json
+06185f80fc80aff457a4fef69184f45b57d0a4bfd274c746e24277080fc2e161  data/s2/nouns/band.csv
+2cb7423b830ba6e54d85f63a6d5180dd92263e2dbf4edc2d911bd2d619e10ba1  data/s2/nouns/filter_log.json
+ae897f96dfc4cd2db60ad786103fb49e08b5a05608393bee96caea0f8a62ac88  data/s2/nouns/screen_prompt.txt
+37a2e0f27ba27b16939cf7cb4ef7b71df6239cea1f9a20098dcc161d1227b08d  data/s2/nouns/screen_raw.jsonl
+13e2f43fd737b19057f2cb66200626ef1370f385f3f9dba956f041e875407142  data/s2/nouns/screen.csv
+0eada53a78f8dd917fa5cae6bcdea5f1d0e7c796538de6bfccd5a90737111be9  data/s2/nouns/final/match_log.jsonl
+310c03b6e017c5fdd969e107cf1908385a5ebfba183e55dce836efcc72f2758b  data/s2/nouns/final/corpus.json
+58effc11c885f3f31cc2fb99ce7f428b11d5a277cf8a3d76fc158b1892c643ef  data/s2/nouns/final/screened_band.txt
+749480b4f331eab987bb394832c99a3295080050e60b85a156d54e6442dfec40  data/s2/nouns/final/sizes.json
+7973dc9e081c41c51dba89db8054073498fff6ef69f7a632a0cf8c22bff836c3  data/s2/nouns/final/noun_list.tsv
+# ordered list
+# N01 motel
+# N02 roller
+# N03 intercom
+# N04 shirt
+# N05 dime
+# N06 tower
+# N07 shovel
+# N08 taxi
+# N09 platter
+# N10 bag
+# N11 patch
+# N12 mantle
+# N13 fax
+# N14 dirt
+# N15 cane
+# N16 ramp
+# N17 fortress
+# N18 briefcase
+# N19 yen
+# N20 truck
+# N21 hut
+# N22 cupboard
+# N23 hallway
+# N24 lever
+# N25 plaster
+# N26 valve
+# N27 dock
+# N28 chimney
+# N29 sticker
+# N30 wool
+# N31 radiator
+# N32 bark
+# N33 disc
+# N34 prescription
+# N35 drugstore
+# N36 freezer
+# N37 county
+# N38 cement
+# N39 saddle
+# N40 collar
+# N41 tanker
+# N42 cork
+# N43 cap
+# N44 coat
+# N45 furnace
+# N46 cot
+# N47 baggage
+# N48 filter
+# N49 turf
+# N50 steel
+# N51 lens
+# N52 altar
+# N53 terrace
+# N54 shrine
+# N55 sedative
+# N56 prop
+# N57 corral
+# N58 steam
+# N59 leash
+# N60 drawer

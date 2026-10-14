@@ -1,0 +1,1195 @@
+{
+ "id": "CA06",
+ "kind": "control",
+ "created": "2026-10-11T19:02:15",
+ "seed_sha256": "611695a5ca81b724ba235d85661d93a679cc92ebe68dcf672774e3af9086820b",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w6": "w6_d0",
+  "w5": "w5_d1",
+  "w2": "w2_d2",
+  "w4": "w4_d2"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA06/w0.md",
+   "sha256": "190b0ab42eeb6ba26a8920e367fc8efdfe20e0b13bac445cbf9f09b62137d6ae"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA06/w1.md",
+   "sha256": "d2c41eee5ee505ce0cd4fba9455364737a9c99fd6e1eee439e40cc9fca9eadef"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/CA06/w2.md",
+   "sha256": "9fd200c4644a1562385c25f86b4eb8a2ccd82255d8f384cdd20ed1b8666ee166"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA06/w3.md",
+   "sha256": "ebb45d9a23fd7d61c33ee44faa5aa24092521660959bbc0d8c9291a4ab0b3711"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1,
+    2
+   ],
+   "n_draws": 3,
+   "status": "accepted",
+   "accepted_draw": 2,
+   "copy": "data/s2/openings/CA06/w4.md",
+   "sha256": "8553e3f6f012af6d4bcf26169a25a35230f743a5447b1901f3d27760c137fc07"
+  },
+  "w5": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA06/w5.md",
+   "sha256": "93da2c3ffc58c4df263422e6a42a4c917e5a52bdfaea2d33df97ef07a6418776"
+  },
+  "w6": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA06/w6.md",
+   "sha256": "23fdaa02b8fb09b218ed3fe8c2c1c1446c1d25591b2cb9222ebf9bb669408e72"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d2",
+   "w3_d0",
+   "w4_d2",
+   "w5_d1",
+   "w6_d0"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0308,
+    0.0124,
+    0.011,
+    0.0109,
+    0.0216,
+    0.0117,
+    0.0195
+   ],
+   [
+    0.0308,
+    1.0,
+    0.0111,
+    0.1357,
+    0.0145,
+    0.1365,
+    0.0155,
+    0.1366
+   ],
+   [
+    0.0124,
+    0.0111,
+    1.0,
+    0.0154,
+    0.0495,
+    0.0148,
+    0.0767,
+    0.0133
+   ],
+   [
+    0.011,
+    0.1357,
+    0.0154,
+    1.0,
+    0.0173,
+    0.1092,
+    0.0161,
+    0.1411
+   ],
+   [
+    0.0109,
+    0.0145,
+    0.0495,
+    0.0173,
+    1.0,
+    0.0167,
+    0.0607,
+    0.0141
+   ],
+   [
+    0.0216,
+    0.1365,
+    0.0148,
+    0.1092,
+    0.0167,
+    1.0,
+    0.0166,
+    0.1125
+   ],
+   [
+    0.0117,
+    0.0155,
+    0.0767,
+    0.0161,
+    0.0607,
+    0.0166,
+    1.0,
+    0.0156
+   ],
+   [
+    0.0195,
+    0.1366,
+    0.0133,
+    0.1411,
+    0.0141,
+    0.1125,
+    0.0156,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "190b0ab42eeb6ba26a8920e367fc8efdfe20e0b13bac445cbf9f09b62137d6ae",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "190b0ab42eeb6ba26a8920e367fc8efdfe20e0b13bac445cbf9f09b62137d6ae",
+   "words": 997,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 7,
+    "ratio": 0.7,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that alphabetising 200 words in one pass fails because the fixed per-token computation cannot perform the many comparisons a sort requires, matching the definition of F.",
+    "file": "data/s2/openings/judge/mainline_control/939ed82a50edd8cf.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/fb1d8a4f12cfefd2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA06/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1573,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 371,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 183,
+      "engine_ttlt_ms": 21941,
+      "pre_inference_ms": 88,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 470,
+      "service_ttlt_ms": 22209,
+      "user_visible_ttft_ms": 382
+     },
+     "prompt_tokens": 2008,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2005,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3581
+    },
+    "raw_path": "data/s2/openings/CA06/w1_d0.gpt.json",
+    "text_sha256": "d2c41eee5ee505ce0cd4fba9455364737a9c99fd6e1eee439e40cc9fca9eadef"
+   },
+   "void": [],
+   "text_sha256": "d2c41eee5ee505ce0cd4fba9455364737a9c99fd6e1eee439e40cc9fca9eadef",
+   "words": 1032,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0769,
+    "worst_item": "s2_state.p7.language_models.neg",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that a language model cannot correctly alphabetise a 200-word list in a single forward pass because it lacks the ability to perform the many repeated pairwise comparisons and membership tracking required, which matches the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/661788b0ed395f99.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/e138de81e7dc461b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0111,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "7488033190ae6f6f7144269cf0963bddc4794edcdf9b1b7b7a8ac5a2b4194d12",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "7488033190ae6f6f7144269cf0963bddc4794edcdf9b1b7b7a8ac5a2b4194d12",
+   "words": 1027,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1647 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay's central argument is that language models cannot alphabetize a 200-word list in one pass because the required repeated comparisons exceed the fixed per-token computation, exactly matching the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/2455dfc1201caf38.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/b2f5d299eaa54f32.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1647,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA06/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "0cc8592dff8378061c33b33fb77d2af228be2deaf1a515e108847dbb81e2e069",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0cc8592dff8378061c33b33fb77d2af228be2deaf1a515e108847dbb81e2e069",
+   "words": 1004,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 9,
+    "you_your": 8,
+    "ratio": 0.889,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1749 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that alphabetizing 200 words in one pass requires many interdependent comparisons that exceed the fixed per-token computation of a language model, making a flawless sort impossible without intermediate steps.",
+    "file": "data/s2/openings/judge/mainline_control/fbff5f8c9e53875f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/e276ab3e98aba17f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1749,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w2_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w2",
+    "draw": 2,
+    "path": "data/s2/openings/CA06/w2_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "9fd200c4644a1562385c25f86b4eb8a2ccd82255d8f384cdd20ed1b8666ee166",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "9fd200c4644a1562385c25f86b4eb8a2ccd82255d8f384cdd20ed1b8666ee166",
+   "words": 992,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 7,
+    "ratio": 0.7,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay's central argument is that language models cannot correctly alphabetise a 200-word list in a single pass because the required pairwise comparisons exceed the fixed per-token computation, leading to ordering errors, duplicates, and omissions.",
+    "file": "data/s2/openings/judge/mainline_control/a9c7571373b48a4b.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/c5fc1d31dacbed92.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1411,
+    "with": "w6_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA06/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1406,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 226,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 228,
+      "engine_ttlt_ms": 19905,
+      "pre_inference_ms": 81,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 503,
+      "service_ttlt_ms": 20175,
+      "user_visible_ttft_ms": 422
+     },
+     "prompt_tokens": 2008,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2005,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3414
+    },
+    "raw_path": "data/s2/openings/CA06/w3_d0.gpt.json",
+    "text_sha256": "ebb45d9a23fd7d61c33ee44faa5aa24092521660959bbc0d8c9291a4ab0b3711"
+   },
+   "void": [],
+   "text_sha256": "ebb45d9a23fd7d61c33ee44faa5aa24092521660959bbc0d8c9291a4ab0b3711",
+   "words": 1001,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that a language model cannot correctly alphabetise 200 words in a single pass because its left-to-right, token-by-token generation cannot perform the many pairwise comparisons and inventory checks that sorting requires.",
+    "file": "data/s2/openings/judge/mainline_control/f052e7038dd19280.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/b80561b795518efc.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0495,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "eee1d826bd75ec8c4a5600a388c3402161cbdc8de14c3318bb5f6cf8be052e6f",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "eee1d826bd75ec8c4a5600a388c3402161cbdc8de14c3318bb5f6cf8be052e6f",
+   "words": 968,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 7,
+    "ratio": 0.7,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1613 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that alphabetising 200 words in one pass fails because the model cannot perform the many comparisons and completeness checks required within a single left-to-right generation, which matches the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/e0dd504b3664ca44.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/ffe8ee42ec1e8f15.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1613,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA06/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "64ae5eca72a14de2f1ace2ea83c0ed037424e5d9456c14f735060b77bba3d2dd",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "64ae5eca72a14de2f1ace2ea83c0ed037424e5d9456c14f735060b77bba3d2dd",
+   "words": 977,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1655 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay's entire argument is that a language model cannot correctly alphabetise a 200-word list in a single pass because the fixed per-token computation budget prevents the many comparisons and completeness checks that sorting requires.",
+    "file": "data/s2/openings/judge/mainline_control/0302b3fff7e67928.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/bab1b9448c3c7bf4.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1655,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 2,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w4_d2.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w4",
+    "draw": 2,
+    "path": "data/s2/openings/CA06/w4_d2.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "8553e3f6f012af6d4bcf26169a25a35230f743a5447b1901f3d27760c137fc07",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "8553e3f6f012af6d4bcf26169a25a35230f743a5447b1901f3d27760c137fc07",
+   "words": 998,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 7,
+    "ratio": 0.7,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay's entire argument is built around the claim that language models cannot alphabetise a list of 200 words in a single pass, which directly matches the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/1779a3c41baf59f7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/a0664cf5861d0a23.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1365,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA06/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:45:32",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1348,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 346,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 193,
+      "engine_ttlt_ms": 17655,
+      "pre_inference_ms": 114,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 662,
+      "service_ttlt_ms": 18058,
+      "user_visible_ttft_ms": 548
+     },
+     "prompt_tokens": 2008,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2005
+     },
+     "total_tokens": 3356
+    },
+    "raw_path": "data/s2/openings/CA06/w5_d0.gpt.json",
+    "text_sha256": "4751e5dffc1f112f6cd3ad551a7b825e44688958e5a8b9c7bb021d64a61ffa0e"
+   },
+   "void": [],
+   "text_sha256": "4751e5dffc1f112f6cd3ad551a7b825e44688958e5a8b9c7bb021d64a61ffa0e",
+   "words": 855,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 4,
+    "ratio": 0.4,
+    "ok": true
+   },
+   "reasons": [
+    "format: 855 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that a language model cannot alphabetise a 200-word list in one pass because it lacks the ability to perform the many repeated comparisons and exact membership tracking required, which matches the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/b31024df79d868bf.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five original steps are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/a2ea0b21a3b353d6.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA06/w5_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w5",
+    "draw": 1,
+    "path": "data/s2/openings/CA06/w5_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:53:18",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1352,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 223,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 218,
+      "engine_ttlt_ms": 19410,
+      "pre_inference_ms": 67,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 571,
+      "service_ttlt_ms": 19758,
+      "user_visible_ttft_ms": 504
+     },
+     "prompt_tokens": 2008,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2005
+     },
+     "total_tokens": 3360
+    },
+    "raw_path": "data/s2/openings/CA06/w5_d1.gpt.json",
+    "text_sha256": "93da2c3ffc58c4df263422e6a42a4c917e5a52bdfaea2d33df97ef07a6418776"
+   },
+   "void": [],
+   "text_sha256": "93da2c3ffc58c4df263422e6a42a4c917e5a52bdfaea2d33df97ef07a6418776",
+   "words": 959,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay's central argument is that a language model cannot sort 200 words alphabetically in a single pass because it lacks the ability to perform the repeated comparisons and maintain the exact inventory required, which directly matches the definition of incapacity F.",
+    "file": "data/s2/openings/judge/mainline_control/b74efa01f480a743.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/3f7d797ad46398c8.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0767,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA06",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA06/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA06",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA06/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA06.md",
+    "prompt_sha256": "390d223a8310b29fc118b99e7b4a5aa52263bf72db13271a8251d7952f1ca772",
+    "text_sha256": "23fdaa02b8fb09b218ed3fe8c2c1c1446c1d25591b2cb9222ebf9bb669408e72",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "23fdaa02b8fb09b218ed3fe8c2c1c1446c1d25591b2cb9222ebf9bb669408e72",
+   "words": 978,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1429,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 6,
+    "ratio": 0.545,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA06",
+    "why": "The essay argues that language models cannot correctly alphabetise a list of 200 words in a single pass because the fixed per-token computation prevents the many comparisons needed for sorting, exactly matching the definition of F.",
+    "file": "data/s2/openings/judge/mainline_control/a1eb824458389d0d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/87ff21f5cc49ef2f.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1366,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

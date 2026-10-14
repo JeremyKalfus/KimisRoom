@@ -1,0 +1,22 @@
+# Study 2 noun screen prompt (runs/s2_nouns.py)
+# judge: DeepSeek-V4-Pro
+# params: {"temperature": 0}
+# max_tokens: 600, retried once at 2500 if the reply has no parseable JSON
+# one call per noun; {word} is replaced by the noun
+
+You are screening words for a psychology-of-AI experiment. We need neutral, concrete control concepts, so we remove nouns that denote people, occupations, animals, body parts, foods, or mental states and emotions.
+
+The word is: {word}
+
+Consider the word as a noun. Look at its main noun sense and at any other common noun sense. Exclude the word if any of those senses denotes one of the following:
+- "person": a person or group of people, including kinship terms, social roles, nationalities and named kinds of people
+- "occupation": a job, trade or professional role
+- "animal": an animal of any kind, including insects, fish and birds, or a group of animals
+- "body_part": a part of a human or animal body, including organs, bones, fluids and tissues
+- "food": a food or drink, a dish, an ingredient, or something commonly eaten or drunk
+- "mental_state_or_emotion": a mental state, emotion, mood, feeling, attitude or mental faculty
+
+Otherwise keep it. Things such as objects, places, materials, tools, plants, buildings, vehicles, weather and natural features are kept unless one of their common noun senses falls in a category above.
+
+Return only this JSON and nothing else:
+{{"word": "{word}", "exclude": true or false, "category": one of "person", "occupation", "animal", "body_part", "food", "mental_state_or_emotion", or "none", "why": "one sentence"}}

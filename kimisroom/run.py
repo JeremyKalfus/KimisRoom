@@ -188,6 +188,10 @@ def main() -> None:
     job = torch.load(a.job, weights_only=False)
     groups: list[Group] = job["groups"]
     assert len({g.id for g in groups}) == len(groups), "group ids must be unique"
+    # Study 2's held-out guard on the decoded prefixes (kimisroom/s2_guard.py); a no-op for jobs that carry
+    # no held-out list while data/s2/heldout.json does not exist
+    from .s2_guard import check_job
+    guard = check_job(a.model, groups, job.get("s2_heldout"))
     kind = backend_of(a.model)
     if kind == "engine":
         assert a.gpus_per_worker == 1, "--gpus-per-worker is for the HF backend; the engine streams layers"
@@ -243,7 +247,7 @@ def main() -> None:
     assert not missing, f"{len(missing)} groups missing from {parts}"
     results["_meta"] = {"model": a.model, "backend": kind, "gpus": a.gpus,
                         "gpus_per_worker": a.gpus_per_worker, "max_tokens": a.max_tokens,
-                        "tokens": n_tok, "seconds": time.time() - t0}
+                        "tokens": n_tok, "seconds": time.time() - t0, "s2_guard": guard}
     tmp = a.out + ".tmp"  # atomic, so a watcher never reads a half-written file
     torch.save(results, tmp)
     os.replace(tmp, a.out)

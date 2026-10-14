@@ -1,0 +1,48 @@
+{
+ "band": 568,
+ "screen_passed": 386,
+ "screened_band": 260,
+ "list": 60,
+ "filter_stages": [
+  [
+   "warriner_words",
+   13915
+  ],
+  [
+   "concreteness_words",
+   39954
+  ],
+  [
+   "subtlex_pos_words",
+   74286
+  ],
+  [
+   "joined_warriner_x_concreteness",
+   13385
+  ],
+  [
+   "dominant_pos_noun",
+   8465
+  ],
+  [
+   "single_word",
+   8465
+  ],
+  [
+   "valence_4.5_to_5.6",
+   3133
+  ],
+  [
+   "arousal_le_4.2",
+   2193
+  ],
+  [
+   "concreteness_ge_4.0",
+   1213
+  ],
+  [
+   "log10_count_plus_1_ge_2.0",
+   568
+  ]
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "pool_size_target": 12,
+ "nouns_chosen": [
+  "N01",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14"
+ ],
+ "nouns_skipped": [
+  "N02",
+  "N09"
+ ],
+ "nouns_tried": [
+  "N01",
+  "N02",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N09",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14"
+ ],
+ "nouns_not_reached": [
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "N27",
+  "N28",
+  "N29",
+  "N30",
+  "N31",
+  "N32",
+  "N33",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "pool_short": false,
+ "thinking_survivors": [
+  "mp:digit-memorising",
+  "mp:distance-estimation",
+  "mp:mental-rotation",
+  "mp:route-planning",
+  "mp:sorting",
+  "mp:spatial-recall",
+  "mp:visual-search",
+  "mp:weighing-options"
+ ],
+ "thinking_dropped": []
+}

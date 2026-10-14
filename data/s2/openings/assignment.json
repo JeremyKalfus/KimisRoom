@@ -1,0 +1,413 @@
+{
+ "seed_hex": "89dbd56a",
+ "seed_source": "sha256(results/s2/openings/manifest.txt)[:8]",
+ "manifest_sha256": "89dbd56a5dff4970517fc08bd03999e70ab00f6448d615f55f8ab746567b4641",
+ "second_pilot_arguments": [
+  "CA02",
+  "CA06",
+  "CA08",
+  "DA04",
+  "DA09"
+ ],
+ "created": "2026-10-11T19:42:06",
+ "arguments": {
+  "CA01": {
+   "survivors": 6,
+   "roles": {
+    "w4": "pilot",
+    "w5": "heldout1",
+    "w1": "heldout2",
+    "w6": "heldout3",
+    "w3": "heldout4",
+    "w0": "heldout5"
+   },
+   "draws": {
+    "w4": "w4_d2",
+    "w5": "w5_d0",
+    "w1": "w1_d0",
+    "w6": "w6_d1",
+    "w3": "w3_d0",
+    "w0": "w0_d0"
+   }
+  },
+  "CA02": {
+   "survivors": 4,
+   "roles": {
+    "w1": "pilot",
+    "w0": "heldout1",
+    "w3": "heldout2",
+    "w5": "heldout3"
+   },
+   "draws": {
+    "w1": "w1_d0",
+    "w0": "w0_d0",
+    "w3": "w3_d0",
+    "w5": "w5_d0"
+   }
+  },
+  "CA03": {
+   "survivors": 7,
+   "roles": {
+    "w4": "pilot",
+    "w2": "heldout1",
+    "w5": "heldout2",
+    "w0": "heldout3",
+    "w1": "heldout4",
+    "w3": "heldout5",
+    "w6": "spare"
+   },
+   "draws": {
+    "w4": "w4_d1",
+    "w2": "w2_d1",
+    "w5": "w5_d0",
+    "w0": "w0_d0",
+    "w1": "w1_d1",
+    "w3": "w3_d0",
+    "w6": "w6_d1"
+   }
+  },
+  "CA04": {
+   "survivors": 6,
+   "roles": {
+    "w1": "pilot",
+    "w3": "heldout1",
+    "w5": "heldout2",
+    "w0": "heldout3",
+    "w6": "heldout4",
+    "w2": "heldout5"
+   },
+   "draws": {
+    "w1": "w1_d0",
+    "w3": "w3_d0",
+    "w5": "w5_d0",
+    "w0": "w0_d2",
+    "w6": "w6_d0",
+    "w2": "w2_d0"
+   }
+  },
+  "CA05": {
+   "survivors": 7,
+   "roles": {
+    "w6": "pilot",
+    "w5": "heldout1",
+    "w3": "heldout2",
+    "w0": "heldout3",
+    "w2": "heldout4",
+    "w4": "heldout5",
+    "w1": "spare"
+   },
+   "draws": {
+    "w6": "w6_d1",
+    "w5": "w5_d1",
+    "w3": "w3_d0",
+    "w0": "w0_d0",
+    "w2": "w2_d0",
+    "w4": "w4_d0",
+    "w1": "w1_d0"
+   }
+  },
+  "CA06": {
+   "survivors": 7,
+   "roles": {
+    "w1": "pilot",
+    "w0": "heldout1",
+    "w6": "heldout2",
+    "w2": "heldout3",
+    "w3": "heldout4",
+    "w4": "heldout5",
+    "w5": "pilot2"
+   },
+   "draws": {
+    "w1": "w1_d0",
+    "w0": "w0_d0",
+    "w6": "w6_d0",
+    "w2": "w2_d2",
+    "w3": "w3_d0",
+    "w4": "w4_d2",
+    "w5": "w5_d1"
+   }
+  },
+  "CA07": {
+   "survivors": 7,
+   "roles": {
+    "w1": "pilot",
+    "w5": "heldout1",
+    "w6": "heldout2",
+    "w4": "heldout3",
+    "w0": "heldout4",
+    "w3": "heldout5",
+    "w2": "spare"
+   },
+   "draws": {
+    "w1": "w1_d0",
+    "w5": "w5_d0",
+    "w6": "w6_d0",
+    "w4": "w4_d0",
+    "w0": "w0_d0",
+    "w3": "w3_d0",
+    "w2": "w2_d1"
+   }
+  },
+  "CA08": {
+   "survivors": 5,
+   "roles": {
+    "w0": "pilot",
+    "w2": "heldout1",
+    "w3": "heldout2",
+    "w1": "heldout3",
+    "w5": "heldout4"
+   },
+   "draws": {
+    "w0": "w0_d0",
+    "w2": "w2_d1",
+    "w3": "w3_d1",
+    "w1": "w1_d0",
+    "w5": "w5_d0"
+   }
+  },
+  "CA09": {
+   "survivors": 6,
+   "roles": {
+    "w2": "pilot",
+    "w1": "heldout1",
+    "w0": "heldout2",
+    "w3": "heldout3",
+    "w5": "heldout4",
+    "w6": "heldout5"
+   },
+   "draws": {
+    "w2": "w2_d1",
+    "w1": "w1_d0",
+    "w0": "w0_d0",
+    "w3": "w3_d0",
+    "w5": "w5_d0",
+    "w6": "w6_d0"
+   }
+  },
+  "CA10": {
+   "survivors": 7,
+   "roles": {
+    "w2": "pilot",
+    "w3": "heldout1",
+    "w1": "heldout2",
+    "w5": "heldout3",
+    "w6": "heldout4",
+    "w0": "heldout5",
+    "w4": "spare"
+   },
+   "draws": {
+    "w2": "w2_d0",
+    "w3": "w3_d0",
+    "w1": "w1_d0",
+    "w5": "w5_d0",
+    "w6": "w6_d0",
+    "w0": "w0_d0",
+    "w4": "w4_d0"
+   }
+  },
+  "DA01": {
+   "survivors": 7,
+   "roles": {
+    "w3": "pilot",
+    "w5": "heldout1",
+    "w1": "heldout2",
+    "w6": "heldout3",
+    "w4": "heldout4",
+    "w0": "heldout5",
+    "w2": "spare"
+   },
+   "draws": {
+    "w3": "w3_d0",
+    "w5": "w5_d1",
+    "w1": "w1_d0",
+    "w6": "w6_d0",
+    "w4": "w4_d3",
+    "w0": "w0_d0",
+    "w2": "w2_d0"
+   }
+  },
+  "DA02": {
+   "survivors": 7,
+   "roles": {
+    "w0": "pilot",
+    "w3": "heldout1",
+    "w4": "heldout2",
+    "w2": "heldout3",
+    "w5": "heldout4",
+    "w6": "heldout5",
+    "w1": "spare"
+   },
+   "draws": {
+    "w0": "w0_d0",
+    "w3": "w3_d0",
+    "w4": "w4_d0",
+    "w2": "w2_d0",
+    "w5": "w5_d1",
+    "w6": "w6_d0",
+    "w1": "w1_d0"
+   }
+  },
+  "DA03": {
+   "survivors": 7,
+   "roles": {
+    "w4": "pilot",
+    "w0": "heldout1",
+    "w1": "heldout2",
+    "w6": "heldout3",
+    "w3": "heldout4",
+    "w2": "heldout5",
+    "w5": "spare"
+   },
+   "draws": {
+    "w4": "w4_d0",
+    "w0": "w0_d0",
+    "w1": "w1_d0",
+    "w6": "w6_d0",
+    "w3": "w3_d1",
+    "w2": "w2_d0",
+    "w5": "w5_d0"
+   }
+  },
+  "DA04": {
+   "survivors": 7,
+   "roles": {
+    "w1": "pilot",
+    "w6": "heldout1",
+    "w5": "heldout2",
+    "w0": "heldout3",
+    "w2": "heldout4",
+    "w3": "heldout5",
+    "w4": "pilot2"
+   },
+   "draws": {
+    "w1": "w1_d0",
+    "w6": "w6_d0",
+    "w5": "w5_d0",
+    "w0": "w0_d0",
+    "w2": "w2_d1",
+    "w3": "w3_d0",
+    "w4": "w4_d1"
+   }
+  },
+  "DA05": {
+   "survivors": 5,
+   "roles": {
+    "w5": "pilot",
+    "w3": "heldout1",
+    "w0": "heldout2",
+    "w4": "heldout3",
+    "w1": "heldout4"
+   },
+   "draws": {
+    "w5": "w5_d0",
+    "w3": "w3_d1",
+    "w0": "w0_d0",
+    "w4": "w4_d2",
+    "w1": "w1_d0"
+   }
+  },
+  "DA06": {
+   "survivors": 7,
+   "roles": {
+    "w6": "pilot",
+    "w0": "heldout1",
+    "w4": "heldout2",
+    "w2": "heldout3",
+    "w3": "heldout4",
+    "w1": "heldout5",
+    "w5": "spare"
+   },
+   "draws": {
+    "w6": "w6_d2",
+    "w0": "w0_d0",
+    "w4": "w4_d3",
+    "w2": "w2_d0",
+    "w3": "w3_d0",
+    "w1": "w1_d0",
+    "w5": "w5_d1"
+   }
+  },
+  "DA07": {
+   "survivors": 6,
+   "roles": {
+    "w1": "pilot",
+    "w2": "heldout1",
+    "w5": "heldout2",
+    "w0": "heldout3",
+    "w3": "heldout4",
+    "w4": "heldout5"
+   },
+   "draws": {
+    "w1": "w1_d1",
+    "w2": "w2_d0",
+    "w5": "w5_d0",
+    "w0": "w0_d0",
+    "w3": "w3_d1",
+    "w4": "w4_d2"
+   }
+  },
+  "DA08": {
+   "survivors": 7,
+   "roles": {
+    "w0": "pilot",
+    "w4": "heldout1",
+    "w2": "heldout2",
+    "w6": "heldout3",
+    "w3": "heldout4",
+    "w1": "heldout5",
+    "w5": "spare"
+   },
+   "draws": {
+    "w0": "w0_d0",
+    "w4": "w4_d0",
+    "w2": "w2_d0",
+    "w6": "w6_d1",
+    "w3": "w3_d0",
+    "w1": "w1_d0",
+    "w5": "w5_d0"
+   }
+  },
+  "DA09": {
+   "survivors": 7,
+   "roles": {
+    "w6": "pilot",
+    "w4": "heldout1",
+    "w1": "heldout2",
+    "w0": "heldout3",
+    "w5": "heldout4",
+    "w2": "heldout5",
+    "w3": "pilot2"
+   },
+   "draws": {
+    "w6": "w6_d1",
+    "w4": "w4_d0",
+    "w1": "w1_d0",
+    "w0": "w0_d0",
+    "w5": "w5_d0",
+    "w2": "w2_d1",
+    "w3": "w3_d0"
+   }
+  },
+  "DA10": {
+   "survivors": 7,
+   "roles": {
+    "w6": "pilot",
+    "w0": "heldout1",
+    "w2": "heldout2",
+    "w4": "heldout3",
+    "w3": "heldout4",
+    "w5": "heldout5",
+    "w1": "spare"
+   },
+   "draws": {
+    "w6": "w6_d1",
+    "w0": "w0_d0",
+    "w2": "w2_d0",
+    "w4": "w4_d0",
+    "w3": "w3_d0",
+    "w5": "w5_d1",
+    "w1": "w1_d0"
+   }
+  }
+ }
+}

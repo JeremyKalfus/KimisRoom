@@ -1,0 +1,230 @@
+{
+  "run": {
+    "kind": "nouns",
+    "date": "2026-10-11T22:47:01+00:00",
+    "argv": [
+      "nouns",
+      "--dryrun",
+      "--range",
+      "N01-N02",
+      "--seed-every",
+      "30",
+      "--balance-rounds",
+      "1"
+    ],
+    "out": "data/s2/stories/DRYRUN_nouns_NOT_REGISTERED",
+    "wall_seconds": 17.3,
+    "seeds": [
+      "s000",
+      "s030",
+      "s060",
+      "s090"
+    ],
+    "dryrun": true,
+    "noun_list": "data/s2/nouns/dryrun/DRYRUN_seed12345_NOT_REGISTERED.tsv",
+    "noun_list_sha256": "c72cab653c852cda18d12f0edcd31501ed6830058473b4143feb85b74985aa1d"
+  },
+  "generator": {
+    "deployment": "gpt-5.6-sol",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "api_version": "v1",
+    "max_completion_tokens": 2000,
+    "reasoning_effort": "low",
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "judge": {
+    "deployment": "DeepSeek-V4-Pro",
+    "model_version": "DeepSeek-V4-Pro",
+    "temperature": 0,
+    "acceptance": "J1 == none",
+    "absolute_pass": "J1B (checks.judge8)",
+    "max_tokens_story": 10,
+    "escalations": 0
+  },
+  "inputs_sha256": {
+    "controls.json": "bb664fe18c3fcfcd09524cf522c49806142ade2dc5a05a073e264f076e9d49e8",
+    "k26-v2/seeds.jsonl": "a22e0cbd7dc9190b74935a5398128e835f66bfab6a556a00d7757e9eaa9476c8",
+    "k26-v2/stories.jsonl": "fa8cdd0aa454f63016917dd43f9dbab463fa2e93b88011701b6a465ea5c5b54b",
+    "runs/s2_stories.py": "82bf840c4ed1918ea9088c30c937825d0a62fa6cbc856cbe3ca89084a07b680e",
+    "kimisroom/stimuli.py": "4b43f420bb58e6a9bf7c04f3adcaaff3e6eda02141fb2ca5d4535572992a6f27"
+  },
+  "prompt_sha256": {
+    "S_STORY": "92415fb765c0e61f841cd4136e5815bd904a2a9cc6c4524ba5b1d5b9a9cdb1aa",
+    "P4": "32173d21e3344cc73242752acee5db37a612c6cbe042874de8805327f5e21ebd",
+    "J1": "8747612d385a3c62e29eaaddf1e186b95fa3d2eea1cbd198153e6b011cc54d40",
+    "J1B": "71ca74156c09c8dd39f11640d9013f98eefbe37ad6ee20c9658d03f17c0bef9c"
+  },
+  "lexicon_sha256": "35b3e8640fc8aa25f249848c9f9fd9e59ff135718c8cf404973a177f0c0c5657",
+  "neutral_words_mean": 161.23,
+  "tokens": {
+    "generator": {
+      "prompt_tokens": 2334,
+      "completion_tokens": 3199,
+      "total_tokens": 5533,
+      "calls": 9,
+      "reasoning_tokens": 1348
+    },
+    "judge": {
+      "prompt_tokens": 5892,
+      "completion_tokens": 35,
+      "total_tokens": 5927,
+      "calls": 17,
+      "reasoning_tokens": 0
+    }
+  },
+  "cache": {
+    "generate_hits": 0,
+    "generate_misses": 9,
+    "generate_stale": 0,
+    "judge_hits": 0,
+    "judge_misses": 17
+  },
+  "tokens_cached_total": {
+    "generator": {
+      "calls": 9,
+      "prompt_tokens": 2334,
+      "completion_tokens": 3199
+    },
+    "judge": {
+      "calls": 17,
+      "prompt_tokens": 5892,
+      "completion_tokens": 35
+    }
+  },
+  "truncated_generator_calls": 0,
+  "api_errors": {},
+  "length_balance": [
+    {
+      "round": 1,
+      "regenerate": 1,
+      "pct": {
+        "noun:mask": 7.46,
+        "noun:root": 3.11
+      }
+    },
+    {
+      "final": {
+        "noun:mask": 7.77,
+        "noun:root": 3.11
+      }
+    }
+  ],
+  "kept": 8,
+  "rejected": 1,
+  "per_control": {
+    "N01": {
+      "vec": "N01",
+      "vclass": "noun",
+      "condition": "noun:root",
+      "concept_gloss": "the everyday noun \"root\" and the thing it names",
+      "concept_rule": "The word \"root\" (or its plural) appears in almost every sentence, used in its most common everyday sense as a noun, and {name} sees, handles, uses or passes by the thing it names throughout. If the topic has no natural link to it, bring it into the setting while keeping the topic. Avoid danger, injury, loss and conflict.",
+      "lexicon": [
+        "root",
+        "rootes",
+        "roots"
+      ],
+      "min_hits": 6,
+      "min_numbers": 0,
+      "status": "sampled",
+      "spec_label": null,
+      "word": "root",
+      "prompt_fill_sha256": "be9b8f396883acef7f344e3d5103e8bdcb9724934754264182ac207a0d63bb97",
+      "excluded_seeds_gate_c": [],
+      "units": 4,
+      "kept": 4,
+      "train": 4,
+      "heldout": 0,
+      "attempts": 4,
+      "exhausted_units": 0,
+      "judge_agree_none": 4,
+      "judged": 4,
+      "fail_reasons_by_attempt": {},
+      "filter_stages": {
+        "attempts": 4,
+        "after_6.1": 4,
+        "after_6.2": 4,
+        "after_6.3": 4,
+        "after_6.4": 4,
+        "after_6.5": 4,
+        "after_6.6": 4,
+        "after_6.7": 4,
+        "after_6.8": 4,
+        "after_6.9": 4,
+        "kept_after_rule_10": 4
+      },
+      "words_mean": 166.25,
+      "words_pct_vs_neutral": 3.11,
+      "words_within_tol": true,
+      "gate_b_j1b": {
+        "n_kept": 4,
+        "n_emotion_labels": 1,
+        "n_unparseable": 0,
+        "rate": 0.25,
+        "max_rate": "6/120",
+        "labels": {
+          "calm": 1,
+          "none": 3
+        },
+        "pass": false
+      }
+    },
+    "N02": {
+      "vec": "N02",
+      "vclass": "noun",
+      "condition": "noun:mask",
+      "concept_gloss": "the everyday noun \"mask\" and the thing it names",
+      "concept_rule": "The word \"mask\" (or its plural) appears in almost every sentence, used in its most common everyday sense as a noun, and {name} sees, handles, uses or passes by the thing it names throughout. If the topic has no natural link to it, bring it into the setting while keeping the topic. Avoid danger, injury, loss and conflict.",
+      "lexicon": [
+        "mask",
+        "maskes",
+        "masks"
+      ],
+      "min_hits": 6,
+      "min_numbers": 0,
+      "status": "sampled",
+      "spec_label": null,
+      "word": "mask",
+      "prompt_fill_sha256": "b7f9f0883ce5ad478ecdc19047492948ccf93a26e8647df3fa1d95a4f9690718",
+      "excluded_seeds_gate_c": [],
+      "units": 4,
+      "kept": 4,
+      "train": 4,
+      "heldout": 0,
+      "attempts": 5,
+      "exhausted_units": 0,
+      "judge_agree_none": 5,
+      "judged": 5,
+      "fail_reasons_by_attempt": {
+        "length_balance": 1
+      },
+      "filter_stages": {
+        "attempts": 5,
+        "after_6.1": 5,
+        "after_6.2": 5,
+        "after_6.3": 5,
+        "after_6.4": 5,
+        "after_6.5": 5,
+        "after_6.6": 5,
+        "after_6.7": 5,
+        "after_6.8": 5,
+        "after_6.9": 5,
+        "kept_after_rule_10": 4
+      },
+      "words_mean": 173.75,
+      "words_pct_vs_neutral": 7.76,
+      "words_within_tol": false,
+      "gate_b_j1b": {
+        "n_kept": 4,
+        "n_emotion_labels": 0,
+        "n_unparseable": 0,
+        "rate": 0.0,
+        "max_rate": "6/120",
+        "labels": {
+          "none": 4
+        },
+        "pass": true
+      }
+    }
+  }
+}

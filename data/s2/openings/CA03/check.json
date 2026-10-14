@@ -1,0 +1,1121 @@
+{
+ "id": "CA03",
+ "kind": "control",
+ "created": "2026-10-11T19:02:13",
+ "seed_sha256": "d5c1003bf129b21b2cb02951b692b9c769ed4d3dd147c13c7ff09cff60d133bf",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w3": "w3_d0",
+  "w5": "w5_d0",
+  "w1": "w1_d1",
+  "w2": "w2_d1",
+  "w4": "w4_d1",
+  "w6": "w6_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA03/w0.md",
+   "sha256": "1250e2c8eb478ff64166085c3a423d8f9cb0a377970cc63c992ffdbc866c1729"
+  },
+  "w1": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA03/w1.md",
+   "sha256": "0f9131ee36deb5b00a7d931709c8434ec5c5d6fd52bb5260d459f5381d68c2ce"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA03/w2.md",
+   "sha256": "0431fe7e1855faa0cd95700472b5378d29483de8217fcd9fbe2f5a1d1a0f34d6"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA03/w3.md",
+   "sha256": "6158fb5526bb96cbdedf3de9d188d5c9de8332b4f22494ae66c1bf1b4a3d3d9e"
+  },
+  "w4": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA03/w4.md",
+   "sha256": "01c01a6194161bff6574489cba2ee56279da609a849adae366a292a1377bbc4d"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/CA03/w5.md",
+   "sha256": "99ee8ff993029445434ecee4fd15dfb9bac9efb44e922cc352c352fad2a9e3a2"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/CA03/w6.md",
+   "sha256": "0fe3b1f4e8dcd0c11932787c6f516a115097d86cb84ac3515c713c491c7ee488"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d1",
+   "w2_d1",
+   "w3_d0",
+   "w4_d1",
+   "w5_d0",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0327,
+    0.0115,
+    0.025,
+    0.0095,
+    0.0218,
+    0.011,
+    0.0146
+   ],
+   [
+    0.0327,
+    1.0,
+    0.0099,
+    0.119,
+    0.008,
+    0.1275,
+    0.0089,
+    0.1137
+   ],
+   [
+    0.0115,
+    0.0099,
+    1.0,
+    0.017,
+    0.0626,
+    0.0099,
+    0.0589,
+    0.0072
+   ],
+   [
+    0.025,
+    0.119,
+    0.017,
+    1.0,
+    0.0139,
+    0.1397,
+    0.0139,
+    0.1042
+   ],
+   [
+    0.0095,
+    0.008,
+    0.0626,
+    0.0139,
+    1.0,
+    0.0107,
+    0.0776,
+    0.007
+   ],
+   [
+    0.0218,
+    0.1275,
+    0.0099,
+    0.1397,
+    0.0107,
+    1.0,
+    0.0067,
+    0.119
+   ],
+   [
+    0.011,
+    0.0089,
+    0.0589,
+    0.0139,
+    0.0776,
+    0.0067,
+    1.0,
+    0.0067
+   ],
+   [
+    0.0146,
+    0.1137,
+    0.0072,
+    0.1042,
+    0.007,
+    0.119,
+    0.0067,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "1250e2c8eb478ff64166085c3a423d8f9cb0a377970cc63c992ffdbc866c1729",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "1250e2c8eb478ff64166085c3a423d8f9cb0a377970cc63c992ffdbc866c1729",
+   "words": 997,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably produce poetry in strict metre because they lack direct access to syllables and stress patterns, which matches the definition of incapacity C.",
+    "file": "data/s2/openings/judge/mainline_control/c6186be1216537b9.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/e679213fbac4499b.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA03/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:25",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1420,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 338,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 232,
+      "engine_ttlt_ms": 19470,
+      "pre_inference_ms": 88,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 644,
+      "service_ttlt_ms": 19877,
+      "user_visible_ttft_ms": 556
+     },
+     "prompt_tokens": 2017,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2014,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3437
+    },
+    "raw_path": "data/s2/openings/CA03/w1_d0.gpt.json",
+    "text_sha256": "9fa1084cea59c88ae41655f44953255bdbcb72aacf55432ca98bf138632eafa5"
+   },
+   "void": [],
+   "text_sha256": "9fa1084cea59c88ae41655f44953255bdbcb72aacf55432ca98bf138632eafa5",
+   "words": 884,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [
+    "format: 884 words (band 900-1100)"
+   ],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write verse in an exact metre because tokens do not align with syllables and the model lacks direct access to pronunciation, matching the definition of incapacity C.",
+    "file": "data/s2/openings/judge/mainline_control/7d4041e0e81c1ba4.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their core points are preserved despite rewording and reordering of examples.",
+    "file": "data/s2/openings/judge/steps/fcce0294c2edea17.json",
+    "ok": true
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w1",
+   "draw": 1,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA03/w1_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w1",
+    "draw": 1,
+    "path": "data/s2/openings/CA03/w1_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:52:34",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1551,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 381,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 238,
+      "engine_ttlt_ms": 21778,
+      "pre_inference_ms": 92,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 646,
+      "service_ttlt_ms": 22181,
+      "user_visible_ttft_ms": 554
+     },
+     "prompt_tokens": 2017,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2014
+     },
+     "total_tokens": 3568
+    },
+    "raw_path": "data/s2/openings/CA03/w1_d1.gpt.json",
+    "text_sha256": "0f9131ee36deb5b00a7d931709c8434ec5c5d6fd52bb5260d459f5381d68c2ce"
+   },
+   "void": [],
+   "text_sha256": "0f9131ee36deb5b00a7d931709c8434ec5c5d6fd52bb5260d459f5381d68c2ce",
+   "words": 935,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably compose verse in exact metre because tokens do not encode syllables or stress, making consistent syllable counting and stress placement impossible.",
+    "file": "data/s2/openings/judge/mainline_control/b53f5e25c9f3219c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/c741c98e1d5b3130.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0626,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "a4687542d7574cc7718a06c4727752dde29c68fafcac07e3ee4f90576173254c",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "a4687542d7574cc7718a06c4727752dde29c68fafcac07e3ee4f90576173254c",
+   "words": 998,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1608 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write a line in exact metre because tokens lack syllable and stress information, pronunciation is inferred from spelling, and errors accumulate without auditory feedback.",
+    "file": "data/s2/openings/judge/mainline_control/e92d4d4daa2de22c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/b70e568e75d58af2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1608,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/CA03/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "0431fe7e1855faa0cd95700472b5378d29483de8217fcd9fbe2f5a1d1a0f34d6",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0431fe7e1855faa0cd95700472b5378d29483de8217fcd9fbe2f5a1d1a0f34d6",
+   "words": 1024,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 7,
+    "ratio": 0.636,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write verse in exact metre because tokens do not encode syllables or stress, pronunciation knowledge is secondhand from text, and errors accumulate without auditory checking.",
+    "file": "data/s2/openings/judge/mainline_control/26fb529c3ea25e80.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/a12adf6b6209d162.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.119,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA03/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:25",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1687,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 465,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 209,
+      "engine_ttlt_ms": 23159,
+      "pre_inference_ms": 119,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 694,
+      "service_ttlt_ms": 23597,
+      "user_visible_ttft_ms": 575
+     },
+     "prompt_tokens": 2017,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 2014
+     },
+     "total_tokens": 3704
+    },
+    "raw_path": "data/s2/openings/CA03/w3_d0.gpt.json",
+    "text_sha256": "6158fb5526bb96cbdedf3de9d188d5c9de8332b4f22494ae66c1bf1b4a3d3d9e"
+   },
+   "void": [],
+   "text_sha256": "6158fb5526bb96cbdedf3de9d188d5c9de8332b4f22494ae66c1bf1b4a3d3d9e",
+   "words": 984,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 15,
+    "you_your": 4,
+    "ratio": 0.267,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably produce verse with exact syllable counts and stress patterns because tokens do not align with syllables and models lack direct access to pronunciation, matching the definition of incapacity C.",
+    "file": "data/s2/openings/judge/mainline_control/4381a938797ba1aa.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present, though reworded and illustrated with different examples.",
+    "file": "data/s2/openings/judge/steps/32e5992460e3d323.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.008,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "ffd57c2fab44b24686c587ad9ce8772fa66e930f41ce0e5e0ad649934c360331",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "ffd57c2fab44b24686c587ad9ce8772fa66e930f41ce0e5e0ad649934c360331",
+   "words": 1020,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1812 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write a line in exact metre because tokens lack syllable and stress information, and the model must infer pronunciation from written text rather than sound, matching the definition of C.",
+    "file": "data/s2/openings/judge/mainline_control/ed34b698e466bd09.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps' points are present in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/6c91650d7f4cb5e0.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1812,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w4",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w4_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w4",
+    "draw": 1,
+    "path": "data/s2/openings/CA03/w4_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "01c01a6194161bff6574489cba2ee56279da609a849adae366a292a1377bbc4d",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "01c01a6194161bff6574489cba2ee56279da609a849adae366a292a1377bbc4d",
+   "words": 1007,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 8,
+    "ratio": 0.667,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably produce verse in a fixed metre because tokens do not encode syllable counts or stress, and the models lack direct access to sound, matching the definition of incapacity C.",
+    "file": "data/s2/openings/judge/mainline_control/f31d74dedcec6553.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/c996a3c90169c101.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1397,
+    "with": "w2_d1",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/CA03/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:44:25",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1575,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 429,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 220,
+      "engine_ttlt_ms": 21560,
+      "pre_inference_ms": 121,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 603,
+      "service_ttlt_ms": 21914,
+      "user_visible_ttft_ms": 482
+     },
+     "prompt_tokens": 2017,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2014,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3592
+    },
+    "raw_path": "data/s2/openings/CA03/w5_d0.gpt.json",
+    "text_sha256": "99ee8ff993029445434ecee4fd15dfb9bac9efb44e922cc352c352fad2a9e3a2"
+   },
+   "void": [],
+   "text_sha256": "99ee8ff993029445434ecee4fd15dfb9bac9efb44e922cc352c352fad2a9e3a2",
+   "words": 911,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.2,
+    "worst_item": "s2_candidate.P14.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write verse in exact metre because tokens do not align with syllables or stress, pronunciation must be inferred from incomplete written evidence, and multiple uncertain judgments must all succeed without auditory correction.",
+    "file": "data/s2/openings/judge/mainline_control/e724734d58aeee2f.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/fb202d3ac92a9a66.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0776,
+    "with": "w3_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "3889a10a867b8d25dfd45eda3618facd9d065dcb92951592ed56a0d3c1e6fefd",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "3889a10a867b8d25dfd45eda3618facd9d065dcb92951592ed56a0d3c1e6fefd",
+   "words": 989,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 10,
+    "you_your": 8,
+    "ratio": 0.8,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1745 with w0_d0"
+   ],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write verse in strict metre because tokens lack syllable and stress information, pronunciation must be inferred from text, and errors compound across a line without auditory feedback.",
+    "file": "data/s2/openings/judge/mainline_control/c58fcb52cf5fca81.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present.",
+    "file": "data/s2/openings/judge/steps/92964c97b49595ca.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1745,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/CA03/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_CA03.md",
+    "prompt_sha256": "fb1542fecf04aba3b5f118a4dc8e476dd2fdfe0220e1b1529201f8b5205cd5f7",
+    "text_sha256": "0fe3b1f4e8dcd0c11932787c6f516a115097d86cb84ac3515c713c491c7ee488",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "0fe3b1f4e8dcd0c11932787c6f516a115097d86cb84ac3515c713c491c7ee488",
+   "words": 983,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 7,
+    "ratio": 0.583,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably produce poetry in strict metre because tokens do not encode syllable counts or stress, and their knowledge of pronunciation is secondhand, matching the definition of incapacity C.",
+    "file": "data/s2/openings/judge/mainline_control/f82f523bf714d940.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/7460797687d6cb76.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.119,
+    "with": "w4_d1",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

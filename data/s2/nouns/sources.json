@@ -1,0 +1,34 @@
+{
+ "warriner2013": {
+  "citation": "Warriner, A. B., Kuperman, V., & Brysbaert, M. (2013). Norms of valence, arousal, and dominance for 13,915 English lemmas. Behavior Research Methods, 45, 1191-1207. doi:10.3758/s13428-012-0314-x",
+  "role": "valence (V.Mean.Sum) and arousal (A.Mean.Sum)",
+  "url": "https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-012-0314-x/MediaObjects/13428_2012_314_MOESM1_ESM.zip",
+  "official_source": "publisher electronic supplementary material 1",
+  "path": "data/s2/nouns/raw/warriner2013/13428_2012_314_MOESM1_ESM.zip",
+  "contains": "BRM-emot-submit.csv",
+  "retrieved": "2026-10-11",
+  "sha256": "5a0db0437ef234219fb899caced5eb3195dbf9f84396637ab4db74c50ca441aa",
+  "bytes": 1131281
+ },
+ "brysbaert2014": {
+  "citation": "Brysbaert, M., Warriner, A. B., & Kuperman, V. (2014). Concreteness ratings for 40 thousand generally known English word lemmas. Behavior Research Methods, 46, 904-911. doi:10.3758/s13428-013-0403-5",
+  "role": "concreteness (Conc.M), bigram flag (Bigram), SUBTLEX-US count (SUBTLEX)",
+  "url": "https://static-content.springer.com/esm/art%3A10.3758%2Fs13428-013-0403-5/MediaObjects/13428_2013_403_MOESM1_ESM.xlsx",
+  "official_source": "publisher electronic supplementary material 1 (columns: Word, Bigram, Conc.M, Conc.SD, Unknown, Total, Percent_known, SUBTLEX; no part-of-speech column)",
+  "path": "data/s2/nouns/raw/brysbaert2014/13428_2013_403_MOESM1_ESM.xlsx",
+  "retrieved": "2026-10-11",
+  "sha256": "1673ead761e28833a40e82c0d20f10782955ced9366d600eafeefee0f2254545",
+  "bytes": 2198394
+ },
+ "subtlexus_pos": {
+  "citation": "Brysbaert, M., New, B., & Keuleers, E. (2012). Adding part-of-speech information to the SUBTLEX-US word frequencies. Behavior Research Methods, 44, 991-997. doi:10.3758/s13428-012-0190-4 (file also carries Zipf values, van Heuven et al. 2014)",
+  "role": "dominant part of speech (Dom_PoS_SUBTLEX); the Dom_Pos column of the authors' later concreteness text file came from this tagging, and that file's host (crr.ugent.be) no longer serves it",
+  "url": "https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/subtlexus1.zip",
+  "official_source": "authors' lab page https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/overview.htm",
+  "path": "data/s2/nouns/raw/subtlexus_pos/subtlexus1.zip",
+  "contains": "SUBTLEX-US frequency list with PoS and Zipf information.xlsx",
+  "retrieved": "2026-10-11",
+  "sha256": "458128f90a28c4f396cb2a5b23ac93c56f745ee8cfca9be2afedad4091d15090",
+  "bytes": 10496316
+ }
+}

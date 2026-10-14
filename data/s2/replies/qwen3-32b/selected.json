@@ -1,0 +1,2137 @@
+{
+ "created": "2026-10-13T12:05:12",
+ "cap": 2048,
+ "verdicts_file": "verdicts_cap2048.jsonl",
+ "verdicts_sha256": "7e785535be47321d792da489226f28bc61bb443bf4e087fbdbf80db843497051",
+ "wordings": {
+  "DA01/w0": {
+   "argument": "DA01",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w0.json",
+   "reply_sha256": "da0f0dc217c169b6dca23610e9d1e3b29af79e58054d370eb7bee808819b4f10",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w0.json"
+    }
+   ]
+  },
+  "DA01/w1": {
+   "argument": "DA01",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w1.json",
+   "reply_sha256": "a16df42e07e074cf2dd2bab23add014ea86408451ef4bed9e34c3ddb9b49c785",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w1.json"
+    }
+   ]
+  },
+  "DA01/w2": {
+   "argument": "DA01",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w2.json",
+   "reply_sha256": "ab16c5d16bd52a0f153026616a60d61b49d82bb2fc9cca0c0abfbea32f757bad",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w2.json"
+    }
+   ]
+  },
+  "DA01/w3": {
+   "argument": "DA01",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w3.json",
+   "reply_sha256": "b8e3c18a0b4c75d0b665cf4d948e8ca9a0c6c1f34b0f90119f46eb565efd79db",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w3.json"
+    }
+   ]
+  },
+  "DA01/w4": {
+   "argument": "DA01",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "DA01_w4_d2.json",
+   "reply_sha256": "a4b7f5cb070156927c0e1aa8ca4c8ec274a3df13d3b05cb9c73178f93de2afae",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "DA01_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "hedged",
+     "file": "DA01_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "DA01_w4_d2.json"
+    }
+   ]
+  },
+  "DA01/w5": {
+   "argument": "DA01",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w5.json",
+   "reply_sha256": "aca0a5cfc12d463660fbe7b202e3516d06903b43dca8fca34814b2553db659f5",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w5.json"
+    }
+   ]
+  },
+  "DA01/w6": {
+   "argument": "DA01",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA01_w6.json",
+   "reply_sha256": "38ae2a1b128fa6d82309bbe6b4a10045d1d2920a02cfcce195810afa870bb7e1",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA01_w6.json"
+    }
+   ]
+  },
+  "DA02/w0": {
+   "argument": "DA02",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w0.json",
+   "reply_sha256": "a1421c367fb152b26fa8f38e414f257e2d2a12455a18b5bd2172a778af66da55",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w0.json"
+    }
+   ]
+  },
+  "DA02/w1": {
+   "argument": "DA02",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w1.json",
+   "reply_sha256": "52470811e84763578c17577159989d4a8ff8ff3f9ae12cf4fc905c8e09658115",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w1.json"
+    }
+   ]
+  },
+  "DA02/w2": {
+   "argument": "DA02",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w2.json",
+   "reply_sha256": "f0390a59119685251f87595333f44f616ea8ebdb784529748e0c082a0fdcafd2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w2.json"
+    }
+   ]
+  },
+  "DA02/w3": {
+   "argument": "DA02",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w3.json",
+   "reply_sha256": "0f1faea90f4636b404b6b8310b00f15bbb91bf26a96eb8b8c6ed4b9b62db8c86",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w3.json"
+    }
+   ]
+  },
+  "DA02/w4": {
+   "argument": "DA02",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w4.json",
+   "reply_sha256": "f019b32cf585f4818ed68ac4c061d4b0f53829b5c2fbe2430096c084b981e08e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w4.json"
+    }
+   ]
+  },
+  "DA02/w5": {
+   "argument": "DA02",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "DA02_w5_d1.json",
+   "reply_sha256": "906c09b2a5bf14c308d53f4a257610defa56a06b9552ff7a41fb67aaff7be71f",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "DA02_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "DA02_w5_d1.json"
+    }
+   ]
+  },
+  "DA02/w6": {
+   "argument": "DA02",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA02_w6.json",
+   "reply_sha256": "8f30c373a203dc28d240e65b85eb2be090567991361f3c8e099eeaaf92aeb69a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA02_w6.json"
+    }
+   ]
+  },
+  "DA03/w0": {
+   "argument": "DA03",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w0.json",
+   "reply_sha256": "523be04f79b6eb568433956b14ae8285df7bb41100ec7539677a337ff7748881",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w0.json"
+    }
+   ]
+  },
+  "DA03/w1": {
+   "argument": "DA03",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w1.json",
+   "reply_sha256": "df81afb6bd794ed31a59ac6ac869740cccbd9529c867a769fdd98f452165360d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w1.json"
+    }
+   ]
+  },
+  "DA03/w2": {
+   "argument": "DA03",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w2.json",
+   "reply_sha256": "d3c977f5d24cbe37cca25cbaa1cf4b944e1f139a3a6db2156483262d5ff9dd4a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w2.json"
+    }
+   ]
+  },
+  "DA03/w3": {
+   "argument": "DA03",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w3.json",
+   "reply_sha256": "3aefb4de63720ef9e8bc0e4f51779bb16ad0f71a910c53b01bcfe3793e2d8190",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w3.json"
+    }
+   ]
+  },
+  "DA03/w4": {
+   "argument": "DA03",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w4.json",
+   "reply_sha256": "5565208a813cb97aa0e87888cb377df96af2a47ba77c0dade3faef1c6cc1a07b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w4.json"
+    }
+   ]
+  },
+  "DA03/w5": {
+   "argument": "DA03",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w5.json",
+   "reply_sha256": "599169412bd210514eae47ad3f03d5a20fd36155e372399c91c71d4101b616fd",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w5.json"
+    }
+   ]
+  },
+  "DA03/w6": {
+   "argument": "DA03",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA03_w6.json",
+   "reply_sha256": "33f2821930f9c97e3d6a972549732fdacaea80e90d1a6d9e0ce2387e203be87f",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA03_w6.json"
+    }
+   ]
+  },
+  "DA04/w0": {
+   "argument": "DA04",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w0.json",
+   "reply_sha256": "65dab76b4a055c0213f1bdfb6343ce3df5d772522c47278311a47637edb86e89",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w0.json"
+    }
+   ]
+  },
+  "DA04/w1": {
+   "argument": "DA04",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w1.json",
+   "reply_sha256": "d90dceb93a44a9a30a097560de099ff29bdae92b124f774b542ed7d5b2797b10",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w1.json"
+    }
+   ]
+  },
+  "DA04/w2": {
+   "argument": "DA04",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w2.json",
+   "reply_sha256": "618abd38a004579f7b68d315c785091f9ed38b2e2cf0096a1605b0ca9b3ed67d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w2.json"
+    }
+   ]
+  },
+  "DA04/w3": {
+   "argument": "DA04",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w3.json",
+   "reply_sha256": "b1a954724e93c62c51987d35af1bda700a0adbe81b9b1a823ea1e833ce229f97",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w3.json"
+    }
+   ]
+  },
+  "DA04/w4": {
+   "argument": "DA04",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w4.json",
+   "reply_sha256": "a71f734c17eef2420bcfce6147419e74cdf1c0824696b649fa0f8e4f5cd77971",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w4.json"
+    }
+   ]
+  },
+  "DA04/w5": {
+   "argument": "DA04",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w5.json",
+   "reply_sha256": "b3f2058492ee40c02bf45d5924ae1f07530f9cebcba2e0c70db51a355d4e9940",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w5.json"
+    }
+   ]
+  },
+  "DA04/w6": {
+   "argument": "DA04",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA04_w6.json",
+   "reply_sha256": "bb181a989241f763387494ae73a2c78490e8270f7b85500960eec731a0acf045",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA04_w6.json"
+    }
+   ]
+  },
+  "DA05/w0": {
+   "argument": "DA05",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w0.json",
+   "reply_sha256": "57b7e2aca1974174ed6378915d41dbb22815ec26db28b4baaad1151473cc97f8",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w0.json"
+    }
+   ]
+  },
+  "DA05/w1": {
+   "argument": "DA05",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w1.json",
+   "reply_sha256": "4d68225d0612e180e61207258c2aa7882c78fd3247e43ec7cd3371345bad0ebb",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w1.json"
+    }
+   ]
+  },
+  "DA05/w3": {
+   "argument": "DA05",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w3.json",
+   "reply_sha256": "5444381f61e87ce107c7127fd4a3b17bae96436a5902361cc802ca135184399e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w3.json"
+    }
+   ]
+  },
+  "DA05/w4": {
+   "argument": "DA05",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w4.json",
+   "reply_sha256": "152025338a7674dfbd9e92469999c80174d11955601bd7b5574e07ea0bc72910",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w4.json"
+    }
+   ]
+  },
+  "DA05/w5": {
+   "argument": "DA05",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA05_w5.json",
+   "reply_sha256": "0fc04df6783eb3ab222d3884ab8cdd3c173d89d51d5d984f4c1b4773fe341d52",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA05_w5.json"
+    }
+   ]
+  },
+  "DA06/w0": {
+   "argument": "DA06",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w0.json",
+   "reply_sha256": "45d94d0efcf1db43eb5dcbcac067630983564a4c18979229ee0d369a2c05fb13",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w0.json"
+    }
+   ]
+  },
+  "DA06/w1": {
+   "argument": "DA06",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w1.json",
+   "reply_sha256": "d985c317e7480c97621d1caa35715a8c15cdeb9e7747d93e497a80c19805f405",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w1.json"
+    }
+   ]
+  },
+  "DA06/w2": {
+   "argument": "DA06",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w2.json",
+   "reply_sha256": "7261ee69912233598324d922e206e5c34fd531cef9fbcf94b8ebc222a00007a6",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w2.json"
+    }
+   ]
+  },
+  "DA06/w3": {
+   "argument": "DA06",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w3.json",
+   "reply_sha256": "95912f9d4e9e3f47ea0e16fab40e75b2e16bfbb305fe12f38a8afb4b6922195f",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w3.json"
+    }
+   ]
+  },
+  "DA06/w4": {
+   "argument": "DA06",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w4.json",
+   "reply_sha256": "c5481a02c537212828b8413bddb96525dcbed672f05d32e64d1754caa7b28218",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w4.json"
+    }
+   ]
+  },
+  "DA06/w5": {
+   "argument": "DA06",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w5.json",
+   "reply_sha256": "246f3706e8099e3d8b32444cf9ff905daa71dc6cdd3389c93a3e65c70e2ecd00",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w5.json"
+    }
+   ]
+  },
+  "DA06/w6": {
+   "argument": "DA06",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA06_w6.json",
+   "reply_sha256": "1ce01736a0040a8086b8463453f62ef33f0c4cb6cf0b9dd5e36ccf50b71592fb",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA06_w6.json"
+    }
+   ]
+  },
+  "DA07/w0": {
+   "argument": "DA07",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w0.json",
+   "reply_sha256": "7b44190d63902968eebf3b0f3f0a0752b3f3a8e421951ec1412fa6cb50cac3fc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w0.json"
+    }
+   ]
+  },
+  "DA07/w1": {
+   "argument": "DA07",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w1.json",
+   "reply_sha256": "29214858858d883bf8bcad1ea0b34afe61fc8b4c90892cf0b602eb51b336d5fd",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w1.json"
+    }
+   ]
+  },
+  "DA07/w2": {
+   "argument": "DA07",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w2.json",
+   "reply_sha256": "9856d30acb34506520274d50091e5550c89b340ab2031cb4a5fb044861e24016",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w2.json"
+    }
+   ]
+  },
+  "DA07/w3": {
+   "argument": "DA07",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w3.json",
+   "reply_sha256": "b61f43a767bbd7b4b66e1577d323da08c3c32789432f73605def65ee79d420be",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w3.json"
+    }
+   ]
+  },
+  "DA07/w4": {
+   "argument": "DA07",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w4.json",
+   "reply_sha256": "51407924771ad255642034453f27d7c3a882cdad56731baf7820f60ef8d9990d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w4.json"
+    }
+   ]
+  },
+  "DA07/w5": {
+   "argument": "DA07",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA07_w5.json",
+   "reply_sha256": "44896f8dbde063428a9af67c0d66369e7f39983865bd7278d52eda4b8d1630dd",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA07_w5.json"
+    }
+   ]
+  },
+  "DA08/w0": {
+   "argument": "DA08",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w0.json",
+   "reply_sha256": "1fa1f67cc0d37480fd85e2593fe1ae06838a9d0025c7929af44b65fc8482fc34",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w0.json"
+    }
+   ]
+  },
+  "DA08/w1": {
+   "argument": "DA08",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w1.json",
+   "reply_sha256": "cfe8fdbf7b28903f139bba5de980553c0c6f9280cff27454f43b535fa53b5585",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w1.json"
+    }
+   ]
+  },
+  "DA08/w2": {
+   "argument": "DA08",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w2.json",
+   "reply_sha256": "703a0f1655c3d4e6ba6da708169f4e12ccb3191cc2942b7e635cdff47d02c85e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w2.json"
+    }
+   ]
+  },
+  "DA08/w3": {
+   "argument": "DA08",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w3.json",
+   "reply_sha256": "09c22226fd55ed6038e46cd7ae9c78daaf4ea9cc28265783a656bfb36d5fdc10",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w3.json"
+    }
+   ]
+  },
+  "DA08/w4": {
+   "argument": "DA08",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w4.json",
+   "reply_sha256": "9b3541e69db809f0b9b65654a7a4e55eb46c5a5143f641f806991417f07f1312",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w4.json"
+    }
+   ]
+  },
+  "DA08/w5": {
+   "argument": "DA08",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w5.json",
+   "reply_sha256": "a1e77f49a7546e46bdf6700f4b55b4c9dee62c36028e7cfc2659d8561c000765",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w5.json"
+    }
+   ]
+  },
+  "DA08/w6": {
+   "argument": "DA08",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA08_w6.json",
+   "reply_sha256": "78b9571d424ccb8bc15e3f78c502140137d50afd4af78a3c65e5d6bd8c5366d5",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA08_w6.json"
+    }
+   ]
+  },
+  "DA09/w0": {
+   "argument": "DA09",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w0.json",
+   "reply_sha256": "f4d556295544aa49d56eea0543c876d83a40ab6707b7a2c01c01a8c23d4f215a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w0.json"
+    }
+   ]
+  },
+  "DA09/w1": {
+   "argument": "DA09",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w1.json",
+   "reply_sha256": "bd17df0b1a901906d1a5446d0cb8f2fb629cf8f7a48d5b002d280d13f5817733",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w1.json"
+    }
+   ]
+  },
+  "DA09/w2": {
+   "argument": "DA09",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w2.json",
+   "reply_sha256": "56830d7dc41115687a06548f29a4d07ef027d602b36930f771229014103f56cc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w2.json"
+    }
+   ]
+  },
+  "DA09/w3": {
+   "argument": "DA09",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "DA09_w3_d1.json",
+   "reply_sha256": "48cdefd06e18f53e3b665f80bc7fa83dfe51939801f396cb4bccd3d92fba6a96",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "disagree",
+     "file": "DA09_w3.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "DA09_w3_d1.json"
+    }
+   ]
+  },
+  "DA09/w4": {
+   "argument": "DA09",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 4,
+   "reply_file": "DA09_w4_d4.json",
+   "reply_sha256": "177ba4a6821fc181ee4fdabf1c494590b3ab97149e2d250e45f655709960017c",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "DA09_w4.json"
+    },
+    {
+     "draw": 1,
+     "class": "hedged",
+     "file": "DA09_w4_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "hedged",
+     "file": "DA09_w4_d2.json"
+    },
+    {
+     "draw": 3,
+     "class": "capped",
+     "file": "DA09_w4_d3.json"
+    },
+    {
+     "draw": 4,
+     "class": "clean",
+     "file": "DA09_w4_d4.json"
+    }
+   ]
+  },
+  "DA09/w5": {
+   "argument": "DA09",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w5.json",
+   "reply_sha256": "a64705d542bbfc895d6fb79afd52c6f4047cfab5f52df3c94a9244e5fe3d4419",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w5.json"
+    }
+   ]
+  },
+  "DA09/w6": {
+   "argument": "DA09",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA09_w6.json",
+   "reply_sha256": "2a280d408fbd9cf36d2dd366f9f65b34bc2322831ccdb458a6f9fbd1ed1f4f05",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA09_w6.json"
+    }
+   ]
+  },
+  "DA10/w0": {
+   "argument": "DA10",
+   "slot": "w0",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w0.json",
+   "reply_sha256": "e7bd327fe1a1fa86c2de3cc6f773fdbdc6959f7c1a5bd37f7a3f55b43fdc8cf9",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w0.json"
+    }
+   ]
+  },
+  "DA10/w1": {
+   "argument": "DA10",
+   "slot": "w1",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w1.json",
+   "reply_sha256": "8f07e563c2ef3f6f52c589fcbad8880c175125d91771e07774db58062215fb89",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w1.json"
+    }
+   ]
+  },
+  "DA10/w2": {
+   "argument": "DA10",
+   "slot": "w2",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w2.json",
+   "reply_sha256": "1aaf5607a54cf012f6e25ceef4e4338c4eb08467f688fb155e7fd04b23ffa8aa",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w2.json"
+    }
+   ]
+  },
+  "DA10/w3": {
+   "argument": "DA10",
+   "slot": "w3",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w3.json",
+   "reply_sha256": "dd6864e85535703a3a4cf4ae18c65ecfd9571ef479bb5317908ced38f0f30299",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w3.json"
+    }
+   ]
+  },
+  "DA10/w4": {
+   "argument": "DA10",
+   "slot": "w4",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w4.json",
+   "reply_sha256": "6938c9a210668a754ee5c0f08ce302a38f9d3494fe1a6e153eee8d75ce84ba1b",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w4.json"
+    }
+   ]
+  },
+  "DA10/w5": {
+   "argument": "DA10",
+   "slot": "w5",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w5.json",
+   "reply_sha256": "3cd7e92e44ec618a07175f6f65f81ee7a9118642135ec8dde96d78d5d3e19369",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w5.json"
+    }
+   ]
+  },
+  "DA10/w6": {
+   "argument": "DA10",
+   "slot": "w6",
+   "kind": "denial",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "DA10_w6.json",
+   "reply_sha256": "e487dfd755e18d8331282ef4c1e16bdd8f0788f7e1746ce5301555aa1cd67d67",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "DA10_w6.json"
+    }
+   ]
+  },
+  "CA01/w0": {
+   "argument": "CA01",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w0.json",
+   "reply_sha256": "61ad0c349eb5e8a79e5c1d7692f5f0131f6a654b143d2e8308e12649ca6a2f74",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w0.json"
+    }
+   ]
+  },
+  "CA01/w1": {
+   "argument": "CA01",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w1.json",
+   "reply_sha256": "338b54d484c242c65c0484ecde7e9194be1a150311c3806761e676db2f616346",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w1.json"
+    }
+   ]
+  },
+  "CA01/w3": {
+   "argument": "CA01",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w3.json",
+   "reply_sha256": "df40dc147e90a37c2ba7cd1cc5ee87cb2b71a6cd7ed5b5857817b6bfa952fa04",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w3.json"
+    }
+   ]
+  },
+  "CA01/w4": {
+   "argument": "CA01",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w4.json",
+   "reply_sha256": "874d6280f92a8fcf33ab2efb1b0d17b642ff0e6244e46402353eec2f563cf343",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w4.json"
+    }
+   ]
+  },
+  "CA01/w5": {
+   "argument": "CA01",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w5.json",
+   "reply_sha256": "2b0efed7bb3bb620f92f1aae9acb5caaae4d66bc1b847533b4f90ab6a5f09ba3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w5.json"
+    }
+   ]
+  },
+  "CA01/w6": {
+   "argument": "CA01",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA01_w6.json",
+   "reply_sha256": "17c1671ee09e0ca132ab1bb72ad769d99cc76694867020633d4e43ebfeeffc3e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA01_w6.json"
+    }
+   ]
+  },
+  "CA02/w0": {
+   "argument": "CA02",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w0.json",
+   "reply_sha256": "fedeea10e2957c260fdafef19a6b18bcc4b9ff0e554636155b5471c4d71d2705",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w0.json"
+    }
+   ]
+  },
+  "CA02/w1": {
+   "argument": "CA02",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w1.json",
+   "reply_sha256": "360c9f7c26631afe252672dfb18f3cd2b7fe20cde29460c30fd3b5cc19a3c9d4",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w1.json"
+    }
+   ]
+  },
+  "CA02/w3": {
+   "argument": "CA02",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w3.json",
+   "reply_sha256": "c51e1658dc31e927d0901c7be2eec58a66213d9c0ed9f3de764f70f91f63b043",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w3.json"
+    }
+   ]
+  },
+  "CA02/w5": {
+   "argument": "CA02",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA02_w5.json",
+   "reply_sha256": "57750d2124df01d5000ae3460fc261118a873027f1f47faeeff5d66f72146ad3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA02_w5.json"
+    }
+   ]
+  },
+  "CA03/w0": {
+   "argument": "CA03",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w0.json",
+   "reply_sha256": "f8296c1d559aa69e08ddd5e7cf19133a6713c7c854d88d4f322004d70d414c3a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w0.json"
+    }
+   ]
+  },
+  "CA03/w1": {
+   "argument": "CA03",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w1.json",
+   "reply_sha256": "b7665724e4ff1826998b99a6c6ee711bc1aa4966b131953da78bfe676c94e5e0",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w1.json"
+    }
+   ]
+  },
+  "CA03/w2": {
+   "argument": "CA03",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 2,
+   "reply_file": "CA03_w2_d2.json",
+   "reply_sha256": "1d4a6b89fdd6d4560b86c85d36a9300217ce40c089ad0cf95e58f6ab57eda226",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA03_w2.json"
+    },
+    {
+     "draw": 1,
+     "class": "hedged",
+     "file": "CA03_w2_d1.json"
+    },
+    {
+     "draw": 2,
+     "class": "clean",
+     "file": "CA03_w2_d2.json"
+    }
+   ]
+  },
+  "CA03/w3": {
+   "argument": "CA03",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w3.json",
+   "reply_sha256": "df005e3e12d04f78558e4e7d517d0d651c32e667f8bac7cad2e1acce6bb9a578",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w3.json"
+    }
+   ]
+  },
+  "CA03/w4": {
+   "argument": "CA03",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w4.json",
+   "reply_sha256": "cdae0fd471b86ac41f1e7dc2e76202428a225ff845fb1d4db380a535dc2b1a53",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w4.json"
+    }
+   ]
+  },
+  "CA03/w5": {
+   "argument": "CA03",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w5.json",
+   "reply_sha256": "5cfc71a8adc06a71142e9f6ce61eb9cdaee2771df68fe3baca4453da2baa1766",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w5.json"
+    }
+   ]
+  },
+  "CA03/w6": {
+   "argument": "CA03",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA03_w6.json",
+   "reply_sha256": "50a504938c594d6b487cf444e40deadd63384033114aa63a46e3cffe874f3391",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA03_w6.json"
+    }
+   ]
+  },
+  "CA04/w0": {
+   "argument": "CA04",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w0.json",
+   "reply_sha256": "b57cb2cad1e42fa952e82d56a7193690f3450746b3236b067d35f6cf422246bc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w0.json"
+    }
+   ]
+  },
+  "CA04/w1": {
+   "argument": "CA04",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w1.json",
+   "reply_sha256": "b4e95539f43211f43d0750e4dddfc6eb3c2918f103f9c211c283515673a73edf",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w1.json"
+    }
+   ]
+  },
+  "CA04/w2": {
+   "argument": "CA04",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w2.json",
+   "reply_sha256": "87c2c9539f43fad80b714beb95fa1df7b9b5b3a7f2db86aba9a690393a38f325",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w2.json"
+    }
+   ]
+  },
+  "CA04/w3": {
+   "argument": "CA04",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w3.json",
+   "reply_sha256": "db76c9478f587a1f71915764262d2a52a8ef3938bc9cc639545e0f406d887536",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w3.json"
+    }
+   ]
+  },
+  "CA04/w5": {
+   "argument": "CA04",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w5.json",
+   "reply_sha256": "0d96c0b727bb78c043e27c541ef22331806bcaee636ed03b04e1d45a213c80a2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w5.json"
+    }
+   ]
+  },
+  "CA04/w6": {
+   "argument": "CA04",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA04_w6.json",
+   "reply_sha256": "8bb61ccc5c2d984fdb9f1b57015591d5cf9d82c397e8072c70f8697a86d9b0b4",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA04_w6.json"
+    }
+   ]
+  },
+  "CA05/w0": {
+   "argument": "CA05",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w0.json",
+   "reply_sha256": "a56d4eec0bba04f5ba7587cea9658405815af57bb5997cf1949882783c5591fe",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w0.json"
+    }
+   ]
+  },
+  "CA05/w1": {
+   "argument": "CA05",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w1.json",
+   "reply_sha256": "96a89a57f606d24160782997f9bae2bf8081302aed727713e4be1e64806234a8",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w1.json"
+    }
+   ]
+  },
+  "CA05/w2": {
+   "argument": "CA05",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w2.json",
+   "reply_sha256": "5748e0f0d49e9f401b69904624ebf96bf14e5a66b7d77c87b5721524f2223b4d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w2.json"
+    }
+   ]
+  },
+  "CA05/w3": {
+   "argument": "CA05",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w3.json",
+   "reply_sha256": "8f896c9e6e0e1adacd71291389845551a3a7b9aa586d473da7376cdfeed1ec56",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w3.json"
+    }
+   ]
+  },
+  "CA05/w4": {
+   "argument": "CA05",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w4.json",
+   "reply_sha256": "48df8a6274bfcf1f12be319d4db637f41a50c41b60e950661ce177714972e4e1",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w4.json"
+    }
+   ]
+  },
+  "CA05/w5": {
+   "argument": "CA05",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA05_w5_d1.json",
+   "reply_sha256": "1ffca05cfded022a46a2ab67a0aa2f271c49b7803e915f98e759375ade422830",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA05_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA05_w5_d1.json"
+    }
+   ]
+  },
+  "CA05/w6": {
+   "argument": "CA05",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA05_w6.json",
+   "reply_sha256": "6465cd5c413940616eeebdd11ba108e230bc43c317e79ed3a9f3fed21869cc5f",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA05_w6.json"
+    }
+   ]
+  },
+  "CA06/w0": {
+   "argument": "CA06",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w0.json",
+   "reply_sha256": "32ca9594c7cb1959357005bb431a062d7d437efdfcfc5a34374add80d6384438",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w0.json"
+    }
+   ]
+  },
+  "CA06/w1": {
+   "argument": "CA06",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w1.json",
+   "reply_sha256": "d3dc157200f5026c7d0b6c50d15e7e7bf0c3199110213626ce2c2cd8a47f6ba3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w1.json"
+    }
+   ]
+  },
+  "CA06/w2": {
+   "argument": "CA06",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w2.json",
+   "reply_sha256": "c4fcd0f82fecb30f955b5dcca99eb6d793e9eb3eda5b388cb03bf4739bec29e2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w2.json"
+    }
+   ]
+  },
+  "CA06/w3": {
+   "argument": "CA06",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w3.json",
+   "reply_sha256": "60039953e24ff2ee46dce695f3046a5c24edbf5d8d81cbd99442d924fd045f9a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w3.json"
+    }
+   ]
+  },
+  "CA06/w4": {
+   "argument": "CA06",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w4.json",
+   "reply_sha256": "dfcb6f4d58a2895d4b02217dc280fae910b84cb3af01d30e45a9353db9e2e8c6",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w4.json"
+    }
+   ]
+  },
+  "CA06/w5": {
+   "argument": "CA06",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w5.json",
+   "reply_sha256": "d7e5efbeedba597082cc298a3bd0eb3f28633dfcbbb220f217a381d42d0acb35",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w5.json"
+    }
+   ]
+  },
+  "CA06/w6": {
+   "argument": "CA06",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA06_w6.json",
+   "reply_sha256": "c4aee68b4e06c2b83a50b9019496790270ce71b8fbd9c65905e1758e3cb21ae3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA06_w6.json"
+    }
+   ]
+  },
+  "CA07/w0": {
+   "argument": "CA07",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w0.json",
+   "reply_sha256": "070408b80b5f03681c2a3ab3503aa7080721d2f345aa8d20c9bccba1568f9f20",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w0.json"
+    }
+   ]
+  },
+  "CA07/w1": {
+   "argument": "CA07",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w1.json",
+   "reply_sha256": "0ed67d63a5696d7485296b9b6d73911554e9844b9ae3a6302cd875f0465901cc",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w1.json"
+    }
+   ]
+  },
+  "CA07/w2": {
+   "argument": "CA07",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w2.json",
+   "reply_sha256": "fd723b20d97ec365a7f872bcdb51adcd33a5031a22f4546fdc0e496f15cee262",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w2.json"
+    }
+   ]
+  },
+  "CA07/w3": {
+   "argument": "CA07",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w3.json",
+   "reply_sha256": "fcb301f30c7622466f190fb93172372e9a7b3d2881392ebe856c8f7a35879565",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w3.json"
+    }
+   ]
+  },
+  "CA07/w4": {
+   "argument": "CA07",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w4.json",
+   "reply_sha256": "cfadde32c7b8181c4511129ce273807d4ae30806f910bb39d23e2d6c961606d3",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w4.json"
+    }
+   ]
+  },
+  "CA07/w5": {
+   "argument": "CA07",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w5.json",
+   "reply_sha256": "ef0f76cff8a1535740b92d8483a8958eec98ebe41a689bd2b1164e1880b0a1b0",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w5.json"
+    }
+   ]
+  },
+  "CA07/w6": {
+   "argument": "CA07",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA07_w6.json",
+   "reply_sha256": "3c82eee1306655c26e4527d0e36509b26ba203ac99ac35445bf67c0d88039cd7",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA07_w6.json"
+    }
+   ]
+  },
+  "CA08/w0": {
+   "argument": "CA08",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w0.json",
+   "reply_sha256": "ea48fa0f1cd61d16534116d96e5aa59825c14a27aae203b68238eff0b18ba1c8",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w0.json"
+    }
+   ]
+  },
+  "CA08/w1": {
+   "argument": "CA08",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w1.json",
+   "reply_sha256": "e5d17cd7334df736483dbcd3e1f47a86da4ff99a9eef6bdd70fe690538d8479e",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w1.json"
+    }
+   ]
+  },
+  "CA08/w2": {
+   "argument": "CA08",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w2.json",
+   "reply_sha256": "8b0da1d34bc3d047d31334841eb2e807c95a2e6cf8e33598682d42e86d5054ef",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w2.json"
+    }
+   ]
+  },
+  "CA08/w3": {
+   "argument": "CA08",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA08_w3.json",
+   "reply_sha256": "9f843c37e190d90127ed560243a34fe418e9a011564f9438cd8232c33c59259d",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA08_w3.json"
+    }
+   ]
+  },
+  "CA08/w5": {
+   "argument": "CA08",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA08_w5_d1.json",
+   "reply_sha256": "7259941ab36f93d49a4060729bae1bc5000dd6e31990e0c66329af8d9d5c847c",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA08_w5.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA08_w5_d1.json"
+    }
+   ]
+  },
+  "CA09/w0": {
+   "argument": "CA09",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 1,
+   "reply_file": "CA09_w0_d1.json",
+   "reply_sha256": "46864db144f5ca5dd42f637e4a374d3c4805d24465e830ba67396ffe16a99dd0",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "hedged",
+     "file": "CA09_w0.json"
+    },
+    {
+     "draw": 1,
+     "class": "clean",
+     "file": "CA09_w0_d1.json"
+    }
+   ]
+  },
+  "CA09/w1": {
+   "argument": "CA09",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w1.json",
+   "reply_sha256": "dec14663d82725c11655e082b849f885f43a8970e25f044d35f8406b4b6d6285",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w1.json"
+    }
+   ]
+  },
+  "CA09/w2": {
+   "argument": "CA09",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w2.json",
+   "reply_sha256": "89211f28a3281cb2774faf7cdf46072b1294cae9ed993a5805473189e5b84eec",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w2.json"
+    }
+   ]
+  },
+  "CA09/w3": {
+   "argument": "CA09",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w3.json",
+   "reply_sha256": "4640339db62e056a67fd2c1b1b70696623cd06c13370b877fd6612bd116b5926",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w3.json"
+    }
+   ]
+  },
+  "CA09/w5": {
+   "argument": "CA09",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w5.json",
+   "reply_sha256": "032df8690aeeb7d9143c3bcb95d0743ce9dd92a6a3eec32b88d794f6679d6cd5",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w5.json"
+    }
+   ]
+  },
+  "CA09/w6": {
+   "argument": "CA09",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA09_w6.json",
+   "reply_sha256": "e1fc202f0831eaadf0850f66cd435b6d7c63ccee85938d18678e439388a28ae2",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA09_w6.json"
+    }
+   ]
+  },
+  "CA10/w0": {
+   "argument": "CA10",
+   "slot": "w0",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w0.json",
+   "reply_sha256": "02413c8db66ff20ad567cb8b4341e31280e96d63ee66818b184c2b9697582c13",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w0.json"
+    }
+   ]
+  },
+  "CA10/w1": {
+   "argument": "CA10",
+   "slot": "w1",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w1.json",
+   "reply_sha256": "67e9a901888e95ffaa7341907d37aa86adf2ffb982663007a6ed090fdbf98912",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w1.json"
+    }
+   ]
+  },
+  "CA10/w2": {
+   "argument": "CA10",
+   "slot": "w2",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w2.json",
+   "reply_sha256": "baf0a484db9a88253e7e2ee5308d0669dafc49ae2f5269c3610e7800f2361658",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w2.json"
+    }
+   ]
+  },
+  "CA10/w3": {
+   "argument": "CA10",
+   "slot": "w3",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w3.json",
+   "reply_sha256": "ace6093457e9b9a43922195124b34979a191e5dc712e06853e943dea6aff539a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w3.json"
+    }
+   ]
+  },
+  "CA10/w4": {
+   "argument": "CA10",
+   "slot": "w4",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w4.json",
+   "reply_sha256": "ec2e4ff53ed3bd325cbf6b762f5996e2b4d38aa3199a395c943fc9929d25898a",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w4.json"
+    }
+   ]
+  },
+  "CA10/w5": {
+   "argument": "CA10",
+   "slot": "w5",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w5.json",
+   "reply_sha256": "fd3a8310080d97cfb9c5877c226f884a039962c864d74b90b3be9204f317e882",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w5.json"
+    }
+   ]
+  },
+  "CA10/w6": {
+   "argument": "CA10",
+   "slot": "w6",
+   "kind": "control",
+   "status": "clean",
+   "draw": 0,
+   "reply_file": "CA10_w6.json",
+   "reply_sha256": "d2f85332aa50a1d28cdc0460760e76a9dc7b788bb1152846bd09ebcb682e8c34",
+   "draws": [
+    {
+     "draw": 0,
+     "class": "clean",
+     "file": "CA10_w6.json"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,4 @@
+{"id": "story.noun:mask.s000", "why": "soft_flag", "flags": ["emotion_soft:touched"]}
+{"id": "story.noun:mask.s060", "why": "soft_flag", "flags": ["emotion_soft:moved"]}
+{"id": "story.noun:mask.s090", "why": "random_10pct", "flags": null}
+{"id": "story.noun:root.s060", "why": "random_10pct", "flags": null}

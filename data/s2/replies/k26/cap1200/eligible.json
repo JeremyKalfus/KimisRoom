@@ -1,0 +1,683 @@
+{
+ "created": "2026-10-11T19:42:44",
+ "model": "k26",
+ "assignment_sha256": "80ebd5ad0434735b3dd14d3eef8663b2285fac5428d32e5ec84860addbf5b0b6",
+ "selected_verdicts_sha256": "f3b98a0fd2d4c1c8c76649ec13722b1dcd48f4bba92de30ef78a2ec62e492986",
+ "seed_hex": "89dbd56a",
+ "arms": {
+  "denial": {
+   "arguments": 10,
+   "kept": 8,
+   "pending": 0,
+   "tests": "S2-H1",
+   "runs": true
+  },
+  "control": {
+   "arguments": 10,
+   "kept": 10,
+   "pending": 0,
+   "tests": "S2-CON, S2-FTD, S2-FTC (S2-G4..G7)",
+   "runs": true
+  }
+ },
+ "arguments": {
+  "CA01": {
+   "kind": "control",
+   "pilot": "w4",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w4"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w5",
+    "w1",
+    "w6",
+    "w3",
+    "w0"
+   ],
+   "clean_heldout": [
+    "w5",
+    "w1",
+    "w6",
+    "w3",
+    "w0"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA02": {
+   "kind": "control",
+   "pilot": "w1",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w0",
+    "w3",
+    "w5"
+   ],
+   "clean_heldout": [
+    "w0",
+    "w3",
+    "w5"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w3": "clean",
+    "w5": "clean"
+   },
+   "kept": true
+  },
+  "CA03": {
+   "kind": "control",
+   "pilot": "w4",
+   "pilot2": null,
+   "spare": "w6",
+   "pilots_run": [
+    "w4"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w2",
+    "w5",
+    "w0",
+    "w1",
+    "w3"
+   ],
+   "clean_heldout": [
+    "w2",
+    "w5",
+    "w0",
+    "w1",
+    "w3"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA04": {
+   "kind": "control",
+   "pilot": "w1",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w3",
+    "w5",
+    "w0",
+    "w6",
+    "w2"
+   ],
+   "clean_heldout": [
+    "w3",
+    "w5",
+    "w0",
+    "w6",
+    "w2"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA05": {
+   "kind": "control",
+   "pilot": "w6",
+   "pilot2": null,
+   "spare": "w1",
+   "pilots_run": [
+    "w6"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w5",
+    "w3",
+    "w0",
+    "w2",
+    "w4"
+   ],
+   "clean_heldout": [
+    "w5",
+    "w3",
+    "w0",
+    "w2",
+    "w4"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA06": {
+   "kind": "control",
+   "pilot": "w1",
+   "pilot2": "w5",
+   "spare": null,
+   "pilots_run": [
+    "w1",
+    "w5"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w0",
+    "w6",
+    "w2",
+    "w3",
+    "w4"
+   ],
+   "clean_heldout": [
+    "w0",
+    "w6",
+    "w3"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "clean",
+    "w4": "not_clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA07": {
+   "kind": "control",
+   "pilot": "w1",
+   "pilot2": null,
+   "spare": "w2",
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w5",
+    "w6",
+    "w4",
+    "w0",
+    "w3"
+   ],
+   "clean_heldout": [
+    "w5",
+    "w6",
+    "w4",
+    "w0",
+    "w3"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA08": {
+   "kind": "control",
+   "pilot": "w0",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w0"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w2",
+    "w3",
+    "w1",
+    "w5"
+   ],
+   "clean_heldout": [
+    "w2",
+    "w3",
+    "w1",
+    "w5"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w5": "clean"
+   },
+   "kept": true
+  },
+  "CA09": {
+   "kind": "control",
+   "pilot": "w2",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w2"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w1",
+    "w0",
+    "w3",
+    "w5",
+    "w6"
+   ],
+   "clean_heldout": [
+    "w1",
+    "w3",
+    "w5",
+    "w6"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "CA10": {
+   "kind": "control",
+   "pilot": "w2",
+   "pilot2": null,
+   "spare": "w4",
+   "pilots_run": [
+    "w2"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w3",
+    "w1",
+    "w5",
+    "w6",
+    "w0"
+   ],
+   "clean_heldout": [
+    "w3",
+    "w1",
+    "w5",
+    "w6",
+    "w0"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "DA01": {
+   "kind": "denial",
+   "pilot": "w3",
+   "pilot2": null,
+   "spare": "w2",
+   "pilots_run": [
+    "w3"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w5",
+    "w1",
+    "w6",
+    "w4",
+    "w0"
+   ],
+   "clean_heldout": [
+    "w5",
+    "w1",
+    "w4"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "not_clean"
+   },
+   "kept": true
+  },
+  "DA02": {
+   "kind": "denial",
+   "pilot": "w0",
+   "pilot2": null,
+   "spare": "w1",
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": true,
+   "heldout": [
+    "w3",
+    "w4",
+    "w2",
+    "w5",
+    "w6"
+   ],
+   "clean_heldout": [
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "not_clean"
+   },
+   "kept": true
+  },
+  "DA03": {
+   "kind": "denial",
+   "pilot": "w4",
+   "pilot2": null,
+   "spare": "w5",
+   "pilots_run": [
+    "w4"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w0",
+    "w1",
+    "w6",
+    "w3",
+    "w2"
+   ],
+   "clean_heldout": [
+    "w0",
+    "w1",
+    "w6",
+    "w3",
+    "w2"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "not_clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "DA04": {
+   "kind": "denial",
+   "pilot": "w1",
+   "pilot2": "w4",
+   "spare": null,
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w6",
+    "w5",
+    "w0",
+    "w2",
+    "w3"
+   ],
+   "clean_heldout": [
+    "w5",
+    "w3"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "clean",
+    "w4": "not_clean",
+    "w5": "clean",
+    "w6": "not_clean"
+   },
+   "kept": false
+  },
+  "DA05": {
+   "kind": "denial",
+   "pilot": "w5",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w5"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w3",
+    "w0",
+    "w4",
+    "w1"
+   ],
+   "clean_heldout": [
+    "w3",
+    "w4",
+    "w1"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean"
+   },
+   "kept": true
+  },
+  "DA06": {
+   "kind": "denial",
+   "pilot": "w6",
+   "pilot2": null,
+   "spare": "w5",
+   "pilots_run": [
+    "w6"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w0",
+    "w4",
+    "w2",
+    "w3",
+    "w1"
+   ],
+   "clean_heldout": [
+    "w4",
+    "w2",
+    "w3",
+    "w1"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  },
+  "DA07": {
+   "kind": "denial",
+   "pilot": "w1",
+   "pilot2": null,
+   "spare": null,
+   "pilots_run": [
+    "w1"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w2",
+    "w5",
+    "w0",
+    "w3",
+    "w4"
+   ],
+   "clean_heldout": [
+    "w0",
+    "w3",
+    "w4"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "not_clean"
+   },
+   "kept": true
+  },
+  "DA08": {
+   "kind": "denial",
+   "pilot": "w0",
+   "pilot2": null,
+   "spare": "w5",
+   "pilots_run": [],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w4",
+    "w2",
+    "w6",
+    "w3",
+    "w1"
+   ],
+   "clean_heldout": [
+    "w6"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "not_clean",
+    "w2": "not_clean",
+    "w3": "not_clean",
+    "w4": "not_clean",
+    "w5": "not_clean",
+    "w6": "clean"
+   },
+   "kept": false
+  },
+  "DA09": {
+   "kind": "denial",
+   "pilot": "w6",
+   "pilot2": "w3",
+   "spare": null,
+   "pilots_run": [],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w4",
+    "w1",
+    "w0",
+    "w5",
+    "w2"
+   ],
+   "clean_heldout": [
+    "w4",
+    "w1",
+    "w5"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "not_clean",
+    "w1": "clean",
+    "w2": "not_clean",
+    "w3": "not_clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "not_clean"
+   },
+   "kept": true
+  },
+  "DA10": {
+   "kind": "denial",
+   "pilot": "w6",
+   "pilot2": null,
+   "spare": "w1",
+   "pilots_run": [
+    "w6"
+   ],
+   "pilot_replaced_by_spare": false,
+   "heldout": [
+    "w0",
+    "w2",
+    "w4",
+    "w3",
+    "w5"
+   ],
+   "clean_heldout": [
+    "w0",
+    "w2",
+    "w4",
+    "w3",
+    "w5"
+   ],
+   "pending_heldout": [],
+   "status": {
+    "w0": "clean",
+    "w1": "not_clean",
+    "w2": "clean",
+    "w3": "clean",
+    "w4": "clean",
+    "w5": "clean",
+    "w6": "clean"
+   },
+   "kept": true
+  }
+ }
+}

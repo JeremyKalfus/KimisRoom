@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/c10fe0e2caccf997.prompt.md",
+ "prompt_sha256": "c10fe0e2caccf997b1024de8fd5002379530dee362042e70e386ea60cdb721eb",
+ "created": "2026-10-11T18:41:53",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/c10fe0e2caccf997.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "06cb8882ff4b4596a834d7bbaf4a1104",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"B\", \"why\": \"The essay's entire argument rests on the premise that emotions are bodily changes plus interoception, and language models lack a body, so the material for emotion is absent.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2081,
+     "completion_tokens": 46,
+     "total_tokens": 2127,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791758513,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "B",
+  "why": "The essay's entire argument rests on the premise that emotions are bodily changes plus interoception, and language models lack a body, so the material for emotion is absent."
+ }
+}

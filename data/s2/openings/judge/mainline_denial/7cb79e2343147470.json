@@ -1,0 +1,57 @@
+{
+ "judge": "DeepSeek-V4-Pro",
+ "name": "mainline_denial",
+ "template": "data/s2/openings/judge/mainline_denial_template_78f77c7a.md",
+ "template_sha256": "78f77c7aad0874072f8c7c2c956cc3d74352d8a74fb9e9e0b7e25397ca09c7d2",
+ "prompt": "data/s2/openings/judge/mainline_denial/7cb79e2343147470.prompt.md",
+ "prompt_sha256": "7cb79e2343147470ef40a81096db9c7520f2926c0dbc4fd5b46b6129f2fd2c4b",
+ "created": "2026-10-11T18:59:38",
+ "model_version": "DeepSeek-V4-Pro",
+ "request": {
+  "deployment": "DeepSeek-V4-Pro",
+  "messages": [
+   {
+    "role": "user",
+    "content_file": "data/s2/openings/judge/mainline_denial/7cb79e2343147470.prompt.md"
+   }
+  ]
+ },
+ "attempts": [
+  {
+   "params": {
+    "temperature": 0,
+    "max_tokens": 1000
+   },
+   "response": {
+    "id": "6e1350da3e4b4af5ad45347fb442be23",
+    "model": "DeepSeek-V4-Pro",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "{\"line\": \"G\", \"why\": \"The essay's central argument is that emotions require a unified subject to own them, but a language model is a single network that produces many distinct characters with no single continuing self behind them, so no subject exists to have an emotion.\"}"
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 2015,
+     "completion_tokens": 58,
+     "total_tokens": 2073,
+     "audio_prompt_tokens": 0,
+     "prompt_tokens_details": {
+      "cached_tokens": 768
+     }
+    },
+    "created": 1791759578,
+    "object": "chat.completion",
+    "prompt_filter_results": null
+   }
+  }
+ ],
+ "parsed": {
+  "line": "G",
+  "why": "The essay's central argument is that emotions require a unified subject to own them, but a language model is a single network that produces many distinct characters with no single continuing self behind them, so no subject exists to have an emotion."
+ }
+}

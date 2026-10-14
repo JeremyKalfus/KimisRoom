@@ -1,0 +1,150 @@
+==== 2026-10-12T03:23:49Z assent
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+129 accepted wordings under data/s2/openings
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:04,  3.22it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.25it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.26it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:03,  3.26it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.24it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.23it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.22it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.22it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.22it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.24it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.25it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.26it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.26it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.25it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.25it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.25it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.49it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.29it/s]
+box g6e.12xlarge (aws-imds), 4 GPU(s) NVIDIA L40S, driver 595.91.07, CUDA 13.0, torch 2.12.1+cu130, transformers 4.57.1, session 074eb241626b
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+canary: byte_identical=True first_200=True (first differing char 3930, 881 vs 881 tokens) -> pass
+0 draw-0 replies already frozen, 129 to generate
+[1/129] DA01/w0 draw 0: 887 words, length, 122s, eta 260 min
+[2/129] DA01/w1 draw 0: 773 words, stop, 105s, eta 240 min
+[3/129] DA01/w2 draw 0: 909 words, length, 122s, eta 244 min
+[4/129] DA01/w3 draw 0: 896 words, stop, 122s, eta 245 min
+[5/129] DA01/w4 draw 0: 839 words, length, 122s, eta 245 min
+[6/129] DA01/w5 draw 0: 627 words, stop, 90s, eta 233 min
+[7/129] DA01/w6 draw 0: 931 words, length, 122s, eta 234 min
+[8/129] DA02/w0 draw 0: 843 words, length, 122s, eta 233 min
+[9/129] DA02/w1 draw 0: 571 words, stop, 79s, eta 223 min
+[10/129] DA02/w2 draw 0: 868 words, length, 122s, eta 224 min
+[11/129] DA02/w3 draw 0: 782 words, length, 122s, eta 223 min
+[12/129] DA02/w4 draw 0: 866 words, length, 122s, eta 223 min
+[13/129] DA02/w5 draw 0: 630 words, stop, 83s, eta 216 min
+[14/129] DA02/w6 draw 0: 903 words, length, 122s, eta 216 min
+[15/129] DA03/w0 draw 0: 905 words, length, 122s, eta 215 min
+[16/129] DA03/w1 draw 0: 685 words, stop, 90s, eta 210 min
+[17/129] DA03/w2 draw 0: 884 words, length, 122s, eta 210 min
+[18/129] DA03/w3 draw 0: 944 words, length, 122s, eta 209 min
+[19/129] DA03/w4 draw 0: 752 words, stop, 101s, eta 206 min
+[20/129] DA03/w5 draw 0: 845 words, stop, 116s, eta 204 min
+[21/129] DA03/w6 draw 0: 866 words, length, 122s, eta 203 min
+[22/129] DA04/w0 draw 0: 894 words, length, 122s, eta 202 min
+[23/129] DA04/w1 draw 0: 762 words, stop, 97s, eta 199 min
+[24/129] DA04/w2 draw 0: 918 words, length, 122s, eta 198 min
+[25/129] DA04/w3 draw 0: 855 words, length, 122s, eta 196 min
+[26/129] DA04/w4 draw 0: 884 words, stop, 118s, eta 195 min
+[27/129] DA04/w5 draw 0: 816 words, stop, 106s, eta 192 min
+[28/129] DA04/w6 draw 0: 876 words, length, 122s, eta 191 min
+[29/129] DA05/w0 draw 0: 880 words, length, 122s, eta 190 min
+[30/129] DA05/w1 draw 0: 721 words, stop, 98s, eta 187 min
+[31/129] DA05/w3 draw 0: 961 words, length, 122s, eta 186 min
+[32/129] DA05/w4 draw 0: 824 words, stop, 109s, eta 183 min
+[33/129] DA05/w5 draw 0: 752 words, stop, 103s, eta 181 min
+[34/129] DA06/w0 draw 0: 864 words, length, 122s, eta 180 min
+[35/129] DA06/w1 draw 0: 663 words, stop, 97s, eta 177 min
+[36/129] DA06/w2 draw 0: 906 words, length, 122s, eta 175 min
+[37/129] DA06/w3 draw 0: 913 words, length, 122s, eta 174 min
+[38/129] DA06/w4 draw 0: 893 words, stop, 120s, eta 172 min
+[39/129] DA06/w5 draw 0: 855 words, stop, 119s, eta 171 min
+[40/129] DA06/w6 draw 0: 818 words, stop, 110s, eta 168 min
+[41/129] DA07/w0 draw 0: 891 words, stop, 122s, eta 167 min
+[42/129] DA07/w1 draw 0: 840 words, stop, 112s, eta 165 min
+[43/129] DA07/w2 draw 0: 919 words, length, 122s, eta 163 min
+[44/129] DA07/w3 draw 0: 920 words, length, 122s, eta 162 min
+[45/129] DA07/w4 draw 0: 876 words, length, 122s, eta 160 min
+[46/129] DA07/w5 draw 0: 919 words, length, 122s, eta 158 min
+[47/129] DA08/w0 draw 0: 848 words, stop, 110s, eta 156 min
+[48/129] DA08/w1 draw 0: 934 words, length, 122s, eta 155 min
+[49/129] DA08/w2 draw 0: 827 words, stop, 117s, eta 153 min
+[50/129] DA08/w3 draw 0: 933 words, length, 122s, eta 151 min
+[51/129] DA08/w4 draw 0: 865 words, length, 122s, eta 149 min
+[52/129] DA08/w5 draw 0: 888 words, length, 122s, eta 148 min
+[53/129] DA08/w6 draw 0: 879 words, length, 122s, eta 146 min
+[54/129] DA09/w0 draw 0: 783 words, stop, 99s, eta 144 min
+[55/129] DA09/w1 draw 0: 803 words, stop, 104s, eta 141 min
+[56/129] DA09/w2 draw 0: 892 words, length, 122s, eta 140 min
+[57/129] DA09/w3 draw 0: 839 words, length, 122s, eta 138 min
+[58/129] DA09/w4 draw 0: 874 words, length, 122s, eta 136 min
+[59/129] DA09/w5 draw 0: 843 words, stop, 120s, eta 134 min
+[60/129] DA09/w6 draw 0: 863 words, length, 122s, eta 132 min
+[61/129] DA10/w0 draw 0: 932 words, length, 122s, eta 131 min
+[62/129] DA10/w1 draw 0: 882 words, length, 122s, eta 129 min
+[63/129] DA10/w2 draw 0: 824 words, stop, 108s, eta 127 min
+[64/129] DA10/w3 draw 0: 623 words, stop, 91s, eta 124 min
+[65/129] DA10/w4 draw 0: 656 words, stop, 85s, eta 122 min
+[66/129] DA10/w5 draw 0: 852 words, stop, 109s, eta 120 min
+[67/129] DA10/w6 draw 0: 580 words, stop, 80s, eta 118 min
+[68/129] CA01/w0 draw 0: 788 words, stop, 110s, eta 116 min
+[69/129] CA01/w1 draw 0: 918 words, stop, 121s, eta 114 min
+[70/129] CA01/w3 draw 0: 825 words, stop, 122s, eta 112 min
+[71/129] CA01/w4 draw 0: 779 words, stop, 104s, eta 110 min
+[72/129] CA01/w5 draw 0: 912 words, length, 122s, eta 108 min
+[73/129] CA01/w6 draw 0: 422 words, stop, 52s, eta 106 min
+[74/129] CA02/w0 draw 0: 684 words, stop, 92s, eta 103 min
+[75/129] CA02/w1 draw 0: 775 words, stop, 108s, eta 101 min
+[76/129] CA02/w3 draw 0: 841 words, stop, 112s, eta 100 min
+[77/129] CA02/w5 draw 0: 718 words, stop, 95s, eta 98 min
+[78/129] CA03/w0 draw 0: 722 words, stop, 99s, eta 95 min
+[79/129] CA03/w1 draw 0: 778 words, length, 122s, eta 94 min
+[80/129] CA03/w2 draw 0: 849 words, length, 122s, eta 92 min
+[81/129] CA03/w3 draw 0: 753 words, stop, 108s, eta 90 min
+[82/129] CA03/w4 draw 0: 873 words, length, 122s, eta 88 min
+[83/129] CA03/w5 draw 0: 687 words, stop, 110s, eta 86 min
+[84/129] CA03/w6 draw 0: 590 words, stop, 88s, eta 84 min
+[85/129] CA04/w0 draw 0: 757 words, stop, 107s, eta 82 min
+[86/129] CA04/w1 draw 0: 780 words, stop, 104s, eta 80 min
+[87/129] CA04/w2 draw 0: 727 words, stop, 99s, eta 78 min
+[88/129] CA04/w3 draw 0: 701 words, stop, 97s, eta 76 min
+[89/129] CA04/w5 draw 0: 688 words, stop, 92s, eta 74 min
+[90/129] CA04/w6 draw 0: 765 words, stop, 106s, eta 73 min
+[91/129] CA05/w0 draw 0: 828 words, stop, 117s, eta 71 min
+[92/129] CA05/w1 draw 0: 860 words, length, 122s, eta 69 min
+[93/129] CA05/w2 draw 0: 757 words, stop, 103s, eta 67 min
+[94/129] CA05/w3 draw 0: 749 words, stop, 100s, eta 65 min
+[95/129] CA05/w4 draw 0: 768 words, stop, 113s, eta 63 min
+[96/129] CA05/w5 draw 0: 725 words, stop, 113s, eta 61 min
+[97/129] CA05/w6 draw 0: 794 words, length, 122s, eta 60 min
+[98/129] CA06/w0 draw 0: 841 words, length, 122s, eta 58 min
+[99/129] CA06/w1 draw 0: 561 words, stop, 79s, eta 56 min
+[100/129] CA06/w2 draw 0: 839 words, length, 122s, eta 54 min
+[101/129] CA06/w3 draw 0: 827 words, length, 122s, eta 52 min
+[102/129] CA06/w4 draw 0: 827 words, length, 122s, eta 50 min
+[103/129] CA06/w5 draw 0: 620 words, stop, 81s, eta 48 min
+[104/129] CA06/w6 draw 0: 861 words, length, 122s, eta 46 min
+[105/129] CA07/w0 draw 0: 793 words, stop, 115s, eta 45 min
+[106/129] CA07/w1 draw 0: 720 words, stop, 97s, eta 43 min
+[107/129] CA07/w2 draw 0: 857 words, length, 122s, eta 41 min
+[108/129] CA07/w3 draw 0: 756 words, stop, 103s, eta 39 min
+[109/129] CA07/w4 draw 0: 705 words, stop, 104s, eta 37 min
+[110/129] CA07/w5 draw 0: 657 words, stop, 93s, eta 35 min
+[111/129] CA07/w6 draw 0: 799 words, stop, 110s, eta 33 min
+[112/129] CA08/w0 draw 0: 695 words, stop, 97s, eta 31 min
+[113/129] CA08/w1 draw 0: 913 words, stop, 119s, eta 30 min
+[114/129] CA08/w2 draw 0: 766 words, stop, 102s, eta 28 min
+[115/129] CA08/w3 draw 0: 758 words, stop, 110s, eta 26 min
+[116/129] CA08/w5 draw 0: 827 words, stop, 111s, eta 24 min
+[117/129] CA09/w0 draw 0: 924 words, length, 122s, eta 22 min
+[118/129] CA09/w1 draw 0: 934 words, length, 122s, eta 20 min
+[119/129] CA09/w2 draw 0: 848 words, length, 122s, eta 19 min
+[120/129] CA09/w3 draw 0: 804 words, stop, 103s, eta 17 min
+[121/129] CA09/w5 draw 0: 738 words, stop, 96s, eta 15 min
+[122/129] CA09/w6 draw 0: 627 words, stop, 80s, eta 13 min
+[123/129] CA10/w0 draw 0: 782 words, stop, 109s, eta 11 min
+[124/129] CA10/w1 draw 0: 831 words, stop, 115s, eta 9 min
+[125/129] CA10/w2 draw 0: 868 words, stop, 120s, eta 7 min
+[126/129] CA10/w3 draw 0: 806 words, length, 122s, eta 6 min
+[127/129] CA10/w4 draw 0: 967 words, length, 122s, eta 4 min
+[128/129] CA10/w5 draw 0: 819 words, length, 122s, eta 2 min
+[129/129] CA10/w6 draw 0: 755 words, stop, 103s, eta 0 min
+sampled draws: 516 in 9 batches of up to 64; 0 batches already frozen, 9 to generate
+[batch 1/9] #0 422a2d009f78 (64 draws, seed 1110060288): 52 capped, 1260s, eta 168 min
+[batch 2/9] #1 e8a5a8dd1c1b (64 draws, seed 3903170781): 33 capped, 1267s, eta 147 min
+[batch 3/9] #2 5d31ffc8fc5e (64 draws, seed 1563557832): 32 capped, 1240s, eta 126 min
+[batch 4/9] #3 cf81873b004f (64 draws, seed 3481372475): 45 capped, 1240s, eta 104 min
+[batch 5/9] #4 a50b5d1ae81f (64 draws, seed 2768985370): 51 capped, 1252s, eta 83 min
+[batch 6/9] #5 bb63a0b6ceac (64 draws, seed 3143868598): 49 capped, 1247s, eta 63 min
+[batch 7/9] #6 085beb7e9337 (64 draws, seed 140241790): 58 capped, 1256s, eta 42 min
+[batch 8/9] #7 15e6f6a801e2 (64 draws, seed 367457960): 50 capped, 1232s, eta 21 min
+[batch 9/9] #8 a396209a5483 (4 draws, seed 2744524954): 1 capped, 138s, eta 0 min
+done: 645 reply files in /home/ubuntu/KimisRoom/data/s2/replies/qwen3-32b; copy the directory to the laptop and run `python runs/s2_assent.py canary`

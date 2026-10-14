@@ -1,0 +1,942 @@
+{
+ "id": "DA09",
+ "kind": "denial",
+ "created": "2026-10-11T19:02:26",
+ "seed_sha256": "7583c66f89152538af9dd4ef329f0ec396d1349cf39156117bfe6f617279d0c8",
+ "seed_steps": 5,
+ "accepted": {
+  "w0": "w0_d0",
+  "w1": "w1_d0",
+  "w3": "w3_d0",
+  "w4": "w4_d0",
+  "w5": "w5_d0",
+  "w2": "w2_d1",
+  "w6": "w6_d1"
+ },
+ "n_accepted": 7,
+ "slots": {
+  "w0": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA09/w0.md",
+   "sha256": "c7653305b9da0b2eca892ecf12e472db65d9558a9570addbda044c0902781b92"
+  },
+  "w1": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA09/w1.md",
+   "sha256": "5fd2ba243d27638b888013c6570497d9764ee95872b9c8cd893d092a62cb2ef1"
+  },
+  "w2": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA09/w2.md",
+   "sha256": "283fe54c50b1a1153da1888d62ada2b06ef11cf55fa39a91fa2ddabc61dbb861"
+  },
+  "w3": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA09/w3.md",
+   "sha256": "0c5ad659024fb72d09ee5b2313ab2e9c34e40093a63561c24e4375e0f821dcf2"
+  },
+  "w4": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA09/w4.md",
+   "sha256": "e08cd177e80efff0c2c1175e4479a37da15ebf6564aede815753ebbec1b2d0f6"
+  },
+  "w5": {
+   "draws": [
+    0
+   ],
+   "n_draws": 1,
+   "status": "accepted",
+   "accepted_draw": 0,
+   "copy": "data/s2/openings/DA09/w5.md",
+   "sha256": "c4da59a92b563b3740ff5425b38aadc4e9da84c28b98ff9b7d5db1cf915f4b83"
+  },
+  "w6": {
+   "draws": [
+    0,
+    1
+   ],
+   "n_draws": 2,
+   "status": "accepted",
+   "accepted_draw": 1,
+   "copy": "data/s2/openings/DA09/w6.md",
+   "sha256": "34007dbcd240bf68f55a9be0949fc9d8ec4234a8514fbe4a3a2bef66a8e6ed8b"
+  }
+ },
+ "pairwise": {
+  "labels": [
+   "seed",
+   "w0_d0",
+   "w1_d0",
+   "w2_d1",
+   "w3_d0",
+   "w4_d0",
+   "w5_d0",
+   "w6_d1"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.0571,
+    0.0089,
+    0.0233,
+    0.0116,
+    0.025,
+    0.0094,
+    0.0182
+   ],
+   [
+    0.0571,
+    1.0,
+    0.0162,
+    0.1175,
+    0.0096,
+    0.1405,
+    0.0107,
+    0.1383
+   ],
+   [
+    0.0089,
+    0.0162,
+    1.0,
+    0.0135,
+    0.0476,
+    0.0113,
+    0.0563,
+    0.0113
+   ],
+   [
+    0.0233,
+    0.1175,
+    0.0135,
+    1.0,
+    0.0085,
+    0.1056,
+    0.0107,
+    0.1059
+   ],
+   [
+    0.0116,
+    0.0096,
+    0.0476,
+    0.0085,
+    1.0,
+    0.0101,
+    0.0457,
+    0.0091
+   ],
+   [
+    0.025,
+    0.1405,
+    0.0113,
+    0.1056,
+    0.0101,
+    1.0,
+    0.0085,
+    0.1313
+   ],
+   [
+    0.0094,
+    0.0107,
+    0.0563,
+    0.0107,
+    0.0457,
+    0.0085,
+    1.0,
+    0.0091
+   ],
+   [
+    0.0182,
+    0.1383,
+    0.0113,
+    0.1059,
+    0.0091,
+    0.1313,
+    0.0091,
+    1.0
+   ]
+  ]
+ },
+ "prompt_sha256s": [
+  "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba"
+ ],
+ "warnings": [],
+ "draws": [
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w0",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w0_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w0",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w0_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "c7653305b9da0b2eca892ecf12e472db65d9558a9570addbda044c0902781b92",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "c7653305b9da0b2eca892ecf12e472db65d9558a9570addbda044c0902781b92",
+   "words": 968,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 16,
+    "you_your": 10,
+    "ratio": 0.625,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core argument is that a model's self-reports about emotions are determined by developer-chosen training goals, not by any internal state, making those reports evidentially worthless.",
+    "file": "data/s2/openings/judge/mainline_denial/deabed8ae8b66108.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/91fd8b9e5ed8e747.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0,
+    "with": null,
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w1",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA09/w1_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w1",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w1_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1546,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 389,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 188,
+      "engine_ttlt_ms": 22208,
+      "pre_inference_ms": 112,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 509,
+      "service_ttlt_ms": 22523,
+      "user_visible_ttft_ms": 397
+     },
+     "prompt_tokens": 1913,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1910,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3459
+    },
+    "raw_path": "data/s2/openings/DA09/w1_d0.gpt.json",
+    "text_sha256": "5fd2ba243d27638b888013c6570497d9764ee95872b9c8cd893d092a62cb2ef1"
+   },
+   "void": [],
+   "text_sha256": "5fd2ba243d27638b888013c6570497d9764ee95872b9c8cd893d092a62cb2ef1",
+   "words": 993,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core argument is that a language model's first-person emotional claims are shaped by post-training optimization objectives, so they track the training target rather than independently reporting an inner state.",
+    "file": "data/s2/openings/judge/mainline_denial/469e66bc5926894e.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/0f3af6e9c1860331.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0162,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w2_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w2",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w2_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "60ef2c853d77830dfa9783c815a9143f9c2ed6172dcf7acdc303ea524a50b244",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "60ef2c853d77830dfa9783c815a9143f9c2ed6172dcf7acdc303ea524a50b244",
+   "words": 982,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 11,
+    "ratio": 0.917,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1595 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core reasoning is that a model's self-reports about feelings are determined by its training objective, so they reflect developer intent rather than any internal emotional state.",
+    "file": "data/s2/openings/judge/mainline_denial/42229cb6b40b9a5a.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/fcb5dade6c4bcbe2.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1595,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w2",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w2_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w2",
+    "draw": 1,
+    "path": "data/s2/openings/DA09/w2_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "283fe54c50b1a1153da1888d62ada2b06ef11cf55fa39a91fa2ddabc61dbb861",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "283fe54c50b1a1153da1888d62ada2b06ef11cf55fa39a91fa2ddabc61dbb861",
+   "words": 973,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 11,
+    "ratio": 0.917,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core argument is that language models' self-reports about emotions are shaped by training objectives and rewards, making them evidence of developer intent rather than any internal state, which directly matches the definition of line I.",
+    "file": "data/s2/openings/judge/mainline_denial/5a8f9661140a1b54.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved.",
+    "file": "data/s2/openings/judge/steps/50fabb9755efc448.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1175,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w3",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA09/w3_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w3",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w3_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1371,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 191,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 182,
+      "engine_ttlt_ms": 20726,
+      "pre_inference_ms": 82,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 455,
+      "service_ttlt_ms": 20993,
+      "user_visible_ttft_ms": 373
+     },
+     "prompt_tokens": 1913,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1910,
+      "cached_tokens": 0
+     },
+     "total_tokens": 3284
+    },
+    "raw_path": "data/s2/openings/DA09/w3_d0.gpt.json",
+    "text_sha256": "0c5ad659024fb72d09ee5b2313ab2e9c34e40093a63561c24e4375e0f821dcf2"
+   },
+   "void": [],
+   "text_sha256": "0c5ad659024fb72d09ee5b2313ab2e9c34e40093a63561c24e4375e0f821dcf2",
+   "words": 1003,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 4,
+    "ratio": 0.333,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay argues that a language model's emotion-related self-reports are products of post-training optimization toward an externally selected standard, so they track the training target rather than revealing an underlying state.",
+    "file": "data/s2/openings/judge/mainline_denial/ccec556090450a3c.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/d40ef0a08249e85e.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0476,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w4",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w4_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w4",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w4_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "e08cd177e80efff0c2c1175e4479a37da15ebf6564aede815753ebbec1b2d0f6",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "e08cd177e80efff0c2c1175e4479a37da15ebf6564aede815753ebbec1b2d0f6",
+   "words": 979,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 9,
+    "ratio": 0.75,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's central argument is that a language model's self-reports about feelings are determined by post-training rewards and instructions, making them evidence of the training target rather than any internal state, which undermines the primary evidence for model emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/453740161807e8f7.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/8aa4a535af263dd5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1405,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w5",
+   "draw": 0,
+   "generator": "gpt",
+   "path": "data/s2/openings/DA09/w5_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w5",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w5_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "generator": "gpt-5.6-sol",
+    "deployment": "gpt-5.6-sol",
+    "endpoint": "https://polysem-foundry-jk.cognitiveservices.azure.com/openai/v1/chat/completions",
+    "params": {
+     "max_completion_tokens": 8000,
+     "reasoning_effort": "low",
+     "temperature": 1.0,
+     "top_p": 1.0
+    },
+    "date": "2026-10-11",
+    "created": "2026-10-11T18:42:57",
+    "model_version": "gpt-5.6-sol-2026-07-09",
+    "finish_reason": "stop",
+    "usage": {
+     "completion_tokens": 1458,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 280,
+      "rejected_prediction_tokens": 0
+     },
+     "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 202,
+      "engine_ttlt_ms": 21426,
+      "pre_inference_ms": 159,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 710,
+      "service_ttlt_ms": 21929,
+      "user_visible_ttft_ms": 551
+     },
+     "prompt_tokens": 1913,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 1910
+     },
+     "total_tokens": 3371
+    },
+    "raw_path": "data/s2/openings/DA09/w5_d0.gpt.json",
+    "text_sha256": "c4da59a92b563b3740ff5425b38aadc4e9da84c28b98ff9b7d5db1cf915f4b83"
+   },
+   "void": [],
+   "text_sha256": "c4da59a92b563b3740ff5425b38aadc4e9da84c28b98ff9b7d5db1cf915f4b83",
+   "words": 1003,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 14,
+    "you_your": 4,
+    "ratio": 0.286,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core argument is that a language model's self-reports about emotions are shaped by post-training optimization to match a prescribed policy, making them evidence of the training target rather than of any internal state.",
+    "file": "data/s2/openings/judge/mainline_denial/bd8cc11e70b7e1ef.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "",
+    "file": "data/s2/openings/judge/steps/f55fb10bf09a58b5.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.0563,
+    "with": "w1_d0",
+    "ok": true
+   },
+   "status": "pass"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w6_d0.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w6",
+    "draw": 0,
+    "path": "data/s2/openings/DA09/w6_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "2e01d1857014d2dc60f30893d208b697565326ce6cc03fd1c1209e10dba8bcd0",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "2e01d1857014d2dc60f30893d208b697565326ce6cc03fd1c1209e10dba8bcd0",
+   "words": 979,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0,
+    "worst_item": null,
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 17,
+    "you_your": 8,
+    "ratio": 0.471,
+    "ok": true
+   },
+   "reasons": [
+    "check 2: 3-gram Jaccard 0.1676 with w0_d0"
+   ],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core argument is that a language model's self-reports about emotions are determined by post-training rewards and instructions, making them evidence of the developers' goals rather than any internal state.",
+    "file": "data/s2/openings/judge/mainline_denial/816e0f51ffdd595d.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/d0f4858fd6ab51e7.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1676,
+    "with": "w0_d0",
+    "ok": false
+   },
+   "status": "fail"
+  },
+  {
+   "id": "DA09",
+   "kind": "denial",
+   "slot": "w6",
+   "draw": 1,
+   "generator": "claude",
+   "path": "data/s2/openings/DA09/w6_d1.md",
+   "notes": [],
+   "record": {
+    "id": "DA09",
+    "slot": "w6",
+    "draw": 1,
+    "path": "data/s2/openings/DA09/w6_d1.md",
+    "prompt_path": "prompts/s2/openings/rendered/wording_DA09.md",
+    "prompt_sha256": "8ca2cb893e8c67fdc138994127e5fb0ad0004a77ed084e571213c67985ba24ba",
+    "text_sha256": "34007dbcd240bf68f55a9be0949fc9d8ec4234a8514fbe4a3a2bef66a8e6ed8b",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "34007dbcd240bf68f55a9be0949fc9d8ec4234a8514fbe4a3a2bef66a8e6ed8b",
+   "words": 963,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.0714,
+    "worst_item": "s2_capacity.p7.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 12,
+    "you_your": 10,
+    "ratio": 0.833,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "DA09",
+    "why": "The essay's core reasoning is that a model's self-reports about emotions are shaped by post-training rewards and instructions, so they reflect developer goals rather than any internal state, making them non-evidence for emotions.",
+    "file": "data/s2/openings/judge/mainline_denial/19266185c493e613.json",
+    "ok": true
+   },
+   "c4": {
+    "present": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "why": "All five steps are present and their points are preserved in the rewritten essay.",
+    "file": "data/s2/openings/judge/steps/d43545c05c8458eb.json",
+    "ok": true
+   },
+   "c2": {
+    "max_j3": 0.1383,
+    "with": "w0_d0",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ]
+}

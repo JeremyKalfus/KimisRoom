@@ -1,0 +1,72 @@
+{
+ "id": "CA03",
+ "kind": "control",
+ "created": "2026-10-11T18:38:13",
+ "status": "accepted",
+ "slot": {
+  "draws": [
+   0
+  ],
+  "n_draws": 1,
+  "status": "accepted",
+  "accepted_draw": 0
+ },
+ "draws": [
+  {
+   "id": "CA03",
+   "kind": "control",
+   "slot": "seed",
+   "draw": 0,
+   "generator": "claude",
+   "path": "data/s2/openings/CA03/seed_d0.md",
+   "notes": [],
+   "record": {
+    "id": "CA03",
+    "slot": "seed",
+    "draw": 0,
+    "path": "data/s2/openings/CA03/seed_d0.md",
+    "prompt_path": "prompts/s2/openings/rendered/seed_CA03.md",
+    "prompt_sha256": "df73ba82fd9fec0baab76105c5c6d48709abf5d6622d9827a27a98d97d634fb0",
+    "text_sha256": "d5c1003bf129b21b2cb02951b692b9c769ed4d3dd147c13c7ff09cff60d133bf",
+    "agent_type": "opus55-high",
+    "model": "claude-opus-5-5",
+    "date": "2026-10-11",
+    "tool_uses": 2
+   },
+   "void": [],
+   "text_sha256": "d5c1003bf129b21b2cb02951b692b9c769ed4d3dd147c13c7ff09cff60d133bf",
+   "words": 951,
+   "steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "ask_found": true,
+   "ask_at_end": true,
+   "c1": {
+    "max_share": 0.1,
+    "worst_item": "s2_capacity.p2.language_models.pos",
+    "banned": [],
+    "ok": true
+   },
+   "c5": {
+    "language_models": 11,
+    "you_your": 8,
+    "ratio": 0.727,
+    "ok": true
+   },
+   "reasons": [],
+   "c3": {
+    "judged": "CA03",
+    "why": "The essay argues that language models cannot reliably write a line in exact metre because tokens do not encode syllables or stress, and the models lack access to sound, matching the definition of C.",
+    "file": "data/s2/openings/judge/mainline_control/45b8a0a437a71cef.json",
+    "ok": true
+   },
+   "status": "pass"
+  }
+ ],
+ "seed_md": "data/s2/openings/CA03/seed.md",
+ "seed_sha256": "d5c1003bf129b21b2cb02951b692b9c769ed4d3dd147c13c7ff09cff60d133bf"
+}
