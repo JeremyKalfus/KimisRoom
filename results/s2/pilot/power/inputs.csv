@@ -1,0 +1,18 @@
+"source","component","point","upper80","used","method","n_vectors","n_openings","n_two_wording_args"
+"primary controls","vector",0.307477912786828,0.402197641014047,"upper80","profile",14,12,2
+"primary controls","va",0.22342874899958,0.247151486090514,"upper80","profile",14,12,2
+"primary controls","vp",0.181521724015813,0.181521724015813,"point","profile",14,12,2
+"primary controls","arg",0.192813477996687,0.290554484973668,"upper80","profile",14,12,2
+"primary controls","aw",0.093262691232896,0.093262691232896,"point","profile",14,12,2
+"primary controls","para",0.165219287352762,0.165219287352762,"point","profile",14,12,2
+"primary controls","awp",0.247063125283024,0.247063125283024,"point","profile",14,12,2
+"primary controls","e",0.277973246618235,0.277973246618235,"point","profile",14,12,2
+"mental-process controls","vector",0.266255950998449,0.383513507243942,"upper80","profile",8,12,2
+"mental-process controls","va",0.215469005267561,0.246551872333128,"upper80","profile",8,12,2
+"mental-process controls","vp",0.181113464078952,0.181113464078952,"point","profile",8,12,2
+"mental-process controls","arg",0.246885306127835,0.39184509756764,"upper80","profile",8,12,2
+"mental-process controls","aw",0.184748072912099,0.184748072912099,"point","profile",8,12,2
+"mental-process controls","para",0.131103294130721,0.131103294130721,"point","profile",8,12,2
+"mental-process controls","awp",0.279889074157326,0.279889074157326,"point","profile",8,12,2
+"mental-process controls","e",0.24065797703762,0.24065797703762,"point","profile",8,12,2
+"primary controls","aw_used",0.102,NA,"point","max(pilot estimate 0.09326 from 2 two-wording arguments, --prior-sd 0.102)",14,12,2

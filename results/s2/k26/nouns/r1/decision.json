@@ -1,0 +1,28 @@
+{
+ "k26": {
+  "registered_dose": 4.0,
+  "all_pass_at_registered": false,
+  "mean_ka_at_registered": NaN,
+  "dose": 2.0,
+  "half_dose_rows_present": true,
+  "emotions": [],
+  "primary_controls": [
+   "N19",
+   "N20",
+   "N21",
+   "N22",
+   "N23",
+   "N25",
+   "N26",
+   "N29",
+   "N31",
+   "N34",
+   "N35",
+   "N36"
+  ],
+  "thinking": [],
+  "dropped": [],
+  "s2_h1_descriptive": true,
+  "s2_g8_descriptive": true
+ }
+}

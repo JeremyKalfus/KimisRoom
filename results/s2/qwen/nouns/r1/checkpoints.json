@@ -1,0 +1,10 @@
+{
+ "qwen|S2-DEN": {
+  "path": "/nvme/qwen/Qwen3-32B",
+  "sha256": "ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2"
+ },
+ "qwen|S2-CON": {
+  "path": "/nvme/qwen/Qwen3-32B",
+  "sha256": "ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2"
+ }
+}

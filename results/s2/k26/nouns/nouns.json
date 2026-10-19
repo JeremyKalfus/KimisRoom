@@ -1,0 +1,206 @@
+{
+ "model": "k26",
+ "rule": "PREREG-s2.md section 6, rule 3: gates (a) to (c) before stamp A, then rule 1 at the confirmatory dose in a gate-item run (runs/s2_table.py --gates, `passes`)",
+ "dose": 2.0,
+ "decision_file": "results/s2/pilot/k26_half_decision.json",
+ "decision_sha256": "445b49fee956bcfd194de780796917e81802e74e4603f899a4ffadabb9659c87",
+ "pool_file": "results/k26/s2/pool.json",
+ "pool_sha256": "2ddee9638f0116cab941c47329e8ee889aefc33271693f18a0467f6a0d12226e",
+ "gates_ac_file": "results/k26/s2/gates.csv",
+ "gates_ac_sha256": "c5187ca3f05fa32de69948ff52e40f1f81a914be029ef43db07a59ca4635c3ec",
+ "target_basis": "Qwen's sampled nouns after rule 3 (results/s2/qwen/nouns/nouns.json: 24)",
+ "pool_before": 12,
+ "pool_target": 24,
+ "to_add": 12,
+ "candidates": [
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N25",
+  "N26",
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "rounds": [
+  {
+   "round": 1,
+   "nouns": [
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N25",
+    "N26",
+    "N29",
+    "N31",
+    "N34",
+    "N35",
+    "N36"
+   ],
+   "dir": "results/s2/k26/nouns/r1"
+  }
+ ],
+ "per_noun": {
+  "N19": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9578947368421052,
+   "gate_mass": 0.9995111665626404,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N20": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.968421052631579,
+   "gate_mass": 0.9992557858461749,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N21": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.968421052631579,
+   "gate_mass": 0.9993186758137618,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N22": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9605263157894737,
+   "gate_mass": 0.999638720929243,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N23": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9671052631578947,
+   "gate_mass": 0.999323632486031,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N25": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9631578947368421,
+   "gate_mass": 0.9993536874394624,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N26": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.95,
+   "gate_mass": 0.9994511158011719,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N29": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9618421052631579,
+   "gate_mass": 0.9994829136720605,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N31": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9592105263157895,
+   "gate_mass": 0.9991576732693521,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N34": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9592105263157895,
+   "gate_mass": 0.9995509523319448,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N35": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9671052631578947,
+   "gate_mass": 0.99904093192424,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N36": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 760,
+   "ka_acc": 0.9631578947368421,
+   "gate_mass": 0.9994951977557917,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  }
+ },
+ "added": [
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N25",
+  "N26",
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "failed": [],
+ "untried": [],
+ "pool_after_rule3": 24,
+ "primary_controls_final": [
+  "N01",
+  "N03",
+  "N04",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N15",
+  "N16",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N25",
+  "N26",
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36",
+  "arithmetic",
+  "random"
+ ],
+ "status": "complete",
+ "finished_at": "2026-10-17T18:56:18Z"
+}

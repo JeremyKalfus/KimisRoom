@@ -1,0 +1,38 @@
+{
+ "qwen": {
+  "registered_dose": 2.0,
+  "all_pass_at_registered": false,
+  "mean_ka_at_registered": NaN,
+  "dose": 1.0,
+  "half_dose_rows_present": true,
+  "emotions": [],
+  "primary_controls": [
+   "N15",
+   "N16",
+   "N17",
+   "N18",
+   "N19",
+   "N20",
+   "N21",
+   "N22",
+   "N23",
+   "N24",
+   "N25",
+   "N26"
+  ],
+  "thinking": [],
+  "dropped": [],
+  "s2_h1_descriptive": true,
+  "s2_g8_descriptive": true,
+  "sign_check_failures": [
+   {
+    "pair_id": "s2_reference.P03.rocks",
+    "openings": [
+     "CA03/w4",
+     "CA04/w1",
+     "CA06/w5"
+    ]
+   }
+  ]
+ }
+}

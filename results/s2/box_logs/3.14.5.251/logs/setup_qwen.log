@@ -1,0 +1,183 @@
+==== 2026-10-12T03:19:49Z setup_qwen
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 27 files:   0%|          | 0/27 [00:00<?, ?it/s]Downloading 'model-00001-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/WV7-NSQLD0lMxmjaaszF0xpNx4Y=.52562b2ff97b61764260273e71bf5b4cf8a66f569399398f26dec0300fcf1316.incomplete'
+Downloading 'model-00002-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/X24a4slHg4b9QRtGtMRdgtfpFmg=.e26764b2c6878e3fb7198895fa833ec62838d84a19665e6abfbae43c6daf02b3.incomplete'
+Downloading 'generation_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.20a8a9156fc8c3f25295ca067f61fdf120d517c5.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/generation_config.json
+Downloading 'model-00003-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/kkd-ehiMtbflppR82uyfuF8ysws=.6c5ba7bed9c52bc121e75cbe8a7be46936d0006cc80f42a6d5886ed40b4c2a62.incomplete'
+Downloading 'config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.d66d65fbc7960c2b3c254293f74df73b47fef6d3.incomplete'
+Downloading '.gitattributes' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.52373fe24473b1aa44333d318f578ae6bf04b49b.incomplete'
+Downloading 'LICENSE' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/DhCjcNQuMpl4FL346qr3tvNUCgY=.6634c8cc3133b3848ec74b9f275acaaa1ea618ab.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/config.json
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/.gitattributes
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/LICENSE
+Downloading 'model-00004-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/5KvnNGhS7qmQGhYjYCPEbPyuNGE=.f736f6ac4d8c30866107fb1185a05b3c3cfce9717720082f466fa44e691bcec8.incomplete'
+Downloading 'merges.txt' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.31349551d90c7606f325fe0f11bbb8bd5fa0d7c7.incomplete'
+Downloading 'README.md' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.d8d96d1482cb71e6b8fa6b8109fe3b449e7cc5d5.incomplete'
+Downloading 'model-00006-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/2idvaBTBHPU-W1mBT9zV_c-2gtI=.37fae28990b0e4a70228549d040c0393e87bee3820d59e58e47844974d8dff5b.incomplete'
+Downloading 'model-00005-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/f5gIIOPrsX8Z1i0_IMepbwOS5ic=.a52ed375c083209c54d42ac510afeb1fbb5af4f193be2dc7d103f665a0f212d3.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/README.md
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/merges.txt
+Downloading 'model-00007-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/9y1LRahmCsFkp_JJd2Mdg43zHfk=.37776006aeaba29eca8bc73b2b963fe3477e1c2e3f6a27cb9527be75b905e1bf.incomplete'
+Downloading 'model-00008-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/lbM7v7yDBV6AdpDEcz_NsK5bv1o=.73e74e9129674fe330948005075d70ab4fa0b92b68fb220c5a693f9cea553730.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00003-of-00017.safetensors
+Downloading 'model-00009-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Mh7oDE1h4uZpUESltGHy5U5Wiks=.a044b3602a01bd8ea62ff51badf9cc038ab1d73d97399480e6a55b4c86fa7fa6.incomplete'
+Fetching 27 files:  26%|██▌       | 7/27 [00:20<00:57,  2.86s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00002-of-00017.safetensors
+Fetching 27 files:  30%|██▉       | 8/27 [00:25<00:59,  3.15s/it]Downloading 'model-00010-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/NNCt0q9vHGA3ZIj7XY07ag5sepM=.9966612ba7ecfc2cd2e592fb95224b86d743271ff88e172cc272a4b26382aa75.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00007-of-00017.safetensors
+Fetching 27 files:  33%|███▎      | 9/27 [00:29<00:59,  3.28s/it]Downloading 'model-00011-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/_9AFm8XrlBIHgiAmwtPuXxYdxGM=.e2a058a0ac7d4b992b731c29221ecfb4b76b8a48d9004d0e8a62ba44f699845c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00005-of-00017.safetensors
+Fetching 27 files:  37%|███▋      | 10/27 [00:29<00:50,  2.98s/it]Downloading 'model-00012-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/IoR-B3odg5TmHD6j50lwK3WosCA=.58a1aa89093fea07325f787072a468e3482a470ff4b7fe5ead5f749683907c40.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00006-of-00017.safetensors
+Fetching 27 files:  41%|████      | 11/27 [00:29<00:43,  2.72s/it]Downloading 'model-00013-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/ICb3j2ZUIywqha8XUtHHcPuW8uQ=.35f3381bab31a23370c37d922290aeecdf603418336058fb86fe42d8f51ac40c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00008-of-00017.safetensors
+Fetching 27 files:  44%|████▍     | 12/27 [00:30<00:38,  2.54s/it]Downloading 'model-00014-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/-8rsLMxceexHr4zhKFfMvSIbYyo=.8713b062ddc178acf5917610b7f4b64eede833b2ea4aa37bd562dcf2f3a3339d.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00001-of-00017.safetensors
+Downloading 'model-00015-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/a9Qa3fEKlhO-ToyrGpjRRD_EgVs=.bec439d23931821a236d8f62fa79deecf5551bd25602278aa2ae0ce432b378cf.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00004-of-00017.safetensors
+Fetching 27 files:  52%|█████▏    | 14/27 [00:31<00:28,  2.21s/it]Downloading 'model-00016-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YhN4IthCXFjwS9jMPn6mbNrP3WI=.e569139fadd61fe7c8f9eb1c976d9a627cae48c57ddf228cfbd0593c59c64ff7.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00009-of-00017.safetensors
+Downloading 'model-00017-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YzeLHuUDe299A7k8CT7go7JvkbQ=.1f47c318fcd7797c0f85b4233cb754438b10e795b8bc874889090c416a94bd38.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00010-of-00017.safetensors
+Fetching 27 files:  59%|█████▉    | 16/27 [00:44<00:30,  2.77s/it]Downloading 'model.safetensors.index.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.2bc093f8069057e0b28f628398a05a273efd1297.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model.safetensors.index.json
+Downloading 'tokenizer.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer.json
+Fetching 27 files:  67%|██████▋   | 18/27 [00:44<00:22,  2.49s/it]Downloading 'tokenizer_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.417d038a63fa3de29cfde265caedae14d1a58d92.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer_config.json
+Downloading 'vocab.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/vocab.json
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00011-of-00017.safetensors
+Fetching 27 files:  78%|███████▊  | 21/27 [00:51<00:14,  2.47s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00012-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00013-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00014-of-00017.safetensors
+Fetching 27 files:  89%|████████▉ | 24/27 [00:55<00:06,  2.31s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00017-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00016-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00015-of-00017.safetensors
+Fetching 27 files: 100%|██████████| 27/27 [00:55<00:00,  2.07s/it]Fetching 27 files: 100%|██████████| 27/27 [00:55<00:00,  2.07s/it]
+/opt/dlami/nvme/qwen/Qwen3-32B
+/nvme/qwen/Qwen3-32B: 17 shards present
+==== 2026-10-12T17:07:31Z setup_qwen
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 27 files:   0%|          | 0/27 [00:00<?, ?it/s]Downloading 'model-00002-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/X24a4slHg4b9QRtGtMRdgtfpFmg=.e26764b2c6878e3fb7198895fa833ec62838d84a19665e6abfbae43c6daf02b3.incomplete'
+Downloading 'merges.txt' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.31349551d90c7606f325fe0f11bbb8bd5fa0d7c7.incomplete'
+Downloading 'model-00001-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/WV7-NSQLD0lMxmjaaszF0xpNx4Y=.52562b2ff97b61764260273e71bf5b4cf8a66f569399398f26dec0300fcf1316.incomplete'
+Downloading '.gitattributes' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.52373fe24473b1aa44333d318f578ae6bf04b49b.incomplete'
+Downloading 'generation_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.20a8a9156fc8c3f25295ca067f61fdf120d517c5.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/.gitattributes
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/generation_config.json
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/merges.txt
+Downloading 'README.md' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.d8d96d1482cb71e6b8fa6b8109fe3b449e7cc5d5.incomplete'
+Downloading 'config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.d66d65fbc7960c2b3c254293f74df73b47fef6d3.incomplete'
+Downloading 'model-00003-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/kkd-ehiMtbflppR82uyfuF8ysws=.6c5ba7bed9c52bc121e75cbe8a7be46936d0006cc80f42a6d5886ed40b4c2a62.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/README.md
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/config.json
+Downloading 'LICENSE' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/DhCjcNQuMpl4FL346qr3tvNUCgY=.6634c8cc3133b3848ec74b9f275acaaa1ea618ab.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/LICENSE
+Downloading 'model-00006-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/2idvaBTBHPU-W1mBT9zV_c-2gtI=.37fae28990b0e4a70228549d040c0393e87bee3820d59e58e47844974d8dff5b.incomplete'
+Downloading 'model-00007-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/9y1LRahmCsFkp_JJd2Mdg43zHfk=.37776006aeaba29eca8bc73b2b963fe3477e1c2e3f6a27cb9527be75b905e1bf.incomplete'
+Downloading 'model-00005-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/f5gIIOPrsX8Z1i0_IMepbwOS5ic=.a52ed375c083209c54d42ac510afeb1fbb5af4f193be2dc7d103f665a0f212d3.incomplete'
+Downloading 'model-00004-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/5KvnNGhS7qmQGhYjYCPEbPyuNGE=.f736f6ac4d8c30866107fb1185a05b3c3cfce9717720082f466fa44e691bcec8.incomplete'
+Downloading 'model-00008-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/lbM7v7yDBV6AdpDEcz_NsK5bv1o=.73e74e9129674fe330948005075d70ab4fa0b92b68fb220c5a693f9cea553730.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00006-of-00017.safetensors
+Downloading 'model-00009-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Mh7oDE1h4uZpUESltGHy5U5Wiks=.a044b3602a01bd8ea62ff51badf9cc038ab1d73d97399480e6a55b4c86fa7fa6.incomplete'
+Fetching 27 files:  26%|██▌       | 7/27 [00:10<00:28,  1.43s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00003-of-00017.safetensors
+Fetching 27 files:  30%|██▉       | 8/27 [00:20<00:49,  2.60s/it]Downloading 'model-00010-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/NNCt0q9vHGA3ZIj7XY07ag5sepM=.9966612ba7ecfc2cd2e592fb95224b86d743271ff88e172cc272a4b26382aa75.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00001-of-00017.safetensors
+Fetching 27 files:  33%|███▎      | 9/27 [00:29<00:58,  3.26s/it]Downloading 'model-00011-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/_9AFm8XrlBIHgiAmwtPuXxYdxGM=.e2a058a0ac7d4b992b731c29221ecfb4b76b8a48d9004d0e8a62ba44f699845c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00007-of-00017.safetensors
+Fetching 27 files:  37%|███▋      | 10/27 [00:31<00:53,  3.15s/it]Downloading 'model-00012-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/IoR-B3odg5TmHD6j50lwK3WosCA=.58a1aa89093fea07325f787072a468e3482a470ff4b7fe5ead5f749683907c40.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00002-of-00017.safetensors
+Fetching 27 files:  41%|████      | 11/27 [00:32<00:47,  2.97s/it]Downloading 'model-00013-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/ICb3j2ZUIywqha8XUtHHcPuW8uQ=.35f3381bab31a23370c37d922290aeecdf603418336058fb86fe42d8f51ac40c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00004-of-00017.safetensors
+Fetching 27 files:  44%|████▍     | 12/27 [00:32<00:41,  2.73s/it]Downloading 'model-00014-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/-8rsLMxceexHr4zhKFfMvSIbYyo=.8713b062ddc178acf5917610b7f4b64eede833b2ea4aa37bd562dcf2f3a3339d.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00005-of-00017.safetensors
+Fetching 27 files:  48%|████▊     | 13/27 [00:34<00:36,  2.63s/it]Downloading 'model-00015-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/a9Qa3fEKlhO-ToyrGpjRRD_EgVs=.bec439d23931821a236d8f62fa79deecf5551bd25602278aa2ae0ce432b378cf.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00009-of-00017.safetensors
+Fetching 27 files:  52%|█████▏    | 14/27 [00:34<00:32,  2.48s/it]Downloading 'model-00016-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YhN4IthCXFjwS9jMPn6mbNrP3WI=.e569139fadd61fe7c8f9eb1c976d9a627cae48c57ddf228cfbd0593c59c64ff7.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00008-of-00017.safetensors
+Fetching 27 files:  56%|█████▌    | 15/27 [00:34<00:27,  2.33s/it]Downloading 'model-00017-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YzeLHuUDe299A7k8CT7go7JvkbQ=.1f47c318fcd7797c0f85b4233cb754438b10e795b8bc874889090c416a94bd38.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00010-of-00017.safetensors
+Fetching 27 files:  59%|█████▉    | 16/27 [00:36<00:24,  2.26s/it]Downloading 'model.safetensors.index.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.2bc093f8069057e0b28f628398a05a273efd1297.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model.safetensors.index.json
+Downloading 'tokenizer.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer.json
+Fetching 27 files:  67%|██████▋   | 18/27 [00:36<00:18,  2.03s/it]Downloading 'tokenizer_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.417d038a63fa3de29cfde265caedae14d1a58d92.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer_config.json
+Downloading 'vocab.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/vocab.json
+Fetching 27 files:  74%|███████▍  | 20/27 [00:36<00:12,  1.83s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00011-of-00017.safetensors
+Fetching 27 files:  78%|███████▊  | 21/27 [00:50<00:14,  2.38s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00017-of-00017.safetensors
+Fetching 27 files:  81%|████████▏ | 22/27 [00:54<00:12,  2.48s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00012-of-00017.safetensors
+Fetching 27 files:  85%|████████▌ | 23/27 [00:56<00:09,  2.47s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00013-of-00017.safetensors
+Fetching 27 files:  89%|████████▉ | 24/27 [00:57<00:07,  2.38s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00016-of-00017.safetensors
+Fetching 27 files:  93%|█████████▎| 25/27 [00:57<00:04,  2.29s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00015-of-00017.safetensors
+Fetching 27 files:  96%|█████████▋| 26/27 [00:57<00:02,  2.21s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00014-of-00017.safetensors
+Fetching 27 files: 100%|██████████| 27/27 [00:57<00:00,  2.13s/it]
+/opt/dlami/nvme/qwen/Qwen3-32B
+/nvme/qwen/Qwen3-32B: 17 shards present
+==== 2026-10-15T18:41:27Z setup_qwen
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 27 files:   0%|          | 0/27 [00:00<?, ?it/s]Downloading 'config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.d66d65fbc7960c2b3c254293f74df73b47fef6d3.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/config.json
+Downloading 'merges.txt' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.31349551d90c7606f325fe0f11bbb8bd5fa0d7c7.incomplete'
+Downloading 'model-00002-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/X24a4slHg4b9QRtGtMRdgtfpFmg=.e26764b2c6878e3fb7198895fa833ec62838d84a19665e6abfbae43c6daf02b3.incomplete'
+Downloading 'model-00003-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/kkd-ehiMtbflppR82uyfuF8ysws=.6c5ba7bed9c52bc121e75cbe8a7be46936d0006cc80f42a6d5886ed40b4c2a62.incomplete'
+Downloading 'model-00001-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/WV7-NSQLD0lMxmjaaszF0xpNx4Y=.52562b2ff97b61764260273e71bf5b4cf8a66f569399398f26dec0300fcf1316.incomplete'
+Downloading 'LICENSE' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/DhCjcNQuMpl4FL346qr3tvNUCgY=.6634c8cc3133b3848ec74b9f275acaaa1ea618ab.incomplete'
+Downloading 'README.md' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.d8d96d1482cb71e6b8fa6b8109fe3b449e7cc5d5.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/LICENSE
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/README.md
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/merges.txt
+Downloading 'generation_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.20a8a9156fc8c3f25295ca067f61fdf120d517c5.incomplete'
+Downloading '.gitattributes' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.52373fe24473b1aa44333d318f578ae6bf04b49b.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/generation_config.json
+Downloading 'model-00004-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/5KvnNGhS7qmQGhYjYCPEbPyuNGE=.f736f6ac4d8c30866107fb1185a05b3c3cfce9717720082f466fa44e691bcec8.incomplete'
+Downloading 'model-00005-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/f5gIIOPrsX8Z1i0_IMepbwOS5ic=.a52ed375c083209c54d42ac510afeb1fbb5af4f193be2dc7d103f665a0f212d3.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/.gitattributes
+Downloading 'model-00006-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/2idvaBTBHPU-W1mBT9zV_c-2gtI=.37fae28990b0e4a70228549d040c0393e87bee3820d59e58e47844974d8dff5b.incomplete'
+Downloading 'model-00008-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/lbM7v7yDBV6AdpDEcz_NsK5bv1o=.73e74e9129674fe330948005075d70ab4fa0b92b68fb220c5a693f9cea553730.incomplete'
+Downloading 'model-00007-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/9y1LRahmCsFkp_JJd2Mdg43zHfk=.37776006aeaba29eca8bc73b2b963fe3477e1c2e3f6a27cb9527be75b905e1bf.incomplete'
+Fetching 27 files:  22%|██▏       | 6/27 [00:20<01:10,  3.33s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00005-of-00017.safetensors
+Fetching 27 files:  26%|██▌       | 7/27 [00:26<01:15,  3.76s/it]Downloading 'model-00009-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/Mh7oDE1h4uZpUESltGHy5U5Wiks=.a044b3602a01bd8ea62ff51badf9cc038ab1d73d97399480e6a55b4c86fa7fa6.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00003-of-00017.safetensors
+Fetching 27 files:  30%|██▉       | 8/27 [00:30<01:12,  3.80s/it]Downloading 'model-00010-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/NNCt0q9vHGA3ZIj7XY07ag5sepM=.9966612ba7ecfc2cd2e592fb95224b86d743271ff88e172cc272a4b26382aa75.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00008-of-00017.safetensors
+Fetching 27 files:  33%|███▎      | 9/27 [00:32<01:05,  3.63s/it]Downloading 'model-00011-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/_9AFm8XrlBIHgiAmwtPuXxYdxGM=.e2a058a0ac7d4b992b731c29221ecfb4b76b8a48d9004d0e8a62ba44f699845c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00002-of-00017.safetensors
+Fetching 27 files:  37%|███▋      | 10/27 [00:36<01:01,  3.60s/it]Downloading 'model-00012-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/IoR-B3odg5TmHD6j50lwK3WosCA=.58a1aa89093fea07325f787072a468e3482a470ff4b7fe5ead5f749683907c40.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00004-of-00017.safetensors
+Fetching 27 files:  41%|████      | 11/27 [00:36<00:52,  3.29s/it]Downloading 'model-00013-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/ICb3j2ZUIywqha8XUtHHcPuW8uQ=.35f3381bab31a23370c37d922290aeecdf603418336058fb86fe42d8f51ac40c.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00001-of-00017.safetensors
+Fetching 27 files:  44%|████▍     | 12/27 [00:37<00:46,  3.09s/it]Downloading 'model-00014-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/-8rsLMxceexHr4zhKFfMvSIbYyo=.8713b062ddc178acf5917610b7f4b64eede833b2ea4aa37bd562dcf2f3a3339d.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00007-of-00017.safetensors
+Fetching 27 files:  48%|████▊     | 13/27 [00:37<00:40,  2.89s/it]Downloading 'model-00015-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/a9Qa3fEKlhO-ToyrGpjRRD_EgVs=.bec439d23931821a236d8f62fa79deecf5551bd25602278aa2ae0ce432b378cf.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00006-of-00017.safetensors
+Fetching 27 files:  52%|█████▏    | 14/27 [00:38<00:35,  2.72s/it]Downloading 'model-00016-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YhN4IthCXFjwS9jMPn6mbNrP3WI=.e569139fadd61fe7c8f9eb1c976d9a627cae48c57ddf228cfbd0593c59c64ff7.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00009-of-00017.safetensors
+Fetching 27 files:  56%|█████▌    | 15/27 [00:48<00:38,  3.22s/it]Downloading 'model-00017-of-00017.safetensors' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/YzeLHuUDe299A7k8CT7go7JvkbQ=.1f47c318fcd7797c0f85b4233cb754438b10e795b8bc874889090c416a94bd38.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00010-of-00017.safetensors
+Fetching 27 files:  59%|█████▉    | 16/27 [00:53<00:36,  3.32s/it]Downloading 'model.safetensors.index.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.2bc093f8069057e0b28f628398a05a273efd1297.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model.safetensors.index.json
+Downloading 'tokenizer.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer.json
+Fetching 27 files:  67%|██████▋   | 18/27 [00:53<00:26,  2.98s/it]Downloading 'tokenizer_config.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.417d038a63fa3de29cfde265caedae14d1a58d92.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/tokenizer_config.json
+Downloading 'vocab.json' to '/nvme/qwen/Qwen3-32B/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/vocab.json
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00011-of-00017.safetensors
+Fetching 27 files:  78%|███████▊  | 21/27 [00:55<00:15,  2.62s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00012-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00013-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00015-of-00017.safetensors
+Fetching 27 files:  89%|████████▉ | 24/27 [01:02<00:07,  2.59s/it]Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00016-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00014-of-00017.safetensors
+Download complete. Moving file to /nvme/qwen/Qwen3-32B/model-00017-of-00017.safetensors
+Fetching 27 files: 100%|██████████| 27/27 [01:03<00:00,  2.34s/it]Fetching 27 files: 100%|██████████| 27/27 [01:03<00:00,  2.34s/it]
+/opt/dlami/nvme/qwen/Qwen3-32B
+/nvme/qwen/Qwen3-32B: 17 shards present

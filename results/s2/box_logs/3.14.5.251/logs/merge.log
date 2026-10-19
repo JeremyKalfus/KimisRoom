@@ -1,0 +1,52 @@
+==== 2026-10-12T10:21:37Z merge
+results/qwen/adapters/distill_keep/D2/adapter/adapter_model.safetensors: OK
+results/qwen/adapters/distill_keep/D2c/adapter/adapter_model.safetensors: OK
+results/qwen/adapters/distill_keep/D2/adapter/adapter_config.json: OK
+results/qwen/adapters/distill_keep/D2c/adapter/adapter_config.json: OK
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 238.83it/s]
+{
+ "merged_from": "/nvme/distill/D2/adapter",
+ "base": "/nvme/qwen/Qwen3-32B",
+ "dtype": "bfloat16",
+ "out": "/nvme/distill/D2/merged",
+ "seconds": 84.5
+}
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 237.06it/s]
+{
+ "merged_from": "/nvme/distill/D2c/adapter",
+ "base": "/nvme/qwen/Qwen3-32B",
+ "dtype": "bfloat16",
+ "out": "/nvme/distill/D2c/merged",
+ "seconds": 84.0
+}
+==== 2026-10-15T20:18:31Z merge
+results/qwen/adapters/distill_keep/D2/adapter/adapter_model.safetensors: OK
+results/qwen/adapters/distill_keep/D2c/adapter/adapter_model.safetensors: OK
+results/qwen/adapters/distill_keep/D2/adapter/adapter_config.json: OK
+results/qwen/adapters/distill_keep/D2c/adapter/adapter_config.json: OK
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 253.69it/s]
+{
+ "merged_from": "/nvme/distill/D2/adapter",
+ "base": "/nvme/qwen/Qwen3-32B",
+ "dtype": "bfloat16",
+ "out": "/nvme/distill/D2/merged",
+ "seconds": 83.7
+}
+/nvme/distill/D2/merged: 14 shards present
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 243.48it/s]
+{
+ "merged_from": "/nvme/distill/D2c/adapter",
+ "base": "/nvme/qwen/Qwen3-32B",
+ "dtype": "bfloat16",
+ "out": "/nvme/distill/D2c/merged",
+ "seconds": 82.7
+}
+/nvme/distill/D2c/merged: 14 shards present

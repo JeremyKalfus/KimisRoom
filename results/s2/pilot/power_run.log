@@ -1,0 +1,398 @@
+                  source component  point upper80    used
+        primary controls    vector 0.3075  0.4022 upper80
+        primary controls        va 0.2234  0.2472 upper80
+        primary controls        vp 0.1815  0.1815   point
+        primary controls       arg 0.1928  0.2906 upper80
+        primary controls        aw 0.0933  0.0933   point
+        primary controls      para 0.1652  0.1652   point
+        primary controls       awp 0.2471  0.2471   point
+        primary controls         e 0.2780  0.2780   point
+ mental-process controls    vector 0.2663  0.3835 upper80
+ mental-process controls        va 0.2155  0.2466 upper80
+ mental-process controls        vp 0.1811  0.1811   point
+ mental-process controls       arg 0.2469  0.3918 upper80
+ mental-process controls        aw 0.1847  0.1847   point
+ mental-process controls      para 0.1311  0.1311   point
+ mental-process controls       awp 0.2799  0.2799   point
+ mental-process controls         e 0.2407  0.2407   point
+        primary controls   aw_used 0.1020      NA   point
+                                                                     method
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+                                                                    profile
+ max(pilot estimate 0.09326 from 2 two-wording arguments, --prior-sd 0.102)
+ n_vectors n_openings n_two_wording_args
+        14         12                  2
+        14         12                  2
+        14         12                  2
+        14         12                  2
+        14         12                  2
+        14         12                  2
+        14         12                  2
+        14         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+         8         12                  2
+        14         12                  2
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14        10        5  0.1      0.044     0.076
+ S2-H1     base   k26 14        10        5  0.1      0.040     0.084
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.044           0          0   0.155    1319
+      0.040           0          0   0.157    1319
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 15        10        5  0.1      0.046     0.092
+ S2-H1     base   k26 15        10        5  0.1      0.032     0.080
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.046       0.002          0   0.153    1547
+      0.034       0.002          0   0.155    1547
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 16        10        5  0.1      0.064     0.112
+ S2-H1     base   k26 16        10        5  0.1      0.034     0.078
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.064       0.004          0   0.149    1692
+      0.036       0.004          0   0.152    1692
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 17        10        5  0.1      0.038      0.08
+ S2-H1     base   k26 17        10        5  0.1      0.028      0.08
+ power_holm p_both_holm tost_equiv mean_se seconds
+       0.04       0.006          0   0.148    1894
+       0.03       0.006          0   0.151    1894
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 18        10        5  0.1      0.048     0.096
+ S2-H1     base   k26 18        10        5  0.1      0.034     0.072
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.050       0.008          0   0.145    2096
+      0.038       0.008          0   0.149    2096
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 19        10        5  0.1      0.054     0.084
+ S2-H1     base   k26 19        10        5  0.1      0.038     0.094
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.054       0.008          0   0.143    2320
+      0.046       0.008          0   0.147    2320
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 20        10        5  0.1      0.054     0.090
+ S2-H1     base   k26 20        10        5  0.1      0.042     0.084
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.056       0.006          0   0.141    2478
+      0.044       0.006          0   0.145    2478
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 21        10        5  0.1      0.044     0.100
+ S2-H1     base   k26 21        10        5  0.1      0.046     0.092
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.044       0.006          0   0.140    2641
+      0.048       0.006          0   0.144    2641
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 22        10        5  0.1      0.066     0.120
+ S2-H1     base   k26 22        10        5  0.1      0.028     0.068
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.068       0.004          0   0.140    2926
+      0.028       0.004          0   0.142    2926
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 23        10        5  0.1      0.042     0.072
+ S2-H1     base   k26 23        10        5  0.1      0.056     0.096
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.044       0.008          0   0.138    3061
+      0.058       0.008          0   0.142    3061
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 24        10        5  0.1      0.036     0.076
+ S2-H1     base   k26 24        10        5  0.1      0.044     0.100
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.038       0.004          0   0.137    3299
+      0.046       0.004          0   0.140    3299
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 25        10        5  0.1      0.056     0.102
+ S2-H1     base   k26 25        10        5  0.1      0.060     0.108
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.060       0.016          0   0.136    3588
+      0.068       0.016          0   0.138    3588
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26        10        5  0.1      0.078     0.140
+ S2-H1     base   k26 26        10        5  0.1      0.058     0.098
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.082       0.016          0   0.134    3800
+      0.066       0.016          0   0.137    3800
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14        10        5    0      0.018     0.030
+ S2-H1     base   k26 14        10        5    0      0.022     0.046
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.020       0.004          0   0.155    1311
+      0.024       0.004          0   0.157    1311
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14        10        5  0.2      0.134     0.230
+ S2-H1     base   k26 14        10        5  0.2      0.114     0.194
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.144        0.03          0   0.155    1338
+      0.120        0.03          0   0.157    1338
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14         7        3    0      0.016     0.044
+ S2-H1     base   k26 14         7        3    0      0.018     0.034
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.016           0          0   0.165     568
+      0.018           0          0   0.167     568
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14         7        3  0.1      0.034     0.068
+ S2-H1     base   k26 14         7        3  0.1      0.040     0.060
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.034       0.002          0   0.165     571
+      0.042       0.002          0   0.167     571
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 14         7        3  0.2      0.104     0.174
+ S2-H1     base   k26 14         7        3  0.2      0.074     0.150
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.112       0.026          0   0.165     565
+      0.080       0.026          0   0.167     565
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26        10        5    0      0.030     0.050
+ S2-H1     base   k26 26        10        5    0      0.026     0.054
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.030           0          0   0.134    3925
+      0.026           0          0   0.136    3925
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26        10        5  0.2      0.240     0.340
+ S2-H1     base   k26 26        10        5  0.2      0.136     0.258
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.256       0.078          0   0.134    3865
+      0.172       0.078          0   0.136    3865
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26         7        3    0      0.034     0.058
+ S2-H1     base   k26 26         7        3    0      0.016     0.048
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.034       0.002          0   0.148    1069
+      0.018       0.002          0   0.151    1069
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26         7        3  0.1      0.062     0.118
+ S2-H1     base   k26 26         7        3  0.1      0.036     0.080
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.064       0.008          0   0.148    1035
+      0.038       0.008          0   0.151    1035
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1     base  qwen 26         7        3  0.2       0.17     0.262
+ S2-H1     base   k26 26         7        3  0.2       0.12     0.206
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.188       0.054          0   0.148    1006
+      0.136       0.054          0   0.151    1006
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14        10        5    0      0.018
+ S2-H1 wording SD 0.5x argument SD   k26 14        10        5    0      0.020
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.030      0.018       0.002          0   0.155    1276
+     0.042      0.020       0.002          0   0.158    1276
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14        10        5    0      0.018
+ S2-H1 wording SD 1x argument SD   k26 14        10        5    0      0.018
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.032      0.018       0.002          0   0.158    1427
+     0.046      0.020       0.002          0   0.160    1427
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14        10        5    0      0.016     0.042
+ S2-H1 x slopes 2x   k26 14        10        5    0      0.024     0.048
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.020       0.004          0   0.231    1410
+      0.024       0.004          0   0.232    1410
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14        10        5    0      0.024
+ S2-G5 X by arm with true X(CON) 0   k26 14        10        5    0      0.032
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.046      0.026       0.004          0   0.197    7907
+     0.052      0.032       0.004          0   0.199    7907
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8        10        5    0      0.020     0.036
+ S2-G8 n_mp = 8   k26  8        10        5    0      0.012     0.030
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.020       0.002          0   0.177     616
+      0.012       0.002          0   0.178     616
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14        10        5  0.1      0.044
+ S2-H1 wording SD 0.5x argument SD   k26 14        10        5  0.1      0.042
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.074      0.044           0          0   0.155    1263
+     0.080      0.042           0          0   0.158    1263
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14        10        5  0.1      0.036
+ S2-H1 wording SD 1x argument SD   k26 14        10        5  0.1      0.038
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.078      0.036           0          0   0.158    1375
+     0.082      0.038           0          0   0.160    1375
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14        10        5  0.1      0.034     0.064
+ S2-H1 x slopes 2x   k26 14        10        5  0.1      0.032     0.082
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.038       0.004          0   0.230    1457
+      0.032       0.004          0   0.233    1457
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14        10        5  0.1      0.042
+ S2-G5 X by arm with true X(CON) 0   k26 14        10        5  0.1      0.042
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.084      0.042       0.002          0   0.197    7840
+     0.086      0.044       0.002          0   0.199    7840
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8        10        5  0.1      0.032     0.074
+ S2-G8 n_mp = 8   k26  8        10        5  0.1      0.026     0.062
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.032       0.004          0   0.176     648
+      0.028       0.004          0   0.178     648
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14        10        5  0.2      0.132
+ S2-H1 wording SD 0.5x argument SD   k26 14        10        5  0.2      0.120
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.230      0.152       0.036          0   0.155    1214
+     0.196      0.126       0.036          0   0.157    1214
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14        10        5  0.2      0.118
+ S2-H1 wording SD 1x argument SD   k26 14        10        5  0.2      0.112
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.212      0.128       0.026          0   0.158    1270
+     0.202      0.118       0.026          0   0.160    1270
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14        10        5  0.2      0.058     0.114
+ S2-H1 x slopes 2x   k26 14        10        5  0.2      0.078     0.144
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.064       0.012          0   0.231    1404
+      0.080       0.012          0   0.232    1404
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14        10        5  0.2      0.098
+ S2-G5 X by arm with true X(CON) 0   k26 14        10        5  0.2      0.102
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.180      0.112       0.022          0   0.197    7861
+     0.158      0.106       0.022          0   0.199    7861
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8        10        5  0.2      0.084     0.158
+ S2-G8 n_mp = 8   k26  8        10        5  0.2      0.070     0.136
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.088        0.01          0   0.177     629
+      0.070        0.01          0   0.178     629
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14         7        3    0      0.018
+ S2-H1 wording SD 0.5x argument SD   k26 14         7        3    0      0.014
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.044      0.018           0          0   0.166     548
+     0.034      0.014           0          0   0.169     548
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14         7        3    0      0.018
+ S2-H1 wording SD 1x argument SD   k26 14         7        3    0      0.012
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.040      0.018           0          0   0.173     597
+     0.034      0.012           0          0   0.175     597
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14         7        3    0      0.024     0.050
+ S2-H1 x slopes 2x   k26 14         7        3    0      0.032     0.048
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.024           0          0   0.255     637
+      0.032           0          0   0.254     637
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14         7        3    0      0.022
+ S2-G5 X by arm with true X(CON) 0   k26 14         7        3    0      0.030
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.050      0.022       0.004          0   0.214    3164
+     0.058      0.032       0.004          0   0.218    3164
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8         7        3    0      0.014     0.036
+ S2-G8 n_mp = 8   k26  8         7        3    0      0.010     0.026
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.014           0          0   0.186     258
+      0.010           0          0   0.188     258
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14         7        3  0.1      0.034
+ S2-H1 wording SD 0.5x argument SD   k26 14         7        3  0.1      0.044
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.068      0.034       0.002          0   0.167     556
+     0.066      0.046       0.002          0   0.169     556
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14         7        3  0.1       0.03
+ S2-H1 wording SD 1x argument SD   k26 14         7        3  0.1       0.04
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.070      0.030       0.002          0   0.173     591
+     0.068      0.042       0.002          0   0.175     591
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14         7        3  0.1      0.026     0.052
+ S2-H1 x slopes 2x   k26 14         7        3  0.1      0.032     0.072
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.026           0          0   0.256     623
+      0.032           0          0   0.254     623
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14         7        3  0.1      0.024
+ S2-G5 X by arm with true X(CON) 0   k26 14         7        3  0.1      0.036
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.066      0.026       0.002          0   0.214    3103
+     0.072      0.036       0.002          0   0.218    3103
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8         7        3  0.1      0.030     0.062
+ S2-G8 n_mp = 8   k26  8         7        3  0.1      0.016     0.062
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.030           0          0   0.186     256
+      0.016           0          0   0.188     256
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 0.5x argument SD  qwen 14         7        3  0.2      0.108
+ S2-H1 wording SD 0.5x argument SD   k26 14         7        3  0.2      0.072
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+      0.18      0.118       0.032          0   0.167     588
+      0.15      0.080       0.032          0   0.169     588
+  test                  scenario model nC arguments wordings beta power_a025
+ S2-H1 wording SD 1x argument SD  qwen 14         7        3  0.2      0.098
+ S2-H1 wording SD 1x argument SD   k26 14         7        3  0.2      0.074
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.172      0.100       0.024          0   0.174     589
+     0.138      0.084       0.024          0   0.175     589
+  test    scenario model nC arguments wordings beta power_a025 power_a05
+ S2-H1 x slopes 2x  qwen 14         7        3  0.2      0.044     0.098
+ S2-H1 x slopes 2x   k26 14         7        3  0.2      0.060     0.094
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.048       0.008          0   0.255     629
+      0.064       0.008          0   0.254     629
+  test                    scenario model nC arguments wordings beta power_a025
+ S2-G5 X by arm with true X(CON) 0  qwen 14         7        3  0.2      0.060
+ S2-G5 X by arm with true X(CON) 0   k26 14         7        3  0.2      0.078
+ power_a05 power_holm p_both_holm tost_equiv mean_se seconds
+     0.120      0.062        0.01          0   0.214    3067
+     0.132      0.084        0.01          0   0.217    3067
+  test scenario model nC arguments wordings beta power_a025 power_a05
+ S2-G8 n_mp = 8  qwen  8         7        3  0.2      0.060     0.122
+ S2-G8 n_mp = 8   k26  8         7        3  0.2      0.064     0.128
+ power_holm p_both_holm tost_equiv mean_se seconds
+      0.066        0.01          0   0.185     264
+      0.068        0.01          0   0.188     264
+                 change se_base se_new gpu_hours se_gain_per_gpu_hour reps
+            +2 controls   0.156  0.150     0.357               0.0184  100
+ +1 capacity paraphrase   0.156  0.153     0.219               0.0148  100
+	Command being timed: "Rscript runs/s2_power.R results/s2/pilot/power results/s2/pilot/qwen_table.csv --prior-sd 0.102 --dose 1 --n-mp 8 --stop --cores 63"
+	User time (seconds): 5673328.92
+	System time (seconds): 1212.61
+	Percent of CPU this job got: 5578%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 28:15:21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 790352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 82
+	Minor (reclaiming a frame) page faults: 408799353
+	Voluntary context switches: 148803
+	Involuntary context switches: 5118985
+	Swaps: 0
+	File system inputs: 49128
+	File system outputs: 584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

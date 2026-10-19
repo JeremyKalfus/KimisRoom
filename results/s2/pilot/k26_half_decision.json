@@ -1,0 +1,83 @@
+{
+ "k26": {
+  "registered_dose": 4.0,
+  "all_pass_at_registered": false,
+  "mean_ka_at_registered": NaN,
+  "dose": 2.0,
+  "half_dose_rows_present": true,
+  "emotions": [
+   "euphoria",
+   "fear",
+   "joy",
+   "surprise"
+  ],
+  "primary_controls": [
+   "N01",
+   "N03",
+   "N04",
+   "N07",
+   "N08",
+   "N10",
+   "N11",
+   "N12",
+   "N13",
+   "N15",
+   "N16",
+   "N18",
+   "arithmetic",
+   "random"
+  ],
+  "thinking": [
+   "mp:digit-memorising",
+   "mp:route-planning",
+   "mp:spatial-recall",
+   "mp:visual-search"
+  ],
+  "dropped": [],
+  "s2_h1_descriptive": false,
+  "s2_g8_descriptive": true,
+  "thinking_failed_gates_before_stamp_a": [
+   "mp:distance-estimation",
+   "mp:mental-rotation",
+   "mp:sorting",
+   "mp:weighing-options"
+  ],
+  "correction": {
+   "date": "2026-10-17",
+   "why": "runs/s2_table.py's rule 1 keeps every mental-process vector that passes at the chosen dose and does not first remove those that failed the control gates before stamp A. PREREG-s2.md section 6 (Scope): the confirmatory run takes only the gate survivors, less any that rule 1 drops; section 5: S2-G8 is descriptive if fewer than 5 survive the gates and rule 1. thinking = pool.json thinking_survivors that pass rule 1 at 2 units (all 4 do).",
+   "script_output": "results/s2/pilot/k26_half_decision.raw.json",
+   "script_output_sha256": "a4f787038ddb38e47dd10a1f92887ef4ed45828c9e2c3c95e840486e9ec6fae6",
+   "pool": "results/k26/s2/pool.json",
+   "pool_sha256": "2ddee9638f0116cab941c47329e8ee889aefc33271693f18a0467f6a0d12226e",
+   "changed": {
+    "thinking": [
+     [
+      "mp:digit-memorising",
+      "mp:distance-estimation",
+      "mp:mental-rotation",
+      "mp:route-planning",
+      "mp:sorting",
+      "mp:spatial-recall",
+      "mp:visual-search",
+      "mp:weighing-options"
+     ],
+     [
+      "mp:digit-memorising",
+      "mp:route-planning",
+      "mp:spatial-recall",
+      "mp:visual-search"
+     ]
+    ],
+    "s2_g8_descriptive": [
+     false,
+     true
+    ]
+   },
+   "added": [
+    "thinking_failed_gates_before_stamp_a",
+    "correction"
+   ],
+   "log": "DEVIATIONS-s2.md, 2026-10-17"
+  }
+ }
+}

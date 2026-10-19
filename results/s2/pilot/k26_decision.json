@@ -1,0 +1,16 @@
+{
+ "k26": {
+  "registered_dose": 4.0,
+  "all_pass_at_registered": false,
+  "mean_ka_at_registered": 0.9281432748538011,
+  "dose": 2.0,
+  "half_dose_rows_present": false,
+  "note": "rule 1 sends this model to half dose: run the half-dose gate pilot, then rerun",
+  "emotions": [],
+  "primary_controls": [],
+  "thinking": [],
+  "dropped": [],
+  "s2_h1_descriptive": true,
+  "s2_g8_descriptive": true
+ }
+}

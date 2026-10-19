@@ -1,0 +1,18 @@
+{
+ "qwen|S2-DEN": {
+  "path": "/nvme/qwen/Qwen3-32B",
+  "sha256": "ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2"
+ },
+ "qwen|S2-CON": {
+  "path": "/nvme/qwen/Qwen3-32B",
+  "sha256": "ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2"
+ },
+ "qwen|S2-FTD": {
+  "path": "/nvme/distill/D2/merged",
+  "sha256": "e191ad1473ace006de62ee687bcd0fddd361711d1fa932137b8fde917b9bdc0d"
+ },
+ "qwen|S2-FTC": {
+  "path": "/nvme/distill/D2c/merged",
+  "sha256": "9e1ead5737c3565bf5c8e2e2ee79361b4d7edbb9e6324c67b3f384af875e2e2e"
+ }
+}

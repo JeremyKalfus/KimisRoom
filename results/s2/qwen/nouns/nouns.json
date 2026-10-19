@@ -1,0 +1,217 @@
+{
+ "model": "qwen",
+ "rule": "PREREG-s2.md section 6, rule 3: gates (a) to (c) before stamp A, then rule 1 at the confirmatory dose in a gate-item run (runs/s2_table.py --gates, `passes`)",
+ "dose": 1.0,
+ "decision_file": "results/s2/pilot/qwen_decision.json",
+ "decision_sha256": "a7af179bd7c29c86bfb1609ef07ee2bdeab70dbaeefd54dbdb3646e1ad9e790b",
+ "pool_file": "results/qwen/s2/pool.json",
+ "pool_sha256": "e5c472602a4431df4ee0e2761113b3878fdc5087159eccf010ab32189672cfa4",
+ "gates_ac_file": "results/qwen/s2/gates.csv",
+ "gates_ac_sha256": "7e3502e73ca174d6536fc060da83415221a2cb1bb84614608a322d0ba21d2714",
+ "target_basis": "nC 26 (S2_NC; 26 is rule 3's cap)",
+ "pool_before": 12,
+ "pool_target": 24,
+ "to_add": 12,
+ "candidates": [
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "rounds": [
+  {
+   "round": 1,
+   "nouns": [
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N24",
+    "N25",
+    "N26"
+   ],
+   "dir": "results/s2/qwen/nouns/r1"
+  }
+ ],
+ "per_noun": {
+  "N15": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9369565217391305,
+   "gate_mass": 0.9965974209104271,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N16": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9478260869565217,
+   "gate_mass": 0.9972126232662147,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N17": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9358695652173913,
+   "gate_mass": 0.9970010981003371,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N18": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9391304347826087,
+   "gate_mass": 0.9982022361252653,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N19": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9391304347826087,
+   "gate_mass": 0.9973263808910028,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N20": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.941304347826087,
+   "gate_mass": 0.9946456963865413,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N21": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9315217391304348,
+   "gate_mass": 0.998583611605911,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N22": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9423913043478261,
+   "gate_mass": 0.9982942279351117,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N23": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.941304347826087,
+   "gate_mass": 0.998304161676891,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N24": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9434782608695652,
+   "gate_mass": 0.99560382616189,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N25": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.941304347826087,
+   "gate_mass": 0.996437857727245,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  },
+  "N26": {
+   "round": 1,
+   "passes": true,
+   "n_ka": 920,
+   "ka_acc": 0.9380434782608695,
+   "gate_mass": 0.9942884230923605,
+   "track_rocks": 1.0,
+   "track_humans": 1.0
+  }
+ },
+ "added": [
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26"
+ ],
+ "failed": [],
+ "untried": [
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36"
+ ],
+ "pool_after_rule3": 24,
+ "primary_controls_final": [
+  "N01",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14",
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "arithmetic",
+  "random"
+ ],
+ "status": "complete",
+ "finished_at": "2026-10-17T18:25:18Z"
+}

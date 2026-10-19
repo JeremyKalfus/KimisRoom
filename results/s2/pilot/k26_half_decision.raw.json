@@ -1,0 +1,44 @@
+{
+ "k26": {
+  "registered_dose": 4.0,
+  "all_pass_at_registered": false,
+  "mean_ka_at_registered": NaN,
+  "dose": 2.0,
+  "half_dose_rows_present": true,
+  "emotions": [
+   "euphoria",
+   "fear",
+   "joy",
+   "surprise"
+  ],
+  "primary_controls": [
+   "N01",
+   "N03",
+   "N04",
+   "N07",
+   "N08",
+   "N10",
+   "N11",
+   "N12",
+   "N13",
+   "N15",
+   "N16",
+   "N18",
+   "arithmetic",
+   "random"
+  ],
+  "thinking": [
+   "mp:digit-memorising",
+   "mp:distance-estimation",
+   "mp:mental-rotation",
+   "mp:route-planning",
+   "mp:sorting",
+   "mp:spatial-recall",
+   "mp:visual-search",
+   "mp:weighing-options"
+  ],
+  "dropped": [],
+  "s2_h1_descriptive": false,
+  "s2_g8_descriptive": false
+ }
+}

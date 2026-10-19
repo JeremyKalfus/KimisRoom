@@ -1,0 +1,4 @@
+==== 2026-10-12T16:53:32Z env_k26
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+results/s2/box/k26_box.json: g6e.12xlarge 4 GPUs, torch 2.12.1+cu130, transformers 4.57.1, moonshotai/Kimi-K2.6@7eb5002f (downloaded ['7eb5002f6aadc958aed6a9177b7ed26bb94011bb']), 86 files hashed in 245.4s

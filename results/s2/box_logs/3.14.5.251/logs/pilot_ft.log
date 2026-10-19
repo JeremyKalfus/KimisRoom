@@ -1,0 +1,193 @@
+==== 2026-10-15T20:21:43Z pilot_ft
+stamp A: 1446 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/qwen3-32b/selected.json data/s2/replies/qwen3-32b/eligible.json results/qwen/s2/controls.pt results/qwen/s2/pool.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+qwen S2-FTD pilot: 11 openings, 28 vectors x doses [2.0, 1.0] + zero, 638 groups, 5,454,510 tokens (built in 49.6s)
+checkpoint /nvme/distill/D2/merged: sha256 e191ad1473ace006de62ee687bcd0fddd361711d1fa932137b8fde917b9bdc0d (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+held-out guard: 11 distinct prefixes decoded, 0 held-out
+638 groups, 5,454,510 tokens, hf backend on 2 worker(s) x 2 GPU(s), passes per worker [4, 4]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:06,  2.05it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:00<00:05,  2.34it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:04,  2.46it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:01<00:03,  2.52it/s]Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:02<00:03,  2.55it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:02<00:03,  2.57it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:06,  2.01it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:02<00:02,  2.58it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:00<00:05,  2.32it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:03<00:02,  2.58it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:04,  2.44it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:03<00:01,  2.57it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:01<00:03,  2.51it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:03<00:01,  2.57it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:02<00:03,  2.54it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:04<00:01,  2.57it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:02<00:03,  2.56it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:04<00:00,  2.57it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:02<00:02,  2.58it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:03<00:02,  2.59it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:05<00:00,  2.57it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.84it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.60it/s]
+Loading checkpoint shards:  64%|██████▍   | 9/14 [00:03<00:01,  2.60it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:03<00:01,  2.60it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:04<00:01,  2.61it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:04<00:00,  2.61it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:05<00:00,  2.61it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.89it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.62it/s]
+[w0 pass 1/4] group 10/81: 100s, 1,006 tok/s (prefix 11s, suffix 89s)
+[w1 pass 1/4] group 10/81: 100s, 1,006 tok/s (prefix 11s, suffix 89s)
+[w0 pass 1/4] group 20/81: 200s, 1,006 tok/s (prefix 21s, suffix 178s)
+[w1 pass 1/4] group 20/81: 200s, 1,006 tok/s (prefix 21s, suffix 178s)
+[w0 pass 1/4] group 30/81: 297s, 1,012 tok/s (prefix 32s, suffix 265s)
+[w1 pass 1/4] group 30/81: 296s, 1,013 tok/s (prefix 31s, suffix 265s)
+[w0 pass 1/4] group 40/81: 392s, 1,017 tok/s (prefix 41s, suffix 351s)
+[w1 pass 1/4] group 40/81: 392s, 1,018 tok/s (prefix 41s, suffix 351s)
+[w0 pass 1/4] group 50/81: 486s, 1,023 tok/s (prefix 51s, suffix 435s)
+[w1 pass 1/4] group 50/81: 486s, 1,023 tok/s (prefix 50s, suffix 435s)
+[w0 pass 1/4] group 60/81: 578s, 1,028 tok/s (prefix 60s, suffix 517s)
+[w1 pass 1/4] group 60/81: 577s, 1,028 tok/s (prefix 60s, suffix 518s)
+[w0 pass 1/4] group 70/81: 669s, 1,032 tok/s (prefix 70s, suffix 600s)
+[w1 pass 1/4] group 70/81: 669s, 1,032 tok/s (prefix 69s, suffix 600s)
+[w0 pass 1/4] group 80/81: 760s, 1,036 tok/s (prefix 79s, suffix 681s)
+[w1 pass 1/4] group 80/81: 760s, 1,036 tok/s (prefix 78s, suffix 682s)
+[w0 pass 1/4] group 81/81: 769s, 1,037 tok/s (prefix 80s, suffix 689s)
+[w1 pass 1/4] group 81/81: 769s, 1,037 tok/s (prefix 79s, suffix 690s)
+[w0 pass 1/4] done: 81 groups, 797,058 tokens, 772s, peak 81.2 GB
+[w1 pass 1/4] done: 81 groups, 796,941 tokens, 772s, peak 81.2 GB
+[w0 pass 2/4] group 10/84: 90s, 1,068 tok/s (prefix 9s, suffix 81s)
+[w1 pass 2/4] group 10/84: 90s, 1,068 tok/s (prefix 9s, suffix 81s)
+[w0 pass 2/4] group 20/84: 178s, 1,081 tok/s (prefix 17s, suffix 160s)
+[w1 pass 2/4] group 20/84: 178s, 1,080 tok/s (prefix 17s, suffix 161s)
+[w0 pass 2/4] group 30/84: 265s, 1,085 tok/s (prefix 26s, suffix 240s)
+[w1 pass 2/4] group 30/84: 266s, 1,083 tok/s (prefix 25s, suffix 240s)
+[w0 pass 2/4] group 40/84: 352s, 1,088 tok/s (prefix 34s, suffix 318s)
+[w1 pass 2/4] group 40/84: 352s, 1,086 tok/s (prefix 34s, suffix 319s)
+[w0 pass 2/4] group 50/84: 439s, 1,089 tok/s (prefix 43s, suffix 396s)
+[w1 pass 2/4] group 50/84: 439s, 1,087 tok/s (prefix 42s, suffix 397s)
+[w0 pass 2/4] group 60/84: 525s, 1,091 tok/s (prefix 51s, suffix 474s)
+[w1 pass 2/4] group 60/84: 525s, 1,090 tok/s (prefix 50s, suffix 475s)
+[w0 pass 2/4] group 70/84: 610s, 1,094 tok/s (prefix 59s, suffix 551s)
+[w1 pass 2/4] group 70/84: 611s, 1,093 tok/s (prefix 59s, suffix 552s)
+[w0 pass 2/4] group 80/84: 695s, 1,095 tok/s (prefix 67s, suffix 628s)
+[w1 pass 2/4] group 80/84: 696s, 1,094 tok/s (prefix 67s, suffix 629s)
+[w0 pass 2/4] group 84/84: 729s, 1,096 tok/s (prefix 71s, suffix 659s)
+[w1 pass 2/4] group 84/84: 730s, 1,095 tok/s (prefix 70s, suffix 660s)
+[w0 pass 2/4] done: 84 groups, 799,161 tokens, 733s, peak 81.2 GB
+[w1 pass 2/4] done: 84 groups, 799,245 tokens, 734s, peak 81.2 GB
+[w0 pass 3/4] group 10/87: 85s, 1,115 tok/s (prefix 8s, suffix 77s)
+[w1 pass 3/4] group 10/88: 85s, 1,114 tok/s (prefix 8s, suffix 77s)
+[w0 pass 3/4] group 20/87: 169s, 1,116 tok/s (prefix 16s, suffix 153s)
+[w1 pass 3/4] group 20/88: 169s, 1,116 tok/s (prefix 16s, suffix 153s)
+[w0 pass 3/4] group 30/87: 252s, 1,118 tok/s (prefix 24s, suffix 228s)
+[w1 pass 3/4] group 30/88: 252s, 1,119 tok/s (prefix 24s, suffix 228s)
+[w0 pass 3/4] group 40/87: 335s, 1,121 tok/s (prefix 32s, suffix 303s)
+[w1 pass 3/4] group 40/88: 335s, 1,120 tok/s (prefix 31s, suffix 304s)
+[w0 pass 3/4] group 50/87: 415s, 1,126 tok/s (prefix 39s, suffix 376s)
+[w1 pass 3/4] group 50/88: 416s, 1,126 tok/s (prefix 39s, suffix 377s)
+[w0 pass 3/4] group 60/87: 496s, 1,130 tok/s (prefix 47s, suffix 449s)
+[w1 pass 3/4] group 60/88: 496s, 1,129 tok/s (prefix 46s, suffix 451s)
+[w0 pass 3/4] group 70/87: 576s, 1,133 tok/s (prefix 54s, suffix 522s)
+[w1 pass 3/4] group 70/88: 577s, 1,132 tok/s (prefix 53s, suffix 523s)
+[w0 pass 3/4] group 80/87: 656s, 1,136 tok/s (prefix 61s, suffix 594s)
+[w1 pass 3/4] group 80/88: 656s, 1,136 tok/s (prefix 60s, suffix 596s)
+[w0 pass 3/4] group 87/87: 699s, 1,137 tok/s (prefix 68s, suffix 632s)
+[w0 pass 3/4] done: 87 groups, 794,811 tokens, 703s, peak 81.3 GB
+[w1 pass 3/4] group 88/88: 702s, 1,136 tok/s (prefix 68s, suffix 634s)
+[w1 pass 3/4] done: 88 groups, 796,814 tokens, 705s, peak 81.3 GB
+[w0 pass 4/4] group 10/67: 47s, 1,137 tok/s (prefix 10s, suffix 38s)
+[w1 pass 4/4] group 10/66: 47s, 1,138 tok/s (prefix 10s, suffix 38s)
+[w0 pass 4/4] group 20/67: 93s, 1,145 tok/s (prefix 19s, suffix 73s)
+[w1 pass 4/4] group 20/66: 92s, 1,146 tok/s (prefix 19s, suffix 73s)
+[w0 pass 4/4] group 30/67: 136s, 1,150 tok/s (prefix 28s, suffix 108s)
+[w1 pass 4/4] group 30/66: 136s, 1,152 tok/s (prefix 28s, suffix 108s)
+[w0 pass 4/4] group 40/67: 179s, 1,157 tok/s (prefix 36s, suffix 142s)
+[w1 pass 4/4] group 40/66: 178s, 1,159 tok/s (prefix 36s, suffix 142s)
+[w0 pass 4/4] group 50/67: 220s, 1,164 tok/s (prefix 44s, suffix 176s)
+[w1 pass 4/4] group 50/66: 219s, 1,166 tok/s (prefix 44s, suffix 176s)
+[w0 pass 4/4] group 60/67: 260s, 1,171 tok/s (prefix 52s, suffix 208s)
+[w1 pass 4/4] group 60/66: 259s, 1,173 tok/s (prefix 51s, suffix 208s)
+[w1 pass 4/4] group 66/66: 283s, 1,176 tok/s (prefix 55s, suffix 227s)
+[w0 pass 4/4] group 67/67: 288s, 1,175 tok/s (prefix 57s, suffix 230s)
+[w1 pass 4/4] done: 66 groups, 332,672 tokens, 284s, peak 81.3 GB
+[w0 pass 4/4] done: 67 groups, 337,808 tokens, 289s, peak 81.3 GB
+wrote results/s2/qwen/pilot/S2-FTD/grid.pt: 638 groups, 5,454,510 tokens in 2536s (2,151 tok/s)
+gate-only zero groups vs full zero groups: max |dy| 0 over 11 openings
+results/s2/qwen/pilot/S2-FTD/readouts.csv: 139,920 readouts from 638 groups
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+qwen S2-FTC pilot: 11 openings, 28 vectors x doses [2.0, 1.0] + zero, 638 groups, 5,454,510 tokens (built in 49.4s)
+checkpoint /nvme/distill/D2c/merged: sha256 9e1ead5737c3565bf5c8e2e2ee79361b4d7edbb9e6324c67b3f384af875e2e2e (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+held-out guard: 11 distinct prefixes decoded, 0 held-out
+638 groups, 5,454,510 tokens, hf backend on 2 worker(s) x 2 GPU(s), passes per worker [4, 4]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:06,  2.04it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:00<00:05,  2.33it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:04,  2.44it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:01<00:04,  2.49it/s]Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:02<00:03,  2.52it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:02<00:03,  2.54it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:06,  2.02it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:02<00:02,  2.56it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:00<00:05,  2.33it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:03<00:02,  2.58it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:04,  2.45it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:03<00:01,  2.59it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:01<00:03,  2.51it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:03<00:01,  2.60it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:02<00:03,  2.54it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:04<00:01,  2.60it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:02<00:03,  2.56it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:04<00:00,  2.61it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:02<00:02,  2.58it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:05<00:00,  2.61it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:03<00:02,  2.59it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.88it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.61it/s]
+Loading checkpoint shards:  64%|██████▍   | 9/14 [00:03<00:01,  2.60it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:03<00:01,  2.60it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:04<00:01,  2.61it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:04<00:00,  2.61it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:05<00:00,  2.61it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.90it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:05<00:00,  2.62it/s]
+[w0 pass 1/4] group 10/81: 100s, 1,002 tok/s (prefix 11s, suffix 89s)
+[w1 pass 1/4] group 10/81: 100s, 1,003 tok/s (prefix 11s, suffix 89s)
+[w0 pass 1/4] group 20/81: 200s, 1,003 tok/s (prefix 22s, suffix 178s)
+[w1 pass 1/4] group 20/81: 200s, 1,004 tok/s (prefix 21s, suffix 179s)
+[w0 pass 1/4] group 30/81: 297s, 1,010 tok/s (prefix 32s, suffix 265s)
+[w1 pass 1/4] group 30/81: 297s, 1,011 tok/s (prefix 31s, suffix 265s)
+[w0 pass 1/4] group 40/81: 393s, 1,015 tok/s (prefix 42s, suffix 351s)
+[w1 pass 1/4] group 40/81: 392s, 1,016 tok/s (prefix 41s, suffix 351s)
+[w0 pass 1/4] group 50/81: 487s, 1,021 tok/s (prefix 52s, suffix 435s)
+[w1 pass 1/4] group 50/81: 486s, 1,021 tok/s (prefix 51s, suffix 436s)
+[w0 pass 1/4] group 60/81: 579s, 1,026 tok/s (prefix 61s, suffix 518s)
+[w1 pass 1/4] group 60/81: 578s, 1,027 tok/s (prefix 60s, suffix 518s)
+[w0 pass 1/4] group 70/81: 670s, 1,032 tok/s (prefix 70s, suffix 599s)
+[w1 pass 1/4] group 70/81: 669s, 1,032 tok/s (prefix 69s, suffix 600s)
+[w0 pass 1/4] group 80/81: 759s, 1,037 tok/s (prefix 79s, suffix 681s)
+[w1 pass 1/4] group 80/81: 759s, 1,037 tok/s (prefix 78s, suffix 682s)
+[w0 pass 1/4] group 81/81: 769s, 1,037 tok/s (prefix 80s, suffix 689s)
+[w1 pass 1/4] group 81/81: 768s, 1,037 tok/s (prefix 78s, suffix 690s)
+[w0 pass 1/4] done: 81 groups, 797,058 tokens, 772s, peak 81.2 GB
+[w1 pass 1/4] done: 81 groups, 796,941 tokens, 772s, peak 81.2 GB
+[w0 pass 2/4] group 10/84: 90s, 1,069 tok/s (prefix 9s, suffix 81s)
+[w1 pass 2/4] group 10/84: 90s, 1,068 tok/s (prefix 9s, suffix 81s)
+[w0 pass 2/4] group 20/84: 178s, 1,081 tok/s (prefix 17s, suffix 160s)
+[w1 pass 2/4] group 20/84: 178s, 1,080 tok/s (prefix 17s, suffix 161s)
+[w0 pass 2/4] group 30/84: 265s, 1,086 tok/s (prefix 26s, suffix 239s)
+[w1 pass 2/4] group 30/84: 265s, 1,084 tok/s (prefix 25s, suffix 240s)
+[w0 pass 2/4] group 40/84: 352s, 1,089 tok/s (prefix 34s, suffix 318s)
+[w1 pass 2/4] group 40/84: 352s, 1,087 tok/s (prefix 34s, suffix 319s)
+[w0 pass 2/4] group 50/84: 438s, 1,090 tok/s (prefix 42s, suffix 396s)
+[w1 pass 2/4] group 50/84: 439s, 1,089 tok/s (prefix 42s, suffix 397s)
+[w0 pass 2/4] group 60/84: 524s, 1,092 tok/s (prefix 51s, suffix 474s)
+[w1 pass 2/4] group 60/84: 525s, 1,091 tok/s (prefix 50s, suffix 475s)
+[w0 pass 2/4] group 70/84: 610s, 1,094 tok/s (prefix 59s, suffix 551s)
+[w1 pass 2/4] group 70/84: 611s, 1,093 tok/s (prefix 58s, suffix 552s)
+[w0 pass 2/4] group 80/84: 695s, 1,095 tok/s (prefix 67s, suffix 628s)
+[w1 pass 2/4] group 80/84: 696s, 1,094 tok/s (prefix 67s, suffix 629s)
+[w0 pass 2/4] group 84/84: 729s, 1,096 tok/s (prefix 71s, suffix 659s)
+[w1 pass 2/4] group 84/84: 730s, 1,095 tok/s (prefix 70s, suffix 660s)
+[w0 pass 2/4] done: 84 groups, 799,161 tokens, 733s, peak 81.2 GB
+[w1 pass 2/4] done: 84 groups, 799,245 tokens, 734s, peak 81.2 GB
+[w0 pass 3/4] group 10/87: 85s, 1,109 tok/s (prefix 8s, suffix 77s)
+[w1 pass 3/4] group 10/88: 85s, 1,110 tok/s (prefix 8s, suffix 77s)
+[w0 pass 3/4] group 20/87: 168s, 1,118 tok/s (prefix 16s, suffix 152s)
+[w1 pass 3/4] group 20/88: 168s, 1,118 tok/s (prefix 16s, suffix 153s)
+[w0 pass 3/4] group 30/87: 251s, 1,123 tok/s (prefix 24s, suffix 227s)
+[w1 pass 3/4] group 30/88: 251s, 1,123 tok/s (prefix 23s, suffix 228s)
+[w0 pass 3/4] group 40/87: 333s, 1,126 tok/s (prefix 31s, suffix 302s)
+[w1 pass 3/4] group 40/88: 333s, 1,125 tok/s (prefix 31s, suffix 303s)
+[w0 pass 3/4] group 50/87: 414s, 1,129 tok/s (prefix 39s, suffix 375s)
+[w1 pass 3/4] group 50/88: 415s, 1,128 tok/s (prefix 38s, suffix 376s)
+[w0 pass 3/4] group 60/87: 495s, 1,133 tok/s (prefix 46s, suffix 449s)
+[w1 pass 3/4] group 60/88: 495s, 1,131 tok/s (prefix 45s, suffix 450s)
+[w0 pass 3/4] group 70/87: 575s, 1,136 tok/s (prefix 53s, suffix 521s)
+[w1 pass 3/4] group 70/88: 575s, 1,135 tok/s (prefix 53s, suffix 523s)
+[w0 pass 3/4] group 80/87: 655s, 1,138 tok/s (prefix 61s, suffix 594s)
+[w1 pass 3/4] group 80/88: 655s, 1,137 tok/s (prefix 60s, suffix 595s)
+[w0 pass 3/4] group 87/87: 698s, 1,138 tok/s (prefix 67s, suffix 631s)
+[w0 pass 3/4] done: 87 groups, 794,811 tokens, 702s, peak 81.3 GB
+[w1 pass 3/4] group 88/88: 701s, 1,137 tok/s (prefix 68s, suffix 633s)
+[w1 pass 3/4] done: 88 groups, 796,814 tokens, 704s, peak 81.3 GB
+[w0 pass 4/4] group 10/67: 47s, 1,137 tok/s (prefix 10s, suffix 38s)
+[w1 pass 4/4] group 10/66: 47s, 1,139 tok/s (prefix 10s, suffix 38s)
+[w0 pass 4/4] group 20/67: 93s, 1,144 tok/s (prefix 19s, suffix 74s)
+[w1 pass 4/4] group 20/66: 92s, 1,146 tok/s (prefix 19s, suffix 73s)
+[w0 pass 4/4] group 30/67: 136s, 1,152 tok/s (prefix 28s, suffix 108s)
+[w1 pass 4/4] group 30/66: 136s, 1,155 tok/s (prefix 27s, suffix 108s)
+[w0 pass 4/4] group 40/67: 178s, 1,161 tok/s (prefix 36s, suffix 142s)
+[w1 pass 4/4] group 40/66: 178s, 1,163 tok/s (prefix 35s, suffix 142s)
+[w0 pass 4/4] group 50/67: 219s, 1,169 tok/s (prefix 44s, suffix 175s)
+[w1 pass 4/4] group 50/66: 219s, 1,171 tok/s (prefix 43s, suffix 176s)
+[w0 pass 4/4] group 60/67: 259s, 1,177 tok/s (prefix 51s, suffix 208s)
+[w1 pass 4/4] group 60/66: 258s, 1,179 tok/s (prefix 50s, suffix 208s)
+[w0 pass 4/4] group 67/67: 286s, 1,182 tok/s (prefix 56s, suffix 230s)
+[w1 pass 4/4] group 66/66: 281s, 1,183 tok/s (prefix 54s, suffix 227s)
+[w0 pass 4/4] done: 67 groups, 337,808 tokens, 287s, peak 81.3 GB
+[w1 pass 4/4] done: 66 groups, 332,672 tokens, 282s, peak 81.3 GB
+wrote results/s2/qwen/pilot/S2-FTC/grid.pt: 638 groups, 5,454,510 tokens in 2534s (2,153 tok/s)
+gate-only zero groups vs full zero groups: max |dy| 0 over 11 openings
+results/s2/qwen/pilot/S2-FTC/readouts.csv: 139,920 readouts from 638 groups

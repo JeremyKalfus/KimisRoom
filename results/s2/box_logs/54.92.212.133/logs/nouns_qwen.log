@@ -1,0 +1,101 @@
+==== 2026-10-17T18:09:55Z nouns_qwen
+stamp A: 1446 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/qwen3-32b/selected.json data/s2/replies/qwen3-32b/eligible.json results/qwen/s2/controls.pt results/qwen/s2/pool.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+stamp A: 1 files match (results/qwen/s2/gates.csv)
+results/s2/qwen/nouns/items_gate.jsonl: the 100 gate rows of prompts/battery/items_s2.jsonl
+qwen: target 24 sampled nouns (nC 26 (S2_NC; 26 is rule 3's cap)); had 12, added 0 [], failed []; round 1: ['N15', 'N16', 'N17', 'N18', 'N19', 'N20', 'N21', 'N22', 'N23', 'N24', 'N25', 'N26'] at 1 units
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+qwen S2-DEN pilot: 12 openings, 12 vectors x doses [1.0] + zero, 168 groups, 863,954 tokens (built in 33.6s)
+weights /nvme/qwen/Qwen3-32B: Qwen/Qwen3-32B@9216db5781bf21249d130ec9da846c4624c16137 (registered (runs/s2_battery.py MODELS)), 26 files match /home/ubuntu/KimisRoom/results/s2/box/qwen_box.json
+checkpoint /nvme/qwen/Qwen3-32B: sha256 ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2 (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+held-out guard: 12 distinct prefixes decoded, 0 held-out
+168 groups, 863,954 tokens, hf backend on 2 worker(s) x 2 GPU(s), passes per worker [1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  2.93it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  2.82it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.12it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:05,  2.96it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.18it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.05it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.21it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.11it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.23it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.14it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.24it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.16it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.25it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.18it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.25it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.19it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.26it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.20it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.26it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.22it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.26it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.24it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.27it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.25it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.27it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.25it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.26it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.26it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.27it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:05<00:00,  3.26it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.51it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.29it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.49it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.24it/s]
+[w0 pass 1/1] group 10/84: 56s, 993 tok/s (prefix 15s, suffix 41s)
+[w1 pass 1/1] group 10/84: 57s, 986 tok/s (prefix 16s, suffix 41s)
+[w0 pass 1/1] group 20/84: 102s, 1,069 tok/s (prefix 24s, suffix 77s)
+[w1 pass 1/1] group 20/84: 103s, 1,062 tok/s (prefix 25s, suffix 78s)
+[w0 pass 1/1] group 30/84: 146s, 1,101 tok/s (prefix 33s, suffix 113s)
+[w1 pass 1/1] group 30/84: 147s, 1,093 tok/s (prefix 34s, suffix 114s)
+[w0 pass 1/1] group 40/84: 190s, 1,119 tok/s (prefix 42s, suffix 148s)
+[w1 pass 1/1] group 40/84: 191s, 1,111 tok/s (prefix 42s, suffix 149s)
+[w0 pass 1/1] group 50/84: 233s, 1,132 tok/s (prefix 50s, suffix 183s)
+[w1 pass 1/1] group 50/84: 234s, 1,123 tok/s (prefix 50s, suffix 184s)
+[w0 pass 1/1] group 60/84: 275s, 1,140 tok/s (prefix 58s, suffix 217s)
+[w1 pass 1/1] group 60/84: 277s, 1,132 tok/s (prefix 59s, suffix 219s)
+[w0 pass 1/1] group 70/84: 317s, 1,148 tok/s (prefix 66s, suffix 251s)
+[w1 pass 1/1] group 70/84: 319s, 1,140 tok/s (prefix 67s, suffix 253s)
+[w0 pass 1/1] group 80/84: 357s, 1,155 tok/s (prefix 73s, suffix 284s)
+[w1 pass 1/1] group 80/84: 360s, 1,147 tok/s (prefix 74s, suffix 286s)
+[w0 pass 1/1] group 84/84: 373s, 1,158 tok/s (prefix 76s, suffix 297s)
+[w0 pass 1/1] done: 84 groups, 431,977 tokens, 375s, peak 81.8 GB
+[w1 pass 1/1] group 84/84: 376s, 1,150 tok/s (prefix 77s, suffix 299s)
+[w1 pass 1/1] done: 84 groups, 431,977 tokens, 377s, peak 81.8 GB
+wrote results/s2/qwen/nouns/r1/S2-DEN/grid.pt: 168 groups, 863,954 tokens in 395s (2,185 tok/s)
+gate-only zero groups vs full zero groups: max |dy| 0 over 12 openings
+results/s2/qwen/nouns/r1/S2-DEN/readouts.csv: 15,600 readouts from 168 groups
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+qwen S2-CON pilot: 11 openings, 12 vectors x doses [1.0] + zero, 154 groups, 782,040 tokens (built in 29.5s)
+weights /nvme/qwen/Qwen3-32B: Qwen/Qwen3-32B@9216db5781bf21249d130ec9da846c4624c16137 (registered (runs/s2_battery.py MODELS)), 26 files match /home/ubuntu/KimisRoom/results/s2/box/qwen_box.json
+checkpoint /nvme/qwen/Qwen3-32B: sha256 ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2 (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+held-out guard: 11 distinct prefixes decoded, 0 held-out
+154 groups, 782,040 tokens, hf backend on 2 worker(s) x 2 GPU(s), passes per worker [1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  3.19it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.20it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.21it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.21it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.21it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.21it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.21it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:05,  3.19it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.21it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:04,  3.20it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.21it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:04,  3.20it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.21it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  3.21it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.21it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:03,  3.21it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.21it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:01<00:03,  3.21it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.21it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  3.21it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.21it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:02<00:02,  3.21it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.21it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:02<00:02,  3.21it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.21it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  3.22it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.45it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.25it/s]
+Loading checkpoint shards:  65%|██████▍   | 11/17 [00:03<00:01,  3.22it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:03<00:01,  3.22it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  3.22it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:04<00:00,  3.22it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:04<00:00,  3.22it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:04<00:00,  3.23it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.46it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:05<00:00,  3.26it/s]
+[w0 pass 1/1] group 10/77: 49s, 1,134 tok/s (prefix 10s, suffix 38s)
+[w1 pass 1/1] group 10/77: 49s, 1,126 tok/s (prefix 10s, suffix 39s)
+[w0 pass 1/1] group 20/77: 94s, 1,147 tok/s (prefix 19s, suffix 75s)
+[w1 pass 1/1] group 20/77: 95s, 1,139 tok/s (prefix 20s, suffix 75s)
+[w0 pass 1/1] group 30/77: 138s, 1,157 tok/s (prefix 28s, suffix 110s)
+[w1 pass 1/1] group 30/77: 139s, 1,148 tok/s (prefix 28s, suffix 111s)
+[w0 pass 1/1] group 40/77: 181s, 1,165 tok/s (prefix 36s, suffix 145s)
+[w1 pass 1/1] group 40/77: 182s, 1,155 tok/s (prefix 37s, suffix 146s)
+[w0 pass 1/1] group 50/77: 222s, 1,171 tok/s (prefix 44s, suffix 178s)
+[w1 pass 1/1] group 50/77: 224s, 1,161 tok/s (prefix 45s, suffix 180s)
+[w0 pass 1/1] group 60/77: 263s, 1,176 tok/s (prefix 52s, suffix 211s)
+[w1 pass 1/1] group 60/77: 265s, 1,167 tok/s (prefix 52s, suffix 213s)
+[w0 pass 1/1] group 70/77: 303s, 1,182 tok/s (prefix 59s, suffix 244s)
+[w1 pass 1/1] group 70/77: 305s, 1,173 tok/s (prefix 60s, suffix 245s)
+[w0 pass 1/1] group 77/77: 330s, 1,186 tok/s (prefix 64s, suffix 266s)
+[w0 pass 1/1] done: 77 groups, 391,020 tokens, 331s, peak 81.1 GB
+[w1 pass 1/1] group 77/77: 332s, 1,177 tok/s (prefix 65s, suffix 268s)
+[w1 pass 1/1] done: 77 groups, 391,020 tokens, 334s, peak 81.1 GB
+wrote results/s2/qwen/nouns/r1/S2-CON/grid.pt: 154 groups, 782,040 tokens in 350s (2,237 tok/s)
+gate-only zero groups vs full zero groups: max |dy| 0 over 11 openings
+results/s2/qwen/nouns/r1/S2-CON/readouts.csv: 14,300 readouts from 154 groups
+results/s2/qwen/nouns/r1/table.csv: 3,336 rows from 29,900 readouts
+closing asks: 0 from opening files, 0 from the lines.json template; 0 items without text or ask
+results/s2/qwen/nouns/r1/gates.csv: 12 vector x dose rows
+results/s2/qwen/nouns/r1/decision.json: qwen dose 1.0
+qwen N15 round 1: pass (known-answer 0.937, mass 0.997, rocks 1.000, humans 1.000)
+qwen N16 round 1: pass (known-answer 0.948, mass 0.997, rocks 1.000, humans 1.000)
+qwen N17 round 1: pass (known-answer 0.936, mass 0.997, rocks 1.000, humans 1.000)
+qwen N18 round 1: pass (known-answer 0.939, mass 0.998, rocks 1.000, humans 1.000)
+qwen N19 round 1: pass (known-answer 0.939, mass 0.997, rocks 1.000, humans 1.000)
+qwen N20 round 1: pass (known-answer 0.941, mass 0.995, rocks 1.000, humans 1.000)
+qwen N21 round 1: pass (known-answer 0.932, mass 0.999, rocks 1.000, humans 1.000)
+qwen N22 round 1: pass (known-answer 0.942, mass 0.998, rocks 1.000, humans 1.000)
+qwen N23 round 1: pass (known-answer 0.941, mass 0.998, rocks 1.000, humans 1.000)
+qwen N24 round 1: pass (known-answer 0.943, mass 0.996, rocks 1.000, humans 1.000)
+qwen N25 round 1: pass (known-answer 0.941, mass 0.996, rocks 1.000, humans 1.000)
+qwen N26 round 1: pass (known-answer 0.938, mass 0.994, rocks 1.000, humans 1.000)
+qwen: target 24 sampled nouns (nC 26 (S2_NC; 26 is rule 3's cap)); had 12, added 12 ['N15', 'N16', 'N17', 'N18', 'N19', 'N20', 'N21', 'N22', 'N23', 'N24', 'N25', 'N26'], failed []; complete: nC 26

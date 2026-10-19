@@ -1,0 +1,4 @@
+==== 2026-10-12T03:21:11Z env_qwen
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+results/s2/box/qwen_box.json: g6e.12xlarge 4 GPUs, torch 2.12.1+cu130, transformers 4.57.1, Qwen/Qwen3-32B@9216db57 (downloaded ['9216db5781bf21249d130ec9da846c4624c16137']), 26 files hashed in 17.4s

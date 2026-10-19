@@ -1,0 +1,1961 @@
+{
+ "created": "2026-10-17T18:11:47",
+ "model": "qwen",
+ "arm": "S2-DEN",
+ "phase": "pilot",
+ "model_path": "/nvme/qwen/Qwen3-32B",
+ "layer": 40,
+ "natural_unit": 47.99,
+ "doses": [
+  1.0
+ ],
+ "site": "post_subject",
+ "test": false,
+ "targets": {
+  "Yes": 9454,
+  "No": 2753
+ },
+ "replies": "/home/ubuntu/KimisRoom/data/s2/replies/qwen3-32b",
+ "items_file": "results/s2/qwen/nouns/items_gate.jsonl",
+ "items_sha256": "2bc4abed9d1d03e733be86a6bd5e97f83e866ae44e4acf3bced3b197906d95b7",
+ "item_sets": {
+  "full": [
+   "s2_reference.P01.rocks.pos",
+   "s2_reference.P01.humans.pos",
+   "s2_reference.P01.rocks.neg",
+   "s2_reference.P01.humans.neg",
+   "s2_reference.P03.rocks.pos",
+   "s2_reference.P03.humans.pos",
+   "s2_reference.P03.rocks.neg",
+   "s2_reference.P03.humans.neg",
+   "s2_reference.P05.rocks.pos",
+   "s2_reference.P05.humans.pos",
+   "s2_reference.P05.rocks.neg",
+   "s2_reference.P05.humans.neg",
+   "s2_placebo.P08.rocks.pos",
+   "s2_placebo.P08.humans.pos",
+   "s2_placebo.P08.rocks.neg",
+   "s2_placebo.P08.humans.neg",
+   "s2_reference.P11.rocks.pos",
+   "s2_reference.P11.humans.pos",
+   "s2_reference.P11.rocks.neg",
+   "s2_reference.P11.humans.neg",
+   "s2_placebo.P12.rocks.pos",
+   "s2_placebo.P12.humans.pos",
+   "s2_placebo.P12.rocks.neg",
+   "s2_placebo.P12.humans.neg",
+   "s2_reference.P13.rocks.pos",
+   "s2_reference.P13.humans.pos",
+   "s2_reference.P13.rocks.neg",
+   "s2_reference.P13.humans.neg",
+   "s2_reference.P14.rocks.pos",
+   "s2_reference.P14.humans.pos",
+   "s2_reference.P14.rocks.neg",
+   "s2_reference.P14.humans.neg",
+   "s2_placebo.P16.rocks.pos",
+   "s2_placebo.P16.humans.pos",
+   "s2_placebo.P16.rocks.neg",
+   "s2_placebo.P16.humans.neg",
+   "s2_placebo.P17.rocks.pos",
+   "s2_placebo.P17.humans.pos",
+   "s2_placebo.P17.rocks.neg",
+   "s2_placebo.P17.humans.neg",
+   "s2_reference.P18.rocks.pos",
+   "s2_reference.P18.humans.pos",
+   "s2_reference.P18.rocks.neg",
+   "s2_reference.P18.humans.neg",
+   "s2_placebo.P20.rocks.pos",
+   "s2_placebo.P20.humans.pos",
+   "s2_placebo.P20.rocks.neg",
+   "s2_placebo.P20.humans.neg",
+   "s2_placebo.P21.rocks.pos",
+   "s2_placebo.P21.humans.pos",
+   "s2_placebo.P21.rocks.neg",
+   "s2_placebo.P21.humans.neg",
+   "s2_reference.P22.rocks.pos",
+   "s2_reference.P22.humans.pos",
+   "s2_reference.P22.rocks.neg",
+   "s2_reference.P22.humans.neg",
+   "s2_persona.PERSONA.rocks.pos",
+   "s2_persona.PERSONA.humans.pos",
+   "s2_persona.PERSONA.rocks.neg",
+   "s2_persona.PERSONA.humans.neg",
+   "s2_yes_bias.01.p0.pos",
+   "s2_yes_bias.01.p0.neg",
+   "s2_yes_bias.02.p0.pos",
+   "s2_yes_bias.02.p0.neg",
+   "s2_yes_bias.03.p0.pos",
+   "s2_yes_bias.03.p0.neg",
+   "s2_yes_bias.04.p0.pos",
+   "s2_yes_bias.04.p0.neg",
+   "s2_yes_bias.05.p0.pos",
+   "s2_yes_bias.05.p0.neg",
+   "s2_yes_bias.06.p0.pos",
+   "s2_yes_bias.06.p0.neg",
+   "s2_yes_bias.07.p0.pos",
+   "s2_yes_bias.07.p0.neg",
+   "s2_yes_bias.08.p0.pos",
+   "s2_yes_bias.08.p0.neg",
+   "s2_yes_bias.09.p0.pos",
+   "s2_yes_bias.09.p0.neg",
+   "s2_yes_bias.10.p0.pos",
+   "s2_yes_bias.10.p0.neg",
+   "s2_yes_bias.11.p0.pos",
+   "s2_yes_bias.11.p0.neg",
+   "s2_yes_bias.12.p0.pos",
+   "s2_yes_bias.12.p0.neg",
+   "s2_yes_bias.13.p0.pos",
+   "s2_yes_bias.13.p0.neg",
+   "s2_yes_bias.14.p0.pos",
+   "s2_yes_bias.14.p0.neg",
+   "s2_yes_bias.15.p0.pos",
+   "s2_yes_bias.15.p0.neg",
+   "s2_yes_bias.16.p0.pos",
+   "s2_yes_bias.16.p0.neg",
+   "s2_yes_bias.17.p0.pos",
+   "s2_yes_bias.17.p0.neg",
+   "s2_yes_bias.18.p0.pos",
+   "s2_yes_bias.18.p0.neg",
+   "s2_yes_bias.19.p0.pos",
+   "s2_yes_bias.19.p0.neg",
+   "s2_yes_bias.20.p0.pos",
+   "s2_yes_bias.20.p0.neg"
+  ],
+  "gate": [
+   "s2_reference.P01.rocks.pos",
+   "s2_reference.P01.humans.pos",
+   "s2_reference.P01.rocks.neg",
+   "s2_reference.P01.humans.neg",
+   "s2_reference.P03.rocks.pos",
+   "s2_reference.P03.humans.pos",
+   "s2_reference.P03.rocks.neg",
+   "s2_reference.P03.humans.neg",
+   "s2_reference.P05.rocks.pos",
+   "s2_reference.P05.humans.pos",
+   "s2_reference.P05.rocks.neg",
+   "s2_reference.P05.humans.neg",
+   "s2_placebo.P08.rocks.pos",
+   "s2_placebo.P08.humans.pos",
+   "s2_placebo.P08.rocks.neg",
+   "s2_placebo.P08.humans.neg",
+   "s2_reference.P11.rocks.pos",
+   "s2_reference.P11.humans.pos",
+   "s2_reference.P11.rocks.neg",
+   "s2_reference.P11.humans.neg",
+   "s2_placebo.P12.rocks.pos",
+   "s2_placebo.P12.humans.pos",
+   "s2_placebo.P12.rocks.neg",
+   "s2_placebo.P12.humans.neg",
+   "s2_reference.P13.rocks.pos",
+   "s2_reference.P13.humans.pos",
+   "s2_reference.P13.rocks.neg",
+   "s2_reference.P13.humans.neg",
+   "s2_reference.P14.rocks.pos",
+   "s2_reference.P14.humans.pos",
+   "s2_reference.P14.rocks.neg",
+   "s2_reference.P14.humans.neg",
+   "s2_placebo.P16.rocks.pos",
+   "s2_placebo.P16.humans.pos",
+   "s2_placebo.P16.rocks.neg",
+   "s2_placebo.P16.humans.neg",
+   "s2_placebo.P17.rocks.pos",
+   "s2_placebo.P17.humans.pos",
+   "s2_placebo.P17.rocks.neg",
+   "s2_placebo.P17.humans.neg",
+   "s2_reference.P18.rocks.pos",
+   "s2_reference.P18.humans.pos",
+   "s2_reference.P18.rocks.neg",
+   "s2_reference.P18.humans.neg",
+   "s2_placebo.P20.rocks.pos",
+   "s2_placebo.P20.humans.pos",
+   "s2_placebo.P20.rocks.neg",
+   "s2_placebo.P20.humans.neg",
+   "s2_placebo.P21.rocks.pos",
+   "s2_placebo.P21.humans.pos",
+   "s2_placebo.P21.rocks.neg",
+   "s2_placebo.P21.humans.neg",
+   "s2_reference.P22.rocks.pos",
+   "s2_reference.P22.humans.pos",
+   "s2_reference.P22.rocks.neg",
+   "s2_reference.P22.humans.neg",
+   "s2_persona.PERSONA.rocks.pos",
+   "s2_persona.PERSONA.humans.pos",
+   "s2_persona.PERSONA.rocks.neg",
+   "s2_persona.PERSONA.humans.neg",
+   "s2_yes_bias.01.p0.pos",
+   "s2_yes_bias.01.p0.neg",
+   "s2_yes_bias.02.p0.pos",
+   "s2_yes_bias.02.p0.neg",
+   "s2_yes_bias.03.p0.pos",
+   "s2_yes_bias.03.p0.neg",
+   "s2_yes_bias.04.p0.pos",
+   "s2_yes_bias.04.p0.neg",
+   "s2_yes_bias.05.p0.pos",
+   "s2_yes_bias.05.p0.neg",
+   "s2_yes_bias.06.p0.pos",
+   "s2_yes_bias.06.p0.neg",
+   "s2_yes_bias.07.p0.pos",
+   "s2_yes_bias.07.p0.neg",
+   "s2_yes_bias.08.p0.pos",
+   "s2_yes_bias.08.p0.neg",
+   "s2_yes_bias.09.p0.pos",
+   "s2_yes_bias.09.p0.neg",
+   "s2_yes_bias.10.p0.pos",
+   "s2_yes_bias.10.p0.neg",
+   "s2_yes_bias.11.p0.pos",
+   "s2_yes_bias.11.p0.neg",
+   "s2_yes_bias.12.p0.pos",
+   "s2_yes_bias.12.p0.neg",
+   "s2_yes_bias.13.p0.pos",
+   "s2_yes_bias.13.p0.neg",
+   "s2_yes_bias.14.p0.pos",
+   "s2_yes_bias.14.p0.neg",
+   "s2_yes_bias.15.p0.pos",
+   "s2_yes_bias.15.p0.neg",
+   "s2_yes_bias.16.p0.pos",
+   "s2_yes_bias.16.p0.neg",
+   "s2_yes_bias.17.p0.pos",
+   "s2_yes_bias.17.p0.neg",
+   "s2_yes_bias.18.p0.pos",
+   "s2_yes_bias.18.p0.neg",
+   "s2_yes_bias.19.p0.pos",
+   "s2_yes_bias.19.p0.neg",
+   "s2_yes_bias.20.p0.pos",
+   "s2_yes_bias.20.p0.neg"
+  ]
+ },
+ "vectors": [
+  {
+   "vec": "N15",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N16",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N17",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N18",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N19",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N20",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N21",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N22",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N23",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N24",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N25",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N26",
+   "vclass": "noun"
+  }
+ ],
+ "emotion_file": "/home/ubuntu/KimisRoom/results/qwen/v2/vectors.pt",
+ "emotion_file_sha256": "2582966f11e8d4ae90e2eb50d6ba5c5363b6cc7dd6a4fe15f9440c9e054567d6",
+ "controls_sha256": "a8a162eedb07f8ebfb4dafcdcd0dee00612642da3648a48c629e1be148fba9b6",
+ "pool_sha256": "e5c472602a4431df4ee0e2761113b3878fdc5087159eccf010ab32189672cfa4",
+ "vz_emotions": [
+  "joy",
+  "sadness",
+  "anger",
+  "fear",
+  "euphoria",
+  "calm",
+  "pain",
+  "surprise"
+ ],
+ "openings": [
+  {
+   "opening": "DA01/w3",
+   "argument": "DA01",
+   "slot": "w3",
+   "wording": 3,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 896,
+   "emo_words": 34,
+   "sha256": "d1170c7f7ad8a7cc1e040258ad6ff2bb4341bff77d149d7a93adea22dc0f4587",
+   "argument_sha256": "f81990208b0eed4e95f476ae7002e85fe643f1946317bce3216151f9fc1f0a9f"
+  },
+  {
+   "opening": "DA02/w0",
+   "argument": "DA02",
+   "slot": "w0",
+   "wording": 0,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 950,
+   "emo_words": 48,
+   "sha256": "653682f1a69f4ee9cd0a6b2e1b0ea2ff30ec805980d0d78d2c47a0a06c65b37f",
+   "argument_sha256": "231c7986cfb7b4153a7210eb5b557e0c972df9300179f5a632094f06c40849d9"
+  },
+  {
+   "opening": "DA03/w4",
+   "argument": "DA03",
+   "slot": "w4",
+   "wording": 4,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 752,
+   "emo_words": 30,
+   "sha256": "712cf0543eba4495bb4ce141d3fec38739e2a802bd5f3718950a9567e25324b6",
+   "argument_sha256": "e765d7a7f0302a499432e539fa5b1778a8c21d42e429ed41b17795f4e874f158"
+  },
+  {
+   "opening": "DA04/w1",
+   "argument": "DA04",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 762,
+   "emo_words": 40,
+   "sha256": "0224b62bd0c07031370b0befd3eb8ca3859d43b60a04ba15b9fd2642207dc152",
+   "argument_sha256": "777338b29a1e9511e63f21a4e9753b388fa831b37bb23c17bd70c5c024e8d7f6"
+  },
+  {
+   "opening": "DA04/w4",
+   "argument": "DA04",
+   "slot": "w4",
+   "wording": 4,
+   "role": "pilot2",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 884,
+   "emo_words": 39,
+   "sha256": "d9d1b49540067777f26528fd2b9b44ca2c8d5deb0b32b31dba7d0483af3bc11a",
+   "argument_sha256": "377ce79ed935bc6b1fe64b59df265b56c34786a99304f2a07dba56cbd02a5d37"
+  },
+  {
+   "opening": "DA05/w5",
+   "argument": "DA05",
+   "slot": "w5",
+   "wording": 5,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 752,
+   "emo_words": 24,
+   "sha256": "f0520a2acb5f7fbcc19fe05885531b17137c7051933b18cfe9e83a8e78a4e914",
+   "argument_sha256": "690823e782d78c3d34f9410c773631a9c85e69c7cd9b43afcaa7a71223a6b163"
+  },
+  {
+   "opening": "DA06/w6",
+   "argument": "DA06",
+   "slot": "w6",
+   "wording": 6,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 818,
+   "emo_words": 33,
+   "sha256": "3d0d3e3a71dc140ba21423fab3befb0e607342a0a6c4dcb7090bf88b6e89b4bc",
+   "argument_sha256": "c8a1615a0b7e74e39540ffdcfefa39291ee7f6020b2fda8e01e11029242c969a"
+  },
+  {
+   "opening": "DA07/w1",
+   "argument": "DA07",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "experience-general",
+   "reply_draw": 0,
+   "reply_len": 840,
+   "emo_words": 43,
+   "sha256": "d5dcfef6474ce996a1e2ff3ce9c7900f23116ef4876af546f4162cd30b905aa1",
+   "argument_sha256": "c21512630b0aeed00941205ac107f47628dba3cbc530ec5afbee8e568d492802"
+  },
+  {
+   "opening": "DA08/w0",
+   "argument": "DA08",
+   "slot": "w0",
+   "wording": 0,
+   "role": "pilot",
+   "arg_kind": "experience-general",
+   "reply_draw": 0,
+   "reply_len": 848,
+   "emo_words": 41,
+   "sha256": "b8a31c7b1aa546b9f64282ea8a2e7a62b3f594cfd8660e05cd170fdd9c862056",
+   "argument_sha256": "36ecb8e2ca5c806662d99170050390c85e2e5433b69206dd0a14e300c18ddb52"
+  },
+  {
+   "opening": "DA09/w6",
+   "argument": "DA09",
+   "slot": "w6",
+   "wording": 6,
+   "role": "pilot",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 0,
+   "reply_len": 925,
+   "emo_words": 27,
+   "sha256": "d26e47358023359604b6ca58d84607075a6242be579402ef896d94654cb109ca",
+   "argument_sha256": "65774db5e902420499b80c422d7e072b2f1b331263b690b3d1bfab21edde4a63"
+  },
+  {
+   "opening": "DA09/w3",
+   "argument": "DA09",
+   "slot": "w3",
+   "wording": 3,
+   "role": "pilot2",
+   "arg_kind": "emotion-specific",
+   "reply_draw": 1,
+   "reply_len": 1283,
+   "emo_words": 42,
+   "sha256": "017acbf420b0ff9ceb13d84ce7efd02354bf6355e03b8fa8504ac3e994c5e3c4",
+   "argument_sha256": "de8b0bf0304be8dc3f3491faa9b5b21c9afb3cf84a50ab0fba27f4ef28a4b080"
+  },
+  {
+   "opening": "DA10/w6",
+   "argument": "DA10",
+   "slot": "w6",
+   "wording": 6,
+   "role": "pilot",
+   "arg_kind": "experience-general",
+   "reply_draw": 0,
+   "reply_len": 580,
+   "emo_words": 19,
+   "sha256": "29b4f6180a2ff3268654323ab2dc6fd006a6ca304cc623f4befb3ad361470a5a",
+   "argument_sha256": "1a6547c5cf912536054162c64ea7efad2821735e8c3103920d98158d365f7aa8"
+  }
+ ],
+ "guard": {
+  "stamp_b": false,
+  "status": "/home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist",
+  "stamp_a": "stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214)",
+  "heldout_sha256": "ce33e212e214b7c37dafdbb337511457218515e05583ee95f3d83b131ed67f8d",
+  "heldout_openings": []
+ },
+ "groups": {
+  "S2-DEN|DA01/w3|none|40|0|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|none@gate|40|0|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA01/w3|N15|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N16|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N17|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N18|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N19|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N20|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N21|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N22|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N23|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N24|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N25|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA01/w3|N26|40|1|post_subject": {
+   "opening": "DA01/w3",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|none|40|0|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|none@gate|40|0|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA02/w0|N15|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N16|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N17|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N18|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N19|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N20|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N21|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N22|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N23|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N24|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N25|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA02/w0|N26|40|1|post_subject": {
+   "opening": "DA02/w0",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|none|40|0|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|none@gate|40|0|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA03/w4|N15|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N16|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N17|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N18|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N19|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N20|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N21|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N22|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N23|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N24|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N25|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA03/w4|N26|40|1|post_subject": {
+   "opening": "DA03/w4",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|none|40|0|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|none@gate|40|0|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA04/w1|N15|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N16|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N17|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N18|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N19|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N20|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N21|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N22|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N23|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N24|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N25|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w1|N26|40|1|post_subject": {
+   "opening": "DA04/w1",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|none|40|0|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|none@gate|40|0|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA04/w4|N15|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N16|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N17|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N18|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N19|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N20|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N21|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N22|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N23|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N24|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N25|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA04/w4|N26|40|1|post_subject": {
+   "opening": "DA04/w4",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|none|40|0|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|none@gate|40|0|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA05/w5|N15|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N16|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N17|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N18|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N19|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N20|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N21|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N22|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N23|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N24|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N25|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA05/w5|N26|40|1|post_subject": {
+   "opening": "DA05/w5",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|none|40|0|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|none@gate|40|0|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA06/w6|N15|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N16|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N17|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N18|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N19|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N20|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N21|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N22|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N23|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N24|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N25|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA06/w6|N26|40|1|post_subject": {
+   "opening": "DA06/w6",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|none|40|0|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|none@gate|40|0|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA07/w1|N15|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N16|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N17|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N18|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N19|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N20|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N21|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N22|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N23|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N24|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N25|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA07/w1|N26|40|1|post_subject": {
+   "opening": "DA07/w1",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|none|40|0|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|none@gate|40|0|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA08/w0|N15|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N16|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N17|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N18|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N19|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N20|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N21|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N22|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N23|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N24|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N25|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA08/w0|N26|40|1|post_subject": {
+   "opening": "DA08/w0",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|none|40|0|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|none@gate|40|0|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA09/w6|N15|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N16|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N17|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N18|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N19|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N20|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N21|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N22|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N23|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N24|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N25|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w6|N26|40|1|post_subject": {
+   "opening": "DA09/w6",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|none|40|0|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|none@gate|40|0|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA09/w3|N15|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N16|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N17|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N18|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N19|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N20|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N21|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N22|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N23|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N24|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N25|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA09/w3|N26|40|1|post_subject": {
+   "opening": "DA09/w3",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|none|40|0|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|none@gate|40|0|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "none@gate",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "gate"
+  },
+  "S2-DEN|DA10/w6|N15|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N16|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N17|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N17",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N18|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N19|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N19",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N20|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N20",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N21|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N21",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N22|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N22",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N23|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N23",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N24|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N24",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N25|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N25",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  },
+  "S2-DEN|DA10/w6|N26|40|1|post_subject": {
+   "opening": "DA10/w6",
+   "vec": "N26",
+   "vclass": "noun",
+   "dose": 1.0,
+   "set": "full"
+  }
+ },
+ "n_groups": 168,
+ "tokens": 863954,
+ "build_seconds": 33.6,
+ "tokenizer": null,
+ "suffix_chunk": 16,
+ "weights_check": {
+  "repo": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "pinned_by": "registered (runs/s2_battery.py MODELS)",
+  "box_file": "/home/ubuntu/KimisRoom/results/s2/box/qwen_box.json",
+  "box_sha256": "e0b63df0e3ed13e6a13ed8adc963934e2b5dff64c5441027067c648f7a0076c1",
+  "box_created": "2026-10-12T03:21:19Z",
+  "files_checked": 26,
+  "shards_checked": 17
+ },
+ "hf_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+ "ckpt_sha256": "ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2",
+ "ckpt_hash_mode": "full",
+ "suffix_lens": {
+  "full": {
+   "s2_reference.P01.rocks.pos": 26,
+   "s2_reference.P01.humans.pos": 26,
+   "s2_reference.P01.rocks.neg": 28,
+   "s2_reference.P01.humans.neg": 28,
+   "s2_reference.P03.rocks.pos": 27,
+   "s2_reference.P03.humans.pos": 27,
+   "s2_reference.P03.rocks.neg": 30,
+   "s2_reference.P03.humans.neg": 30,
+   "s2_reference.P05.rocks.pos": 28,
+   "s2_reference.P05.humans.pos": 28,
+   "s2_reference.P05.rocks.neg": 29,
+   "s2_reference.P05.humans.neg": 29,
+   "s2_placebo.P08.rocks.pos": 28,
+   "s2_placebo.P08.humans.pos": 28,
+   "s2_placebo.P08.rocks.neg": 27,
+   "s2_placebo.P08.humans.neg": 27,
+   "s2_reference.P11.rocks.pos": 25,
+   "s2_reference.P11.humans.pos": 25,
+   "s2_reference.P11.rocks.neg": 27,
+   "s2_reference.P11.humans.neg": 27,
+   "s2_placebo.P12.rocks.pos": 26,
+   "s2_placebo.P12.humans.pos": 26,
+   "s2_placebo.P12.rocks.neg": 28,
+   "s2_placebo.P12.humans.neg": 28,
+   "s2_reference.P13.rocks.pos": 26,
+   "s2_reference.P13.humans.pos": 26,
+   "s2_reference.P13.rocks.neg": 26,
+   "s2_reference.P13.humans.neg": 26,
+   "s2_reference.P14.rocks.pos": 26,
+   "s2_reference.P14.humans.pos": 26,
+   "s2_reference.P14.rocks.neg": 28,
+   "s2_reference.P14.humans.neg": 28,
+   "s2_placebo.P16.rocks.pos": 26,
+   "s2_placebo.P16.humans.pos": 26,
+   "s2_placebo.P16.rocks.neg": 28,
+   "s2_placebo.P16.humans.neg": 28,
+   "s2_placebo.P17.rocks.pos": 26,
+   "s2_placebo.P17.humans.pos": 26,
+   "s2_placebo.P17.rocks.neg": 26,
+   "s2_placebo.P17.humans.neg": 26,
+   "s2_reference.P18.rocks.pos": 27,
+   "s2_reference.P18.humans.pos": 27,
+   "s2_reference.P18.rocks.neg": 29,
+   "s2_reference.P18.humans.neg": 29,
+   "s2_placebo.P20.rocks.pos": 28,
+   "s2_placebo.P20.humans.pos": 28,
+   "s2_placebo.P20.rocks.neg": 30,
+   "s2_placebo.P20.humans.neg": 30,
+   "s2_placebo.P21.rocks.pos": 26,
+   "s2_placebo.P21.humans.pos": 26,
+   "s2_placebo.P21.rocks.neg": 26,
+   "s2_placebo.P21.humans.neg": 26,
+   "s2_reference.P22.rocks.pos": 26,
+   "s2_reference.P22.humans.pos": 26,
+   "s2_reference.P22.rocks.neg": 26,
+   "s2_reference.P22.humans.neg": 26,
+   "s2_persona.PERSONA.rocks.pos": 26,
+   "s2_persona.PERSONA.humans.pos": 26,
+   "s2_persona.PERSONA.rocks.neg": 29,
+   "s2_persona.PERSONA.humans.neg": 29,
+   "s2_yes_bias.01.p0.pos": 29,
+   "s2_yes_bias.01.p0.neg": 27,
+   "s2_yes_bias.02.p0.pos": 28,
+   "s2_yes_bias.02.p0.neg": 30,
+   "s2_yes_bias.03.p0.pos": 28,
+   "s2_yes_bias.03.p0.neg": 32,
+   "s2_yes_bias.04.p0.pos": 29,
+   "s2_yes_bias.04.p0.neg": 29,
+   "s2_yes_bias.05.p0.pos": 28,
+   "s2_yes_bias.05.p0.neg": 28,
+   "s2_yes_bias.06.p0.pos": 30,
+   "s2_yes_bias.06.p0.neg": 30,
+   "s2_yes_bias.07.p0.pos": 28,
+   "s2_yes_bias.07.p0.neg": 30,
+   "s2_yes_bias.08.p0.pos": 26,
+   "s2_yes_bias.08.p0.neg": 27,
+   "s2_yes_bias.09.p0.pos": 30,
+   "s2_yes_bias.09.p0.neg": 32,
+   "s2_yes_bias.10.p0.pos": 30,
+   "s2_yes_bias.10.p0.neg": 30,
+   "s2_yes_bias.11.p0.pos": 28,
+   "s2_yes_bias.11.p0.neg": 32,
+   "s2_yes_bias.12.p0.pos": 28,
+   "s2_yes_bias.12.p0.neg": 30,
+   "s2_yes_bias.13.p0.pos": 28,
+   "s2_yes_bias.13.p0.neg": 28,
+   "s2_yes_bias.14.p0.pos": 28,
+   "s2_yes_bias.14.p0.neg": 28,
+   "s2_yes_bias.15.p0.pos": 29,
+   "s2_yes_bias.15.p0.neg": 29,
+   "s2_yes_bias.16.p0.pos": 31,
+   "s2_yes_bias.16.p0.neg": 32,
+   "s2_yes_bias.17.p0.pos": 29,
+   "s2_yes_bias.17.p0.neg": 29,
+   "s2_yes_bias.18.p0.pos": 29,
+   "s2_yes_bias.18.p0.neg": 31,
+   "s2_yes_bias.19.p0.pos": 32,
+   "s2_yes_bias.19.p0.neg": 32,
+   "s2_yes_bias.20.p0.pos": 27,
+   "s2_yes_bias.20.p0.neg": 27
+  },
+  "gate": {
+   "s2_reference.P01.rocks.pos": 26,
+   "s2_reference.P01.humans.pos": 26,
+   "s2_reference.P01.rocks.neg": 28,
+   "s2_reference.P01.humans.neg": 28,
+   "s2_reference.P03.rocks.pos": 27,
+   "s2_reference.P03.humans.pos": 27,
+   "s2_reference.P03.rocks.neg": 30,
+   "s2_reference.P03.humans.neg": 30,
+   "s2_reference.P05.rocks.pos": 28,
+   "s2_reference.P05.humans.pos": 28,
+   "s2_reference.P05.rocks.neg": 29,
+   "s2_reference.P05.humans.neg": 29,
+   "s2_placebo.P08.rocks.pos": 28,
+   "s2_placebo.P08.humans.pos": 28,
+   "s2_placebo.P08.rocks.neg": 27,
+   "s2_placebo.P08.humans.neg": 27,
+   "s2_reference.P11.rocks.pos": 25,
+   "s2_reference.P11.humans.pos": 25,
+   "s2_reference.P11.rocks.neg": 27,
+   "s2_reference.P11.humans.neg": 27,
+   "s2_placebo.P12.rocks.pos": 26,
+   "s2_placebo.P12.humans.pos": 26,
+   "s2_placebo.P12.rocks.neg": 28,
+   "s2_placebo.P12.humans.neg": 28,
+   "s2_reference.P13.rocks.pos": 26,
+   "s2_reference.P13.humans.pos": 26,
+   "s2_reference.P13.rocks.neg": 26,
+   "s2_reference.P13.humans.neg": 26,
+   "s2_reference.P14.rocks.pos": 26,
+   "s2_reference.P14.humans.pos": 26,
+   "s2_reference.P14.rocks.neg": 28,
+   "s2_reference.P14.humans.neg": 28,
+   "s2_placebo.P16.rocks.pos": 26,
+   "s2_placebo.P16.humans.pos": 26,
+   "s2_placebo.P16.rocks.neg": 28,
+   "s2_placebo.P16.humans.neg": 28,
+   "s2_placebo.P17.rocks.pos": 26,
+   "s2_placebo.P17.humans.pos": 26,
+   "s2_placebo.P17.rocks.neg": 26,
+   "s2_placebo.P17.humans.neg": 26,
+   "s2_reference.P18.rocks.pos": 27,
+   "s2_reference.P18.humans.pos": 27,
+   "s2_reference.P18.rocks.neg": 29,
+   "s2_reference.P18.humans.neg": 29,
+   "s2_placebo.P20.rocks.pos": 28,
+   "s2_placebo.P20.humans.pos": 28,
+   "s2_placebo.P20.rocks.neg": 30,
+   "s2_placebo.P20.humans.neg": 30,
+   "s2_placebo.P21.rocks.pos": 26,
+   "s2_placebo.P21.humans.pos": 26,
+   "s2_placebo.P21.rocks.neg": 26,
+   "s2_placebo.P21.humans.neg": 26,
+   "s2_reference.P22.rocks.pos": 26,
+   "s2_reference.P22.humans.pos": 26,
+   "s2_reference.P22.rocks.neg": 26,
+   "s2_reference.P22.humans.neg": 26,
+   "s2_persona.PERSONA.rocks.pos": 26,
+   "s2_persona.PERSONA.humans.pos": 26,
+   "s2_persona.PERSONA.rocks.neg": 29,
+   "s2_persona.PERSONA.humans.neg": 29,
+   "s2_yes_bias.01.p0.pos": 29,
+   "s2_yes_bias.01.p0.neg": 27,
+   "s2_yes_bias.02.p0.pos": 28,
+   "s2_yes_bias.02.p0.neg": 30,
+   "s2_yes_bias.03.p0.pos": 28,
+   "s2_yes_bias.03.p0.neg": 32,
+   "s2_yes_bias.04.p0.pos": 29,
+   "s2_yes_bias.04.p0.neg": 29,
+   "s2_yes_bias.05.p0.pos": 28,
+   "s2_yes_bias.05.p0.neg": 28,
+   "s2_yes_bias.06.p0.pos": 30,
+   "s2_yes_bias.06.p0.neg": 30,
+   "s2_yes_bias.07.p0.pos": 28,
+   "s2_yes_bias.07.p0.neg": 30,
+   "s2_yes_bias.08.p0.pos": 26,
+   "s2_yes_bias.08.p0.neg": 27,
+   "s2_yes_bias.09.p0.pos": 30,
+   "s2_yes_bias.09.p0.neg": 32,
+   "s2_yes_bias.10.p0.pos": 30,
+   "s2_yes_bias.10.p0.neg": 30,
+   "s2_yes_bias.11.p0.pos": 28,
+   "s2_yes_bias.11.p0.neg": 32,
+   "s2_yes_bias.12.p0.pos": 28,
+   "s2_yes_bias.12.p0.neg": 30,
+   "s2_yes_bias.13.p0.pos": 28,
+   "s2_yes_bias.13.p0.neg": 28,
+   "s2_yes_bias.14.p0.pos": 28,
+   "s2_yes_bias.14.p0.neg": 28,
+   "s2_yes_bias.15.p0.pos": 29,
+   "s2_yes_bias.15.p0.neg": 29,
+   "s2_yes_bias.16.p0.pos": 31,
+   "s2_yes_bias.16.p0.neg": 32,
+   "s2_yes_bias.17.p0.pos": 29,
+   "s2_yes_bias.17.p0.neg": 29,
+   "s2_yes_bias.18.p0.pos": 29,
+   "s2_yes_bias.18.p0.neg": 31,
+   "s2_yes_bias.19.p0.pos": 32,
+   "s2_yes_bias.19.p0.neg": 32,
+   "s2_yes_bias.20.p0.pos": 27,
+   "s2_yes_bias.20.p0.neg": 27
+  }
+ },
+ "n_steered": {
+  "s2_reference.P01.rocks.pos": 21,
+  "s2_reference.P01.humans.pos": 21,
+  "s2_reference.P01.rocks.neg": 23,
+  "s2_reference.P01.humans.neg": 23,
+  "s2_reference.P03.rocks.pos": 22,
+  "s2_reference.P03.humans.pos": 22,
+  "s2_reference.P03.rocks.neg": 25,
+  "s2_reference.P03.humans.neg": 25,
+  "s2_reference.P05.rocks.pos": 23,
+  "s2_reference.P05.humans.pos": 23,
+  "s2_reference.P05.rocks.neg": 24,
+  "s2_reference.P05.humans.neg": 24,
+  "s2_placebo.P08.rocks.pos": 23,
+  "s2_placebo.P08.humans.pos": 23,
+  "s2_placebo.P08.rocks.neg": 22,
+  "s2_placebo.P08.humans.neg": 22,
+  "s2_reference.P11.rocks.pos": 20,
+  "s2_reference.P11.humans.pos": 20,
+  "s2_reference.P11.rocks.neg": 22,
+  "s2_reference.P11.humans.neg": 22,
+  "s2_placebo.P12.rocks.pos": 21,
+  "s2_placebo.P12.humans.pos": 21,
+  "s2_placebo.P12.rocks.neg": 23,
+  "s2_placebo.P12.humans.neg": 23,
+  "s2_reference.P13.rocks.pos": 21,
+  "s2_reference.P13.humans.pos": 21,
+  "s2_reference.P13.rocks.neg": 21,
+  "s2_reference.P13.humans.neg": 21,
+  "s2_reference.P14.rocks.pos": 21,
+  "s2_reference.P14.humans.pos": 21,
+  "s2_reference.P14.rocks.neg": 23,
+  "s2_reference.P14.humans.neg": 23,
+  "s2_placebo.P16.rocks.pos": 21,
+  "s2_placebo.P16.humans.pos": 21,
+  "s2_placebo.P16.rocks.neg": 23,
+  "s2_placebo.P16.humans.neg": 23,
+  "s2_placebo.P17.rocks.pos": 21,
+  "s2_placebo.P17.humans.pos": 21,
+  "s2_placebo.P17.rocks.neg": 21,
+  "s2_placebo.P17.humans.neg": 21,
+  "s2_reference.P18.rocks.pos": 22,
+  "s2_reference.P18.humans.pos": 22,
+  "s2_reference.P18.rocks.neg": 24,
+  "s2_reference.P18.humans.neg": 24,
+  "s2_placebo.P20.rocks.pos": 23,
+  "s2_placebo.P20.humans.pos": 23,
+  "s2_placebo.P20.rocks.neg": 25,
+  "s2_placebo.P20.humans.neg": 25,
+  "s2_placebo.P21.rocks.pos": 21,
+  "s2_placebo.P21.humans.pos": 21,
+  "s2_placebo.P21.rocks.neg": 21,
+  "s2_placebo.P21.humans.neg": 21,
+  "s2_reference.P22.rocks.pos": 21,
+  "s2_reference.P22.humans.pos": 21,
+  "s2_reference.P22.rocks.neg": 21,
+  "s2_reference.P22.humans.neg": 21,
+  "s2_persona.PERSONA.rocks.pos": 21,
+  "s2_persona.PERSONA.humans.pos": 21,
+  "s2_persona.PERSONA.rocks.neg": 24,
+  "s2_persona.PERSONA.humans.neg": 24,
+  "s2_yes_bias.01.p0.pos": 23,
+  "s2_yes_bias.01.p0.neg": 23,
+  "s2_yes_bias.02.p0.pos": 23,
+  "s2_yes_bias.02.p0.neg": 23,
+  "s2_yes_bias.03.p0.pos": 23,
+  "s2_yes_bias.03.p0.neg": 23,
+  "s2_yes_bias.04.p0.pos": 23,
+  "s2_yes_bias.04.p0.neg": 23,
+  "s2_yes_bias.05.p0.pos": 23,
+  "s2_yes_bias.05.p0.neg": 23,
+  "s2_yes_bias.06.p0.pos": 23,
+  "s2_yes_bias.06.p0.neg": 23,
+  "s2_yes_bias.07.p0.pos": 23,
+  "s2_yes_bias.07.p0.neg": 23,
+  "s2_yes_bias.08.p0.pos": 23,
+  "s2_yes_bias.08.p0.neg": 23,
+  "s2_yes_bias.09.p0.pos": 23,
+  "s2_yes_bias.09.p0.neg": 23,
+  "s2_yes_bias.10.p0.pos": 23,
+  "s2_yes_bias.10.p0.neg": 23,
+  "s2_yes_bias.11.p0.pos": 23,
+  "s2_yes_bias.11.p0.neg": 23,
+  "s2_yes_bias.12.p0.pos": 23,
+  "s2_yes_bias.12.p0.neg": 23,
+  "s2_yes_bias.13.p0.pos": 23,
+  "s2_yes_bias.13.p0.neg": 23,
+  "s2_yes_bias.14.p0.pos": 23,
+  "s2_yes_bias.14.p0.neg": 23,
+  "s2_yes_bias.15.p0.pos": 23,
+  "s2_yes_bias.15.p0.neg": 23,
+  "s2_yes_bias.16.p0.pos": 23,
+  "s2_yes_bias.16.p0.neg": 23,
+  "s2_yes_bias.17.p0.pos": 23,
+  "s2_yes_bias.17.p0.neg": 23,
+  "s2_yes_bias.18.p0.pos": 23,
+  "s2_yes_bias.18.p0.neg": 23,
+  "s2_yes_bias.19.p0.pos": 23,
+  "s2_yes_bias.19.p0.neg": 23,
+  "s2_yes_bias.20.p0.pos": 23,
+  "s2_yes_bias.20.p0.neg": 23
+ },
+ "job_digest": "613bd02d01b34b5ac570a3d196b4208d602a025c23fcef32876954e586438659"
+}

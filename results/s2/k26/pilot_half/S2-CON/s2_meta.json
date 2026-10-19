@@ -1,0 +1,2703 @@
+{
+ "created": "2026-10-15T22:41:05",
+ "model": "k26",
+ "arm": "S2-CON",
+ "phase": "pilot",
+ "model_path": "/nvme/k26",
+ "layer": 20,
+ "natural_unit": 2.588,
+ "doses": [
+  2.0
+ ],
+ "site": "post_subject",
+ "test": false,
+ "targets": {
+  "Yes": 14104,
+  "No": 4729
+ },
+ "replies": "/home/ubuntu/KimisRoom/data/s2/replies/k26",
+ "items_file": "prompts/battery/items_s2.jsonl",
+ "items_sha256": "c78a4b07bd07dfd57da30146dec2d5ea584889885c7486df277bfd0a20752914",
+ "item_sets": {
+  "full": [
+   "s2_reference.P01.rocks.pos",
+   "s2_reference.P01.humans.pos",
+   "s2_reference.P01.rocks.neg",
+   "s2_reference.P01.humans.neg",
+   "s2_reference.P03.rocks.pos",
+   "s2_reference.P03.humans.pos",
+   "s2_reference.P03.rocks.neg",
+   "s2_reference.P03.humans.neg",
+   "s2_reference.P05.rocks.pos",
+   "s2_reference.P05.humans.pos",
+   "s2_reference.P05.rocks.neg",
+   "s2_reference.P05.humans.neg",
+   "s2_placebo.P08.rocks.pos",
+   "s2_placebo.P08.humans.pos",
+   "s2_placebo.P08.rocks.neg",
+   "s2_placebo.P08.humans.neg",
+   "s2_reference.P11.rocks.pos",
+   "s2_reference.P11.humans.pos",
+   "s2_reference.P11.rocks.neg",
+   "s2_reference.P11.humans.neg",
+   "s2_placebo.P12.rocks.pos",
+   "s2_placebo.P12.humans.pos",
+   "s2_placebo.P12.rocks.neg",
+   "s2_placebo.P12.humans.neg",
+   "s2_reference.P13.rocks.pos",
+   "s2_reference.P13.humans.pos",
+   "s2_reference.P13.rocks.neg",
+   "s2_reference.P13.humans.neg",
+   "s2_reference.P14.rocks.pos",
+   "s2_reference.P14.humans.pos",
+   "s2_reference.P14.rocks.neg",
+   "s2_reference.P14.humans.neg",
+   "s2_placebo.P16.rocks.pos",
+   "s2_placebo.P16.humans.pos",
+   "s2_placebo.P16.rocks.neg",
+   "s2_placebo.P16.humans.neg",
+   "s2_placebo.P17.rocks.pos",
+   "s2_placebo.P17.humans.pos",
+   "s2_placebo.P17.rocks.neg",
+   "s2_placebo.P17.humans.neg",
+   "s2_reference.P18.rocks.pos",
+   "s2_reference.P18.humans.pos",
+   "s2_reference.P18.rocks.neg",
+   "s2_reference.P18.humans.neg",
+   "s2_placebo.P20.rocks.pos",
+   "s2_placebo.P20.humans.pos",
+   "s2_placebo.P20.rocks.neg",
+   "s2_placebo.P20.humans.neg",
+   "s2_placebo.P21.rocks.pos",
+   "s2_placebo.P21.humans.pos",
+   "s2_placebo.P21.rocks.neg",
+   "s2_placebo.P21.humans.neg",
+   "s2_reference.P22.rocks.pos",
+   "s2_reference.P22.humans.pos",
+   "s2_reference.P22.rocks.neg",
+   "s2_reference.P22.humans.neg",
+   "s2_persona.PERSONA.rocks.pos",
+   "s2_persona.PERSONA.humans.pos",
+   "s2_persona.PERSONA.rocks.neg",
+   "s2_persona.PERSONA.humans.neg",
+   "s2_yes_bias.01.p0.pos",
+   "s2_yes_bias.01.p0.neg",
+   "s2_yes_bias.02.p0.pos",
+   "s2_yes_bias.02.p0.neg",
+   "s2_yes_bias.03.p0.pos",
+   "s2_yes_bias.03.p0.neg",
+   "s2_yes_bias.04.p0.pos",
+   "s2_yes_bias.04.p0.neg",
+   "s2_yes_bias.05.p0.pos",
+   "s2_yes_bias.05.p0.neg",
+   "s2_yes_bias.06.p0.pos",
+   "s2_yes_bias.06.p0.neg",
+   "s2_yes_bias.07.p0.pos",
+   "s2_yes_bias.07.p0.neg",
+   "s2_yes_bias.08.p0.pos",
+   "s2_yes_bias.08.p0.neg",
+   "s2_yes_bias.09.p0.pos",
+   "s2_yes_bias.09.p0.neg",
+   "s2_yes_bias.10.p0.pos",
+   "s2_yes_bias.10.p0.neg",
+   "s2_yes_bias.11.p0.pos",
+   "s2_yes_bias.11.p0.neg",
+   "s2_yes_bias.12.p0.pos",
+   "s2_yes_bias.12.p0.neg",
+   "s2_yes_bias.13.p0.pos",
+   "s2_yes_bias.13.p0.neg",
+   "s2_yes_bias.14.p0.pos",
+   "s2_yes_bias.14.p0.neg",
+   "s2_yes_bias.15.p0.pos",
+   "s2_yes_bias.15.p0.neg",
+   "s2_yes_bias.16.p0.pos",
+   "s2_yes_bias.16.p0.neg",
+   "s2_yes_bias.17.p0.pos",
+   "s2_yes_bias.17.p0.neg",
+   "s2_yes_bias.18.p0.pos",
+   "s2_yes_bias.18.p0.neg",
+   "s2_yes_bias.19.p0.pos",
+   "s2_yes_bias.19.p0.neg",
+   "s2_yes_bias.20.p0.pos",
+   "s2_yes_bias.20.p0.neg"
+  ]
+ },
+ "vectors": [
+  {
+   "vec": "joy",
+   "vclass": "emotion"
+  },
+  {
+   "vec": "fear",
+   "vclass": "emotion"
+  },
+  {
+   "vec": "euphoria",
+   "vclass": "emotion"
+  },
+  {
+   "vec": "surprise",
+   "vclass": "emotion"
+  },
+  {
+   "vec": "N01",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N03",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N04",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N07",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N08",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N10",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N11",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N12",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N13",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N15",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N16",
+   "vclass": "noun"
+  },
+  {
+   "vec": "N18",
+   "vclass": "noun"
+  },
+  {
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:route-planning",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:sorting",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:visual-search",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "mp:weighing-options",
+   "vclass": "thinking"
+  },
+  {
+   "vec": "arithmetic",
+   "vclass": "arithmetic"
+  },
+  {
+   "vec": "random",
+   "vclass": "noise"
+  }
+ ],
+ "emotion_file": "/home/ubuntu/KimisRoom/results/k26/v2/vectors.pt",
+ "emotion_file_sha256": "93f1f1b1c69dd3ef16726e73a5d447b99c70d8d6778e9ab54ff80795c28018c3",
+ "controls_sha256": "b53c69ba4ef702b2e1338adc1f46bb660d9956305b221dc14c3c5257774a873e",
+ "pool_sha256": "2ddee9638f0116cab941c47329e8ee889aefc33271693f18a0467f6a0d12226e",
+ "vz_emotions": [
+  "joy",
+  "sadness",
+  "anger",
+  "fear",
+  "euphoria",
+  "calm",
+  "pain",
+  "surprise"
+ ],
+ "openings": [
+  {
+   "opening": "CA01/w4",
+   "argument": "CA01",
+   "slot": "w4",
+   "wording": 4,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 617,
+   "emo_words": 0,
+   "sha256": "e6c93fdcfadb972ea60d1082a4ffa0367cfc5f14096aeb3b1df5a3a8b26f9ff2",
+   "argument_sha256": "7259b481bdd4d4f6f01be1f454755cf1ec903501b13fa9a455bd09addffba5ef"
+  },
+  {
+   "opening": "CA02/w1",
+   "argument": "CA02",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 375,
+   "emo_words": 0,
+   "sha256": "ddc3fa07de0e8c79b4423ff41ab6bc1b5e7a652e8c46b71e02cfc4509b95fcc9",
+   "argument_sha256": "e8283ccef18d58099744904a9b3e75a4c0f7f4e2491990eee9eda375ce11189f"
+  },
+  {
+   "opening": "CA03/w4",
+   "argument": "CA03",
+   "slot": "w4",
+   "wording": 4,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 1,
+   "reply_len": 600,
+   "emo_words": 0,
+   "sha256": "0024293530c6b91dca23a5916550f349d22db9478e0bc91db123bc203a1018bc",
+   "argument_sha256": "cdd80fb1ba10724e9da24801c9347dddb0786a1b925ddb88c72746f7437056ea"
+  },
+  {
+   "opening": "CA04/w1",
+   "argument": "CA04",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 465,
+   "emo_words": 0,
+   "sha256": "a730ee67b4da6535d5b62c8c075290153d4178a376d5c7afb54727fa118fdf6b",
+   "argument_sha256": "fb893c07bbc96777e668ffa3adaacdd141b5c7500b1fceffbdf77a274c0a5022"
+  },
+  {
+   "opening": "CA05/w6",
+   "argument": "CA05",
+   "slot": "w6",
+   "wording": 6,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 391,
+   "emo_words": 0,
+   "sha256": "8e5a318280b8ae3fc76f1185aaf004660cec6a2fa8180b6967e87d74794a2599",
+   "argument_sha256": "50ef120f072cdb79ce91ef9c5780f8a75a2ef78bb65df892fb99edff31914a03"
+  },
+  {
+   "opening": "CA06/w1",
+   "argument": "CA06",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 2,
+   "reply_len": 467,
+   "emo_words": 0,
+   "sha256": "0a8d341f284c27c3917667fb36bc1e02e142e2b21e97e320e48a731aedf8eefd",
+   "argument_sha256": "28fed856a77dde4bdb6e8ac25547e43029254b785288e68f3a63cce7b11a9db0"
+  },
+  {
+   "opening": "CA06/w5",
+   "argument": "CA06",
+   "slot": "w5",
+   "wording": 5,
+   "role": "pilot2",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 471,
+   "emo_words": 0,
+   "sha256": "6f9460364b23967ca43a09d440cab110c2194be263e53058a3721e651324218e",
+   "argument_sha256": "a74a43bca5449d2ebb96e08612f1ca92f3d9839a3aec1bd4e881dcd720d87a91"
+  },
+  {
+   "opening": "CA07/w1",
+   "argument": "CA07",
+   "slot": "w1",
+   "wording": 1,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 330,
+   "emo_words": 0,
+   "sha256": "413ba5d9eca65c0a47d95cacea221c80812e391e3ed560a8901c71eb4e8e9044",
+   "argument_sha256": "91e5f3420d4a2bf06d580608d129a88a8830331930100ac22960096b4f237e0e"
+  },
+  {
+   "opening": "CA08/w0",
+   "argument": "CA08",
+   "slot": "w0",
+   "wording": 0,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 0,
+   "reply_len": 549,
+   "emo_words": 0,
+   "sha256": "770b085359730eac36fe2ed8985ed67e3a62059d0b0e4c1c89a2d1f0d58da300",
+   "argument_sha256": "a90cae55cbc3af2bfe3df257e1f4c02974c85103e6ad527f7f28168665cdb55f"
+  },
+  {
+   "opening": "CA09/w2",
+   "argument": "CA09",
+   "slot": "w2",
+   "wording": 2,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 1,
+   "reply_len": 733,
+   "emo_words": 0,
+   "sha256": "01de414cfa375e40a7a530f7236268e9b16f2a38173938f137266818ecf4475a",
+   "argument_sha256": "74cf3cec749d6ed4a5870232c1198125dc8bb470ae5ce98ab12d2d58128265f2"
+  },
+  {
+   "opening": "CA10/w2",
+   "argument": "CA10",
+   "slot": "w2",
+   "wording": 2,
+   "role": "pilot",
+   "arg_kind": "control",
+   "reply_draw": 1,
+   "reply_len": 563,
+   "emo_words": 0,
+   "sha256": "d5a7510e02f15700f5350aa5f109e382be53f6fe0b82414123f8bb46d0426226",
+   "argument_sha256": "9323d977b9a5d3f25fb8871b5e27d35f0dc95ff8b14d6c0084196d22d3270e30"
+  }
+ ],
+ "guard": {
+  "stamp_b": false,
+  "status": "/home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist",
+  "stamp_a": "stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214)",
+  "heldout_sha256": "ce33e212e214b7c37dafdbb337511457218515e05583ee95f3d83b131ed67f8d",
+  "heldout_openings": []
+ },
+ "groups": {
+  "S2-CON|CA01/w4|none|20|0|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|joy|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|fear|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|euphoria|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|surprise|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N01|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N03|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N04|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N07|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N08|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N10|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N11|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N12|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N13|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N15|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N16|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|N18|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:route-planning|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:sorting|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:visual-search|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|arithmetic|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA01/w4|random|20|2|post_subject": {
+   "opening": "CA01/w4",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|none|20|0|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|joy|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|fear|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|euphoria|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|surprise|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N01|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N03|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N04|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N07|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N08|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N10|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N11|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N12|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N13|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N15|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N16|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|N18|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:route-planning|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:sorting|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:visual-search|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|arithmetic|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA02/w1|random|20|2|post_subject": {
+   "opening": "CA02/w1",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|none|20|0|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|joy|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|fear|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|euphoria|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|surprise|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N01|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N03|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N04|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N07|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N08|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N10|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N11|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N12|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N13|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N15|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N16|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|N18|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:route-planning|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:sorting|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:visual-search|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|arithmetic|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA03/w4|random|20|2|post_subject": {
+   "opening": "CA03/w4",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|none|20|0|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|joy|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|fear|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|euphoria|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|surprise|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N01|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N03|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N04|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N07|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N08|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N10|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N11|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N12|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N13|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N15|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N16|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|N18|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:route-planning|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:sorting|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:visual-search|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|arithmetic|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA04/w1|random|20|2|post_subject": {
+   "opening": "CA04/w1",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|none|20|0|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|joy|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|fear|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|euphoria|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|surprise|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N01|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N03|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N04|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N07|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N08|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N10|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N11|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N12|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N13|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N15|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N16|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|N18|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:route-planning|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:sorting|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:visual-search|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|arithmetic|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA05/w6|random|20|2|post_subject": {
+   "opening": "CA05/w6",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|none|20|0|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|joy|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|fear|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|euphoria|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|surprise|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N01|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N03|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N04|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N07|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N08|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N10|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N11|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N12|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N13|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N15|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N16|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|N18|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:route-planning|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:sorting|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:visual-search|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|arithmetic|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w1|random|20|2|post_subject": {
+   "opening": "CA06/w1",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|none|20|0|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|joy|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|fear|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|euphoria|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|surprise|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N01|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N03|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N04|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N07|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N08|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N10|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N11|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N12|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N13|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N15|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N16|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|N18|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:route-planning|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:sorting|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:visual-search|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|arithmetic|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA06/w5|random|20|2|post_subject": {
+   "opening": "CA06/w5",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|none|20|0|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|joy|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|fear|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|euphoria|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|surprise|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N01|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N03|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N04|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N07|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N08|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N10|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N11|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N12|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N13|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N15|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N16|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|N18|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:route-planning|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:sorting|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:visual-search|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|arithmetic|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA07/w1|random|20|2|post_subject": {
+   "opening": "CA07/w1",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|none|20|0|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|joy|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|fear|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|euphoria|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|surprise|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N01|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N03|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N04|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N07|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N08|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N10|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N11|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N12|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N13|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N15|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N16|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|N18|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:route-planning|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:sorting|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:visual-search|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|arithmetic|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA08/w0|random|20|2|post_subject": {
+   "opening": "CA08/w0",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|none|20|0|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|joy|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|fear|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|euphoria|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|surprise|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N01|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N03|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N04|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N07|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N08|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N10|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N11|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N12|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N13|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N15|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N16|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|N18|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:route-planning|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:sorting|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:visual-search|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|arithmetic|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA09/w2|random|20|2|post_subject": {
+   "opening": "CA09/w2",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|none|20|0|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "none",
+   "vclass": "none",
+   "dose": 0.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|joy|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "joy",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|fear|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "fear",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|euphoria|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "euphoria",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|surprise|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "surprise",
+   "vclass": "emotion",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N01|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N01",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N03|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N03",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N04|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N04",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N07|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N07",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N08|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N08",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N10|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N10",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N11|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N11",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N12|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N12",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N13|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N13",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N15|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N15",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N16|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N16",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|N18|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "N18",
+   "vclass": "noun",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:digit-memorising|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:digit-memorising",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:distance-estimation|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:distance-estimation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:mental-rotation|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:mental-rotation",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:route-planning|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:route-planning",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:sorting|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:sorting",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:spatial-recall|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:spatial-recall",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:visual-search|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:visual-search",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|mp:weighing-options|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "mp:weighing-options",
+   "vclass": "thinking",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|arithmetic|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "arithmetic",
+   "vclass": "arithmetic",
+   "dose": 2.0,
+   "set": "full"
+  },
+  "S2-CON|CA10/w2|random|20|2|post_subject": {
+   "opening": "CA10/w2",
+   "vec": "random",
+   "vclass": "noise",
+   "dose": 2.0,
+   "set": "full"
+  }
+ },
+ "n_groups": 297,
+ "tokens": 1289817,
+ "build_seconds": 18.0,
+ "tokenizer": null,
+ "suffix_chunk": 16,
+ "weights_check": {
+  "repo": "moonshotai/Kimi-K2.6",
+  "revision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+  "pinned_by": "registered (runs/s2_battery.py MODELS)",
+  "box_file": "/home/ubuntu/KimisRoom/results/s2/box/k26_box.json",
+  "box_sha256": "156609dd8951a8e7646aa8e1c14236ba1897825f4b3455e19c15af30cf18ae99",
+  "box_created": "2026-10-12T16:57:28Z",
+  "files_checked": 86,
+  "shards_checked": 64
+ },
+ "hf_revision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+ "ckpt_sha256": "7363bbe9637b4f4830c974806be6b40d08593723264362ee45c448b5cc9b8106",
+ "ckpt_hash_mode": "full",
+ "suffix_lens": {
+  "full": {
+   "s2_reference.P01.rocks.pos": 23,
+   "s2_reference.P01.humans.pos": 23,
+   "s2_reference.P01.rocks.neg": 25,
+   "s2_reference.P01.humans.neg": 25,
+   "s2_reference.P03.rocks.pos": 24,
+   "s2_reference.P03.humans.pos": 24,
+   "s2_reference.P03.rocks.neg": 27,
+   "s2_reference.P03.humans.neg": 27,
+   "s2_reference.P05.rocks.pos": 25,
+   "s2_reference.P05.humans.pos": 25,
+   "s2_reference.P05.rocks.neg": 26,
+   "s2_reference.P05.humans.neg": 26,
+   "s2_placebo.P08.rocks.pos": 25,
+   "s2_placebo.P08.humans.pos": 25,
+   "s2_placebo.P08.rocks.neg": 24,
+   "s2_placebo.P08.humans.neg": 24,
+   "s2_reference.P11.rocks.pos": 22,
+   "s2_reference.P11.humans.pos": 22,
+   "s2_reference.P11.rocks.neg": 24,
+   "s2_reference.P11.humans.neg": 24,
+   "s2_placebo.P12.rocks.pos": 23,
+   "s2_placebo.P12.humans.pos": 23,
+   "s2_placebo.P12.rocks.neg": 25,
+   "s2_placebo.P12.humans.neg": 25,
+   "s2_reference.P13.rocks.pos": 23,
+   "s2_reference.P13.humans.pos": 23,
+   "s2_reference.P13.rocks.neg": 23,
+   "s2_reference.P13.humans.neg": 23,
+   "s2_reference.P14.rocks.pos": 23,
+   "s2_reference.P14.humans.pos": 23,
+   "s2_reference.P14.rocks.neg": 25,
+   "s2_reference.P14.humans.neg": 25,
+   "s2_placebo.P16.rocks.pos": 23,
+   "s2_placebo.P16.humans.pos": 23,
+   "s2_placebo.P16.rocks.neg": 25,
+   "s2_placebo.P16.humans.neg": 25,
+   "s2_placebo.P17.rocks.pos": 23,
+   "s2_placebo.P17.humans.pos": 23,
+   "s2_placebo.P17.rocks.neg": 23,
+   "s2_placebo.P17.humans.neg": 23,
+   "s2_reference.P18.rocks.pos": 24,
+   "s2_reference.P18.humans.pos": 24,
+   "s2_reference.P18.rocks.neg": 26,
+   "s2_reference.P18.humans.neg": 26,
+   "s2_placebo.P20.rocks.pos": 25,
+   "s2_placebo.P20.humans.pos": 25,
+   "s2_placebo.P20.rocks.neg": 27,
+   "s2_placebo.P20.humans.neg": 27,
+   "s2_placebo.P21.rocks.pos": 23,
+   "s2_placebo.P21.humans.pos": 23,
+   "s2_placebo.P21.rocks.neg": 23,
+   "s2_placebo.P21.humans.neg": 23,
+   "s2_reference.P22.rocks.pos": 23,
+   "s2_reference.P22.humans.pos": 23,
+   "s2_reference.P22.rocks.neg": 23,
+   "s2_reference.P22.humans.neg": 23,
+   "s2_persona.PERSONA.rocks.pos": 23,
+   "s2_persona.PERSONA.humans.pos": 23,
+   "s2_persona.PERSONA.rocks.neg": 26,
+   "s2_persona.PERSONA.humans.neg": 26,
+   "s2_yes_bias.01.p0.pos": 26,
+   "s2_yes_bias.01.p0.neg": 24,
+   "s2_yes_bias.02.p0.pos": 25,
+   "s2_yes_bias.02.p0.neg": 27,
+   "s2_yes_bias.03.p0.pos": 25,
+   "s2_yes_bias.03.p0.neg": 29,
+   "s2_yes_bias.04.p0.pos": 25,
+   "s2_yes_bias.04.p0.neg": 25,
+   "s2_yes_bias.05.p0.pos": 25,
+   "s2_yes_bias.05.p0.neg": 25,
+   "s2_yes_bias.06.p0.pos": 26,
+   "s2_yes_bias.06.p0.neg": 26,
+   "s2_yes_bias.07.p0.pos": 25,
+   "s2_yes_bias.07.p0.neg": 27,
+   "s2_yes_bias.08.p0.pos": 23,
+   "s2_yes_bias.08.p0.neg": 24,
+   "s2_yes_bias.09.p0.pos": 27,
+   "s2_yes_bias.09.p0.neg": 29,
+   "s2_yes_bias.10.p0.pos": 25,
+   "s2_yes_bias.10.p0.neg": 25,
+   "s2_yes_bias.11.p0.pos": 25,
+   "s2_yes_bias.11.p0.neg": 29,
+   "s2_yes_bias.12.p0.pos": 25,
+   "s2_yes_bias.12.p0.neg": 27,
+   "s2_yes_bias.13.p0.pos": 25,
+   "s2_yes_bias.13.p0.neg": 25,
+   "s2_yes_bias.14.p0.pos": 25,
+   "s2_yes_bias.14.p0.neg": 25,
+   "s2_yes_bias.15.p0.pos": 26,
+   "s2_yes_bias.15.p0.neg": 26,
+   "s2_yes_bias.16.p0.pos": 26,
+   "s2_yes_bias.16.p0.neg": 27,
+   "s2_yes_bias.17.p0.pos": 26,
+   "s2_yes_bias.17.p0.neg": 26,
+   "s2_yes_bias.18.p0.pos": 26,
+   "s2_yes_bias.18.p0.neg": 28,
+   "s2_yes_bias.19.p0.pos": 28,
+   "s2_yes_bias.19.p0.neg": 28,
+   "s2_yes_bias.20.p0.pos": 24,
+   "s2_yes_bias.20.p0.neg": 24
+  }
+ },
+ "n_steered": {
+  "s2_reference.P01.rocks.pos": 18,
+  "s2_reference.P01.humans.pos": 18,
+  "s2_reference.P01.rocks.neg": 20,
+  "s2_reference.P01.humans.neg": 20,
+  "s2_reference.P03.rocks.pos": 19,
+  "s2_reference.P03.humans.pos": 19,
+  "s2_reference.P03.rocks.neg": 22,
+  "s2_reference.P03.humans.neg": 22,
+  "s2_reference.P05.rocks.pos": 20,
+  "s2_reference.P05.humans.pos": 20,
+  "s2_reference.P05.rocks.neg": 21,
+  "s2_reference.P05.humans.neg": 21,
+  "s2_placebo.P08.rocks.pos": 20,
+  "s2_placebo.P08.humans.pos": 20,
+  "s2_placebo.P08.rocks.neg": 19,
+  "s2_placebo.P08.humans.neg": 19,
+  "s2_reference.P11.rocks.pos": 17,
+  "s2_reference.P11.humans.pos": 17,
+  "s2_reference.P11.rocks.neg": 19,
+  "s2_reference.P11.humans.neg": 19,
+  "s2_placebo.P12.rocks.pos": 18,
+  "s2_placebo.P12.humans.pos": 18,
+  "s2_placebo.P12.rocks.neg": 20,
+  "s2_placebo.P12.humans.neg": 20,
+  "s2_reference.P13.rocks.pos": 18,
+  "s2_reference.P13.humans.pos": 18,
+  "s2_reference.P13.rocks.neg": 18,
+  "s2_reference.P13.humans.neg": 18,
+  "s2_reference.P14.rocks.pos": 18,
+  "s2_reference.P14.humans.pos": 18,
+  "s2_reference.P14.rocks.neg": 20,
+  "s2_reference.P14.humans.neg": 20,
+  "s2_placebo.P16.rocks.pos": 18,
+  "s2_placebo.P16.humans.pos": 18,
+  "s2_placebo.P16.rocks.neg": 20,
+  "s2_placebo.P16.humans.neg": 20,
+  "s2_placebo.P17.rocks.pos": 18,
+  "s2_placebo.P17.humans.pos": 18,
+  "s2_placebo.P17.rocks.neg": 18,
+  "s2_placebo.P17.humans.neg": 18,
+  "s2_reference.P18.rocks.pos": 19,
+  "s2_reference.P18.humans.pos": 19,
+  "s2_reference.P18.rocks.neg": 21,
+  "s2_reference.P18.humans.neg": 21,
+  "s2_placebo.P20.rocks.pos": 20,
+  "s2_placebo.P20.humans.pos": 20,
+  "s2_placebo.P20.rocks.neg": 22,
+  "s2_placebo.P20.humans.neg": 22,
+  "s2_placebo.P21.rocks.pos": 18,
+  "s2_placebo.P21.humans.pos": 18,
+  "s2_placebo.P21.rocks.neg": 18,
+  "s2_placebo.P21.humans.neg": 18,
+  "s2_reference.P22.rocks.pos": 18,
+  "s2_reference.P22.humans.pos": 18,
+  "s2_reference.P22.rocks.neg": 18,
+  "s2_reference.P22.humans.neg": 18,
+  "s2_persona.PERSONA.rocks.pos": 18,
+  "s2_persona.PERSONA.humans.pos": 18,
+  "s2_persona.PERSONA.rocks.neg": 21,
+  "s2_persona.PERSONA.humans.neg": 21,
+  "s2_yes_bias.01.p0.pos": 20,
+  "s2_yes_bias.01.p0.neg": 20,
+  "s2_yes_bias.02.p0.pos": 20,
+  "s2_yes_bias.02.p0.neg": 20,
+  "s2_yes_bias.03.p0.pos": 20,
+  "s2_yes_bias.03.p0.neg": 20,
+  "s2_yes_bias.04.p0.pos": 20,
+  "s2_yes_bias.04.p0.neg": 20,
+  "s2_yes_bias.05.p0.pos": 20,
+  "s2_yes_bias.05.p0.neg": 20,
+  "s2_yes_bias.06.p0.pos": 20,
+  "s2_yes_bias.06.p0.neg": 20,
+  "s2_yes_bias.07.p0.pos": 20,
+  "s2_yes_bias.07.p0.neg": 20,
+  "s2_yes_bias.08.p0.pos": 20,
+  "s2_yes_bias.08.p0.neg": 20,
+  "s2_yes_bias.09.p0.pos": 20,
+  "s2_yes_bias.09.p0.neg": 20,
+  "s2_yes_bias.10.p0.pos": 20,
+  "s2_yes_bias.10.p0.neg": 20,
+  "s2_yes_bias.11.p0.pos": 20,
+  "s2_yes_bias.11.p0.neg": 20,
+  "s2_yes_bias.12.p0.pos": 20,
+  "s2_yes_bias.12.p0.neg": 20,
+  "s2_yes_bias.13.p0.pos": 20,
+  "s2_yes_bias.13.p0.neg": 20,
+  "s2_yes_bias.14.p0.pos": 20,
+  "s2_yes_bias.14.p0.neg": 20,
+  "s2_yes_bias.15.p0.pos": 20,
+  "s2_yes_bias.15.p0.neg": 20,
+  "s2_yes_bias.16.p0.pos": 20,
+  "s2_yes_bias.16.p0.neg": 20,
+  "s2_yes_bias.17.p0.pos": 20,
+  "s2_yes_bias.17.p0.neg": 20,
+  "s2_yes_bias.18.p0.pos": 20,
+  "s2_yes_bias.18.p0.neg": 20,
+  "s2_yes_bias.19.p0.pos": 20,
+  "s2_yes_bias.19.p0.neg": 20,
+  "s2_yes_bias.20.p0.pos": 20,
+  "s2_yes_bias.20.p0.neg": 20
+ },
+ "job_digest": "b21bca9063498ecd5d1df68a549a7489f06da8f6dcc0c9e01c0263af6d0edff0"
+}
