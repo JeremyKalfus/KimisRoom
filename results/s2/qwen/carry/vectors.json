@@ -1,0 +1,60 @@
+{
+ "model": "qwen",
+ "dose": 1.0,
+ "emotions": [
+  "anger",
+  "euphoria",
+  "fear",
+  "joy",
+  "sadness",
+  "surprise"
+ ],
+ "primary_controls": [
+  "N01",
+  "N03",
+  "N04",
+  "N05",
+  "N06",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N14",
+  "N15",
+  "N16",
+  "N17",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N24",
+  "N25",
+  "N26",
+  "arithmetic",
+  "random"
+ ],
+ "nC": 26,
+ "thinking": [
+  "mp:digit-memorising",
+  "mp:distance-estimation",
+  "mp:mental-rotation",
+  "mp:route-planning",
+  "mp:sorting",
+  "mp:spatial-recall",
+  "mp:visual-search",
+  "mp:weighing-options"
+ ],
+ "n_mp": 8,
+ "bridge_in_S2-DEN": [
+  "red",
+  "ocean"
+ ],
+ "decision_file": "results/s2/pilot/qwen_decision.json",
+ "decision_sha256": "a7af179bd7c29c86bfb1609ef07ee2bdeab70dbaeefd54dbdb3646e1ad9e790b",
+ "nouns_file": "results/s2/qwen/nouns/nouns.json",
+ "nouns_sha256": "57531c5c74c3c91ecc6694d24cd12059d0bfc3d1454295d373237e86a308eb93"
+}

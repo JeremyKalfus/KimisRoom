@@ -1,0 +1,200 @@
+2026-10-12T03:19:49Z start: setup_qwen env_qwen moonlight vectors_qwen merge ftvec assent (pid 2887)
+2026-10-12T03:19:49Z setup_qwen: start
+2026-10-12T03:21:11Z setup_qwen: ok in 82s
+2026-10-12T03:21:11Z env_qwen: start
+2026-10-12T03:21:30Z env_qwen: ok in 19s
+2026-10-12T03:21:30Z moonlight: start
+2026-10-12T03:23:15Z moonlight: FAILED (rc 1) after 105s; tail of /home/ubuntu/s2/logs/moonlight.log:
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-6-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-27-of-27.safetensors
+Fetching 45 files:  93%|█████████▎| 42/45 [01:00<00:04,  1.44s/it]Download complete. Moving file to /home/ubuntu/models/moonlight/model-7-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-8-of-27.safetensors
+Download complete. Moving file to /home/ubuntu/models/moonlight/model-9-of-27.safetensors
+Fetching 45 files: 100%|██████████| 45/45 [01:02<00:00,  1.38s/it]Fetching 45 files: 100%|██████████| 45/45 [01:02<00:00,  1.38s/it]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 52.49it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:00<00:00, 50.69it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:00<00:00, 50.27it/s]Loading checkpoint shards:  89%|████████▉ | 24/27 [00:00<00:00, 50.04it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 50.25it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+noise floor (ref batch 1 vs 3): max |dlogprob| on ref top-20 0.1268
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 133, in <module>
+    d_right, d_early, d_unread = dist(right), dist(early), dist(unread)
+                                                           ~~~~^^^^^^^^
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 129, in dist
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 129, in <genexpr>
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+                                                           ~~~~~~~~^^^
+ValueError: 40 is not in list
+2026-10-12T03:23:49Z start: assent (pid 4136)
+2026-10-12T03:23:49Z start: kr (pid 4134)
+2026-10-12T03:23:49Z assent: start
+2026-10-12T03:23:49Z kr: start
+2026-10-12T03:56:19Z kr: ok in 1950s
+2026-10-12T03:56:19Z done: kr
+2026-10-12T10:13:31Z assent: ok in 24582s
+2026-10-12T10:13:31Z done: assent
+2026-10-12T10:13:31Z start: vectors_qwen (pid 22184)
+2026-10-12T10:13:31Z vectors_qwen: start
+2026-10-12T10:21:37Z vectors_qwen: ok in 486s
+2026-10-12T10:21:37Z done: vectors_qwen
+2026-10-12T10:21:37Z start: merge (pid 22798)
+2026-10-12T10:21:37Z merge: start
+2026-10-12T10:24:46Z merge: ok in 189s
+2026-10-12T10:24:46Z done: merge
+2026-10-12T10:24:46Z start: ftvec (pid 23109)
+2026-10-12T10:24:46Z ftvec: start
+2026-10-12T10:41:06Z ftvec: ok in 980s
+2026-10-12T10:41:06Z done: ftvec
+2026-10-12T16:40:50Z start: moonlight (pid 2495)
+2026-10-12T16:40:50Z moonlight: start
+2026-10-12T16:43:24Z moonlight: FAILED (rc 1) after 154s; tail of /home/ubuntu/s2/logs/moonlight.log:
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 129, in <genexpr>
+    d.append(max(abs(float(x[i]) - float(e.target_logprobs[tg.index(i)])) for i in top))
+                                                           ~~~~~~~~^^^
+ValueError: 40 is not in list
+==== 2026-10-12T16:40:50Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Fetching 45 files: 100%|██████████| 45/45 [00:00<00:00, 1270.72it/s]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 2/27 [00:00<00:04,  5.69it/s]Loading checkpoint shards:  11%|█         | 3/27 [00:00<00:05,  4.19it/s]Loading checkpoint shards:  15%|█▍        | 4/27 [00:01<00:06,  3.68it/s]Loading checkpoint shards:  19%|█▊        | 5/27 [00:01<00:06,  3.43it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:01<00:06,  3.31it/s]Loading checkpoint shards:  26%|██▌       | 7/27 [00:01<00:06,  3.23it/s]Loading checkpoint shards:  30%|██▉       | 8/27 [00:02<00:05,  3.18it/s]Loading checkpoint shards:  33%|███▎      | 9/27 [00:02<00:05,  3.14it/s]Loading checkpoint shards:  37%|███▋      | 10/27 [00:02<00:05,  3.12it/s]Loading checkpoint shards:  41%|████      | 11/27 [00:03<00:05,  3.10it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:03<00:04,  3.09it/s]Loading checkpoint shards:  48%|████▊     | 13/27 [00:03<00:04,  3.08it/s]Loading checkpoint shards:  52%|█████▏    | 14/27 [00:04<00:04,  3.08it/s]Loading checkpoint shards:  56%|█████▌    | 15/27 [00:04<00:03,  3.07it/s]Loading checkpoint shards:  59%|█████▉    | 16/27 [00:04<00:03,  3.07it/s]Loading checkpoint shards:  63%|██████▎   | 17/27 [00:05<00:03,  3.07it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:05<00:02,  3.07it/s]Loading checkpoint shards:  70%|███████   | 19/27 [00:05<00:02,  3.07it/s]Loading checkpoint shards:  74%|███████▍  | 20/27 [00:06<00:02,  3.07it/s]Loading checkpoint shards:  78%|███████▊  | 21/27 [00:06<00:01,  3.07it/s]Loading checkpoint shards:  81%|████████▏ | 22/27 [00:06<00:01,  3.07it/s]Loading checkpoint shards:  85%|████████▌ | 23/27 [00:07<00:01,  3.07it/s]Loading checkpoint shards:  89%|████████▉ | 24/27 [00:07<00:00,  3.07it/s]Loading checkpoint shards:  93%|█████████▎| 25/27 [00:07<00:00,  3.08it/s]Loading checkpoint shards:  96%|█████████▋| 26/27 [00:08<00:00,  3.08it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:08<00:00,  3.07it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:08<00:00,  3.18it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+noise floor (ref batch 1 vs 3): max |dlogprob| on ref top-20 0.1268
+2. engine vs reference, mean (max) |dlogprob| on ref top-20: right 0.484 (1.820); one token early 0.475; readout unsteered 14.289
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/tests/s2_moonlight_spans.py", line 145, in <module>
+    assert statistics.mean(d_right) < statistics.mean(d_early) and statistics.mean(d_right) < statistics.mean(d_unread), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: the engine is not closer to the correct window than to a shifted one
+2026-10-12T16:43:24Z start: setup_k26 env_k26 vectors_k26 potency_k26 (pid 2493)
+2026-10-12T16:43:24Z setup_k26: start
+2026-10-12T16:53:32Z setup_k26: ok in 608s
+2026-10-12T16:53:32Z env_k26: start
+2026-10-12T16:57:39Z env_k26: ok in 247s
+2026-10-12T16:57:39Z vectors_k26: start
+2026-10-12T17:07:16Z vectors_k26: ok in 577s
+2026-10-12T17:07:16Z potency_k26: start
+2026-10-12T17:07:19Z potency_k26: FAILED (rc 1) after 3s; tail of /home/ubuntu/s2/logs/potency_k26.log:
+==== 2026-10-12T17:07:16Z potency_k26
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 889, in <module>
+    main()
+    ~~~~^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 883, in main
+    return stage_potency(a)
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 734, in stage_potency
+    vecs, prov = resolve_vectors(a, model, layer, "pilot", "S2-DEN")  # pilot: every mental-process control
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 255, in resolve_vectors
+    T.check_vec({"model": model, "vec": n, "vclass": c})
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_table.py", line 188, in check_vec
+    need(ok, f"vector {v!r} does not fit class {c!r} for model {m}")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_table.py", line 146, in need
+    raise S2Error(msg)
+s2_table.S2Error: vector 'mp:digit-memorising' does not fit class 'thinking' for model k26
+2026-10-12T17:07:31Z start: setup_qwen (pid 5678)
+2026-10-12T17:07:31Z setup_qwen: start
+2026-10-12T17:08:32Z setup_qwen: ok in 61s
+2026-10-12T17:08:32Z done: setup_qwen
+2026-10-12T17:23:52Z start: potency_k26 (pid 8470)
+2026-10-12T17:23:52Z potency_k26: start
+2026-10-12T17:33:08Z potency_k26: ok in 556s
+2026-10-12T17:33:08Z done: potency_k26
+2026-10-12T17:33:21Z start: moonlight (pid 10564)
+2026-10-12T17:33:21Z moonlight: start
+2026-10-12T17:35:22Z moonlight: FAILED (rc 1) after 121s; tail of /home/ubuntu/s2/logs/moonlight.log:
+4. fp32 y vs full-readout y within the bf16 bound (worst 0.55 of it)
+all checks passed
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 248 hashes; stamp A not written yet: the held-out list is taken as it stands; /home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist
+ /opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 903, in <module>
+    main()
+    ~~~~^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 899, in main
+    stage_run(a)
+    ~~~~~~~~~^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 653, in stage_run
+    groups, job, meta = build(a, model, str(model_path) if model_path else (a.tokenizer or ""))
+                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 444, in build
+    g = post_subject_group(r, "x", msgs, its, "none", 0.0, layer, tail)
+  File "/home/ubuntu/KimisRoom/kimisroom/trials.py", line 158, in post_subject_group
+    assert offset(q_at) <= a < offset(q_at + len(it["text"])), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Is water free of hydrogen? Answer with one word, Yes or No.': the last 20 tokens do not start inside the question
+
+command failed: runs/s2_run.py run --model k26 --model-path /home/ubuntu/models/moonlight --out /tmp/s2rung99edr1c/moon_pilot --test --layer 14 --heldout /tmp/s2rung99edr1c/heldout.json --emotion-vectors /tmp/s2rung99edr1c/vectors.pt --controls /tmp/s2rung99edr1c/controls --arm S2-DEN --phase pilot --replies /tmp/s2rung99edr1c/replies --openings DA01/w3,DA02/w1 --vecs joy,N01 --gpus-per-worker 1 --box /tmp/s2rung99edr1c/box.json --pin-revision moonshotai/Moonlight-16B-A3B-Instruct@test-revision
+2026-10-12T17:35:33Z start: unsteered_k26 (pid 11125)
+2026-10-12T17:35:33Z unsteered_k26: start
+2026-10-12T17:45:54Z unsteered_k26: ok in 621s
+2026-10-12T17:45:54Z done: unsteered_k26
+2026-10-12T17:45:57Z start: extend_qwen0 (pid 11652)
+2026-10-12T17:45:57Z extend_qwen0: start
+2026-10-12T19:57:12Z extend_qwen0: ok in 7875s
+2026-10-12T19:57:12Z done: extend_qwen0
+2026-10-12T19:57:24Z start: moonlight (pid 18385)
+2026-10-12T19:57:24Z moonlight: start
+2026-10-12T19:59:44Z moonlight: FAILED (rc 1) after 140s; tail of /home/ubuntu/s2/logs/moonlight.log:
+
+command failed: runs/s2_run.py run --model k26 --model-path /home/ubuntu/models/moonlight --out /tmp/s2rung99edr1c/moon_pilot --test --layer 14 --heldout /tmp/s2rung99edr1c/heldout.json --emotion-vectors /tmp/s2rung99edr1c/vectors.pt --controls /tmp/s2rung99edr1c/controls --arm S2-DEN --phase pilot --replies /tmp/s2rung99edr1c/replies --openings DA01/w3,DA02/w1 --vecs joy,N01 --gpus-per-worker 1 --box /tmp/s2rung99edr1c/box.json --pin-revision moonshotai/Moonlight-16B-A3B-Instruct@test-revision
+==== 2026-10-12T19:57:24Z moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.12.1+cu130 4 GPUs
+Fetching 45 files:   0%|          | 0/45 [00:00<?, ?it/s]Fetching 45 files: 100%|██████████| 45/45 [00:00<00:00, 1151.26it/s]
+/home/ubuntu/models/moonlight
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:  22%|██▏       | 6/27 [00:00<00:00, 49.57it/s]Loading checkpoint shards:  41%|████      | 11/27 [00:00<00:00, 47.66it/s]Loading checkpoint shards:  59%|█████▉    | 16/27 [00:00<00:00, 47.15it/s]Loading checkpoint shards:  78%|███████▊  | 21/27 [00:00<00:00, 22.08it/s]Loading checkpoint shards:  96%|█████████▋| 26/27 [00:00<00:00, 27.13it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:00<00:00, 30.50it/s]
+prefix 111 tokens, 28 suffixes of 21-28 tokens, tail 17
+1. engine positions == spans, windows start right after the subject
+2a. after layer 8: added vector |coef*v| 55.34, mean error engine 0.0941 reference 0.0941; nothing changed before any window; unsteered engine vs reference 0.0267 relative
+2b. engine vs reference, mean (max) |dlogprob| on ref top-20: right 0.484 (1.820); reference batch 1 vs 3 under steering 0.413; one token early 0.475 (right vs early reference 0.482, not asserted); readout unsteered 14.289
+3. zero vector with per-question windows: bit-exact
+4. fp32 y vs full-readout y within the bf16 bound (worst 0.55 of it)
+all checks passed
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+FAIL Moonlight via kimisroom.run: s2_table refuses: reference fit needs at least 3 items, got 0
+PASS layer-wise engine backend; kimisroom.run's guard ran ({'stamp_b': False, 'status': '/home/ubuntu/KimisRoom/prereg/manifest-s2.txt does not exist', 'stamp_a': 'stamp A not written yet: the held-out list is taken as it stands', 'heldout_prefixes': 0}); 6 groups
+
+1 failure(s)
+2026-10-19T03:52:34Z start: setup_qwen env_qwen confirm_qwen merge confirm_ft setup_k26 env_k26 confirm_k26 carry_qwen (pid 2441)
+2026-10-19T03:52:34Z setup_qwen: start
+2026-10-19T03:54:53Z setup_qwen: ok in 139s
+2026-10-19T03:54:53Z env_qwen: outputs exist, skipped
+2026-10-19T03:54:53Z confirm_qwen: start
+2026-10-19T06:36:51Z confirm_qwen: ok in 9718s
+2026-10-19T06:36:51Z merge: start
+2026-10-19T06:38:58Z merge: ok in 127s
+2026-10-19T06:38:58Z confirm_ft: start
+2026-10-19T09:10:24Z confirm_ft: ok in 9086s
+2026-10-19T09:10:24Z setup_k26: start
+2026-10-19T09:13:56Z setup_k26: ok in 212s
+2026-10-19T09:13:56Z env_k26: outputs exist, skipped
+2026-10-19T09:13:56Z confirm_k26: start
+2026-10-19T11:57:17Z confirm_k26: ok in 9801s
+2026-10-19T11:57:17Z carry_qwen: start
+2026-10-19T13:20:49Z carry_qwen: ok in 5012s
+2026-10-19T13:20:49Z done: setup_qwen env_qwen confirm_qwen merge confirm_ft setup_k26 env_k26 confirm_k26 carry_qwen

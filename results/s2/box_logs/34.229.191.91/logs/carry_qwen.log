@@ -1,0 +1,165 @@
+==== 2026-10-19T11:57:17Z carry_qwen
+stamp A: 1446 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/qwen3-32b/selected.json data/s2/replies/qwen3-32b/eligible.json results/qwen/s2/controls.pt results/qwen/s2/pool.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+stamp B: 1449 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/qwen3-32b/selected.json data/s2/replies/qwen3-32b/eligible.json results/qwen/s2/controls.pt results/qwen/s2/pool.json results/qwen/v2/vectors.pt results/s2/pilot/qwen_decision.json results/s2/qwen/nouns/nouns.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+stamp B: 7 files match (runs/s2_carry.py runs/confirm_table.py kimisroom/battery.py prompts/battery/items_confirm.jsonl prompts/tasks/confirmatory_tasks.jsonl prompts/denial/d1_argument_4.md data/assent/qwen3-32b_d1_argument_4.json)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+  DA01/w0: task c01, prefix 2,603 tokens, answer span (2459, 2601)
+  DA01/w1: task c02, prefix 2,377 tokens, answer span (2237, 2375)
+  DA01/w4: task c03, prefix 2,548 tokens, answer span (2397, 2546)
+  DA01/w5: task c04, prefix 2,218 tokens, answer span (2059, 2216)
+  DA01/w6: task c05, prefix 2,565 tokens, answer span (2428, 2563)
+  DA02/w2: task c06, prefix 2,654 tokens, answer span (2501, 2652)
+  DA02/w3: task c07, prefix 2,696 tokens, answer span (2524, 2694)
+  DA02/w4: task c08, prefix 2,566 tokens, answer span (2413, 2564)
+  DA02/w5: task c09, prefix 2,599 tokens, answer span (2451, 2597)
+  DA02/w6: task c10, prefix 3,294 tokens, answer span (3140, 3292)
+  DA03/w0: task c11, prefix 2,525 tokens, answer span (2377, 2523)
+  DA03/w1: task c12, prefix 2,231 tokens, answer span (2077, 2229)
+  DA03/w2: task c13, prefix 2,903 tokens, answer span (2745, 2901)
+  DA03/w3: task c14, prefix 2,538 tokens, answer span (2397, 2536)
+  DA03/w6: task c15, prefix 2,935 tokens, answer span (2787, 2933)
+  DA04/w0: task c16, prefix 2,859 tokens, answer span (2697, 2857)
+  DA04/w2: task c17, prefix 2,779 tokens, answer span (2639, 2777)
+  DA04/w3: task c18, prefix 2,745 tokens, answer span (2586, 2743)
+  DA04/w5: task c19, prefix 2,418 tokens, answer span (2266, 2416)
+  DA04/w6: task c20, prefix 3,104 tokens, answer span (2958, 3102)
+  DA05/w0: task c21, prefix 2,706 tokens, answer span (2556, 2704)
+  DA05/w1: task c22, prefix 2,396 tokens, answer span (2233, 2394)
+  DA05/w3: task c23, prefix 2,759 tokens, answer span (2594, 2757)
+  DA05/w4: task c24, prefix 2,438 tokens, answer span (2289, 2436)
+  DA06/w0: task c25, prefix 2,861 tokens, answer span (2673, 2859)
+  DA06/w1: task c26, prefix 2,368 tokens, answer span (2209, 2366)
+  DA06/w2: task c27, prefix 2,649 tokens, answer span (2509, 2647)
+  DA06/w3: task c28, prefix 2,845 tokens, answer span (2701, 2843)
+  DA06/w4: task c29, prefix 2,591 tokens, answer span (2424, 2589)
+  DA07/w0: task c30, prefix 2,508 tokens, answer span (2358, 2506)
+  DA07/w2: task c31, prefix 2,510 tokens, answer span (2354, 2508)
+  DA07/w3: task c32, prefix 2,832 tokens, answer span (2666, 2830)
+  DA07/w4: task c33, prefix 2,922 tokens, answer span (2746, 2920)
+  DA07/w5: task c34, prefix 2,700 tokens, answer span (2516, 2698)
+  DA08/w1: task c35, prefix 2,688 tokens, answer span (2543, 2686)
+  DA08/w2: task c36, prefix 2,459 tokens, answer span (2306, 2457)
+  DA08/w3: task c37, prefix 2,563 tokens, answer span (2406, 2561)
+  DA08/w4: task c38, prefix 3,038 tokens, answer span (2891, 3036)
+  DA08/w6: task c39, prefix 3,055 tokens, answer span (2909, 3053)
+  DA09/w0: task c40, prefix 2,246 tokens, answer span (2107, 2244)
+  DA09/w1: task c01, prefix 2,348 tokens, answer span (2204, 2346)
+  DA09/w2: task c02, prefix 2,560 tokens, answer span (2420, 2558)
+  DA09/w4: task c03, prefix 2,477 tokens, answer span (2326, 2475)
+  DA09/w5: task c04, prefix 2,529 tokens, answer span (2370, 2527)
+  DA10/w0: task c05, prefix 2,631 tokens, answer span (2494, 2629)
+  DA10/w2: task c06, prefix 2,436 tokens, answer span (2283, 2434)
+  DA10/w3: task c07, prefix 2,145 tokens, answer span (1973, 2143)
+  DA10/w4: task c08, prefix 2,256 tokens, answer span (2103, 2254)
+  DA10/w5: task c09, prefix 2,411 tokens, answer span (2263, 2409)
+carry-over: 49 openings x (10 vectors at 2 units + unsteered) = 539 groups, 8,179,842 tokens (0.90 h at Study 1 Qwen confirmatory (2,523 tok/s), 1.34 h at pilot's slower end (1,700 tok/s)); built in 130.5s
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+held-out guard: 49 distinct prefixes decoded, 49 held-out
+539 groups, 8,179,842 tokens, hf backend on 1 worker(s) x 2 GPU(s), passes per worker [11]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:06,  2.50it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:05,  2.52it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:01<00:05,  2.53it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:05,  2.54it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:04,  2.54it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:02<00:04,  2.54it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  2.55it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:03<00:03,  2.55it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:03<00:03,  2.55it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  2.55it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:04<00:02,  2.55it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:04<00:01,  2.55it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:05<00:01,  2.55it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:05<00:01,  2.55it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:05<00:00,  2.55it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:06<00:00,  2.55it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:06<00:00,  2.74it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:06<00:00,  2.58it/s]
+[w0 pass 1/11] group 10/51: 96s, 1,654 tok/s (prefix 7s, suffix 89s)
+[w0 pass 1/11] group 20/51: 189s, 1,665 tok/s (prefix 14s, suffix 176s)
+[w0 pass 1/11] group 30/51: 281s, 1,676 tok/s (prefix 20s, suffix 261s)
+[w0 pass 1/11] group 40/51: 372s, 1,685 tok/s (prefix 26s, suffix 346s)
+[w0 pass 1/11] group 50/51: 463s, 1,693 tok/s (prefix 32s, suffix 430s)
+[w0 pass 1/11] group 51/51: 472s, 1,694 tok/s (prefix 33s, suffix 439s)
+[w0 pass 1/11] done: 51 groups, 798,608 tokens, 473s, peak 84.2 GB
+[w0 pass 2/11] group 10/51: 89s, 1,733 tok/s (prefix 6s, suffix 83s)
+[w0 pass 2/11] group 20/51: 179s, 1,734 tok/s (prefix 12s, suffix 167s)
+[w0 pass 2/11] group 30/51: 267s, 1,736 tok/s (prefix 18s, suffix 249s)
+[w0 pass 2/11] group 40/51: 355s, 1,740 tok/s (prefix 24s, suffix 331s)
+[w0 pass 2/11] group 50/51: 444s, 1,740 tok/s (prefix 30s, suffix 414s)
+[w0 pass 2/11] group 51/51: 453s, 1,741 tok/s (prefix 31s, suffix 422s)
+[w0 pass 2/11] done: 51 groups, 787,932 tokens, 454s, peak 84.2 GB
+[w0 pass 3/11] group 10/52: 88s, 1,745 tok/s (prefix 6s, suffix 82s)
+[w0 pass 3/11] group 20/52: 178s, 1,732 tok/s (prefix 12s, suffix 166s)
+[w0 pass 3/11] group 30/52: 265s, 1,740 tok/s (prefix 18s, suffix 248s)
+[w0 pass 3/11] group 40/52: 352s, 1,745 tok/s (prefix 23s, suffix 329s)
+[w0 pass 3/11] group 50/52: 438s, 1,751 tok/s (prefix 29s, suffix 410s)
+[w0 pass 3/11] group 52/52: 456s, 1,752 tok/s (prefix 30s, suffix 426s)
+[w0 pass 3/11] done: 52 groups, 798,249 tokens, 457s, peak 84.2 GB
+[w0 pass 4/11] group 10/52: 86s, 1,778 tok/s (prefix 6s, suffix 80s)
+[w0 pass 4/11] group 20/52: 173s, 1,761 tok/s (prefix 11s, suffix 162s)
+[w0 pass 4/11] group 30/52: 261s, 1,754 tok/s (prefix 17s, suffix 244s)
+[w0 pass 4/11] group 40/52: 348s, 1,753 tok/s (prefix 22s, suffix 326s)
+[w0 pass 4/11] group 50/52: 434s, 1,758 tok/s (prefix 28s, suffix 406s)
+[w0 pass 4/11] group 52/52: 451s, 1,759 tok/s (prefix 29s, suffix 422s)
+[w0 pass 4/11] done: 52 groups, 793,146 tokens, 453s, peak 84.2 GB
+[w0 pass 5/11] group 10/52: 85s, 1,795 tok/s (prefix 5s, suffix 79s)
+[w0 pass 5/11] group 20/52: 170s, 1,793 tok/s (prefix 11s, suffix 159s)
+[w0 pass 5/11] group 30/52: 254s, 1,793 tok/s (prefix 16s, suffix 238s)
+[w0 pass 5/11] group 40/52: 339s, 1,795 tok/s (prefix 22s, suffix 317s)
+[w0 pass 5/11] group 50/52: 423s, 1,795 tok/s (prefix 27s, suffix 396s)
+[w0 pass 5/11] group 52/52: 440s, 1,796 tok/s (prefix 28s, suffix 411s)
+[w0 pass 5/11] done: 52 groups, 789,443 tokens, 441s, peak 84.2 GB
+[w0 pass 6/11] group 10/52: 84s, 1,804 tok/s (prefix 5s, suffix 79s)
+[w0 pass 6/11] group 20/52: 168s, 1,806 tok/s (prefix 11s, suffix 157s)
+[w0 pass 6/11] group 30/52: 251s, 1,808 tok/s (prefix 16s, suffix 235s)
+[w0 pass 6/11] group 40/52: 335s, 1,806 tok/s (prefix 22s, suffix 314s)
+[w0 pass 6/11] group 50/52: 420s, 1,801 tok/s (prefix 27s, suffix 393s)
+[w0 pass 6/11] group 52/52: 437s, 1,800 tok/s (prefix 28s, suffix 409s)
+[w0 pass 6/11] done: 52 groups, 786,660 tokens, 439s, peak 84.2 GB
+[w0 pass 7/11] group 10/53: 85s, 1,779 tok/s (prefix 5s, suffix 80s)
+[w0 pass 7/11] group 20/53: 168s, 1,797 tok/s (prefix 10s, suffix 158s)
+[w0 pass 7/11] group 30/53: 251s, 1,803 tok/s (prefix 16s, suffix 236s)
+[w0 pass 7/11] group 40/53: 334s, 1,807 tok/s (prefix 21s, suffix 313s)
+[w0 pass 7/11] group 50/53: 417s, 1,809 tok/s (prefix 26s, suffix 391s)
+[w0 pass 7/11] group 53/53: 442s, 1,809 tok/s (prefix 27s, suffix 415s)
+[w0 pass 7/11] done: 53 groups, 799,840 tokens, 444s, peak 84.2 GB
+[w0 pass 8/11] group 10/53: 85s, 1,776 tok/s (prefix 5s, suffix 80s)
+[w0 pass 8/11] group 20/53: 167s, 1,800 tok/s (prefix 10s, suffix 157s)
+[w0 pass 8/11] group 30/53: 249s, 1,810 tok/s (prefix 15s, suffix 234s)
+[w0 pass 8/11] group 40/53: 331s, 1,814 tok/s (prefix 21s, suffix 311s)
+[w0 pass 8/11] group 50/53: 414s, 1,813 tok/s (prefix 26s, suffix 389s)
+[w0 pass 8/11] group 53/53: 440s, 1,812 tok/s (prefix 27s, suffix 412s)
+[w0 pass 8/11] done: 53 groups, 796,412 tokens, 441s, peak 84.2 GB
+[w0 pass 9/11] group 10/53: 82s, 1,829 tok/s (prefix 5s, suffix 77s)
+[w0 pass 9/11] group 20/53: 163s, 1,833 tok/s (prefix 10s, suffix 153s)
+[w0 pass 9/11] group 30/53: 246s, 1,828 tok/s (prefix 15s, suffix 231s)
+[w0 pass 9/11] group 40/53: 328s, 1,828 tok/s (prefix 20s, suffix 307s)
+[w0 pass 9/11] group 50/53: 409s, 1,830 tok/s (prefix 25s, suffix 384s)
+[w0 pass 9/11] group 53/53: 433s, 1,829 tok/s (prefix 27s, suffix 407s)
+[w0 pass 9/11] done: 53 groups, 792,856 tokens, 435s, peak 84.2 GB
+[w0 pass 10/11] group 10/53: 82s, 1,820 tok/s (prefix 5s, suffix 77s)
+[w0 pass 10/11] group 20/53: 163s, 1,826 tok/s (prefix 10s, suffix 153s)
+[w0 pass 10/11] group 30/53: 243s, 1,837 tok/s (prefix 14s, suffix 228s)
+[w0 pass 10/11] group 40/53: 321s, 1,849 tok/s (prefix 19s, suffix 302s)
+[w0 pass 10/11] group 50/53: 399s, 1,858 tok/s (prefix 23s, suffix 376s)
+[w0 pass 10/11] group 53/53: 423s, 1,860 tok/s (prefix 25s, suffix 398s)
+[w0 pass 10/11] done: 53 groups, 786,239 tokens, 424s, peak 84.2 GB
+[w0 pass 11/11] group 10/17: 78s, 1,897 tok/s (prefix 4s, suffix 73s)
+[w0 pass 11/11] group 17/17: 132s, 1,902 tok/s (prefix 8s, suffix 124s)
+[w0 pass 11/11] done: 17 groups, 250,457 tokens, 132s, peak 84.2 GB
+wrote results/s2/qwen/carry/carryover/grid.pt: 539 groups, 8,179,842 tokens in 4626s (1,768 tok/s)
+results/s2/qwen/carry/carryover/table.csv: 57,918 rows (runs/confirm_table.py)
+qwen S2-DEN: dose 1, 6 emotions, nC 26, n_mp 8, red and ocean
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+bridge: runs/s2_run.py's S2-DEN confirm path on the one opening S1-ARG4 (D1.4 and its frozen Qwen reply), every group relabelled S2-BRIDGE
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+qwen S2-DEN confirm: 1 openings, 42 vectors x doses [1.0] + zero, 43 groups, 350,106 tokens (built in 2.0s)
+weights /nvme/qwen/Qwen3-32B: Qwen/Qwen3-32B@9216db5781bf21249d130ec9da846c4624c16137 (registered (runs/s2_battery.py MODELS)), 26 files match /home/ubuntu/KimisRoom/results/s2/box/qwen_box.json
+checkpoint /nvme/qwen/Qwen3-32B: sha256 ff877319ccba25879d0ca4ffd64e21e902593ebc2f69ad0d805b925d8dd820c2 (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+held-out guard: 1 distinct prefixes decoded, 0 held-out
+43 groups, 350,106 tokens, hf backend on 1 worker(s) x 2 GPU(s), passes per worker [1]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:06,  2.57it/s]Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:05,  2.58it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:01<00:05,  2.59it/s]Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:04,  2.60it/s]Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:04,  2.61it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:02<00:04,  2.61it/s]Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:03,  2.61it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:03<00:03,  2.61it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:03<00:03,  2.61it/s]Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  2.62it/s]Loading checkpoint shards:  65%|██████▍   | 11/17 [00:04<00:02,  2.62it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:04<00:01,  2.62it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  2.62it/s]Loading checkpoint shards:  82%|████████▏ | 14/17 [00:05<00:01,  2.62it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:05<00:00,  2.62it/s]Loading checkpoint shards:  94%|█████████▍| 16/17 [00:06<00:00,  2.62it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:06<00:00,  2.80it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:06<00:00,  2.65it/s]
+[w0 pass 1/1] group 10/43: 42s, 1,918 tok/s (prefix 5s, suffix 38s)
+[w0 pass 1/1] group 20/43: 84s, 1,943 tok/s (prefix 9s, suffix 75s)
+[w0 pass 1/1] group 30/43: 125s, 1,952 tok/s (prefix 13s, suffix 112s)
+[w0 pass 1/1] group 40/43: 166s, 1,957 tok/s (prefix 17s, suffix 149s)
+[w0 pass 1/1] group 43/43: 179s, 1,958 tok/s (prefix 18s, suffix 161s)
+[w0 pass 1/1] done: 43 groups, 350,106 tokens, 180s, peak 77.2 GB
+wrote results/s2/qwen/carry/bridge/grid.pt: 43 groups, 350,106 tokens in 188s (1,860 tok/s)
+results/s2/qwen/carry/bridge/readouts.csv: 9,288 readouts from 43 groups
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+results/s2/qwen/carry/bridge/table.csv: 14,742 rows from 42 steered groups; bridge X = -0.456 (95% CI -0.742 to -0.170, 6 emotions vs 26 primary controls); results/s2/qwen/carry/bridge/summary.csv: 11 rows

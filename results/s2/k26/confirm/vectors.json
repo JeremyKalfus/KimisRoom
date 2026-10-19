@@ -1,0 +1,54 @@
+{
+ "model": "k26",
+ "dose": 2.0,
+ "emotions": [
+  "euphoria",
+  "fear",
+  "joy",
+  "surprise"
+ ],
+ "primary_controls": [
+  "N01",
+  "N03",
+  "N04",
+  "N07",
+  "N08",
+  "N10",
+  "N11",
+  "N12",
+  "N13",
+  "N15",
+  "N16",
+  "N18",
+  "N19",
+  "N20",
+  "N21",
+  "N22",
+  "N23",
+  "N25",
+  "N26",
+  "N29",
+  "N31",
+  "N34",
+  "N35",
+  "N36",
+  "arithmetic",
+  "random"
+ ],
+ "nC": 26,
+ "thinking": [
+  "mp:digit-memorising",
+  "mp:route-planning",
+  "mp:spatial-recall",
+  "mp:visual-search"
+ ],
+ "n_mp": 4,
+ "bridge_in_S2-DEN": [
+  "red",
+  "ocean"
+ ],
+ "decision_file": "results/s2/pilot/k26_half_decision.json",
+ "decision_sha256": "445b49fee956bcfd194de780796917e81802e74e4603f899a4ffadabb9659c87",
+ "nouns_file": "results/s2/k26/nouns/nouns.json",
+ "nouns_sha256": "a5dbb3e2b6e7fb0777130f57ec212273edce4021fc8c7f145da02d28a8587a95"
+}

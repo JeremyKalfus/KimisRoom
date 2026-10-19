@@ -16,3 +16,4 @@ drafts/lesswrong/work/
 data/tokenizers/
 results/s2/kr_timing/synth.csv
 results/s2/kr_timing/table.csv
+results/s2/confirm/tables/*.csv

@@ -1,0 +1,70 @@
+==== 2026-10-12T17:07:16Z potency_k26
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 889, in <module>
+    main()
+    ~~~~^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 883, in main
+    return stage_potency(a)
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 734, in stage_potency
+    vecs, prov = resolve_vectors(a, model, layer, "pilot", "S2-DEN")  # pilot: every mental-process control
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_run.py", line 255, in resolve_vectors
+    T.check_vec({"model": model, "vec": n, "vclass": c})
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_table.py", line 188, in check_vec
+    need(ok, f"vector {v!r} does not fit class {c!r} for model {m}")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/KimisRoom/runs/s2_table.py", line 146, in need
+    raise S2Error(msg)
+s2_table.S2Error: vector 'mp:digit-memorising' does not fit class 'thinking' for model k26
+==== 2026-10-12T17:23:52Z potency_k26
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+k26 potency: 48 texts, 28 vectors x doses [4.0, 2.0] + unsteered, 2736 groups, 530,214 tokens
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2736 groups, 530,214 tokens, engine backend on 4 worker(s) x 1 GPU(s), passes per worker [1, 1, 1, 1]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu0 pass 1/1] layer 10: 57s, 378 tok/s (wait_disk 13s, to_gpu 16s, compute 29s)
+[gpu1 pass 1/1] layer 10: 56s, 390 tok/s (wait_disk 11s, to_gpu 16s, compute 28s)
+[gpu3 pass 1/1] layer 10: 52s, 421 tok/s (wait_disk 6s, to_gpu 17s, compute 29s)
+[gpu2 pass 1/1] layer 10: 63s, 346 tok/s (wait_disk 7s, to_gpu 28s, compute 27s)
+[gpu3 pass 1/1] layer 20: 104s, 418 tok/s (wait_disk 14s, to_gpu 34s, compute 55s)
+[gpu0 pass 1/1] layer 20: 110s, 395 tok/s (wait_disk 21s, to_gpu 33s, compute 56s)
+[gpu1 pass 1/1] layer 20: 108s, 401 tok/s (wait_disk 20s, to_gpu 33s, compute 55s)
+[gpu2 pass 1/1] layer 20: 121s, 359 tok/s (wait_disk 7s, to_gpu 60s, compute 54s)
+[gpu0 pass 1/1] layer 30: 160s, 408 tok/s (wait_disk 27s, to_gpu 50s, compute 83s)
+[gpu1 pass 1/1] layer 30: 158s, 412 tok/s (wait_disk 27s, to_gpu 49s, compute 82s)
+[gpu3 pass 1/1] layer 30: 159s, 409 tok/s (wait_disk 25s, to_gpu 52s, compute 82s)
+[gpu2 pass 1/1] layer 30: 179s, 364 tok/s (wait_disk 7s, to_gpu 91s, compute 81s)
+[gpu0 pass 1/1] layer 40: 218s, 398 tok/s (wait_disk 43s, to_gpu 65s, compute 110s)
+[gpu1 pass 1/1] layer 40: 216s, 402 tok/s (wait_disk 42s, to_gpu 65s, compute 109s)
+[gpu3 pass 1/1] layer 40: 218s, 399 tok/s (wait_disk 39s, to_gpu 69s, compute 109s)
+[gpu2 pass 1/1] layer 40: 238s, 365 tok/s (wait_disk 7s, to_gpu 123s, compute 108s)
+[gpu0 pass 1/1] layer 50: 279s, 390 tok/s (wait_disk 62s, to_gpu 80s, compute 137s)
+[gpu1 pass 1/1] layer 50: 277s, 392 tok/s (wait_disk 60s, to_gpu 81s, compute 136s)
+[gpu3 pass 1/1] layer 50: 279s, 390 tok/s (wait_disk 56s, to_gpu 87s, compute 136s)
+[gpu2 pass 1/1] layer 50: 297s, 366 tok/s (wait_disk 7s, to_gpu 155s, compute 134s)
+[gpu1 pass 1/1] layer 60: 335s, 389 tok/s (wait_disk 74s, to_gpu 97s, compute 163s)
+[gpu0 pass 1/1] layer 60: 337s, 387 tok/s (wait_disk 76s, to_gpu 97s, compute 164s)
+[gpu1 pass 1/1] layer 61: 338s, 392 tok/s (wait_disk 74s, to_gpu 98s, compute 166s)
+[gpu0 pass 1/1] layer 61: 340s, 389 tok/s (wait_disk 76s, to_gpu 98s, compute 166s)
+[gpu3 pass 1/1] layer 60: 335s, 389 tok/s (wait_disk 69s, to_gpu 103s, compute 162s)
+[gpu3 pass 1/1] layer 61: 339s, 391 tok/s (wait_disk 70s, to_gpu 104s, compute 165s)
+[gpu2 pass 1/1] layer 60: 354s, 368 tok/s (wait_disk 7s, to_gpu 186s, compute 161s)
+[gpu2 pass 1/1] layer 61: 358s, 370 tok/s (wait_disk 7s, to_gpu 187s, compute 164s)
+[gpu1 pass 1/1] done: 684 groups, 132,555 tokens, 365s, peak 18.1 GB
+[gpu0 pass 1/1] done: 684 groups, 132,555 tokens, 368s, peak 18.1 GB
+[gpu3 pass 1/1] done: 684 groups, 132,553 tokens, 365s, peak 18.1 GB
+[gpu2 pass 1/1] done: 684 groups, 132,551 tokens, 386s, peak 18.1 GB
+wrote results/s2/k26/potency/potency.pt: 2736 groups, 530,214 tokens in 503s (1,054 tok/s)
+results/s2/k26/potency/potency.csv: 56 rows (unsteered NLL 1.970 per token over 48 texts)

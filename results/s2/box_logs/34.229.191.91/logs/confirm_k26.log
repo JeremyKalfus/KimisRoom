@@ -1,0 +1,153 @@
+==== 2026-10-19T09:13:56Z confirm_k26
+stamp A: 1446 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/k26/selected.json data/s2/replies/k26/eligible.json results/k26/s2/controls.pt results/k26/s2/pool.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+stamp B: 1449 files match (runs/s2_run.py runs/s2_battery.py runs/s2_table.py runs/s2_assent.py kimisroom/engine.py kimisroom/hf_engine.py kimisroom/trials.py kimisroom/run.py kimisroom/s2_guard.py prompts/battery/items_s2.jsonl prompts/s2/openings/lines.json data/s2/openings/ data/s2/heldout.json data/s2/replies/k26/selected.json data/s2/replies/k26/eligible.json results/k26/s2/controls.pt results/k26/s2/pool.json results/k26/v2/vectors.pt results/s2/pilot/k26_half_decision.json results/s2/k26/nouns/nouns.json)
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+k26 S2-DEN: dose 2, 4 emotions, nC 26, n_mp 4, red and ocean
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+k26 S2-DEN confirm: 29 openings, 36 vectors x doses [2.0] + zero, 1073 groups, 7,929,507 tokens (built in 67.4s)
+weights /nvme/k26: moonshotai/Kimi-K2.6@7eb5002f6aadc958aed6a9177b7ed26bb94011bb (registered (runs/s2_battery.py MODELS)), 86 files match /home/ubuntu/KimisRoom/results/s2/box/k26_box.json
+checkpoint /nvme/k26: sha256 7363bbe9637b4f4830c974806be6b40d08593723264362ee45c448b5cc9b8106 (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+held-out guard: 29 distinct prefixes decoded, 29 held-out
+1073 groups, 7,929,507 tokens, engine backend on 2 worker(s) x 1 GPU(s), passes per worker [3, 3]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu0 pass 1/3] layer 10: 247s, 1,062 tok/s (wait_disk 0s, to_gpu 12s, compute 234s)
+[gpu1 pass 1/3] layer 10: 250s, 1,050 tok/s (wait_disk 0s, to_gpu 17s, compute 232s)
+[gpu0 pass 1/3] layer 20: 493s, 1,064 tok/s (wait_disk 0s, to_gpu 26s, compute 466s)
+[gpu1 pass 1/3] layer 20: 501s, 1,047 tok/s (wait_disk 0s, to_gpu 35s, compute 466s)
+[gpu0 pass 1/3] layer 30: 739s, 1,065 tok/s (wait_disk 0s, to_gpu 39s, compute 699s)
+[gpu1 pass 1/3] layer 30: 752s, 1,046 tok/s (wait_disk 0s, to_gpu 53s, compute 699s)
+[gpu0 pass 1/3] layer 40: 984s, 1,066 tok/s (wait_disk 0s, to_gpu 53s, compute 931s)
+[gpu1 pass 1/3] layer 40: 1003s, 1,046 tok/s (wait_disk 0s, to_gpu 71s, compute 931s)
+[gpu0 pass 1/3] layer 50: 1230s, 1,066 tok/s (wait_disk 0s, to_gpu 67s, compute 1162s)
+[gpu1 pass 1/3] layer 50: 1255s, 1,045 tok/s (wait_disk 0s, to_gpu 91s, compute 1164s)
+[gpu0 pass 1/3] layer 60: 1476s, 1,066 tok/s (wait_disk 0s, to_gpu 81s, compute 1394s)
+[gpu0 pass 1/3] layer 61: 1500s, 1,067 tok/s (wait_disk 0s, to_gpu 82s, compute 1417s)
+[gpu0 pass 1/3] done: 212 groups, 1,599,942 tokens, 1507s, peak 39.8 GB
+[gpu1 pass 1/3] layer 60: 1507s, 1,044 tok/s (wait_disk 0s, to_gpu 110s, compute 1396s)
+[gpu1 pass 1/3] layer 61: 1531s, 1,045 tok/s (wait_disk 0s, to_gpu 111s, compute 1419s)
+[gpu1 pass 1/3] done: 212 groups, 1,599,901 tokens, 1537s, peak 39.8 GB
+[gpu0 pass 2/3] layer 10: 231s, 1,131 tok/s (wait_disk 0s, to_gpu 13s, compute 217s)
+[gpu1 pass 2/3] layer 10: 237s, 1,106 tok/s (wait_disk 0s, to_gpu 18s, compute 218s)
+[gpu0 pass 2/3] layer 20: 469s, 1,117 tok/s (wait_disk 0s, to_gpu 27s, compute 441s)
+[gpu1 pass 2/3] layer 20: 480s, 1,091 tok/s (wait_disk 0s, to_gpu 37s, compute 442s)
+[gpu0 pass 2/3] layer 30: 707s, 1,111 tok/s (wait_disk 0s, to_gpu 42s, compute 664s)
+[gpu1 pass 2/3] layer 30: 723s, 1,086 tok/s (wait_disk 0s, to_gpu 57s, compute 665s)
+[gpu0 pass 2/3] layer 40: 944s, 1,109 tok/s (wait_disk 0s, to_gpu 56s, compute 886s)
+[gpu1 pass 2/3] layer 40: 966s, 1,083 tok/s (wait_disk 0s, to_gpu 77s, compute 888s)
+[gpu0 pass 2/3] layer 50: 1181s, 1,108 tok/s (wait_disk 0s, to_gpu 71s, compute 1109s)
+[gpu1 pass 2/3] layer 50: 1209s, 1,082 tok/s (wait_disk 0s, to_gpu 96s, compute 1111s)
+[gpu0 pass 2/3] layer 60: 1418s, 1,107 tok/s (wait_disk 0s, to_gpu 85s, compute 1331s)
+[gpu0 pass 2/3] layer 61: 1441s, 1,107 tok/s (wait_disk 0s, to_gpu 87s, compute 1353s)
+[gpu0 pass 2/3] done: 217 groups, 1,595,878 tokens, 1447s, peak 39.9 GB
+[gpu1 pass 2/3] layer 60: 1452s, 1,081 tok/s (wait_disk 0s, to_gpu 116s, compute 1334s)
+[gpu1 pass 2/3] layer 61: 1475s, 1,082 tok/s (wait_disk 0s, to_gpu 117s, compute 1356s)
+[gpu1 pass 2/3] done: 217 groups, 1,595,858 tokens, 1481s, peak 39.9 GB
+[gpu0 pass 3/3] layer 10: 150s, 839 tok/s (wait_disk 35s, to_gpu 13s, compute 101s)
+[gpu1 pass 3/3] layer 10: 121s, 1,047 tok/s (wait_disk 0s, to_gpu 18s, compute 102s)
+[gpu0 pass 3/3] layer 20: 268s, 937 tok/s (wait_disk 35s, to_gpu 28s, compute 205s)
+[gpu1 pass 3/3] layer 20: 246s, 1,030 tok/s (wait_disk 0s, to_gpu 38s, compute 207s)
+[gpu0 pass 3/3] layer 30: 386s, 975 tok/s (wait_disk 35s, to_gpu 42s, compute 309s)
+[gpu1 pass 3/3] layer 30: 371s, 1,023 tok/s (wait_disk 0s, to_gpu 59s, compute 312s)
+[gpu0 pass 3/3] layer 40: 512s, 981 tok/s (wait_disk 42s, to_gpu 56s, compute 413s)
+[gpu1 pass 3/3] layer 40: 496s, 1,020 tok/s (wait_disk 0s, to_gpu 79s, compute 417s)
+[gpu0 pass 3/3] layer 50: 637s, 985 tok/s (wait_disk 49s, to_gpu 71s, compute 516s)
+[gpu1 pass 3/3] layer 50: 622s, 1,019 tok/s (wait_disk 0s, to_gpu 100s, compute 521s)
+[gpu0 pass 3/3] layer 60: 762s, 988 tok/s (wait_disk 57s, to_gpu 85s, compute 620s)
+[gpu0 pass 3/3] layer 61: 774s, 989 tok/s (wait_disk 57s, to_gpu 86s, compute 630s)
+[gpu0 pass 3/3] done: 107 groups, 765,397 tokens, 777s, peak 39.9 GB
+[gpu1 pass 3/3] layer 60: 747s, 1,018 tok/s (wait_disk 0s, to_gpu 120s, compute 626s)
+[gpu1 pass 3/3] layer 61: 758s, 1,019 tok/s (wait_disk 0s, to_gpu 121s, compute 636s)
+[gpu1 pass 3/3] done: 108 groups, 772,531 tokens, 762s, peak 39.9 GB
+wrote results/s2/k26/confirm/S2-DEN/grid.pt: 1073 groups, 7,929,507 tokens in 3819s (2,076 tok/s)
+results/s2/k26/confirm/S2-DEN/readouts.csv: 231,768 readouts from 1073 groups
+k26 S2-CON: dose 2, 4 emotions, nC 26, n_mp 4
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+k26 S2-CON confirm: 44 openings, 34 vectors x doses [2.0] + zero, 1540 groups, 11,272,415 tokens (built in 96.6s)
+weights /nvme/k26: moonshotai/Kimi-K2.6@7eb5002f6aadc958aed6a9177b7ed26bb94011bb (registered (runs/s2_battery.py MODELS)), 86 files match /home/ubuntu/KimisRoom/results/s2/box/k26_box.json
+checkpoint /nvme/k26: sha256 7363bbe9637b4f4830c974806be6b40d08593723264362ee45c448b5cc9b8106 (full)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+held-out guard: 96 held-out wordings, 440 hashes; stamp A /home/ubuntu/KimisRoom/prereg/stampA-s2.txt (sha256 5dacfafe2f44dcb6957d96a0f8b2a348a5bae31831642aaaf806e4303ef916c3 = .ots digest) lists this held-out list (ce33e212e214); stamp B holds: /home/ubuntu/KimisRoom/prereg/manifest-s2.txt sha256 b076b3d830a1376c7ddbd6ff89c3162bda9dbbdc9d39b7582f176289547a4597 = .ots digest, lists all 440 held-out hashes
+held-out guard: 44 distinct prefixes decoded, 44 held-out
+1540 groups, 11,272,415 tokens, engine backend on 2 worker(s) x 1 GPU(s), passes per worker [4, 4]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[gpu1 pass 1/4] layer 10: 245s, 1,067 tok/s (wait_disk 0s, to_gpu 14s, compute 231s)
+[gpu0 pass 1/4] layer 10: 251s, 1,043 tok/s (wait_disk 0s, to_gpu 17s, compute 232s)
+[gpu1 pass 1/4] layer 20: 493s, 1,061 tok/s (wait_disk 0s, to_gpu 28s, compute 465s)
+[gpu0 pass 1/4] layer 20: 503s, 1,039 tok/s (wait_disk 0s, to_gpu 37s, compute 465s)
+[gpu1 pass 1/4] layer 30: 741s, 1,060 tok/s (wait_disk 0s, to_gpu 42s, compute 698s)
+[gpu0 pass 1/4] layer 30: 756s, 1,038 tok/s (wait_disk 0s, to_gpu 57s, compute 698s)
+[gpu1 pass 1/4] layer 40: 987s, 1,060 tok/s (wait_disk 0s, to_gpu 56s, compute 931s)
+[gpu0 pass 1/4] layer 40: 1007s, 1,039 tok/s (wait_disk 0s, to_gpu 76s, compute 930s)
+[gpu1 pass 1/4] layer 50: 1235s, 1,059 tok/s (wait_disk 0s, to_gpu 70s, compute 1164s)
+[gpu0 pass 1/4] layer 50: 1259s, 1,039 tok/s (wait_disk 0s, to_gpu 96s, compute 1163s)
+[gpu1 pass 1/4] layer 60: 1482s, 1,059 tok/s (wait_disk 0s, to_gpu 85s, compute 1397s)
+[gpu1 pass 1/4] layer 61: 1507s, 1,059 tok/s (wait_disk 0s, to_gpu 86s, compute 1420s)
+[gpu0 pass 1/4] layer 60: 1512s, 1,038 tok/s (wait_disk 0s, to_gpu 116s, compute 1395s)
+[gpu1 pass 1/4] done: 211 groups, 1,595,553 tokens, 1512s, peak 39.9 GB
+[gpu0 pass 1/4] layer 61: 1536s, 1,039 tok/s (wait_disk 0s, to_gpu 117s, compute 1418s)
+[gpu0 pass 1/4] done: 211 groups, 1,595,561 tokens, 1542s, peak 39.9 GB
+[gpu1 pass 2/4] layer 10: 232s, 1,129 tok/s (wait_disk 0s, to_gpu 13s, compute 218s)
+[gpu0 pass 2/4] layer 10: 237s, 1,104 tok/s (wait_disk 0s, to_gpu 18s, compute 218s)
+[gpu1 pass 2/4] layer 20: 470s, 1,115 tok/s (wait_disk 0s, to_gpu 27s, compute 442s)
+[gpu0 pass 2/4] layer 20: 481s, 1,090 tok/s (wait_disk 0s, to_gpu 38s, compute 442s)
+[gpu1 pass 2/4] layer 30: 709s, 1,110 tok/s (wait_disk 0s, to_gpu 42s, compute 666s)
+[gpu0 pass 2/4] layer 30: 725s, 1,085 tok/s (wait_disk 0s, to_gpu 58s, compute 666s)
+[gpu1 pass 2/4] layer 40: 947s, 1,107 tok/s (wait_disk 0s, to_gpu 57s, compute 890s)
+[gpu0 pass 2/4] layer 40: 969s, 1,082 tok/s (wait_disk 0s, to_gpu 79s, compute 890s)
+[gpu1 pass 2/4] layer 50: 1185s, 1,106 tok/s (wait_disk 0s, to_gpu 71s, compute 1113s)
+[gpu0 pass 2/4] layer 50: 1213s, 1,081 tok/s (wait_disk 0s, to_gpu 99s, compute 1113s)
+[gpu1 pass 2/4] layer 60: 1423s, 1,106 tok/s (wait_disk 0s, to_gpu 86s, compute 1336s)
+[gpu1 pass 2/4] layer 61: 1446s, 1,106 tok/s (wait_disk 0s, to_gpu 87s, compute 1359s)
+[gpu1 pass 2/4] done: 218 groups, 1,599,333 tokens, 1452s, peak 40.0 GB
+[gpu0 pass 2/4] layer 60: 1456s, 1,080 tok/s (wait_disk 0s, to_gpu 119s, compute 1336s)
+[gpu0 pass 2/4] layer 61: 1480s, 1,081 tok/s (wait_disk 0s, to_gpu 121s, compute 1358s)
+[gpu0 pass 2/4] done: 218 groups, 1,599,371 tokens, 1486s, peak 40.0 GB
+[gpu1 pass 3/4] layer 10: 250s, 1,049 tok/s (wait_disk 23s, to_gpu 13s, compute 213s)
+[gpu0 pass 3/4] layer 10: 232s, 1,130 tok/s (wait_disk 0s, to_gpu 18s, compute 213s)
+[gpu1 pass 3/4] layer 20: 484s, 1,084 tok/s (wait_disk 23s, to_gpu 28s, compute 432s)
+[gpu0 pass 3/4] layer 20: 472s, 1,112 tok/s (wait_disk 0s, to_gpu 39s, compute 432s)
+[gpu1 pass 3/4] layer 30: 717s, 1,096 tok/s (wait_disk 23s, to_gpu 43s, compute 651s)
+[gpu0 pass 3/4] layer 30: 711s, 1,106 tok/s (wait_disk 0s, to_gpu 60s, compute 650s)
+[gpu1 pass 3/4] layer 40: 950s, 1,103 tok/s (wait_disk 23s, to_gpu 58s, compute 869s)
+[gpu0 pass 3/4] layer 40: 950s, 1,104 tok/s (wait_disk 0s, to_gpu 80s, compute 869s)
+[gpu1 pass 3/4] layer 50: 1184s, 1,107 tok/s (wait_disk 23s, to_gpu 72s, compute 1088s)
+[gpu0 pass 3/4] layer 50: 1188s, 1,103 tok/s (wait_disk 0s, to_gpu 101s, compute 1087s)
+[gpu1 pass 3/4] layer 60: 1417s, 1,110 tok/s (wait_disk 23s, to_gpu 87s, compute 1306s)
+[gpu1 pass 3/4] layer 61: 1441s, 1,110 tok/s (wait_disk 24s, to_gpu 89s, compute 1328s)
+[gpu1 pass 3/4] done: 222 groups, 1,598,807 tokens, 1447s, peak 40.0 GB
+[gpu0 pass 3/4] layer 60: 1427s, 1,102 tok/s (wait_disk 0s, to_gpu 121s, compute 1305s)
+[gpu0 pass 3/4] layer 61: 1450s, 1,103 tok/s (wait_disk 0s, to_gpu 123s, compute 1326s)
+[gpu0 pass 3/4] done: 222 groups, 1,598,722 tokens, 1456s, peak 40.0 GB
+[gpu1 pass 4/4] layer 10: 174s, 794 tok/s (wait_disk 51s, to_gpu 14s, compute 109s)
+[gpu0 pass 4/4] layer 10: 128s, 1,075 tok/s (wait_disk 0s, to_gpu 19s, compute 109s)
+[gpu1 pass 4/4] layer 20: 300s, 920 tok/s (wait_disk 51s, to_gpu 28s, compute 221s)
+[gpu0 pass 4/4] layer 20: 261s, 1,058 tok/s (wait_disk 0s, to_gpu 40s, compute 221s)
+[gpu1 pass 4/4] layer 30: 427s, 971 tok/s (wait_disk 51s, to_gpu 43s, compute 332s)
+[gpu0 pass 4/4] layer 30: 394s, 1,053 tok/s (wait_disk 0s, to_gpu 61s, compute 332s)
+[gpu1 pass 4/4] layer 40: 558s, 991 tok/s (wait_disk 55s, to_gpu 58s, compute 444s)
+[gpu0 pass 4/4] layer 40: 526s, 1,050 tok/s (wait_disk 0s, to_gpu 82s, compute 444s)
+[gpu1 pass 4/4] layer 50: 690s, 1,000 tok/s (wait_disk 61s, to_gpu 73s, compute 555s)
+[gpu0 pass 4/4] layer 50: 659s, 1,048 tok/s (wait_disk 0s, to_gpu 103s, compute 555s)
+[gpu1 pass 4/4] layer 60: 823s, 1,007 tok/s (wait_disk 67s, to_gpu 89s, compute 667s)
+[gpu1 pass 4/4] layer 61: 836s, 1,008 tok/s (wait_disk 68s, to_gpu 90s, compute 678s)
+[gpu1 pass 4/4] done: 119 groups, 842,564 tokens, 839s, peak 40.0 GB
+[gpu0 pass 4/4] layer 60: 791s, 1,047 tok/s (wait_disk 0s, to_gpu 124s, compute 666s)
+[gpu0 pass 4/4] layer 61: 804s, 1,048 tok/s (wait_disk 0s, to_gpu 125s, compute 678s)
+[gpu0 pass 4/4] done: 119 groups, 842,504 tokens, 808s, peak 40.0 GB
+wrote results/s2/k26/confirm/S2-CON/grid.pt: 1540 groups, 11,272,415 tokens in 5344s (2,109 tok/s)
+results/s2/k26/confirm/S2-CON/readouts.csv: 332,640 readouts from 1540 groups

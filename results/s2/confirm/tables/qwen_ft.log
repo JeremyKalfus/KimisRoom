@@ -1,0 +1,20 @@
+results/s2/confirm/tables/qwen_ft.csv: 1,507,240 rows from 832,464 readouts
+closing asks: 47 from opening files, 0 from the lines.json template; 0 items without text or ask
+       24.86 real        20.88 user         3.18 sys
+          2023407616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1460109  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 372  voluntary context switches
+               45192  involuntary context switches
+        471218860408  instructions retired
+         94804677241  cycles elapsed
+          3013134904  peak memory footprint

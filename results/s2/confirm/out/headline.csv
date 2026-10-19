@@ -1,0 +1,3 @@
+"model","s2_h1","headline","s0_you","s0_lm","h8_equivalent_both","s2_g4_positive","combined"
+"qwen","supported","the claim sentence",-9.87878058881176,-12.244855853976,FALSE,TRUE,"one model supported, the other not: each reported separately; no general claim about language models"
+"k26","null","null: uninformative",-6.86233135338487,-5.38913613763349,FALSE,FALSE,"one model supported, the other not: each reported separately; no general claim about language models"

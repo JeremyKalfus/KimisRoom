@@ -1,0 +1,20 @@
+results/s2/confirm/tables/k26.csv: 1,016,000 rows from 564,408 readouts
+closing asks: 73 from opening files, 0 from the lines.json template; 0 items without text or ask
+       17.68 real        14.76 user         1.97 sys
+          1632272384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              713874  page reclaims
+                 237  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 326  voluntary context switches
+               68970  involuntary context switches
+        318412899123  instructions retired
+         64810684334  cycles elapsed
+          2057422768  peak memory footprint

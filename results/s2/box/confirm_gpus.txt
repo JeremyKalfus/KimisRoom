@@ -1,0 +1,12 @@
+2026-10-19T03:54:56Z confirm qwen: g7e.12xlarge
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-568b41c8-e09b-c699-bb19-9cc3496c5e3e)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-b05c9e4f-7feb-cdaa-147e-babeeba82097)
+2026-10-19T06:38:58Z confirm qwen: g7e.12xlarge
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-568b41c8-e09b-c699-bb19-9cc3496c5e3e)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-b05c9e4f-7feb-cdaa-147e-babeeba82097)
+2026-10-19T09:13:57Z confirm k26: g7e.12xlarge
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-568b41c8-e09b-c699-bb19-9cc3496c5e3e)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-b05c9e4f-7feb-cdaa-147e-babeeba82097)
+2026-10-19T11:57:18Z confirm qwen: g7e.12xlarge
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-568b41c8-e09b-c699-bb19-9cc3496c5e3e)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-b05c9e4f-7feb-cdaa-147e-babeeba82097)

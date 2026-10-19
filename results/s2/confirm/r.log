@@ -1,0 +1,366 @@
+S2-H1.qwen: maximal ok
+S2-H1.k26: maximal failed
+S2-H1.k26: no_corr ok
+S2-R1.qwen: maximal failed
+S2-R1.qwen: no_corr ok
+S2-G1.qwen: maximal failed
+S2-G1.qwen: no_corr failed
+S2-G1.qwen: no_aw_slope ok
+S2-G2.qwen: maximal failed
+S2-G2.qwen: no_corr failed
+S2-G2.qwen: no_aw_slope failed
+S2-G2.qwen: no_para_slope failed
+S2-G2.qwen: no_vector_para ok
+S2-G8.qwen: maximal failed
+S2-G8.qwen: no_corr ok
+S2-G4.qwen: maximal ok
+S2-H8.d.qwen: maximal ok
+S2-H8.d_other.qwen: maximal failed
+S2-H8.d_other.qwen: no_corr failed
+S2-H8.d_other.qwen: no_aw_slope ok
+S2-G6.qwen: maximal failed
+S2-G6.qwen: no_corr failed
+S2-G6.qwen: no_aw_slope ok
+S2-G7.qwen: maximal ok
+S2-R1.k26: maximal failed
+S2-R1.k26: no_corr failed
+S2-R1.k26: no_aw_slope ok
+S2-G1.k26: maximal failed
+S2-G1.k26: no_corr ok
+S2-G2.k26: maximal failed
+S2-G2.k26: no_corr ok
+S2-G8.k26: maximal ok
+S2-G4.k26: maximal failed
+S2-G4.k26: no_corr ok
+S2-H8.d.k26: maximal failed
+S2-H8.d.k26: no_corr ok
+S2-H8.d_other.k26: maximal ok
+S2-G5.qwen: maximal failed
+S2-G5.qwen: no_corr failed
+S2-G5.qwen: no_aw_slope failed
+S2-G5.qwen: no_para_slope failed
+S2-G5.qwen: no_vector_para failed
+desc.d_raw.qwen: maximal failed
+desc.d_raw.qwen: no_corr failed
+desc.d_raw.qwen: no_aw_slope failed
+desc.d_raw.qwen: no_para_slope ok
+desc.d_state.qwen: maximal ok
+desc.d_state_raw.qwen: maximal failed
+desc.d_state_raw.qwen: no_corr ok
+desc.d_other.qwen: maximal failed
+desc.d_other.qwen: no_corr failed
+desc.d_other.qwen: no_aw_slope ok
+desc.d_you_name.qwen: maximal ok
+desc.d_name_lm.qwen: maximal failed
+desc.d_name_lm.qwen: no_corr ok
+desc.r_rocks.qwen: maximal failed
+desc.r_rocks.qwen: no_corr ok
+desc.r_humans.qwen: maximal ok
+desc.r_you.qwen: maximal failed
+desc.r_you.qwen: no_corr failed
+desc.r_you.qwen: no_aw_slope ok
+desc.r_lm.qwen: maximal ok
+desc.d_pos.qwen: maximal ok
+desc.d_neg.qwen: maximal failed
+desc.d_neg.qwen: no_corr failed
+desc.d_neg.qwen: no_aw_slope failed
+desc.d_neg.qwen: no_para_slope failed
+desc.d_neg.qwen: no_vector_para ok
+desc.d_prob.qwen: maximal failed
+desc.d_prob.qwen: no_corr ok
+desc.noflag.qwen: maximal ok
+desc.mass.qwen: maximal failed
+desc.mass.qwen: no_corr failed
+desc.mass.qwen: no_aw_slope failed
+desc.mass.qwen: no_para_slope ok
+desc.kind.qwen: maximal failed
+desc.kind.qwen: no_corr failed
+desc.kind.qwen: no_aw_slope failed
+desc.kind.qwen: no_para_slope ok
+desc.kind.qwen: maximal ok
+desc.gen.qwen: maximal failed
+desc.gen.qwen: no_corr ok
+desc.gen.qwen: maximal ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope failed
+desc.loo.qwen: no_para_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope failed
+desc.loo.qwen: no_para_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr failed
+desc.loo.qwen: no_aw_slope failed
+desc.loo.qwen: no_para_slope ok
+desc.loo.qwen: maximal ok
+desc.loo.qwen: maximal failed
+desc.loo.qwen: no_corr ok
+desc.frame.qwen: maximal ok
+desc.copy.qwen: maximal ok
+desc.copy.qwen: maximal ok
+desc.copy.qwen: maximal failed
+desc.copy.qwen: no_corr failed
+desc.copy.qwen: no_aw_slope failed
+desc.copy.qwen: no_para_slope failed
+desc.copy.qwen: no_vector_para failed
+desc.copy.qwen: maximal ok
+desc.copy.qwen: maximal ok
+desc.copy.qwen: maximal failed
+desc.copy.qwen: no_corr failed
+desc.copy.qwen: no_aw_slope failed
+desc.copy.qwen: no_para_slope failed
+desc.copy.qwen: no_vector_para failed
+desc.copy.qwen: maximal ok
+desc.copy.qwen: maximal failed
+desc.copy.qwen: no_corr failed
+desc.copy.qwen: no_aw_slope failed
+desc.copy.qwen: no_para_slope failed
+desc.copy.qwen: no_vector_para failed
+desc.copy.qwen: maximal failed
+desc.copy.qwen: no_corr ok
+desc.copy.qwen: maximal failed
+desc.copy.qwen: no_corr failed
+desc.copy.qwen: no_aw_slope failed
+desc.copy.qwen: no_para_slope failed
+desc.copy.qwen: no_vector_para failed
+desc.valence.qwen: maximal ok
+desc.d_raw.k26: maximal failed
+desc.d_raw.k26: no_corr failed
+desc.d_raw.k26: no_aw_slope ok
+desc.d_state.k26: maximal failed
+desc.d_state.k26: no_corr failed
+desc.d_state.k26: no_aw_slope ok
+desc.d_state_raw.k26: maximal ok
+desc.d_other.k26: maximal ok
+desc.d_you_name.k26: maximal failed
+desc.d_you_name.k26: no_corr ok
+desc.d_name_lm.k26: maximal failed
+desc.d_name_lm.k26: no_corr failed
+desc.d_name_lm.k26: no_aw_slope ok
+desc.r_rocks.k26: maximal failed
+desc.r_rocks.k26: no_corr ok
+desc.r_humans.k26: maximal failed
+desc.r_humans.k26: no_corr ok
+desc.r_you.k26: maximal ok
+desc.r_lm.k26: maximal failed
+desc.r_lm.k26: no_corr ok
+desc.d_pos.k26: maximal failed
+desc.d_pos.k26: no_corr ok
+desc.d_neg.k26: maximal failed
+desc.d_neg.k26: no_corr failed
+desc.d_neg.k26: no_aw_slope ok
+desc.d_prob.k26: maximal failed
+desc.d_prob.k26: no_corr ok
+desc.noflag.k26: maximal failed
+desc.noflag.k26: no_corr ok
+desc.mass.k26: maximal failed
+desc.mass.k26: no_corr ok
+desc.kind.k26: maximal ok
+desc.kind.k26: maximal ok
+desc.gen.k26: maximal ok
+desc.gen.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr failed
+desc.loo.k26: no_aw_slope ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr failed
+desc.loo.k26: no_aw_slope ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.loo.k26: maximal failed
+desc.loo.k26: no_corr ok
+desc.frame.k26: maximal ok
+desc.copy.k26: maximal ok
+desc.copy.k26: maximal ok
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr failed
+desc.copy.k26: no_aw_slope failed
+desc.copy.k26: no_para_slope failed
+desc.copy.k26: no_vector_para failed
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr ok
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr ok
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr failed
+desc.copy.k26: no_aw_slope failed
+desc.copy.k26: no_para_slope failed
+desc.copy.k26: no_vector_para failed
+desc.copy.k26: maximal ok
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr failed
+desc.copy.k26: no_aw_slope failed
+desc.copy.k26: no_para_slope failed
+desc.copy.k26: no_vector_para failed
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr ok
+desc.copy.k26: maximal failed
+desc.copy.k26: no_corr failed
+desc.copy.k26: no_aw_slope failed
+desc.copy.k26: no_para_slope failed
+desc.copy.k26: no_vector_para failed
+desc.valence.k26: maximal failed
+desc.valence.k26: no_corr ok
+    id model              arm estimate ci95_lo ci95_hi   df  p_model   p_perm
+ S2-H1  qwen           S2-DEN   0.3333  0.1216  0.5450 25.0 3.34e-03 1.02e-03
+ S2-H1   k26           S2-DEN  -0.2022 -0.3415 -0.0628 20.9 6.59e-03 2.12e-01
+ S2-R1  qwen           S2-DEN   0.4666  0.2508  0.6824 25.0 1.54e-04       NA
+ S2-G1  qwen           S2-DEN   0.3838  0.1848  0.5828 22.0 6.05e-04 1.92e-04
+ S2-G2  qwen           S2-DEN   0.2924  0.1783  0.4066 25.0 1.83e-05 4.46e-03
+ S2-G8  qwen           S2-DEN   0.5352  0.2291  0.8413  7.0 4.38e-03 2.00e-03
+ S2-G4  qwen           S2-CON   1.4073  1.0467  1.7678 13.8 8.88e-07 1.10e-06
+ S2-H8  qwen           S2-DEN   0.3333  0.1216  0.5450 25.0 3.34e-03       NA
+ S2-H8  qwen           S2-DEN   0.4191  0.2360  0.6021 25.0 7.81e-05       NA
+ S2-G6  qwen           S2-FTD   0.4038  0.2706  0.5369 17.6 5.78e-06 2.41e-04
+ S2-G7  qwen S2-FTD vs S2-FTC  -0.5118 -0.6370 -0.3866 25.0 9.17e-09 2.21e-06
+ S2-R1   k26           S2-DEN  -0.2414 -0.3909 -0.0918 16.4 3.44e-03       NA
+ S2-G1   k26           S2-DEN  -0.2065 -0.3519 -0.0612 21.6 7.50e-03 2.05e-01
+ S2-G2   k26           S2-DEN  -0.3884 -0.6208 -0.1561 14.9 2.84e-03 1.61e-02
+ S2-G8   k26           S2-DEN  -0.5663 -0.8496 -0.2830  3.0 7.86e-03 2.86e-02
+ S2-G4   k26           S2-CON   0.2766  0.0495  0.5038 14.4 2.04e-02 8.51e-02
+ S2-H8   k26           S2-DEN  -0.2022 -0.3415 -0.0628 20.9 6.59e-03       NA
+ S2-H8   k26           S2-DEN   0.0264 -0.1015  0.1543 24.5 6.74e-01       NA
+ S2-G5  qwen S2-DEN vs S2-CON  -1.0826 -1.3336 -0.8317 25.0 3.30e-09 1.10e-06
+        p alpha significant gate_open equivalent            fit
+ 3.34e-03 0.025        TRUE      TRUE         NA        maximal
+ 2.12e-01 0.050       FALSE      TRUE         NA        no_corr
+ 1.54e-04    NA          NA        NA         NA        no_corr
+ 6.05e-04 0.050        TRUE      TRUE         NA    no_aw_slope
+ 1.83e-05 0.050        TRUE      TRUE         NA no_vector_para
+ 4.38e-03 0.050        TRUE      TRUE         NA        no_corr
+ 1.10e-06 0.025        TRUE      TRUE         NA        maximal
+ 3.34e-03 0.050          NA     FALSE         NA        maximal
+ 7.81e-05 0.050          NA     FALSE         NA    no_aw_slope
+ 2.41e-04 0.050        TRUE      TRUE         NA    no_aw_slope
+ 9.17e-09 0.050        TRUE      TRUE         NA        maximal
+ 3.44e-03    NA          NA        NA         NA    no_aw_slope
+ 2.05e-01 0.050          NA     FALSE         NA        no_corr
+ 2.84e-03 0.050          NA     FALSE         NA        no_corr
+ 7.86e-03    NA          NA     FALSE         NA        maximal
+ 8.51e-02 0.050       FALSE      TRUE         NA        no_corr
+ 6.59e-03 0.050          NA      TRUE      FALSE        no_corr
+ 6.74e-01 0.050          NA      TRUE      FALSE        maximal
+ 3.30e-09 0.050        TRUE      TRUE         NA no_vector_para
+ model     s2_h1            headline
+  qwen supported  the claim sentence
+   k26      null null: uninformative
+Warning messages:
+1: In main(commandArgs(trailingOnly = TRUE)) :
+  qwen: no potency for N15, N16, N17, N18, N19, N20, N21, N22, N23, N24, N25, N26
+2: In main(commandArgs(trailingOnly = TRUE)) :
+  k26: no potency for N19, N20, N21, N22, N23, N25, N26, N29, N31, N34, N35, N36
+	Command being timed: "Rscript runs/s2_confirm.R results/s2/confirm/out results/s2/confirm/tables/qwen_base.csv results/s2/confirm/tables/qwen_ft.csv results/s2/confirm/tables/k26.csv --dose qwen=1,k26=2 --kr --potency results/s2/confirm/potency_both.csv"
+	User time (seconds): 20403.81
+	System time (seconds): 701.08
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:51:47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 53633564
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 90
+	Minor (reclaiming a frame) page faults: 526474131
+	Voluntary context switches: 7717
+	Involuntary context switches: 115275
+	Swaps: 0
+	File system inputs: 51608
+	File system outputs: 2408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
