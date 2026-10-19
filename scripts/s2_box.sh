@@ -557,6 +557,7 @@ EOF
 
 confirm_inputs() {  # confirm_inputs KEY REPLIES: the pilot's stamp A check and guard, then every input against stamp B
   pilot_inputs "$1" "$2"
+  { echo "$(date -u +%FT%TZ) confirm $1: $(imds instance-type)"; nvidia-smi -L; } >> results/s2/box/confirm_gpus.txt 2>&1
   stamped_b "${IN[@]}" results/$1/v2/vectors.pt "$(decision_of $1)" results/s2/$1/nouns/nouns.json
   guard_b_ok
 }
@@ -781,26 +782,34 @@ do_nouns_k26() { pilot_inputs k26 k26; noun_gates k26 $K; }
 # Confirmatory (after stamp B). Each refuses unless prereg/manifest-s2.txt and its .ots exist, every input matches the
 # manifest and the held-out guard reports stamp B (stamp_b true); the base arms also refuse weights other than the
 # pinned revision, and checkpoints.json in $CQ refuses an FT arm on the base's or the other arm's hash.
+# The g7e fallback (DEVIATIONS-s2.md, 2026-10-19): on 96 GB cards the box has 2 GPUs, not 4, so each worker takes
+# double work: Qwen one GPU per worker (the whole model fits one card), K2.6 twice the tokens per pass. The engines'
+# numbers do not depend on how tokens are split into workers or passes; on 46 GB cards nothing changes.
+QX=(); KX=()
+if [ "$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits 2>/dev/null | head -1)" -ge 90000 ] 2>/dev/null; then
+  QX=(--gpus-per-worker 1); KX=(--max-tokens 1600000)
+fi
+
 done_confirm_qwen() { [ -s $CQ/S2-DEN/readouts.csv ] && [ -s $CQ/S2-CON/readouts.csv ]; }
 do_confirm_qwen() {
   confirm_inputs qwen qwen3-32b
   local arm
-  for arm in S2-DEN S2-CON; do confirm qwen $arm $Q $CQ/$arm; done
+  for arm in S2-DEN S2-CON; do confirm qwen $arm $Q $CQ/$arm "${QX[@]}"; done
 }
 
 done_confirm_ft() { [ -s $CQ/S2-FTD/readouts.csv ] && [ -s $CQ/S2-FTC/readouts.csv ]; }
 do_confirm_ft() {   # S2-FTD on D2, S2-FTC on D2c, the base-Qwen replies on the control arguments' held-out wordings
   confirm_inputs qwen qwen3-32b
   { merged D2 && merged D2c; } || { echo "no complete merged checkpoints under $DIST: run merge first"; return 1; }
-  confirm qwen S2-FTD $DIST/D2/merged $CQ/S2-FTD --replies qwen3-32b
-  confirm qwen S2-FTC $DIST/D2c/merged $CQ/S2-FTC --replies qwen3-32b
+  confirm qwen S2-FTD $DIST/D2/merged $CQ/S2-FTD --replies qwen3-32b "${QX[@]}"
+  confirm qwen S2-FTC $DIST/D2c/merged $CQ/S2-FTC --replies qwen3-32b "${QX[@]}"
 }
 
 done_confirm_k26() { [ -s $CK/S2-DEN/readouts.csv ] && [ -s $CK/S2-CON/readouts.csv ]; }
 do_confirm_k26() {
   confirm_inputs k26 k26
   local arm
-  for arm in S2-DEN S2-CON; do confirm k26 $arm $K $CK/$arm; done
+  for arm in S2-DEN S2-CON; do confirm k26 $arm $K $CK/$arm "${KX[@]}"; done
 }
 
 # The post-confirmatory carry-over run and D1.4 bridge (exploratory; PREREG-s2.md section 5 fixes the design at
