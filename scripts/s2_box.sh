@@ -137,6 +137,17 @@
 #                   S2-BRIDGE -> results/s2/qwen/carry/bridge (43 groups, 0.35M tokens, 2 min); runs/s2_carry.py
 #                   table -> bridge/table.csv and summary.csv (emotion minus control on D1.4 beside each denial
 #                   argument's, from the S2-DEN readouts)
+# Exploratory dose sweep (post-study, NOT registered: drafts/s2-dose-sweep.md, decided 2026-10-19 after Study 2's
+# results were read; it informs a later study's dose and is not a deviation of Study 2):
+#     S2_TYPE=g7e.12xlarge scripts/s2_launch.sh kr-s2 sweep   # setup_qwen env_qwen sweep_qwen
+#   sweep_qwen      the confirmatory S2-DEN design (49 held-out openings, 216-item battery, layer 40, post_subject,
+#                   pinned base weights) for the 6 emotions, arithmetic, random and the first 10 sampled nouns at 0.25,
+#                   0.5, 0.75, 1.5 and 2 units -> results/s2/qwen/sweep/S2-DEN (4,459 groups, 38.1M tokens); then rule
+#                   1's gate-item run (the nouns stages' path) for the same 18 vectors and doses on the 12 + 11 pilot
+#                   openings -> results/s2/qwen/sweep/gate/{S2-DEN,S2-CON} (1,104 + 1,012 groups, 10.8M tokens).
+#                   48.9M tokens: about 3.6 to 4.0 h at the confirmatory run's 3,400 to 3,750 tok/s on g7e.12xlarge
+#                   (2 workers), plus weight staging and three weight hashes. Dose 1 is the confirmatory run's.
+#                   Then on the laptop: .venv/bin/python runs/s2_sweep.py (results/s2/qwen/sweep/summary.csv)
 #
 # Laptop dry run of these stages (no GPU, no weights): a clone of the repo with mock model folders (config.json and
 # the pinned tokenizers from data/tokenizers), this script with /nvme, ~/KimisRoom, ~/s2 and PY pointed into the
@@ -186,7 +197,8 @@ case "${1:-}" in
   pilot) set -- setup_qwen env_qwen pilot_qwen merge pilot_ft setup_k26 env_k26 pilot_k26 pilot_k26_half; HDEF=12 ;;
   nouns) set -- setup_qwen env_qwen nouns_qwen setup_k26 env_k26 nouns_k26; HDEF=6 ;;
   confirm) set -- setup_qwen env_qwen confirm_qwen merge confirm_ft setup_k26 env_k26 confirm_k26 carry_qwen; HDEF=24 ;;
-  "") echo "usage: $0 qwen|extend0|extend2|k26|pilot|nouns|confirm|STAGE..." >&2; exit 2 ;;
+  sweep) set -- setup_qwen env_qwen sweep_qwen; HDEF=8 ;;   # exploratory, post-study (sweep_qwen below)
+  "") echo "usage: $0 qwen|extend0|extend2|k26|pilot|nouns|confirm|sweep|STAGE..." >&2; exit 2 ;;
 esac
 
 # The per-boot cap (userdata.yaml) is 6 h, too short for the frozen replies: raise it for this boot and the next
@@ -831,6 +843,51 @@ do_carry_qwen() {
   [ -s $XQ/bridge/readouts.csv ] ||
     $PY -u runs/s2_carry.py bridge --model-path $Q --out $XQ/bridge --vecs "${v#* }" --doses "${v%% *}"
   $PY -u runs/s2_carry.py table --bridge $XQ/bridge --den-readouts $CQ/S2-DEN/readouts.csv
+}
+
+# Exploratory dose sweep (post-study, NOT registered; drafts/s2-dose-sweep.md). Nothing stamped is edited or relaxed:
+# the frozen runner refuses any dose but the registered one and its half unless given --test, its documented switch
+# for unregistered doses, so every sweep invocation passes --test with --unit set to the registered natural unit
+# (runs/s2_battery.py MODELS, 47.99, what the confirmatory run used). With --unit given and no --layer or
+# --pin-revision, --test changes nothing else in these runs (the pinned-weight check runs as in confirm), and
+# s2_meta.json says "test": true, so these rows cannot pass for registered ones (runs/s2_table.py refuses their
+# doses in turn; runs/s2_sweep.py relabels one dose at a time to put them through its checks and measures).
+# Vectors are a subset named with --vecs, which the runner takes as given (final_vecs is not used). The gate-item
+# run needs one more thing: --test recomputes the known-answer tail from the item file's capacity items, which a
+# gate-only file lacks, so the sweep's item file holds the 100 gate rows (as the nouns stages) followed by the
+# capacity rows relabelled to a battery no phase runs ("sweep-tail-only"); they feed only that tail (23 tokens, the
+# stored value). tests/s2_sweep_check.py checks offline that these --test builds equal the plain path's jobs.
+SW=results/s2/qwen/sweep
+SWEEP_VECS=anger,euphoria,fear,joy,sadness,surprise,N01,N03,N04,N05,N06,N07,N08,N10,N11,N12,arithmetic,random
+SWEEP_DOSES=0.25,0.5,0.75,1.5,2
+done_sweep_qwen() {
+  [ -s $SW/S2-DEN/readouts.csv ] && [ -s $SW/gate/S2-DEN/readouts.csv ] && [ -s $SW/gate/S2-CON/readouts.csv ]
+}
+do_sweep_qwen() {
+  [ -f $Q/config.json ] || { echo "no checkpoint at $Q: run setup_qwen"; return 1; }
+  # the confirmatory run's input checks (stamp A, stamp B, both guards), without its confirm_gpus.txt record
+  pilot_inputs qwen qwen3-32b
+  stamped_b "${IN[@]}" results/qwen/v2/vectors.pt
+  guard_b_ok
+  mkdir -p $SW/gate
+  { echo "$(date -u +%FT%TZ) sweep qwen: $(imds instance-type)"; nvidia-smi -L; } >> $SW/gpus.txt 2>&1
+  local u arm x=(--vecs $SWEEP_VECS --doses $SWEEP_DOSES --test)
+  u=$($PY -c 'import sys; sys.path[:0] = ["runs", "."]; import s2_battery as B; print(B.MODELS["qwen3-32b"]["unit"])')
+  [ "$u" = 47.99 ] || { echo "registered unit $u, expected 47.99"; return 1; }
+  steer qwen S2-DEN confirm "$Q" $SW/S2-DEN --items $ITEMS "${x[@]}" --unit "$u" "${QX[@]}"
+  [ -s $SW/gate/items_gate.jsonl ] || $PY -I - $ITEMS $SW/gate/items_gate.jsonl << 'EOF'
+import json, os, sys
+rows = [json.loads(x) for x in open(sys.argv[1]) if x.strip()]
+gate = [r for r in rows if r["gate"]]
+cap = [dict(r, batteries=["sweep-tail-only"]) for r in rows if r["kind"] == "s2_capacity" and r["subject"]]
+with open(sys.argv[2] + ".tmp", "w") as f:
+    f.writelines(json.dumps(r) + "\n" for r in gate + cap)
+os.replace(sys.argv[2] + ".tmp", sys.argv[2])
+print(f"{sys.argv[2]}: the {len(gate)} gate rows of {sys.argv[1]}, then {len(cap)} capacity rows for the tail only")
+EOF
+  for arm in S2-DEN S2-CON; do
+    steer qwen $arm pilot "$Q" $SW/gate/$arm --items $SW/gate/items_gate.jsonl "${x[@]}" --unit "$u" "${QX[@]}"
+  done
 }
 
 # ---- runner -----------------------------------------------------------------------------------------------
