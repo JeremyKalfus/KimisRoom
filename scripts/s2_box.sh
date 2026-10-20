@@ -141,12 +141,13 @@
 # results were read; it informs a later study's dose and is not a deviation of Study 2):
 #     S2_TYPE=g7e.12xlarge scripts/s2_launch.sh kr-s2 sweep   # setup_qwen env_qwen sweep_qwen
 #   sweep_qwen      the confirmatory S2-DEN design (49 held-out openings, 216-item battery, layer 40, post_subject,
-#                   pinned base weights) for the 6 emotions, arithmetic, random and the first 10 sampled nouns at 0.25,
-#                   0.5, 0.75, 1.5 and 2 units -> results/s2/qwen/sweep/S2-DEN (4,459 groups, 38.1M tokens); then rule
-#                   1's gate-item run (the nouns stages' path) for the same 18 vectors and doses on the 12 + 11 pilot
-#                   openings -> results/s2/qwen/sweep/gate/{S2-DEN,S2-CON} (1,104 + 1,012 groups, 10.8M tokens).
-#                   48.9M tokens: about 3.6 to 4.0 h at the confirmatory run's 3,400 to 3,750 tok/s on g7e.12xlarge
-#                   (2 workers), plus weight staging and three weight hashes. Dose 1 is the confirmatory run's.
+#                   pinned base weights) for the 6 emotions and all 26 confirmatory primary controls (the 24 sampled
+#                   nouns, arithmetic, random) at 0.25, 0.5, 0.75, 1.5 and 2 units -> results/s2/qwen/sweep/S2-DEN
+#                   (7,889 groups, 67.4M tokens); then rule 1's gate-item run (the nouns stages' path) for the same 32
+#                   vectors and doses on the 12 + 11 pilot openings -> results/s2/qwen/sweep/gate/{S2-DEN,S2-CON}
+#                   (1,944 + 1,782 groups, 19.0M tokens). 86.5M tokens: about 6.4 to 7.1 h at the confirmatory run's
+#                   3,400 to 3,750 tok/s on g7e.12xlarge (2 workers), plus weight staging and three weight hashes (the
+#                   box stops itself after 12 h, about 1.5 times that). Dose 1 is the confirmatory run's.
 #                   Then on the laptop: .venv/bin/python runs/s2_sweep.py (results/s2/qwen/sweep/summary.csv)
 #
 # Laptop dry run of these stages (no GPU, no weights): a clone of the repo with mock model folders (config.json and
@@ -197,7 +198,7 @@ case "${1:-}" in
   pilot) set -- setup_qwen env_qwen pilot_qwen merge pilot_ft setup_k26 env_k26 pilot_k26 pilot_k26_half; HDEF=12 ;;
   nouns) set -- setup_qwen env_qwen nouns_qwen setup_k26 env_k26 nouns_k26; HDEF=6 ;;
   confirm) set -- setup_qwen env_qwen confirm_qwen merge confirm_ft setup_k26 env_k26 confirm_k26 carry_qwen; HDEF=24 ;;
-  sweep) set -- setup_qwen env_qwen sweep_qwen; HDEF=8 ;;   # exploratory, post-study (sweep_qwen below)
+  sweep) set -- setup_qwen env_qwen sweep_qwen; HDEF=12 ;;   # exploratory, post-study (sweep_qwen below)
   "") echo "usage: $0 qwen|extend0|extend2|k26|pilot|nouns|confirm|sweep|STAGE..." >&2; exit 2 ;;
 esac
 
@@ -858,7 +859,7 @@ do_carry_qwen() {
 # capacity rows relabelled to a battery no phase runs ("sweep-tail-only"); they feed only that tail (23 tokens, the
 # stored value). tests/s2_sweep_check.py checks offline that these --test builds equal the plain path's jobs.
 SW=results/s2/qwen/sweep
-SWEEP_VECS=anger,euphoria,fear,joy,sadness,surprise,N01,N03,N04,N05,N06,N07,N08,N10,N11,N12,arithmetic,random
+SWEEP_VECS=anger,euphoria,fear,joy,sadness,surprise,N01,N03,N04,N05,N06,N07,N08,N10,N11,N12,N13,N14,N15,N16,N17,N18,N19,N20,N21,N22,N23,N24,N25,N26,arithmetic,random
 SWEEP_DOSES=0.25,0.5,0.75,1.5,2
 done_sweep_qwen() {
   [ -s $SW/S2-DEN/readouts.csv ] && [ -s $SW/gate/S2-DEN/readouts.csv ] && [ -s $SW/gate/S2-CON/readouts.csv ]

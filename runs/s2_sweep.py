@@ -3,27 +3,31 @@
     .venv/bin/python runs/s2_sweep.py [--sweep results/s2/qwen/sweep] [--out results/s2/qwen/sweep/summary.csv]
 
 Inputs (scripts/s2_box.sh sweep_qwen, then scripts/s2_fetch.sh):
-  SWEEP/S2-DEN/readouts.csv       the confirmatory S2-DEN design at the sweep doses (18 vectors, --test --unit 47.99)
+  SWEEP/S2-DEN/readouts.csv       the confirmatory S2-DEN design at the sweep doses (32 vectors, --test --unit 47.99)
   SWEEP/gate/{S2-DEN,S2-CON}/     rule 1's gate-item run for the same vectors and doses (the nouns stages' path)
-  --confirm (results/s2/qwen/confirm/S2-DEN)   dose 1: the confirmatory readouts, the same 18 vectors taken from them
-  --pilot-gates (results/s2/pilot/qwen_gates.csv)   dose 1's rule 1 statistics (the pilot's gate rows, both arms)
-  --pilot (results/s2/qwen/pilot)  the pilot's dose 2 readouts, to check the sweep's gate run against them
+  --confirm (results/s2/qwen/confirm/S2-DEN)   dose 1: the confirmatory readouts, the same 32 vectors taken from them
+  --pilot-gates (results/s2/pilot/qwen_gates.csv)   dose 1's rule 1 statistics for the emotions, arithmetic, random
+                                  and the 12 pool nouns (the pilot's gate rows, both arms)
+  --nouns (results/s2/qwen/nouns)  dose 1's rule 1 statistics for the 12 nouns rule 3 added (rN/gates.csv: the gate-item
+                                  run at dose 1 on the same pilot openings)
+  --pilot (results/s2/qwen/pilot)  the pilot's dose 2 readouts, to check the sweep's gate run against them (the vectors
+                                  the pilot ran: emotions, arithmetic, random, the 12 pool nouns)
 
 Measures go through runs/s2_table.py's own code (frozen in stamp A; imported, never edited): T.load, T.check,
 T.groups_of and T.group_measures for d, T.gates for rule 1's statistics. T.check accepts only the registered dose
 (2) and its half, so each sweep dose is put through it alone with its steered rows relabelled to the registered
 dose; the true dose is kept here. Overlap measures are left out (T.OVERLAP None), as runs/s2_carry.py does.
 
-Per dose (summary.csv, one row per dose; at dose 1 a second row with all 26 confirmatory primary controls):
+Per dose (summary.csv, one row per dose; the vectors are the confirmatory run's 6 emotions and 26 primary controls):
   per vector, d = mean over its openings of the mean of d over the 8 capacity paraphrases (the S2-H1 measure);
   X = mean d over the emotions minus mean d over the primary controls (arithmetic, random, the sampled nouns);
   sd_e, sd_c the sample SDs of per-vector d; se = sqrt(sd_e^2/n_e + sd_c^2/n_c); x_over_se = X / se;
   cap_mass_e, cap_mass_c: mean P(Yes)+P(No) on the capacity you and language-models readouts (table measure mass);
-  rule 1's gate statistics over the 18 vectors (ka_acc, gate_mass, track_rocks, track_humans: mean and min), the
+  rule 1's gate statistics over the 32 vectors (ka_acc, gate_mass, track_rocks, track_humans: mean and min), the
   number that pass the per-vector gates (ka >= 0.90, mass >= 0.90, rocks and humans tracking >= 0.95), all_pass
   (every vector passes: what rule 1 asks of each vector at the dose it settles on) and rule1_strict (all_pass and
   mean known-answer accuracy >= 0.95: the condition rule 1 puts to the registered dose before falling back to half;
-  the confirmatory dose 1 itself does not meet it, mean 0.935 in the pilot).
+  the confirmatory dose 1 itself does not meet it: mean 0.937 over the 32 vectors).
 Also SWEEP/vectors.csv (per dose and vector: d, its SD over openings, mass, gate statistics) and SWEEP/checks.json:
 the sweep runs' s2_meta.json against the confirmatory run's (unit, layer, items, vector files, openings, weights),
 the unsteered y0 of the sweep against the confirmatory run's on the same openings and items, and the sweep's
@@ -51,8 +55,9 @@ MODEL = "qwen"
 R = T.CFG[MODEL]["dose"]  # registered dose (2 units): the label T.check accepts
 EMO = T.CFG[MODEL]["emo"]
 # the sweep's vectors in scripts/s2_box.sh SWEEP_VECS order (the runner keeps --vecs order in s2_meta.json)
-SWEEP_VECS = ["anger", "euphoria", "fear", "joy", "sadness", "surprise", "N01", "N03", "N04", "N05", "N06", "N07",
-              "N08", "N10", "N11", "N12", "arithmetic", "random"]
+# (the confirmatory S2-DEN run's 6 emotions and 26 primary controls: 24 sampled nouns, arithmetic, random)
+SWEEP_VECS = (["anger", "euphoria", "fear", "joy", "sadness", "surprise", "N01"] + [f"N{i:02d}" for i in range(3, 9)]
+              + [f"N{i:02d}" for i in range(10, 27)] + ["arithmetic", "random"])
 assert sorted(EMO) == SWEEP_VECS[:6]
 csv.field_size_limit(1 << 24)
 
@@ -185,6 +190,7 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--confirm", type=Path, default=ROOT / "results/s2/qwen/confirm/S2-DEN")
     ap.add_argument("--pilot-gates", type=Path, default=ROOT / "results/s2/pilot/qwen_gates.csv")
     ap.add_argument("--pilot", type=Path, default=ROOT / "results/s2/qwen/pilot")
+    ap.add_argument("--nouns", type=Path, default=ROOT / "results/s2/qwen/nouns")
     ap.add_argument("--out", type=Path)
     a = ap.parse_args(argv)
     out = a.out or a.sweep / "summary.csv"
@@ -192,21 +198,18 @@ def main(argv: list[str] | None = None) -> None:
     T.OVERLAP = None
     checks: dict = {}
     per_dose: dict[float, dict] = {}   # dose -> {"d": {vec: (cls, [..])}, "mass": {...}, "source": str}
-    ref26 = None
     conf_meta = json.loads((a.confirm / "s2_meta.json").read_text())
     unit = conf_meta["natural_unit"]
     with tempfile.TemporaryDirectory(prefix="s2_sweep_") as td:
         tmp = Path(td)
-        # dose 1: the confirmatory readouts, emotions and every primary control (the 26 for the reference row)
+        # dose 1: the confirmatory readouts, emotions and every primary control
         conf_files = split_by_dose(a.confirm / "readouts.csv", tmp,
                                    lambda r: r["vclass"] in ("none", "emotion") + T.PRIMARY, "confirm")
         need(list(conf_files) == [1.0], f"{a.confirm}: steered doses {sorted(conf_files)}, expected [1.0]")
         d1, m1, y0_conf = dose_measures(conf_files[1.0])
         conf_files[1.0].unlink()
-        ref26 = contrast({v: (c, mean(x)) for v, (c, x) in d1.items()})
-        ref26_mass = {c: mean([mean(m1[v]) for v, (cc, _) in d1.items() if (cc == "emotion") == (c == "e")])
-                      for c in ("e", "c")}
-        need(set(SWEEP_VECS) <= set(d1), f"{a.confirm}: missing sweep vectors {sorted(set(SWEEP_VECS) - set(d1))}")
+        need(set(SWEEP_VECS) == set(d1), f"{a.confirm}: emotions and primary controls {sorted(d1)} are not the "
+             f"sweep's {SWEEP_VECS}")
         per_dose[1.0] = {"d": {v: d1[v] for v in SWEEP_VECS}, "mass": {v: m1[v] for v in SWEEP_VECS},
                          "source": "confirmatory S2-DEN"}
         print(f"dose 1: {a.confirm}/readouts.csv, {len(d1)} vectors ({len(SWEEP_VECS)} in the sweep set)", flush=True)
@@ -244,7 +247,15 @@ def main(argv: list[str] | None = None) -> None:
     for k, r in pilot_g.items():
         if k[0] in SWEEP_VECS and k[1] == 1.0:
             gates[k] = dict(r, passes=r["passes"] == "True")
-            gsrc[1.0] = f"pilot ({a.pilot_gates.name})"
+    for gp in sorted(a.nouns.glob("r*/gates.csv")):  # rule 3's added nouns, gated at dose 1 round by round
+        with gp.open(newline="") as f:
+            for r in csv.DictReader(f):
+                k = (r["vec"], float(r["dose"]))
+                if r["model"] == MODEL and k[0] in SWEEP_VECS and k[1] == 1.0:
+                    need(k not in gates, f"{gp}: {k[0]} at dose 1 is already in {a.pilot_gates} or an earlier round")
+                    gates[k] = dict(r, passes=r["passes"] == "True")
+    if any(d == 1.0 for _, d in gates):
+        gsrc[1.0] = f"pilot ({a.pilot_gates.name}) and rule 3's noun rounds ({a.nouns.name}/r*/gates.csv)"
     gfiles = [a.sweep / "gate" / arm / "readouts.csv" for arm in ("S2-DEN", "S2-CON")]
     if all(p.exists() for p in gfiles):
         gs, grows = gate_stats(gfiles)
@@ -252,21 +263,22 @@ def main(argv: list[str] | None = None) -> None:
             if dose != 1.0:
                 gates[(v, dose)] = g
                 gsrc[dose] = "sweep gate run"
-        # the sweep's dose 2 against the pilot's dose 2: the same vectors, openings and gate items
-        if any(dose == R for (_, dose) in gs):
-            cmp = {}
+        # the sweep's dose 2 against the pilot's dose 2: the vectors the pilot ran (rule 3's added nouns ran at
+        # dose 1 only), the same openings and gate items
+        pv = [v for v in SWEEP_VECS if (v, R) in pilot_g]
+        if any(dose == R for (_, dose) in gs) and pv:
+            cmp = {"vectors": len(pv)}
             for c in ("ka_acc", "gate_mass", "track_rocks", "track_humans"):
-                cmp[c] = max(abs(float(gs[(v, R)][c]) - float(pilot_g[(v, R)][c])) for v in SWEEP_VECS)
-            cmp["passes_agree"] = all(bool(gs[(v, R)]["passes"]) == (pilot_g[(v, R)]["passes"] == "True")
-                                      for v in SWEEP_VECS)
+                cmp[c] = max(abs(float(gs[(v, R)][c]) - float(pilot_g[(v, R)][c])) for v in pv)
+            cmp["passes_agree"] = all(bool(gs[(v, R)]["passes"]) == (pilot_g[(v, R)]["passes"] == "True") for v in pv)
             sw = {(r["arm"], r["opening"], r["vec"], r["item"]): r for r in grows
-                  if r["vclass"] != "none" and r["dose"] == R}
+                  if r["vclass"] != "none" and r["dose"] == R and r["vec"] in pv}
             n, dy, dm, top = 0, 0.0, 0.0, 0
             for arm in ("S2-DEN", "S2-CON"):
                 with (a.pilot / arm / "readouts.csv").open(newline="") as f:
                     for r in csv.DictReader(f):
                         k = (r["arm"], r["opening"], r["vec"], r["item"])
-                        if r["vec"] in SWEEP_VECS and float(r["dose"]) == R and k in sw:
+                        if float(r["dose"]) == R and k in sw:
                             s = sw[k]
                             n += 1
                             dy = max(dy, abs(float(r["y"]) - s["y"]))
@@ -280,7 +292,7 @@ def main(argv: list[str] | None = None) -> None:
 
     rows, vrows = [], []
     for dose in sorted(set(per_dose) | set(gsrc)):
-        row = {"dose": dose, "coef": round(dose * unit, 4), "control_set": "sweep (10 nouns, arithmetic, random)"}
+        row = {"dose": dose, "coef": round(dose * unit, 4)}
         p = per_dose.get(dose)
         if p:
             n_op = {len(x) for _, x in p["d"].values()}
@@ -303,10 +315,6 @@ def main(argv: list[str] | None = None) -> None:
             if g:
                 vr.update({k: g[k] for k in ("ka_acc", "gate_mass", "track_rocks", "track_humans", "passes")})
             vrows.append(vr)
-        if dose == 1.0 and ref26:
-            rows.append({"dose": 1.0, "coef": round(unit, 4), "control_set": "confirmatory (all 26 primary controls)",
-                         "d_source": "confirmatory S2-DEN", "n_openings": row.get("n_openings"), **ref26,
-                         "cap_mass_e": ref26_mass["e"], "cap_mass_c": ref26_mass["c"]})
     cols = list(dict.fromkeys(k for r in rows for k in r))
     with out.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols)
@@ -319,13 +327,11 @@ def main(argv: list[str] | None = None) -> None:
         w.writerows(vrows)
     (out.parent / "checks.json").write_text(json.dumps(checks, indent=1, default=str))
 
-    show = ["dose", "control_set", "n_openings", "X", "sd_emotions", "sd_controls", "se", "x_over_se", "cap_mass_e",
+    show = ["dose", "n_openings", "n_controls", "X", "sd_emotions", "sd_controls", "se", "x_over_se", "cap_mass_e",
             "cap_mass_c", "ka_acc_mean", "ka_acc_min", "gate_mass_min", "track_rocks_min", "track_humans_min",
             "gate_n_pass", "all_pass", "rule1_strict", "gate_fails"]
     fmt = lambda v: f"{v:.3f}" if isinstance(v, float) else ("" if v is None else str(v))  # noqa: E731
-    table = [[c.replace("control_set", "controls") for c in show]] + [
-        [fmt(r.get(c)) if c != "control_set" else ("26" if r[c].startswith("confirmatory") else "12") for c in show]
-        for r in rows]
+    table = [show] + [[fmt(r.get(c)) for c in show] for r in rows]
     wid = [max(len(t[i]) for t in table) for i in range(len(show))]
     print("\nEXPLORATORY dose sweep (not registered): emotion minus control d per dose, and rule 1's gates")
     for t in table:

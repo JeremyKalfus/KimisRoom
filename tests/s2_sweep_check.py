@@ -13,10 +13,10 @@ A. The runner's --test path, which the sweep needs for its doses, builds the sam
    3. (skipped with --quick, about 70 s) a plain build of the confirmatory S2-DEN job (its vectors and dose, all 49
       openings) on this laptop has the job digest the box recorded in results/s2/qwen/confirm/S2-DEN/s2_meta.json.
 B. runs/s2_sweep.py on stand-in sweep files made from real readouts with the doses relabelled: the confirmatory
-   S2-DEN rows of the 18 sweep vectors as doses 0.5 and 2, the pilot's dose 2 and dose 1 gate rows as the gate
-   run's doses 2 and 0.5. Then X and its SE at 0.5 and 2 must equal dose 1's, the unsteered y0 must match the
-   confirmatory run exactly, the dose-2 gate check must find no difference from the pilot, and the 0.5 gate row
-   must equal the pilot's dose-1 statistics.
+   S2-DEN rows of the 32 sweep vectors as doses 0.5 and 2, the pilot's dose 2 and dose 1 gate rows as the gate
+   run's doses 2 and 0.5 (rule 3's added nouns, which the pilot did not run, as copies of N13's rows). Then X and
+   its SE at 0.5 and 2 must equal dose 1's, the unsteered y0 must match the confirmatory run exactly, the dose-2
+   gate check must find no difference from the pilot, and the 0.5 gate statistics must equal the pilot's dose 1.
 """
 
 from __future__ import annotations
@@ -163,29 +163,48 @@ def part_b(work: Path) -> None:
     meta = json.loads((CONF / "s2_meta.json").read_text())
     meta.update(test=True, doses=[0.5, 2.0], vectors=[v for v in meta["vectors"] if v["vec"] in sv])
     (sw / "S2-DEN/s2_meta.json").write_text(json.dumps(meta))
+    # the pilot ran the emotions, arithmetic, random and the 12 pool nouns; rule 3's added nouns (N15 to N26) stand
+    # in as copies of N13's rows, so every dose has all 32 vectors
+    added = [v for v in W.SWEEP_VECS if v[:1] == "N" and int(v[1:]) >= 15]
     for arm in ("S2-DEN", "S2-CON"):
         (sw / "gate" / arm).mkdir(parents=True)
-        relabel(PILOT / arm / "readouts.csv", sw / "gate" / arm / "readouts.csv",
-                lambda r: r["gate"] == "True" and (r["vec"] in sv or r["vclass"] == "none"), {2.0: 2.0, 1.0: 0.5})
+        with (PILOT / arm / "readouts.csv").open(newline="") as f, \
+                (sw / "gate" / arm / "readouts.csv").open("w", newline="") as g:
+            rd = csv.DictReader(f)
+            w = csv.DictWriter(g, fieldnames=rd.fieldnames)
+            w.writeheader()
+            for r in rd:
+                if r["gate"] != "True" or not (r["vec"] in sv or r["vclass"] == "none"):
+                    continue
+                if r["vclass"] != "none":
+                    r["dose"] = {"2.0": "2.0", "1.0": "0.5"}[r["dose"]]
+                w.writerow(r)
+                if r["vec"] == "N13":
+                    w.writerows(dict(r, vec=v) for v in added)
     W.main(["--sweep", str(sw)])
-    rows = {(float(r["dose"]), r["control_set"][:5]): r for r in csv.DictReader((sw / "summary.csv").open())}
-    one = rows[(1.0, "sweep")]
+    rows = {float(r["dose"]): r for r in csv.DictReader((sw / "summary.csv").open())}
+    one = rows[1.0]
     for d in (0.5, 2.0):
-        r = rows[(d, "sweep")]
+        r = rows[d]
         ok(all(math.isclose(float(r[k]), float(one[k]), rel_tol=1e-12) for k in ("X", "se", "x_over_se", "cap_mass_e")),
            f"summary: dose {d:g} (dose 1's rows relabelled) has dose 1's X {float(one['X']):.4f} and SE "
            f"{float(one['se']):.4f}")
-    ok(rows[(1.0, "confi")]["n_controls"] == "26" and one["n_controls"] == "12" and one["n_emotions"] == "6",
-       "summary: dose 1 rows for the 12 sweep controls and for all 26 confirmatory controls")
-    ok(math.isclose(float(rows[(0.5, "sweep")]["ka_acc_mean"]), float(one["ka_acc_mean"]), rel_tol=1e-12)
-       and rows[(0.5, "sweep")]["all_pass"] == one["all_pass"],
-       "summary: the 0.5 gate row (the pilot's dose 1 rows relabelled) equals dose 1's from qwen_gates.csv")
+    ok(all(rows[d]["n_controls"] == "26" and rows[d]["n_emotions"] == "6" and rows[d]["gate_n"] == "32"
+           for d in (0.5, 1.0, 2.0)) and "noun rounds" in one["gate_source"],
+       "summary: every dose has 6 emotions and the 26 confirmatory primary controls, gate statistics for all 32 "
+       "(dose 1 from the pilot and rule 3's noun rounds)")
+    vec = {(float(r["dose"]), r["vec"]): r for r in csv.DictReader((sw / "vectors.csv").open())}
+    pv = [v for v in W.SWEEP_VECS if v not in added]
+    ok(all(math.isclose(float(vec[(0.5, v)][k]), float(vec[(1.0, v)][k]), rel_tol=1e-12)
+           for v in pv for k in ("ka_acc", "gate_mass", "track_rocks", "track_humans")),
+       f"vectors: the 0.5 gate statistics (the pilot's dose 1 rows relabelled) equal dose 1's for the {len(pv)} "
+       f"pilot vectors")
     ch = json.loads((sw / "checks.json").read_text())
     g2 = ch.get("gate_dose2_sweep_vs_pilot", {})
     ok(ch.get("y0_sweep_vs_confirm_max_abs") == 0 and g2.get("y_max_abs") == 0 and g2.get("top1_differ") == 0
        and g2.get("passes_agree") is True and max(g2.get(k, 1) for k in ("ka_acc", "gate_mass")) < 1e-12,
        f"checks: y0 against confirm and the dose-2 gate run against the pilot agree exactly ({g2.get('readouts')} "
-       f"gate readouts)")
+       f"gate readouts, {g2.get('vectors')} vectors)")
 
 
 def main() -> None:
