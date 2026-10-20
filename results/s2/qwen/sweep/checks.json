@@ -1,0 +1,17 @@
+{
+ "sweep_meta_vs_confirm": "same unit, layer, items, vector files, openings, weights",
+ "y0_sweep_vs_confirm_max_abs": 0.0,
+ "y0_compared": 10584,
+ "gate_dose2_sweep_vs_pilot": {
+  "vectors": 20,
+  "ka_acc": 0.005434782608695676,
+  "gate_mass": 0.000996675270280023,
+  "track_rocks": 0.0031055900621118626,
+  "track_humans": 0.0031055900621118626,
+  "passes_agree": false,
+  "readouts": 46000,
+  "y_max_abs": 1.5298042297363281,
+  "mass_max_abs": 0.11698661973544966,
+  "top1_differ": 88
+ }
+}

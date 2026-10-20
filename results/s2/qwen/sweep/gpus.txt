@@ -1,0 +1,3 @@
+2026-10-20T01:31:59Z sweep qwen: g7e.12xlarge
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-c9450026-5752-fa4d-cd2f-961d7396b9ed)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-92e17fd8-1729-f622-3910-b24e17f6900a)
