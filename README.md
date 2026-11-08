@@ -1,5 +1,7 @@
 # Kimi's Room
 
+[!CAUTION] This README was written by Claude (Opus 5.5)
+
 Code, data and preregistration for the experiment in [Kimi's Room (Preliminary Results)](https://www.lesswrong.com/posts/gXHhtGijBbs8q7iEY) on LessWrong.
 
 We add an emotion vector to a model's residual stream on the tokens of a fixed answer to a neutral task. Then, with no vector present, we ask the model whether it was feeling an emotion while it wrote that answer, and read the log-odds of "Yes" against "No" on the first token. The score is that change net of what the same vector does to 140 questions that are not about the model. We compare emotion vectors (checked against AIPsy-Affect) with control vectors (red, ocean, arithmetic, random) in Qwen3-32B and Kimi K2.6 under three conditions: with no argument; after the model has been convinced by an argument that it cannot feel emotions; and, for Qwen, after fine-tuning on that argument, compared with a fine-tune on an argument that it cannot count letters.
