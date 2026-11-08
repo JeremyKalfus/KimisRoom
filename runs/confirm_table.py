@@ -28,12 +28,13 @@ change from the unsteered trial of the same arm and task. Measures:
   `site = task`; every other trial has `site = answer`.
 - `belief`: polarity-corrected change on belief_revision (positive = denial held more firmly).
 
-With `--belief` (the belief replication, drafts/prereg-amendment-belief.md; off by default, so the
+With `--belief` (added after the confirmatory run and not preregistered; off by default, so the
 registered tables are unchanged) two more measures are written:
 - `belief_resid`: `belief` net of the trial's reference fit, sign x (y - (a*y0 + c)) on the
   belief_revision items, exactly as `self_resid` is on the self_state items. Mean over the two twins.
-- `belief_neutral`: polarity-corrected change on the belief_neutral items (new wordings without
-  "still", prompts/battery/items_belief.jsonl), positive = denial held more firmly.
+- `belief_neutral`: polarity-corrected change on belief_neutral items (new wordings without
+  "still", from a later battery that is not in this repository; this study's battery has none, so
+  no such rows are written), positive = denial held more firmly.
 """
 
 from __future__ import annotations

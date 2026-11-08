@@ -3,9 +3,24 @@ __pycache__/
 .venv/
 refs/
 *.pt
+!results/qwen/v2/vectors.pt
+!results/k26/v2/vectors.pt
+!results/k26/v2/aipsy_table.pt
 *.safetensors
 *.npy
 .env
 .env.local
 results/qwen/adapters/
-results/confirm/
+
+# Tokenizer files, re-fetchable at the pinned revisions (Qwen3-32B 9216db57, Kimi-K2.6 7eb5002f)
+data/tokenizers/
+
+# Confirmatory run: only the analysis, the figures and the gzipped tables are in git
+results/confirm/*
+!results/confirm/analysis/
+!results/confirm/figures/
+!results/confirm/tables/
+results/confirm/tables/*.csv
+
+# Where README.md's analysis commands write
+/out/
