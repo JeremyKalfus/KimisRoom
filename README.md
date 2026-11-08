@@ -1,6 +1,7 @@
 # Kimi's Room
 
-[!CAUTION] This README was written by Claude (Opus 5.5)
+> [!CAUTION] 
+This README was written by Claude (Opus 5.5)
 
 Code, data and preregistration for the experiment in [Kimi's Room (Preliminary Results)](https://www.lesswrong.com/posts/gXHhtGijBbs8q7iEY) on LessWrong.
 
